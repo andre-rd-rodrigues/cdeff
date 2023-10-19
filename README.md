@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ✨ Next.js Basic Template
 
-## Getting Started
+This basic template is designed for building web applications using Next.js with Tailwind CSS, SCSS, and custom components. It includes all the necessary dependencies for a smooth development experience, along with a pre-designed footer and navbar.
 
-First, run the development server:
+## 📋 Project Details
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Project Name:** next-basic-template
+- **Version:** 0.1.0
+- **Privacy:** Private
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ▶️ Available Scripts
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+In the project directory, you can run the following scripts:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `npm run dev`: Runs the development server for Next.js.
+- `npm run build`: Builds the production-ready version of your application.
+- `npm run start`: Starts the production server for your application.
+- `npm run lint`: Lint your code using the Next.js linting configuration.
 
-## Learn More
+## 📦 Dependencies
 
-To learn more about Next.js, take a look at the following resources:
+Here are the key dependencies used in this project:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js](https://nextjs.org/): A React framework for building web applications.
+- [React](https://reactjs.org/): A JavaScript library for building user interfaces.
+- [React DOM](https://reactjs.org/docs/react-dom.html): A package for rendering React components in the DOM.
+- [@headlessui/react](https://github.com/tailwindlabs/headlessui): A set of completely unstyled, fully accessible UI components.
+- [@heroicons/react](https://github.com/tailwindlabs/heroicons): A set of free, MIT-licensed high-quality SVG icons for you to use in your web projects.
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for rapidly building custom designs.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🛠 Development Dependencies
 
-## Deploy on Vercel
+These are the development dependencies used for building and maintaining the project:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Autoprefixer](https://autoprefixer.github.io/): A tool to add vendor prefixes to CSS rules.
+- [ESLint](https://eslint.org/): A pluggable JavaScript linter.
+- [ESLint Config for Next.js](https://github.com/vercel/next.js/tree/canary/packages/eslint-config-next): The ESLint configuration specifically tailored for Next.js projects.
+- [PostCSS](https://postcss.org/): A tool for transforming styles with JS plugins.
+- [Sass](https://sass-lang.com/): A mature, stable, and powerful professional-grade CSS extension language.
+- [Tailwind CSS](https://tailwindcss.com/): As both a runtime and a build tool dependency, it helps you rapidly build custom designs using utility-first CSS.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This template is a great starting point for your Next.js project, equipped with all the essential tools and libraries you need, including a pre-designed footer and navbar. Feel free to customize it to suit your specific application requirements.
