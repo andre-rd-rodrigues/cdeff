@@ -1,0 +1,12 @@
+.button {
+  background-color: var(--red);
+  padding: 10px 35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 200;
+  transition: 0.2s ease;
+  font-size: var(--fs-s);
+  &:hover {
+    opacity: 85%;
+  }
+}

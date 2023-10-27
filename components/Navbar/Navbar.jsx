@@ -9,8 +9,9 @@ import {
 } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { Fragment, useState } from "react";
-import Button from "../Button";
+import Button from "../Button/Button";
 import Dropdown from "./Dropdown";
+import LanguageSelector from "../LanguageSelector/LanguageSelector";
 
 const products = [
   {
@@ -61,6 +62,7 @@ const Navbar = () => {
             />
           </a>
         </div>
+        <LanguageSelector />
         <div className="flex lg:hidden">
           <Button label="CTA" className="text-sm" />
           <button

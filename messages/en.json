@@ -1,0 +1,19 @@
+{
+  "pages": {
+    "homepage": {
+      "title": {
+        "main": "School Francisco Franco Sports Club",
+        "sub": "Sports shaping for life."
+      }
+    }
+  },
+  "common": {
+    "buttons": {
+      "registration": "Registration",
+      "seeMore": "See more",
+      "learnMore": "Learn more",
+      "Read more": "Read more",
+      "book": "book"
+    }
+  }
+}

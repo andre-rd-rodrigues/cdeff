@@ -9,16 +9,11 @@
 
   /* Colors */
   --dark: #2f333a;
-  --grey: #a6a6a6;
-  --green-light: #63c4a78d;
-  --green: #63c4a7;
-  --blue: #547ea8;
-  --light-grey: #f3f3f3;
-  --white: #ffffff;
-  --yellow: #ffca6c;
-  --toast-yellow: #f8ab26;
-  --grey-yellow: #edeee9;
-  --salmon: #f18073;
+  --light-grey: #f5f5f5;
+  --blue: #273e79;
+  --red: #bd3a4e;
+  --cyan: #3a9ebd;
+  --white: white;
 
   /* Breaking points */
   --fs-xxl: clamp(3.5rem, 10vw, 5rem);
@@ -26,8 +21,8 @@
   --fs-xl-l: clamp(1.8rem, 5vw, 3.2rem);
   --fs-l: clamp(1.8rem, 5vw, 2.5rem);
   --fs-l-s: clamp(1.5rem, 5vw, 2rem);
-  --fs-m: clamp(1.2rem, 10vw, 1.1rem);
-  --fs-s: clamp(0.8rem, 10vw, 0.8rem);
+  --fs-m: clamp(1rem, 10vw, 0.9rem);
+  --fs-s: clamp(0.7rem, 10vw, 0.8rem);
 
   --padding-y: clamp(20px, 5vw, 70px);
   --padding-root-y: 0 var(--padding-y);
@@ -50,11 +45,13 @@ h2,
 h3,
 h4 {
   letter-spacing: 1.5px;
-  font-weight: lighter;
+  font-weight: bold;
 }
 
 p {
   font-size: var(--fs-m);
+  font-weight: 200;
+  line-height: 30px;
 }
 
 html,
@@ -71,11 +68,28 @@ button {
 }
 
 nav,
-footer,
-.container {
+footer {
   padding: 0 var(--padding-y);
 }
 
-.container {
-  min-height: 70vh;
+/* Components */
+
+.markdown > * {
+  all: revert;
+}
+
+.subtitle {
+  font-size: var(--fs-s);
+  color: var(--blue);
+}
+
+.section-header {
+  font-size: var(--fs-l);
+  text-transform: uppercase;
+  margin: 10px 0 20px 0;
+  color: var(--blue);
+}
+
+img {
+  box-shadow: 5px 4px 30px rgba(0, 0, 0, 0.206);
 }

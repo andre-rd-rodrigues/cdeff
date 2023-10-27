@@ -1,9 +1,22 @@
 import React from "react";
+import Container from "./Container/Container";
 
 const Footer = () => {
+  const footerLinks = [
+    {
+      title: "Resources",
+      subLinks: [
+        {
+          name: "Flowbite",
+          href: "#"
+        }
+      ]
+    }
+  ];
+
   return (
     <footer className="bg-zinc-800">
-      <div className=" w-full p-4 py-6 lg:py-8">
+      <Container className="py-7">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="https://flowbite.com" className="flex items-center">
@@ -81,8 +94,12 @@ const Footer = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2023{" "}
-            <a href="https://flowbite.com" className="hover:underline">
-              Flowbite™
+            <a
+              href="https://andrerodrigo.com"
+              className="hover:underline"
+              target="_blank"
+            >
+              André Rodrigo
             </a>
             . All Rights Reserved.
           </span>
@@ -90,7 +107,7 @@ const Footer = () => {
             {/* Social network */}
           </div>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 };
