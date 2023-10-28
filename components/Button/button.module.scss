@@ -10,3 +10,20 @@
     opacity: 85%;
   }
 }
+
+.button2 {
+  padding: 10px 35px;
+  text-transform: uppercase;
+  border: 1px solid var(--red);
+  color: var(--red);
+  letter-spacing: 2px;
+  font-weight: 200;
+  transition: 0.2s ease;
+  font-size: var(--fs-s);
+  font-weight: 300;
+  &:hover {
+    opacity: 85%;
+    background-color: var(--red);
+    color: white;
+  }
+}

@@ -1,0 +1,29 @@
+.container {
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #273e79c1;
+    z-index: 1;
+  }
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  z-index: 2;
+  font-weight: 500;
+}
