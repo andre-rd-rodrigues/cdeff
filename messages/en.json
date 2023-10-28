@@ -7,6 +7,40 @@
       }
     }
   },
+  "components": {
+    "contactHero": {
+      "title": "have a question? contact us."
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "What is the minimum age to join the club?",
+          "answer": "The minimum age to join the club is 6 years old."
+        },
+        {
+          "question": "What is the minimum age to join the club?",
+          "answer": "The minimum age to join the club is 6 years old."
+        },
+        {
+          "question": "What is the minimum age to join the club?",
+          "answer": "The minimum age to join the club is 6 years old."
+        },
+        {
+          "question": "What is the minimum age to join the club?",
+          "answer": "The minimum age to join the club is 6 years old."
+        },
+        {
+          "question": "What is the minimum age to join the club?",
+          "answer": "The minimum age to join the club is 6 years old."
+        },
+        {
+          "question": "What is the minimum age to join the club?",
+          "answer": "The minimum age to join the club is 6 years old."
+        }
+      ]
+    }
+  },
   "common": {
     "buttons": {
       "registration": "Registration",
@@ -14,6 +48,9 @@
       "learnMore": "Learn more",
       "readMore": "Read more",
       "book": "Book now"
+    },
+    "links": {
+      "contacts": "contacts"
     }
   }
 }

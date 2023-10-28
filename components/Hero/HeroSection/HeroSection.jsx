@@ -19,8 +19,8 @@ const HeroSection = ({ imageSrc, linkLabel, subtitle, title, href }) => {
           <h3 className={`${styles.title} ${barlow.className}`}>{title}</h3>
         )}
         {linkLabel && (
-          <Link href={href}>
-            <Button label={linkLabel} className={styles.button} />
+          <Link href={href} className="text-center mt-2">
+            <Button label={linkLabel} />
           </Link>
         )}
       </Container>

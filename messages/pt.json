@@ -1,3 +1,56 @@
 {
-  "title": "Olá mundo!"
+  "pages": {
+    "homepage": {
+      "title": {
+        "main": "School Francisco Franco Sports Club",
+        "sub": "Sports shaping for life."
+      }
+    }
+  },
+  "components": {
+    "contactHero": {
+      "title": "have a question? contact us."
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "What is the minimum age to join the club?",
+          "answer": "The minimum age to join the club is 6 years old."
+        },
+        {
+          "question": "What is the minimum age to join the club?",
+          "answer": "The minimum age to join the club is 6 years old."
+        },
+        {
+          "question": "What is the minimum age to join the club?",
+          "answer": "The minimum age to join the club is 6 years old."
+        },
+        {
+          "question": "What is the minimum age to join the club?",
+          "answer": "The minimum age to join the club is 6 years old."
+        },
+        {
+          "question": "What is the minimum age to join the club?",
+          "answer": "The minimum age to join the club is 6 years old."
+        },
+        {
+          "question": "What is the minimum age to join the club?",
+          "answer": "The minimum age to join the club is 6 years old."
+        }
+      ]
+    }
+  },
+  "common": {
+    "buttons": {
+      "registration": "Registration",
+      "seeMore": "See more",
+      "learnMore": "Learn more",
+      "readMore": "Read more",
+      "book": "Book now"
+    },
+    "links": {
+      "contacts": "contacts"
+    }
+  }
 }
