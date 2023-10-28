@@ -8,6 +8,70 @@
     }
   },
   "components": {
+    "navbar": {
+      "title": "Sports shaping for life",
+      "links": [
+        {
+          "name": "About",
+          "href": "/about",
+          "subLinks": [
+            {
+              "name": "Mission",
+              "href": "/about/mission"
+            },
+            {
+              "name": "Departments",
+              "href": "/about/departments"
+            },
+            {
+              "name": "Sponsors",
+              "href": "/about/sponsors"
+            }
+          ]
+        },
+        {
+          "name": "Sports",
+          "href": "/sports",
+          "subLinks": [
+            { "name": "Basketball", "href": "/sports/basketball" },
+            {
+              "name": "Futsal",
+              "href": "/sports/futsal"
+            }
+          ]
+        },
+        {
+          "name": "Tournaments",
+          "href": "/tournaments",
+          "subLinks": null
+        },
+        {
+          "name": "Activities",
+          "href": "/activities",
+          "subLinks": null
+        },
+        {
+          "name": "Store",
+          "href": "/store",
+          "subLinks": null
+        },
+        {
+          "name": "Blog",
+          "href": "/blog",
+          "subLinks": null
+        },
+        {
+          "name": "Contacts",
+          "href": "/contacts",
+          "subLinks": null
+        },
+        {
+          "name": "FAQs",
+          "href": "/faqs",
+          "subLinks": null
+        }
+      ]
+    },
     "contactHero": {
       "title": "have a question? contact us."
     },

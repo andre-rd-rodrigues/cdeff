@@ -3,13 +3,10 @@ import { Disclosure, Transition } from "@headlessui/react";
 import { MinusIcon, PlusIcon } from "@heroicons/react/20/solid";
 import enTranslations from "../../messages/en.json";
 import ptTranslations from "../../messages/pt.json";
-import { useRouter } from "next/navigation";
+
 import { barlow } from "@/styles/fonts";
 
-function Faqs() {
-  const router = useRouter();
-  const { locale } = router; // 'en' or 'pt' based on the current route
-
+function Faqs({ locale }) {
   const translations = locale === "en" ? enTranslations : ptTranslations;
   const faqs = translations.components.faqs.questions;
 
@@ -27,9 +24,9 @@ function Faqs() {
                 )}
 
                 <h1
-                  className={`${barlow.className} mx-4 uppercase text-blue text-xl font-semibold`}
+                  className={`${barlow.className} mx-4 uppercase text-blue text-xl font-medium`}
                 >
-                  How can I pay for my appointment?
+                  {question}
                 </h1>
               </Disclosure.Button>
 
@@ -44,12 +41,7 @@ function Faqs() {
                 leaveTo="transform opacity-0 scale-95"
               >
                 <Disclosure.Panel className="flex mt-8 md:mx-10">
-                  <p className="max-w-3xl px-4 text-gray-700 ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Magni, eum quae. Harum officiis reprehenderit ex quia
-                    ducimus minima id provident molestias optio nam vel, quidem
-                    iure voluptatem, repellat et ipsa.
-                  </p>
+                  <p className="max-w-3xl px-4 text-gray-700 ">{answer}</p>
                 </Disclosure.Panel>
               </Transition>
 

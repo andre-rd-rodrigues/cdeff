@@ -6,12 +6,12 @@ import SubHeading from "@/components/Heading/SubHeading";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import { useTranslations } from "next-intl";
 
-export default function Home() {
+export default function Home({ params: { locale } }) {
   const t = useTranslations();
 
   return (
     <main>
-      <Faqs />
+      <Faqs locale={locale} />
     </main>
   );
 }

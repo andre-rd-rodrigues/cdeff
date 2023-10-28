@@ -2,7 +2,7 @@ import Container from "@/components/Container/Container";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import "./globals.scss";
-import { barlow, dm_sans } from "@/styles/fonts";
+import { dm_sans } from "@/styles/fonts";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 
@@ -27,8 +27,8 @@ async function RootLayout({ children, params: { locale } }) {
     <html lang={locale}>
       <body className={dm_sans.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <Navbar />
-          <div className="min-h-screen">{children}</div>
+          <Navbar locale={locale} />
+          <div className="min-h-screen mt-52 md:mt-48">{children}</div>
           <Footer />
         </NextIntlClientProvider>
       </body>
