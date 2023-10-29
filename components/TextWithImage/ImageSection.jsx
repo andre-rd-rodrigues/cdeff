@@ -10,6 +10,7 @@ const ImageSection = ({ imgSrc, title }) => (
         height={800}
         layout="responsive"
         objectFit="cover"
+        className="shadow-2xl"
       />
     </div>
   </div>

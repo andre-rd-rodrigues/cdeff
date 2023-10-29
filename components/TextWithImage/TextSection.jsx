@@ -1,8 +1,9 @@
 import { barlow } from "@/styles/fonts";
 import Button from "../Button/Button";
+import Link from "next/link";
 
-const TextSection = ({ subtitle, title, description, buttonOptions }) => {
-  const { onClick, label } = buttonOptions || {};
+const TextSection = ({ subtitle, title, description, labelOptions }) => {
+  const { href, label } = labelOptions || {};
 
   return (
     <div className="w-full md:w-1/2 p-4 flex justify-center items-center">
@@ -10,10 +11,10 @@ const TextSection = ({ subtitle, title, description, buttonOptions }) => {
         <h3 className="subtitle">{subtitle}</h3>
         <h2 className={`${barlow.className} section-header`}>{title}</h2>
         <p className="mb-8">{description}</p>
-        {buttonOptions && (
-          <div className="w-full text-right md:text-left">
-            <Button label={label} onClick={onClick} />
-          </div>
+        {labelOptions && (
+          <Link href={href} className="w-full text-right md:text-left">
+            <Button label={label} />
+          </Link>
         )}
       </div>
     </div>

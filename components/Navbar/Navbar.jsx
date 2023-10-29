@@ -64,7 +64,7 @@ const Navbar = ({ locale }) => {
   //------------------------------------------
 
   return (
-    <header className="fixed  w-full">
+    <header className="fixed z-10 w-full">
       <nav
         className="mx-auto bg-white flex items-center justify-between p-6 lg:px-8 "
         aria-label="CDEFF"

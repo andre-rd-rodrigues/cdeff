@@ -7,7 +7,7 @@ import TextSection from "./TextSection";
 const TextWithImage = ({
   title,
   description,
-  buttonOptions,
+  labelOptions,
   subtitle,
   imgSrc,
   imageRight
@@ -15,13 +15,13 @@ const TextWithImage = ({
   <Container className="flex flex-wrap">
     {imageRight ? (
       <>
-        <TextSection {...{ subtitle, title, description, buttonOptions }} />
+        <TextSection {...{ subtitle, title, description, labelOptions }} />
         <ImageSection {...{ imgSrc, title }} />
       </>
     ) : (
       <>
         <ImageSection {...{ imgSrc, title }} />
-        <TextSection {...{ subtitle, title, description, buttonOptions }} />
+        <TextSection {...{ subtitle, title, description, labelOptions }} />
       </>
     )}
   </Container>

@@ -2,8 +2,34 @@
   "pages": {
     "homepage": {
       "title": {
-        "main": "School Francisco Franco Sports Club",
+        "upperTitle": "CDEFF",
+        "main": "Sports Club of Francisco Franco School",
         "sub": "Sports shaping for life."
+      },
+      "sports": {
+        "basket": {
+          "title": "Basketball",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        "futsal": {
+          "title": "Futsal",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      },
+      "welcome": {
+        "title": "Welcome to CDEFF",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In massa tempor nec feugiat nisl pretium. Tempor orci eu lobortis elementum nibh tellus. Eget dolor morbi non arcu risus quis varius quam."
+      },
+      "departments": {
+        "title": "Departments"
+      },
+      "hero_1": {
+        "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "subtitle": "Tournaments"
+      },
+      "store": {
+        "title": "Products",
+        "subtitle": "Store"
       }
     }
   },
@@ -115,6 +141,61 @@
     },
     "links": {
       "contacts": "contacts"
-    }
+    },
+    "departments": [
+      {
+        "name": "António Ferreira",
+        "position": "President",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "name": "António Ferreira",
+        "position": "President",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "name": "António Ferreira",
+        "position": "President",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      }
+    ],
+    "products": [
+      {
+        "id": "p1",
+        "title": "Blue Denim Jacket",
+        "description": "A stylish blue denim jacket perfect for casual wear.",
+        "price": 59.99,
+        "images": [
+          "https://images.unsplash.com/photo-1598971862255-a19ede03c104?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1598971862255-a19ede03c104?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ],
+        "sizes": ["S", "M", "L", "XL"]
+      },
+      {
+        "id": "p2",
+        "title": "Black Leather Shoes",
+        "description": "Comfortable and elegant black leather shoes.",
+        "price": 79.99,
+        "images": [
+          "https://images.unsplash.com/photo-1598971862255-a19ede03c104?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1598971862255-a19ede03c104?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ],
+        "sizes": ["7", "8", "9", "10", "11"]
+      },
+      {
+        "id": "p3",
+        "title": "Red Silk Dress",
+        "description": "A beautiful red silk dress for special occasions.",
+        "price": 99.99,
+        "images": [
+          "https://images.unsplash.com/photo-1598971862255-a19ede03c104?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1598971862255-a19ede03c104?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ],
+        "sizes": ["S", "M", "L"]
+      }
+    ]
   }
 }
