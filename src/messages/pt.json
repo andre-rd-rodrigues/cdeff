@@ -1,0 +1,282 @@
+{
+  "pages": {
+    "homepage": {
+      "title": {
+        "upperTitle": "CDEFF",
+        "main": "Clube Desportivo da Escola Francisco Franco",
+        "sub": "Sports shaping for life."
+      },
+      "sports": {
+        "basket": {
+          "title": "Basketball",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        "futsal": {
+          "title": "Futsal",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+      },
+      "welcome": {
+        "title": "Welcome to CDEFF",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In massa tempor nec feugiat nisl pretium. Tempor orci eu lobortis elementum nibh tellus. Eget dolor morbi non arcu risus quis varius quam."
+      },
+      "departments": {
+        "title": "Departments"
+      },
+      "hero_1": {
+        "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "subtitle": "Tournaments"
+      },
+      "store": {
+        "title": "Products",
+        "subtitle": "Store"
+      },
+      "hero_2": {
+        "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "subtitle": "Tournaments"
+      },
+      "blog": {
+        "title": "recent articles",
+        "subtitle": "blog"
+      }
+    },
+    "about": {
+      "title": "About us",
+      "welcome": {
+        "subtitle": "our story",
+        "title": "Welcome to CDEFF",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In massa tempor nec feugiat nisl pretium. Tempor orci eu lobortis elementum nibh tellus. Eget dolor morbi non arcu risus quis varius quam."
+      },
+      "mission": {
+        "subtitle": "mission",
+        "title": "It’s not how you win the game",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+      },
+      "departments": "Departments",
+      "sponsors": {
+        "title": "Our sponsors",
+        "subtitle": "sponsors"
+      },
+      "activities": {
+        "title": "Activities",
+        "subtitle": "activities",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+      },
+      "awards": {
+        "title": "Our Awards",
+        "subtitle": "awards",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "awardsList": [
+          {
+            "title": "12 National Championships",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            "date": "12, April 2019",
+            "imageSrc": "https://images.unsplash.com/photo-1550438655-400744b9fefc?auto=format&fit=crop&q=80&w=1472&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          },
+          {
+            "title": "12 National Championships",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            "date": "12, April 2019",
+            "imageSrc": "https://images.unsplash.com/photo-1550438655-400744b9fefc?auto=format&fit=crop&q=80&w=1472&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          },
+          {
+            "title": "12 National Championships",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            "date": "12, April 2019",
+            "imageSrc": "https://images.unsplash.com/photo-1550438655-400744b9fefc?auto=format&fit=crop&q=80&w=1472&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      }
+    },
+    "sponsors": {
+      "title": "Sponsors",
+      "mainSponsors": "Official sponsors",
+      "premium": "Premium",
+      "sponsors": "Sponsors",
+      "collaborations": "Collaborations",
+      "hero": {
+        "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "subtitle": "Sponsors"
+      }
+    },
+    "basketball": {
+      "title": "Basketball",
+      "welcome": {
+        "title": "Lorem ipsum dolor sit.",
+        "subtitle": "Welcome to basketball",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+      },
+      "ranks": {
+        "title": "Choose the rank",
+        "subtitle": "ranks",
+        "ranksList": ["young", "mid", "senior"]
+      }
+    }
+  },
+  "components": {
+    "navbar": {
+      "title": "Sports shaping for life",
+      "links": [
+        {
+          "name": "About",
+          "href": "/about",
+          "subLinks": [
+            {
+              "name": "About Us",
+              "href": "/about"
+            },
+            {
+              "name": "Departments",
+              "href": "/about#departments"
+            },
+            {
+              "name": "Sponsors",
+              "href": "/about/sponsors"
+            }
+          ]
+        },
+        {
+          "name": "Sports",
+          "href": null,
+          "subLinks": [
+            { "name": "Basketball", "href": "/basketball" },
+            {
+              "name": "Futsal",
+              "href": "/futsal"
+            }
+          ]
+        },
+        {
+          "name": "Tournaments",
+          "href": "/tournaments",
+          "subLinks": null
+        },
+        {
+          "name": "Activities",
+          "href": "/activities",
+          "subLinks": null
+        },
+        {
+          "name": "Store",
+          "href": "/store",
+          "subLinks": null
+        },
+        {
+          "name": "Blog",
+          "href": "/blog",
+          "subLinks": null
+        },
+        {
+          "name": "Contacts",
+          "href": "/contacts",
+          "subLinks": null
+        },
+        {
+          "name": "FAQs",
+          "href": "/faqs",
+          "subLinks": null
+        }
+      ]
+    },
+    "contactHero": {
+      "title": "have a question? contact us."
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "What is the minimum age to join the club?",
+          "answer": "The minimum age to join the club is 6 years old."
+        },
+        {
+          "question": "What is the minimum age to join the club?",
+          "answer": "The minimum age to join the club is 6 years old."
+        },
+        {
+          "question": "What is the minimum age to join the club?",
+          "answer": "The minimum age to join the club is 6 years old."
+        },
+        {
+          "question": "What is the minimum age to join the club?",
+          "answer": "The minimum age to join the club is 6 years old."
+        },
+        {
+          "question": "What is the minimum age to join the club?",
+          "answer": "The minimum age to join the club is 6 years old."
+        },
+        {
+          "question": "What is the minimum age to join the club?",
+          "answer": "The minimum age to join the club is 6 years old."
+        }
+      ]
+    }
+  },
+  "common": {
+    "buttons": {
+      "registration": "Registration",
+      "seeMore": "See more",
+      "learnMore": "Learn more",
+      "readMore": "Read more",
+      "book": "Book now",
+      "contact": "contact us"
+    },
+    "links": {
+      "contacts": "contacts"
+    },
+    "departments": [
+      {
+        "name": "António Ferreira",
+        "position": "President",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "name": "António Ferreira",
+        "position": "President",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "name": "António Ferreira",
+        "position": "President",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      }
+    ],
+    "products": [
+      {
+        "id": "p1",
+        "title": "Blue Denim Jacket",
+        "description": "A stylish blue denim jacket perfect for casual wear.",
+        "price": 59.99,
+        "images": [
+          "https://images.unsplash.com/photo-1598971862255-a19ede03c104?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1598971862255-a19ede03c104?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ],
+        "sizes": ["S", "M", "L", "XL"]
+      },
+      {
+        "id": "p2",
+        "title": "Black Leather Shoes",
+        "description": "Comfortable and elegant black leather shoes.",
+        "price": 79.99,
+        "images": [
+          "https://images.unsplash.com/photo-1598971862255-a19ede03c104?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1598971862255-a19ede03c104?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ],
+        "sizes": ["7", "8", "9", "10", "11"]
+      },
+      {
+        "id": "p3",
+        "title": "Red Silk Dress",
+        "description": "A beautiful red silk dress for special occasions.",
+        "price": 99.99,
+        "images": [
+          "https://images.unsplash.com/photo-1598971862255-a19ede03c104?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1598971862255-a19ede03c104?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ],
+        "sizes": ["S", "M", "L"]
+      }
+    ]
+  }
+}
