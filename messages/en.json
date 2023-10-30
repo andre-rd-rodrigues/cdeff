@@ -30,7 +30,18 @@
       "store": {
         "title": "Products",
         "subtitle": "Store"
+      },
+      "hero_2": {
+        "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "subtitle": "Tournaments"
+      },
+      "blog": {
+        "title": "recent articles",
+        "subtitle": "blog"
       }
+    },
+    "about": {
+      "title": "About us"
     }
   },
   "components": {

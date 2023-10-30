@@ -28,7 +28,7 @@ async function RootLayout({ children, params: { locale } }) {
       <body className={dm_sans.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar locale={locale} />
-          <div className="min-h-screen mt-52 md:mt-48">{children}</div>
+          <div className="min-h-screen mt-52 md:mt-40">{children}</div>
           <Footer />
         </NextIntlClientProvider>
       </body>

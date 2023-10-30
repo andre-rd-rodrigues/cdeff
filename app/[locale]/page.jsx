@@ -1,5 +1,4 @@
 "use client";
-
 import Card from "@/components/Cards/Card";
 import IconCard from "@/components/Cards/IconCard/IconCard";
 import Carousel from "@/components/Carousel/Carousel";
@@ -8,12 +7,14 @@ import HeroSection from "@/components/Hero/HeroSection/HeroSection";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
 import TextWithImage from "@/components/TextWithImage/TextWithImage";
+import { getPosts } from "@/lib/notion";
 import { barlow } from "@/styles/fonts";
 import { getTranslations } from "@/utils";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
-export default function Home({ params: { locale } }) {
+const Home = ({ params: { locale } }) => {
   const t = useTranslations();
 
   const translations = getTranslations(locale);
@@ -39,6 +40,7 @@ export default function Home({ params: { locale } }) {
           <p className="tracking-wide">{t("pages.homepage.title.sub")}</p>
         </HeroHeader>
       </Carousel>
+
       {/* Sports section */}
       <Section
         sectionClassName="gap-6 flex justify-around flex-wrap align-center"
@@ -59,6 +61,7 @@ export default function Home({ params: { locale } }) {
           />
         </Link>
       </Section>
+
       {/* About section */}
       <Section containerClassName="bg-white">
         <TextWithImage
@@ -73,6 +76,7 @@ export default function Home({ params: { locale } }) {
           }}
         />
       </Section>
+
       {/* Departments section */}
       <Section containerClassName="text-center">
         <SectionTitle label={t("pages.homepage.departments.title")} />
@@ -89,7 +93,7 @@ export default function Home({ params: { locale } }) {
         </div>
       </Section>
 
-      {/* Hero */}
+      {/* Hero 1 */}
       <HeroSection
         imageSrc="https://images.unsplash.com/photo-1459865264687-595d652de67e?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         linkLabel={t("common.buttons.registration")}
@@ -117,6 +121,26 @@ export default function Home({ params: { locale } }) {
           ))}
         </div>
       </Section>
+
+      {/* Hero 2 */}
+      <HeroSection
+        imageSrc="https://images.unsplash.com/photo-1459865264687-595d652de67e?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        linkLabel={t("common.buttons.registration")}
+        subtitle={t("pages.homepage.hero_2.subtitle")}
+        title={t("pages.homepage.hero_2.title")}
+        href="#"
+      />
+
+      {/* Blog section */}
+      <Section>
+        <SectionTitle
+          className="text-center"
+          label={t("pages.homepage.blog.title")}
+          subTitle={t("pages.homepage.blog.subtitle")}
+        />
+      </Section>
     </main>
   );
-}
+};
+
+export default Home;
