@@ -41,7 +41,63 @@
       }
     },
     "about": {
-      "title": "About us"
+      "title": "About us",
+      "welcome": {
+        "subtitle": "our story",
+        "title": "Welcome to CDEFF",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In massa tempor nec feugiat nisl pretium. Tempor orci eu lobortis elementum nibh tellus. Eget dolor morbi non arcu risus quis varius quam."
+      },
+      "mission": {
+        "subtitle": "mission",
+        "title": "It’s not how you win the game",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+      },
+      "departments": "Departments",
+      "sponsors": {
+        "title": "Our sponsors",
+        "subtitle": "sponsors"
+      },
+      "activities": {
+        "title": "Activities",
+        "subtitle": "activities",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+      },
+      "awards": {
+        "title": "Our Awards",
+        "subtitle": "awards",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "awardsList": [
+          {
+            "title": "12 National Championships",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            "date": "12, April 2019",
+            "imageSrc": "https://images.unsplash.com/photo-1550438655-400744b9fefc?auto=format&fit=crop&q=80&w=1472&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          },
+          {
+            "title": "12 National Championships",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            "date": "12, April 2019",
+            "imageSrc": "https://images.unsplash.com/photo-1550438655-400744b9fefc?auto=format&fit=crop&q=80&w=1472&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          },
+          {
+            "title": "12 National Championships",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            "date": "12, April 2019",
+            "imageSrc": "https://images.unsplash.com/photo-1550438655-400744b9fefc?auto=format&fit=crop&q=80&w=1472&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      }
+    },
+    "sponsors": {
+      "title": "Sponsors",
+      "mainSponsors": "Official sponsors",
+      "premium": "Premium",
+      "sponsors": "Sponsors",
+      "collaborations": "Collaborations",
+      "hero": {
+        "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "subtitle": "Sponsors"
+      }
     }
   },
   "components": {
@@ -53,12 +109,12 @@
           "href": "/about",
           "subLinks": [
             {
-              "name": "Mission",
-              "href": "/about/mission"
+              "name": "About Us",
+              "href": "/about"
             },
             {
               "name": "Departments",
-              "href": "/about/departments"
+              "href": "/about#departments"
             },
             {
               "name": "Sponsors",
@@ -148,7 +204,8 @@
       "seeMore": "See more",
       "learnMore": "Learn more",
       "readMore": "Read more",
-      "book": "Book now"
+      "book": "Book now",
+      "contact": "contact us"
     },
     "links": {
       "contacts": "contacts"

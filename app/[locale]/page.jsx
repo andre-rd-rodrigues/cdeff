@@ -2,6 +2,7 @@
 import Card from "@/components/Cards/Card";
 import IconCard from "@/components/Cards/IconCard/IconCard";
 import Carousel from "@/components/Carousel/Carousel";
+import DepartmentsSection from "@/components/DepartmentsSection";
 import HeroHeader from "@/components/Hero/HeroHeader/HeroHeader";
 import HeroSection from "@/components/Hero/HeroSection/HeroSection";
 import Section from "@/components/Section";
@@ -79,18 +80,7 @@ const Home = ({ params: { locale } }) => {
 
       {/* Departments section */}
       <Section containerClassName="text-center">
-        <SectionTitle label={t("pages.homepage.departments.title")} />
-        <div className="flex flex-wrap justify-around gap-6">
-          {departments.map(({ imageSrc, name, position, description }, i) => (
-            <Card
-              key={i}
-              imageSrc={imageSrc}
-              title={name}
-              description={description}
-              subTitle={position}
-            />
-          ))}
-        </div>
+        <DepartmentsSection locale={locale} />
       </Section>
 
       {/* Hero 1 */}
@@ -105,7 +95,7 @@ const Home = ({ params: { locale } }) => {
       {/* Store section */}
       <Section>
         <SectionTitle
-          label={t("pages.homepage.store.title")}
+          title={t("pages.homepage.store.title")}
           subTitle={t("pages.homepage.store.subtitle")}
         />
         <div className="flex flex-wrap justify-around gap-6">
@@ -135,7 +125,7 @@ const Home = ({ params: { locale } }) => {
       <Section>
         <SectionTitle
           className="text-center"
-          label={t("pages.homepage.blog.title")}
+          title={t("pages.homepage.blog.title")}
           subTitle={t("pages.homepage.blog.subtitle")}
         />
       </Section>

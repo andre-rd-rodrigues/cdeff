@@ -56,8 +56,10 @@ export default function Carousel({ children, autoPlay, isSpaced }) {
     }
   ]);
 
+  // children need to have this className: "keen-slider__slide"
+
   return (
-    <div ref={sliderRef} className="keen-slider bg-red">
+    <div ref={sliderRef} className="keen-slider">
       {children}
     </div>
   );
