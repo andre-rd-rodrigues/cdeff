@@ -57,6 +57,9 @@ function BasketballPage() {
             { name: t("pages.basketball.ranks.senior"), content: "good!" }
           ]}
         />
+
+        {/* Sponsors */}
+        <SectionTitle className="" title={t("pages.sponsors.title")} />
       </Section>
     </main>
   );

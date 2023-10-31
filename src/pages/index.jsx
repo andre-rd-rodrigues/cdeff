@@ -59,7 +59,7 @@ export default function Home({ blogPosts }) {
           <IconCard
             title={t("pages.homepage.sports.futsal.title")}
             description={t("pages.homepage.sports.futsal.description")}
-            iconName="ph:basketball"
+            iconName="ph:soccer-ball"
           />
         </Link>
       </Section>

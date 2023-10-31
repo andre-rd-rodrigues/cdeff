@@ -5,14 +5,21 @@ import Container from "../../Container/Container";
 import { barlow } from "@/styles/fonts";
 import Link from "next/link";
 
-const HeroSection = ({ imageSrc, linkLabel, subtitle, title, href }) => {
+const HeroSection = ({
+  imageSrc,
+  linkLabel,
+  subtitle,
+  title,
+  href,
+  className
+}) => {
   const containerStyle = {
     background: `url(${imageSrc}) no-repeat center center`,
     backgroundSize: "cover"
   };
 
   return (
-    <div className={styles.container} style={containerStyle}>
+    <div className={`${styles.container} ${className}`} style={containerStyle}>
       <Container className={styles.content}>
         {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
         {title && (

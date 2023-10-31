@@ -116,6 +116,13 @@
     "tournaments": {
       "title": "Tournaments",
       "selectSport": "Select the sport"
+    },
+    "activities": {
+      "title": "Activities",
+      "section_1": {
+        "title": "ATL",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+      }
     }
   },
   "components": {
