@@ -109,7 +109,8 @@
       "ranks": {
         "title": "Choose the rank",
         "subtitle": "ranks",
-        "ranksList": ["young", "mid", "senior"]
+        "young": "young",
+        "senior": "senior"
       }
     }
   },

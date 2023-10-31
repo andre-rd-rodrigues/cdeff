@@ -2,16 +2,17 @@ import RankCard from "@/components/Cards/RankCode/RankCard";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
+import Tabs from "@/components/Tabs/Tabs";
 import TextWithImage from "@/components/TextWithImage/TextWithImage";
 import { getPosts } from "@/lib/notion";
 import { getTranslations } from "@/utils";
 import { useTranslations } from "next-intl";
+import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
-function BasketballPage({ params: { locale } }) {
+function BasketballPage() {
   const [selectedRankIndex, setSelectedRankIndex] = useState(0);
-  const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const { locale } = useRouter();
 
   const t = useTranslations();
 
@@ -50,21 +51,23 @@ function BasketballPage({ params: { locale } }) {
         />
 
         {/* Rank select */}
-        <div className="flex flex-wrap gap-6 justify-center">
-          {ranksList.map((rank, i) => (
-            <RankCard
-              rank={rank}
-              isSelected={selectedRankIndex === i}
-              key={i}
-              onSelect={() => setSelectedRankIndex(i)}
-            />
-          ))}
-        </div>
-
-        {/* Rank details page */}
+        <Tabs
+          tabs={[
+            { name: t("pages.basketball.ranks.young"), content: "Hey" },
+            { name: t("pages.basketball.ranks.senior"), content: "good!" }
+          ]}
+        />
       </Section>
     </main>
   );
 }
 
 export default BasketballPage;
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      messages: (await import(`../../messages/${locale}.json`)).default
+    }
+  };
+}

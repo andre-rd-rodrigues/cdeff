@@ -10,6 +10,7 @@ import SectionTitle from "@/components/SectionTitle";
 import TextWithImage from "@/components/TextWithImage/TextWithImage";
 import { getPosts } from "@/lib/notion";
 import { barlow } from "@/styles/fonts";
+
 import { getTranslations } from "@/utils";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
