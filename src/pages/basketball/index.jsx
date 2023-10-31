@@ -45,7 +45,7 @@ function BasketballPage() {
 
       <Section>
         <SectionTitle
-          className="text-center"
+          className="text-center -mb-4"
           title={t("pages.basketball.ranks.title")}
           subTitle={t("pages.basketball.ranks.subtitle")}
         />

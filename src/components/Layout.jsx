@@ -5,7 +5,7 @@ export default function Layout({ children }) {
   return (
     <div className="relative">
       <Navbar />
-      <div className="pt-40">{children}</div>
+      <div className="pt-40 min-h-screen">{children}</div>
       <Footer />
     </div>
   );

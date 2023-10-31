@@ -107,11 +107,15 @@
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
       },
       "ranks": {
-        "title": "Choose the rank",
-        "subtitle": "ranks",
+        "title": "Select the rank",
+        "subtitle": "rank details",
         "young": "young",
         "senior": "senior"
       }
+    },
+    "tournaments": {
+      "title": "Tournaments",
+      "selectSport": "Select the sport"
     }
   },
   "components": {
@@ -213,6 +217,10 @@
     }
   },
   "common": {
+    "sports": {
+      "basketball": "Basketball",
+      "futsal": "Futsal"
+    },
     "buttons": {
       "registration": "Registration",
       "seeMore": "See more",
