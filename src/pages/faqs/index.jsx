@@ -1,10 +1,10 @@
 import React from "react";
 
-const Contacts = () => {
-  return <div>Contacts</div>;
-};
+function FaqsPage() {
+  return <div>FaqsPage</div>;
+}
 
-export default Contacts;
+export default FaqsPage;
 
 export async function getStaticProps({ locale }) {
   return {
