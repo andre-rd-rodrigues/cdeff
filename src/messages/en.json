@@ -123,6 +123,9 @@
         "title": "ATL",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
       }
+    },
+    "store": {
+      "title": "Store"
     }
   },
   "components": {
@@ -261,9 +264,8 @@
     ],
     "products": [
       {
-        "id": "p1",
+        "sport": "futsal",
         "title": "Blue Denim Jacket",
-        "description": "A stylish blue denim jacket perfect for casual wear.",
         "price": 59.99,
         "images": [
           "https://images.unsplash.com/photo-1598971862255-a19ede03c104?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -272,26 +274,14 @@
         "sizes": ["S", "M", "L", "XL"]
       },
       {
-        "id": "p2",
-        "title": "Black Leather Shoes",
-        "description": "Comfortable and elegant black leather shoes.",
-        "price": 79.99,
+        "sport": "basketball",
+        "title": "Blue Denim Jacket",
+        "price": 59.99,
         "images": [
           "https://images.unsplash.com/photo-1598971862255-a19ede03c104?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "https://images.unsplash.com/photo-1598971862255-a19ede03c104?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         ],
-        "sizes": ["7", "8", "9", "10", "11"]
-      },
-      {
-        "id": "p3",
-        "title": "Red Silk Dress",
-        "description": "A beautiful red silk dress for special occasions.",
-        "price": 99.99,
-        "images": [
-          "https://images.unsplash.com/photo-1598971862255-a19ede03c104?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "https://images.unsplash.com/photo-1598971862255-a19ede03c104?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        ],
-        "sizes": ["S", "M", "L"]
+        "sizes": ["S", "M", "L", "XL"]
       }
     ]
   }
