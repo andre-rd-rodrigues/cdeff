@@ -29,14 +29,14 @@ function Dropdown({ subLinks, link }) {
         <Popover.Panel className="absolute top-full z-10 mt-3 overflow-hidden bg-white shadow-lg ">
           <div>
             {subLinks.map(({ name, href }) => (
-              <Link href={href} key={name}>
-                <div
-                  key={name}
-                  className={`group relative flex items-center px-9 py-4 text-m  hover:bg-gray-50 uppercase ${barlow.className} tracking-wide`}
-                >
-                  {name}
-                </div>
-              </Link>
+              <Popover.Button
+                as={Link}
+                href={href}
+                key={name}
+                className={`group relative flex items-center px-9 py-4 text-m  hover:bg-gray-50 uppercase ${barlow.className} tracking-wide`}
+              >
+                {name}
+              </Popover.Button>
             ))}
           </div>
         </Popover.Panel>

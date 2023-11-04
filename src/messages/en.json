@@ -126,6 +126,30 @@
     },
     "store": {
       "title": "Store"
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions"
+    },
+    "contacts": {
+      "title": "Contacts",
+      "subtitle": "Any question or suggestion? Contact us.",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "contactItems": [
+        {
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
+          "icon": "mdi:location"
+        },
+        {
+          "description": "+351 95002923",
+          "href": "tel:+35195002923",
+          "icon": "mingcute:phone-fill"
+        },
+        {
+          "description": "test@gmail.com",
+          "href": "mailto: test@gmail.com",
+          "icon": "ic:baseline-email"
+        }
+      ]
     }
   },
   "components": {
@@ -222,6 +246,54 @@
         {
           "question": "What is the minimum age to join the club?",
           "answer": "The minimum age to join the club is 6 years old."
+        }
+      ]
+    },
+    "footer": {
+      "links": [
+        {
+          "title": "Resources",
+          "subLinks": [
+            {
+              "name": "Flowbite",
+              "href": "#"
+            },
+            {
+              "name": "Flowbite",
+              "href": "#"
+            },
+            {
+              "name": "Flowbite",
+              "href": "#"
+            }
+          ]
+        },
+        {
+          "title": "Resources",
+          "subLinks": [
+            {
+              "name": "Flowbite",
+              "href": "#"
+            },
+            {
+              "name": "Flowbite",
+              "href": "#"
+            },
+            {
+              "name": "Flowbite",
+              "href": "#"
+            }
+          ]
+        },
+        {
+          "title": "Contacts",
+          "subLinks": [
+            {
+              "href": "mailto: test@gmail.com",
+              "icon": "mingcute:phone-fill",
+              "name": "test@gmail.com"
+            }
+          ]
         }
       ]
     }

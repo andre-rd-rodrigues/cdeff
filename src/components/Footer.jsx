@@ -1,102 +1,87 @@
 import React from "react";
 import Container from "./Container/Container";
+import Link from "next/link";
+import Image from "next/image";
+import { barlow } from "@/styles/fonts";
+import { useTranslations } from "next-intl";
+import { getTranslations } from "@/utils";
+import { useRouter } from "next/router";
+import { Icon } from "@iconify/react";
 
 const Footer = () => {
-  const footerLinks = [
-    {
-      title: "Resources",
-      subLinks: [
-        {
-          name: "Flowbite",
-          href: "#"
-        }
-      ]
-    }
-  ];
+  const t = useTranslations();
+  const { locale } = useRouter();
+
+  const translations = getTranslations(locale);
+
+  const footerLinks = translations.components.footer.links;
+
+  const CompanyLogo = (
+    <Link href="/" className="flex flex-col items-center gap-4">
+      <Image
+        width={100}
+        height={100}
+        className=""
+        src="/images/logo.png"
+        alt=""
+      />
+      <p
+        className={`${barlow.className} uppercase text-white mx-5 font-semibold text-l`}
+      >
+        {t("components.navbar.title")}
+      </p>
+    </Link>
+  );
+
+  const FooterSection = ({ title, subLinks }) => (
+    <div>
+      <h2
+        className={`mb-6 text-l font-medium tracking-wider text-white uppercase ${barlow.className}`}
+      >
+        {title}
+      </h2>
+      <ul className="text-white opacity-95 font-thin">
+        {subLinks.map(({ name, href, icon }, i) =>
+          title === "Contacts" ? (
+            <li className="mb-4 " key={i}>
+              <Link
+                href={href}
+                className="hover:underline flex gap-1 items-center"
+              >
+                <Icon icon={icon} fontSize={15} />
+                <p>{name}</p>
+              </Link>
+            </li>
+          ) : (
+            <li className="mb-4" key={i}>
+              <Link href={href} className="hover:underline">
+                {name}
+              </Link>
+            </li>
+          )
+        )}
+      </ul>
+    </div>
+  );
 
   return (
-    <footer className="bg-zinc-800">
+    <footer className="bg-blue">
       <Container className="py-7">
+        <hr className="my-6 border-gray-400 mx-auto opacity-50" />
         <div className="md:flex md:justify-between">
-          <div className="mb-6 md:mb-0">
-            <a href="https://flowbite.com" className="flex items-center">
-              <img
-                src="https://flowbite.com/docs/images/logo.svg"
-                className="h-8 mr-3"
-                alt="FlowBite Logo"
-              />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                Flowbite
-              </span>
-            </a>
-          </div>
+          <div className="mb-6 md:mb-0">{CompanyLogo}</div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-            <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                Resources
-              </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                <li className="mb-4">
-                  <a href="https://flowbite.com" className="hover:underline">
-                    Flowbite
-                  </a>
-                </li>
-                <li>
-                  <a href="https://tailwindcss.com" className="hover:underline">
-                    Tailwind CSS
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                Follow us
-              </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                <li className="mb-4">
-                  <a
-                    href="https://github.com/themesberg/flowbite"
-                    className="hover:underline"
-                  >
-                    Github
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline"
-                  >
-                    Discord
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                Legal
-              </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                <li className="mb-4">
-                  <a href="#" className="hover:underline">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Terms &amp; Conditions
-                  </a>
-                </li>
-              </ul>
-            </div>
+            {footerLinks.map(({ title, subLinks }, i) => (
+              <FooterSection key={i} title={title} subLinks={subLinks} />
+            ))}
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+        <div className="text-center">
+          <span className="text-sm font-light text-gray-400 opacity-50">
             © 2023{" "}
             <a
               href="https://andrerodrigo.com"
-              className="hover:underline"
+              className="text-sm hover:text-white"
               target="_blank"
             >
               André Rodrigo
