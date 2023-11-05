@@ -1,10 +1,10 @@
 "use client";
 import { barlow } from "@/styles/fonts";
-import { Dialog, Disclosure, Popover } from "@headlessui/react";
+import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import enTranslations from "../../messages/en.json";
 import ptTranslations from "../../messages/pt.json";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
@@ -67,13 +67,13 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile menu */}
+
       <Dialog
         as="div"
         className="lg:hidden"
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
-        <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <CompanyLogo />

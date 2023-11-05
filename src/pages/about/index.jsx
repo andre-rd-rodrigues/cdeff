@@ -7,6 +7,7 @@ import PageHeader from "@/components/PageHeader/PageHeader";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
 import TextWithImage from "@/components/TextWithImage/TextWithImage";
+import Timeline from "@/components/Timeline";
 import { getTranslations } from "@/utils";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
@@ -86,18 +87,24 @@ function About() {
           title={t("pages.about.awards.title")}
           subTitle={t("pages.about.awards.subtitle")}
         />
-        <Carousel autPlay isSpaced>
-          {awardsList.map(({ title, description, imageSrc }, i) => (
-            <div key={i} className="keen-slider__slide">
-              <Card
-                title={title}
-                description={description}
-                imageSrc={imageSrc}
-                className="mb-10 m-auto"
-              />
-            </div>
-          ))}
-        </Carousel>
+        <div className="flex justify-center items-start">
+          <Timeline
+            data={[
+              {
+                date: "20-10-1992",
+                title: "Tournament of the max well known team"
+              },
+              {
+                date: "20-10-1992",
+                title: "Tournament of the max well known team"
+              },
+              {
+                date: "20-10-1992",
+                title: "Tournament of the max well known team"
+              }
+            ]}
+          />
+        </div>
       </Section>
     </main>
   );

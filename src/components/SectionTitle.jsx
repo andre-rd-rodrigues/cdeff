@@ -9,7 +9,9 @@ function SectionTitle({ title, subTitle, className }) {
           {subTitle}
         </p>
       )}
-      <h2 className={`${barlow.className} section-header`}>{title}</h2>
+      {title && (
+        <h2 className={`${barlow.className} section-header`}>{title}</h2>
+      )}
     </div>
   );
 }

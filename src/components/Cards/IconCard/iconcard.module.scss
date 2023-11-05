@@ -22,9 +22,18 @@
   }
 }
 
+.containerSelected {
+  background: var(--blue);
+  color: white;
+}
+
 .icon {
   color: var(--blue);
   transition: 0.2s ease;
+}
+
+.iconSelected {
+  color: white;
 }
 
 .title {

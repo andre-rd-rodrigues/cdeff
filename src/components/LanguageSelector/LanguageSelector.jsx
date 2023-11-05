@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 import { Fragment } from "react";
 
 function LanguageSelector() {
-  const { locale, route } = useRouter();
+  const { route } = useRouter();
 
   return (
     <Popover className="relative mx-10 ">
@@ -26,20 +26,22 @@ function LanguageSelector() {
         leaveTo="opacity-0 translate-y-1"
       >
         <Popover.Panel className="absolute top-full z-10 mt-2 overflow-hidden bg-white shadow-lg text-dark">
-          <Link
+          <Popover.Button
+            as={Link}
             href={route}
             locale={"en"}
             className={`group relative flex items-center px-9 py-4 text-m  hover:bg-gray-50 uppercase ${barlow.className} tracking-wide`}
           >
             English
-          </Link>
-          <Link
+          </Popover.Button>
+          <Popover.Button
+            as={Link}
             href={route}
             locale={"pt"}
             className={`group relative flex items-center px-9 py-4 text-m  hover:bg-gray-50 uppercase ${barlow.className} tracking-wide`}
           >
             Português
-          </Link>
+          </Popover.Button>
         </Popover.Panel>
       </Transition>
     </Popover>

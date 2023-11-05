@@ -9,7 +9,9 @@ function Dropdown({ subLinks, link }) {
 
   return (
     <Popover className="relative">
-      <Popover.Button className={`flex items-center gap-x-1 ${linksClasses}`}>
+      <Popover.Button
+        className={`flex outline-none items-center gap-x-1 ${linksClasses}`}
+      >
         {link}
         <ChevronDownIcon
           className="h-5 w-5 flex-none text-gray-400"
