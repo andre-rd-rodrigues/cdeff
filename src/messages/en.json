@@ -150,7 +150,8 @@
           "icon": "ic:baseline-email"
         }
       ]
-    }
+    },
+    "blog": { "title": "Blog", "recentArticles": "Recent articles" }
   },
   "components": {
     "navbar": {

@@ -13,6 +13,7 @@
     "@heroicons/react": "^2.0.18",
     "@iconify/react": "^4.1.1",
     "@notionhq/client": "^2.2.13",
+    "dayjs": "^1.11.10",
     "keen-slider": "^6.8.6",
     "next": "13.4.6",
     "next-intl": "^2.21.0",

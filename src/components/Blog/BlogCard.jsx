@@ -1,12 +1,18 @@
 import Button from "@/components/Button/Button";
 import { barlow } from "@/styles/fonts";
+import dayjs from "dayjs";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
+require("dayjs/locale/pt");
+require("dayjs/locale/en");
 
 function BlogCard({ article }) {
   const t = useTranslations();
+  const { locale } = useRouter();
+
   const { title, description, date, image, slug } = article;
 
   return (
@@ -14,7 +20,7 @@ function BlogCard({ article }) {
       href={`/blog/${slug}`}
       className="relative flex flex-col shadow-xl max-w-sm"
     >
-      <div className="relative h-[350px]">
+      <div className="relative h-[250px]">
         <Image
           src={image}
           alt={title}
@@ -24,9 +30,12 @@ function BlogCard({ article }) {
           }}
         />
       </div>
-      <div className="p-7 py-10">
+      <p className="text-sm font-light text-gray-400 px-5 pt-5">
+        {dayjs(date).locale(locale).format("MMMM DD, YYYY")}
+      </p>
+      <div className="px-5 pt-3 pb-8">
         <h2
-          className={`${barlow.className} text-blue uppercase font-semibold text-2xl my-4`}
+          className={`${barlow.className} text-blue uppercase font-semibold text-2xl mb-2`}
         >
           {title}
         </h2>
