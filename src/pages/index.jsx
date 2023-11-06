@@ -1,6 +1,7 @@
 import BlogCard from "@/components/Blog/BlogCard";
 import Card from "@/components/Cards/Card";
 import IconCard from "@/components/Cards/IconCard/IconCard";
+import ProductCard from "@/components/Cards/ProductCard";
 import Carousel from "@/components/Carousel/Carousel";
 import DepartmentsSection from "@/components/DepartmentsSection";
 import HeroHeader from "@/components/Hero/HeroHeader/HeroHeader";
@@ -99,15 +100,14 @@ export default function Home({ blogPosts }) {
           title={t("pages.homepage.store.title")}
           subTitle={t("pages.homepage.store.subtitle")}
         />
-        <div className="flex flex-wrap justify-around gap-6">
-          {products.map(({ images, title, price, description }, i) => (
-            <Card
+        <div className="flex flex-wrap gap-10">
+          {products.map(({ images, title, price, sizes }, i) => (
+            <ProductCard
               key={i}
-              subTitle={`${price}€`}
               title={title}
-              description={description}
-              imageSrc={images[0]}
-              hasButton
+              images={images}
+              price={price}
+              sizes={sizes}
             />
           ))}
         </div>
@@ -129,7 +129,7 @@ export default function Home({ blogPosts }) {
           title={t("pages.homepage.blog.title")}
           subTitle={t("pages.homepage.blog.subtitle")}
         />
-        <div className="flex flex-wrap justify-around gap-6">
+        <div className="flex flex-wrap justify-center gap-10">
           {blogPosts?.map((post, i) => (
             <BlogCard
               key={i}

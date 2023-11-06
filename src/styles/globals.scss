@@ -73,6 +73,30 @@ footer {
   all: revert;
 }
 
+.markdown {
+  padding: 0 var(--padding-y);
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--blue);
+    font-family: var(--font-barlow);
+    font-weight: 500;
+  }
+
+  img {
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  p {
+    font-weight: lighter;
+    font-size: var(--fs-m);
+  }
+}
+
 .subtitle {
   font-size: var(--fs-s);
   color: var(--blue);

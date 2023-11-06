@@ -28,17 +28,17 @@ const Navbar = () => {
   const linksClasses = `text-l leading-6 text-dark font-normal uppercase ${barlow.className}`;
 
   return (
-    <header className="fixed z-10 w-full">
+    <header className="fixed z-50 w-full">
       <nav
-        className="mx-auto bg-white flex items-center justify-between p-6 lg:px-8 "
+        className="mx-auto bg-white flex items-center justify-between p-6 lg:px-8"
         aria-label="CDEFF"
       >
-        <div className="flex lg:flex-1">
+        <div className="flex xl:flex-1">
           <CompanyLogo />
         </div>
 
         {/* Large menu */}
-        <div className="flex lg:hidden">
+        <div className="flex xl:hidden">
           <CTAButton />
           <button
             type="button"
@@ -49,7 +49,7 @@ const Navbar = () => {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <Popover.Group className="hidden lg:flex lg:gap-x-8">
+        <Popover.Group className="hidden xl:flex xl:gap-x-8">
           {links.map(({ href, name, subLinks }, i) =>
             subLinks ? (
               <Dropdown link={name} subLinks={subLinks} key={i} />
@@ -60,7 +60,7 @@ const Navbar = () => {
             )
           )}
         </Popover.Group>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div className="hidden xl:flex xl:flex-1 xl:justify-end">
           <LanguageSelector />
           <CTAButton />
         </div>
@@ -70,13 +70,13 @@ const Navbar = () => {
 
       <Dialog
         as="div"
-        className="lg:hidden"
+        className="xl:hidden"
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-50 overflow-y-auto bg-white px-6 py-6 sm:max-w-sm ring-1 ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <CompanyLogo />
+            <CompanyLogo isLargeMenu={false} />
             <CloseButton handleClose={() => setMobileMenuOpen(false)} />
           </div>
           <div className="mt-6 flow-root">

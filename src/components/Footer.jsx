@@ -64,9 +64,30 @@ const Footer = () => {
     </div>
   );
 
+  const FooterSocial = ({ sport }) => (
+    <div className="text-white gap-3 flex items-center">
+      <p className={`${barlow.className} uppercase tracking-wider mr-2`}>
+        {sport}
+      </p>
+      <Link href="#">
+        <Icon className="opacity-50 hover:opacity-100" icon="bi:instagram" />
+      </Link>
+      <Link href="#">
+        <Icon
+          className="opacity-50 hover:opacity-100"
+          icon="ic:baseline-facebook"
+        />
+      </Link>
+    </div>
+  );
+
   return (
     <footer className="bg-blue">
       <Container className="py-7">
+        <div className="flex gap-20 justify-center">
+          <FooterSocial sport={t("common.sports.futsal")} />
+          <FooterSocial sport={t("common.sports.basketball")} />
+        </div>
         <hr className="my-6 border-gray-400 mx-auto opacity-50" />
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">{CompanyLogo}</div>

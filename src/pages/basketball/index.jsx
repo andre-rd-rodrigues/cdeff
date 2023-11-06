@@ -11,7 +11,6 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
 function BasketballPage() {
-  const [selectedRankIndex, setSelectedRankIndex] = useState(0);
   const { locale } = useRouter();
 
   const t = useTranslations();

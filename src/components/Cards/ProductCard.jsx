@@ -8,9 +8,7 @@ const ProductCard = ({ title, price, sizes, images, className }) => {
   const t = useTranslations();
 
   return (
-    <div
-      className={`relative flex flex-col shadow-xl max-w-[320px] ${className}`}
-    >
+    <div className={`relative flex flex-col shadow-xl w-[250px] ${className}`}>
       <div className="relative h-[350px]">
         <Image
           src={images[0]}

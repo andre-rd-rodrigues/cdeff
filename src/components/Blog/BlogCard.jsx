@@ -1,5 +1,6 @@
 import Button from "@/components/Button/Button";
 import { barlow } from "@/styles/fonts";
+import { DATE_FORMAT } from "@/utils";
 import dayjs from "dayjs";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -31,7 +32,7 @@ function BlogCard({ article }) {
         />
       </div>
       <p className="text-sm font-light text-gray-400 px-5 pt-5">
-        {dayjs(date).locale(locale).format("MMMM DD, YYYY")}
+        {dayjs(date).locale(locale).format(DATE_FORMAT)}
       </p>
       <div className="px-5 pt-3 pb-8">
         <h2

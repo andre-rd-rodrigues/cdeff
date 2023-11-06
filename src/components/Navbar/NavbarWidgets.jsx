@@ -14,7 +14,7 @@ const CTAButton = () => {
   );
 };
 
-const CompanyLogo = () => {
+const CompanyLogo = ({ isLargeMenu = true }) => {
   const t = useTranslations();
   return (
     <Link href="/" className="flex items-center">
@@ -26,7 +26,9 @@ const CompanyLogo = () => {
         alt=""
       />
       <p
-        className={`${barlow.className} uppercase text-blue mx-5 font-semibold text-l`}
+        className={`${barlow.className} uppercase ${
+          isLargeMenu && "invisible sm:visible"
+        } text-blue mx-5 font-semibold text-l`}
       >
         {t("components.navbar.title")}
       </p>

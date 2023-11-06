@@ -27,3 +27,26 @@
   z-index: 2;
   font-weight: 500;
 }
+
+.containerBlogPage {
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  justify-content: end;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--padding-y) 30px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #21366be7;
+    z-index: 1;
+  }
+}

@@ -1,15 +1,13 @@
 import Card from "@/components/Cards/Card";
+import EventCard from "@/components/Cards/EventCard";
 import IconCard from "@/components/Cards/IconCard/IconCard";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
+import { SPORTS } from "@/utils";
 import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 
-const SPORTS = {
-  BASKETBALL: "basketball",
-  FUTSAL: "futsal"
-};
 function TournamentsPage() {
   const [selectedSport, setSelectedSport] = useState(SPORTS.BASKETBALL);
 
@@ -40,6 +38,20 @@ function TournamentsPage() {
             iconName="ph:soccer-ball"
             isSelected={selectedSport === SPORTS.FUTSAL}
             onClick={() => setSelectedSport(SPORTS.FUTSAL)}
+          />
+        </div>
+        <div className="my-16">
+          <EventCard
+            event={{
+              title: "Nome do evento",
+              description:
+                "Descrição do evento adja ldajs daskj dlajd laksjd lasijd lashd kasd gkag dakjsgd kagd aksjhgd kajhsdg askjhg akjh ",
+              date: "2023-11-06T00:06:53.715Z",
+              image:
+                "https://images.unsplash.com/photo-1628779238951-be2c9f2a59f4?auto=format&fit=crop&q=80&w=1587&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+              slug: "slug-do-evento",
+              location: "Local do evento"
+            }}
           />
         </div>
       </Section>

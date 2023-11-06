@@ -7,7 +7,7 @@ import ReactMarkdown from "react-markdown";
 require("dayjs/locale/pt");
 require("dayjs/locale/en");
 
-const BlogPost = ({ post, metadata }) => {
+const TournamentDetailsPage = ({ post, metadata }) => {
   /*   const { date, description, id, slug, title, image } = metadata; */
   const { locale } = useRouter();
 
@@ -25,7 +25,7 @@ const BlogPost = ({ post, metadata }) => {
   );
 };
 
-export default BlogPost;
+export default TournamentDetailsPage;
 
 export const getStaticPaths = async (params) => {
   const publishedPosts = await getPosts("en");

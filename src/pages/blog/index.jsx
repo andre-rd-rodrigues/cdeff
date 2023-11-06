@@ -19,7 +19,7 @@ function BlogPage({ posts }) {
       />
       <Section>
         <SectionTitle title={t("pages.blog.recentArticles")} />
-        <div className="flex flex-wrap justify-around gap-6">
+        <div className="flex flex-wrap gap-10 justify-center md:justify-start">
           {posts?.map((post, i) => (
             <BlogCard
               key={i}
