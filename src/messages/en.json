@@ -2,10 +2,11 @@
   "pages": {
     "homepage": {
       "title": {
-        "upperTitle": "CDEFF",
-        "main": "Sports Club of Francisco Franco School",
-        "sub": "Sports shaping for life."
+        "upperTitle": "Welcome to our Club!",
+        "main": "Francisco Franco School Sports Club",
+        "sub": "This is a Club with a young spirit, aimed at the union and training of people and athletes from different modalities. Come and get to know us a little more!"
       },
+
       "sports": {
         "basket": {
           "title": "Basketball",
@@ -41,22 +42,30 @@
       }
     },
     "about": {
-      "title": "About us",
+      "title": "Sobre nós",
       "welcome": {
-        "subtitle": "our story",
+        "subtitle": "Club History",
         "title": "Welcome to CDEFF",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In massa tempor nec feugiat nisl pretium. Tempor orci eu lobortis elementum nibh tellus. Eget dolor morbi non arcu risus quis varius quam."
+        "description": "The Clube Desportivo da Escola Francisco Franco (CDEFF) is dedicated to training athletes in basketball, futsal, and orienteering, having been founded on October 24, 2005. The Club is part of the Escola Secundária Francisco Franco, in the city of Funchal, whose main message is about unity and the formation of a school community directly related to sports, not only considering the competitive aspect but above all the educational aspect. Currently, it has approximately 150 athletes registered in all training categories between the ages of 5 and 19, including a senior women's team that stands out in the Women's Basketball I League. CDEFF seeks to create habits of occupying young people's free time through sports, complementing school activities, promoting well-being, health, adherence to rules, and their social integration. Our main goal is to train and prepare athletes for the future, both sportively and personally, always including the values of sport and life, justifying the growth in the number of athletes who want to be trained at our Club."
       },
+
       "mission": {
-        "subtitle": "mission",
-        "title": "It’s not how you win the game",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+        "subtitle": "Mission",
+        "title": "Promoting education through sports",
+        "description": "Our mission is to promote the interest of children and youth aged between 5 and 19 in the development of sports practice, based on principles of ethics, competitive and social spirit, and the integral formation of the athletes, maintaining high standards of demand and quality, where human and sports development in young people is reconciled."
+      },
+      "vision": {
+        "subtitle": "Vision and Values",
+        "title": "CDEFF aims to be a benchmark",
+        "description": "CDEFF aims to occupy a position of great regional and national reference in the training of young people in various sports, at a high level of quality, enabling them to achieve higher performance levels, in order to keep up with the growth in the number of registered athletes and their values, as well as the goal of continuous improvement of the quality of services provided to current and future athletes. The core values include the importance of sports opportunities that all young people should have, coupled with the importance of providing all athletes with all the necessary conditions for physical exercise and sport, as well as the following principles: team spirit and mutual aid, the direct contribution to life training (based on the slogan “Sport forming for life”), promoting the academic success of athletes, and the values of sportsmanship, ethics, responsibility, friendship, respect, punctuality, discipline, commitment, dedication, fair play, and guaranteeing a healthy lifestyle."
       },
       "departments": "Departments",
       "sponsors": {
-        "title": "Our sponsors",
-        "subtitle": "sponsors"
+        "title": "Our Sponsors",
+        "subtitle": "Sponsors",
+        "description": "Our existence would not be possible without the support of our sponsors and partners, who support us daily towards our growth, and are fundamental elements in our success. To all of you, Thank you! Want to support our Club? Become a sponsor/partner!"
       },
+
       "activities": {
         "title": "Activities",
         "subtitle": "activities",
@@ -121,7 +130,15 @@
       "title": "Activities",
       "section_1": {
         "title": "ATL",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+        "description": "There’s nothing better than taking the time to have fun and make new friends! In our Easter and Summer ATL, we have activities that you will love, from nautical activities, trips to the beach and the movies, cooking, karaoke, interactive games and much more! Come and live a unique experience, develop new skills and meet new people who will probably become friends for life! We promise to guarantee maximum fun and happiness at all times!\nFor more information, please contact us!"
+      },
+      "section_2": {
+        "title": "Birthday Organization",
+        "description": "In our Club, we have the solution to create unforgettable birthday parties for birthdays and guests, with the possibility of carrying out various recreational and sports activities in the school’s indoor gymnasium. Come and have fun with us!\nFor bookings or more informations, please contact us."
+      },
+      "section_3": {
+        "title": "Orienteering",
+        "description": "Recently, the Club joined the Orienteering modality – ORIFF, with prof. Alexandra Fonseca in charge of this department.\nAs the name implies, orienteering is a sport where, in addition to the athlete having to complete a course in the best possible time, you should orient yourself only with the help of a map and a compass.\nThis modality, in addition to contributing to the improvement of physical and motor skills: cardio, endurance, respiratory capacity, muscle work and proprioception, of young people and other practicing athletes (of the most varied age groups, from an early age to where the physical condition allows), it contributes to the development of mental and intellectual capacities such as: reflection, deduction, logic, discovery and sense of direction. Thus increasing self-confidence, socialization, physical and mental well-being, also enjoying the surroundings with the environment and nature.\nFor more information, please contact us."
       }
     },
     "store": {
@@ -310,7 +327,8 @@
       "learnMore": "Learn more",
       "readMore": "Read more",
       "book": "Book now",
-      "contact": "contact us"
+      "contact": "contact now",
+      "contacts": "contact us"
     },
     "links": {
       "contacts": "contacts"

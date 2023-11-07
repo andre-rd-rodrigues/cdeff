@@ -3,7 +3,7 @@ import Container from "./Container/Container";
 
 function Section({ children, containerClassName, sectionClassName }) {
   return (
-    <section className={`${containerClassName} w-full py-16`}>
+    <section className={`${containerClassName} py-5 w-full`}>
       <Container className={`${sectionClassName} py-6`}>{children}</Container>
     </section>
   );

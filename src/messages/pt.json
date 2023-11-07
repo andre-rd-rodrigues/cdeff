@@ -2,10 +2,11 @@
   "pages": {
     "homepage": {
       "title": {
-        "upperTitle": "CDEFF",
+        "upperTitle": "Bem-vindo(a) ao nosso Clube!",
         "main": "Clube Desportivo da Escola Francisco Franco",
-        "sub": "Sports shaping for life."
+        "sub": "Este é um Clube de espírito jovem, direcionado para a união e formação de pessoas e atletas de diversas modalidades. Vem conhecer-nos um pouco mais!"
       },
+
       "sports": {
         "basket": {
           "title": "Basketball",
@@ -41,21 +42,28 @@
       }
     },
     "about": {
-      "title": "About us",
+      "title": "Sobre nós",
+
       "welcome": {
-        "subtitle": "our story",
-        "title": "Welcome to CDEFF",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In massa tempor nec feugiat nisl pretium. Tempor orci eu lobortis elementum nibh tellus. Eget dolor morbi non arcu risus quis varius quam."
+        "subtitle": "História do Clube",
+        "title": "Bem-vindo ao CDEFF",
+        "description": "O Clube Desportivo da Escola Francisco Franco (CDEFF) destina-se à formação de atletas na modalidade de basquetebol, futsal e orientação, tendo sido fundado a 24 de outubro de 2005. O Clube encontra-se inserido na Escola Secundária Francisco Franco, na cidade do Funchal, cuja principal mensagem passa pela união e formação de uma comunidade escolar diretamente relacionada ao desporto, não tendo apenas em consideração a vertente competitiva, mas sobretudo a vertente formativa. Atualmente, conta com, aproximadamente, 150 atletas inscritos em todos os escalões de formação entre os 5 e os 19 anos, incluindo uma equipa sénior feminina destacada na I Liga Feminina de Basquetebol. O CDEFF procura criar hábitos de ocupação dos tempos livres dos jovens, através do desporto, como complemento das atividades escolares, promovendo o bem-estar, a saúde, o cumprimento de regras e a sua integração social. O nosso objetivo principal é formar e preparar os atletas para o futuro, tanto a nível desportivo como pessoal, incluindo sempre os valores do desporto e da vida, justificando o crescimento em número dos atletas que pretendem ser formados no nosso Clube."
       },
       "mission": {
-        "subtitle": "mission",
-        "title": "It’s not how you win the game",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+        "subtitle": "Missão",
+        "title": "Promover a educação e formação desportiva",
+        "description": "A nossa missão consiste em promover o interesse das crianças e jovens com idades compreendidas entre os 5 e os 19 anos para o desenvolvimento da prática desportiva, assente em princípios de ética, do espírito competitivo e social e da formação integral dos atletas, mantendo elevados padrões de exigência e qualidade, onde se concilia o desenvolvimento humano e desportivo nos jovens."
       },
-      "departments": "Departments",
+      "vision": {
+        "subtitle": "Visão e Valores",
+        "title": "O CDEFF pretende ser referência",
+        "description": "O CDEFF pretende ocupar uma posição de grande referência regional e nacional na formação de jovens nas diversas modalidades, num elevado nível de qualidade, permitindo-os alcançar patamares de rendimento superior, de modo a acompanhar o crescimento em número dos atletas inscritos e os seus valores, como também o objetivo de constante melhoria da qualidade dos serviços prestados aos atuais e futuros atletas. Os valores essenciais incluem a importância das oportunidades desportivas que todos os jovens devem ter, aliado à importância do fornecimento, a todos os atletas, de todas as condições necessárias à prática de exercício físico e desporto, bem como dos seguintes princípios: espírito de equipa e de entreajuda, a contribuição direta para a formação para a vida (assente no próprio slogan “O desporto a formar para a vida”), a promoção do sucesso escolar dos atletas e os valores do desporto, a ética, responsabilidade, amizade, respeito, pontualidade, disciplina, o empenho, dedicação, fair play e a garantia de um estilo de vida saudável."
+      },
+      "departments": "Departamentos",
       "sponsors": {
-        "title": "Our sponsors",
-        "subtitle": "sponsors"
+        "title": "Os nossos patrocinadores",
+        "subtitle": "Patrocinadores",
+        "description": "A nossa existência não seria possível sem o apoio dos nossos patrocinadores e parceiros, que nos apoiam diariamente em prol do nosso crescimento, apresentando-se como elementos fundamentais no nosso sucesso. A todos vocês, Obrigado! Quer apoiar o nosso Clube? Torne-se um patrocinador/parceiro!"
       },
       "activities": {
         "title": "Activities",
@@ -63,8 +71,8 @@
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
       },
       "awards": {
-        "title": "Our Awards",
-        "subtitle": "awards",
+        "title": "os nossos prémios",
+        "subtitle": "prémios",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
         "awardsList": [
           {
@@ -107,39 +115,87 @@
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
       },
       "ranks": {
-        "title": "Choose the rank",
-        "subtitle": "ranks",
-        "ranksList": ["young", "mid", "senior"]
+        "title": "Select the rank",
+        "subtitle": "rank details",
+        "young": "young",
+        "senior": "senior"
       }
-    }
+    },
+    "tournaments": {
+      "title": "Tournaments",
+      "selectSport": "Select the sport"
+    },
+    "activities": {
+      "title": "Actitividades",
+      "section_1": {
+        "title": "ATL",
+        "description": "Não há nada melhor que ocupar o tempo a se divertir e fazer novas amizades! No nosso ATL de Páscoa e Verão, temos atividades que vais adorar, desde atividades náuticas, idas à praia e ao cinema, culinária, karaoke, jogos interativos e muito mais! Vem viver uma experiência única, desenvolver novas competências e conhecer pessoas novas que, provavelmente, se tornarão amigos para toda a vida! Prometemos garantir sempre a máxima diversão e felicidade! Para mais informações, entra em contacto connosco.\n(Se tens entre 6 a 14 anos, garante já a tua inscrição aqui! Vem divertir-te connosco!)"
+      },
+      "section_2": {
+        "title": "Organização de Aniversários",
+        "description": "No nosso Clube, temos a solução para criar festas de aniversário inesquecíveis para aniversariantes e convidados, com a possibilidade de realizar diversas atividades lúdico-desportivas no ginásio interior da Escola. Vem divertir-te connosco!\nPara marcações ou mais informações, entra em contacto connosco."
+      },
+      "section_3": {
+        "title": "Orientação",
+        "description": "Recentemente, o Clube integrou a modalidade de Orientação – ORIFF, tendo como responsável, por este departamento, a prof. Alexandra Fonseca.\nComo o nome indica, a corrida de orientação é um desporto onde, além do atleta ter de completar um percurso no melhor tempo possível, deve orientar-se unicamente só com a ajuda de um mapa e de uma bússola.\nEsta modalidade para além de contribuir para o melhoramento das capacidades físicas e motoras: cárdio, resistência capacidade respiratória, trabalho muscular e propriocepção, dos jovens e demais atletas praticantes (das mais variadas faixas etárias, desde tenra idade até onde a condição física permitir), contribui para o desenvolvimento das capacidades mentais e intelectuais tais como: de reflexão, dedução, lógica, descoberta e sentido de orientação. Aumentando assim a autoconfiança, socialização, bem-estar físico e mental, desfrutando também da envolvência com o meio ambiente e natureza.\nPara mais informações, entra em contacto connosco."
+      }
+    },
+    "store": {
+      "title": "Store"
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions"
+    },
+    "contacts": {
+      "title": "Contacts",
+      "subtitle": "Any question or suggestion? Contact us.",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "contactItems": [
+        {
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
+          "icon": "mdi:location"
+        },
+        {
+          "description": "+351 95002923",
+          "href": "tel:+35195002923",
+          "icon": "mingcute:phone-fill"
+        },
+        {
+          "description": "test@gmail.com",
+          "href": "mailto: test@gmail.com",
+          "icon": "ic:baseline-email"
+        }
+      ]
+    },
+    "blog": { "title": "Blog", "recentArticles": "Recent articles" }
   },
   "components": {
     "navbar": {
-      "title": "Sports shaping for life",
+      "title": "O desporto a formar para a vida",
       "links": [
         {
-          "name": "About",
+          "name": "Sobre",
           "href": "/about",
           "subLinks": [
             {
-              "name": "About Us",
+              "name": "Sobre nós",
               "href": "/about"
             },
             {
-              "name": "Departments",
+              "name": "Departamentos",
               "href": "/about#departments"
             },
             {
-              "name": "Sponsors",
+              "name": "Patrocinadores",
               "href": "/about/sponsors"
             }
           ]
         },
         {
-          "name": "Sports",
+          "name": "Modalidades",
           "href": null,
           "subLinks": [
-            { "name": "Basketball", "href": "/basketball" },
+            { "name": "Basquetebol", "href": "/basketball" },
             {
               "name": "Futsal",
               "href": "/futsal"
@@ -147,17 +203,17 @@
           ]
         },
         {
-          "name": "Tournaments",
+          "name": "Torneios",
           "href": "/tournaments",
           "subLinks": null
         },
         {
-          "name": "Activities",
+          "name": "Actividades",
           "href": "/activities",
           "subLinks": null
         },
         {
-          "name": "Store",
+          "name": "Loja",
           "href": "/store",
           "subLinks": null
         },
@@ -167,19 +223,19 @@
           "subLinks": null
         },
         {
-          "name": "Contacts",
+          "name": "Contactos",
           "href": "/contacts",
           "subLinks": null
         },
         {
-          "name": "FAQs",
+          "name": "Perguntas Frequentes",
           "href": "/faqs",
           "subLinks": null
         }
       ]
     },
     "contactHero": {
-      "title": "have a question? contact us."
+      "title": "Alguma questão? não hesite em contactar-nos."
     },
     "faqs": {
       "title": "Frequently Asked Questions",
@@ -209,16 +265,69 @@
           "answer": "The minimum age to join the club is 6 years old."
         }
       ]
+    },
+    "footer": {
+      "links": [
+        {
+          "title": "Resources",
+          "subLinks": [
+            {
+              "name": "Flowbite",
+              "href": "#"
+            },
+            {
+              "name": "Flowbite",
+              "href": "#"
+            },
+            {
+              "name": "Flowbite",
+              "href": "#"
+            }
+          ]
+        },
+        {
+          "title": "Resources",
+          "subLinks": [
+            {
+              "name": "Flowbite",
+              "href": "#"
+            },
+            {
+              "name": "Flowbite",
+              "href": "#"
+            },
+            {
+              "name": "Flowbite",
+              "href": "#"
+            }
+          ]
+        },
+        {
+          "title": "Contacts",
+          "subLinks": [
+            {
+              "href": "mailto: test@gmail.com",
+              "icon": "mingcute:phone-fill",
+              "name": "test@gmail.com"
+            }
+          ]
+        }
+      ]
     }
   },
   "common": {
+    "sports": {
+      "basketball": "Basquetebol",
+      "futsal": "Futsal"
+    },
     "buttons": {
-      "registration": "Registration",
-      "seeMore": "See more",
-      "learnMore": "Learn more",
-      "readMore": "Read more",
-      "book": "Book now",
-      "contact": "contact us"
+      "registration": "Inscrição",
+      "seeMore": "Ver mais",
+      "learnMore": "Saber mais",
+      "readMore": "Ler mais",
+      "book": "Reservar",
+      "contact": "contactar",
+      "contacts": "contactos"
     },
     "links": {
       "contacts": "contacts"
@@ -245,9 +354,8 @@
     ],
     "products": [
       {
-        "id": "p1",
+        "sport": "futsal",
         "title": "Blue Denim Jacket",
-        "description": "A stylish blue denim jacket perfect for casual wear.",
         "price": 59.99,
         "images": [
           "https://images.unsplash.com/photo-1598971862255-a19ede03c104?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -256,26 +364,14 @@
         "sizes": ["S", "M", "L", "XL"]
       },
       {
-        "id": "p2",
-        "title": "Black Leather Shoes",
-        "description": "Comfortable and elegant black leather shoes.",
-        "price": 79.99,
+        "sport": "basketball",
+        "title": "Blue Denim Jacket",
+        "price": 59.99,
         "images": [
           "https://images.unsplash.com/photo-1598971862255-a19ede03c104?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "https://images.unsplash.com/photo-1598971862255-a19ede03c104?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         ],
-        "sizes": ["7", "8", "9", "10", "11"]
-      },
-      {
-        "id": "p3",
-        "title": "Red Silk Dress",
-        "description": "A beautiful red silk dress for special occasions.",
-        "price": 99.99,
-        "images": [
-          "https://images.unsplash.com/photo-1598971862255-a19ede03c104?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "https://images.unsplash.com/photo-1598971862255-a19ede03c104?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        ],
-        "sizes": ["S", "M", "L"]
+        "sizes": ["S", "M", "L", "XL"]
       }
     ]
   }

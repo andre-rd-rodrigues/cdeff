@@ -14,3 +14,5 @@ export const SPORTS = {
   BASKETBALL: "basketball",
   FUTSAL: "futsal"
 };
+
+export const TEL_LINK = "tel:+351 914 333 333";
