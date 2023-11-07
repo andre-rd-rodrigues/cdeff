@@ -130,6 +130,10 @@ const Navbar = () => {
                     </div>
                   )
                 )}
+                <LanguageSelector
+                  mobile
+                  handleCloseMenu={() => setMobileMenuOpen(false)}
+                />
               </div>
             </div>
           </div>

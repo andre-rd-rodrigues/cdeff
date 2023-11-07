@@ -7,12 +7,12 @@ const TextSection = ({ subtitle, title, description, labelOptions }) => {
 
   return (
     <div className="w-full md:w-1/2 p-4 flex justify-center items-center">
-      <div className="max-w-md">
+      <div>
         <h3 className="subtitle uppercase font-semibold tracking-wide">
           {subtitle}
         </h3>
         <h2 className={`${barlow.className} section-header`}>{title}</h2>
-        <p className="mb-8">{description}</p>
+        <p className="mb-8 text-justify">{description}</p>
         {labelOptions && (
           <Link href={href} className="w-full text-right md:text-left">
             <Button label={label} />

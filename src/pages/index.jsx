@@ -27,7 +27,7 @@ export default function Home({ blogPosts }) {
 
   return (
     <main>
-      <Carousel>
+      <Carousel autoPlay timeoutProp={4000}>
         <HeroHeader
           linkLabel={t("common.buttons.registration")}
           href="#"
@@ -42,32 +42,45 @@ export default function Home({ blogPosts }) {
           </h1>
           <p className="tracking-wide">{t("pages.homepage.title.sub")}</p>
         </HeroHeader>
+
+        <HeroSection
+          imageSrc="https://images.unsplash.com/photo-1459865264687-595d652de67e?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          linkLabel={t("common.buttons.registration")}
+          subtitle={t("pages.homepage.hero_1.subtitle")}
+          title={t("pages.homepage.hero_1.title")}
+          href="#"
+          className="keen-slider__slide"
+        />
       </Carousel>
 
       {/* Sports section */}
-      <Section
-        sectionClassName="gap-6 flex justify-around flex-wrap align-center"
-        containerClassName={"max-w-2xl m-auto"}
-      >
-        <Link href="/sports/basketball">
-          <IconCard
-            title={t("pages.homepage.sports.basket.title")}
-            description={t("pages.homepage.sports.basket.description")}
-            iconName="ph:basketball"
-          />
-        </Link>
-        <Link href="/sports/futsal">
-          <IconCard
-            title={t("pages.homepage.sports.futsal.title")}
-            description={t("pages.homepage.sports.futsal.description")}
-            iconName="ph:soccer-ball"
-          />
-        </Link>
+      <Section containerClassName={"max-w-2xl m-auto"}>
+        <SectionTitle
+          title={t("pages.homepage.sports.title")}
+          className={"text-center"}
+        />
+        <div className="gap-6 flex justify-around flex-wrap align-center">
+          <Link href="/sports/basketball">
+            <IconCard
+              title={t("pages.homepage.sports.basket.title")}
+              description={t("pages.homepage.sports.basket.description")}
+              iconName="ph:basketball"
+            />
+          </Link>
+          <Link href="/sports/futsal">
+            <IconCard
+              title={t("pages.homepage.sports.futsal.title")}
+              description={t("pages.homepage.sports.futsal.description")}
+              iconName="ph:soccer-ball"
+            />
+          </Link>
+        </div>
       </Section>
 
       {/* About section */}
       <Section containerClassName="bg-white">
         <TextWithImage
+          subtitle={t("pages.homepage.welcome.subtitle")}
           title={t("pages.homepage.welcome.title")}
           description={t("pages.homepage.welcome.description")}
           imgSrc={
@@ -82,7 +95,7 @@ export default function Home({ blogPosts }) {
 
       {/* Departments section */}
       <Section containerClassName="text-center">
-        <DepartmentsSection locale={locale} />
+        <DepartmentsSection locale={locale} knowMore />
       </Section>
 
       {/* Hero 1 */}
@@ -116,7 +129,7 @@ export default function Home({ blogPosts }) {
       {/* Hero 2 */}
       <HeroSection
         imageSrc="https://images.unsplash.com/photo-1459865264687-595d652de67e?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        linkLabel={t("common.buttons.registration")}
+        linkLabel={t("common.buttons.learnMore")}
         subtitle={t("pages.homepage.hero_2.subtitle")}
         title={t("pages.homepage.hero_2.title")}
         href="#"

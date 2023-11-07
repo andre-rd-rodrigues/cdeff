@@ -1,13 +1,74 @@
 import { barlow } from "@/styles/fonts";
-import { Popover, Transition } from "@headlessui/react";
+import { Disclosure, Popover, Transition } from "@headlessui/react";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Icon } from "@iconify/react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Fragment } from "react";
 
-function LanguageSelector() {
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
+
+const linksClasses = `text-l leading-6 text-dark font-normal uppercase ${barlow.className}`;
+
+function LanguageSelector({ mobile, handleCloseMenu }) {
+  const t = useTranslations();
   const { route } = useRouter();
 
+  if (mobile) {
+    return (
+      <Disclosure as="div">
+        {({ open }) => (
+          <>
+            {/* Navbar link */}
+            <Disclosure.Button
+              className={`flex w-full text-xl text-l items-center justify-between px-3 ${linksClasses}`}
+            >
+              <div className="flex items-center gap-2 -ml-1">
+                <Icon
+                  icon="ph:globe-thin"
+                  fontSize={33}
+                  className="text-dark"
+                />
+                {t("components.languageSelector.title")}
+              </div>
+              <ChevronDownIcon
+                className={classNames(
+                  open ? "rotate-180" : "",
+                  "h-5 w-5 flex-none"
+                )}
+                aria-hidden="true"
+              />
+            </Disclosure.Button>
+
+            {/* Navbar sublinks */}
+            <Disclosure.Panel className="mt-2 space-y-2">
+              <Disclosure.Button
+                as={Link}
+                href={route}
+                locale={"en"}
+                className={`block py-2 pl-6 pr-3 ${linksClasses}`}
+                onClick={() => handleCloseMenu(false)}
+              >
+                English
+              </Disclosure.Button>
+              <Disclosure.Button
+                as={Link}
+                href={route}
+                locale={"pt"}
+                className={`block py-2 pl-6 pr-3 ${linksClasses}`}
+                onClick={() => handleCloseMenu(false)}
+              >
+                Português
+              </Disclosure.Button>
+            </Disclosure.Panel>
+          </>
+        )}
+      </Disclosure>
+    );
+  }
   return (
     <Popover className="relative mx-10 ">
       {/* Icon Button */}

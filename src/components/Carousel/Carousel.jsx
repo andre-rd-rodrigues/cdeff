@@ -1,10 +1,25 @@
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
+import { useState } from "react";
 
-export default function Carousel({ children, autoPlay, isSpaced }) {
+export default function Carousel({
+  children,
+  autoPlay,
+  isSpaced,
+  timeoutProp = 2500
+}) {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [loaded, setLoaded] = useState(false);
+
   // Define the common configuration
   let config = {
-    loop: true
+    loop: true,
+    slideChanged(slider) {
+      setCurrentSlide(slider.track.details.rel);
+    },
+    created() {
+      setLoaded(true);
+    }
   };
 
   if (isSpaced) {
@@ -23,7 +38,7 @@ export default function Carousel({ children, autoPlay, isSpaced }) {
     };
   }
 
-  const [sliderRef] = useKeenSlider(config, [
+  const [sliderRef, instanceRef] = useKeenSlider(config, [
     (slider) => {
       if (!autoPlay) return;
 
@@ -37,7 +52,7 @@ export default function Carousel({ children, autoPlay, isSpaced }) {
         if (mouseOver) return;
         timeout = setTimeout(() => {
           slider.next();
-        }, 2500);
+        }, timeoutProp);
       }
       slider.on("created", () => {
         slider.container.addEventListener("mouseover", () => {
@@ -59,8 +74,29 @@ export default function Carousel({ children, autoPlay, isSpaced }) {
   // children need to have this className: "keen-slider__slide"
 
   return (
-    <div ref={sliderRef} className="keen-slider">
-      {children}
-    </div>
+    <>
+      <div className="navigation-wrapper">
+        <div ref={sliderRef} className="keen-slider">
+          {children}
+        </div>
+      </div>
+      {loaded && instanceRef.current && (
+        <div className="dots">
+          {[
+            ...Array(instanceRef.current.track.details.slides.length).keys()
+          ].map((idx) => {
+            return (
+              <button
+                key={idx}
+                onClick={() => {
+                  instanceRef.current?.moveToIdx(idx);
+                }}
+                className={"dot" + (currentSlide === idx ? " active" : "")}
+              />
+            );
+          })}
+        </div>
+      )}
+    </>
   );
 }

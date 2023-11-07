@@ -84,6 +84,7 @@ footer {
     color: var(--blue);
     font-family: var(--font-barlow);
     font-weight: 500;
+    margin: 0;
   }
 
   img {
@@ -95,6 +96,7 @@ footer {
   p {
     font-weight: lighter;
     font-size: var(--fs-m);
+    margin: 0;
   }
 }
 
@@ -108,4 +110,41 @@ footer {
   text-transform: uppercase;
   margin-bottom: 40px;
   color: var(--blue);
+}
+
+.departments_section_title {
+  p,
+  h2 {
+    font-size: var(--fs-l-s);
+  }
+}
+
+.navigation-wrapper {
+  position: relative;
+}
+
+.dots {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+  transform: translateY(-50px);
+}
+
+.dot {
+  border: none;
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.365);
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot.active {
+  background: white;
 }

@@ -6,8 +6,12 @@
         "main": "Francisco Franco School Sports Club",
         "sub": "This is a Club with a young spirit, aimed at the union and training of people and athletes from different modalities. Come and get to know us a little more!"
       },
-
+      "hero_1": {
+        "subtitle": "VII Futsal International Tournament",
+        "title": "Do you want to register your Club in the biggest International Futsal Tournament in the country? Guarantee your registration now! 👇🏻"
+      },
       "sports": {
+        "title": "Our sports",
         "basket": {
           "title": "Basketball",
           "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
@@ -18,23 +22,21 @@
         }
       },
       "welcome": {
-        "title": "Welcome to CDEFF",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In massa tempor nec feugiat nisl pretium. Tempor orci eu lobortis elementum nibh tellus. Eget dolor morbi non arcu risus quis varius quam."
+        "subtitle": "CDEFF",
+        "title": "Welcome to our Club!",
+        "description": "This is a Club with a young spirit, aimed at the union and training of people and athletes from different modalities. Come and get to know us a little more!"
       },
       "departments": {
         "title": "Departments"
       },
-      "hero_1": {
-        "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-        "subtitle": "Tournaments"
-      },
+
       "store": {
         "title": "Products",
         "subtitle": "Store"
       },
       "hero_2": {
-        "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-        "subtitle": "Tournaments"
+        "title": "We have the right modalities for you! Come and meet them!",
+        "subtitle": "Sports"
       },
       "blog": {
         "title": "recent articles",
@@ -168,9 +170,17 @@
         }
       ]
     },
-    "blog": { "title": "Blog", "recentArticles": "Recent articles" }
+    "blog": { "title": "Blog", "recentArticles": "Recent articles" },
+    "notFound": {
+      "title": "404",
+      "subtitle": "Page not found",
+      "description": "The page you are looking for does not exist."
+    }
   },
   "components": {
+    "languageSelector": {
+      "title": "Language"
+    },
     "navbar": {
       "title": "Sports shaping for life",
       "links": [
@@ -328,29 +338,117 @@
       "readMore": "Read more",
       "book": "Book now",
       "contact": "contact now",
-      "contacts": "contact us"
+      "contacts": "contact us",
+      "goBack": "Go back"
     },
     "links": {
       "contacts": "contacts"
     },
     "departments": [
       {
-        "name": "António Ferreira",
-        "position": "President",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-        "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "department": "Management",
+        "members": [
+          {
+            "name": "Prof. Fernando Alves",
+            "position": "Club President",
+            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
       },
       {
-        "name": "António Ferreira",
-        "position": "President",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-        "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "department": "Technical Coordination",
+        "members": [
+          {
+            "name": "Prof. Joaquim Pereira",
+            "position": "Technical Coordinator",
+            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
       },
       {
-        "name": "António Ferreira",
-        "position": "President",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-        "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "department": "Basketball Coordination",
+        "members": [
+          {
+            "name": "Prof. Paulo Freitas",
+            "position": "Basketball Coordinator",
+            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "department": "Futsal Coordination",
+        "members": [
+          {
+            "name": "Prof. Tiago Rosa",
+            "position": "Futsal Coordinator",
+            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "department": "Medical",
+        "members": [
+          {
+            "name": "Hospital Particular da Madeira",
+            "position": "Doctor (Basketball)",
+            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          },
+          {
+            "name": "Monumental Medical Center",
+            "position": "Doctor (Futsal)",
+            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "department": "Physiotherapy",
+        "members": [
+          {
+            "name": "Hospital Particular da Madeira",
+            "position": "Physiotherapist (Basketball)",
+            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          },
+          {
+            "name": "Fisiomotriz",
+            "position": "Physiotherapist (Futsal)",
+            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "department": "Finance",
+        "members": [
+          {
+            "name": "Mauro Silva",
+            "position": "Financial Officer",
+            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "department": "Marketing and Communication",
+        "members": [
+          {
+            "name": "Ema Rodrigues",
+            "position": "Marketing and Communication",
+            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          },
+          {
+            "name": "Ana Teixeira",
+            "position": "Marketing and Communication",
+            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "department": "Administrative",
+        "members": [
+          {
+            "name": "Lilibeth Gonçalves",
+            "position": "Administrative Officer",
+            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
       }
     ],
     "products": [

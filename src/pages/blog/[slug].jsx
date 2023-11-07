@@ -27,8 +27,11 @@ const BlogPost = ({ post, metadata }) => {
 
 export default BlogPost;
 
-export const getStaticPaths = async (params) => {
-  const publishedPosts = await getPosts("en");
+export const getStaticPaths = async () => {
+  const publishedPostsEn = await getPosts("en");
+  const publishedPostsPt = await getPosts("pt");
+
+  const publishedPosts = publishedPostsEn.concat(publishedPostsPt);
 
   return {
     paths: publishedPosts.map((post) => {
@@ -46,7 +49,7 @@ export const getStaticProps = async ({ locale, params }) => {
   let { slug } = params;
 
   let { markdown, metadata } = await getPost(slug, locale);
-
+  console.log(locale);
   return {
     props: {
       post: markdown,
