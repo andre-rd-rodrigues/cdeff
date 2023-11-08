@@ -386,6 +386,22 @@
     }
   },
   "common": {
+    "metadata": {
+      "homeTitle": "Francisco Franco School Sports Club",
+      "aboutTitle": "About Us - FF Sports Club",
+      "departmentsTitle": "Departments - FF Sports Club",
+      "sponsorsTitle": "Sponsors - FF Sports Club",
+      "modalitiesTitle": "Modalities - FF Sports Club",
+      "basketballTitle": "Basketball - FF Sports Club",
+      "futsalTitle": "Futsal - FF Sports Club",
+      "tournamentsTitle": "Tournaments - FF Sports Club",
+      "activitiesTitle": "Activities - FF Sports Club",
+      "storeTitle": "Store - FF Sports Club",
+      "blogTitle": "Blog - FF Sports Club",
+      "faqsTitle": "FAQs - FF Sports Club",
+      "contactsTitle": "Contacts - FF Sports Club",
+      "description": "At the Francisco Franco Sports Club, we believe that sports are a tool for personal and social development. Through sports practice, our athletes learn to work as a team, respect others and themselves, be more responsible, and maintain a positive attitude towards life."
+    },
     "sports": {
       "basketball": "Basketball",
       "futsal": "Futsal"

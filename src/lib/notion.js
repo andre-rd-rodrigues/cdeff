@@ -14,7 +14,7 @@ const getPageMetaData = (post) => {
     description: post?.properties?.Description.rich_text[0].plain_text,
     date: post?.last_edited_time,
     slug: post?.properties?.Slug.rich_text[0].plain_text,
-    image: post?.cover?.external.url
+    image: post?.cover?.external?.url
   };
 };
 

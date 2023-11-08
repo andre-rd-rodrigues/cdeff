@@ -1,7 +1,9 @@
+import AppHead from "@/components/AppHead";
 import BlogPageHeader from "@/components/PageHeader/BlogPageHeader";
 import { getPost, getPosts } from "@/lib/notion";
 import { DATE_FORMAT } from "@/utils";
 import dayjs from "dayjs";
+
 import { useRouter } from "next/router";
 import ReactMarkdown from "react-markdown";
 require("dayjs/locale/pt");
@@ -12,16 +14,36 @@ const BlogPost = ({ post, metadata }) => {
   const { locale } = useRouter();
 
   return (
-    <main>
-      <BlogPageHeader
-        image={metadata?.image}
-        title={metadata?.title}
-        date={dayjs(metadata.date).locale(locale).format(DATE_FORMAT)}
+    <>
+      <AppHead
+        title={metadata.title}
+        description={metadata.description}
+        canonical={`https://www.cdeff.com/blog/${post.slug}`}
+        openGraph={{
+          url: `https://www.cdeff.com/blog/${post.slug}`,
+          title: metadata.title,
+          description: metadata.description,
+          datePublished: metadata.created_date,
+          authorName: "Ema Carolina",
+          images: [
+            {
+              url: metadata.image,
+              alt: `${metadata.title} post`
+            }
+          ]
+        }}
       />
-      <div className="max-w-7xl m-auto py-10">
-        <ReactMarkdown className="markdown">{post.parent}</ReactMarkdown>
-      </div>
-    </main>
+      <main>
+        <BlogPageHeader
+          image={metadata?.image}
+          title={metadata?.title}
+          date={dayjs(metadata.date).locale(locale).format(DATE_FORMAT)}
+        />
+        <div className="max-w-7xl m-auto py-10">
+          <ReactMarkdown className="markdown">{post.parent}</ReactMarkdown>
+        </div>
+      </main>
+    </>
   );
 };
 
@@ -32,7 +54,7 @@ export const getStaticPaths = async ({ locales }) => {
 
   return {
     paths: publishedPosts.flat().flatMap((post) => {
-      return locales.map((locale) => ({
+      return locales.map(() => ({
         params: {
           slug: post.properties.Slug.rich_text[0].plain_text
         },

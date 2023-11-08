@@ -408,6 +408,22 @@
     }
   },
   "common": {
+    "metadata": {
+      "homeTitle": "Clube Desportivo da Escola Francisco Franco",
+      "aboutTitle": "Sobre nós - CDEFF",
+      "departmentsTitle": "Departamentos - CDEFF",
+      "sponsorsTitle": "Patrocinadores - CDEFF",
+      "modalitiesTitle": "Modalidades - CDEFF",
+      "basketballTitle": "Basquetebol - CDEFF",
+      "futsalTitle": "Futsal - CDEFF",
+      "tournamentsTitle": "Torneios - CDEFF",
+      "activitiesTitle": "Actividades - CDEFF",
+      "storeTitle": "Loja - CDEFF",
+      "blogTitle": "Blog - CDEFF",
+      "faqsTitle": "FAQs - CDEFF",
+      "contactsTitle": "Contactos - CDEFF",
+      "description": "No Clube Despostivo da Francisco Franco, acreditamos que o desporto é uma ferramenta de desenvolvimento pessoal e social. Através da prática desportiva, os nossos atletas aprendem a trabalhar em equipa, a respeitar os outros e a si próprios, a serem mais responsáveis e a terem uma atitude positiva perante a vida."
+    },
     "sports": {
       "basketball": "Basquetebol",
       "futsal": "Futsal"
