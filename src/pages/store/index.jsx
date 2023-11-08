@@ -31,28 +31,32 @@ function StorePage() {
       />
       <Section>
         <SectionTitle title={t("common.sports.basketball")} />
-        {basketballProducts.map((item, i) => (
-          <ProductCard
-            key={i}
-            title={item.title}
-            images={item.images}
-            price={item.price}
-            sizes={item.sizes}
-          />
-        ))}
+        <div className="flex flex-wrap gap-10 justify-center md:justify-start">
+          {basketballProducts.map((item, i) => (
+            <ProductCard
+              key={i}
+              title={item.title}
+              images={item.images}
+              price={item.price}
+              sizes={item.sizes}
+            />
+          ))}
+        </div>
       </Section>
 
       <Section containerClassName={"bg-white"}>
         <SectionTitle title={t("common.sports.futsal")} />
-        {futsalProducts.map((item, i) => (
-          <ProductCard
-            key={i}
-            title={item.title}
-            images={item.images}
-            price={item.price}
-            sizes={item.sizes}
-          />
-        ))}
+        <div className="flex flex-wrap gap-10 justify-center md:justify-start">
+          {futsalProducts.map((item, i) => (
+            <ProductCard
+              key={i}
+              title={item.title}
+              images={item.images}
+              price={item.price}
+              sizes={item.sizes}
+            />
+          ))}
+        </div>
       </Section>
     </main>
   );

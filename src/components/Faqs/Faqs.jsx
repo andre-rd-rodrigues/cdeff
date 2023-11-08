@@ -24,7 +24,7 @@ function Faqs({ locale }) {
                 )}
 
                 <h1
-                  className={`${barlow.className} mx-4 uppercase text-blue text-xl font-medium`}
+                  className={`${barlow.className} text-start mx-4 uppercase text-blue text-xl font-medium`}
                 >
                   {question}
                 </h1>
