@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["images.unsplash.com", "www.notion.so"]
+    domains: ["images.unsplash.com", "www.notion.so", "drive.google.com"]
   },
   i18n: {
     locales: ["en", "pt"],

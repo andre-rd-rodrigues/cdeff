@@ -14,11 +14,11 @@
         "title": "Modalidades",
         "basket": {
           "title": "Basketball",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          "description": "Eleva teu desempenho e vem jogar basquetebol."
         },
         "futsal": {
           "title": "Futsal",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          "description": "Pratica a velocidade, técnica e união com o futsal."
         }
       },
       "welcome": {
@@ -67,34 +67,87 @@
         "description": "A nossa existência não seria possível sem o apoio dos nossos patrocinadores e parceiros, que nos apoiam diariamente em prol do nosso crescimento, apresentando-se como elementos fundamentais no nosso sucesso. A todos vocês, Obrigado! Quer apoiar o nosso Clube? Torne-se um patrocinador/parceiro!"
       },
       "activities": {
-        "title": "Activities",
-        "subtitle": "activities",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+        "title": "á tua disposição",
+        "subtitle": "Atividades",
+        "description": "O nosso clube é um centro de animação durante todo o ano, oferecendo uma variedade de atividades para todas as idades. Desde a alegria da Primavera com o ATL de Páscoa, repleto de caça aos ovos e atividades manuais, até ao dinâmico ATL de Verão cheio de desportos e oficinas educativas, nunca há um momento aborrecido. Somos especializados em criar celebrações de aniversário mágicas, personalizadas ao seu sonho, e o nosso calendário é pontilhado com eventos festivos para o Halloween, Natal e muito mais, garantindo que cada estação é uma celebração em si. Junte-se a nós para experiências inesquecíveis e espírito comunitário!"
       },
-      "awards": {
-        "title": "os nossos prémios",
+      "achievements": {
+        "title": "as nossas conquistas",
         "subtitle": "prémios",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-        "awardsList": [
-          {
-            "title": "12 National Championships",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-            "date": "12, April 2019",
-            "imageSrc": "https://images.unsplash.com/photo-1550438655-400744b9fefc?auto=format&fit=crop&q=80&w=1472&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          },
-          {
-            "title": "12 National Championships",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-            "date": "12, April 2019",
-            "imageSrc": "https://images.unsplash.com/photo-1550438655-400744b9fefc?auto=format&fit=crop&q=80&w=1472&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          },
-          {
-            "title": "12 National Championships",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-            "date": "12, April 2019",
-            "imageSrc": "https://images.unsplash.com/photo-1550438655-400744b9fefc?auto=format&fit=crop&q=80&w=1472&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          }
-        ]
+        "achievementsList": {
+          "basketball": [
+            {
+              "title": "4º lugar no Campeonato Nacional - Sub-14",
+              "date": "2014/2015"
+            },
+            {
+              "title": "Campeãs Nacionais - Sub-14 femininos",
+              "date": "2018/2019"
+            },
+            {
+              "title": "Vice-campeãs - Sub-16 femininos",
+              "date": "2018/2019"
+            },
+            {
+              "title": "Campeãs da II divisão - seniores",
+              "date": "2019/2020"
+            },
+            {
+              "title": "Vice-campeãs Nacionais da I divisão (Acesso à Liga Betclic) - seniores",
+              "date": "2020/2021"
+            },
+            {
+              "title": "Campeões regionais - sub-18 femininos",
+              "date": "2022/2023"
+            }
+          ],
+          "futsal": [
+            {
+              "title": "Campeões Regionais da II Divisão - seniores",
+              "date": "2011/2012"
+            },
+            {
+              "title": "Vencedores da Taça da Madeira - juniores",
+              "date": "2013/2014"
+            },
+            {
+              "title": "2º lugar no Campeonato Regional - seniores",
+              "date": "2015/2016"
+            },
+            {
+              "title": "Vencedores da Taça da Madeira - juvenis",
+              "date": "2016/2017"
+            },
+            {
+              "title": "Campeões Regionais - juniores",
+              "date": "2017/2018"
+            },
+            {
+              "title": "Campeões Regionais - juvenis",
+              "date": "2018/2019"
+            },
+            {
+              "title": "Vencedores da Taça da Madeira - juvenis",
+              "date": "2018/2019"
+            },
+            {
+              "title": "Campeões Regionais - iniciados",
+              "date": "2018/2019"
+            },
+            {
+              "title": "4º lugar na Taça da Madeira - benjamins",
+              "date": "2020/2021"
+            },
+            {
+              "title": "Campeões Regionais - infantis",
+              "date": "2021/2022"
+            },
+            {
+              "title": "Vencedores da Supertaça - juvenis",
+              "date": "2023/2024"
+            }
+          ]
+        }
       }
     },
     "sponsors": {
@@ -153,17 +206,17 @@
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
       "contactItems": [
         {
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
+          "description": "Rua de João de Deus nº9 - 9054-527, Funchal",
           "icon": "mdi:location"
         },
         {
-          "description": "+351 95002923",
-          "href": "tel:+35195002923",
+          "description": "+351 291615579",
+          "href": "tel:+351291615579",
           "icon": "mingcute:phone-fill"
         },
         {
-          "description": "test@gmail.com",
-          "href": "mailto: test@gmail.com",
+          "description": "cdeff.madeira@esffranco.edu.pt ",
+          "href": "mailto: cdeff.madeira@esffranco.edu.pt ",
           "icon": "ic:baseline-email"
         }
       ]
@@ -172,7 +225,7 @@
     "notFound": {
       "title": "404",
       "subtitle": "Página não encontrada",
-      "description": "A página que procuras não existe."
+      "description": "A página que procuras não existe. Prime o botão abaixo para voltares à página anterior."
     }
   },
   "components": {
@@ -315,9 +368,19 @@
           "title": "Contacts",
           "subLinks": [
             {
-              "href": "mailto: test@gmail.com",
-              "icon": "mingcute:phone-fill",
-              "name": "test@gmail.com"
+              "name": "Rua João de Deus nº9 - 9054-527, Funchal",
+              "icon": "mdi:location",
+              "href": "https://maps.app.goo.gl/ZPoGgZ4RHbEMivST8"
+            },
+            {
+              "name": "+351 291615579",
+              "href": "tel:+351291615579",
+              "icon": "mingcute:phone-fill"
+            },
+            {
+              "name": "cdeff.madeira@esffranco.edu.pt",
+              "href": "mailto: cdeff.madeira@esffranco.edu.pt",
+              "icon": "ic:baseline-email"
             }
           ]
         }

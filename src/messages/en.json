@@ -14,11 +14,11 @@
         "title": "Our sports",
         "basket": {
           "title": "Basketball",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          "description": "Elevate your spirit, team up, play basketball."
         },
         "futsal": {
           "title": "Futsal",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          "description": "Ignite speed, finesse, and teamwork with futsal."
         }
       },
       "welcome": {
@@ -44,7 +44,7 @@
       }
     },
     "about": {
-      "title": "Sobre nós",
+      "title": "About us",
       "welcome": {
         "subtitle": "Club History",
         "title": "Welcome to CDEFF",
@@ -71,32 +71,86 @@
       "activities": {
         "title": "Activities",
         "subtitle": "activities",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+        "description": "Our club is a hub of year-round excitement, offering a diverse range of activities for all ages. From the springtime joy of Easter ATL, complete with an egg hunt and crafts, to the energetic Summer ATL filled with sports and educational workshops, there's never a dull moment. We specialize in creating magical birthday celebrations tailored to your dreams, and our calendar is dotted with festive events for Halloween, Christmas, and beyond, ensuring that every season is a celebration in itself. Join us for unforgettable experiences and community spirit!"
       },
-      "awards": {
-        "title": "Our Awards",
-        "subtitle": "awards",
+      "achievements": {
+        "title": "our achievements",
+        "subtitle": "achievements",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-        "awardsList": [
-          {
-            "title": "12 National Championships",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-            "date": "12, April 2019",
-            "imageSrc": "https://images.unsplash.com/photo-1550438655-400744b9fefc?auto=format&fit=crop&q=80&w=1472&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          },
-          {
-            "title": "12 National Championships",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-            "date": "12, April 2019",
-            "imageSrc": "https://images.unsplash.com/photo-1550438655-400744b9fefc?auto=format&fit=crop&q=80&w=1472&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          },
-          {
-            "title": "12 National Championships",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-            "date": "12, April 2019",
-            "imageSrc": "https://images.unsplash.com/photo-1550438655-400744b9fefc?auto=format&fit=crop&q=80&w=1472&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          }
-        ]
+        "achievementsList": {
+          "basketball": [
+            {
+              "title": "4th Place in National Championship - U14",
+              "date": "2014/2015"
+            },
+            {
+              "title": "National Champions - U14 Girls",
+              "date": "2018/2019"
+            },
+            {
+              "title": "National Runners-up - U16 Girls",
+              "date": "2018/2019"
+            },
+            {
+              "title": "2nd Division Champions - Senior",
+              "date": "2019/2020"
+            },
+            {
+              "title": "National 1st Division Runners-up (Promotion to Betclic League) - Senior",
+              "date": "2020/2021"
+            },
+            {
+              "title": "Regional Champions - U18 Girls",
+              "date": "2022/2023"
+            }
+          ],
+          "futsal": [
+            {
+              "title": "Regional Champions of 2nd Division - Senior",
+              "date": "2011/2012"
+            },
+            {
+              "title": "Winners of Madeira Cup - Juniors",
+              "date": "2013/2014"
+            },
+            {
+              "title": "2nd Place in Regional Championship - Senior",
+              "date": "2015/2016"
+            },
+            {
+              "title": "Winners of Madeira Cup - Youth",
+              "date": "2016/2017"
+            },
+            {
+              "title": "Regional Champions - Juniors",
+              "date": "2017/2018"
+            },
+            {
+              "title": "Regional Champions - Youth",
+              "date": "2018/2019"
+            },
+            {
+              "title": "Winners of Madeira Cup - Youth",
+              "date": "2018/2019"
+            },
+            {
+              "title": "Regional Champions - Beginners",
+              "date": "2018/2019"
+            },
+            {
+              "title": "4th Place in Madeira Cup - Peewee",
+              "date": "2020/2021"
+            },
+            {
+              "title": "Regional Champions - Children",
+              "date": "2021/2022"
+            },
+            {
+              "title": "Winners of the Super Cup - Youth",
+              "date": "2023/2024"
+            }
+          ]
+        }
       }
     },
     "sponsors": {
@@ -155,17 +209,17 @@
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
       "contactItems": [
         {
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
+          "description": "João de Deus Street nº9 - 9054-527, Funchal",
           "icon": "mdi:location"
         },
         {
-          "description": "+351 95002923",
-          "href": "tel:+35195002923",
+          "description": "+351 291615579",
+          "href": "tel:+351291615579",
           "icon": "mingcute:phone-fill"
         },
         {
-          "description": "test@gmail.com",
-          "href": "mailto: test@gmail.com",
+          "description": "cdeff.madeira@esffranco.edu.pt",
+          "href": "mailto: cdeff.madeira@esffranco.edu.pt",
           "icon": "ic:baseline-email"
         }
       ]
@@ -174,7 +228,7 @@
     "notFound": {
       "title": "404",
       "subtitle": "Page not found",
-      "description": "The page you are looking for does not exist."
+      "description": "The page you are looking for does not exist. Please check the URL or press the button to go back."
     }
   },
   "components": {
@@ -317,9 +371,18 @@
           "title": "Contacts",
           "subLinks": [
             {
-              "href": "mailto: test@gmail.com",
-              "icon": "mingcute:phone-fill",
-              "name": "test@gmail.com"
+              "name": "João de Deus Street nº9 - 9054-527, Funchal",
+              "icon": "mdi:location"
+            },
+            {
+              "name": "+351 291615579",
+              "href": "tel:+351291615579",
+              "icon": "mingcute:phone-fill"
+            },
+            {
+              "name": "cdeff.madeira@esffranco.edu.pt",
+              "href": "mailto: cdeff.madeira@esffranco.edu.pt",
+              "icon": "ic:baseline-email"
             }
           ]
         }

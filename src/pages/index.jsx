@@ -1,4 +1,5 @@
 import BlogCard from "@/components/Blog/BlogCard";
+import Button from "@/components/Button/Button";
 import Card from "@/components/Cards/Card";
 import IconCard from "@/components/Cards/IconCard/IconCard";
 import ProductCard from "@/components/Cards/ProductCard";
@@ -54,6 +55,7 @@ export default function Home({ blogPosts }) {
       </Carousel>
 
       {/* Sports section */}
+      <span id="sports"></span>
       <Section containerClassName={"max-w-2xl m-auto"}>
         <SectionTitle
           title={t("pages.homepage.sports.title")}
@@ -114,7 +116,7 @@ export default function Home({ blogPosts }) {
           subTitle={t("pages.homepage.store.subtitle")}
         />
         <div className="flex flex-wrap gap-10">
-          {products.map(({ images, title, price, sizes }, i) => (
+          {products.slice(0, 3).map(({ images, title, price, sizes }, i) => (
             <ProductCard
               key={i}
               title={title}
@@ -124,6 +126,11 @@ export default function Home({ blogPosts }) {
             />
           ))}
         </div>
+        <div className="text-center mt-12">
+          <Link href="/store">
+            <Button label={t("common.buttons.seeMore")} />
+          </Link>
+        </div>
       </Section>
 
       {/* Hero 2 */}
@@ -132,7 +139,7 @@ export default function Home({ blogPosts }) {
         linkLabel={t("common.buttons.learnMore")}
         subtitle={t("pages.homepage.hero_2.subtitle")}
         title={t("pages.homepage.hero_2.title")}
-        href="#"
+        href="/#sports"
       />
 
       {/* Blog section */}

@@ -43,18 +43,18 @@ const Footer = () => {
       <ul className="text-white opacity-95 font-thin">
         {subLinks.map(({ name, href, icon }, i) =>
           title === "Contacts" ? (
-            <li className="mb-4 " key={i}>
+            <li className="mb-4" key={i}>
               <Link
                 href={href}
                 className="hover:underline flex gap-1 items-center"
               >
                 <Icon icon={icon} fontSize={15} />
-                <p>{name}</p>
+                <p className="text-xs">{name}</p>
               </Link>
             </li>
           ) : (
             <li className="mb-4" key={i}>
-              <Link href={href} className="hover:underline">
+              <Link href={href} className="hover:underline text-xs">
                 {name}
               </Link>
             </li>
@@ -98,7 +98,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-center">
-          <span className="text-sm font-light text-gray-400 opacity-50">
+          <span className="text-sm font-light text-gray-500 opacity-50">
             © 2023{" "}
             <a
               href="https://andrerodrigo.com"
@@ -109,9 +109,7 @@ const Footer = () => {
             </a>
             . All Rights Reserved.
           </span>
-          <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-            {/* Social network */}
-          </div>
+          <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0"></div>
         </div>
       </Container>
     </footer>

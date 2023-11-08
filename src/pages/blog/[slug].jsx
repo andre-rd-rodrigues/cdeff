@@ -27,19 +27,17 @@ const BlogPost = ({ post, metadata }) => {
 
 export default BlogPost;
 
-export const getStaticPaths = async () => {
-  const publishedPostsEn = await getPosts("en");
-  const publishedPostsPt = await getPosts("pt");
-
-  const publishedPosts = publishedPostsEn.concat(publishedPostsPt);
+export const getStaticPaths = async ({ locales }) => {
+  const publishedPosts = await Promise.all(locales.map(getPosts));
 
   return {
-    paths: publishedPosts.map((post) => {
-      return {
+    paths: publishedPosts.flat().flatMap((post) => {
+      return locales.map((locale) => ({
         params: {
           slug: post.properties.Slug.rich_text[0].plain_text
-        }
-      };
+        },
+        locale
+      }));
     }),
     fallback: false
   };
@@ -49,7 +47,7 @@ export const getStaticProps = async ({ locale, params }) => {
   let { slug } = params;
 
   let { markdown, metadata } = await getPost(slug, locale);
-  console.log(locale);
+
   return {
     props: {
       post: markdown,
