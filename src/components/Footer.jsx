@@ -100,9 +100,9 @@ const Footer = () => {
           <FooterSocial sport={t("common.sports.basketball")} />
         </div>
         <hr className="my-6 border-gray-400 mx-auto opacity-50" />
-        <div className="md:flex md:justify-between">
+        <div className="md:flex md:justify-between ">
           <div className="mb-6 md:mb-0">{CompanyLogo}</div>
-          <div className="flex flex-wrap gap-5">
+          <div className="flex flex-wrap gap-5 justify-between sm:justify-normal">
             {footerLinks.map(({ name, href, subLinks }, i) => (
               <FooterSection
                 key={i}

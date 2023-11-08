@@ -11,7 +11,7 @@
   --cyan: #3a9ebd;
   --white: white;
 
-  /* Breaking points */
+  //Sizes
   --fs-xxl: clamp(3.5rem, 10vw, 5rem);
   --fs-xl: clamp(2.3rem, 8vw, 3.5rem);
   --fs-xl-l: clamp(1.8rem, 5vw, 3.2rem);
@@ -24,6 +24,15 @@
   --padding-root-y: 0 var(--padding-y);
 
   --page-max-width: 1600px;
+
+  //Breakpoints
+  --breaking-point-xxl: 1400px;
+  --breaking-point-xl: 1200px;
+  --breaking-point-lg: 992px;
+  --breaking-point-md: 768px;
+  --breaking-point-sm: 576px;
+  --breaking-point-xs: 380px;
+  --breaking-point-xxs: 330px;
 }
 
 * {
@@ -112,7 +121,7 @@ footer {
   color: var(--blue);
 }
 
-.departments_section_title {
+.sub_section_title {
   p,
   h2 {
     font-size: var(--fs-l-s);
@@ -147,4 +156,11 @@ footer {
 
 .dot.active {
   background: white;
+}
+
+//Responsive
+@media only screen and (max-width: 576px) {
+  .section-header {
+    margin-bottom: 10px;
+  }
 }

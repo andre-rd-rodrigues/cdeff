@@ -96,15 +96,21 @@ function About() {
           title={t("pages.about.achievements.title")}
           subTitle={t("pages.about.achievements.subtitle")}
         />
-        <div className="max-w-3xl m-auto">
+        <div className="max-w-3xl m-auto mt-8 sm:mt-0">
           {/*  basketball */}
-          <SectionTitle title={t("common.sports.basketball")} />
+          <SectionTitle
+            title={t("common.sports.basketball")}
+            className="sub_section_title"
+          />
           <div className="flex ml-10 max-w-2xl items-start mb-12">
             <Timeline data={basketAchievements} />
           </div>
 
           {/* futsal */}
-          <SectionTitle title={t("common.sports.futsal")} />
+          <SectionTitle
+            title={t("common.sports.futsal")}
+            className="sub_section_title"
+          />
           <div className="flex ml-10 max-w-2xl items-start">
             <Timeline data={futsalAchievements} />
           </div>

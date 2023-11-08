@@ -27,7 +27,7 @@ const CompanyLogo = ({ isLargeMenu = true }) => {
       />
       <p
         className={`${barlow.className} uppercase ${
-          isLargeMenu && "invisible sm:visible"
+          isLargeMenu && "hidden sm:block"
         } text-blue mx-5 font-semibold text-l`}
       >
         {t("components.navbar.title")}

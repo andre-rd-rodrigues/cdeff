@@ -20,16 +20,13 @@ function DepartmentsSection({ locale, knowMore }) {
         title={t("pages.about.departments")}
       />
       <div
-        className="flex flex-wrap gap-24 justify-around mb-12"
+        className="flex flex-wrap gap-12 justify-around mb-12"
         style={{ marginTop: "75px" }}
       >
         {renderDepartments.map(({ department, members }, i) => (
           <div key={i} className="flex flex-col items-center">
-            <SectionTitle
-              title={department}
-              className={"departments_section_title"}
-            />
-            <div className="flex flex-wrap gap-6">
+            <SectionTitle title={department} className={"sub_section_title"} />
+            <div className="flex flex-wrap gap-6 md:justify-normal justify-center">
               {members.map(({ name, position, imageSrc }, i) => (
                 <Card
                   className={"w-[320px]"}

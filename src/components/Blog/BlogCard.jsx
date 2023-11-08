@@ -19,7 +19,7 @@ function BlogCard({ article }) {
   return (
     <Link
       href={`/blog/${slug}`}
-      className="relative flex flex-col shadow-xl max-w-sm"
+      className="relative flex flex-col shadow-xl w-full md:max-w-sm"
     >
       <div className="relative h-[250px]">
         <Image

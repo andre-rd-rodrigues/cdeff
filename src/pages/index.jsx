@@ -115,7 +115,7 @@ export default function Home({ blogPosts }) {
           title={t("pages.homepage.store.title")}
           subTitle={t("pages.homepage.store.subtitle")}
         />
-        <div className="flex flex-wrap gap-10">
+        <div className="flex flex-wrap gap-10 justify-center md:justify-start">
           {products.slice(0, 3).map(({ images, title, price, sizes }, i) => (
             <ProductCard
               key={i}
