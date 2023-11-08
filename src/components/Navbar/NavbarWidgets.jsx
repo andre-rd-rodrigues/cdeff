@@ -50,22 +50,46 @@ const CloseButton = ({ handleClose }) => {
 };
 
 const Sponsors = () => {
+  const companyImages = [
+    "/images/navbar/company/cmff.png",
+    "/images/navbar/company/educação.png",
+    "/images/navbar/company/escola.png",
+    "/images/navbar/company/madeira.png"
+  ];
+  const IMAGE_SIZE = 77;
+
   return (
-    <div className={styles.sponsors}>
+    <div className={`${styles.sponsors} items-center`}>
+      {/* Basket */}
       <div>
         <Image
-          width={40}
-          height={40}
-          src="/images/sponsor.png"
-          alt="sponsor-name"
+          width={IMAGE_SIZE}
+          height={IMAGE_SIZE}
+          src="/images/navbar/basket/hospital.png"
+          alt="Hospital Particular da Madeira"
         />
       </div>
+
+      {/* Company */}
+      <div className="flex gap-5">
+        {companyImages?.map((image, index) => (
+          <Image
+            key={index}
+            width={IMAGE_SIZE}
+            height={IMAGE_SIZE}
+            src={image}
+            alt="CDEFF - Patrocinadores"
+          />
+        ))}
+      </div>
+
+      {/* Futsal */}
       <div>
         <Image
-          width={40}
-          height={40}
-          src="/images/sponsor.png"
-          alt="sponsor-name"
+          width={IMAGE_SIZE}
+          height={IMAGE_SIZE}
+          src="/images/navbar/futsal/tourigalo.png"
+          alt="Tourigalo"
         />
       </div>
     </div>

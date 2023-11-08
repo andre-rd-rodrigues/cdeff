@@ -1,8 +1,6 @@
 import { Client } from "@notionhq/client";
 const { NotionToMarkdown } = require("notion-to-md");
 
-const database_id = `5687d673de2347b388b5d39a2455a5ff`;
-
 const notion = new Client({
   auth: process.env.NOTION_KEY
 });
@@ -22,7 +20,7 @@ const getPageMetaData = (post) => {
 
 const getPosts = async (locale) => {
   const myPosts = await notion.databases.query({
-    database_id,
+    database_id: process.env.NOTION_DB_BLOG,
     filter: {
       and: [
         {
@@ -51,7 +49,7 @@ const getPosts = async (locale) => {
 
 const getPost = async (slug, locale) => {
   const response = await notion.databases.query({
-    database_id,
+    database_id: process.env.NOTION_DB_BLOG,
     filter: {
       and: [
         {

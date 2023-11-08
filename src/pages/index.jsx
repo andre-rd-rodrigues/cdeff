@@ -32,7 +32,7 @@ export default function Home({ blogPosts }) {
         <HeroHeader
           linkLabel={t("common.buttons.registration")}
           href="#"
-          imageSrc="https://images.unsplash.com/photo-1459865264687-595d652de67e?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          imageSrc="/images/homepage/headquarters.jpeg"
           className="keen-slider__slide"
         >
           <p className={`${barlow.className} tracking-wide`}>
@@ -62,16 +62,16 @@ export default function Home({ blogPosts }) {
           className={"text-center"}
         />
         <div className="gap-6 flex justify-around flex-wrap align-center">
-          <Link href="/sports/basketball">
+          <Link href="/basketball">
             <IconCard
-              title={t("pages.homepage.sports.basket.title")}
+              title={t("common.sports.basketball")}
               description={t("pages.homepage.sports.basket.description")}
               iconName="ph:basketball"
             />
           </Link>
-          <Link href="/sports/futsal">
+          <Link href="/futsal">
             <IconCard
-              title={t("pages.homepage.sports.futsal.title")}
+              title={t("common.sports.futsal")}
               description={t("pages.homepage.sports.futsal.description")}
               iconName="ph:soccer-ball"
             />

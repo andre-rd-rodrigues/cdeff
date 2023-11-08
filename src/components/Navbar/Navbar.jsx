@@ -1,10 +1,9 @@
-"use client";
 import { barlow } from "@/styles/fonts";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import enTranslations from "../../messages/en.json";
 import ptTranslations from "../../messages/pt.json";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
@@ -20,7 +19,7 @@ function classNames(...classes) {
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const { locale } = useRouter();
+  const { locale, route } = useRouter();
 
   const translations = locale === "en" ? enTranslations : ptTranslations;
   const links = translations.components.navbar.links;
@@ -147,11 +146,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      messages: (await import(`../../messages/${locale}.json`)).default
-    }
-  };
-}

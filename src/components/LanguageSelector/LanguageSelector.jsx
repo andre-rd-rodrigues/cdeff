@@ -16,6 +16,9 @@ const linksClasses = `text-l leading-6 text-dark font-normal uppercase ${barlow.
 function LanguageSelector({ mobile, handleCloseMenu }) {
   const t = useTranslations();
   const { route } = useRouter();
+  const isDisabled = route.includes("blog/[slug]");
+
+  if (isDisabled) return;
 
   if (mobile) {
     return (
