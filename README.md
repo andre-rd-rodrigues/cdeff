@@ -1,42 +1,26 @@
-# ✨ Next.js Basic Template
+# Francisco Franco Sports Club ⚽️🏀
 
-This basic template is designed for building web applications using Next.js with Tailwind CSS, SCSS, and custom components. It includes all the necessary dependencies for a smooth development experience, along with a pre-designed footer and navbar.
+Welcome to the Francisco Franco Sports Club repository! This is the first website of the club, offering the latest updates on club activities, blog articles, and detailed information on tournaments.
 
-## 📋 Project Details
+## Description 📖
 
-- **Project Name:** next-basic-template
-- **Version:** 0.1.0
-- **Privacy:** Private
+Francisco Franco Sports Club is an interactive Next.js application designed to connect the club's members and sports fans. With a seamless integration of Tailwind CSS for styling and Notion as a CMS, the club manages its blog articles and tournament schedules with ease, ensuring that the community stays informed and engaged.
 
-## ▶️ Available Scripts
+## Technologies Used 🛠️
 
-In the project directory, you can run the following scripts:
+- **Next.js**: Our core framework that enables React-based web development with server-side rendering, ensuring fast page loads and a seamless user experience.
+- **Tailwind CSS**: A utility-first CSS framework used for designing custom and responsive layouts directly in our markup.
+- **Notion API**: Integrated as our Content Management System (CMS), allowing us to fetch and display the latest blog posts and tournament details stored in Notion.
+- **React Markdown**: To render markdown content from Notion, providing a rich text blog experience.
+- **Day.js**: A lightweight date library that we use to format and display dates across the platform.
+- **Keen Slider**: Implemented for touch-friendly sliders that feature club events and highlights.
+- **Headless UI and Heroicons**: For building fully accessible UI components and adding SVG icons to enhance the visual aspect of the site.
+- **Iconify React**: Offers a wide selection of icons from various icon sets, enriching the interface with intuitive iconography.
 
-- `npm run dev`: Runs the development server for Next.js.
-- `npm run build`: Builds the production-ready version of your application.
-- `npm run start`: Starts the production server for your application.
-- `npm run lint`: Lint your code using the Next.js linting configuration.
+## Highlights 💡
 
-## 📦 Dependencies
+- **Blog Integration**: Our blog is powered by Notion, giving us the flexibility to write and edit content in a familiar interface while seamlessly updating the live site.
+- **Tournament Updates**: Stay up-to-date with upcoming and past tournaments, including detailed schedules and results, all managed through Notion.
+- **Responsive Design**: Built mobile-first with Tailwind CSS, ensuring that the site looks great and functions well on any device.
 
-Here are the key dependencies used in this project:
-
-- [Next.js](https://nextjs.org/): A React framework for building web applications.
-- [React](https://reactjs.org/): A JavaScript library for building user interfaces.
-- [React DOM](https://reactjs.org/docs/react-dom.html): A package for rendering React components in the DOM.
-- [@headlessui/react](https://github.com/tailwindlabs/headlessui): A set of completely unstyled, fully accessible UI components.
-- [@heroicons/react](https://github.com/tailwindlabs/heroicons): A set of free, MIT-licensed high-quality SVG icons for you to use in your web projects.
-- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for rapidly building custom designs.
-
-## 🛠 Development Dependencies
-
-These are the development dependencies used for building and maintaining the project:
-
-- [Autoprefixer](https://autoprefixer.github.io/): A tool to add vendor prefixes to CSS rules.
-- [ESLint](https://eslint.org/): A pluggable JavaScript linter.
-- [ESLint Config for Next.js](https://github.com/vercel/next.js/tree/canary/packages/eslint-config-next): The ESLint configuration specifically tailored for Next.js projects.
-- [PostCSS](https://postcss.org/): A tool for transforming styles with JS plugins.
-- [Sass](https://sass-lang.com/): A mature, stable, and powerful professional-grade CSS extension language.
-- [Tailwind CSS](https://tailwindcss.com/): As both a runtime and a build tool dependency, it helps you rapidly build custom designs using utility-first CSS.
-
-This template is a great starting point for your Next.js project, equipped with all the essential tools and libraries you need, including a pre-designed footer and navbar. Feel free to customize it to suit your specific application requirements.
+Enjoy exploring the club's activities and engaging with the sports community through our platform! 🏆
