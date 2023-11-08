@@ -36,7 +36,7 @@ export const getStaticPaths = async ({ locales }) => {
         params: {
           slug: post.properties.Slug.rich_text[0].plain_text
         },
-        locale
+        locale: post.properties.Language.select.name
       }));
     }),
     fallback: false
@@ -46,7 +46,16 @@ export const getStaticPaths = async ({ locales }) => {
 export const getStaticProps = async ({ locale, params }) => {
   let { slug } = params;
 
-  let { markdown, metadata } = await getPost(slug, locale);
+  let post = await getPost(slug, locale);
+
+  if (!post) {
+    console.error(`Post with slug "${slug}" not found.`);
+    return {
+      notFound: true
+    };
+  }
+
+  let { markdown, metadata } = post;
 
   return {
     props: {

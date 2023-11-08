@@ -13,21 +13,21 @@ const TournamentDetailsPage = ({ post, metadata }) => {
 
   return (
     <main>
-      <BlogPageHeader
+      {/*  <BlogPageHeader
         image={metadata?.image}
         title={metadata?.title}
         date={dayjs(metadata.date).locale(locale).format(DATE_FORMAT)}
       />
       <div className="max-w-7xl m-auto py-10">
         <ReactMarkdown className="markdown">{post.parent}</ReactMarkdown>
-      </div>
+      </div> */}
     </main>
   );
 };
 
 export default TournamentDetailsPage;
 
-export const getStaticPaths = async (params) => {
+/* export const getStaticPaths = async (params) => {
   const publishedPosts = await getPosts("en");
 
   return {
@@ -55,3 +55,4 @@ export const getStaticProps = async ({ locale, params }) => {
     }
   };
 };
+ */

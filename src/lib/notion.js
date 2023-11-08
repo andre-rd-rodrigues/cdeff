@@ -9,12 +9,12 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 
 const getPageMetaData = (post) => {
   return {
-    id: post.id,
-    title: post.properties?.Name.title[0].plain_text,
-    description: post.properties?.Description.rich_text[0].plain_text,
-    date: post.last_edited_time,
-    slug: post.properties?.Slug.rich_text[0].plain_text,
-    image: post.cover?.external.url
+    id: post?.id,
+    title: post?.properties?.Name.title[0].plain_text,
+    description: post?.properties?.Description.rich_text[0].plain_text,
+    date: post?.last_edited_time,
+    slug: post?.properties?.Slug.rich_text[0].plain_text,
+    image: post?.cover?.external.url
   };
 };
 
@@ -77,6 +77,7 @@ const getPost = async (slug, locale) => {
   });
 
   const page = response.results[0];
+
   const metadata = getPageMetaData(page);
   const mdblocks = await n2m.pageToMarkdown(page.id);
   const mdString = n2m.toMarkdownString(mdblocks);
