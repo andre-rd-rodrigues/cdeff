@@ -334,45 +334,41 @@
     "footer": {
       "links": [
         {
-          "title": "Resources",
+          "name": "About",
+          "href": "/about",
           "subLinks": [
             {
-              "name": "Flowbite",
-              "href": "#"
+              "name": "About Us",
+              "href": "/about"
             },
             {
-              "name": "Flowbite",
-              "href": "#"
+              "name": "Departments",
+              "href": "/about#departments"
             },
             {
-              "name": "Flowbite",
-              "href": "#"
+              "name": "Sponsors",
+              "href": "/about/sponsors"
             }
           ]
         },
         {
-          "title": "Resources",
+          "name": "Sports",
+          "href": null,
           "subLinks": [
+            { "name": "Basketball", "href": "/basketball" },
             {
-              "name": "Flowbite",
-              "href": "#"
-            },
-            {
-              "name": "Flowbite",
-              "href": "#"
-            },
-            {
-              "name": "Flowbite",
-              "href": "#"
+              "name": "Futsal",
+              "href": "/futsal"
             }
           ]
         },
         {
-          "title": "Contacts",
+          "name": "Contacts",
           "subLinks": [
             {
               "name": "João de Deus Street nº9 - 9054-527, Funchal",
-              "icon": "mdi:location"
+              "icon": "mdi:location",
+              "href": ""
             },
             {
               "name": "+351 291615579",

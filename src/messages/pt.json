@@ -176,8 +176,8 @@
       }
     },
     "tournaments": {
-      "title": "Tournaments",
-      "selectSport": "Select the sport"
+      "title": "Torneios",
+      "selectSport": "Escolhe a modalidade"
     },
     "activities": {
       "title": "Actitividades",
@@ -195,14 +195,14 @@
       }
     },
     "store": {
-      "title": "Store"
+      "title": "Loja"
     },
     "faqs": {
-      "title": "Frequently Asked Questions"
+      "title": "Perguntas Frequentes"
     },
     "contacts": {
-      "title": "Contacts",
-      "subtitle": "Any question or suggestion? Contact us.",
+      "title": "Contactos",
+      "subtitle": "Alguma questão? Não hesite em contactar-nos!",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
       "contactItems": [
         {
@@ -331,46 +331,66 @@
     "footer": {
       "links": [
         {
-          "title": "Resources",
+          "name": "Sobre",
+          "href": "/about",
           "subLinks": [
             {
-              "name": "Flowbite",
-              "href": "#"
+              "name": "Sobre nós",
+              "href": "/about"
             },
             {
-              "name": "Flowbite",
-              "href": "#"
+              "name": "Departamentos",
+              "href": "/about#departments"
             },
             {
-              "name": "Flowbite",
-              "href": "#"
+              "name": "Patrocinadores",
+              "href": "/about/sponsors"
             }
           ]
         },
         {
-          "title": "Resources",
+          "name": "Modalidades",
+          "href": null,
           "subLinks": [
+            { "name": "Basquetebol", "href": "/basketball" },
             {
-              "name": "Flowbite",
-              "href": "#"
-            },
-            {
-              "name": "Flowbite",
-              "href": "#"
-            },
-            {
-              "name": "Flowbite",
-              "href": "#"
+              "name": "Futsal",
+              "href": "/futsal"
             }
           ]
         },
         {
-          "title": "Contacts",
+          "name": "Torneios",
+          "href": "/tournaments",
+          "subLinks": null
+        },
+        {
+          "name": "Actividades",
+          "href": "/activities",
+          "subLinks": null
+        },
+        {
+          "name": "Loja",
+          "href": "/store",
+          "subLinks": null
+        },
+        {
+          "name": "Blog",
+          "href": "/blog",
+          "subLinks": null
+        },
+        {
+          "name": "FAQs",
+          "href": "/faqs",
+          "subLinks": null
+        },
+        {
+          "name": "Contactos",
           "subLinks": [
             {
               "name": "Rua João de Deus nº9 - 9054-527, Funchal",
               "icon": "mdi:location",
-              "href": "https://maps.app.goo.gl/ZPoGgZ4RHbEMivST8"
+              "href": ""
             },
             {
               "name": "+351 291615579",

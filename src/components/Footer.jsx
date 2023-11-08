@@ -13,6 +13,8 @@ const Footer = () => {
   const { locale } = useRouter();
 
   const translations = getTranslations(locale);
+  const isContactSections = (title) =>
+    title === "Contacts" || title === "Contactos";
 
   const footerLinks = translations.components.footer.links;
 
@@ -33,32 +35,41 @@ const Footer = () => {
     </Link>
   );
 
-  const FooterSection = ({ title, subLinks }) => (
+  const FooterSection = ({ title, sectionHref, subLinks }) => (
     <div>
       <h2
-        className={`mb-6 text-l font-medium tracking-wider text-white uppercase ${barlow.className}`}
+        className={`text-m font-medium mb-2 tracking-wider text-white uppercase ${barlow.className}`}
       >
         {title}
       </h2>
       <ul className="text-white opacity-95 font-thin">
-        {subLinks.map(({ name, href, icon }, i) =>
-          title === "Contacts" ? (
-            <li className="mb-4" key={i}>
+        {subLinks?.map(({ name, href, icon }, i) =>
+          isContactSections(title) ? (
+            <li key={i}>
               <Link
                 href={href}
-                className="hover:underline flex gap-1 items-center"
+                className="hover:underline flex gap-1 items-center mb-2 mt-1"
               >
                 <Icon icon={icon} fontSize={15} />
                 <p className="text-xs">{name}</p>
               </Link>
             </li>
           ) : (
-            <li className="mb-4" key={i}>
+            <li key={i}>
               <Link href={href} className="hover:underline text-xs">
                 {name}
               </Link>
             </li>
           )
+        )}
+
+        {/* When no sub links are provided */}
+        {!subLinks && !isContactSections(title) && (
+          <li>
+            <Link href={sectionHref} className="hover:underline text-xs">
+              {title}
+            </Link>
+          </li>
         )}
       </ul>
     </div>
@@ -91,9 +102,14 @@ const Footer = () => {
         <hr className="my-6 border-gray-400 mx-auto opacity-50" />
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">{CompanyLogo}</div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-            {footerLinks.map(({ title, subLinks }, i) => (
-              <FooterSection key={i} title={title} subLinks={subLinks} />
+          <div className="flex flex-wrap gap-5">
+            {footerLinks.map(({ name, href, subLinks }, i) => (
+              <FooterSection
+                key={i}
+                title={name}
+                subLinks={subLinks}
+                sectionHref={href}
+              />
             ))}
           </div>
         </div>
