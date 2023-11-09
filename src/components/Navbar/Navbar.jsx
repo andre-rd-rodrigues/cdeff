@@ -19,7 +19,7 @@ function classNames(...classes) {
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const { locale, route } = useRouter();
+  const { locale } = useRouter();
 
   const translations = locale === "en" ? enTranslations : ptTranslations;
   const links = translations.components.navbar.links;
@@ -66,7 +66,6 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile menu */}
-
       <Dialog
         as="div"
         className="xl:hidden"

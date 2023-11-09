@@ -51,27 +51,27 @@ const CloseButton = ({ handleClose }) => {
 
 const Sponsors = () => {
   const companyImages = [
-    "/images/navbar/company/cmff.png",
+    "/images/navbar/company/cmf.png",
     "/images/navbar/company/educação.png",
     "/images/navbar/company/escola.png",
     "/images/navbar/company/madeira.png"
   ];
-  const IMAGE_SIZE = 77;
+  const IMAGE_SIZE = 80;
 
   return (
-    <div className={`${styles.sponsors} items-center`}>
+    <div
+      className={`${styles.sponsors} py-2 flex justify-between items-center`}
+    >
       {/* Basket */}
-      <div>
-        <Image
-          width={IMAGE_SIZE}
-          height={IMAGE_SIZE}
-          src="/images/navbar/basket/hospital.png"
-          alt="Hospital Particular da Madeira"
-        />
-      </div>
+      <Image
+        width={IMAGE_SIZE}
+        height={IMAGE_SIZE}
+        src="/images/navbar/basket/hospital.png"
+        alt="Hospital Particular da Madeira"
+      />
 
       {/* Company */}
-      <div className="flex gap-5">
+      <div className="flex flex-wrap sm:gap-5 justify-center">
         {companyImages?.map((image, index) => (
           <Image
             key={index}
@@ -84,14 +84,12 @@ const Sponsors = () => {
       </div>
 
       {/* Futsal */}
-      <div>
-        <Image
-          width={IMAGE_SIZE}
-          height={IMAGE_SIZE}
-          src="/images/navbar/futsal/tourigalo.png"
-          alt="Tourigalo"
-        />
-      </div>
+      <Image
+        width={IMAGE_SIZE}
+        height={IMAGE_SIZE}
+        src="/images/navbar/futsal/tourigalo.png"
+        alt="Tourigalo"
+      />
     </div>
   );
 };

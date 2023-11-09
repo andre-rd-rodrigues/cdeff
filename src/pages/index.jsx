@@ -128,7 +128,7 @@ export default function Home({ blogPosts }) {
         </div>
         <div className="text-center mt-12">
           <Link href="/store">
-            <Button label={t("common.buttons.seeMore")} />
+            <Button variant label={t("common.buttons.seeMore")} />
           </Link>
         </div>
       </Section>

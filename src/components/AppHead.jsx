@@ -13,7 +13,7 @@ const AppHead = (props) => {
   const { openGraph } = props;
 
   const title = t(`common.metadata.${titleTranslation}`);
-  const description = t("common.description.metadata");
+  const description = t("common.metadata.description");
 
   return (
     <NextSeo
@@ -28,7 +28,7 @@ const AppHead = (props) => {
               description,
               images: [
                 {
-                  url: "/images/meta-image.png",
+                  url: "/images/metadata.png",
                   alt: title
                 }
               ]
