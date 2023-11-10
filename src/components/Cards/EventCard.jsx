@@ -8,18 +8,15 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Button from "../Button/Button";
 
-function EventCard({ event }) {
+function EventCard({ event, href }) {
   const t = useTranslations();
 
   const { locale } = useRouter();
 
-  const { title, description, date, image, slug, location } = event;
+  const { title, description, date, image, location } = event;
 
   return (
-    <Link
-      href={`/blog/${slug}`}
-      className="relative flex flex-col shadow-xl max-w-sm"
-    >
+    <Link href={href} className="relative flex flex-col shadow-xl max-w-sm">
       <div className="relative h-[450px]">
         <Image
           src={image}

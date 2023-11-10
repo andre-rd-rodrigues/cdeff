@@ -71,7 +71,6 @@ export const getStaticProps = async ({ locale, params }) => {
   let post = await getPost(slug, locale);
 
   if (!post) {
-    console.error(`Post with slug "${slug}" not found.`);
     return {
       notFound: true
     };

@@ -151,11 +151,11 @@
       }
     },
     "sponsors": {
-      "title": "Sponsors",
-      "mainSponsors": "Official sponsors",
-      "premium": "Premium",
-      "sponsors": "Sponsors",
-      "collaborations": "Collaborations",
+      "title": "Patrocinadores",
+      "mainSponsors": "Patrocinadores principais",
+      "premium": "Patrocinadores Premium",
+      "sponsors": "Patrocinadores",
+      "collaborations": "Colaboradores",
       "hero": {
         "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
         "subtitle": "Sponsors"

@@ -23,6 +23,13 @@ function BasketballPage() {
     console.log(rank);
   };
 
+  /* 
+  Structure for the dynamic page
+  - Equipa técnica
+  - Plantel
+  - Horários de treinos
+  */
+
   return (
     <main>
       <PageHeader

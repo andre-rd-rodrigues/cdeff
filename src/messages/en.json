@@ -363,7 +363,32 @@
           ]
         },
         {
-          "name": "Contacts",
+          "name": "Tournaments",
+          "href": "/tournaments",
+          "subLinks": null
+        },
+        {
+          "name": "Activities",
+          "href": "/activities",
+          "subLinks": null
+        },
+        {
+          "name": "Store",
+          "href": "/store",
+          "subLinks": null
+        },
+        {
+          "name": "Blog",
+          "href": "/blog",
+          "subLinks": null
+        },
+        {
+          "name": "FAQs",
+          "href": "/faqs",
+          "subLinks": null
+        },
+        {
+          "name": "Contact",
           "subLinks": [
             {
               "name": "João de Deus Street nº9 - 9054-527, Funchal",

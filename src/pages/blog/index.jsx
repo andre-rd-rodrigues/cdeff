@@ -8,7 +8,7 @@ import React from "react";
 
 function BlogPage({ posts }) {
   const t = useTranslations();
-  console.log(posts);
+
   return (
     <main>
       <PageHeader

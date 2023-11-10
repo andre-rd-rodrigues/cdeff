@@ -7,7 +7,7 @@ const notion = new Client({
 
 const n2m = new NotionToMarkdown({ notionClient: notion });
 
-const getPageMetaData = (post) => {
+const getPostPageMetaData = (post) => {
   return {
     id: post?.id,
     title: post?.properties?.Name.title[0].plain_text,
@@ -78,7 +78,7 @@ const getPost = async (slug, locale) => {
 
   const page = response.results[0];
 
-  const metadata = getPageMetaData(page);
+  const metadata = getPostPageMetaData(page);
   const mdblocks = await n2m.pageToMarkdown(page.id);
   const mdString = n2m.toMarkdownString(mdblocks);
 
@@ -88,4 +88,87 @@ const getPost = async (slug, locale) => {
   };
 };
 
-export { getPost, getPosts };
+/* Tournaments */
+const getTournamentPageMetaData = (post) => {
+  return {
+    id: post?.id,
+    title: post?.properties?.Titulo.title[0].plain_text,
+    description: post?.properties?.Descrição.rich_text[0].plain_text,
+    /* date: post?.properties?.Data, */
+    slug: post?.properties?.Slug.rich_text[0].plain_text,
+    image: post?.cover?.external?.url,
+    location: post?.properties?.Local.rich_text[0].plain_text
+  };
+};
+
+const getTournaments = async (locale) => {
+  const tournaments = await notion.databases.query({
+    database_id: process.env.NOTION_DB_TOURNAMENTS,
+    filter: {
+      and: [
+        {
+          property: "Publicado",
+          checkbox: {
+            equals: true
+          }
+        },
+        {
+          property: "Idioma",
+          select: {
+            equals: locale
+          }
+        }
+      ]
+    },
+    sorts: [
+      {
+        property: "Data",
+        direction: "descending"
+      }
+    ]
+  });
+  return tournaments.results;
+};
+
+const getTournament = async (slug, locale) => {
+  const response = await notion.databases.query({
+    database_id: process.env.NOTION_DB_TOURNAMENTS,
+    filter: {
+      and: [
+        {
+          property: "Slug",
+          formula: {
+            string: {
+              equals: slug
+            }
+          }
+        },
+        {
+          property: "Publicado",
+          checkbox: {
+            equals: true
+          }
+        },
+        {
+          property: "Idioma",
+          select: {
+            equals: locale
+          }
+        }
+      ]
+    }
+  });
+
+  const page = response.results[0];
+
+  const metadata = getTournamentPageMetaData(page);
+  const mdblocks = await n2m.pageToMarkdown(page.id);
+  const mdString = n2m.toMarkdownString(mdblocks);
+
+  return {
+    metadata,
+    markdown: mdString
+  };
+};
+
+export { getPost, getPosts, getTournaments, getTournament };

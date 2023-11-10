@@ -4,14 +4,20 @@ import IconCard from "@/components/Cards/IconCard/IconCard";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
+import { getTournaments } from "@/lib/notion";
 import { SPORTS } from "@/utils";
 import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 
-function TournamentsPage() {
+function TournamentsPage({ tournaments }) {
   const [selectedSport, setSelectedSport] = useState(SPORTS.BASKETBALL);
 
   const t = useTranslations();
+
+  const tournamentsFiltered = tournaments?.filter(
+    (tournament) =>
+      tournament.properties?.Modalidade.select.name === selectedSport
+  );
 
   return (
     <main>
@@ -41,18 +47,23 @@ function TournamentsPage() {
           />
         </div>
         <div className="my-16">
-          <EventCard
-            event={{
-              title: "Nome do evento",
-              description:
-                "Descrição do evento adja ldajs daskj dlajd laksjd lasijd lashd kasd gkag dakjsgd kagd aksjhgd kajhsdg askjhg akjh ",
-              date: "2023-11-06T00:06:53.715Z",
-              image:
-                "https://images.unsplash.com/photo-1628779238951-be2c9f2a59f4?auto=format&fit=crop&q=80&w=1587&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-              slug: "slug-do-evento",
-              location: "Local do evento"
-            }}
-          />
+          <div className="flex flex-wrap gap-10 justify-center md:justify-start">
+            {tournamentsFiltered?.map((tournament, i) => (
+              <EventCard
+                key={i}
+                href={`tournaments/${tournament.properties.Slug.rich_text[0].plain_text}`}
+                event={{
+                  title: tournament.properties.Titulo.title[0].plain_text,
+                  description:
+                    tournament.properties?.Descrição.rich_text[0]?.plain_text,
+                  date: tournament.properties?.Data.date.start,
+                  image: tournament.cover?.external.url,
+                  location:
+                    tournament.properties?.Local.rich_text[0]?.plain_text
+                }}
+              />
+            ))}
+          </div>
         </div>
       </Section>
     </main>
@@ -62,9 +73,12 @@ function TournamentsPage() {
 export default TournamentsPage;
 
 export async function getStaticProps({ locale }) {
+  const tournaments = await getTournaments(locale);
+
   return {
     props: {
-      messages: (await import(`../../messages/${locale}.json`)).default
+      messages: (await import(`../../messages/${locale}.json`)).default,
+      tournaments
     }
   };
 }
