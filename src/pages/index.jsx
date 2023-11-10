@@ -13,7 +13,7 @@ import TextWithImage from "@/components/TextWithImage/TextWithImage";
 import { getPosts } from "@/lib/notion";
 import { barlow } from "@/styles/fonts";
 
-import { getTranslations } from "@/utils";
+import { REVALIDATE_TIME, getTranslations } from "@/utils";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -176,6 +176,7 @@ export async function getStaticProps({ locale }) {
     props: {
       messages: (await import(`../messages/${locale}.json`)).default,
       blogPosts
-    }
+    },
+    revalidate: REVALIDATE_TIME
   };
 }

@@ -157,8 +157,8 @@
       "sponsors": "Patrocinadores",
       "collaborations": "Colaboradores",
       "hero": {
-        "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-        "subtitle": "Sponsors"
+        "title": "Muito obrigado!",
+        "description": "A nossa existência não seria possível sem o apoio dos nossos patrocinadores e parceiros, que nos apoiam diariamente em prol do nosso crescimento, apresentando-se como elementos fundamentais no nosso sucesso. A todos vocês, Obrigado!\nQuer apoiar o nosso Clube? Torne-se um patrocinador/parceiro!"
       }
     },
     "basketball": {
@@ -177,7 +177,10 @@
     },
     "tournaments": {
       "title": "Torneios",
-      "selectSport": "Escolhe a modalidade"
+      "selectSport": "Escolhe a modalidade",
+      "feedback": {
+        "title": "Feedbacks anteriores"
+      }
     },
     "activities": {
       "title": "Actitividades",
@@ -430,6 +433,7 @@
     },
     "buttons": {
       "registration": "Inscrição",
+      "registrations": "Inscrições",
       "seeMore": "Ver mais",
       "learnMore": "Saber mais",
       "readMore": "Ler mais",
@@ -448,7 +452,7 @@
           {
             "name": "Prof. Fernando Alves",
             "position": "Presidente do Clube",
-            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            "imageSrc": "https://uc2fe6481cb81f6e71ffe9d04203.previews.dropboxusercontent.com/p/thumb/ACH4XqaMUjVdvR9nMMrYOI0yCK5ph0YOPHyRA2bxWBeIiwl3NPLTbCjmNEPk0rZ9DqEPYs_8GDSlwjGpXoDonInm3ZztWoh8vVo_39LvSzG1ol5mXa3gtwkxkWIesQF2x1WZYA-MaAb_K21ZcN7g6_BTNY-a516Zh7GGb5bcRYYQ7Pp66XKhzwbY7d9R28XmGv3jYjzv49i7IAwxNjGE6cwCuUjvq_EZNhq1N6BLIlyQ4fku9wi3x4kEnLlPFotUGXiNTXwAx8sHgticyZyJaHckKjUE9dk2rF6J3O1AXAFpO3M6-gWSJGbKFmsS1EMIYr3XKJj6wGF_xraE1-uX0s8QSOrYoza-f3_kr_O7Bsfo6KMQk9RaIpf6Q5I3U1d2wIV116m6FZPrih2o9SEnnu2NAP9QePbDqMfuIggroYdu6nIGYLmMvI9mAtoxXHz21it_okNfX_CHC-MGuCOnoPjL58vm89i0BUeBTa51UeQE8Q/p.png"
           }
         ]
       },
@@ -458,7 +462,7 @@
           {
             "name": "Prof. Joaquim Pereira",
             "position": "Coordenador Técnico",
-            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            "imageSrc": "https://uc79c689cb9e9b69379bfb1410a3.previews.dropboxusercontent.com/p/thumb/ACG2dIJnSKHubwGu6aVpu2sBWRIzqF7YuVM6cA_XamdGSOkgx3jcO6eF_idNKGP6FNt9L96uWY2sb1NwTdAWh_bbCnstjCxUwa6-fPFJIsWsm1ZReGGCmaYnTFfhPmOCTiTMVbZSpEX4wl0qk-w_V7w2n3L17ApFmr0xmLzp8QRkvmUh_QkzI7d9u5UY2my6OEZEWOU3i1qxcS_SqttCwsLxF7YlAuY0HLdGYzdkKSwQ3ZKWbtVL1PX1JmvB2pdj34e2pUN04qxdWH1x_WC_uNh_tQdR_oOEUNkGHPkXVv7xg7W9WvFkX3Vj137exPg322XcRal2-YJH4vg_ZZaSXhdG4q12YRnhkGi9Bjw-lC6rcxTm_9SvlI4diwcy5lx1YyNXytCV2y3wfQPYk3x5SmAl6iop1Ly1hShiGiogXQzwbg/p.png"
           }
         ]
       },
@@ -468,7 +472,7 @@
           {
             "name": "Prof. Paulo Freitas",
             "position": "Coordenador de Basquetebol",
-            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            "imageSrc": "https://uc256fb49ee22fcec01ba0746825.previews.dropboxusercontent.com/p/thumb/ACGa0-NJ_nFWDhNvkKK-t7KLBrEjpNncdam2pn743K_zDPgrAGQrn1gSQOlzhHvruMPmha_wD7sQh2gUVInEOTFxCwDL8QCNHeG62fzv0KP55NhZN28ZgFKfqhKMRMnHNPtn58wWije4eUxaMpV3sa0WV5WJ5e89jvCHcfeYKVWGtSwMXzaxrJH7WTj29bOLK67nHzKWabhLWmJlI7Sg_azYQhbL_4WyE-7R0fp3WQR--kk3c-7IVRZFHAC6L1IcglCKs__Q_7k4GTMXcnUcQFCri0VWmxpXRetHHMf21yral5RQe_-3asiuFM1-sO8LCPWv2oONMczL8kBo4JDTTi0Wh-zgZoGEVFxMhD9-14cqGA/p.png"
           }
         ]
       },
@@ -478,7 +482,7 @@
           {
             "name": "Prof. Tiago Rosa",
             "position": "Coordenador de Futsal",
-            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            "imageSrc": "https://uc19c3e7f9e59aaf98e29904527e.previews.dropboxusercontent.com/p/thumb/ACE6RNcK22NpAr5vhmnP35ZMM82iLTYq_p412GipYAljnNHXo-EwG8jb54LukrMzSS6QD9OZeg9tFLjpvMtGr_gNSFxccrvKXz_vCXza3XIdCU3woUFcCoF6pFP-kt7jZIv5WCokdn2WsUukKIpNkcKfWfxuuNlAK2pg4n2iyrOILdOy9XNuCmcIXOwf36j2hKDaWLq0-3AsTasx66mwt7LTLZKbI0MHir4jxDr-ZKpH6xvXCoQkM5-fQM16hvXtPPHcDHpRHbhJBT_ZLz16-USAy75ubQr3c8q_LaHSl-mrj1ie7SrBRJ2wOnr9C2LwmHWwFQ5FzZY819KUjyNCymj5aH44uCmS4zVpHMtpqkwZzgi2r4eUKKZTy7rOsxptLH-lnIb8FO3Mdi-LtUA6wYiZkU19qvEx-uTzl1qV-z2fK5PsWnG09izUUwHUZhscOsh8wXnyDRC2B2Yz5sdBMafZ375p3AMmt1FlJV9VQ4KF-I9sI_EDPvOsZVLpt-uT6ckVis4Fno1V_Oks6D2MkMl73ujfQTi5rpophoXL9uTvwA/p.png"
           }
         ]
       },
@@ -488,12 +492,12 @@
           {
             "name": "Hospital Particular da Madeira",
             "position": "Médico (Basquetebol)",
-            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            "imageSrc": "https://uc5c8a5ee5fefd92ab108cf90f8a.previews.dropboxusercontent.com/p/thumb/ACHSodU5MJNwpyZOXre5cS3CMhVmQ2YXAqneh38hAVsPCZ_FrZ8Dxb7idwBWwyG5cSLbAfx1eXWMhjoId7i94uRco-hthU29Qpoor5_XZtAct08GvgDIEDpF2iOftBHP47yHe4eBVRCklCDsBd7snwhN0W55FLksQsJPvdLKGxT0kGbQoo6u-UAJyHctKR2U03Bh4wpbmh-wtbWLtpDgdh-wBoMEKrHC2nuRfP7lAcB_-UzMbhP85ePno0IqiP7b2u5vHLD1bZa6_Bw3ePyC3ABO2HWfCXy_5KZI1iwk6831ofN63n23uRqGxsnCIYZzlT0uYRhC6hwwjYwPePWVkNz81VFCpJy6m15_SfuDPBhxxQ/p.jpeg"
           },
           {
             "name": "Monumental Medical Center",
             "position": "Médico (Futsal)",
-            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            "imageSrc": "https://uc63b1c3c9407b0eaf319cdb3782.previews.dropboxusercontent.com/p/thumb/ACFedKigrlqAVW9-3rFh-cJbTdY7e0OaDb2FC85iAdS0eqLKQPu5ddLHS8FqF-bxrpcprsCwd8Afq0DNOEcAGFuA42LCYK7WFG74fKtGSZU7Uv-p4-2wZbvXjwBdU1sdx-eyIyFB9z0BZGkC20mMOKG-LbhFzabikOhGGFxy4_YgpVgO4TlSEuJEsMG4Uv6RBT756X5B27dIdkYYHq7kZZe2H105GHjTG4901PuLf-aLcAfgKK-ff4L1AX6EDd1wcejiqcrV-bqw-4rDWy1Q0rEDdQzGYi4GHWV3gwZ5n4Vm64sQ06oQVbRxKn_24hmpbnyf7uSAEtFVDEMDdZubcE4CXFOq3Ab4smgM6eHTI5F2tQ/p.jpeg"
           }
         ]
       },
@@ -503,12 +507,12 @@
           {
             "name": "Hospital Particular da Madeira",
             "position": "Fisioterapeuta (Basquetebol)",
-            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            "imageSrc": "https://uc5c8a5ee5fefd92ab108cf90f8a.previews.dropboxusercontent.com/p/thumb/ACHSodU5MJNwpyZOXre5cS3CMhVmQ2YXAqneh38hAVsPCZ_FrZ8Dxb7idwBWwyG5cSLbAfx1eXWMhjoId7i94uRco-hthU29Qpoor5_XZtAct08GvgDIEDpF2iOftBHP47yHe4eBVRCklCDsBd7snwhN0W55FLksQsJPvdLKGxT0kGbQoo6u-UAJyHctKR2U03Bh4wpbmh-wtbWLtpDgdh-wBoMEKrHC2nuRfP7lAcB_-UzMbhP85ePno0IqiP7b2u5vHLD1bZa6_Bw3ePyC3ABO2HWfCXy_5KZI1iwk6831ofN63n23uRqGxsnCIYZzlT0uYRhC6hwwjYwPePWVkNz81VFCpJy6m15_SfuDPBhxxQ/p.jpeg"
           },
           {
             "name": "Fisiomotriz",
             "position": "Fisioterapeuta (Futsal)",
-            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            "imageSrc": "https://uc81d6f438bf2b0e0c8a573a40fa.previews.dropboxusercontent.com/p/thumb/ACH41LcG5_fFLx6x_OUZtxRGlsYw-g_ROaOwmpmutHWOxT5f9cWAqSgVpqX8cX6bvzq_ViTBVNRI1ym45Obg08DXUytNGwzbNSFu1lJRPAV2MU5evyzmWzpAdY2DIXnzSipMP5amy0QxWtgiWUcfegvW1pwclYfOMKpSO4rz9L9l94cd05vmrttZN_Ws1vv3DJC1fhDeCCM9BC4uvH7DZYrKVpEH1XwTBLlxTJioZoffp1acCaIs-w0Smlt8t75WUVor3rYUkgunDp_fnG6sVaaTtyKQi-jpw0J0f5qs48pH9bS02LcJdGJKEvBPK5VotlD0ObAcG7O2sZ_lwriMObP_FtzzE4DgWEA-Y-lQT2WNUQ/p.png"
           }
         ]
       },
@@ -518,7 +522,7 @@
           {
             "name": "Mauro Silva",
             "position": "Financeiro",
-            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            "imageSrc": "https://uc2ce7c561f3965d4d8feb468d09.previews.dropboxusercontent.com/p/thumb/ACE-_3Kp3kslYHdEL3qiFlSe-s6D8H4cQ8w74ewrgd3JjWlfd-_mXsWBaMzIcOWjFsHPJimn57Hhh8H_QxEgOOMdAdEy-AhcWZFvISmP-IyDGrtwbDiGqbRGBJ2awN4JM0VVOZqOzuIvxvmr1H_JHRg3RtY0Eu1OvF7l9ztGChzOj8bqA385OIwZf4lu06h8iAhxUpMnjHRyQ6Vej6Xk-zsrUeVcLnRPi5PZDyyri_u3x7ZHp61CXcJfRyvM2Gec5YwDHMXqG8LHTNGGRzHOAs_t-Bxk8vsPuVY6o6HZ9r3mU1yYW6fGI8maxPMVVsm52lPZRHnvaXaZafNSBraOeCgKqC8veXNwat1WK704bF-C1Q/p.png"
           }
         ]
       },
@@ -528,12 +532,12 @@
           {
             "name": "Ema Rodrigues",
             "position": "Marketing e Comunicação",
-            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            "imageSrc": "https://uc4c3de1541d1c37dbaa7306e3ac.previews.dropboxusercontent.com/p/thumb/ACGKubuJQgsOTWmP-T5W0cZ52mv61Pl78I-EIiJ7psnISwqYHC0qtCk7QO21DDX8YZXUw5xd8BGtQOCUgB0hhpdichINwxLRhR26htbqYlS7kZTYpZ9s-1GZT0BYpbIvHaPC67BfNumo-QvVLxV_-7mOZfxxvb-XY6mgQty0SsUOeLLLEQZQmgtC9J2uoaN2d3-xtAOmN7-YBALEsxQKPrzJOUyUmArRmfCih8EgTCmhDbt65OBvKNowAcwRWhb7gxHtG4X0RXmclM7-lZCXm-beA7m3LzrFMVJi0jFrCabSlKGwlMPAvv7dzdD2s0qEy2HSH9eR0_QogC9R4RVMlCGT5JALDPJzBrHkqA2wWeoejCGywEAfih_bnxj9SFq66Tsx7D1i3c3xWE11RLKx3Z0sMK2B7BN-dJrcmNPmIN4wa9Z5ukZ5zR8j_q972k2hfUUgQMt4BVn6GyJ_SSEUGgy1MWhPhMkZmPVoQC4Rpdtr_w/p.png"
           },
           {
             "name": "Ana Teixeira",
             "position": "Marketing e Comunicação",
-            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            "imageSrc": "https://uc7e2e3f79c2c8afda72ff9bffb5.previews.dropboxusercontent.com/p/thumb/ACGMK2_kGTUhQHhDA_Zj1tmJZBsl3BKhW3m8XrKfGHg916WQxxjJ18-jxeyXsQchnQQTgwJdCkvrD1Fp6gMcxsXUN3iQrEns0TunF8_NtUPlQZrqVHlr3HghFJuHpSn-DqrZxLPlzJdNZOZNhzLKVamhSjVblGWam34WXD0rO_dCyr4UMGGzOdzJXRznVADajPlU15h9K2Q5lEss8HBRh1_RuTU_PyqddivB2iANkEU7ivsPnLywi8L0t9LyHl9z4Ba2G7l6aDrVQCu2h8OIsPlUpTbnmYP5WOJIG1CmotuNcluj4BlyVCISAHOJ_mv28QRrX8Si2QioCxsIEXFo7RYPrp6Uz2gVqIz-BXzAeMp15WAC5QB5ihkDtzF6fJWqxJ-YszP9ie4cJed3I0zDSqetC8zk0m1mKQqgUFoISOSp6yKQ0fqSEEdMfd8X2Ln9TPDY3MENsqjyEbRGyVJPHo7FnvH9RXP9skkZyjXkv6hqMA/p.png"
           }
         ]
       },
@@ -543,7 +547,7 @@
           {
             "name": "Lilibeth Gonçalves",
             "position": "Administrativo",
-            "imageSrc": "https://images.unsplash.com/photo-1500468756762-a401b6f17b46?auto=format&fit=crop&q=80&w=1588&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            "imageSrc": "https://uce0f4dd26a7dab187e25070adbd.previews.dropboxusercontent.com/p/thumb/ACFnUfSjTugbDgAs-TbKRBxDSytvuVxkLjY7RPOUOMTt1W0VOUb9k-CEXcx-CjIMgK39KQETXCmQPTxQCl61uhhnVyZPJDExdhGfoYEgJrOpo3wE09VRWstaYiyTwQEmTAOE4k85eibN1XUEUJcCHiazKileLbXuR9-NSOfY5APrjYn2YSNgUwV-vJ5PEp3PeUgHb2BWpobnlboi-uZQRPzUqEPUovw7C_yv6v_OhK8XoMrLoZKF5WCIkJacElkJPVrua-zk6_pWurSJUxv9IT6ADDPMHAPDkz_Va082J9Ndmsr7b-APuVm7yRuyFYVw4SOSkJKNSRmkTRyr1_VE8eNmwCTxNOOuYCAarQpQltEMsrThzHLWFMRGpdhR1VgOjsm46T7tzdfoQAWGkh1BX9uONOOo4X_reFMBe-K6mifbgQ/p.png"
           }
         ]
       }

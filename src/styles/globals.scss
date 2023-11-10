@@ -139,6 +139,10 @@ footer {
   transform: translateY(-50px);
 }
 
+.darkDots {
+  transform: translateY(0);
+}
+
 .dot {
   border: none;
   width: 10px;
@@ -150,12 +154,20 @@ footer {
   cursor: pointer;
 }
 
+.dot {
+  background: rgba(98, 98, 98, 0.365);
+}
+
 .dot:focus {
   outline: none;
 }
 
 .dot.active {
   background: white;
+}
+
+.darkArrows.active {
+  background: var(--blue);
 }
 
 //Responsive

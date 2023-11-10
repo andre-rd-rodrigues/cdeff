@@ -17,6 +17,8 @@ export const SPORTS = {
 
 export const TEL_LINK = "tel:+351 914 333 333";
 
+export const REVALIDATE_TIME = 1800; // 30 minutes
+
 export const headConfig = {
   "/": {
     title: "homeTitle" // These are keys for your translation files

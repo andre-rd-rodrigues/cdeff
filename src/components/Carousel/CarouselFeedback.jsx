@@ -2,13 +2,7 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { useState } from "react";
 
-export default function Carousel({
-  children,
-  autoPlay,
-  isSpaced,
-  timeoutProp = 2500,
-  darkArrows
-}) {
+export default function CarouselFeedback({ children, timeoutProp = 2500 }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
 
@@ -20,21 +14,14 @@ export default function Carousel({
     },
     created() {
       setLoaded(true);
-    }
+    },
+    breakpoints: {
+      "(min-width: 400px)": {
+        slides: { perView: 2, spacing: 20 }
+      }
+    },
+    slides: { perView: 1 }
   };
-
-  if (isSpaced) {
-    // Add the breakpoints and slides configuration if isSpaced is true
-    config = {
-      ...config,
-      breakpoints: {
-        "(min-width: 600px)": {
-          slides: { perView: 2, spacing: 20 }
-        }
-      },
-      slides: { perView: 1 }
-    };
-  }
 
   const [sliderRef, instanceRef] = useKeenSlider(config, [
     (slider) => {
@@ -79,7 +66,7 @@ export default function Carousel({
         </div>
       </div>
       {loaded && instanceRef.current && (
-        <div className={`dots ${darkArrows ? "darkDots" : ""}`}>
+        <div className="dots">
           {[
             ...Array(instanceRef.current.track.details.slides.length).keys()
           ].map((idx) => {
@@ -90,9 +77,7 @@ export default function Carousel({
                   instanceRef.current?.moveToIdx(idx);
                 }}
                 className={
-                  "dot" +
-                  (currentSlide === idx ? " active" : "") +
-                  (darkArrows ? " darkArrows" : "")
+                  "dotFeedback" + (currentSlide === idx ? " active" : "")
                 }
               />
             );

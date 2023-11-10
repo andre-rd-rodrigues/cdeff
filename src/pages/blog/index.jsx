@@ -3,6 +3,7 @@ import PageHeader from "@/components/PageHeader/PageHeader";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
 import { getPosts } from "@/lib/notion";
+import { REVALIDATE_TIME } from "@/utils";
 import { useTranslations } from "next-intl";
 import React from "react";
 
@@ -48,6 +49,7 @@ export async function getStaticProps({ locale }) {
     props: {
       messages: (await import(`../../messages/${locale}.json`)).default,
       posts
-    }
+    },
+    revalidate: REVALIDATE_TIME
   };
 }

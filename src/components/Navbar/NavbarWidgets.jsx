@@ -10,7 +10,9 @@ import styles from "./navbar.module.scss";
 const CTAButton = () => {
   const t = useTranslations();
   return (
-    <Button label={t("common.buttons.registration")} className="text-sm" />
+    <Link href="/registrations">
+      <Button label={t("common.buttons.registrations")} className="text-sm" />
+    </Link>
   );
 };
 
