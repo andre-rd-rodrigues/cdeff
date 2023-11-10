@@ -89,15 +89,16 @@ const getPost = async (slug, locale) => {
 };
 
 /* Tournaments */
-const getTournamentPageMetaData = (post) => {
+const getTournamentPageMetaData = (tournament) => {
   return {
-    id: post?.id,
-    title: post?.properties?.Titulo.title[0].plain_text,
-    description: post?.properties?.Descrição.rich_text[0].plain_text,
-    /* date: post?.properties?.Data, */
-    slug: post?.properties?.Slug.rich_text[0].plain_text,
-    image: post?.cover?.external?.url,
-    location: post?.properties?.Local.rich_text[0].plain_text
+    id: tournament?.id,
+    title: tournament?.properties?.Titulo?.title[0]?.plain_text,
+    description:
+      tournament?.properties?.Descrição?.rich_text[0]?.plain_text || null,
+    /* date: tournament?.properties?.Data, */
+    slug: tournament?.properties?.Slug?.rich_text[0]?.plain_text,
+    image: tournament.cover?.external?.url || tournament.cover?.file?.url || "",
+    location: tournament?.properties?.Local?.rich_text[0]?.plain_text
   };
 };
 

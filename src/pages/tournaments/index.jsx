@@ -14,10 +14,11 @@ function TournamentsPage({ tournaments }) {
 
   const t = useTranslations();
 
-  const tournamentsFiltered = tournaments?.filter(
+  const renderTournaments = tournaments?.filter(
     (tournament) =>
       tournament.properties?.Modalidade.select.name === selectedSport
   );
+  console.log(tournaments);
 
   return (
     <main>
@@ -47,17 +48,20 @@ function TournamentsPage({ tournaments }) {
           />
         </div>
         <div className="my-16">
-          <div className="flex flex-wrap gap-10 justify-center md:justify-start">
-            {tournamentsFiltered?.map((tournament, i) => (
+          <div className="flex flex-wrap gap-10 justify-center">
+            {renderTournaments?.map((tournament, i) => (
               <EventCard
                 key={i}
                 href={`tournaments/${tournament.properties.Slug.rich_text[0].plain_text}`}
                 event={{
                   title: tournament.properties.Titulo.title[0].plain_text,
                   description:
-                    tournament.properties?.Descrição.rich_text[0]?.plain_text,
-                  date: tournament.properties?.Data.date.start,
-                  image: tournament.cover?.external.url,
+                    tournament.properties?.Descrição?.rich_text[0]?.plain_text,
+                  dateStart: tournament.properties?.Data?.date?.start,
+                  dateEnd: tournament.properties?.Data?.date?.end,
+                  image:
+                    tournament.cover?.external?.url ||
+                    tournament.cover?.file?.url,
                   location:
                     tournament.properties?.Local.rich_text[0]?.plain_text
                 }}

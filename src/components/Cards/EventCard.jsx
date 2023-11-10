@@ -1,5 +1,5 @@
 import { barlow } from "@/styles/fonts";
-import { DATE_FORMAT_HOURS } from "@/utils";
+import { DATE_FORMAT, DATE_FORMAT_HOURS } from "@/utils";
 import { Icon } from "@iconify/react";
 import dayjs from "dayjs";
 import { useTranslations } from "next-intl";
@@ -13,18 +13,19 @@ function EventCard({ event, href }) {
 
   const { locale } = useRouter();
 
-  const { title, description, date, image, location } = event;
+  const { title, description, dateStart, dateEnd, image, location } = event;
 
   return (
-    <Link href={href} className="relative flex flex-col shadow-xl max-w-sm">
+    <Link href={href} className="relative flex flex-col shadow-xl max-w-xs">
       <div className="relative h-[450px]">
         <Image
-          src={image}
+          src={image || "/images/metadata.png"}
           alt={title}
           layout="fill"
           style={{
             objectFit: "cover"
           }}
+          preload="true"
         />
       </div>
       <h2
@@ -40,7 +41,11 @@ function EventCard({ event, href }) {
             fontSize={20}
           />
           <p className="text-sm font-light text-gray-400">
-            {dayjs(date).locale(locale).format(DATE_FORMAT_HOURS)}
+            {`${dayjs(dateStart).locale(locale).format(DATE_FORMAT)} ${
+              dateEnd
+                ? `- ${dayjs(dateEnd).locale(locale).format(DATE_FORMAT)}`
+                : ""
+            }`}
           </p>
         </div>
         <div className="flex gap-2 items-center">
