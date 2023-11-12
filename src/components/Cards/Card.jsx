@@ -22,7 +22,7 @@ const Card = ({
         <Image
           src={imageSrc}
           alt={title}
-          layout="fill"
+          fill
           style={{
             objectFit: "cover"
           }}
@@ -40,9 +40,11 @@ const Card = ({
               {subTitle}
             </p>
           )}
-          <p className=" text-gray-700 text-justify text-sm break-words mt-4 mb-6">
-            {description}
-          </p>
+          {description && (
+            <p className=" text-gray-700 text-justify text-sm break-words mt-4 mb-6">
+              {description}
+            </p>
+          )}
         </div>
         {hasButton && (
           <Button label={t("common.buttons.book")} onClick={() => null} />

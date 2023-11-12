@@ -172,11 +172,38 @@
         "subtitle": "Welcome to basketball",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
       },
-      "ranks": {
-        "title": "Select the rank",
-        "subtitle": "rank details",
-        "young": "young",
-        "senior": "senior"
+      "membership": {
+        "title": "Join this family, become a member!",
+        "description": "We want you to be part of this family! How? Easy! Just become a member and take advantage of all exclusive offers we have for you! Fill out the form bellow."
+      },
+      "teamRoles": {
+        "Seniores": "Seniors",
+        "Sub-18 Femininos": "U-18 Girls",
+        "Sub-18 Masculinos": "U-18 Boys",
+        "Sub-16 Femininos": "U-16 Girls",
+        "Sub-16 Masculinos": "U-16 Boys",
+        "Sub-14 Femininos": "U-14 Girls",
+        "Sub-14 Masculinos": "U-14 Boys",
+        "Mini 12 Femininos": "Mini 12 Girls",
+        "Mini 12 Masculinos": "Mini 12 Boys",
+        "Mini 8 e Mini 10": "Mini 8 and Mini 10"
+      }
+    },
+    "futsal": {
+      "welcome": {
+        "title": "Lorem ipsum dolor sit.",
+        "subtitle": "Welcome to basketball",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+      },
+
+      "teamRoles": {
+        "Seniores": "Seniors",
+        "Juniores": "Juniors",
+        "Juvenis": "Youths",
+        "Iniciados": "Initiates",
+        "Infantis": "Children",
+        "Benjamins": "Benjamins",
+        "Petizes e Traquinas": "Tots and Tykes"
       }
     },
     "tournaments": {
@@ -233,6 +260,11 @@
       "title": "404",
       "subtitle": "Page not found",
       "description": "The page you are looking for does not exist. Please check the URL or press the button to go back."
+    },
+    "registrations": {
+      "title": "Registrations",
+      "activities": "Activities",
+      "tournament": "Tournament"
     }
   },
   "components": {
@@ -429,6 +461,8 @@
       "blogTitle": "Blog - FF Sports Club",
       "faqsTitle": "FAQs - FF Sports Club",
       "contactsTitle": "Contacts - FF Sports Club",
+      "notFoundTitle": "404 - FF Sports Club",
+      "registrationsTitle": "Registrations - FF Sports Club",
       "description": "At the Francisco Franco Sports Club, we believe that sports are a tool for personal and social development. Through sports practice, our athletes learn to work as a team, respect others and themselves, be more responsible, and maintain a positive attitude towards life."
     },
     "sports": {
@@ -446,6 +480,15 @@
       "contacts": "contact us",
       "goBack": "Go back"
     },
+    "pages": {
+      "techTeam": "Technical Team",
+      "selectRank": "Select the rank",
+      "subtitle": "rank details",
+      "schedule": "Training schedule",
+      "details": "Details"
+    },
+
+    "seeResults": "Check the last results of the games! 👇🏻",
     "links": {
       "contacts": "contacts"
     },

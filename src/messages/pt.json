@@ -168,11 +168,37 @@
         "subtitle": "Welcome to basketball",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
       },
-      "ranks": {
-        "title": "Select the rank",
-        "subtitle": "rank details",
-        "young": "young",
-        "senior": "senior"
+      "membership": {
+        "title": "Junta-te a esta família, faz-te sócio!",
+        "description": "Queremos que faças parte desta família! Como? Simples! Basta tornares-te sócio e aproveitares todas as ofertas exclusivas que temos para ti!"
+      },
+      "teamRoles": {
+        "Seniores": "Seniores",
+        "Sub-18 Femininos": "Sub-18 Femininos",
+        "Sub-18 Masculinos": "Sub-18 Masculinos",
+        "Sub-16 Femininos": "Sub-16 Femininos",
+        "Sub-16 Masculinos": "Sub-16 Masculinos",
+        "Sub-14 Femininos": "Sub-14 Femininos",
+        "Sub-14 Masculinos": "Sub-14 Masculinos",
+        "Mini 12 Femininos": "Mini 12 Femininos",
+        "Mini 12 Masculinos": "Mini 12 Masculinos",
+        "Mini 8 e Mini 10": "Mini 8 e Mini 10"
+      }
+    },
+    "futsal": {
+      "welcome": {
+        "title": "Lorem ipsum dolor sit.",
+        "subtitle": "Welcome to basketball",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+      },
+      "teamRoles": {
+        "Seniores": "Seniores",
+        "Juniores": "Juniores",
+        "Juvenis": "Juvenis",
+        "Iniciados": "Iniciados",
+        "Infantis": "Infantis",
+        "Benjamins": "Benjamins",
+        "Petizes e Traquinas": "Petizes e Traquinas"
       }
     },
     "tournaments": {
@@ -229,6 +255,11 @@
       "title": "404",
       "subtitle": "Página não encontrada",
       "description": "A página que procuras não existe. Prime o botão abaixo para voltares à página anterior."
+    },
+    "registrations": {
+      "title": "Inscrições",
+      "activities": "Atividades",
+      "tournament": "torneio"
     }
   },
   "components": {
@@ -425,6 +456,8 @@
       "blogTitle": "Blog - CDEFF",
       "faqsTitle": "FAQs - CDEFF",
       "contactsTitle": "Contactos - CDEFF",
+      "registrationsTitle": "Inscrições - CDEFF",
+      "notFoundTitle": "404 - CDEFF",
       "description": "No Clube Despostivo da Francisco Franco, acreditamos que o desporto é uma ferramenta de desenvolvimento pessoal e social. Através da prática desportiva, os nossos atletas aprendem a trabalhar em equipa, a respeitar os outros e a si próprios, a serem mais responsáveis e a terem uma atitude positiva perante a vida."
     },
     "sports": {
@@ -573,6 +606,18 @@
         ],
         "sizes": ["S", "M", "L", "XL"]
       }
-    ]
+    ],
+
+    "techTeam": {
+      "title": "Equipa técnica"
+    },
+    "pages": {
+      "techTeam": "Equipa técnica",
+      "selectRank": "Seleciona o escalão",
+      "details": "detalhes",
+      "schedule": "Horário de treinos"
+    },
+
+    "seeResults": "Clica aqui para veres os últimos resultados dos jogos! 👇🏻"
   }
 }

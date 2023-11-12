@@ -1,27 +1,23 @@
-import RankCard from "@/components/Cards/RankCode/RankCard";
+import Card from "@/components/Cards/Card";
+import HeroHeader from "@/components/Hero/HeroHeader/HeroHeader";
+import HeroSection from "@/components/Hero/HeroSection/HeroSection";
 import PageHeader from "@/components/PageHeader/PageHeader";
+import RankSection from "@/components/RankSection";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
 import Tabs from "@/components/Tabs/Tabs";
 import TextWithImage from "@/components/TextWithImage/TextWithImage";
-import { getPosts } from "@/lib/notion";
-import { getTranslations } from "@/utils";
+import {
+  basketAllSponsorUrls,
+  basketTeamsImages,
+  basketTechnicalTeam
+} from "@/data/basketball";
+import { barlow } from "@/styles/fonts";
 import { useTranslations } from "next-intl";
-import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 function BasketballPage() {
-  const { locale } = useRouter();
-
   const t = useTranslations();
-
-  const translations = getTranslations(locale);
-
-  const ranksList = translations.pages.basketball.ranks.ranksList;
-
-  const handleRankSelect = (rank) => {
-    console.log(rank);
-  };
 
   /* 
   Structure for the dynamic page
@@ -49,23 +45,107 @@ function BasketballPage() {
         />
       </Section>
 
+      {/* Technical team */}
       <Section>
         <SectionTitle
           className="text-center -mb-4"
-          title={t("pages.basketball.ranks.title")}
-          subTitle={t("pages.basketball.ranks.subtitle")}
+          title={t("common.pages.techTeam")}
         />
+        <div
+          className="flex flex-wrap gap-12 justify-around mb-12"
+          style={{ marginTop: "75px" }}
+        >
+          {basketTechnicalTeam.map(({ role, members }, i) => (
+            <div key={i} className="flex flex-col items-center">
+              <SectionTitle
+                title={t(`pages.basketball.teamRoles.${role}`)}
+                className={"sub_section_title"}
+              />
+              <div className="flex flex-wrap gap-6 md:justify-normal justify-center">
+                {members.map(({ name, image }, i) => (
+                  <Card
+                    className={"w-[220px] h-[300px]"}
+                    key={i}
+                    imageSrc={image}
+                    title={name}
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </Section>
 
-        {/* Rank select */}
+      {/* Ranks */}
+      <Section containerClassName={"bg-white"}>
+        <SectionTitle
+          className="text-center -mb-4"
+          title={t("common.pages.selectRank")}
+          subTitle={t("common.pages.details")}
+        />
         <Tabs
           tabs={[
-            { name: t("pages.basketball.ranks.young"), content: "Hey" },
-            { name: t("pages.basketball.ranks.senior"), content: "good!" }
+            {
+              name: t("pages.basketball.teamRoles.Seniores"),
+              content: <RankSection team={basketTeamsImages.seniores} />
+            }
           ]}
         />
+      </Section>
 
-        {/* Sponsors */}
-        <SectionTitle className="" title={t("pages.sponsors.title")} />
+      <HeroHeader
+        linkLabel={t("common.buttons.registration")}
+        href="https://www.fpb.pt/equipa/equipa_47535/"
+        imageSrc="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=1490&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      >
+        <h2
+          className={`${barlow.className} text-4xl mb-4 uppercase tracking-wide`}
+        >
+          {t("pages.basketball.membership.title")}
+        </h2>
+        <p className="tracking-wide">
+          {t("pages.basketball.membership.description")}
+        </p>
+      </HeroHeader>
+
+      {/* Training schedule */}
+      <Section>
+        <SectionTitle title={t("common.pages.schedule")} />
+        <div className="relative w-full h-[300px] md:h-[600px]">
+          <Image
+            alt="Training schedule"
+            fill
+            style={{ objectFit: "contain" }}
+            src="https://uc4eb1c8d9d417e043b4b2956175.previews.dropboxusercontent.com/p/pdf_img/ACGFySxgDg2-TfnnePJGyOedE9dRGOzRRnb-PiDl5BjgFegiXlfaLSroOuoLtn5H40wjhGngSuIlTjn1E1ua68m9wgCpA_fVwtRyrXYp__bs_7kaitMAkpdnXJIlbrL3GskXebq4xnjJ_x97F7DUFsVaIqkf5hUaFeXXgSG_VND5HINQ_0YTsXp8UBW1usi6PEjtbvaogQkrsaCVzMyLnbLOESnSv-j7RQ7OyhpN_C6ZOITNE4mYQIlTdMdIEjb-RThd4p1Z1yIISFv1d3Mz19e0rFQvZ3ZcQYF9iQGZzFZ0lMXpziXnmh9AUTZErbhOhtAldQ3agKgCdF_JaKC2HNP0jQAzNXpP72T9D_Lu6zw4_yB-DCL4eCP1TNzAxyTKhlo/p.png?page=0"
+          />
+        </div>
+      </Section>
+
+      {/* See results */}
+      <HeroSection
+        imageSrc="https://sav2.fpb.pt/uploads/equipas/EQU_475351697626024.jpg"
+        linkLabel={t("common.buttons.registration")}
+        subtitle={t("common.sports.basketball")}
+        title={t("common.seeResults")}
+        href="https://www.fpb.pt/equipa/equipa_47535/"
+      />
+
+      {/* Sponsors */}
+      <Section containerClassName={"bg-white"}>
+        <SectionTitle title={t("pages.sponsors.title")} />
+
+        <div className="flex flex-wrap gap-5 justify-center md:justify-between">
+          {basketAllSponsorUrls.map((image, i) => (
+            <div className="relative w-[150px] h-[130px]" key={i}>
+              <Image
+                fill
+                style={{ objectFit: "contain" }}
+                src={image}
+                alt="CDEFF Patrocinadores"
+              />
+            </div>
+          ))}
+        </div>
       </Section>
     </main>
   );

@@ -26,7 +26,7 @@ const HeroSection = ({
           <h3 className={`${styles.title} ${barlow.className}`}>{title}</h3>
         )}
         {linkLabel && (
-          <Link href={href} className="text-center mt-2">
+          <Link href={href} className="text-center mt-2" target="_blank">
             <Button label={linkLabel} />
           </Link>
         )}

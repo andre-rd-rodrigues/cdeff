@@ -30,8 +30,6 @@ export default function Home({ blogPosts }) {
     <main>
       <Carousel autoPlay timeoutProp={4000}>
         <HeroHeader
-          linkLabel={t("common.buttons.registration")}
-          href="#"
           imageSrc="/images/homepage/headquarters.jpeg"
           className="keen-slider__slide"
         >
@@ -49,7 +47,7 @@ export default function Home({ blogPosts }) {
           linkLabel={t("common.buttons.registration")}
           subtitle={t("pages.homepage.hero_1.subtitle")}
           title={t("pages.homepage.hero_1.title")}
-          href="#"
+          href="/registrations"
           className="keen-slider__slide"
         />
       </Carousel>

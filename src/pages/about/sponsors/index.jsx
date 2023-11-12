@@ -4,6 +4,7 @@ import HeroSection from "@/components/Hero/HeroSection/HeroSection";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
+import SponsorSection from "@/components/SponsorSection";
 import { basketSponsors } from "@/data/basketball";
 import { futsalSponsors } from "@/data/futsal";
 import { barlow } from "@/styles/fonts";
@@ -13,34 +14,6 @@ import React from "react";
 
 function Sponsors() {
   const t = useTranslations();
-
-  const SponsorSection = ({ images, basket }) => {
-    return (
-      <div className="flex gap-10 mb-10">
-        <div>
-          <SectionTitle
-            title={
-              basket ? t("common.sports.basketball") : t("common.sports.futsal")
-            }
-            isSubSectionTitle
-            textClassName={"opacity-70"}
-          />
-          <div className="flex flex-wrap gap-5">
-            {images.map((image, i) => (
-              <div className="relative w-[150px] h-[130px]" key={i}>
-                <Image
-                  fill
-                  style={{ objectFit: "contain" }}
-                  src={image}
-                  alt="CDEFF Patrocinadores"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    );
-  };
 
   return (
     <main>

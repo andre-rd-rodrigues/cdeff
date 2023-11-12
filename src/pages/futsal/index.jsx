@@ -1,6 +1,18 @@
+import Card from "@/components/Cards/Card";
+import HeroSection from "@/components/Hero/HeroSection/HeroSection";
 import PageHeader from "@/components/PageHeader/PageHeader";
+import RankSection from "@/components/RankSection";
+import Section from "@/components/Section";
+import SectionTitle from "@/components/SectionTitle";
+import Tabs from "@/components/Tabs/Tabs";
+import TextWithImage from "@/components/TextWithImage/TextWithImage";
+import {
+  futsalAllSponsorsUrls,
+  futsalTeam,
+  futsalTechnicalTeam
+} from "@/data/futsal";
 import { useTranslations } from "next-intl";
-import React from "react";
+import Image from "next/image";
 
 function FutsalPage() {
   const t = useTranslations();
@@ -10,9 +22,116 @@ function FutsalPage() {
       <PageHeader
         title={t("common.sports.futsal")}
         image={
-          "https://images.unsplash.com/photo-1628779238951-be2c9f2a59f4?auto=format&fit=crop&q=80&w=1587&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          "https://images.unsplash.com/photo-1549764206-048e4d403417?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
       />
+
+      {/* Welcome section */}
+      <Section containerClassName={"bg-white"}>
+        <TextWithImage
+          title={t("pages.futsal.welcome.title")}
+          subtitle={t("pages.futsal.welcome.subtitle")}
+          description={t("pages.futsal.welcome.description")}
+          imgSrc="https://images.unsplash.com/photo-1669046238811-8e748e79b8de?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+      </Section>
+
+      {/* Technical team */}
+      <Section>
+        <SectionTitle
+          className="text-center -mb-4"
+          title={t("common.pages.techTeam")}
+        />
+        <div
+          className="flex flex-wrap gap-12 justify-around mb-12"
+          style={{ marginTop: "75px" }}
+        >
+          {futsalTechnicalTeam.map(({ role, members }, i) => (
+            <div key={i} className="flex flex-col items-center">
+              <SectionTitle
+                title={t(`pages.futsal.teamRoles.${role}`)}
+                className={"sub_section_title"}
+              />
+              <div className="flex flex-wrap gap-6 md:justify-normal justify-center">
+                {members.map(({ name, image }, i) => (
+                  <Card
+                    className={"w-[220px] h-[300px]"}
+                    key={i}
+                    imageSrc={image}
+                    title={name}
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* Ranks */}
+      <Section containerClassName={"bg-white"}>
+        <SectionTitle
+          className="text-center mb-1 md:-mb-4"
+          title={t("common.pages.selectRank")}
+          subTitle={t("common.pages.details")}
+        />
+        <Tabs
+          tabs={[
+            {
+              name: t("pages.futsal.teamRoles.Seniores"),
+              content: (
+                <>
+                  <RankSection team={futsalTeam.seniores} />
+                </>
+              )
+            },
+            {
+              name: t("pages.futsal.teamRoles.Juniores"),
+              content: <RankSection team={futsalTeam.juniores} />
+            }
+          ]}
+        />
+      </Section>
+
+      {/* Training schedule */}
+      <Section>
+        <SectionTitle title={t("common.pages.schedule")} />
+        <div className="relative w-full h-[300px] md:h-[600px]">
+          <Image
+            alt="Training schedule"
+            fill
+            style={{ objectFit: "contain" }}
+            src="https://uc68b2e2882b60483c0f53f53eca.previews.dropboxusercontent.com/p/pdf_img/ACFuOcAHygy_y2VecqR2gjMBf_pEmIRXB32Pn6RhcCSPqcsdtELmCf5ylDmJuuokwL45CCaH6YmIJONe6IkwtnmzSfkVf0b3GNwAklzythfF3Q-P_if14zbQ2OzN64IkhALaEtQIf_tDRCTRYesyo4RWZ4ztiA-QzVVQJW-UlokTH7z0x2SgPJ04iVWwtHZFAAGlit0NuhJAv_nwR1e8F9J_F_wHcTcTd61qOzMLPCCFJG570yUJbjL-u9t4QZCC9b-MpgqdmUcKGqCnB0sGabX33Jft9Ve1dGvKuv90uf2RvLFUbVzj2fGYQf1z7NlYJIzfI1LVcYzi6GMw9CTvzZSZB9xi9pCgysFUPxGNbBptFLZGquvaBqo2RV83pMqzwFg/p.png?page=0"
+          />
+        </div>
+      </Section>
+
+      {/* See results */}
+      <HeroSection
+        imageSrc="https://images.unsplash.com/photo-1553627220-92f0446b6a5f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        linkLabel={t("common.buttons.seeMore")}
+        subtitle={t("common.sports.futsal")}
+        title={t("common.seeResults")}
+        href="https://resultados.fpf.pt/Competition/Details?competitionId=24488&seasonId=103"
+      />
+
+      {/* Sponsors */}
+      <Section containerClassName={"bg-white"}>
+        <SectionTitle title={t("pages.sponsors.title")} />
+
+        <div className="flex flex-wrap gap-5 justify-center md:justify-between">
+          {futsalAllSponsorsUrls.map((image, i) => (
+            <div className="relative w-[150px] h-[130px]" key={i}>
+              <Image
+                fill
+                style={{ objectFit: "contain" }}
+                src={image}
+                alt="CDEFF Patrocinadores"
+                onError={(e) => console.error(e.target.src)}
+              />
+            </div>
+          ))}
+        </div>
+      </Section>
     </main>
   );
 }
