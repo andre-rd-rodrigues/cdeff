@@ -62,8 +62,8 @@
       },
       "departments": "Departamentos",
       "sponsors": {
-        "title": "Os nossos patrocinadores",
-        "subtitle": "Patrocinadores",
+        "title": "Quer apoiar o nosso Clube? Torne-se um patrocinador/parceiro!",
+        "subtitle": "Os nossos patrocinadores",
         "description": "A nossa existência não seria possível sem o apoio dos nossos patrocinadores e parceiros, que nos apoiam diariamente em prol do nosso crescimento, apresentando-se como elementos fundamentais no nosso sucesso. A todos vocês, Obrigado! Quer apoiar o nosso Clube? Torne-se um patrocinador/parceiro!"
       },
       "activities": {
@@ -157,7 +157,7 @@
       "sponsors": "Patrocinadores",
       "collaborations": "Colaboradores",
       "hero": {
-        "title": "Muito obrigado!",
+        "title": "Quer apoiar o nosso Clube? Torne-se um patrocinador/parceiro!",
         "description": "A nossa existência não seria possível sem o apoio dos nossos patrocinadores e parceiros, que nos apoiam diariamente em prol do nosso crescimento, apresentando-se como elementos fundamentais no nosso sucesso. A todos vocês, Obrigado!\nQuer apoiar o nosso Clube? Torne-se um patrocinador/parceiro!"
       }
     },
@@ -227,7 +227,37 @@
       "title": "Loja"
     },
     "faqs": {
-      "title": "Perguntas Frequentes"
+      "title": "Perguntas Frequentes",
+      "questions": [
+        {
+          "question": "Quais os horários de treinos do basquetebol e futsal?",
+          "answer": ""
+        },
+        {
+          "question": "Quais os escalões do basquetebol e futsal?",
+          "answer": ""
+        },
+        {
+          "question": "Quais são as modalidades que existem e os respetivos valores?",
+          "answer": ""
+        },
+        {
+          "question": "Como/onde fazer as inscrições? Valores das quotas?",
+          "answer": ""
+        },
+        {
+          "question": "Valores dos equipamentos",
+          "answer": ""
+        },
+        {
+          "question": "Informações sobre o ATL (principalmente)",
+          "answer": ""
+        },
+        {
+          "question": "Informações sobre os aniversários (Valores, condições)",
+          "answer": ""
+        }
+      ]
     },
     "contacts": {
       "title": "Contactos",
@@ -301,7 +331,7 @@
           "subLinks": null
         },
         {
-          "name": "Actividades",
+          "name": "Atividades",
           "href": "/activities",
           "subLinks": null
         },
@@ -399,7 +429,7 @@
           "subLinks": null
         },
         {
-          "name": "Actividades",
+          "name": "Atividades",
           "href": "/activities",
           "subLinks": null
         },
@@ -451,7 +481,7 @@
       "basketballTitle": "Basquetebol - CDEFF",
       "futsalTitle": "Futsal - CDEFF",
       "tournamentsTitle": "Torneios - CDEFF",
-      "activitiesTitle": "Actividades - CDEFF",
+      "activitiesTitle": "Atividades - CDEFF",
       "storeTitle": "Loja - CDEFF",
       "blogTitle": "Blog - CDEFF",
       "faqsTitle": "FAQs - CDEFF",

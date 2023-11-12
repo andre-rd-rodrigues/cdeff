@@ -5,10 +5,13 @@ import enTranslations from "../../messages/en.json";
 import ptTranslations from "../../messages/pt.json";
 
 import { barlow } from "@/styles/fonts";
+import { useRouter } from "next/router";
 
-function Faqs({ locale }) {
+function Faqs() {
+  const { locale } = useRouter();
+
   const translations = locale === "en" ? enTranslations : ptTranslations;
-  const faqs = translations.components.faqs.questions;
+  const faqs = translations.pages.faqs.questions;
 
   return (
     <section>

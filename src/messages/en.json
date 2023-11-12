@@ -161,7 +161,7 @@
       "collaborations": "Collaborations",
 
       "hero": {
-        "title": "Thank you so much!",
+        "title": "Do you want to support our Club? Become a sponsor/partner!",
         "description": "Our existence would not be possible without the support of our sponsors and partners, who support us daily towards our growth, and are fundamental elements in our success. To all of you, Thank you!\nWant to support our Club? Become a sponsor/partner!"
       }
     },
@@ -232,7 +232,37 @@
       "title": "Store"
     },
     "faqs": {
-      "title": "Frequently Asked Questions"
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "What are the practice schedules for basketball and soccer?",
+          "answer": ""
+        },
+        {
+          "question": "What are the levels of basketball and football?",
+          "answer": ""
+        },
+        {
+          "question": "What are the modalities and their values?",
+          "answer": ""
+        },
+        {
+          "question": "How/where to register? Values?",
+          "answer": ""
+        },
+        {
+          "question": "Values of equipment",
+          "answer": ""
+        },
+        {
+          "question": "Information of ATL",
+          "answer": ""
+        },
+        {
+          "question": "Birthday Informations (Values, Conditions)",
+          "answer": ""
+        }
+      ]
     },
     "contacts": {
       "title": "Contacts",

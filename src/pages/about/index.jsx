@@ -61,7 +61,6 @@ function About() {
       </Section>
 
       {/* Sponsors Section */}
-
       <HeroHeader
         linkLabel={t("common.buttons.learnMore")}
         href="/about/sponsors"

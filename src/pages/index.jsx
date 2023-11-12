@@ -10,6 +10,7 @@ import HeroSection from "@/components/Hero/HeroSection/HeroSection";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
 import TextWithImage from "@/components/TextWithImage/TextWithImage";
+import { futsalProducts } from "@/data/futsal";
 import { getPosts } from "@/lib/notion";
 import { barlow } from "@/styles/fonts";
 
@@ -21,10 +22,6 @@ import { useRouter } from "next/router";
 export default function Home({ blogPosts }) {
   const t = useTranslations();
   const { locale } = useRouter();
-
-  const translations = getTranslations(locale);
-
-  const products = translations.common.products;
 
   return (
     <main>
@@ -113,16 +110,18 @@ export default function Home({ blogPosts }) {
           title={t("pages.homepage.store.title")}
           subTitle={t("pages.homepage.store.subtitle")}
         />
-        <div className="flex flex-wrap gap-10 justify-center md:justify-start">
-          {products.slice(0, 3).map(({ images, title, price, sizes }, i) => (
-            <ProductCard
-              key={i}
-              title={title}
-              images={images}
-              price={price}
-              sizes={sizes}
-            />
-          ))}
+        <div className="flex flex-wrap gap-10 justify-center md:justify-between">
+          {futsalProducts
+            .slice(0, 4)
+            .map(({ image, name, price, sizes }, i) => (
+              <ProductCard
+                key={i}
+                title={name}
+                image={image}
+                price={price}
+                sizes={sizes}
+              />
+            ))}
         </div>
         <div className="text-center mt-12">
           <Link href="/store">

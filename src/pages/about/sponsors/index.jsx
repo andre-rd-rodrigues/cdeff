@@ -10,6 +10,7 @@ import { futsalSponsors } from "@/data/futsal";
 import { barlow } from "@/styles/fonts";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function Sponsors() {
@@ -51,6 +52,13 @@ function Sponsors() {
           {t("pages.sponsors.hero.title")}
         </h1>
         <p className="tracking-wide">{t("pages.sponsors.hero.description")}</p>
+        <Link href={"/assets/sponsoring.pdf"} className="mx-3">
+          <Button
+            variant
+            label={"Download"}
+            className={"text-white border-white"}
+          />
+        </Link>
       </HeroHeader>
 
       {/* Normal */}
