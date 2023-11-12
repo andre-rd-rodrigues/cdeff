@@ -21,14 +21,16 @@ function RegistrationPage() {
         }
       />
       <Section>
-        <RegistrationCard
-          links={viiTournamentPreLinks}
-          imageSrc={
-            "https://uc77d943bf1a177f1d228ef87c97.previews.dropboxusercontent.com/p/thumb/ACF47XJX1-4Ayl249zWCUeW-tMhQupLWPRKMOrS6HAX1XQ5bJ_X0-NP2S9qX76Lfp6ccGGHNBhfZSWtNqaIA8-kE-hv9RWg2Xfv_7oWSSaqJZRSYqoZkE30DNI55SaaqOz3kInwY1i45vXsfuDXHF1Nk9wa89onU8Dc4g1ck0J1ujrcmIHblRvQgeErPuSCaQaFIYhHEiEaJhsD0csekkB8ZyJ7y1CXxgigrBnaPjRvHtaRwWeu7Ik_JPsGKomkGf8hhl-QRquYdek2Qi7o-SEjtVohDQpMvCcEP_fk26aDOC55bx96Xc-7aq4Gfar6oCPP6AIbIqcplxU5E36PAF-xuiINijRgbd_N-_6X_vBHQ9x4Lukw6NJCEErh5tLHNwibKbBLAMwtQRolXYZ68EKz1Kgy4ArqodIUpq_uDdJrPgw/p.jpeg"
-          }
-          title={t("pages.registrations.tournament")}
-          buttonLabel={t("common.buttons.registration")}
-        />
+        <div className="flex flex-wrap md:justify-start justify-center">
+          <RegistrationCard
+            links={viiTournamentPreLinks}
+            imageSrc={
+              "https://uc77d943bf1a177f1d228ef87c97.previews.dropboxusercontent.com/p/thumb/ACF47XJX1-4Ayl249zWCUeW-tMhQupLWPRKMOrS6HAX1XQ5bJ_X0-NP2S9qX76Lfp6ccGGHNBhfZSWtNqaIA8-kE-hv9RWg2Xfv_7oWSSaqJZRSYqoZkE30DNI55SaaqOz3kInwY1i45vXsfuDXHF1Nk9wa89onU8Dc4g1ck0J1ujrcmIHblRvQgeErPuSCaQaFIYhHEiEaJhsD0csekkB8ZyJ7y1CXxgigrBnaPjRvHtaRwWeu7Ik_JPsGKomkGf8hhl-QRquYdek2Qi7o-SEjtVohDQpMvCcEP_fk26aDOC55bx96Xc-7aq4Gfar6oCPP6AIbIqcplxU5E36PAF-xuiINijRgbd_N-_6X_vBHQ9x4Lukw6NJCEErh5tLHNwibKbBLAMwtQRolXYZ68EKz1Kgy4ArqodIUpq_uDdJrPgw/p.jpeg"
+            }
+            title={t("pages.registrations.tournament")}
+            buttonLabel={t("common.buttons.registration")}
+          />
+        </div>
       </Section>
     </main>
   );
