@@ -4,15 +4,18 @@ export const futsalTechnicalTeam = [
     members: [
       {
         name: "Bruno Salgado",
-        image: "https://i.postimg.cc/HWbKn4Xx/BRUNO-SALGADO.png"
+        image: "https://i.postimg.cc/HWbKn4Xx/BRUNO-SALGADO.png",
+        position: "treinador"
       },
       {
         name: "Tiago Rosa",
-        image: "https://i.postimg.cc/52P9GM2Z/Tiago-Rosa.png"
+        image: "https://i.postimg.cc/52P9GM2Z/Tiago-Rosa.png",
+        position: "1º delegado"
       },
       {
         name: "Albino Leça",
-        image: ""
+        image: "",
+        position: "massagista"
       }
     ]
   },
@@ -21,7 +24,8 @@ export const futsalTechnicalTeam = [
     members: [
       {
         name: "Tiago Rosa",
-        image: "https://i.postimg.cc/52P9GM2Z/Tiago-Rosa.png"
+        image: "https://i.postimg.cc/52P9GM2Z/Tiago-Rosa.png",
+        position: "treinador"
       }
     ]
   },
@@ -30,11 +34,13 @@ export const futsalTechnicalTeam = [
     members: [
       {
         name: "Eduardo Abreu",
-        image: "https://i.postimg.cc/9Xv78ZnG/Eduardo-Abreu.png"
+        image: "https://i.postimg.cc/9Xv78ZnG/Eduardo-Abreu.png",
+        position: "treinador"
       },
       {
         name: "Alexandre Mendez",
-        image: "https://i.postimg.cc/fLPwb795/Alexandre-Mendez.png"
+        image: "https://i.postimg.cc/fLPwb795/Alexandre-Mendez.png",
+        position: "treinador adjunto"
       }
     ]
   },
@@ -43,11 +49,13 @@ export const futsalTechnicalTeam = [
     members: [
       {
         name: "João Andrade",
-        image: "https://i.postimg.cc/ZKGCHm0j/Joa-o-Andrade.png"
+        image: "https://i.postimg.cc/ZKGCHm0j/Joa-o-Andrade.png",
+        position: "treinador"
       },
       {
         name: "Kevin Mendez",
-        image: "https://i.postimg.cc/G3sBy9m9/Kevin-Mendez-co-pia.png"
+        image: "https://i.postimg.cc/G3sBy9m9/Kevin-Mendez-co-pia.png",
+        position: "treinador adjunto"
       }
     ]
   },
@@ -56,11 +64,13 @@ export const futsalTechnicalTeam = [
     members: [
       {
         name: "João Ricardo",
-        image: "https://i.postimg.cc/4xGhZZZy/Joa-o-Ricardo.png"
+        image: "https://i.postimg.cc/4xGhZZZy/Joa-o-Ricardo.png",
+        position: "treinador"
       },
       {
         name: "Sérgio Santos",
-        image: "https://i.postimg.cc/bYbJvMmt/Se-rgio-Santos.png"
+        image: "https://i.postimg.cc/bYbJvMmt/Se-rgio-Santos.png",
+        position: "treinador adjunto"
       }
     ]
   },
@@ -69,11 +79,13 @@ export const futsalTechnicalTeam = [
     members: [
       {
         name: "Carla Gil",
-        image: "https://i.postimg.cc/59HzSnn4/Carla-Gil.png"
+        image: "https://i.postimg.cc/59HzSnn4/Carla-Gil.png",
+        position: "treinadora"
       },
       {
         name: "Mónica Ferraz",
-        image: "https://i.postimg.cc/BvV68GWx/Mo-nica-Ferraz.png"
+        image: "https://i.postimg.cc/BvV68GWx/Mo-nica-Ferraz.png",
+        position: "treinadora adjunta"
       }
     ]
   },
@@ -83,11 +95,13 @@ export const futsalTechnicalTeam = [
       {
         name: "Fabiano Afonso",
         image:
-          "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACFXIjLHGOXR9gjj4lv-gx_pCcnqtpEFL3UoM11wW_B_PL8LWzfEuJpazIIfhVzZ9kGxS-f7eblzepmsn0H9n-t69zd5uxKEb2S7K9mTndfkrpomyp1oEpcAsulZ5yHv9c2mall-6x3hX7O70bolFLTM9OEEXAbf2sbtVEZAne-K98eFvrzMzmTGSdh8_b0Cz5VQV_BobrXABXTvgQ9U5bHyHnq11yOckUx_Uf1YpARmytKfpUbk6TQtKegVfgO2Luzx4jXnquBGClv5EangKhnAwPI9v_mKR_2s-gVWQxEQww/p.png?size=512x512&size_mode=2"
+          "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACFXIjLHGOXR9gjj4lv-gx_pCcnqtpEFL3UoM11wW_B_PL8LWzfEuJpazIIfhVzZ9kGxS-f7eblzepmsn0H9n-t69zd5uxKEb2S7K9mTndfkrpomyp1oEpcAsulZ5yHv9c2mall-6x3hX7O70bolFLTM9OEEXAbf2sbtVEZAne-K98eFvrzMzmTGSdh8_b0Cz5VQV_BobrXABXTvgQ9U5bHyHnq11yOckUx_Uf1YpARmytKfpUbk6TQtKegVfgO2Luzx4jXnquBGClv5EangKhnAwPI9v_mKR_2s-gVWQxEQww/p.png?size=512x512&size_mode=2",
+        position: "treinador"
       },
       {
         name: "Diogo Martins",
-        image: "https://i.postimg.cc/TPX5dx6h/Diogo-Martins.png"
+        image: "https://i.postimg.cc/TPX5dx6h/Diogo-Martins.png",
+        position: "treinador adjunto"
       }
     ]
   }
@@ -236,13 +250,11 @@ export const futsalTeam = {
       name: "Fabiano Freitas"
     },
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACEhnSazvl6nD_LRdvcWKeM-crY1XQSc36-u0A2PFUH-Q8JSh2VuMCIMFfxOeTB69Nv_-JlexHqbGK9-U1KIkCjLvRWvBM-eyiSykMYgBq5obWEtzi-pZFpSvMkbfBB3oXubQ1xjDotjS2FjfudMgbzHzP2PRLNGGG-0g-ANX1e-JQykydsu_FXViMLj4CUKFGpFbyuo-TlWYmDph-zZoulpsPu6LP4DhOQ7IRan8RWWR1Hrxuq5gahyax0iw19qcm5b2UmrIN7cN1W0ecKuB0JEc1AxQU03XwP028zKf_rP2Q/p.png?size=512x512&size_mode=2",
+      image: "https://i.postimg.cc/8cdQ8xh8/Fa-bio-Branco.png",
       name: "Fábio Branco"
     },
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACFHfmf6VcndBtArAJX957tyYXJ1h47aC8vx5b0wF0_n9qOweaMn7x8HoCxN4IvYWf5YBf74nbYzTvm4u3YqS2YtYS_6_G_3P9t8gB9TPKmiD0nG2o4Rmyj0jI8PYXLGZgZ-9VbDP9gT25mFHejdtBCETlqHB5q9dwyAJ_CQ1z_Bja01L_UAKlUpIjwFzybZY2H6ukLdwEVwJqrOsWtLeeIcN6rZDSTlNnbiqKXqf1xo9NuRbb0ljrnc6yUVBfALt4d7mJb3KOfR4PItcx-5rlKfYjp4FY3HOEyc0xcbuFN0Ew/p.png?size=512x512&size_mode=2",
+      image: "https://i.postimg.cc/g0yvZDqz/Guilherme-Lec-a.png",
       name: "Guilherme Leça"
     },
     {
@@ -250,13 +262,11 @@ export const futsalTeam = {
       name: "Kevin Mendez"
     },
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACF9xDKndipZcGHmVKDAq22zUJj9BrSBbY4c_ETzqBALZ87Yl8ue8fhzYRT7C78x-y5Qwr8xL-njKdHw5QrVFCj9rd3Mni_WEUxIo1uoBLrjQsFEMhvySA_J8au29n7LheHWvyfYXItSOjr7S6iiGSNQSCs6DEz8UXLCDzXPxaKXn5_malYcpvPHqSs00Av2OChrpcpVOT2OkU4IIs2AsAChKyIaODwE5QZBdej8q26SMVYUXzaEI2w3TJDzAK_4aXbLGskuVrXwqlOAEDybQlVchkwQYGeJVgArFZWNMpJfrQ/p.png?size=512x512&size_mode=2",
+      image: "https://i.postimg.cc/pTwhc5BG/Lui-s-Vieira.png",
       name: "Luís Vieira"
     },
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACHujyEjQ6UK08CoZ0ncxwAK1vkFtEHEq9M19WLrOAQkM6kty6Yle6zM3Ar6smd3H77JLilHMi1thkCBtZxQZKsbfNIXE07SNq-A7IDRHUSw5m0Gh2BYtewI1YzogyfOz51PJSBA9KHDJ2hb3Zyg0yt85VJfG2Yrp5dt5xgnxEIR80x7-mWxszW6WssIurOEIeu5q2UxRM9Sh_1cr-k9FZUrbPq2Uc8V81ZrdXA_pS8M5C5xuBcbxcb8IzNruPgRXUUJRptZw928KSmqfCuy3nKbaPvTwUl8fBNQylCSGwx8DQ/p.png?size=512x512&size_mode=2",
+      image: "https://i.postimg.cc/JzryFLbL/Renato-Mendonc-a.png",
       name: "Renato Mendonça"
     },
     {
@@ -264,13 +274,11 @@ export const futsalTeam = {
       name: "Rodrigo"
     },
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACGI5kVi8MSK6yjX2yBNjRZXMB-rTI11I9bdiB0GVgrcDyhD7-Kru_QHT9bJVL2iG3nLk8wyey-J28Jhg3ENW1N7wm5GyFBlu1C2B-UkK5-XBhvgG2ypTfQh2CcHxu2sVSS_5XnlBydeGCwJ3Vk7b4Gv98ztd5DV7_78oiOHsJeTMRbuU95blChjk04jXIiVC-057t34OU0I9JJaL1SkLr0GTBEsllFJEBiWYobtlq2aiy8DyuJvAWHIKD71ffGchwHIa9TXos39GfscdiGqg5en7ScVdUO_f36WQxWPXLLwFw/p.png?size=512x512&size_mode=2",
+      image: "https://i.postimg.cc/HsBWV77q/Ru-ben-Correia.png",
       name: "Rúben Correia"
     },
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACG9CAvHV9Z4dqg2o98J0yHDAvbjAQTvnyXGB8KyUyIRUeTMqNRenig1t1WH-gTdUiFdKeuwjOui_C9wbmO_s2U4AxWoN_3EnB_LWhWUHf9eUp53OhO_kR-h6DWIGTpD8gf-_Q5LbtGFl6XFLQ4DaKoKrHLZuJolUGdiKcawrQrl31-I96C317XvzyeLcNY1MBViCp66TsNepTq7WDT_2S2dO6WvzX-KzaoTDEyN7oLgXM-vAEsUq4O9GJllnlIsIf_RolRdS2ubfA_sgcNboBaZiZBO2NgrwsLwEBPtz0bXBA/p.png?size=512x512&size_mode=2",
+      image: "https://i.postimg.cc/wxkgGsF1/Vi-tor-Aires.png",
       name: "Vítor Aires"
     }
   ],
@@ -292,8 +300,7 @@ export const futsalTeam = {
       name: "Lacruz"
     },
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACGdRjlZBOkjur2etlj4yVlAHCdfqURL-GWd5lKGUv-mrWE0rnu_xRqwNNZXT7eozflvEHIADZLTAztfM8bik132eTKIJc4mG7K1zJ6b4y7tZtLTjZjFNIBsgr1QPTi6KQTVxr09bELWpl1gVrCr1oaDF_Yc_EDvlvyuQgaI0Z1_KRsSn4O3cCy1XaWM1VGd0247KVxO1Te7GY2ukCDf8WDAwKdif6WMnLb2spBVGkDUiRz1SeKnal98gUcczco1XyaXQIaMOaa6Db7W-XQL5LvBo1JVIAlNPSQFth3G0zU7zg/p.png?size=512x512&size_mode=2",
+      image: "https://i.postimg.cc/mrb7s9Ct/Lui-s-Silva.png",
       name: "Luís Silva"
     },
     {
@@ -301,8 +308,7 @@ export const futsalTeam = {
       name: "Mateus"
     },
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACEg3hrfPlEow_Tf_TYDuxZy50-5OpEXBS7zNmgerFEZaUCQtn_Zdze-mOw0RxfmvEQHIIASH-vOGoZtGBJMid_zdbTJ7nCvMjx7puSSfs412SFKsfiSxWmrdNIQjfnjZNg7ntd-Z9beAhxzXV636YPsgl6LJZuVqfMF_MPJVQGswrkl6QQetYKTSLsu4t3cnhJW-QPpwKQ4v_VRomYzhM8rLp58hGE3LVl8u4JDiPDssYVZ7OvN2K8_wFeDgIL3YAo8RYku_OKPSlhH_ktaV_Or5csoTltK7Q4FlNJCrz5Usw/p.png?size=512x512&size_mode=2",
+      image: "https://i.postimg.cc/xTJRxL3Q/Miguel-Toma-s.png",
       name: "Miguel Tomás"
     },
     {
@@ -324,6 +330,228 @@ export const futsalTeam = {
     {
       image: "https://i.postimg.cc/vHfP8Wgz/Tiago-Silva.png",
       name: "Tiago Silva"
+    }
+  ],
+  juvenis: [
+    {
+      image: "https://i.postimg.cc/5tKY0h1L/Filipe.png",
+      name: "Filipe"
+    },
+    {
+      image: "https://i.postimg.cc/gkbwnq9S/Gil.png",
+      name: "Gil"
+    },
+    {
+      image: "https://i.postimg.cc/bN1tTVHf/Guilherme-Andrade.png",
+      name: "Guilherme Andrade"
+    },
+    {
+      image: "https://i.postimg.cc/T3Ch7zKF/Joa-o-Afonso.png",
+      name: "João Afonso"
+    },
+    {
+      image: "https://i.postimg.cc/X7KrFG4V/Joa-o-Pedro-Dantas.png",
+      name: "João Pedro Dantas"
+    },
+    {
+      image: "https://i.postimg.cc/G38YBm42/Joa-o-Rodrigo.png",
+      name: "João Rodrigo"
+    },
+    {
+      image: "https://i.postimg.cc/25SLCkpC/Kiko.png",
+      name: "Kiko"
+    },
+    {
+      image: "https://i.postimg.cc/pT99nsX7/Lui-s-Gomes.png",
+      name: "Luís Gomes"
+    },
+    {
+      image: "https://i.postimg.cc/2SwBpqKH/Lui-s-Souto.png",
+      name: "Luís Souto"
+    },
+    {
+      image: "https://i.postimg.cc/g07jd3qK/Miguel-Duque.png",
+      name: "Miguel Duque"
+    },
+    {
+      image: "https://i.postimg.cc/wBMMSwJv/Rafa.png",
+      name: "Rafa"
+    },
+    {
+      image: "https://i.postimg.cc/PfgD1nDM/Rodrigo-Vasconcelos.png",
+      name: "Rodrigo Vasconcelos"
+    },
+    {
+      image: "https://i.postimg.cc/dDcJ3BL8/Rui-Azevedo.png",
+      name: "Rui Azevedo"
+    },
+    {
+      image: "https://i.postimg.cc/htSf0DtV/Toma-s-Fernandes.png",
+      name: "Tomás Fernandes"
+    }
+  ],
+  iniciados: [
+    {
+      image: "https://i.postimg.cc/tT76NXDB/Bernardo-Pestana.png",
+      name: "Bernardo Pestana"
+    },
+    {
+      image: "https://i.postimg.cc/CMQNt2qZ/Berny.png",
+      name: "Berny"
+    },
+    {
+      image: "https://i.postimg.cc/Nf24wx6d/Elias.png",
+      name: "Elias"
+    },
+    {
+      image: "https://i.postimg.cc/y6ktptN5/Joaquim-Meneses.png",
+      name: "Joaquim Meneses"
+    },
+    {
+      image: "https://i.postimg.cc/CMqJqg5F/Joa-o-Maria.png",
+      name: "João Maria"
+    },
+    {
+      image: "https://i.postimg.cc/9FNG8grx/Lucas-Meneses.png",
+      name: "Lucas Meneses"
+    },
+    {
+      image: "https://i.postimg.cc/GhDkfmRN/Lucas-Nicola.png",
+      name: "Lucas Nicola"
+    },
+    {
+      image: "https://i.postimg.cc/NMSK8SNT/Lui-s-Pedro.png",
+      name: "Luís Pedro"
+    },
+    {
+      image: "https://i.postimg.cc/SQ6C4Njz/Manuel-Tiago.png",
+      name: "Manuel Tiago"
+    },
+    {
+      image: "https://i.postimg.cc/pL4p8gpH/Miguel-Franco.png",
+      name: "Miguel Franco"
+    },
+    {
+      image: "https://i.postimg.cc/tgzJf7BX/Santiago-Barros.png",
+      name: "Santiago Barros"
+    }
+  ],
+  petizes: [
+    {
+      image: "https://i.postimg.cc/1XzZt30r/Alexandr-Paley.png",
+      name: "Alexandr Paley"
+    },
+    {
+      image: "https://i.postimg.cc/MGcMcz5x/Alexandre.png",
+      name: "Alexandre"
+    },
+    {
+      image: "https://i.postimg.cc/NMDcBHX0/Bernardo-Freitas.png",
+      name: "Bernardo Freitas"
+    },
+    {
+      image: "https://i.postimg.cc/xdrYRYY9/Bernardo-Santos.png",
+      name: "Bernardo Santos"
+    },
+    {
+      image: "https://i.postimg.cc/JzzBLNBs/Carlos-Varela.png",
+      name: "Carlos Varela"
+    },
+    {
+      image: "https://i.postimg.cc/P5VvrCm2/Damian.png",
+      name: "Damian"
+    },
+    {
+      image: "https://i.postimg.cc/W1LMcFwr/Eduardo-Camacho.png",
+      name: "Eduardo Camacho"
+    },
+    {
+      image: "https://i.postimg.cc/B6MgqSn3/Fa-bio-Mendes.png",
+      name: "Fábio Mendes"
+    },
+    {
+      image: "https://i.postimg.cc/k5V9N4L1/Joa-o-Guilherme.png",
+      name: "João Guilherme"
+    },
+    {
+      image: "https://i.postimg.cc/D0cKfbbZ/Joa-o-Maria-Aguiar.png",
+      name: "João Maria Aguiar"
+    },
+    {
+      image: "https://i.postimg.cc/YSJ7d7Hp/Joa-o-Vieira.png",
+      name: "João Vieira"
+    },
+    {
+      image: "https://i.postimg.cc/SKKLg0Gt/Lucas-Costa.png",
+      name: "Lucas Costa"
+    },
+    {
+      image: "https://i.postimg.cc/NfMgGppv/Lucas-Telmo.png",
+      name: "Lucas Telmo"
+    },
+    {
+      image: "https://i.postimg.cc/J7STthQ7/Manuel-Vieira.png",
+      name: "Manuel Vieira"
+    },
+    {
+      image: "https://i.postimg.cc/y8cyDX8v/Martim-Correia.png",
+      name: "Martim Correia"
+    },
+    {
+      image: "https://i.postimg.cc/XN2bP93H/Martim-Freitas.png",
+      name: "Martim Freitas"
+    },
+    {
+      image: "https://i.postimg.cc/cLLdHThN/Matias-Aveiro.png",
+      name: "Matias Aveiro"
+    },
+    {
+      image: "https://i.postimg.cc/sgGs7xkn/Matilde.png",
+      name: "Matilde"
+    },
+    {
+      image: "https://i.postimg.cc/xCn2wRc7/Miguel.png",
+      name: "Miguel"
+    },
+    {
+      image: "https://i.postimg.cc/GmgdsYgT/Noah-Macedo.png",
+      name: "Noah Macedo"
+    },
+    {
+      image: "https://i.postimg.cc/Bbwf1fM9/Rafa.png",
+      name: "Rafa"
+    },
+    {
+      image: "https://i.postimg.cc/wxDNcTpj/Rodrigo-Freitas.png",
+      name: "Rodrigo Freitas"
+    },
+    {
+      image: "https://i.postimg.cc/YSJ4YTDF/Santiago-Braz.png",
+      name: "Santiago Braz"
+    },
+    {
+      image: "https://i.postimg.cc/sfWY64py/Santiago-Costa.png",
+      name: "Santiago Costa"
+    },
+    {
+      image: "https://i.postimg.cc/zXnkBFBp/Sara.png",
+      name: "Sara"
+    },
+    {
+      image: "https://i.postimg.cc/5N14cfFy/Tiago-Espi-rito-Santo.png",
+      name: "Tiago Espi rito Santo"
+    },
+    {
+      image: "https://i.postimg.cc/sxP3BNb3/Toma-s-2.png",
+      name: "Toma s  2"
+    },
+    {
+      image: "https://i.postimg.cc/prQn2kZF/Toma-s-Ferreira.png",
+      name: "Toma s Ferreira"
+    },
+    {
+      image: "https://i.postimg.cc/zX5gdZzS/Toma-s-Gouveia.png",
+      name: "Toma s Gouveia"
     }
   ]
 };

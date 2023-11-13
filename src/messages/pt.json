@@ -201,6 +201,14 @@
         "Infantis": "Infantis",
         "Benjamins": "Benjamins",
         "Petizes e Traquinas": "Petizes e Traquinas"
+      },
+      "sportRoles": {
+        "treinador": "Treinador",
+        "1º delegado": "1º Delegado",
+        "massagista": "Massagista",
+        "treinador adjunto": "Treinador Adjunto",
+        "treinadora": "Treinadora",
+        "treinadora adjunta": "Treinadora Adjunta"
       }
     },
     "tournaments": {
@@ -545,6 +553,7 @@
       "schedule": "Horário de treinos"
     },
 
-    "seeResults": "Clica aqui para veres os últimos resultados dos jogos! 👇🏻"
+    "seeResults": "Clica aqui para veres os últimos resultados dos jogos! 👇🏻",
+    "membership": "Programa de Sócios"
   }
 }

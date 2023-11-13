@@ -1,12 +1,10 @@
-import React, { Fragment, useState } from "react";
-import { useTranslations } from "next-intl";
 import Button from "@/components/Button/Button";
-import Image from "next/image";
 import { barlow } from "@/styles/fonts";
-import Link from "next/link";
 import { LANGUAGE, languagesCodes } from "@/utils";
-import { Popover, Transition } from "@headlessui/react";
-import { Icon } from "@iconify/react";
+import { useTranslations } from "next-intl";
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 
 const RegistrationCard = ({
   title,
@@ -14,16 +12,15 @@ const RegistrationCard = ({
   subTitle,
   imageSrc,
   className,
-  links
+  links,
+  href
 }) => {
   const [selectedCountry, setSelectedCountry] = useState(LANGUAGE.PT);
 
   const t = useTranslations();
 
   return (
-    <div
-      className={`relative flex flex-col shadow-xl max-w-[320px] ${className}`}
-    >
+    <div className={`relative flex flex-col shadow-xl w-[320px] ${className}`}>
       <div className="relative h-[350px]">
         <Image
           src={imageSrc}
@@ -51,25 +48,32 @@ const RegistrationCard = ({
           </p>
         </div>
 
-        <div className="flex justify-between items-center">
-          <Link href={links[selectedCountry]} target="_blank">
-            <Button
-              label={t("common.buttons.registration")}
-              onClick={() => null}
-            />
-          </Link>
-          <select
-            value={selectedCountry}
-            onChange={(e) => setSelectedCountry(e.target.value)}
-            className={`form-select py-2 block w-full px-2 ${barlow.className} text-lg tracking-wide`}
-          >
-            {languagesCodes.map(({ language, code }) => (
-              <option key={code} value={code}>
-                {language}
-              </option>
-            ))}
-          </select>
-        </div>
+        {!links && href && (
+          <div className="w-full text-center">
+            <Link href={href} target="_blank">
+              <Button label={t("common.buttons.registration")} />
+            </Link>
+          </div>
+        )}
+
+        {links && (
+          <div className="flex justify-between items-center">
+            <Link href={links[selectedCountry]} target="_blank">
+              <Button label={t("common.buttons.registration")} />
+            </Link>
+            <select
+              value={selectedCountry}
+              onChange={(e) => setSelectedCountry(e.target.value)}
+              className={`form-select py-[5.7px] block w-full px-2 ${barlow.className} text-lg tracking-wide`}
+            >
+              {languagesCodes.map(({ language, code }) => (
+                <option key={code} value={code}>
+                  {language}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
       </div>
     </div>
   );

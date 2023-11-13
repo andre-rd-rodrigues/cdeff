@@ -6,13 +6,13 @@ export default function Tabs({ tabs }) {
 
   return (
     <>
-      <div className="flex mb-4">
+      <div className="flex mb-4 overflow-scroll sm:overflow-auto">
         {tabs.map((tab) => (
           <button
             key={tab.name}
             className={`px-4 py-2 uppercase ${
               barlow.className
-            } tracking-wider font-medium text-xl text-blue  ${
+            } tracking-wider font-medium text-blue md:text-xl  ${
               activeTab === tab.name ? "border-b-4 border-blue" : "opacity-50"
             }`}
             onClick={() => setActiveTab(tab.name)}

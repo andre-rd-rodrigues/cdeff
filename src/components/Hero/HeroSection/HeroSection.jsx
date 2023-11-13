@@ -11,7 +11,8 @@ const HeroSection = ({
   subtitle,
   title,
   href,
-  className
+  className,
+  linkProps
 }) => {
   const containerStyle = {
     background: `url(${imageSrc}) no-repeat center center`,
@@ -26,7 +27,7 @@ const HeroSection = ({
           <h3 className={`${styles.title} ${barlow.className}`}>{title}</h3>
         )}
         {linkLabel && (
-          <Link href={href} className="text-center mt-2" target="_blank">
+          <Link href={href} className="text-center mt-2" {...linkProps}>
             <Button label={linkLabel} />
           </Link>
         )}

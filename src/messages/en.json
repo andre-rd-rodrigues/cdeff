@@ -206,6 +206,14 @@
         "Infantis": "Children",
         "Benjamins": "Benjamins",
         "Petizes e Traquinas": "Tots and Tykes"
+      },
+      "sportRoles": {
+        "treinador": "Coach",
+        "1º delegado": "1st Delegate",
+        "massagista": "Masseur",
+        "treinador adjunto": "Assistant Coach",
+        "treinadora": "Coach",
+        "treinadora adjunta": "Assistant Coach"
       }
     },
     "tournaments": {
@@ -547,6 +555,7 @@
       "Financial Officer": "Financial Officer",
       "Marketing and Communication": "Marketing and Communication",
       "Administrative Officer": "Administrative Officer"
-    }
+    },
+    "membership": "Membership program"
   }
 }

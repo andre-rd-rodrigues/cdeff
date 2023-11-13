@@ -1,78 +1,63 @@
 export const basketTeamsImages = {
   seniores: [
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACHx_B0RiNIuKgoCiRpog4CTsMfA3S2lmJZY_5F0atun0RX9o77baYqNTmGv-Zjua9dRiY2Ax67I8UsHAKPd4dXjzhWR1pPchSeK3n0_OWzpT_oz_qYQ5XHFRHLGpDI4ZGA337LqRrjJ9N8KkitQkpoebaD7CTpS_uW9RLyu8lDUVXxdkd618MhlyPuOElpnvh19_6dgyULHuJVxg9kNkDogiYSm0VmyZfYFPVUS8EzhAuSAdDLj-WNt5g_QwrJlA_kHDf4Tjo2F5F1SMiJ7Uww2awGR874A6GCqGH70PqrusQ/p.png?size=512x512&size_mode=2",
+      image: "https://i.postimg.cc/P56nKMq4/Agustina-Marin.png",
       name: "Agustina Marin"
     },
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACEKZyk8BqZlby4DuIRWOLalzocxtkEIRpwg2lZ05hAdQXOfJL6SBU4OGUhncm7GCs4l5N-QuLLfFW7KIBoWYHqE75sHP5LS1ILIFf08MumJrTkps9KE37KQSL2EJsYAGwvkoIpnLq2cMDcmRVw_QQ9756IaFFfdTIiacIbp0qDUxyVE8WEKtruSQ7ebQRlizkONdzPO9VJNTuia-ICDf6Kc-0takFAdkKQHNUsgG8PpG7FGuA2G4lg7a7oFFSvAmncdmLkHWM5lBancQWrBwNxTUto_7KBEZCgELPwwy8YqoQ/p.png?size=512x512&size_mode=2",
+      image: "https://i.postimg.cc/2Sjf4tCy/Aikaterini-Tsineke.png",
       name: "Aikaterini Tsineke"
     },
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACF_R31kAFn1s78-EoS_0L_yd3nj1LSquT-Lq5_pzLeiT8JfEKKC4ifM8nOC9e23UFTV7I9SHCg5iOWXN8jtXvmiPX_LvecmKnDlz3lzaJvnWD4WdLplyFTNNL6aHZEEV1edXEO5wNbu4tmgcJKcaGVnn4O7R5mvkPpNuZ6HD8w6szPmuBBFcYrLK22YphH4S7xFdkudYmCxtRoxFBJANfexBCSx87LFFcZATrR5k1Dzrcimp-DlZ4csbaMhR10scvu2QaRv0h0FKo07DLH_bL9KD8jtG9rXdCD87HzzPdiK2A/p.png?size=512x512&size_mode=2",
+      image: "https://i.postimg.cc/ydD10bXc/Akila-Smith.png",
       name: "Akila Smith"
     },
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACHW-kzuULpSvCkCbE6P--prSZUhWF4xYNa4LFx2EgIzKY7OE6iBdH-QGVwlWat70E9qHS9Ggj73S3NZZBCeSrIiVOQ4LUSg02HFQh667gs3tIfbSaIbZTfYJjqirq_dqhR2reFWTfEBFcaeKtbeagvSUyd0EYz7nK2CXccxP-VtJcn8NZ_E7obpX-foh0uQ9sJDC5oVDEVfcLpEOeVfyL9NJ7UuRfNXRIpC8LrSXLF6nqtuXfQjdyaboteS-_SxcDD6TZrkZERKQYKGQjbMNuh7mLeHO6Akt5s2jXMSz7DPLg/p.png?size=512x512&size_mode=2",
+      image: "https://i.postimg.cc/D0QtGrD1/Ana-Henriques.png",
       name: "Ana Henriques"
     },
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACHaw4UNDX4U1quE6tcGCk-3iC-3d8bc1EDSwRUCosEWxr6ZE0emWCxH5qXWJxlkYpalpietIMcnqnjwfuxLhxpfgwTM8caW85fU8tK48v1bWcatzdvXyEqof4IjmsqXzzAEcKZFdvMQZXgz6thtzSqxJlakG7Hpt0cYwxV_s37UehbSQBsfpctHRk_9EF7cHgPjJuXdiJKASVEWw2sjrKhmCO0qIMBvGgWK_2PeeJzBhDf6gLzaw1Q4Xj4MwuSAH554ieeqGDJXzBzJIoTVGFOwZbmsrO6flFRUEJg7BCkrCw/p.png?size=512x512&size_mode=2",
+      image: "https://i.postimg.cc/SsHydfD5/Ana-Teixeira.png",
       name: "Ana Teixeira"
     },
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACECWoZioSDY6J0bwxSIE2hslp9FwkIsS9pzOGyjv7ZSvsr8BoRcPidNBl5019Ly3DbV1aqcCWFTCc0wtPF52f0g_JUAxmxu_Y6poSjq8QLMJKAMIoEoNbGUNdOl2ePY5SQOH91dTLPzWkqHSvtNI_9qr-_4lkMZjg7qSbzb-7eknJ1Lkyk3qDjnc5usN1DJxSylEIqGlc-zlmkRmBBHo7SOW065z0PqFaXLPKNjoNnVmWr7LcXimPtALVSFP8sZXadpRQsxWppnS7fBRNISnnezv5adqrQMF0NgfUhBLlJNPQ/p.png?size=512x512&size_mode=2",
+      image: "https://i.postimg.cc/jqzVBT5C/Cristina-Freitas.png",
       name: "Cristina Freitas"
     },
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACGiaWCB0pX74RL8xDtPPDSlQpTF4kloZQA-gtTFFWOz5JAboZh_dNo3E_EBstRwW2eiMdhRv7roJdLknSP5ZCEMh5lxUVPFjYMTV7joHZPzfaUW7wuCkfWjycOAbPw_zvpG_3HryVF8FKEy6rSKxsm9jgUmNRhSL3ASkrn2YLltwSwAB8S9YmKFlNdHt2j5QbKpDH8xsF7HNoAxsQAXHnAOvm1DXS2_Tl1CriAC6f3cNN2y6waGB1GBLQJbHbTAxw_Qb8UJSN1yWWrOamWWPtq-LHZf1xBDAJnvXAbm-z6Bzw/p.png?size=512x512&size_mode=2",
+      image: "https://i.postimg.cc/Hn5Th8NL/Dayna-Rouse.png",
       name: "Dayna Rouse"
     },
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACGOpnXWsDHJ2XGkJUzFxYKxoAWlH8dp48smxXG5OSs6utu72SDDasWQt8XnqlrehXBvoeR-2S73GW5N4NxCYNZpc7bx1Pkj3ji_ChHvQpjk4Qynh0pGEXNVzjetOfbqCbJFZffUoxXiL3icwfYHHQF9VlXBxua_MTNxxIMT-JmhH6gpcaroHrG1cFwbNpHEWvR8OLdZJZhf3lZQV5r_P6kV_xr6R5tjjuYCoqsPCPHaAPKOWXcz7dAr_r1BQcNBYBrXiaMJuuiUW3Sxb8Zj_GfR0s_2PEU9CtfgyZXLYBpM5Q/p.png?size=512x512&size_mode=2",
+      image: "https://i.postimg.cc/Nfqsrby2/Gabriela-Nikolova.png",
       name: "Gabriela Nikolova"
     },
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACEXfJbPwjX6gN1suRZgoawD8Ma-R9SXrnJonAhYhN8eO6C6dHi_zAy7B6Twnik_1vUTLLLmC-lq2qRXXvNO_o4qlLrg34uhksRxmFZO6jO06WFDTFCa3owdIc2zQyFjd92Qaaz7idDIN6T43pg4LStYQYfPbVjs-gRcJUnWfuQTjK3AF9uaJbwBh44MfPbFzaRug71OIMJgBiNQODooXFd5CLySq03-vNhUMnphwATKDI-0wZ1NnuP2_t1dkBsiBZ-ipRJdyx-T27w1jeNfnLNyg2myF8cmGsqq5U52IrCqEQ/p.png?size=512x512&size_mode=2",
-      name: "Inês Freitas"
+      image: "https://i.postimg.cc/bvNNwJZ6/Ine-s-Freitas.png",
+      name: "Ine s Freitas"
     },
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACGBtroAgUjAbwTpNBD4gN8TXZ2QZaEz1e2ElPgdz_BFTd5fQ8HYpu7-CbPHp8xMJmEuTzAPJJSa5dTDScRNIxA8BEy5B0tyfb-gQvFfKxUsBudUxSko77UoKI17b6kYq9ozH9QeSJZJsdIiE7K2nM56itHEfkGcGllSoiX9T4tVrV6Z2nYjrgLZcjNXUjRgsO5JNEjh1KD7E7E2XcSgzE9QOZ5V6iEXCZB0xW6eK2H2MY6VTI-TR0iElA380-6XPLaPb2ztG7Wa0HXRA4q8rtIZfnmuvOgO-yT-UYZtNrQr2w/p.png?size=512x512&size_mode=2",
+      image: "https://i.postimg.cc/xTnr2ZJ5/Margarida-Teixeira.png",
       name: "Margarida Teixeira"
     },
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACGTUV_Bq7H0-B0yfT5c0SLKexUrMjXNTythSdmKOTnDPaZ-a8Nun5TGdx3N2nXXPq87ZHikmpkzd5PCPO8UKvZ6BcRDPJx4edZt3g1y1BUhwJYpenPa-P5ImQcNctmPDHZSKJK57_VghqSFAvuxldJ_XT_Y8YpmrUUEDpjwFQHXN4bcOexxBAIKXYDQAiq3LCrCiIOjsRZJrBI_4hY1hL3rxmS9fctE8YrUy3o32es9M2C0IDV4364XFgbzqM0szZf9JkgHYni1wm7OZ0KTMyY8HVbiovdRQWEgU_tmSefsJQ/p.png?size=512x512&size_mode=2",
+      image: "https://i.postimg.cc/GmbbX2xc/Maria-Pereira.png",
       name: "Maria Pereira"
     },
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACGNfr1aryUmwYjRTW5FBAhK2hEKKB5yZjushKdQc_OwRRFO9RBA5QvxpEQVpj2GrgCUYjw3TVLbpaKg-Xx5h0b1_lY4-7pPLT05xMspJcWH0YbkB8sMNUI9pmZe1AK2eyNkCkJ87B-tXRYDtNvV9hDzWXh6RUE-kn90rfurqoeOrulTXSMTwfpRMxt_RtIp_TETQRGOyC9aNqHY2Tfg_m9P8DlzX0bKl0wPjgZPcLNCgklQ8i2MxWD9fDU5phmMPdyVL1NgdtOlRpI_7QQyK1InFgJ-MAf4JhbaM4B_sk5dcQ/p.png?size=512x512&size_mode=2",
-      name: "Matilde Nóbrega"
+      image: "https://i.postimg.cc/pXJH5vb3/Matilde-No-brega.png",
+      name: "Matilde No brega"
     },
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACFhtzy6-lOR9tFZtLRWypAMYO6K8kZtaFkG4Zi_SxP-2rcU4m0xF3CtLaBPIqKdzlMWXlHKMMBttKl6MmREFCG1b-fuvk89eHMKvjJBtPL6gGHD6AMZtacgdkl_gV_MSRlh-0cW-Gzgy8xPBO5qLD-t0JZimSEYABMIqKGiO9e75lOJaG-uLF-MUoTitdJOmnVrcVZbPslOU0k1a-vGsblfRWtJEfkJWL_56BwNeb3T3Ha2rnyEyXShhPQQprbaCc2eyZddalslhoDKKVg2FkhCiyteBqqO0ndGlt2eetU0mA/p.png?size=512x512&size_mode=2",
+      image: "https://i.postimg.cc/J4N13JJ6/Rita-Rodrigues.png",
       name: "Rita Rodrigues"
     },
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACEG5GW7sG1rMo_Gltz8tV3xqFFBggSgm4rjw7cFV4ysvu8BlkZda9WIkWA0Wb5XmmNI_DbIBMExQthGHAzbyLtj0Owlqc3se_5tWZ9CNmdTaL-uGgsW3nsBYF9G6N4tPguVhrQfUnwoNmtdOqjnI2RdDFX88B_X0M_N8yrFRxutlx1otswFg34BTW4I760vBFB02h2yfS2omM1Ya1AbQHuvUAyQkmNGqM615Pea53q4iAw2MqinC18HLlPjGnqrpOrd8V_7GMsiKy4lDC5kWV72ye6XXclAlyGw_Kzb3yI_dg/p.png?size=512x512&size_mode=2",
+      image: "https://i.postimg.cc/hGfWY7zq/Sofia-Alves.png",
       name: "Sofia Alves"
     },
     {
-      image:
-        "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACH1QVkHTNHbtWEEF-p7sfvQ4hwrPGNmhoOa3BBDVy4m53Hpo3taL5aZ-FKt-e3NPlQF_y2jqq7UVIek2Rd-3d7w4Oma86Y4eOVLSOc49QLnA_Xb0Bz_0jfYovVxxpqYYzLdO0GBL44mLVmzdD2iHN6gopoyDSPP2NWEwqzh4ZX72ZTapprThbyiczP96_WfRtGQxfLDOPv_2FOvs8rKgwlF3GSmiw2qOHoUw2lgBCq7yJATqlEx04UH24-QJvFmPMkpTblFkmvYrpgXj6iUvCB5YFznLdbUZuN-k0cC4CkmKA/p.png?size=512x512&size_mode=2",
+      image: "https://i.postimg.cc/BvYZL0DJ/Sofia-Carvalho.png",
       name: "Sofia Carvalho"
     }
   ]
@@ -209,13 +194,12 @@ export const basketTechnicalTeam = [
     role: "Mini 8 e Mini 10",
     members: [
       {
-        name: "Ana Teixeira",
-        image:
-          "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACFq-1ek0ThoI1IZdBsGV9qEy8q0AP-eXsip2ACqEqSqaLEVJ1UiuOnPImA1PnHQRFN_D-s7F6EqVhOs6inRml3CzZjW8GcZ7_YPXWIQLRSRr3xUmal0LGiHdAXFiXvtaxVqhbUy802Sbsblg6qxvqEtN5JSV7izp80K2MaVipmJlhaofafZVEN1ZB6tfEVTZdzHWlXPsKzv0hDvyaO0PYTQ4b39sjvwdtjdCl4WVMu6BbRR1_kIMRVAy-MEtdwprn93tzp97tbA35cYN7tpNalACDT5xLzQdb12UXOoi-Z4AA/p.png?size=512x512&size_mode=2"
+        name: "Ana Henriques",
+        image: "https://i.postimg.cc/SsHydfD5/Ana-Teixeira.png"
       },
       {
         name: "Inês Freitas",
-        image: ""
+        image: "https://i.postimg.cc/bvNNwJZ6/Ine-s-Freitas.png"
       }
     ]
   }

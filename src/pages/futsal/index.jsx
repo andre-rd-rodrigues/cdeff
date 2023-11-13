@@ -53,11 +53,12 @@ function FutsalPage() {
                 className={"sub_section_title"}
               />
               <div className="flex flex-wrap gap-6 md:justify-normal justify-center">
-                {members.map(({ name, image }, i) => (
+                {members.map(({ name, image, position }, i) => (
                   <Card
                     className={"w-[220px] h-[300px]"}
                     key={i}
                     imageSrc={image}
+                    subTitle={t(`pages.futsal.sportRoles.${position}`)}
                     title={name}
                   />
                 ))}
@@ -87,6 +88,18 @@ function FutsalPage() {
             {
               name: t("pages.futsal.teamRoles.Juniores"),
               content: <RankSection team={futsalTeam.juniores} />
+            },
+            {
+              name: t("pages.futsal.teamRoles.Juvenis"),
+              content: <RankSection team={futsalTeam.juvenis} />
+            },
+            {
+              name: t("pages.futsal.teamRoles.Iniciados"),
+              content: <RankSection team={futsalTeam.iniciados} />
+            },
+            {
+              name: t("pages.futsal.teamRoles.Petizes e Traquinas"),
+              content: <RankSection team={futsalTeam.petizes} />
             }
           ]}
         />
