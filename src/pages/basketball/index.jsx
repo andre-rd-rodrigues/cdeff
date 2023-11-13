@@ -19,13 +19,6 @@ import Image from "next/image";
 function BasketballPage() {
   const t = useTranslations();
 
-  /* 
-  Structure for the dynamic page
-  - Equipa técnica
-  - Plantel
-  - Horários de treinos
-  */
-
   return (
     <main>
       <PageHeader
@@ -62,12 +55,15 @@ function BasketballPage() {
                 className={"sub_section_title"}
               />
               <div className="flex flex-wrap gap-6 md:justify-normal justify-center">
-                {members.map(({ name, image }, i) => (
+                {members.map(({ name, image, position }, i) => (
                   <Card
                     className={"w-[220px] h-[300px]"}
                     key={i}
                     imageSrc={image}
                     title={name}
+                    subTitle={
+                      position && t(`pages.basketball.teamRoles.${position}`)
+                    }
                   />
                 ))}
               </div>
@@ -116,7 +112,7 @@ function BasketballPage() {
             alt="Training schedule"
             fill
             style={{ objectFit: "contain" }}
-            src="https://uc4eb1c8d9d417e043b4b2956175.previews.dropboxusercontent.com/p/pdf_img/ACGFySxgDg2-TfnnePJGyOedE9dRGOzRRnb-PiDl5BjgFegiXlfaLSroOuoLtn5H40wjhGngSuIlTjn1E1ua68m9wgCpA_fVwtRyrXYp__bs_7kaitMAkpdnXJIlbrL3GskXebq4xnjJ_x97F7DUFsVaIqkf5hUaFeXXgSG_VND5HINQ_0YTsXp8UBW1usi6PEjtbvaogQkrsaCVzMyLnbLOESnSv-j7RQ7OyhpN_C6ZOITNE4mYQIlTdMdIEjb-RThd4p1Z1yIISFv1d3Mz19e0rFQvZ3ZcQYF9iQGZzFZ0lMXpziXnmh9AUTZErbhOhtAldQ3agKgCdF_JaKC2HNP0jQAzNXpP72T9D_Lu6zw4_yB-DCL4eCP1TNzAxyTKhlo/p.png?page=0"
+            src="https://i.postimg.cc/D0k7sr2g/Hora-rios-de-Treino-Formac-a-o-Basquetebol.png"
           />
         </div>
       </Section>

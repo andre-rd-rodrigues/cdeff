@@ -4,15 +4,13 @@ import Card from "./Cards/Card";
 import SectionTitle from "./SectionTitle";
 import Button from "./Button/Button";
 import Link from "next/link";
+import { departments } from "@/data/company";
 
 function DepartmentsSection({ locale, knowMore }) {
   const t = useTranslations();
 
-  const translations = getTranslations(locale);
-
-  const departments = translations.common.departments;
-
   const renderDepartments = knowMore ? departments.slice(0, 3) : departments;
+
   return (
     <>
       <SectionTitle
@@ -25,7 +23,10 @@ function DepartmentsSection({ locale, knowMore }) {
       >
         {renderDepartments.map(({ department, members }, i) => (
           <div key={i} className="flex flex-col items-center">
-            <SectionTitle title={department} className={"sub_section_title"} />
+            <SectionTitle
+              title={t(`common.departments.${department}`)}
+              className={"sub_section_title"}
+            />
             <div className="flex flex-wrap gap-6 md:justify-normal justify-center">
               {members.map(({ name, position, imageSrc }, i) => (
                 <Card
@@ -33,7 +34,7 @@ function DepartmentsSection({ locale, knowMore }) {
                   key={i}
                   imageSrc={imageSrc}
                   title={name}
-                  subTitle={position}
+                  subTitle={t(`common.positions.${position}`)}
                 />
               ))}
             </div>

@@ -1,25 +1,12 @@
-import Card from "@/components/Cards/Card";
 import ProductCard from "@/components/Cards/ProductCard";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
 import { futsalProducts } from "@/data/futsal";
-import { getTranslations } from "@/utils";
 import { useTranslations } from "next-intl";
-import { useRouter } from "next/router";
-import React from "react";
 
 function StorePage() {
   const t = useTranslations();
-  const { locale } = useRouter();
-
-  const translations = getTranslations(locale);
-
-  const products = translations.common.products;
-
-  const basketballProducts = products.filter(
-    (item) => item.sport === "basketball"
-  );
 
   return (
     <main>

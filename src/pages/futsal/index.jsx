@@ -100,7 +100,7 @@ function FutsalPage() {
             alt="Training schedule"
             fill
             style={{ objectFit: "contain" }}
-            src="https://uc68b2e2882b60483c0f53f53eca.previews.dropboxusercontent.com/p/pdf_img/ACFuOcAHygy_y2VecqR2gjMBf_pEmIRXB32Pn6RhcCSPqcsdtELmCf5ylDmJuuokwL45CCaH6YmIJONe6IkwtnmzSfkVf0b3GNwAklzythfF3Q-P_if14zbQ2OzN64IkhALaEtQIf_tDRCTRYesyo4RWZ4ztiA-QzVVQJW-UlokTH7z0x2SgPJ04iVWwtHZFAAGlit0NuhJAv_nwR1e8F9J_F_wHcTcTd61qOzMLPCCFJG570yUJbjL-u9t4QZCC9b-MpgqdmUcKGqCnB0sGabX33Jft9Ve1dGvKuv90uf2RvLFUbVzj2fGYQf1z7NlYJIzfI1LVcYzi6GMw9CTvzZSZB9xi9pCgysFUPxGNbBptFLZGquvaBqo2RV83pMqzwFg/p.png?page=0"
+            src="https://i.postimg.cc/GmNJkty2/Hora-rios-de-Treino-Futsal.png"
           />
         </div>
       </Section>

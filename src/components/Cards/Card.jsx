@@ -10,7 +10,8 @@ const Card = ({
   description,
   subTitle,
   imageSrc,
-  className
+  className,
+  imgContain
 }) => {
   const t = useTranslations();
 
@@ -24,7 +25,7 @@ const Card = ({
           alt={title}
           fill
           style={{
-            objectFit: "cover"
+            objectFit: imgContain ? "contain" : "cover"
           }}
         />
       </div>

@@ -23,7 +23,6 @@ function TournamentsPage({ tournaments }) {
     (tournament) =>
       tournament.properties?.Modalidade.select.name === selectedSport
   );
-  console.log(tournaments);
 
   return (
     <main>

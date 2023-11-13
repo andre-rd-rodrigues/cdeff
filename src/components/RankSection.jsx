@@ -6,6 +6,7 @@ function RankSection({ team }) {
     <div className="my-12 flex flex-wrap gap-10 md:justify-between justify-center">
       {team.map(({ name, image }, i) => (
         <Card
+          imgContain
           className={"w-[220px] h-[300px]"}
           key={i}
           imageSrc={image}
