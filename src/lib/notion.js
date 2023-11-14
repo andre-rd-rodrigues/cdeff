@@ -1,3 +1,4 @@
+import { getNotionImagePathname } from "@/utils";
 import { Client } from "@notionhq/client";
 const { NotionToMarkdown } = require("notion-to-md");
 
@@ -14,7 +15,7 @@ const getPostPageMetaData = (post) => {
     description: post?.properties?.Description.rich_text[0].plain_text,
     date: post?.last_edited_time,
     slug: post?.properties?.Slug.rich_text[0].plain_text,
-    image: post?.cover?.external?.url
+    image: getNotionImagePathname(post)
   };
 };
 

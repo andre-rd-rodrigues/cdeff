@@ -3,9 +3,8 @@ import PageHeader from "@/components/PageHeader/PageHeader";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
 import { getPosts } from "@/lib/notion";
-import { REVALIDATE_TIME } from "@/utils";
+import { REVALIDATE_TIME, getNotionImagePathname } from "@/utils";
 import { useTranslations } from "next-intl";
-import React from "react";
 
 function BlogPage({ posts }) {
   const t = useTranslations();
@@ -29,7 +28,7 @@ function BlogPage({ posts }) {
                 description:
                   post.properties?.Description.rich_text[0]?.plain_text,
                 date: post.created_time,
-                image: post.cover?.external.url,
+                image: getNotionImagePathname(post),
                 slug: post.properties.Slug.rich_text[0].plain_text
               }}
             />

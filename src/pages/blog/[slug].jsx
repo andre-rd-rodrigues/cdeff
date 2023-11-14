@@ -16,20 +16,20 @@ const BlogPost = ({ post, metadata }) => {
   return (
     <>
       <AppHead
-        title={metadata.title}
-        description={metadata.description}
+        title={metadata?.title}
+        description={metadata?.description}
         canonical={`https://www.cdeff.com/blog/${metadata?.slug}`}
         openGraph={{
           url: `https://www.cdeff.com/blog/${metadata?.slug}`,
-          title: metadata.title,
-          description: metadata.description,
-          datePublished: metadata.created_date,
+          title: metadata?.title,
+          description: metadata?.description,
+          datePublished: metadata?.created_date,
           authorName: "Ema Carolina",
           locale,
           images: [
             {
-              url: metadata.image,
-              alt: `${metadata.title} post`
+              url: metadata?.image,
+              alt: `${metadata?.title} post`
             }
           ]
         }}
@@ -38,7 +38,7 @@ const BlogPost = ({ post, metadata }) => {
         <BlogPageHeader
           image={metadata?.image}
           title={metadata?.title}
-          date={dayjs(metadata.date).locale(locale).format(DATE_FORMAT)}
+          date={dayjs(metadata?.date).locale(locale).format(DATE_FORMAT)}
         />
         <div className="max-w-7xl m-auto py-10">
           <ReactMarkdown className="markdown">{post.parent}</ReactMarkdown>

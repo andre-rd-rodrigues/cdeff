@@ -1,6 +1,5 @@
 import BlogCard from "@/components/Blog/BlogCard";
 import Button from "@/components/Button/Button";
-import Card from "@/components/Cards/Card";
 import IconCard from "@/components/Cards/IconCard/IconCard";
 import ProductCard from "@/components/Cards/ProductCard";
 import Carousel from "@/components/Carousel/Carousel";
@@ -14,7 +13,7 @@ import { futsalProducts } from "@/data/futsal";
 import { getPosts } from "@/lib/notion";
 import { barlow } from "@/styles/fonts";
 
-import { REVALIDATE_TIME, getTranslations } from "@/utils";
+import { REVALIDATE_TIME, getNotionImagePathname } from "@/utils";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -155,7 +154,7 @@ export default function Home({ blogPosts }) {
                 description:
                   post.properties?.Description.rich_text[0]?.plain_text,
                 date: post.created_time,
-                image: post.cover?.external.url,
+                image: getNotionImagePathname(post),
                 slug: post.properties.Slug.rich_text[0].plain_text
               }}
             />
