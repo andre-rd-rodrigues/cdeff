@@ -277,7 +277,7 @@
     "contacts": {
       "title": "Contacts",
       "subtitle": "Any question or suggestion? Contact us.",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "description": "      Reach out to us for any queries or information. We are located at Rua de João de Deus nº9, 9054-527, Funchal.\nYour message is important to us, and our team is ready to assist you!",
       "contactItems": [
         {
           "description": "João de Deus Street nº9 - 9054-527, Funchal",
@@ -527,7 +527,6 @@
       "schedule": "Training schedule",
       "details": "Details"
     },
-
     "seeResults": "Check the last results of the games! 👇🏻",
     "links": {
       "contacts": "contacts"

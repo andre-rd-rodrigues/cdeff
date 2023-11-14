@@ -18,13 +18,14 @@ const BlogPost = ({ post, metadata }) => {
       <AppHead
         title={metadata.title}
         description={metadata.description}
-        canonical={`https://www.cdeff.com/blog/${post.slug}`}
+        canonical={`https://www.cdeff.com/blog/${metadata?.slug}`}
         openGraph={{
-          url: `https://www.cdeff.com/blog/${post.slug}`,
+          url: `https://www.cdeff.com/blog/${metadata?.slug}`,
           title: metadata.title,
           description: metadata.description,
           datePublished: metadata.created_date,
           authorName: "Ema Carolina",
+          locale,
           images: [
             {
               url: metadata.image,

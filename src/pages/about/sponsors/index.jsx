@@ -1,6 +1,5 @@
 import Button from "@/components/Button/Button";
 import HeroHeader from "@/components/Hero/HeroHeader/HeroHeader";
-import HeroSection from "@/components/Hero/HeroSection/HeroSection";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
@@ -9,9 +8,7 @@ import { basketSponsors } from "@/data/basketball";
 import { futsalSponsors } from "@/data/futsal";
 import { barlow } from "@/styles/fonts";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 function Sponsors() {
   const t = useTranslations();
@@ -26,7 +23,7 @@ function Sponsors() {
       {/* Main */}
       <Section>
         <SectionTitle title={t("pages.sponsors.mainSponsors")} />
-        <div className="flex gap-10 justify-center">
+        <div className="flex">
           <SponsorSection
             images={["/images/navbar/basket/hospital.png"]}
             basket

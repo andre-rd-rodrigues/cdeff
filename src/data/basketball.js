@@ -34,7 +34,7 @@ export const basketTeamsImages = {
     },
     {
       image: "https://i.postimg.cc/bvNNwJZ6/Ine-s-Freitas.png",
-      name: "Ine s Freitas"
+      name: "Inês Freitas"
     },
     {
       image: "https://i.postimg.cc/xTnr2ZJ5/Margarida-Teixeira.png",
@@ -236,7 +236,7 @@ export const basketSponsors = {
 };
 
 export const basketAllSponsorUrls = [
-  "/images/navbar/hospital.png",
+  "/images/navbar/basket/hospital.png",
   ...basketSponsors.premium,
   ...basketSponsors.normal,
   ...basketSponsors.collaborators

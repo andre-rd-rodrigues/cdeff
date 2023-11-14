@@ -96,7 +96,7 @@ function About() {
           subTitle={t("pages.about.achievements.subtitle")}
         />
         <div className="mt-8 sm:mt-0 md:justify-center flex flex-wrap gap-5 justify-between">
-          {/*  basketball */}
+          {/*  Basketball */}
           <div>
             <SectionTitle
               title={t("common.sports.basketball")}

@@ -14,7 +14,7 @@
         "title": "Modalidades",
         "basket": {
           "title": "Basketball",
-          "description": "Eleva teu desempenho e vem jogar basquetebol."
+          "description": "Eleva a tua condição física e espírito de equipa e vem jogar basquetebol."
         },
         "futsal": {
           "title": "Futsal",
@@ -272,7 +272,7 @@
     "contacts": {
       "title": "Contactos",
       "subtitle": "Alguma questão? Não hesite em contactar-nos!",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "description": "Entre em contato conosco para qualquer dúvida ou informação. Estamos localizados na Rua de João de Deus nº9, 9054-527, Funchal.\nA sua mensagem é importante para nós, a nossa equipa está pronta para ajudá-lo!",
       "contactItems": [
         {
           "description": "Rua de João de Deus nº9 - 9054-527, Funchal",

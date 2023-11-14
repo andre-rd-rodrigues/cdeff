@@ -3,11 +3,11 @@ import Card from "./Cards/Card";
 
 function RankSection({ team }) {
   return (
-    <div className="my-12 flex flex-wrap gap-10 md:justify-between justify-center">
+    <div className="grid justify-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       {team.map(({ name, image }, i) => (
         <Card
           imgContain
-          className={"w-[220px] h-[300px]"}
+          className="w-full h-[300px]"
           key={i}
           imageSrc={image}
           title={name}

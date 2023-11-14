@@ -7,7 +7,7 @@ const SponsorSection = ({ images, basket }) => {
   const t = useTranslations();
 
   return (
-    <div className="flex gap-10 mb-10">
+    <div className="mb-10">
       <div>
         <SectionTitle
           title={
@@ -16,7 +16,13 @@ const SponsorSection = ({ images, basket }) => {
           isSubSectionTitle
           textClassName={"opacity-70"}
         />
-        <div className="flex flex-wrap gap-5">
+        <div
+          className={`grid justify-items-center  ${
+            images.length >= 3
+              ? "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6"
+              : "grid-cols-2"
+          }`}
+        >
           {images.map((image, i) => (
             <div className="relative w-[150px] h-[130px]" key={i}>
               <Image

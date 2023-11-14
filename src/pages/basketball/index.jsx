@@ -130,7 +130,7 @@ function BasketballPage() {
       <Section containerClassName={"bg-white"}>
         <SectionTitle title={t("pages.sponsors.title")} />
 
-        <div className="flex flex-wrap gap-5 justify-center md:justify-between">
+        <div className="grid justify-items-center grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
           {basketAllSponsorUrls.map((image, i) => (
             <div className="relative w-[150px] h-[130px]" key={i}>
               <Image

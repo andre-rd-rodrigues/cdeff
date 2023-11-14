@@ -95,7 +95,8 @@ const getTournamentPageMetaData = (tournament) => {
     title: tournament?.properties?.Titulo?.title[0]?.plain_text,
     description:
       tournament?.properties?.Descrição?.rich_text[0]?.plain_text || null,
-    /* date: tournament?.properties?.Data, */
+    dateStart: tournament.properties?.Data?.date?.start,
+    dateEnd: tournament.properties?.Data?.date?.end,
     slug: tournament?.properties?.Slug?.rich_text[0]?.plain_text,
     image: tournament.cover?.external?.url || tournament.cover?.file?.url || "",
     location: tournament?.properties?.Local?.rich_text[0]?.plain_text

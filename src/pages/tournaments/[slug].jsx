@@ -1,3 +1,4 @@
+import AppHead from "@/components/AppHead";
 import BlogPageHeader from "@/components/PageHeader/BlogPageHeader";
 import { getPost, getPosts, getTournament, getTournaments } from "@/lib/notion";
 import { DATE_FORMAT } from "@/utils";
@@ -8,20 +9,46 @@ require("dayjs/locale/pt");
 require("dayjs/locale/en");
 
 const TournamentDetailsPage = ({ tournament, metadata }) => {
-  /*   const { date, description, id, slug, title, image } = metadata; */
+  /*   const { dateStart, dateEnd, description, id, slug, title, image } = metadata; */
   const { locale } = useRouter();
-
+  console.log(metadata);
   return (
-    <main>
-      <BlogPageHeader
-        image={metadata?.image}
+    <>
+      <AppHead
         title={metadata?.title}
-        date={dayjs(metadata.date).locale(locale).format(DATE_FORMAT)}
+        description={metadata?.description}
+        canonical={`https://www.cdeff.com/tournaments/${metadata?.slug}`}
+        openGraph={{
+          url: `https://www.cdeff.com/tournaments/${metadata?.slug}`,
+          title: metadata?.title,
+          description: metadata?.description,
+          datePublished: metadata?.created_date,
+          locale,
+          images: [
+            {
+              url: metadata?.image,
+              alt: metadata?.title
+            }
+          ]
+        }}
       />
-      <div className="max-w-7xl m-auto py-10">
-        <ReactMarkdown className="markdown">{tournament.parent}</ReactMarkdown>
-      </div>
-    </main>
+      <main>
+        <BlogPageHeader
+          image={metadata?.image}
+          title={metadata?.title}
+          date={`${dayjs(metadata?.dateStart)
+            .locale(locale)
+            .format(DATE_FORMAT)} - ${dayjs(metadata?.dateEnd)
+            .locale(locale)
+            .format(DATE_FORMAT)}`}
+        />
+        <div className="max-w-7xl m-auto py-10">
+          <ReactMarkdown className="markdown">
+            {tournament.parent}
+          </ReactMarkdown>
+        </div>
+      </main>
+    </>
   );
 };
 
