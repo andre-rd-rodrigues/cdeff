@@ -159,7 +159,7 @@ export const basketTechnicalTeam = [
     members: [
       {
         name: "Diogo Pereira",
-        image: ""
+        image: "https://i.postimg.cc/3NHxT6xX/avatar-1577909-1280.png"
       }
     ]
   },
@@ -177,7 +177,7 @@ export const basketTechnicalTeam = [
     members: [
       {
         name: "Carolina Henriques",
-        image: "https://link-to-carolina-henriques-image"
+        image: "https://i.postimg.cc/3NHxT6xX/avatar-1577909-1280.png"
       }
     ]
   },

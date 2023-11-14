@@ -21,7 +21,7 @@ function EventCard({ event, href }) {
         <Image
           src={image || "/images/metadata.png"}
           alt={title}
-          layout="fill"
+          fill
           style={{
             objectFit: "cover"
           }}

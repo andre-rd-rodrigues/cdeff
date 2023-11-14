@@ -15,7 +15,7 @@ const ProductCard = ({ title, price, sizes, image, className }) => {
         <Image
           src={image}
           alt={title}
-          layout="fill"
+          fill
           style={{
             objectFit: "cover"
           }}

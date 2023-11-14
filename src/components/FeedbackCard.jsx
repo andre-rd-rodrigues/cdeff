@@ -14,7 +14,7 @@ function FeedbackCard({ author, feedback, image, className }) {
           <h5>{author}</h5>
         </div>
         <div className="relative h-12 w-12 rounded-full overflow-hidden">
-          <Image src={image} alt="client" layout="fill" objectFit="cover" />
+          <Image src={image} alt="client" fill style={{ objectFit: "cover" }} />
         </div>
       </div>
     </div>

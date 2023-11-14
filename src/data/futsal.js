@@ -14,7 +14,7 @@ export const futsalTechnicalTeam = [
       },
       {
         name: "Albino Leça",
-        image: "",
+        image: "https://i.postimg.cc/3NHxT6xX/avatar-1577909-1280.png",
         position: "massagista"
       }
     ]
@@ -94,8 +94,7 @@ export const futsalTechnicalTeam = [
     members: [
       {
         name: "Fabiano Afonso",
-        image:
-          "https://uc5a1b9bcddbfdcf24f27aa76912.previews.dropboxusercontent.com/p/thumb/ACFXIjLHGOXR9gjj4lv-gx_pCcnqtpEFL3UoM11wW_B_PL8LWzfEuJpazIIfhVzZ9kGxS-f7eblzepmsn0H9n-t69zd5uxKEb2S7K9mTndfkrpomyp1oEpcAsulZ5yHv9c2mall-6x3hX7O70bolFLTM9OEEXAbf2sbtVEZAne-K98eFvrzMzmTGSdh8_b0Cz5VQV_BobrXABXTvgQ9U5bHyHnq11yOckUx_Uf1YpARmytKfpUbk6TQtKegVfgO2Luzx4jXnquBGClv5EangKhnAwPI9v_mKR_2s-gVWQxEQww/p.png?size=512x512&size_mode=2",
+        image: "https://i.postimg.cc/dQS77rYb/Fabiano.png",
         position: "treinador"
       },
       {
