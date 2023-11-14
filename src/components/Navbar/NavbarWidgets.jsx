@@ -65,33 +65,38 @@ const Sponsors = () => {
       className={`${styles.sponsors} py-2 flex justify-between items-center`}
     >
       {/* Basket */}
-      <Image
-        width={IMAGE_SIZE}
-        height={IMAGE_SIZE}
-        src="/images/navbar/basket/hospital.png"
-        alt="Hospital Particular da Madeira"
-      />
+      <div className="w-[70px] h-[30px] relative">
+        <Image
+          fill
+          style={{ objectFit: "contain" }}
+          src="/images/navbar/basket/hospital.png"
+          alt="Hospital Particular da Madeira"
+        />
+      </div>
 
       {/* Company */}
       <div className="flex flex-wrap sm:gap-5 justify-center">
         {companyImages?.map((image, index) => (
-          <Image
-            key={index}
-            width={IMAGE_SIZE}
-            height={IMAGE_SIZE}
-            src={image}
-            alt="CDEFF - Patrocinadores"
-          />
+          <div key={index} className="w-[70px] h-[40px] relative">
+            <Image
+              fill
+              style={{ objectFit: "contain" }}
+              src={image}
+              alt="CDEFF - Patrocinadores"
+            />
+          </div>
         ))}
       </div>
 
       {/* Futsal */}
-      <Image
-        width={IMAGE_SIZE}
-        height={IMAGE_SIZE}
-        src="/images/navbar/futsal/tourigalo.png"
-        alt="Tourigalo"
-      />
+      <div className="w-[70px] h-[40px] relative">
+        <Image
+          fill
+          style={{ objectFit: "contain" }}
+          src="/images/navbar/futsal/tourigalo.png"
+          alt="Tourigalo"
+        />
+      </div>
     </div>
   );
 };
