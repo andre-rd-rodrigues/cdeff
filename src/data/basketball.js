@@ -124,37 +124,6 @@ export const basketTechnicalTeam = [
     ]
   },
   {
-    role: "Sub-18 Masculinos",
-    members: [
-      {
-        name: "João Silva",
-        image: "https://i.postimg.cc/rmzRdzty/Joa-o-Silva.png"
-      }
-    ]
-  },
-  {
-    role: "Sub-16 Femininos",
-    members: [
-      {
-        name: "Kelly Freitas",
-        image: "https://i.postimg.cc/NLvKP4CL/Kelly-Freitas.png"
-      }
-    ]
-  },
-  {
-    role: "Sub-16 Masculinos",
-    members: [
-      {
-        name: "João Silva",
-        image: "https://i.postimg.cc/rmzRdzty/Joa-o-Silva.png"
-      },
-      {
-        name: "Bruno Camacho",
-        image: "https://i.postimg.cc/vHn2KtZy/Bruno-Camacho.jpg"
-      }
-    ]
-  },
-  {
     role: "Sub-14 Femininos",
     members: [
       {
@@ -177,7 +146,7 @@ export const basketTechnicalTeam = [
     members: [
       {
         name: "Carolina Henriques",
-        image: "https://i.postimg.cc/3NHxT6xX/avatar-1577909-1280.png"
+        image: "https://i.postimg.cc/D0QtGrD1/Ana-Henriques.png"
       }
     ]
   },
@@ -194,7 +163,7 @@ export const basketTechnicalTeam = [
     role: "Mini 8 e Mini 10",
     members: [
       {
-        name: "Ana Henriques",
+        name: "Ana Teixeira",
         image: "https://i.postimg.cc/SsHydfD5/Ana-Teixeira.png"
       },
       {

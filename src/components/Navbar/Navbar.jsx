@@ -1,5 +1,5 @@
 import { barlow } from "@/styles/fonts";
-import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
+import { Dialog, Disclosure, Popover } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import Link from "next/link";
@@ -9,6 +9,7 @@ import ptTranslations from "../../messages/pt.json";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
 import Dropdown from "./Dropdown";
 
+import useIsMobile from "@/hooks/useIsMobile";
 import { useRouter } from "next/router";
 import { CTAButton, CloseButton, CompanyLogo, Sponsors } from "./NavbarWidgets";
 
@@ -18,6 +19,7 @@ function classNames(...classes) {
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const isMobile = useIsMobile();
 
   const { locale } = useRouter();
 
@@ -139,7 +141,7 @@ const Navbar = () => {
       </Dialog>
 
       {/* Sponsors */}
-      <Sponsors />
+      {!isMobile && <Sponsors />}
     </header>
   );
 };

@@ -22,7 +22,7 @@ function BasketballPage() {
   return (
     <main>
       <PageHeader
-        title={t("pages.basketball.title")}
+        title={t("common.sports.basketball")}
         image={
           "https://images.unsplash.com/photo-1628779238951-be2c9f2a59f4?auto=format&fit=crop&q=80&w=1587&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
@@ -34,7 +34,7 @@ function BasketballPage() {
           title={t("pages.basketball.welcome.title")}
           subtitle={t("pages.basketball.welcome.subtitle")}
           description={t("pages.basketball.welcome.description")}
-          imgSrc="https://images.unsplash.com/photo-1628779238951-be2c9f2a59f4?auto=format&fit=crop&q=80&w=1587&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          imgSrc="https://i.postimg.cc/65gGMZpq/modalidades-basquetebol.jpg"
         />
       </Section>
 
@@ -120,10 +120,11 @@ function BasketballPage() {
       {/* See results */}
       <HeroSection
         imageSrc="https://sav2.fpb.pt/uploads/equipas/EQU_475351697626024.jpg"
-        linkLabel={t("common.buttons.registration")}
+        linkLabel={t("common.buttons.seeMore")}
         subtitle={t("common.sports.basketball")}
         title={t("common.seeResults")}
         href="https://www.fpb.pt/equipa/equipa_47535/"
+        linkProps={{ target: "_blank" }}
       />
 
       {/* Sponsors */}

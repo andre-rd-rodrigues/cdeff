@@ -3,7 +3,7 @@ export const departments = [
     department: "Management",
     members: [
       {
-        name: "Prof. Fernando Alves",
+        name: "Fernando Alves",
         position: "Club President",
         imageSrc: "https://i.postimg.cc/cCt2dm9Z/Fernando-Alves.png"
       }
@@ -13,7 +13,7 @@ export const departments = [
     department: "Technical Coordination",
     members: [
       {
-        name: "Prof. Joaquim Pereira",
+        name: "Joaquim Pereira",
         position: "Technical Coordinator",
         imageSrc: "https://i.postimg.cc/N0Q3RRM7/Joaquim-Pereira.png"
       }
@@ -23,7 +23,7 @@ export const departments = [
     department: "Basketball Coordination",
     members: [
       {
-        name: "Prof. Paulo Freitas",
+        name: "Paulo Freitas",
         position: "Basketball Coordinator",
         imageSrc: "https://i.postimg.cc/fWSrt8CQ/Paulo-Freitas.png"
       }
@@ -33,7 +33,7 @@ export const departments = [
     department: "Futsal Coordination",
     members: [
       {
-        name: "Prof. Tiago Rosa",
+        name: "Tiago Rosa",
         position: "Futsal Coordinator",
         imageSrc: "https://i.postimg.cc/y6J8JC26/Tiago-Rosa.png"
       }

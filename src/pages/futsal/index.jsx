@@ -125,6 +125,7 @@ function FutsalPage() {
         subtitle={t("common.sports.futsal")}
         title={t("common.seeResults")}
         href="https://resultados.fpf.pt/Competition/Details?competitionId=24488&seasonId=103"
+        linkProps={{ target: "_blank" }}
       />
 
       {/* Sponsors */}

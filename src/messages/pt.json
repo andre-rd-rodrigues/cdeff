@@ -8,7 +8,7 @@
       },
       "hero_1": {
         "subtitle": "VII Torneio Internacional de Futsal",
-        "title": "Queres inscrever o teu Clube no maior Torneio Internacional de Futsal do país? Garante já a tua inscrição aqui! 👇🏻"
+        "title": "Queres inscrever o teu Clube num dos maiores Torneios Internacionais de Futsal do país? Garante já a tua inscrição aqui! 👇🏻"
       },
       "sports": {
         "title": "Modalidades",
@@ -231,6 +231,32 @@
       "section_3": {
         "title": "Orientação",
         "description": "Recentemente, o Clube integrou a modalidade de Orientação – ORIFF, tendo como responsável, por este departamento, a prof. Alexandra Fonseca.\nComo o nome indica, a corrida de orientação é um desporto onde, além do atleta ter de completar um percurso no melhor tempo possível, deve orientar-se unicamente só com a ajuda de um mapa e de uma bússola.\nEsta modalidade para além de contribuir para o melhoramento das capacidades físicas e motoras: cárdio, resistência capacidade respiratória, trabalho muscular e propriocepção, dos jovens e demais atletas praticantes (das mais variadas faixas etárias, desde tenra idade até onde a condição física permitir), contribui para o desenvolvimento das capacidades mentais e intelectuais tais como: de reflexão, dedução, lógica, descoberta e sentido de orientação. Aumentando assim a autoconfiança, socialização, bem-estar físico e mental, desfrutando também da envolvência com o meio ambiente e natureza.\nPara mais informações, entra em contacto connosco."
+      },
+
+      "section_4": {
+        "title": "Muay Thai",
+        "description": "O Muay Thai oferece uma experiência única e estimulante para os entusiastas de artes marciais e daqueles que procuram um desporto desafiante. Sob a orientação de instrutores qualificados, os participantes têm a oportunidade de aprender as técnicas autênticas do Muay Thai, além de desenvolver habilidades como a disciplina, concentração e autocontrole.",
+        "location": "ginásio interior da escola",
+        "schedule": [
+          "4 aos 12 anos: 18h30 às 19h30",
+          "a partir dos 13 anos: 19h30 às 20h30",
+          "avançados e interessados em competições: 20h30 às 21h30"
+        ],
+        "contact": "Para obter mais informações ou realizar inscrições, entra em contacto com a professora Marisol, através do número - 966372155."
+      },
+      "section_5": {
+        "title": "Zumba",
+        "description": "Descobre a alegria da dança e vem queimar calorias ao ritmo contagiante das aulas de Zumba, uma combinação única de movimentos de dança latina e exercícios aeróbicos.",
+        "location": "ginásio interior da escola",
+        "schedule": ["terças e quintas, das 20h30 às 21h30"],
+        "contact": "Para mais informações e inscrições, entra em contato com o Élton Camacho através do número - 966410578."
+      },
+      "section_6": {
+        "title": "Ginástica",
+        "description": "Seja qual for o teu objetivo na ginástica (fortalecer o corpo, melhorar a postura ou simplesmente desfrutar de uma atividade física prazerosa) estas aulas oferecem o ambiente ideal para alcançar os teus objetivos. Estas aulas são realizadas pelo Clube Desportivo Nacional, garantindo a qualidade e a orientação profissional necessárias para um treino seguro e eficaz.",
+        "location": "ginásio interior da escola",
+        "schedule": ["todos os dias, das 18h30 às 20h"],
+        "contact": "Para mais informações e inscrições, entra em contato através do número - 966573753."
       }
     },
     "store": {
@@ -299,7 +325,7 @@
     "registrations": {
       "title": "Inscrições",
       "activities": "Atividades",
-      "tournament": "torneio"
+      "tournament": "VII TORNEIO INTERNACIONAL FUNCHAL FUTSAL CUP"
     }
   },
   "components": {
@@ -519,9 +545,9 @@
       "contacts": "contacts"
     },
     "departments": {
-      "Management": "Gestão",
+      "Management": "Direção",
       "Technical Coordination": "Coordenação Técnica",
-      "Basketball Coordination": "Coordenação de Basquete",
+      "Basketball Coordination": "Coordenação de Basquetebol",
       "Futsal Coordination": "Coordenação de Futsal",
       "Medical": "Médico",
       "Physiotherapy": "Fisioterapia",
@@ -532,15 +558,15 @@
     "positions": {
       "Club President": "Presidente do Clube",
       "Technical Coordinator": "Coordenador Técnico",
-      "Basketball Coordinator": "Coordenador de Basquete",
+      "Basketball Coordinator": "Coordenador de Basquetebol",
       "Futsal Coordinator": "Coordenador de Futsal",
-      "Doctor (Basketball)": "Médico (Basquete)",
+      "Doctor (Basketball)": "Médico (Basquetebol)",
       "Doctor (Futsal)": "Médico (Futsal)",
-      "Physiotherapist (Basketball)": "Fisioterapeuta (Basquete)",
+      "Physiotherapist (Basketball)": "Fisioterapeuta (Basquetebol)",
       "Physiotherapist (Futsal)": "Fisioterapeuta (Futsal)",
-      "Financial Officer": "Oficial Financeiro",
+      "Financial Officer": "Assessor Financeiro",
       "Marketing and Communication": "Marketing e Comunicação",
-      "Administrative Officer": "Oficial Administrativo"
+      "Administrative Officer": "Administrativa"
     },
 
     "techTeam": {
@@ -550,7 +576,8 @@
       "techTeam": "Equipa técnica",
       "selectRank": "Seleciona o escalão",
       "details": "detalhes",
-      "schedule": "Horário de treinos"
+      "schedule": "Horário de treinos",
+      "location": "Local"
     },
 
     "seeResults": "Clica aqui para veres os últimos resultados dos jogos! 👇🏻",

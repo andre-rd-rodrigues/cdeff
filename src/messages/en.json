@@ -236,6 +236,32 @@
       "section_3": {
         "title": "Orienteering",
         "description": "Recently, the Club joined the Orienteering modality – ORIFF, with prof. Alexandra Fonseca in charge of this department.\nAs the name implies, orienteering is a sport where, in addition to the athlete having to complete a course in the best possible time, you should orient yourself only with the help of a map and a compass.\nThis modality, in addition to contributing to the improvement of physical and motor skills: cardio, endurance, respiratory capacity, muscle work and proprioception, of young people and other practicing athletes (of the most varied age groups, from an early age to where the physical condition allows), it contributes to the development of mental and intellectual capacities such as: reflection, deduction, logic, discovery and sense of direction. Thus increasing self-confidence, socialization, physical and mental well-being, also enjoying the surroundings with the environment and nature.\nFor more information, please contact us."
+      },
+
+      "section_4": {
+        "title": "Muay Thai",
+        "description": "Muay Thai offers a unique and stimulating experience for martial arts enthusiasts and those looking for a challenging sport. Under the guidance of qualified instructors, participants have the opportunity to learn authentic Muay Thai techniques, as well as develop skills such as discipline, concentration, and self-control.",
+        "location": "school's indoor gym",
+        "schedule": [
+          "4 to 12 years old: 6.30pm to 7.30pm",
+          "from 13 years old: 7.30pm to 8.30pm",
+          "advanced and those interested in competitions: 8.30pm to 9.30pm"
+        ],
+        "contact": "For more information or to register, please contact teacher Marisol at 966372155."
+      },
+      "section_5": {
+        "title": "Zumba",
+        "description": "Discover the joy of dancing and burn calories to the infectious rhythm of Zumba classes, a unique combination of Latin dance moves and aerobic exercise.",
+        "location": "school's indoor gym",
+        "schedule": ["Tuesdays and Thursdays, from 8.30pm to 9.30pm"],
+        "contact": "For more information and to enrol, contact Élton Camacho at 966410578."
+      },
+      "section_6": {
+        "title": "Gymnastics",
+        "description": "Whatever your fitness goal (to strengthen your body, improve your posture, or simply enjoy a pleasurable physical activity) these classes offer the ideal environment to achieve your goals. These classes are run by the Clube Desportivo Nacional, guaranteeing the quality and professional guidance necessary for safe and effective training.",
+        "location": "Location: the school's indoor gym",
+        "schedule": ["every day from 6.30pm to 8pm"],
+        "contact": "For more information and to enrol, please contact 966573753."
       }
     },
     "store": {
@@ -304,7 +330,7 @@
     "registrations": {
       "title": "Registrations",
       "activities": "Activities",
-      "tournament": "Tournament"
+      "tournament": "VII INTERNACIONAL FUNCHAL FUTSAL CUP"
     }
   },
   "components": {
@@ -525,7 +551,8 @@
       "selectRank": "Select the rank",
       "subtitle": "rank details",
       "schedule": "Training schedule",
-      "details": "Details"
+      "details": "Details",
+      "location": "Location"
     },
     "seeResults": "Check the last results of the games! 👇🏻",
     "links": {

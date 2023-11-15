@@ -6,7 +6,7 @@ import Button from "./Button/Button";
 import Link from "next/link";
 import { departments } from "@/data/company";
 
-function DepartmentsSection({ locale, knowMore }) {
+function DepartmentsSection({ knowMore }) {
   const t = useTranslations();
 
   const renderDepartments = knowMore ? departments.slice(0, 3) : departments;

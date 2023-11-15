@@ -575,7 +575,7 @@ export const futsalProducts = [
     image: "https://i.postimg.cc/qvzvCXnP/Bolsa-1-Joma.png",
     name: "Bolsa  1 Joma"
   },
-  {
+  /*   {
     image: "https://i.postimg.cc/kgrW4z36/Bolsa-2-Joma.png",
     name: "Bolsa  2 Joma"
   },
@@ -590,7 +590,7 @@ export const futsalProducts = [
   {
     image: "https://i.postimg.cc/wjhLs2gW/Bolsa-5-Joma.png",
     name: "Bolsa  5 Joma"
-  },
+  }, */
   {
     image: "https://i.postimg.cc/Zq43PNqJ/Casaco-1-Joma.png",
     name: "Casaco  1 Joma"

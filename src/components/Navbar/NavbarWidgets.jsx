@@ -30,7 +30,7 @@ const CompanyLogo = ({ isLargeMenu = true }) => {
       <p
         className={`${barlow.className} uppercase ${
           isLargeMenu && "hidden sm:block"
-        } text-blue mx-5 font-semibold text-l`}
+        } text-blue mx-2 mr-5 font-semibold text-l`}
       >
         {t("components.navbar.title")}
       </p>
@@ -58,14 +58,14 @@ const Sponsors = () => {
     "/images/navbar/company/escola.png",
     "/images/navbar/company/madeira.png"
   ];
-  const IMAGE_SIZE = 80;
+  const IMAGE_STYLE = "w-[80px] h-[50px] relative";
 
   return (
     <div
-      className={`${styles.sponsors} py-2 flex justify-between items-center`}
+      className={`${styles.sponsors} py-2 flex items-center justify-center gap-6`}
     >
       {/* Basket */}
-      <div className="w-[70px] h-[30px] relative">
+      <div className={IMAGE_STYLE}>
         <Image
           fill
           style={{ objectFit: "contain" }}
@@ -75,21 +75,26 @@ const Sponsors = () => {
       </div>
 
       {/* Company */}
-      <div className="flex flex-wrap sm:gap-5 justify-center">
-        {companyImages?.map((image, index) => (
-          <div key={index} className="w-[70px] h-[40px] relative">
-            <Image
-              fill
-              style={{ objectFit: "contain" }}
-              src={image}
-              alt="CDEFF - Patrocinadores"
-            />
-          </div>
-        ))}
-      </div>
+      {companyImages?.map((image, index) => (
+        <div
+          key={index}
+          className={`${
+            image.includes("educação")
+              ? "w-[230px] h-[70px] relative"
+              : IMAGE_STYLE
+          }`}
+        >
+          <Image
+            fill
+            style={{ objectFit: "contain" }}
+            src={image}
+            alt="CDEFF - Patrocinadores"
+          />
+        </div>
+      ))}
 
       {/* Futsal */}
-      <div className="w-[70px] h-[40px] relative">
+      <div className={IMAGE_STYLE}>
         <Image
           fill
           style={{ objectFit: "contain" }}
