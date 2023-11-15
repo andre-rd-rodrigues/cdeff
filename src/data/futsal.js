@@ -175,7 +175,6 @@ export const futsalSponsors = {
     "https://i.postimg.cc/vHF35d8L/GESBA.jpg",
     "https://i.postimg.cc/pL0fcNvS/Grupo-Futsal-Lenda-rio.jpg",
     "https://i.postimg.cc/44bhFCb1/Hora-rios-do-Funchal.png",
-    "https://i.postimg.cc/Gp8yMHqB/Hora-rios-do-Funchal.png",
     "https://i.postimg.cc/L8vDdYtN/Hortamadeira.png",
     "https://i.postimg.cc/TYVQ9Hp8/Linos.png",
     "https://i.postimg.cc/FRkVJT2B/Manuel-Arnaldo-Rodrigues.png",
@@ -186,7 +185,6 @@ export const futsalSponsors = {
     "https://i.postimg.cc/NG11q2Ym/Restaurante-do-Forte.png",
     "https://i.postimg.cc/mgTj6NHP/RS-Auto.png",
     "https://i.postimg.cc/zfsR48cx/Secretaria-Regional-Turismo-removebg-preview.png",
-    "https://i.postimg.cc/PJ4pLZr7/SO-USA.jpg",
     "https://i.postimg.cc/KjXr7nbv/SO-USA.jpg",
     "https://i.postimg.cc/X749VN7h/Superpedestrian.png",
     "https://i.postimg.cc/kG9RXw98/Teleferico-Funchal-2.png",
@@ -209,8 +207,8 @@ export const futsalSponsors = {
   premium: [
     "https://i.postimg.cc/NF7J5NXw/Funchal-motors.png",
     "https://i.postimg.cc/WzPYpRhn/links-real-estate.png",
-    "https://i.postimg.cc/VsjHGNVH/Logo-Variations-Colour.png",
-    "https://i.postimg.cc/5NbKZVc9/Logotipo-Megamotor.png"
+    "https://i.postimg.cc/76X6ZxXp/Megamotor.png",
+    "https://i.postimg.cc/0NYjhGS5/Wurth.png"
   ]
 };
 

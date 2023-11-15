@@ -1,17 +1,15 @@
-import React from "react";
 import { Disclosure, Transition } from "@headlessui/react";
 import { MinusIcon, PlusIcon } from "@heroicons/react/20/solid";
-import enTranslations from "../../messages/en.json";
-import ptTranslations from "../../messages/pt.json";
+import React from "react";
 
+import useTranslationArray from "@/hooks/useTranslationsArray";
 import { barlow } from "@/styles/fonts";
-import { useRouter } from "next/router";
+import { useTranslations } from "next-intl";
+import { renderAnswerWithLinks } from "./faqs.utils";
 
 function Faqs() {
-  const { locale } = useRouter();
-
-  const translations = locale === "en" ? enTranslations : ptTranslations;
-  const faqs = translations.pages.faqs.questions;
+  const t = useTranslations();
+  const faqs = useTranslationArray("pages.faqs.questions");
 
   return (
     <section>
@@ -44,7 +42,9 @@ function Faqs() {
                 leaveTo="transform opacity-0 scale-95"
               >
                 <Disclosure.Panel className="flex mt-8 md:mx-10">
-                  <p className="max-w-3xl px-4 text-gray-700 ">{answer}</p>
+                  <p className="px-4 text-gray-700 ">
+                    {renderAnswerWithLinks(answer, t)}
+                  </p>
                 </Disclosure.Panel>
               </Transition>
 

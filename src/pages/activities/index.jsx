@@ -29,6 +29,7 @@ function ActivitiesPage() {
       />
 
       {/* ATL */}
+      <span id="atl"></span>
       <Section>
         <TextWithImage
           title={t("pages.activities.section_1.title")}

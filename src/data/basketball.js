@@ -179,10 +179,10 @@ export const basketSponsors = {
     "https://i.postimg.cc/yd7gPkRz/Equip-Vending-removebg-preview.png",
     "https://i.postimg.cc/cC43sr1c/farmacia-da-madalena.png",
     "https://i.postimg.cc/Gt7y9dHn/Ilha-Peixe.png",
-    "https://i.postimg.cc/hGLQT9fr/super-sao-roque.png",
     "https://i.postimg.cc/MG2jnsKH/VMT-removebg-preview.png"
   ],
   normal: [
+    "https://i.postimg.cc/hGLQT9fr/super-sao-roque.png",
     "https://i.postimg.cc/sXhvJ76x/A-oficina.png",
     "https://i.postimg.cc/5NMFnKMV/Academia-de-Linguas-da-Madeira.png",
     "https://i.postimg.cc/W15Fp2qN/al-natural.jpg",

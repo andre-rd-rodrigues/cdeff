@@ -48,7 +48,7 @@
       "welcome": {
         "subtitle": "História do Clube",
         "title": "Bem-vindo ao CDEFF",
-        "description": "O Clube Desportivo da Escola Francisco Franco (CDEFF) destina-se à formação de atletas na modalidade de basquetebol, futsal e orientação, tendo sido fundado a 24 de outubro de 2005. O Clube encontra-se inserido na Escola Secundária Francisco Franco, na cidade do Funchal, cuja principal mensagem passa pela união e formação de uma comunidade escolar diretamente relacionada ao desporto, não tendo apenas em consideração a vertente competitiva, mas sobretudo a vertente formativa. Atualmente, conta com, aproximadamente, 150 atletas inscritos em todos os escalões de formação entre os 5 e os 19 anos, incluindo uma equipa sénior feminina destacada na I Liga Feminina de Basquetebol. O CDEFF procura criar hábitos de ocupação dos tempos livres dos jovens, através do desporto, como complemento das atividades escolares, promovendo o bem-estar, a saúde, o cumprimento de regras e a sua integração social. O nosso objetivo principal é formar e preparar os atletas para o futuro, tanto a nível desportivo como pessoal, incluindo sempre os valores do desporto e da vida, justificando o crescimento em número dos atletas que pretendem ser formados no nosso Clube."
+        "description": "O Clube Desportivo da Escola Francisco Franco (CDEFF) destina-se à formação de atletas na modalidade de basquetebol, futsal e orientação, tendo sido fundado a 24 de outubro de 2005. O Clube encontra-se inserido na Escola Secundária Francisco Franco, na cidade do Funchal, cuja principal mensagem passa pela união e formação de uma comunidade escolar diretamente relacionada ao desporto, não tendo apenas em consideração a vertente competitiva, mas sobretudo a vertente formativa.\nAtualmente, conta com, aproximadamente, 300 atletas inscritos em todos os escalões de formação entre os 5 e os 19 anos, incluindo uma equipa sénior feminina destacada na I Liga Feminina de Basquetebol.\nO CDEFF procura criar hábitos de ocupação dos tempos livres dos jovens, através do desporto, como complemento das atividades escolares, promovendo o bem-estar, a saúde, o cumprimento de regras e a sua integração social. O nosso objetivo principal é formar e preparar os atletas para o futuro, tanto a nível desportivo como pessoal, incluindo sempre os valores do desporto e da vida."
       },
       "mission": {
         "subtitle": "Missão",
@@ -69,7 +69,7 @@
       "activities": {
         "title": "à tua disposição",
         "subtitle": "Atividades",
-        "description": "O nosso clube é um centro de animação durante todo o ano, oferecendo uma variedade de atividades para todas as idades. Desde a alegria da Primavera com o ATL de Páscoa, repleto de caça aos ovos e atividades manuais, até ao dinâmico ATL de Verão cheio de desportos e oficinas educativas, nunca há um momento aborrecido. Somos especializados em criar celebrações de aniversário mágicas, personalizadas ao seu sonho, e o nosso calendário é pontilhado com eventos festivos para o Halloween, Natal e muito mais, garantindo que cada estação é uma celebração em si. Junte-se a nós para experiências inesquecíveis e espírito comunitário!"
+        "description": "O nosso clube é um centro de animação durante todo o ano, oferecendo uma variedade de atividades para todas as idades. Desde a alegria do ATL, repleto de atividades interativas e oficinas educativas, até à prática de orientação, muay thai, zumba e ginástica, nunca há um momento aborrecido. Somos, ainda, especialistas em criar celebrações de aniversário mágicas, personalizadas ao teu sonho. Junta-te a nós para vivenciarmos experiências inesquecíveis e fazeres parte deste espírito comunitário!"
       },
       "achievements": {
         "title": "as nossas conquistas",
@@ -164,9 +164,9 @@
     "basketball": {
       "title": "Basketball",
       "welcome": {
-        "title": "Lorem ipsum dolor sit.",
-        "subtitle": "Welcome to basketball",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+        "title": "Faz do desporto a tua escola",
+        "subtitle": "Bem-vindo ao basquetebol",
+        "description": "No basquetebol, formamos os nossos atletas a nível desportivo e humano, promovendo, essencialmente, o desenvolvimento de hábitos e valores cívicos, a socialização e a integração desportiva."
       },
       "membership": {
         "title": "Junta-te a esta família, faz-te sócio!",
@@ -189,9 +189,9 @@
     },
     "futsal": {
       "welcome": {
-        "title": "Lorem ipsum dolor sit.",
-        "subtitle": "Welcome to basketball",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+        "title": "Mais que um desporto, uma paixão",
+        "subtitle": "Bem-vindo ao futsal",
+        "description": "No futsal, funcionamos como uma verdadeira família, onde o apoio de todos é fundamental! Pretendemos, sobretudo, fomentar os valores essenciais do verdadeiro espírito desportivo e aumentar os níveis motivacionais dos nossos jogadores! Como dita o nosso lema, “unidos venceremos”!"
       },
       "teamRoles": {
         "Seniores": "Seniores",
@@ -264,41 +264,42 @@
     },
     "faqs": {
       "title": "Perguntas Frequentes",
+
       "questions": [
         {
-          "question": "Quais os horários de treinos do basquetebol e futsal?",
-          "answer": ""
+          "question": "Quais os horários de treinos de basquetebol e futsal?",
+          "answer": "Para verificar os horários de treinos de basquetebol {basketballLink}. Para os horários de treinos de futsal {futsalLink}."
         },
         {
-          "question": "Quais os escalões do basquetebol e futsal?",
-          "answer": ""
+          "question": "Quais são as modalidades disponíveis e os respetivos custos?",
+          "answer": "O nosso clube oferece três modalidades: basquetebol, futsal e orientação. Para mais informações e custos de cada modalidade, contacte-nos através do {phoneLink} ou envie um email para {emailLink}."
         },
         {
-          "question": "Quais são as modalidades que existem e os respetivos valores?",
-          "answer": ""
+          "question": "Quais são os escalões etários para o basquetebol e futsal?",
+          "answer": "No basquetebol, temos os seguintes escalões: seniores, sub-18 femininos e masculinos, sub-16 femininos e masculinos, sub-14 femininos e masculinos, mini 12 femininos e masculinos, mini 8 e mini 10. No futsal, temos os seguintes escalões: seniores, juniores, juvenis, iniciados, infantis, benjamins, petizes e traquinas."
         },
         {
-          "question": "Como/onde fazer as inscrições? Valores das quotas?",
-          "answer": ""
+          "question": "Como/Onde fazer as inscrições?",
+          "answer": "Para consultar e realizar as inscrições {registrationLink}."
         },
         {
-          "question": "Valores dos equipamentos",
-          "answer": ""
+          "question": "Qual o custo dos equipamentos?",
+          "answer": "Para consultar o catálogo de equipamentos disponíveis e os respetivos custos, {equipmentLink}."
         },
         {
-          "question": "Informações sobre o ATL (principalmente)",
-          "answer": ""
+          "question": "Informações sobre o ATL",
+          "answer": "O ATL é destinado a crianças entre os 6 e os 14 anos. Organizamos o ATL de Páscoa, com a duração aproximada de 2 semanas, e o ATL de Verão, com duração de 2 meses. As atividades incluem jet ski, pintura, informática, cinema, culinária, idas à praia e a museus, sessões de karaoke, ginástica e trampolim, hipismo, escalada, entre outros. Para mais informações sobre o ATL, {atlLink}."
         },
         {
-          "question": "Informações sobre os aniversários (Valores, condições)",
-          "answer": ""
+          "question": "Informações sobre a organização de aniversários",
+          "answer": "Os aniversários são realizados dentro da escola, com várias atividades incluídas, tais como insuflável, trampolim gigante, carrinhos a pedais, mesa de ténis de mesa, sistema de música, mesa de matraquilhos, PlayStation, máquina de jogos arcade e a opção de jogar futebol no campo sintético. É fornecido um lanche consistindo de gomas, madalenas, pipocas, Filipinos, mini sandes de fiambre, batatas fritas, sumos e águas. A decoração inclui balões e toalhas de mesa. Um monitor estará presente durante toda a festa. A festa tem um limite de 30 crianças e custa 250€, incluindo tudo mencionado acima, exceto o bolo."
         }
       ]
     },
     "contacts": {
       "title": "Contactos",
       "subtitle": "Alguma questão? Não hesite em contactar-nos!",
-      "description": "Entre em contato conosco para qualquer dúvida ou informação. Estamos localizados na Rua de João de Deus nº9, 9054-527, Funchal.\nA sua mensagem é importante para nós, a nossa equipa está pronta para ajudá-lo!",
+      "description": "Entra em contacto connosco para qualquer dúvida ou informação. Estamos localizados na Rua João de Deus nº9, 9054-527, Funchal.\nA tua mensagem é importante para nós, estamos sempre aqui para ajudar!",
       "contactItems": [
         {
           "description": "Rua de João de Deus nº9 - 9054-527, Funchal",
@@ -539,7 +540,8 @@
       "book": "Reservar",
       "contact": "contactar",
       "contacts": "contactos",
-      "goBack": "voltar"
+      "goBack": "voltar",
+      "clickHere": "Clica aqui"
     },
     "links": {
       "contacts": "contacts"

@@ -77,7 +77,7 @@ export const departments = [
       {
         name: "Mauro Silva",
         position: "Financial Officer",
-        imageSrc: "https://i.postimg.cc/nc8wvqSj/Mauro-Silva.png"
+        imageSrc: "https://i.postimg.cc/yYhRSSnZ/Mauro-Silva.png"
       }
     ]
   },

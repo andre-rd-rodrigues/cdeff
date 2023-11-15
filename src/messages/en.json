@@ -48,7 +48,7 @@
       "welcome": {
         "subtitle": "Club History",
         "title": "Welcome to CDEFF",
-        "description": "The Clube Desportivo da Escola Francisco Franco (CDEFF) is dedicated to training athletes in basketball, futsal, and orienteering, having been founded on October 24, 2005. The Club is part of the Escola Secundária Francisco Franco, in the city of Funchal, whose main message is about unity and the formation of a school community directly related to sports, not only considering the competitive aspect but above all the educational aspect. Currently, it has approximately 150 athletes registered in all training categories between the ages of 5 and 19, including a senior women's team that stands out in the Women's Basketball I League. CDEFF seeks to create habits of occupying young people's free time through sports, complementing school activities, promoting well-being, health, adherence to rules, and their social integration. Our main goal is to train and prepare athletes for the future, both sportively and personally, always including the values of sport and life, justifying the growth in the number of athletes who want to be trained at our Club."
+        "description": "The Clube Desportivo da Escola Francisco Franco (CDEFF), is intended for the training of athletes in basketball, futsal and orienteering, having been founded on October 24, 2005. The Club is located at the Escola Secundária Francisco Franco, in the city of Funchal, whose main message is the union and formation of a school community directly related to sport, not only taking into account the competitive aspect, but above all the training aspect.\nCurrently, it has approximately 150 athletes registered in all levels of training between 5 and 19 years old, including a senior women's team featured in the I Women's Basketball League.\nCDEFF seeks to create habits of occupation of young people's free time, through sport, as a complement to school activities, promoting well-being, health, compliance with rules and their social integration. Our main goal is to train and prepare athletes for the future, both on a sporting and personal level, always including the values of sport and life, justifying the growth in number of athletes who intend to be trained in our Club."
       },
 
       "mission": {
@@ -71,7 +71,7 @@
       "activities": {
         "title": "Activities",
         "subtitle": "activities",
-        "description": "Our club is a hub of year-round excitement, offering a diverse range of activities for all ages. From the springtime joy of Easter ATL, complete with an egg hunt and crafts, to the energetic Summer ATL filled with sports and educational workshops, there's never a dull moment. We specialize in creating magical birthday celebrations tailored to your dreams, and our calendar is dotted with festive events for Halloween, Christmas, and beyond, ensuring that every season is a celebration in itself. Join us for unforgettable experiences and community spirit!"
+        "description": "Our club is a hub of animation throughout the year, offering a variety of activities for all ages. From the joy of the ATL, filled with interactive activities and educational workshops, to the practice of orienteering, muay thai, zumba, and gymnastics, there is never a dull moment. We are also experts in creating magical birthday celebrations, tailored to your dream. Join us to live unforgettable experiences and become part of this community spirit!"
       },
       "achievements": {
         "title": "our achievements",
@@ -168,10 +168,11 @@
     "basketball": {
       "title": "Basketball",
       "welcome": {
-        "title": "Lorem ipsum dolor sit.",
+        "title": "Make sports your school",
         "subtitle": "Welcome to basketball",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+        "description": "In basketball, we train our athletes both athletically and humanely, primarily promoting the development of civic habits and values, socialization, and sports integration."
       },
+
       "membership": {
         "title": "Join this family, become a member!",
         "description": "We want you to be part of this family! How? Easy! Just become a member and take advantage of all exclusive offers we have for you! Fill out the form bellow."
@@ -193,9 +194,9 @@
     },
     "futsal": {
       "welcome": {
-        "title": "Lorem ipsum dolor sit.",
-        "subtitle": "Welcome to basketball",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+        "title": "More than a sport, a passion",
+        "subtitle": "Welcome to futsal",
+        "description": "In futsal, we function as a true family, where everyone's support is fundamental! Our main goal is to foster the essential values of the true sporting spirit and to increase the motivational levels of our players! As our motto goes, 'united we will win'!"
       },
 
       "teamRoles": {
@@ -271,39 +272,39 @@
       "title": "Frequently Asked Questions",
       "questions": [
         {
-          "question": "What are the practice schedules for basketball and soccer?",
-          "answer": ""
+          "question": "What are the training times for basketball and futsal?",
+          "answer": "To check the basketball training times {basketballLink}. For futsal training times {futsalLink}."
         },
         {
-          "question": "What are the levels of basketball and football?",
-          "answer": ""
+          "question": "What sports are available and their respective costs?",
+          "answer": "Our club offers three sports: basketball, futsal, and orienteering. For more information and the costs of each sport, contact us at {phoneLink} or send an email to {emailLink}."
         },
         {
-          "question": "What are the modalities and their values?",
-          "answer": ""
+          "question": "What are the age groups for basketball and futsal?",
+          "answer": "In basketball, we have the following age groups: seniors, women's and men's under-18s, women's and men's under-16s, women's and men's under-14s, women's and men's mini 12s, mini 8s, and mini 10s. In futsal, we have the following age groups: seniors, juniors, youths, beginners, children, juniors, small children, and small children."
         },
         {
-          "question": "How/where to register? Values?",
-          "answer": ""
+          "question": "How/where to register?",
+          "answer": "To consult and register {registrationLink}."
         },
         {
-          "question": "Values of equipment",
-          "answer": ""
+          "question": "What is the cost of the equipment?",
+          "answer": "To consult the catalogue of available equipment and the respective costs, {equipmentLink}."
         },
         {
-          "question": "Information of ATL",
-          "answer": ""
+          "question": "Information about the ATL",
+          "answer": "The ATL is aimed at children between the ages of 6 and 14. We organise the Easter ATL, lasting approximately 2 weeks, and the Summer ATL, lasting 2 months. Activities include jet skiing, painting, IT, cinema, cooking, trips to the beach and museums, karaoke sessions, gymnastics and trampolining, horse riding, climbing, among others. For more information on the ATL, {atlLink}."
         },
         {
-          "question": "Birthday Informations (Values, Conditions)",
-          "answer": ""
+          "question": "Information on organising birthdays",
+          "answer": "Birthdays are held inside the school, with various activities included, such as inflatable, giant trampoline, pedal cars, table tennis, music system, table football, PlayStation, arcade machine, and the option to play football on the synthetic pitch. A snack consisting of jelly beans, madeleines, popcorn, Filipinos, mini ham sandwiches, crisps, juices, and water is provided. Decorations include balloons and tablecloths. A monitor will oversee the entire party. The party has a limit of 30 children, costing €250, including everything mentioned above, except the cake."
         }
       ]
     },
     "contacts": {
       "title": "Contacts",
       "subtitle": "Any question or suggestion? Contact us.",
-      "description": "      Reach out to us for any queries or information. We are located at Rua de João de Deus nº9, 9054-527, Funchal.\nYour message is important to us, and our team is ready to assist you!",
+      "description": "Reach out to us for any queries or information. We are located at Rua de João de Deus nº9, 9054-527, Funchal.\nYour message is important to us, and our team is ready to assist you!",
       "contactItems": [
         {
           "description": "João de Deus Street nº9 - 9054-527, Funchal",
@@ -544,7 +545,8 @@
       "book": "Book now",
       "contact": "contact now",
       "contacts": "contact us",
-      "goBack": "Go back"
+      "goBack": "Go back",
+      "clickHere": "Click here"
     },
     "pages": {
       "techTeam": "Technical Team",
