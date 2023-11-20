@@ -266,7 +266,26 @@
       }
     },
     "store": {
-      "title": "Store"
+      "title": "Store",
+      "futsalProducts": {
+        "T­Shirt Joma Vermelha": "Red Joma T-Shirt",
+        "T­Shirt GR Joma Laranja": "Orange GR Joma T-Shirt",
+        "Calção Joma Branco": "White Joma Shorts",
+        "Meias Vermelhas": "Red Socks",
+        "Conjunto Joma Branco": "White Joma Set",
+        "T­Shirt GR Joma Azul": "Blue GR Joma T-Shirt",
+        "Calção Joma Vermelho": "Red Joma Shorts",
+        "Meias Brancas": "White Socks",
+        "Polo Saída Joma": "Joma Polo Shirt",
+        "Bermuda Joma": "Joma Bermuda Shorts",
+        "Sweat Joma": "Joma Sweatshirt",
+        "Casaco Joma": "Joma Jacket",
+        "Fato Treino Joma": "Joma Tracksuit",
+        "Bolsa Joma": "Joma Bag",
+        "Saco de Desporto Grande Joma": "Large Joma Sports Bag",
+        "Saco de Desporto Joma": "Joma Sports Bag",
+        "Saco de Desporto Extra Grande Joma": "Extra Large Joma Sports Bag"
+      }
     },
     "faqs": {
       "title": "Frequently Asked Questions",

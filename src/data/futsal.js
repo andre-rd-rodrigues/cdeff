@@ -562,144 +562,45 @@ export const futsalAllSponsorsUrls = [
 
 export const futsalProducts = [
   {
-    image: "https://i.postimg.cc/906wDRS5/Bermuda-1-Joma.png",
-    name: "Bermuda  1 Joma"
-  },
-  {
-    image: "https://i.postimg.cc/FRtzvdY2/Bermuda-2-Joma.png",
-    name: "Bermuda  2 Joma"
-  },
-  {
-    image: "https://i.postimg.cc/qvzvCXnP/Bolsa-1-Joma.png",
-    name: "Bolsa  1 Joma"
-  },
-  /*   {
-    image: "https://i.postimg.cc/kgrW4z36/Bolsa-2-Joma.png",
-    name: "Bolsa  2 Joma"
-  },
-  {
-    image: "https://i.postimg.cc/wTRh9HPY/Bolsa-3-Joma.png",
-    name: "Bolsa  3 Joma"
-  },
-  {
-    image: "https://i.postimg.cc/xCsK1dnn/Bolsa-4-Joma.png",
-    name: "Bolsa  4 Joma"
-  },
-  {
-    image: "https://i.postimg.cc/wjhLs2gW/Bolsa-5-Joma.png",
-    name: "Bolsa  5 Joma"
-  }, */
-  {
-    image: "https://i.postimg.cc/Zq43PNqJ/Casaco-1-Joma.png",
-    name: "Casaco  1 Joma"
+    image:
+      "https://i.postimg.cc/y6mgVPXn/Equipamento-1-Calc-a-o-Joma-Branco.png",
+    name: "Calção Joma Branco",
+    price: "10€"
   },
   {
     image: "https://i.postimg.cc/mrkCkH2k/Equipamento-1-Meias-Vermelhas.jpg",
-    name: "Equipamento  1 Meias Vermelhas"
-  },
-  {
-    image:
-      "https://i.postimg.cc/zB3ypFYY/Equipamento-1-T-Shirt-GR-Joma-Laranja.png",
-    name: "Equipamento  1 T Shirt GR Joma Laranja"
-  },
-  {
-    image:
-      "https://i.postimg.cc/6pmTH1t6/Equipamento-1-T-Shirt-Joma-Vermelha.png",
-    name: "Equipamento  1 T Shirt Joma Vermelha"
-  },
-  {
-    image:
-      "https://i.postimg.cc/y6mgVPXn/Equipamento-1-Calc-a-o-Joma-Branco.png",
-    name: "Equipamento  1 Calc a o Joma Branco"
+    name: "Meias Vermelhas",
+    price: "5€"
   },
   {
     image:
       "https://i.postimg.cc/Qt5BKkL8/Equipamento-2-Calc-a-o-Joma-Vermelho.png",
-    name: "Equipamento  2 Calc a o Joma Vermelho"
-  },
-  {
-    image:
-      "https://i.postimg.cc/vH4vD54j/Equipamento-2-Conjunto-Joma-Branco.png",
-    name: "Equipamento  2 Conjunto Joma Branco"
+    name: "Calção Joma Vermelho",
+    price: "10€"
   },
   {
     image: "https://i.postimg.cc/cCrfgNLY/Equipamento-2-Meias-Brancas.jpg",
-    name: "Equipamento  2 Meias Brancas"
+    name: "Meias Brancas",
+    price: "5€"
   },
   {
-    image:
-      "https://i.postimg.cc/cJh3FJKw/Equipamento-2-T-Shirt-GR-Joma-Azul.png",
-    name: "Equipamento  2 T Shirt GR Joma Azul"
+    image: "https://i.postimg.cc/Zq43PNqJ/Casaco-1-Joma.png",
+    name: "Casaco Joma",
+    price: "28€"
   },
   {
     image: "https://i.postimg.cc/vH8BGdmH/Fato-Treino-1-Joma.png",
-    name: "Fato Treino  1 Joma"
+    name: "Fato Treino Joma",
+    price: "40€"
   },
   {
-    image: "https://i.postimg.cc/mZtXJPYb/Polo-Sai-da-1-Joma.png",
-    name: "Polo Sai da  1 Joma"
-  },
-  {
-    image: "https://i.postimg.cc/KvmK4M0b/Polo-Sai-da-2-Joma.png",
-    name: "Polo Sai da  2 Joma"
-  },
-  {
-    image: "https://i.postimg.cc/vmxTCLZr/Polo-Sai-da-3-Joma.png",
-    name: "Polo Sai da  3 Joma"
-  },
-  {
-    image: "https://i.postimg.cc/xCKC1fHq/Polo-Sai-da-4-Joma.png",
-    name: "Polo Sai da  4 Joma"
-  },
-  {
-    image: "https://i.postimg.cc/DycXcgSm/Polo-Sai-da-5-Joma.png",
-    name: "Polo Sai da  5 Joma"
+    image: "https://i.postimg.cc/qvzvCXnP/Bolsa-1-Joma.png",
+    name: "Bolsa Joma",
+    price: "20€"
   },
   {
     image: "https://i.postimg.cc/90RqXtLY/Saco-de-Desporto-1-Grande-Joma.png",
-    name: "Saco de Desporto  1 Grande Joma"
-  },
-  {
-    image: "https://i.postimg.cc/sXKJGc9F/Saco-de-Desporto-2-Grande-Joma.jpg",
-    name: "Saco de Desporto  2 Grande Joma"
-  },
-  {
-    image: "https://i.postimg.cc/wvP7rR9y/Saco-de-Desporto-3-Grande-Joma.png",
-    name: "Saco de Desporto  3 Grande Joma"
-  },
-  {
-    image: "https://i.postimg.cc/kGsgWTTm/Saco-de-Desporto-4-Joma.png",
-    name: "Saco de Desporto  4 Joma"
-  },
-  {
-    image: "https://i.postimg.cc/xj38rdn4/Saco-de-Desporto-5-Joma.png",
-    name: "Saco de Desporto  5 Joma"
-  },
-  {
-    image:
-      "https://i.postimg.cc/prFpMVd0/Saco-de-Desporto-6-Extra-Grande-Joma.png",
-    name: "Saco de Desporto  6 Extra Grande Joma"
-  },
-  {
-    image:
-      "https://i.postimg.cc/7ZdY1Gnf/Saco-de-Desporto-7-Extra-Grande-Joma.png",
-    name: "Saco de Desporto  7 Extra Grande Joma"
-  },
-  {
-    image:
-      "https://i.postimg.cc/TYxbmSYZ/Saco-de-Desporto-8-Extra-Grande-Joma.png",
-    name: "Saco de Desporto  8 Extra Grande Joma"
-  },
-  {
-    image: "https://i.postimg.cc/BZK52H51/Sweat-1-Joma.png",
-    name: "Sweat  1 Joma"
-  },
-  {
-    image: "https://i.postimg.cc/43fw5y4R/Sweat-2-Joma.png",
-    name: "Sweat  2 Joma"
-  },
-  {
-    image: "https://i.postimg.cc/wBw2bz3y/Sweat-3-Joma.png",
-    name: "Sweat  3 Joma"
+    name: "Saco de Desporto Grande Joma",
+    price: "25€"
   }
 ];

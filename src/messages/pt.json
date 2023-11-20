@@ -260,7 +260,26 @@
       }
     },
     "store": {
-      "title": "Loja"
+      "title": "Loja",
+      "futsalProducts": {
+        "T­Shirt Joma Vermelha": "T­Shirt Joma Vermelha",
+        "T­Shirt GR Joma Laranja": "T­Shirt GR Joma Laranja",
+        "Calção Joma Branco": "Calção Joma Branco",
+        "Meias Vermelhas": "Meias Vermelhas",
+        "Conjunto Joma Branco": "Conjunto Joma Branco",
+        "T­Shirt GR Joma Azul": "T­Shirt GR Joma Azul",
+        "Calção Joma Vermelho": "Calção Joma Vermelho",
+        "Meias Brancas": "Meias Brancas",
+        "Polo Saída Joma": "Polo Saída Joma",
+        "Bermuda Joma": "Bermuda Joma",
+        "Sweat Joma": "Sweat Joma",
+        "Casaco Joma": "Casaco Joma",
+        "Fato Treino Joma": "Fato Treino Joma",
+        "Bolsa Joma": "Bolsa Joma",
+        "Saco de Desporto Grande Joma": "Saco de Desporto Grande Joma",
+        "Saco de Desporto Joma": "Saco de Desporto Joma",
+        "Saco de Desporto Extra Grande Joma": "Saco de Desporto Extra Grande Joma"
+      }
     },
     "faqs": {
       "title": "Perguntas Frequentes",
