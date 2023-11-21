@@ -79,9 +79,7 @@ export default function Home({ blogPosts }) {
           subtitle={t("pages.homepage.welcome.subtitle")}
           title={t("pages.homepage.welcome.title")}
           description={t("pages.homepage.welcome.description")}
-          imgSrc={
-            "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&q=80&w=1935&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          }
+          imgSrc={"https://i.postimg.cc/PJ3NPLJ9/welcome.png"}
           labelOptions={{
             href: "about",
             label: t("common.buttons.learnMore")
@@ -96,7 +94,7 @@ export default function Home({ blogPosts }) {
 
       {/* Hero 1 */}
       <HeroSection
-        imageSrc="https://images.unsplash.com/photo-1459865264687-595d652de67e?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imageSrc="https://i.postimg.cc/bNm1tJ4z/banner-torneio.jpg"
         linkLabel={t("common.buttons.registration")}
         subtitle={t("pages.homepage.hero_1.subtitle")}
         title={t("pages.homepage.hero_1.title")}

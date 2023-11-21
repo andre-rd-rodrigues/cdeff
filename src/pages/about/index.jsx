@@ -39,7 +39,7 @@ function About() {
           title={t("pages.about.welcome.title")}
           subtitle={t("pages.about.welcome.subtitle")}
           description={t("pages.about.welcome.description")}
-          imgSrc="https://images.unsplash.com/photo-1628779238951-be2c9f2a59f4?auto=format&fit=crop&q=80&w=1587&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          imgSrc="https://i.postimg.cc/PJ3NPLJ9/welcome.png"
         />
       </Section>
 
@@ -48,7 +48,7 @@ function About() {
           title={t("pages.about.mission.title")}
           subtitle={t("pages.about.mission.subtitle")}
           description={t("pages.about.mission.description")}
-          imgSrc="https://images.unsplash.com/photo-1628779238951-be2c9f2a59f4?auto=format&fit=crop&q=80&w=1587&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          imgSrc="https://i.postimg.cc/15mpX6CC/mission.jpg"
           imageRight
         />
       </Section>

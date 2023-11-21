@@ -14,7 +14,7 @@ export const futsalTechnicalTeam = [
       },
       {
         name: "Albino Leça",
-        image: "https://i.postimg.cc/3NHxT6xX/avatar-1577909-1280.png",
+        image: "https://i.postimg.cc/mkjJCZ2M/Albino-Lec-a.png",
         position: "massagista"
       }
     ]
@@ -327,6 +327,18 @@ export const futsalTeam = {
     {
       image: "https://i.postimg.cc/vHfP8Wgz/Tiago-Silva.png",
       name: "Tiago Silva"
+    },
+    {
+      image: "https://i.postimg.cc/PqmV61hJ/Guilherme-Lec-a.png",
+      name: "Guilherme Leça"
+    },
+    {
+      image: "https://i.postimg.cc/SKvLfsYR/Gonc-alo-Jardim.png",
+      name: "Gonçalo Jardim"
+    },
+    {
+      image: "https://i.postimg.cc/PfL39Gd0/Henrique-Sa.png",
+      name: "Henrique Sá"
     }
   ],
   juvenis: [

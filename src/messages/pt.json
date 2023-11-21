@@ -47,7 +47,7 @@
 
       "welcome": {
         "subtitle": "História do Clube",
-        "title": "Bem-vindo ao CDEFF",
+        "title": "Bem-vindo(a) ao CDEFF",
         "description": "O Clube Desportivo da Escola Francisco Franco (CDEFF) destina-se à formação de atletas na modalidade de basquetebol, futsal e orientação, tendo sido fundado a 24 de outubro de 2005. O Clube encontra-se inserido na Escola Secundária Francisco Franco, na cidade do Funchal, cuja principal mensagem passa pela união e formação de uma comunidade escolar diretamente relacionada ao desporto, não tendo apenas em consideração a vertente competitiva, mas sobretudo a vertente formativa.\nAtualmente, conta com, aproximadamente, 300 atletas inscritos em todos os escalões de formação entre os 5 e os 19 anos, incluindo uma equipa sénior feminina destacada na I Liga Feminina de Basquetebol.\nO CDEFF procura criar hábitos de ocupação dos tempos livres dos jovens, através do desporto, como complemento das atividades escolares, promovendo o bem-estar, a saúde, o cumprimento de regras e a sua integração social. O nosso objetivo principal é formar e preparar os atletas para o futuro, tanto a nível desportivo como pessoal, incluindo sempre os valores do desporto e da vida."
       },
       "mission": {
@@ -165,7 +165,7 @@
       "title": "Basketball",
       "welcome": {
         "title": "Faz do desporto a tua escola",
-        "subtitle": "Bem-vindo ao basquetebol",
+        "subtitle": "Bem-vindo(a) ao basquetebol",
         "description": "No basquetebol, formamos os nossos atletas a nível desportivo e humano, promovendo, essencialmente, o desenvolvimento de hábitos e valores cívicos, a socialização e a integração desportiva."
       },
       "membership": {
@@ -190,7 +190,7 @@
     "futsal": {
       "welcome": {
         "title": "Mais que um desporto, uma paixão",
-        "subtitle": "Bem-vindo ao futsal",
+        "subtitle": "Unidos Venceremos",
         "description": "No futsal, funcionamos como uma verdadeira família, onde o apoio de todos é fundamental! Pretendemos, sobretudo, fomentar os valores essenciais do verdadeiro espírito desportivo e aumentar os níveis motivacionais dos nossos jogadores! Como dita o nosso lema, “unidos venceremos”!"
       },
       "teamRoles": {
@@ -325,9 +325,14 @@
           "icon": "mdi:location"
         },
         {
-          "description": "+351 291615579",
+          "description": "291615579",
           "href": "tel:+351291615579",
           "icon": "mingcute:phone-fill"
+        },
+        {
+          "description": "Tiago Rosa - Coordenador Futsal: 966583302",
+          "href": "tel:+351966583302",
+          "icon": "ic:baseline-whatsapp"
         },
         {
           "description": "cdeff.madeira@esffranco.edu.pt ",
@@ -596,7 +601,7 @@
     "pages": {
       "techTeam": "Equipa técnica",
       "selectRank": "Seleciona o escalão",
-      "details": "detalhes",
+      "squad": "plantel",
       "schedule": "Horário de treinos",
       "location": "Local"
     },

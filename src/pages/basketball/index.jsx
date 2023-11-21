@@ -77,7 +77,7 @@ function BasketballPage() {
         <SectionTitle
           className="text-center -mb-4"
           title={t("common.pages.selectRank")}
-          subTitle={t("common.pages.details")}
+          subTitle={t("common.pages.squad")}
         />
         <Tabs
           tabs={[
@@ -89,9 +89,10 @@ function BasketballPage() {
         />
       </Section>
 
+      {/* Partnership */}
       <HeroHeader
         linkLabel={t("common.buttons.registration")}
-        href="https://www.fpb.pt/equipa/equipa_47535/"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSciyolXxZhuXbCMtGl9-31624IP1bHT3YEe-7WxjjCuNPBGGQ/viewform?usp=sf_link"
         imageSrc="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=1490&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       >
         <h2

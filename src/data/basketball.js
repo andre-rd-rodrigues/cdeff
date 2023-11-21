@@ -128,7 +128,7 @@ export const basketTechnicalTeam = [
     members: [
       {
         name: "Diogo Pereira",
-        image: "https://i.postimg.cc/3NHxT6xX/avatar-1577909-1280.png"
+        image: "https://i.postimg.cc/mk22BCfv/Diogo-Pereira.png"
       }
     ]
   },
@@ -193,8 +193,7 @@ export const basketSponsors = {
     "https://i.postimg.cc/KY4KRdtn/K-Condominios.png",
     "https://i.postimg.cc/W3BJRXF0/Madeira-Eco-Car.png",
     "https://i.postimg.cc/VLB0T9Yb/Progresso.png",
-    "https://i.postimg.cc/90ywcZZK/Saul-e-Filhos.png",
-    "https://i.postimg.cc/Hxc7Pfxp/super-sao-roque.png"
+    "https://i.postimg.cc/90ywcZZK/Saul-e-Filhos.png"
   ],
   collaborators: [
     "https://i.postimg.cc/Y2XsFPGd/Clinica-Denta-ria-do-Funchal.jpg",

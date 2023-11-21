@@ -23,9 +23,9 @@ const TextSection = ({
           {subtitle}
         </h3>
         <h2 className={`${barlow.className} section-header`}>{title}</h2>
-        <p className="text-justify">{description}</p>
+        <p className="text-justify mb-3">{description}</p>
         {location && (
-          <p className="my-3">
+          <p className="mb-3">
             <span className="text-blue font-medium">
               {t("common.pages.location")}:{" "}
             </span>
@@ -46,9 +46,9 @@ const TextSection = ({
             </ul>
           </div>
         )}
-        {contact && <p className="mb-6">{contact}</p>}
+        {contact && <p>{contact}</p>}
         {labelOptions && (
-          <div className="text-right md:text-left">
+          <div className="text-right md:text-left mt-6">
             <Link href={href} className="w-full">
               <Button label={label} />
             </Link>

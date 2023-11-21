@@ -17,7 +17,7 @@ function Sponsors() {
     <main>
       <PageHeader
         title={t("pages.sponsors.title")}
-        image="https://images.unsplash.com/photo-1459865264687-595d652de67e?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        image="https://i.postimg.cc/SR775fZ8/sponsor.jpg"
       />
 
       {/* Main */}

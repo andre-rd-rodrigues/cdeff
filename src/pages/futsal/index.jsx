@@ -73,7 +73,7 @@ function FutsalPage() {
         <SectionTitle
           className="text-center mb-1 md:-mb-4"
           title={t("common.pages.selectRank")}
-          subTitle={t("common.pages.details")}
+          subTitle={t("common.pages.squad")}
         />
         <Tabs
           tabs={[
@@ -124,7 +124,7 @@ function FutsalPage() {
         linkLabel={t("common.buttons.seeMore")}
         subtitle={t("common.sports.futsal")}
         title={t("common.seeResults")}
-        href="https://resultados.fpf.pt/Competition/Details?competitionId=24488&seasonId=103"
+        href="https://resultados.fpf.pt/Competition/GetCompetitionsByAssociation?associationId=225&seasonId=103"
         linkProps={{ target: "_blank" }}
       />
 

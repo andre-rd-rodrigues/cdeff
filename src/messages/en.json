@@ -195,7 +195,7 @@
     "futsal": {
       "welcome": {
         "title": "More than a sport, a passion",
-        "subtitle": "Welcome to futsal",
+        "subtitle": "We will win united",
         "description": "In futsal, we function as a true family, where everyone's support is fundamental! Our main goal is to foster the essential values of the true sporting spirit and to increase the motivational levels of our players! As our motto goes, 'united we will win'!"
       },
 
@@ -333,6 +333,11 @@
           "description": "+351 291615579",
           "href": "tel:+351291615579",
           "icon": "mingcute:phone-fill"
+        },
+        {
+          "description": "Tiago Rosa - Futsal Coordenation: +351 966583302",
+          "href": "tel:+351966583302",
+          "icon": "ic:baseline-whatsapp"
         },
         {
           "description": "cdeff.madeira@esffranco.edu.pt",
@@ -572,7 +577,7 @@
       "selectRank": "Select the rank",
       "subtitle": "rank details",
       "schedule": "Training schedule",
-      "details": "Details",
+      "squad": "Squad",
       "location": "Location"
     },
     "seeResults": "Check the last results of the games! 👇🏻",
