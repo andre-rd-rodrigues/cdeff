@@ -87,7 +87,7 @@ export const departments = [
       {
         name: "Ema Rodrigues",
         position: "Marketing and Communication",
-        imageSrc: "https://i.postimg.cc/fT2tGv4k/Ema-Rodrigues.png"
+        imageSrc: "https://i.postimg.cc/WzzbS7r7/Ema-Rodrigues.png"
       },
       {
         name: "Ana Teixeira",

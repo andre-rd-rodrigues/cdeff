@@ -11,7 +11,9 @@ function FaqsPage() {
     <main>
       <PageHeader
         title={t("pages.faqs.title")}
-        image={"https://i.postimg.cc/5NbmzD0m/faqs.jpg"}
+        image={
+          "https://i.postimg.cc/y81FdKh3/Foto-Sede-O-Desporto-a-Formar-para-a-vida.jpg"
+        }
       />
       <Section containerClassName={"m-auto max-w-4xl"}>
         <Faqs />

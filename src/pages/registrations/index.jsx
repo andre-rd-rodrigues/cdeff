@@ -1,7 +1,10 @@
 import RegistrationCard from "@/components/Cards/RegistrationCard";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import Section from "@/components/Section";
-import { viiTournamentPreLinks } from "@/utils";
+import {
+  viiTournamentOfficial2StageLinks,
+  viiTournamentPre1StageLinks
+} from "@/utils";
 import { useTranslations } from "next-intl";
 
 function RegistrationPage() {
@@ -17,10 +20,25 @@ function RegistrationPage() {
       />
       <Section>
         <div className="flex flex-wrap md:justify-start justify-center gap-10">
+          {/* Pré-inscrição - 1ª fase */}
           <RegistrationCard
-            links={viiTournamentPreLinks}
+            links={viiTournamentPre1StageLinks}
             imageSrc={"https://i.postimg.cc/KzBPZ6xQ/PT.jpg"}
-            title={t("pages.registrations.tournament")}
+            title={t("pages.registrations.futsal.viiTournament.title")}
+            subTitle={t(
+              "pages.registrations.futsal.viiTournament.preRegistration"
+            )}
+            buttonLabel={t("common.buttons.registration")}
+          />
+
+          {/* Inscrição oficial - 2ª fase */}
+          <RegistrationCard
+            links={viiTournamentOfficial2StageLinks}
+            imageSrc={"https://i.postimg.cc/KzBPZ6xQ/PT.jpg"}
+            title={t("pages.registrations.futsal.viiTournament.title")}
+            subTitle={t(
+              "pages.registrations.futsal.viiTournament.oficialRegistration"
+            )}
             buttonLabel={t("common.buttons.registration")}
           />
 

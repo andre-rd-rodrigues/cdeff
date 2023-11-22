@@ -90,11 +90,18 @@ export const languagesCodes = [
   }
 ];
 
-export const viiTournamentPreLinks = {
+export const viiTournamentPre1StageLinks = {
   PT: "https://docs.google.com/forms/d/e/1FAIpQLSeKY0oIJ-SHGTtmRnPeUD9a-G2XLjWH28d2WeQZD8EA9mfNQA/viewform?usp=sf_link",
   EN: "https://docs.google.com/forms/d/e/1FAIpQLSdhbRY47AfA1d42v5Ukz3Wwak0f25ZLrcsPO1OJrLTrUdK5ow/viewform?usp=sf_link",
   ES: "https://docs.google.com/forms/d/e/1FAIpQLSde3wNB-3U1PKtO_GAX1fCxDEzM9CHusl4x9gCpwraPbA4Z2Q/viewform?usp=sf_link",
   FR: "https://docs.google.com/forms/d/e/1FAIpQLSf7AZZ747AiwhKrEHsQagvsv5QwuJANOw8HOcpeEzUJxuv32g/viewform?usp=sf_link"
+};
+
+export const viiTournamentOfficial2StageLinks = {
+  PT: "https://docs.google.com/forms/d/e/1FAIpQLSevy0K_SBjNWSf-ApEqlG0eO5kMZlPN8lPqy96Z5vaWK3xEKw/viewform?usp=sf_link",
+  EN: "https://docs.google.com/forms/d/e/1FAIpQLSdNJIWOh2EGUH7NCDTepdxh6NCWg4VpMBjHmS0SpJHZzPM2yQ/viewform?usp=sf_link",
+  ES: "https://docs.google.com/forms/d/e/1FAIpQLSdFvrB9bpTdd-nI1zk4dgbf6Hh3m3bYOpDsWDZYafx2XsAeIw/viewform?usp=sf_link",
+  FR: "https://docs.google.com/forms/d/e/1FAIpQLSfLxyhtg9enLOmF5dJC8UQVxe0w31MysnvK6NI0jCn5w-2BSg/viewform?usp=sf_link"
 };
 
 export const getNotionImagePathname = (post) =>

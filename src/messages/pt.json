@@ -190,8 +190,8 @@
     "futsal": {
       "welcome": {
         "title": "Mais que um desporto, uma paixão",
-        "subtitle": "Unidos Venceremos",
-        "description": "No futsal, funcionamos como uma verdadeira família, onde o apoio de todos é fundamental! Pretendemos, sobretudo, fomentar os valores essenciais do verdadeiro espírito desportivo e aumentar os níveis motivacionais dos nossos jogadores! Como dita o nosso lema, “unidos venceremos”!"
+        "subtitle": "Bem-vindo(a) ao futsal",
+        "description": "No futsal, funcionamos como uma verdadeira família, onde o apoio de todos é fundamental! Pretendemos, sobretudo, fomentar os valores essenciais do verdadeiro espírito desportivo e aumentar os níveis motivacionais dos nossos jogadores! Como dita o nosso lema, “UNIDOS VENCEREMOS”!"
       },
       "teamRoles": {
         "Seniores": "Seniores",
@@ -214,6 +214,7 @@
     "tournaments": {
       "title": "Torneios",
       "selectSport": "Escolhe a modalidade",
+      "noTournaments": "De momento, não há torneios disponíveis para esta modalidade.",
       "feedback": {
         "title": "Feedbacks anteriores"
       }
@@ -350,7 +351,13 @@
     "registrations": {
       "title": "Inscrições",
       "activities": "Atividades",
-      "tournament": "VII TORNEIO INTERNACIONAL FUNCHAL FUTSAL CUP"
+      "futsal": {
+        "viiTournament": {
+          "title": "VII Torneio Internacional Funchal Futsal Cup",
+          "preRegistration": "Pré-inscrição - 1ª fase",
+          "oficialRegistration": "Inscrição oficial - 2ª fase"
+        }
+      }
     }
   },
   "components": {

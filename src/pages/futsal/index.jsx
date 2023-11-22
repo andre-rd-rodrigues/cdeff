@@ -98,6 +98,20 @@ function FutsalPage() {
               content: <RankSection team={futsalTeam.iniciados} />
             },
             {
+              name: t("pages.futsal.teamRoles.Infantis"),
+              content: (
+                <div className="relative w-full h-[300px] md:h-[600px]">
+                  <Image
+                    alt="Iniciados"
+                    fill
+                    style={{ objectFit: "contain" }}
+                    src={futsalTeam.infantis.image}
+                  />
+                </div>
+              )
+            },
+
+            {
               name: t("pages.futsal.teamRoles.Petizes e Traquinas"),
               content: <RankSection team={futsalTeam.petizes} />
             }

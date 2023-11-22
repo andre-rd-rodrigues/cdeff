@@ -32,7 +32,7 @@ function About() {
     <main>
       <PageHeader
         title={t("pages.about.title")}
-        image="https://images.unsplash.com/photo-1459865264687-595d652de67e?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        image="https://i.postimg.cc/WbBngYcT/sobre.jpg"
       />
       <Section>
         <TextWithImage
@@ -76,12 +76,13 @@ function About() {
         <p className="tracking-wide">{t("pages.about.sponsors.description")}</p>
       </HeroHeader>
 
+      {/* Activities */}
       <Section>
         <TextWithImage
           title={t("pages.about.activities.title")}
           subtitle={t("pages.about.activities.subtitle")}
           description={t("pages.about.activities.description")}
-          imgSrc="https://images.unsplash.com/photo-1628779238951-be2c9f2a59f4?auto=format&fit=crop&q=80&w=1587&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          imgSrc="https://i.postimg.cc/0Nfj1KPp/ATL.jpg"
           labelOptions={{
             href: "/activities",
             label: t("common.buttons.seeMore")

@@ -43,7 +43,7 @@ const RegistrationCard = ({
               {subTitle}
             </p>
           )}
-          <p className=" text-gray-700 text-justify text-sm break-words mt-4 mb-6">
+          <p className="text-gray-700 text-justify text-sm break-words mt-4 mb-6">
             {description}
           </p>
         </div>

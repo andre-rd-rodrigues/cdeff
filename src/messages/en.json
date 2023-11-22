@@ -195,8 +195,8 @@
     "futsal": {
       "welcome": {
         "title": "More than a sport, a passion",
-        "subtitle": "We will win united",
-        "description": "In futsal, we function as a true family, where everyone's support is fundamental! Our main goal is to foster the essential values of the true sporting spirit and to increase the motivational levels of our players! As our motto goes, 'united we will win'!"
+        "subtitle": "Welcome to futsal",
+        "description": "In futsal, we function as a true family, where everyone's support is fundamental! Our main goal is to foster the essential values of the true sporting spirit and to increase the motivational levels of our players! As our motto goes, “UNITED WE WILL WIN”!"
       },
 
       "teamRoles": {
@@ -220,6 +220,7 @@
     "tournaments": {
       "title": "Tournaments",
       "selectSport": "Select the sport",
+      "noTournaments": "For the moment, there're no available tournaments for the selected sport.",
       "feedback": {
         "title": "Previous feedbacks"
       }
@@ -355,7 +356,13 @@
     "registrations": {
       "title": "Registrations",
       "activities": "Activities",
-      "tournament": "VII INTERNACIONAL FUNCHAL FUTSAL CUP"
+      "futsal": {
+        "viiTournament": {
+          "title": "VII Funchal  Futsal Cup International Tournament",
+          "preRegistration": "Pre-registration - 1st phase",
+          "oficialRegistration": "Official Registration - 2nd phase"
+        }
+      }
     }
   },
   "components": {
