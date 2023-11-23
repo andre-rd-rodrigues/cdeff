@@ -31,7 +31,7 @@ const ProductCard = ({ title, price, sizes, image, images, className }) => {
     <div className={`relative flex flex-col shadow-xl w-[250px] ${className}`}>
       <div className="relative h-[350px]">
         <Image
-          className="cursor-pointer"
+          className={`${images && "cursor-pointer"}`}
           onMouseOver={handleHoverImage}
           onMouseLeave={() => clearInterval(intervalRef.current)}
           src={image || images[currentImageIndex]}
