@@ -7,7 +7,8 @@ export default function Carousel({
   autoPlay,
   isSpaced,
   timeoutProp = 2500,
-  darkArrows
+  darkArrows,
+  breakpoints
 }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
@@ -32,6 +33,7 @@ export default function Carousel({
           slides: { perView: 2, spacing: 20 }
         }
       },
+      ...breakpoints,
       slides: { perView: 1 }
     };
   }

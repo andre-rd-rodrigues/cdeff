@@ -2,6 +2,7 @@
 import Button from "@/components/Button/Button";
 import Card from "@/components/Cards/Card";
 import Carousel from "@/components/Carousel/Carousel";
+import CarouselFeedback from "@/components/Carousel/CarouselFeedback";
 import DepartmentsSection from "@/components/DepartmentsSection";
 import HeroHeader from "@/components/Hero/HeroHeader/HeroHeader";
 import PageHeader from "@/components/PageHeader/PageHeader";
@@ -90,35 +91,67 @@ function About() {
         />
       </Section>
 
+      {/* Palmarés */}
       <Section containerClassName="bg-white">
         <SectionTitle
           className={"text-center"}
           title={t("pages.about.achievements.title")}
           subTitle={t("pages.about.achievements.subtitle")}
         />
-        <div className="mt-8 sm:mt-0 md:justify-center flex flex-wrap gap-5 justify-between">
-          {/*  Basketball */}
-          <div>
-            <SectionTitle
-              title={t("common.sports.basketball")}
-              className="sub_section_title"
-            />
-            <div className="flex ml-10 max-w-2xl items-start mb-12">
-              <Timeline data={basketAchievements} />
-            </div>
-          </div>
 
-          {/* futsal */}
-          <div>
-            <SectionTitle
-              title={t("common.sports.futsal")}
-              className="sub_section_title"
-            />
-            <div className="flex ml-10 max-w-2xl items-start">
-              <Timeline data={futsalAchievements} />
+        {/* Basketball */}
+        <SectionTitle
+          title={t("common.sports.basketball")}
+          className="sub_section_title"
+        />
+        <Carousel
+          isSpaced
+          autoPlay
+          darkArrows
+          breakpoints={{
+            breakpoints: {
+              "(min-width: 600px)": {
+                slides: { perView: 3, spacing: 20 }
+              }
+            }
+          }}
+        >
+          {basketAchievements.map(({ title, image, date }, i) => (
+            <div
+              className="keen-slider__slide pb-8 flex justify-center"
+              key={i}
+            >
+              <Card title={title} imageSrc={image} subTitle={date} />
             </div>
-          </div>
-        </div>
+          ))}
+        </Carousel>
+
+        {/* Futsal */}
+        <SectionTitle
+          title={t("common.sports.futsal")}
+          className="sub_section_title"
+        />
+        <Carousel
+          isSpaced
+          autoPlay
+          darkArrows
+          breakpoints={{
+            breakpoints: {
+              "(min-width: 600px)": {
+                slides: { perView: 3, spacing: 20 }
+              }
+            }
+          }}
+        >
+          {futsalAchievements.map(({ title, image, date }, i) => (
+            <div
+              className="keen-slider__slide pb-8 flex justify-center"
+              key={i}
+            >
+              <Card title={title} imageSrc={image} subTitle={date} />
+            </div>
+          ))}
+        </Carousel>
       </Section>
     </main>
   );

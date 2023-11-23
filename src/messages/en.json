@@ -80,74 +80,91 @@
         "achievementsList": {
           "basketball": [
             {
-              "title": "4th Place in National Championship - U14",
-              "date": "2014/2015"
+              "title": "4th place in the National Championship - Under-14",
+              "date": "2014/2015",
+              "image": "https://i.postimg.cc/DzdZqRjD/Trofeu-Padra-o.png"
             },
             {
-              "title": "National Champions - U14 Girls",
-              "date": "2018/2019"
+              "title": "National Champions - Under-14 girls",
+              "date": "2018/2019",
+              "image": "https://i.postimg.cc/RVyTL38L/1-Lugar-Campeonato-Nacional-Sub14-18-19.png"
             },
             {
-              "title": "National Runners-up - U16 Girls",
-              "date": "2018/2019"
+              "title": "Runners-up - Under-16 girls",
+              "date": "2018/2019",
+              "image": "https://i.postimg.cc/DzdZqRjD/Trofeu-Padra-o.png"
             },
             {
-              "title": "2nd Division Champions - Senior",
-              "date": "2019/2020"
+              "title": "Champions of the Second Division - seniors",
+              "date": "2019/2020",
+              "image": "https://i.postimg.cc/DzdZqRjD/Trofeu-Padra-o.png"
             },
             {
-              "title": "National 1st Division Runners-up (Promotion to Betclic League) - Senior",
-              "date": "2020/2021"
+              "title": "National Runners-up of the First Division (Access to Liga Betclic) - seniors",
+              "date": "2020/2021",
+              "image": "https://i.postimg.cc/DzdZqRjD/Trofeu-Padra-o.png"
             },
             {
-              "title": "Regional Champions - U18 Girls",
-              "date": "2022/2023"
+              "title": "Regional Champions - Under-18 girls",
+              "date": "2022/2023",
+              "image": "https://i.postimg.cc/q7nD3cvK/1-Lugar-Campeonato-Sub18-22-23.png"
             }
           ],
           "futsal": [
             {
-              "title": "Regional Champions of 2nd Division - Senior",
-              "date": "2011/2012"
+              "title": "Regional Champions of the Second Division - seniors",
+              "date": "2011/2012",
+              "image": "https://i.postimg.cc/sXmcYTdM/Campeo-es-Regionais-II-Divisa-o-Seniores-11-12.png"
             },
             {
-              "title": "Winners of Madeira Cup - Juniors",
-              "date": "2013/2014"
+              "title": "Winners of the Madeira Cup - juniors",
+              "date": "2013/2014",
+              "image": "https://i.postimg.cc/fTJKd7Hb/Vencendores-Tac-a-da-Madeira-Juniores-13-4.png"
             },
             {
-              "title": "2nd Place in Regional Championship - Senior",
-              "date": "2015/2016"
+              "title": "2nd place in the Regional Championship - seniors",
+              "date": "2015/2016",
+              "image": "https://i.postimg.cc/DzdZqRjD/Trofeu-Padra-o.png"
             },
             {
-              "title": "Winners of Madeira Cup - Youth",
-              "date": "2016/2017"
+              "title": "Winners of the Madeira Cup - juveniles",
+              "date": "2016/2017",
+              "image": "https://i.postimg.cc/Hsh6vvJ5/Vencedores-Tac-a-Juvenis-16-17.png"
             },
             {
-              "title": "Regional Champions - Juniors",
-              "date": "2017/2018"
+              "title": "Regional Champions - juniors",
+              "date": "2017/2018",
+              "image": "https://i.postimg.cc/qqB1S9Xc/Campeo-es-Regionais-Juniores-17-18.png"
             },
             {
-              "title": "Regional Champions - Youth",
-              "date": "2018/2019"
+              "title": "Regional Champions - juveniles",
+              "date": "2018/2019",
+              "image": "https://i.postimg.cc/BvWM48Bn/Campeo-es-Regionais-Juvenis-18-19.png"
             },
             {
-              "title": "Winners of Madeira Cup - Youth",
-              "date": "2018/2019"
+              "title": "Winners of the Madeira Cup - juveniles",
+              "date": "2018/2019",
+              "image": "https://i.postimg.cc/FHkDMbc6/Vencedores-Juvenis-18-19.png"
             },
             {
-              "title": "Regional Champions - Beginners",
-              "date": "2018/2019"
+              "title": "Regional Champions - beginners",
+              "date": "2018/2019",
+              "image": "https://i.postimg.cc/k4qsRkZr/Campeo-es-Regionais-Iniciados-18-19.png"
             },
             {
-              "title": "4th Place in Madeira Cup - Peewee",
-              "date": "2020/2021"
+              "title": "4th place in the Madeira Cup - benjamins",
+              "date": "2020/2021",
+              "image": "https://i.postimg.cc/DzdZqRjD/Trofeu-Padra-o.png"
             },
             {
-              "title": "Regional Champions - Children",
-              "date": "2021/2022"
+              "title": "Regional Champions - infants",
+              "date": "2021/2022",
+              "image": "https://i.postimg.cc/XJbHcZrz/Campeo-es-Regionais-Infantis-21-22.png"
             },
             {
-              "title": "Winners of the Super Cup - Youth",
-              "date": "2023/2024"
+              "title": "Winners of the Super Cup - juveniles",
+              "date": "2023/2024",
+              "image": "https://i.postimg.cc/wMBk0Dg0/Vencedor-Supertac-a-Juvenis-23-24.png"
             }
           ]
         }
