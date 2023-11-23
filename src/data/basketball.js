@@ -209,3 +209,89 @@ export const basketAllSponsorUrls = [
   ...basketSponsors.normal,
   ...basketSponsors.collaborators
 ];
+
+export const basketballProducts = [
+  {
+    images: [
+      "https://i.postimg.cc/QM67yg29/04-BF0719-DAEB-47-C9-B0-FB-EAD64-FF129-A3.png",
+      "https://i.postimg.cc/VLcJ4HJZ/0-FAC5-DF8-1-FDC-43-A6-9-CD2-3305-AEF33-F9-A.png",
+      "https://i.postimg.cc/MTNQW6Kz/397-CF70-E-2-C38-40-A8-ABC3-E1-E4-B48-FFACA.png",
+      "https://i.postimg.cc/xTrzh14R/5127-D118-98-BD-4435-A9-E5-45-E1805394-B6-E.png",
+      "https://i.postimg.cc/C5bzSbQ4/D8-D26-A86-4-ACC-4416-A68-D-6-B1-CD4-DA0-A149.png"
+    ],
+    name: "Cachecol",
+    price: "12€"
+  },
+  {
+    images: [
+      "https://i.postimg.cc/8k3GNgZ5/2-A11656-D-0-F8-C-475-F-A104-0-B3-FCCA78-D64.png",
+      "https://i.postimg.cc/T1Zv9nKm/6-A3694-C6-A45-C-43-C6-9-CB6-2839-D97-F2-D2-A.png",
+      "https://i.postimg.cc/DyXTzpNc/E7-FB4253-4098-4128-A565-3712675-D6235.png",
+      "https://i.postimg.cc/QdZrKkGZ/F164019-B-7697-461-C-859-D-F081-BE2726-CA.png"
+    ],
+    name: "Calça de Fato de Treino",
+    price: "10€"
+  },
+  {
+    images: [
+      "https://i.postimg.cc/yYC72jwJ/1.png",
+      "https://i.postimg.cc/cCNPk9r0/4.png",
+      "https://i.postimg.cc/PxDB4sfS/5.png",
+      "https://i.postimg.cc/GpfCKxFm/6.png",
+      "https://i.postimg.cc/tTVHMnkt/7.png"
+    ],
+    name: "Sweat com capuz e fecho",
+    price: "25€"
+  },
+  {
+    images: [
+      "https://i.postimg.cc/26HB2JHB/1.png",
+      "https://i.postimg.cc/SNYzfgcJ/4.png",
+      "https://i.postimg.cc/L8dgCjVv/5.png",
+      "https://i.postimg.cc/PJPvc4cV/6.png",
+      "https://i.postimg.cc/NFS2wXvs/8.png"
+    ],
+    name: "Sweat Saída",
+    price: "25€"
+  },
+  {
+    images: [
+      "https://i.postimg.cc/8CNJDD96/1.png",
+      "https://i.postimg.cc/QC9VSM9R/213564-E8-E264-4-C8-F-9861-BE5-D8-EF31-D74.png",
+      "https://i.postimg.cc/j5kLzf5H/919-E34-A4-51-E6-4233-8-A86-90-BFA245-AC71.png"
+    ],
+    name: "T-shirt Básica Azul",
+    price: "6€"
+  },
+  {
+    images: [
+      "https://i.postimg.cc/yxHNKCLG/2-F50245-A-64-D2-44-DD-B7-A4-4-A10-DA24-F08-B.png",
+      "https://i.postimg.cc/zGBG8jkq/5202-BC93-F5-DA-485-F-B0-E3-391-D9-AF78-A9-B.png",
+      "https://i.postimg.cc/jdRjkKww/B95-C2-BEC-DC54-4096-9700-2-B0001-CD96-B3.png"
+    ],
+    name: "T-shirt Básica Preta",
+    price: "6€"
+  },
+  {
+    images: [
+      "https://i.postimg.cc/kGbXKhLC/1.png",
+      "https://i.postimg.cc/pTydXdZp/22.png",
+      "https://i.postimg.cc/k5J4zsRN/4.png",
+      "https://i.postimg.cc/CxVdHSFQ/5.png",
+      "https://i.postimg.cc/rmbwdLng/6.png"
+    ],
+    name: "T-shirt Sublimada Formação",
+    price: "20€"
+  },
+
+  {
+    images: [
+      "https://i.postimg.cc/sDWK04wK/1.png",
+      "https://i.postimg.cc/dQp4BxmL/2.png",
+      "https://i.postimg.cc/7ZyXvJR4/3.png",
+      "https://i.postimg.cc/1RfvDQFk/4.png"
+    ],
+    name: "T-shirt Sublimada Mini Basket",
+    price: "20€"
+  }
+];

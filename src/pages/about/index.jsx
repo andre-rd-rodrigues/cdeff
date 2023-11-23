@@ -65,8 +65,7 @@ function About() {
       <HeroHeader
         linkLabel={t("common.buttons.learnMore")}
         href="/about/sponsors"
-        imageSrc="https://images.unsplash.com/photo-1459865264687-595d652de67e?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        className="keen-slider__slide"
+        imageSrc="https://i.postimg.cc/1zMDPWxk/397754064-824352832813912-1867964922690926201-n1.png"
       >
         <p className={`${barlow.className} tracking-wide`}>
           {t("pages.about.sponsors.subtitle")}
