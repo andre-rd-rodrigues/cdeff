@@ -1,3 +1,4 @@
+import Button from "@/components/Button/Button";
 import Card from "@/components/Cards/Card";
 import HeroHeader from "@/components/Hero/HeroHeader/HeroHeader";
 import HeroSection from "@/components/Hero/HeroSection/HeroSection";
@@ -15,6 +16,7 @@ import {
 import { barlow } from "@/styles/fonts";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
 
 function BasketballPage() {
   const t = useTranslations();
@@ -84,6 +86,42 @@ function BasketballPage() {
             {
               name: t("pages.basketball.teamRoles.Seniores"),
               content: <RankSection team={basketTeamsImages.seniores} />
+            },
+            {
+              name: t("pages.basketball.teamRoles.Sub-16 Femininos"),
+              content: <RankSection team={basketTeamsImages.sub_16_femininos} />
+            },
+            {
+              name: t("pages.basketball.teamRoles.Sub-16 Masculinos"),
+              content: (
+                <RankSection team={basketTeamsImages.sub_16_masculinos} />
+              )
+            },
+            {
+              name: t("pages.basketball.teamRoles.Sub-14 Femininos"),
+              content: <RankSection team={basketTeamsImages.sub_14_femininos} />
+            },
+            {
+              name: t("pages.basketball.teamRoles.Sub-14 Masculinos"),
+              content: (
+                <RankSection team={basketTeamsImages.sub_14_masculinos} />
+              )
+            },
+            {
+              name: t("pages.basketball.teamRoles.Mini 12 Femininos"),
+              content: (
+                <RankSection team={basketTeamsImages.mini_12_femininos} />
+              )
+            },
+            {
+              name: t("pages.basketball.teamRoles.Mini 12 Masculinos"),
+              content: (
+                <RankSection team={basketTeamsImages.mini_12_masculinos} />
+              )
+            },
+            {
+              name: t("pages.basketball.teamRoles.Mini 8 e Mini 10"),
+              content: <RankSection team={basketTeamsImages.mini_8_9} />
             }
           ]}
         />
@@ -91,7 +129,6 @@ function BasketballPage() {
 
       {/* Partnership */}
       <HeroHeader
-        linkLabel={t("common.buttons.registration")}
         href="https://docs.google.com/forms/d/e/1FAIpQLSciyolXxZhuXbCMtGl9-31624IP1bHT3YEe-7WxjjCuNPBGGQ/viewform?usp=sf_link"
         imageSrc="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=1490&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       >
@@ -103,6 +140,18 @@ function BasketballPage() {
         <p className="tracking-wide">
           {t("pages.basketball.membership.description")}
         </p>
+        <div className="flex gap-3 justify-center mt-9">
+          <Link href="basketball/membership">
+            <Button
+              label={t("common.buttons.advantages")}
+              className={"text-white border-white"}
+              variant
+            />
+          </Link>
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSciyolXxZhuXbCMtGl9-31624IP1bHT3YEe-7WxjjCuNPBGGQ/viewform?usp=sf_link">
+            <Button label={t("common.buttons.registration")} />
+          </Link>
+        </div>
       </HeroHeader>
 
       {/* Training schedule */}

@@ -526,10 +526,6 @@
             {
               "name": "Patrocinadores",
               "href": "/about/sponsors"
-            },
-            {
-              "name": "Programa de sócios",
-              "href": "/basketball/membership"
             }
           ]
         },
@@ -724,7 +720,8 @@
       "contact": "contactar",
       "contacts": "contactos",
       "goBack": "voltar",
-      "clickHere": "Clica aqui"
+      "clickHere": "Clica aqui",
+      "advantages": "Vantagens"
     },
     "links": {
       "contacts": "contacts"

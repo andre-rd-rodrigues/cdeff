@@ -215,7 +215,6 @@
         "subtitle": "Welcome to futsal",
         "description": "In futsal, we function as a true family, where everyone's support is fundamental! Our main goal is to foster the essential values of the true sporting spirit and to increase the motivational levels of our players! As our motto goes, “UNITED WE WILL WIN”!"
       },
-
       "teamRoles": {
         "Seniores": "Seniors",
         "Juniores": "Juniors",
@@ -530,10 +529,6 @@
             {
               "name": "Sponsors",
               "href": "/about/sponsors"
-            },
-            {
-              "name": "Membership program",
-              "href": "/basketball/membership"
             }
           ]
         },
@@ -725,7 +720,8 @@
       "contact": "contact now",
       "contacts": "contact us",
       "goBack": "Go back",
-      "clickHere": "Click here"
+      "clickHere": "Click here",
+      "advantages": "Advantages"
     },
     "pages": {
       "techTeam": "Technical Team",

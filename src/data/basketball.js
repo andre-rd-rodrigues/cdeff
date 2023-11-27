@@ -60,6 +60,280 @@ export const basketTeamsImages = {
       image: "https://i.postimg.cc/BvYZL0DJ/Sofia-Carvalho.png",
       name: "Sofia Carvalho"
     }
+  ],
+  mini_12_femininos: [
+    {
+      image: "https://i.postimg.cc/6pPq9Cd0/Ana-Maria-Teixeira.png",
+      name: "Ana Maria Teixeira"
+    },
+    {
+      image: "https://i.postimg.cc/jjJ5CCcr/Ana-Rafaela-Oliveira.png",
+      name: "Ana Rafaela Oliveira"
+    },
+    {
+      image: "https://i.postimg.cc/QdCVGfWC/Andreia-Jesus.png",
+      name: "Andreia Jesus"
+    },
+    {
+      image: "https://i.postimg.cc/Fzx1mqZd/Madalena-Lopes.png",
+      name: "Madalena Lopes"
+    },
+    {
+      image: "https://i.postimg.cc/c4X6bpCP/Margarida-Lopes.png",
+      name: "Margarida Lopes"
+    },
+    {
+      image: "https://i.postimg.cc/W3L4ZjYq/Maria-Abreu.png",
+      name: "Maria Abreu"
+    },
+    {
+      image: "https://i.postimg.cc/659yzWWd/Rita-Freitas.png",
+      name: "Rita Freitas"
+    }
+  ],
+  mini_12_masculinos: [
+    {
+      image: "https://i.postimg.cc/CK45T9L3/Andre.png",
+      name: "André"
+    },
+    {
+      image: "https://i.postimg.cc/7h5Zz6M4/Carlos-Pais.png",
+      name: "Carlos Pais"
+    },
+    {
+      image: "https://i.postimg.cc/zDQBrC8G/Francisco-Olim.png",
+      name: "Francisco Olim"
+    },
+    {
+      image: "https://i.postimg.cc/bNKsQQBB/Henrique-Gonc-alves.png",
+      name: "Henrique Gonçalves"
+    },
+    {
+      image: "https://i.postimg.cc/SsTKj89V/Joa-o-Guilherme.png",
+      name: "João Guilherme"
+    },
+    {
+      image: "https://i.postimg.cc/q7rqFp0c/Ju-lio-Curado.png",
+      name: "Júlio Curado"
+    },
+    {
+      image: "https://i.postimg.cc/x1MqgXrT/Mateus-Oliveira.png",
+      name: "Mateus Oliveira"
+    },
+    {
+      image: "https://i.postimg.cc/7hjYnkm2/Matias-Sumares.png",
+      name: "Matias Sumares"
+    },
+    {
+      image: "https://i.postimg.cc/t43CW8Ps/Tome-Freitas.png",
+      name: "Tomé Freitas"
+    }
+  ],
+  mini_8_9: [
+    {
+      image: "https://i.postimg.cc/DZKwV85x/Bruno-Nunes.png",
+      name: "Bruno Nunes"
+    },
+    {
+      image: "https://i.postimg.cc/FFjt7TpC/Francisca-Antunes.png",
+      name: "Francisca Antunes"
+    },
+    {
+      image: "https://i.postimg.cc/9Q4PxnDc/Francisca-Freitas.png",
+      name: "Francisca Freitas"
+    },
+    {
+      image: "https://i.postimg.cc/50YvNYML/Francisca-Jardim.png",
+      name: "Francisca Jardim"
+    },
+    {
+      image: "https://i.postimg.cc/YCm2D6k5/Gustavo-Fernandes.png",
+      name: "Gustavo Fernandes"
+    },
+    {
+      image: "https://i.postimg.cc/Pxn92hJs/Itzel-Gonc-alves.png",
+      name: "Itzel Gonçalves"
+    },
+    {
+      image: "https://i.postimg.cc/CM4DMV3v/Joa-o-Afonso-Abreu.png",
+      name: "João Afonso Abreu"
+    },
+    {
+      image: "https://i.postimg.cc/vZDhJmNF/Maria-Barros.png",
+      name: "Maria Barros"
+    },
+    {
+      image: "https://i.postimg.cc/L6r737DM/Maria-da-Grac-a.png",
+      name: "Maria da Graça"
+    },
+    {
+      image: "https://i.postimg.cc/4d2KDp2p/Mariana-Gonc-alves.png",
+      name: "Mariana Gonçalves"
+    },
+    {
+      image: "https://i.postimg.cc/xj7Jgyz2/Mariana-Silva.png",
+      name: "Mariana Silva"
+    },
+    {
+      image: "https://i.postimg.cc/CKVb7C91/Martim-Barros.png",
+      name: "Martim Barros"
+    },
+    {
+      image: "https://i.postimg.cc/4y4D99X2/Matilde-Castro.png",
+      name: "Matilde Castro"
+    },
+    {
+      image: "https://i.postimg.cc/j28GQS5x/Miguel-Co-rte.png",
+      name: "Miguel Côrte"
+    }
+  ],
+  sub_14_femininos: [
+    {
+      image: "https://i.postimg.cc/SRXz4qsZ/Ana-Carlota-Clemente.png",
+      name: "Ana Carlota Clemente"
+    },
+    {
+      image: "https://i.postimg.cc/8cqfP3fT/Catarina-Sousa.png",
+      name: "Catarina Sousa"
+    },
+    {
+      image: "https://i.postimg.cc/ydpS2WVg/Ine-s-Co-rte.png",
+      name: "Inês Côrte"
+    },
+    {
+      image: "https://i.postimg.cc/63pvHCNx/Ine-s-Pereira.png",
+      name: "Inês Pereira"
+    }
+  ],
+  sub_14_masculinos: [
+    {
+      image: "https://i.postimg.cc/xdWYX2TJ/Gustavo-Borges.png",
+      name: "Gustavo Borges"
+    },
+    {
+      image: "https://i.postimg.cc/T30J2d00/Henrique-Abreu.png",
+      name: "Henrique Abreu"
+    },
+    {
+      image: "https://i.postimg.cc/q7Yngz3s/Hugo-Marques.png",
+      name: "Hugo Marques"
+    },
+    {
+      image: "https://i.postimg.cc/0jvzJm2w/Joa-o-Afonso.png",
+      name: "João Afonso"
+    },
+    {
+      image: "https://i.postimg.cc/vZY5KRyV/Joa-o-Esmeraldo.png",
+      name: "João Esmeraldo"
+    },
+    {
+      image: "https://i.postimg.cc/137VYfMk/Joa-o-Pedro-Abreu.png",
+      name: "João Pedro Abreu"
+    },
+    {
+      image: "https://i.postimg.cc/rp6MmTpd/Lourenc-o-Laranjeira.png",
+      name: "Lourenço Laranjeira"
+    },
+    {
+      image: "https://i.postimg.cc/HnSTs7JH/Pedro-Figueira.png",
+      name: "Pedro Figueira"
+    },
+    {
+      image: "https://i.postimg.cc/1RT9TDZc/Rafael-Rodrigues.png",
+      name: "Rafael Rodrigues"
+    }
+  ],
+  sub_16_femininos: [
+    {
+      image: "https://i.postimg.cc/6qsGBgvt/Beatriz-Sousa.png",
+      name: "Beatriz Sousa"
+    },
+    {
+      image: "https://i.postimg.cc/X7ky0276/Leonor-Saldanha.png",
+      name: "Leonor Saldanha"
+    },
+    {
+      image: "https://i.postimg.cc/G3YyXLW2/Leonor-Sofia.png",
+      name: "Leonor Sofia"
+    },
+    {
+      image: "https://i.postimg.cc/c4S82qWc/Matilde-Lui-s.png",
+      name: "Matilde Luís"
+    },
+    {
+      image: "https://i.postimg.cc/fyxSyCcX/Na-dia-Sa.png",
+      name: "Nádia Sá"
+    },
+    {
+      image: "https://i.postimg.cc/50QCdbjs/Nu-ria-Basi-lio.png",
+      name: "Núria Basílio"
+    }
+  ],
+  sub_16_masculinos: [
+    {
+      image: "https://i.postimg.cc/prFGLfwb/Andres-Afonso.png",
+      name: "Andres Afonso"
+    },
+    {
+      image: "https://i.postimg.cc/25k4KQTj/Andre-Quintal.png",
+      name: "André Quintal"
+    },
+    {
+      image: "https://i.postimg.cc/qqhcK5mW/Anto-nio-Spi-nola.png",
+      name: "António Spinola"
+    },
+    {
+      image: "https://i.postimg.cc/3wt2cTVP/Bernardo-Barbosa.png",
+      name: "Bernardo Barbosa"
+    },
+    {
+      image: "https://i.postimg.cc/bwNrXmX5/Elo-i-Santos.png",
+      name: "Eloi Santos"
+    },
+    {
+      image: "https://i.postimg.cc/VL04qWZ3/Esteban-Pinto.png",
+      name: "Esteban Pinto"
+    },
+    {
+      image: "https://i.postimg.cc/5NzqNDQC/Guilherme-Silva.png",
+      name: "Guilherme Silva"
+    },
+    {
+      image: "https://i.postimg.cc/GmqB9ZJr/Joa-o-Henrique.png",
+      name: "João Henrique"
+    },
+    {
+      image: "https://i.postimg.cc/YSn6F47X/Leandro.png",
+      name: "Leandro"
+    },
+    {
+      image: "https://i.postimg.cc/13Xfbvwz/Leonardo-Correia.png",
+      name: "Leonardo Correia"
+    },
+    {
+      image: "https://i.postimg.cc/0NDvMS7v/Martim-Caldeira.png",
+      name: "Martim Caldeira"
+    },
+    {
+      image: "https://i.postimg.cc/761qczL9/Martim-Esteves.png",
+      name: "Martim Esteves"
+    },
+    {
+      image: "https://i.postimg.cc/G3674f3W/Martim-Figueira.png",
+      name: "Martim Figueira"
+    },
+    {
+      image: "https://i.postimg.cc/j5nMd6f6/Mateus-Fernandes.png",
+      name: "Mateus Fernandes"
+    },
+    {
+      image: "https://i.postimg.cc/fR75VTkF/Matias-Lec-a.png",
+      name: "Matias Leça"
+    },
+    {
+      image: "https://i.postimg.cc/Xvch6kwr/Nuno-Agostinho.png",
+      name: "Nuno Agostinho"
+    }
   ]
 };
 

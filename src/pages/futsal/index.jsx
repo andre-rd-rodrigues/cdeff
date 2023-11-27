@@ -71,7 +71,7 @@ function FutsalPage() {
       {/* Ranks */}
       <Section containerClassName={"bg-white"}>
         <SectionTitle
-          className="text-center mb-1 md:-mb-4"
+          className="text-center mb-1 md:-mb-1"
           title={t("common.pages.selectRank")}
           subTitle={t("common.pages.squad")}
         />
@@ -99,13 +99,17 @@ function FutsalPage() {
             },
             {
               name: t("pages.futsal.teamRoles.Infantis"),
+              content: <RankSection team={futsalTeam.infantis} />
+            },
+            {
+              name: t("pages.futsal.teamRoles.Benjamins"),
               content: (
                 <div className="relative w-full h-[300px] md:h-[600px]">
                   <Image
-                    alt="Iniciados"
+                    alt="Benjamins"
                     fill
                     style={{ objectFit: "contain" }}
-                    src={futsalTeam.infantis.image}
+                    src={futsalTeam.benjamins.image}
                   />
                 </div>
               )

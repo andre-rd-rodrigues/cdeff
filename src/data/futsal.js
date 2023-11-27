@@ -9,7 +9,7 @@ export const futsalTechnicalTeam = [
       },
       {
         name: "Tiago Rosa",
-        image: "https://i.postimg.cc/52P9GM2Z/Tiago-Rosa.png",
+        image: "https://i.postimg.cc/vBSqXFj2/Tiago-Rosa.png",
         position: "1º delegado"
       },
       {
@@ -24,7 +24,7 @@ export const futsalTechnicalTeam = [
     members: [
       {
         name: "Tiago Rosa",
-        image: "https://i.postimg.cc/52P9GM2Z/Tiago-Rosa.png",
+        image: "https://i.postimg.cc/vBSqXFj2/Tiago-Rosa.png",
         position: "treinador"
       }
     ]
@@ -223,7 +223,8 @@ export const futsalSponsors = {
     "https://i.postimg.cc/KjXr7nbv/SO-USA.jpg",
     "https://i.postimg.cc/X749VN7h/Superpedestrian.png",
     "https://i.postimg.cc/kG9RXw98/Teleferico-Funchal-2.png",
-    "https://i.postimg.cc/rpmJqVgc/yellowbus.png"
+    "https://i.postimg.cc/rpmJqVgc/yellowbus.png",
+    "https://i.postimg.cc/PqZSsXyB/blandys-removebg-preview.png"
   ],
   normal: [
     "https://i.postimg.cc/150hqBSX/Auto-Classico.jpg",
@@ -296,10 +297,6 @@ export const futsalTeam = {
     {
       image: "https://i.postimg.cc/pTwhc5BG/Lui-s-Vieira.png",
       name: "Luís Vieira"
-    },
-    {
-      image: "https://i.postimg.cc/JzryFLbL/Renato-Mendonc-a.png",
-      name: "Renato Mendonça"
     },
     {
       image: "https://i.postimg.cc/Vvwsbqg8/Rodrigo.png",
@@ -598,7 +595,65 @@ export const futsalTeam = {
       name: "Toma s Gouveia"
     }
   ],
-  infantis: { image: "https://i.postimg.cc/s2vY7SRs/Infantis.jpg" }
+  infantis: [
+    {
+      image: "https://i.postimg.cc/jqWk5BVZ/Elias.png",
+      name: "Elias"
+    },
+    {
+      image: "https://i.postimg.cc/d37R0MLd/Fla-vio-Ornelas.png",
+      name: "Flávio Ornelas"
+    },
+    {
+      image: "https://i.postimg.cc/7Lxg2J5q/Gonc-alo-Serralha.png",
+      name: "Gonçalo Serralha"
+    },
+    {
+      image: "https://i.postimg.cc/rpQ5Cy4x/Henrique-Tavares.png",
+      name: "Henrique Tavares"
+    },
+    {
+      image: "https://i.postimg.cc/w38NT1K8/Joa-o-Francisco-Vieira.png",
+      name: "João Francisco Vieira"
+    },
+    {
+      image: "https://i.postimg.cc/G2tGM0PN/Jota-Caldeira.png",
+      name: "Jota Caldeira"
+    },
+    {
+      image: "https://i.postimg.cc/NGWCrbBY/Manuel-Tiago.png",
+      name: "Manuel Tiago"
+    },
+    {
+      image: "https://i.postimg.cc/xCZHhstd/Martim-Correia.png",
+      name: "Martim Correia"
+    },
+    {
+      image: "https://i.postimg.cc/PrY3bZ5D/Miguel-Vieira.png",
+      name: "Miguel Vieira"
+    },
+    {
+      image: "https://i.postimg.cc/zGfhDZ6f/Santiago-Barros.png",
+      name: "Santiago Barros"
+    },
+    {
+      image: "https://i.postimg.cc/PJzDJtdC/Sima-o-Basi-lio.png",
+      name: "Simão Basílio"
+    },
+    {
+      image: "https://i.postimg.cc/BQ0c0zJ8/Toma-s-Realista.png",
+      name: "Tomás Realista"
+    },
+    {
+      image: "https://i.postimg.cc/hG6T3yCt/Tome.png",
+      name: "Tomé"
+    },
+    {
+      image: "https://i.postimg.cc/Y9FYc6Vf/Ze-Pedro.png",
+      name: "Zé Pedro"
+    }
+  ],
+  benjamins: { image: "https://i.postimg.cc/Pr8DCsMf/Benjamins.jpg" }
 };
 
 export const futsalAllSponsorsUrls = [
@@ -641,14 +696,149 @@ export const futsalProducts = [
     name: "Fato Treino Joma",
     price: "40€"
   },
+
   {
-    image: "https://i.postimg.cc/qvzvCXnP/Bolsa-1-Joma.png",
-    name: "Bolsa Joma",
+    image: "https://i.postimg.cc/90RqXtLY/Saco-de-Desporto-1-Grande-Joma.png",
+    name: "Saco de Desporto Grande Joma",
+    price: "25€"
+  },
+  {
+    image: "https://i.postimg.cc/906wDRS5/Bermuda-1-Joma.png",
+    name: "Bermuda Joma",
+    price: "18€"
+  },
+  {
+    image: "https://i.postimg.cc/FRtzvdY2/Bermuda-2-Joma.png",
+    name: "Bermuda Joma",
+    price: "19€"
+  },
+
+  {
+    image: "https://i.postimg.cc/mrkCkH2k/Equipamento-1-Meias-Vermelhas.jpg",
+    name: "Meias Vermelhas",
+    price: "5€"
+  },
+  {
+    image:
+      "https://i.postimg.cc/zB3ypFYY/Equipamento-1-T-Shirt-GR-Joma-Laranja.png",
+    name: "T-Shirt GR Joma Laranja",
     price: "20€"
+  },
+  {
+    image:
+      "https://i.postimg.cc/6pmTH1t6/Equipamento-1-T-Shirt-Joma-Vermelha.png",
+    name: "T-Shirt Joma Vermelha",
+    price: "20€"
+  },
+  {
+    image:
+      "https://i.postimg.cc/y6mgVPXn/Equipamento-1-Calc-a-o-Joma-Branco.png",
+    name: "Calção Joma Branco",
+    price: "10€"
+  },
+  {
+    image:
+      "https://i.postimg.cc/Qt5BKkL8/Equipamento-2-Calc-a-o-Joma-Vermelho.png",
+    name: "Calção Joma Vermelho",
+    price: "10€"
+  },
+  {
+    image:
+      "https://i.postimg.cc/vH4vD54j/Equipamento-2-Conjunto-Joma-Branco.png",
+    name: "Conjunto Joma Branco",
+    price: "30€"
+  },
+  {
+    image: "https://i.postimg.cc/cCrfgNLY/Equipamento-2-Meias-Brancas.jpg",
+    name: "Meias Brancas",
+    price: "5€"
+  },
+  {
+    image: "https://i.postimg.cc/vH8BGdmH/Fato-Treino-1-Joma.png",
+    name: "Fato Treino Joma",
+    price: "40€"
+  },
+  {
+    image: "https://i.postimg.cc/mZtXJPYb/Polo-Sai-da-1-Joma.png",
+    name: "Polo Saída Joma",
+    price: "18€"
+  },
+  {
+    image: "https://i.postimg.cc/KvmK4M0b/Polo-Sai-da-2-Joma.png",
+    name: "Polo Saída Joma",
+    price: "18€"
+  },
+  {
+    image: "https://i.postimg.cc/vmxTCLZr/Polo-Sai-da-3-Joma.png",
+    name: "Polo Saída Joma",
+    price: "20€"
+  },
+  {
+    image: "https://i.postimg.cc/xCKC1fHq/Polo-Sai-da-4-Joma.png",
+    name: "Polo Saída Joma",
+    price: "22€"
+  },
+  {
+    image: "https://i.postimg.cc/DycXcgSm/Polo-Sai-da-5-Joma.png",
+    name: "Polo Saída Joma",
+    price: "22€"
   },
   {
     image: "https://i.postimg.cc/90RqXtLY/Saco-de-Desporto-1-Grande-Joma.png",
     name: "Saco de Desporto Grande Joma",
     price: "25€"
+  },
+  {
+    image: "https://i.postimg.cc/sXKJGc9F/Saco-de-Desporto-2-Grande-Joma.jpg",
+    name: "Saco de Desporto Grande Joma",
+    price: "25€"
+  },
+  {
+    image: "https://i.postimg.cc/wvP7rR9y/Saco-de-Desporto-3-Grande-Joma.png",
+    name: "Saco de Desporto Grande Joma",
+    price: "25€"
+  },
+  {
+    image: "https://i.postimg.cc/kGsgWTTm/Saco-de-Desporto-4-Joma.png",
+    name: "Saco de Desporto Joma",
+    price: "25€"
+  },
+  {
+    image: "https://i.postimg.cc/xj38rdn4/Saco-de-Desporto-5-Joma.png",
+    name: "Saco de Desporto Joma",
+    price: "25€"
+  },
+  {
+    image:
+      "https://i.postimg.cc/prFpMVd0/Saco-de-Desporto-6-Extra-Grande-Joma.png",
+    name: "Saco de Desporto Extra Grande Joma",
+    price: "30€"
+  },
+  {
+    image:
+      "https://i.postimg.cc/7ZdY1Gnf/Saco-de-Desporto-7-Extra-Grande-Joma.png",
+    name: "Saco de Desporto Extra Grande Joma",
+    price: "30€"
+  },
+  {
+    image:
+      "https://i.postimg.cc/TYxbmSYZ/Saco-de-Desporto-8-Extra-Grande-Joma.png",
+    name: "Saco de Desporto Extra Grande Joma",
+    price: "30€"
+  },
+  {
+    image: "https://i.postimg.cc/BZK52H51/Sweat-1-Joma.png",
+    name: "Sweat Joma",
+    price: "26€"
+  },
+  {
+    image: "https://i.postimg.cc/43fw5y4R/Sweat-2-Joma.png",
+    name: "Sweat Joma",
+    price: "27.5€"
+  },
+  {
+    image: "https://i.postimg.cc/wBw2bz3y/Sweat-3-Joma.png",
+    name: "Sweat Joma",
+    price: "32.5€"
   }
 ];
