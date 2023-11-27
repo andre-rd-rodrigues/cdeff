@@ -380,6 +380,132 @@
           "oficialRegistration": "Official Registration - 2nd phase"
         }
       }
+    },
+    "membership": {
+      "title": "Membership Program",
+      "promotions": [
+        {
+          "title": "Health",
+          "companies": [
+            {
+              "businessName": "Farmácia da Madalena",
+              "image": "https://i.postimg.cc/SNmqHct6/farmacia-da-madalena.png",
+              "hasSubDiscounts": true,
+              "discounts": [
+                {
+                  "10%": {
+                    "title": "10% discount on",
+                    "products": ["Non-prescription Medicines (MNSRM)"]
+                  }
+                },
+                {
+                  "5%": {
+                    "title": "5% discount* on",
+                    "products": ["Prescription Medicines"]
+                  }
+                }
+              ],
+              "notes": [
+                "Not combinable with other promotions or cards. Does not include baby food and pharmaceutical services.",
+                "* The discount on these products may change if there are policy revisions with a negative impact on their margin."
+              ]
+            },
+            {
+              "businessName": "Singular",
+              "image": "https://i.postimg.cc/2SKDqMjG/Singular-O-ptica.png",
+              "discounts": [
+                "100% discount on all clinical services: optometry consultations; contactology consultations; tonometry",
+                "25% direct discount on all sunglasses and frames",
+                "25% direct discount on ophthalmic lenses and contact lenses",
+                "Payment up to 12x (subject to approval)"
+              ],
+              "notes": ["Payment up to 12x (subject to approval)"]
+            }
+          ]
+        },
+        {
+          "title": "Restaurants",
+          "companies": [
+            {
+              "businessName": "Pizzaria Antica Roma",
+              "image": "https://i.postimg.cc/jqHt8Mvq/Antica-Roma.jpg",
+              "discounts": [
+                "With the order of 1 pizza: free 1 juice",
+                "With the order of 3 pizzas - free 4th pizza",
+                "Birthday offer (minimum 8 people)"
+              ]
+            },
+            {
+              "businessName": "Hamburgueria 351 Bistro",
+              "image": "https://i.postimg.cc/D0Ph8zm4/bistro-351.jpg",
+              "discounts": ["€5 discount on a purchase of €25 or more"]
+            }
+          ]
+        },
+        {
+          "title": "Education",
+          "companies": [
+            {
+              "businessName": "Academia de Línguas",
+              "image": "https://i.postimg.cc/HngHYMWC/Academia-de-Linguas-da-Madeira.png",
+              "discounts": ["5% discount on tuition"]
+            },
+            {
+              "businessName": "Escola de Condução Segurança Máxima",
+              "image": "https://i.postimg.cc/PrKhHNBB/grupo-seguranc-a-maxima.png",
+              "discounts": [
+                "10% discount on any category for obtaining a driving license (on the table value; does not include exams)",
+                "50% discount on the theoretical book + free distance learning"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Leisure and Culture",
+          "companies": [
+            {
+              "hasSubDiscounts": true,
+              "businessName": "Living Fitness Concept",
+              "image": "https://i.postimg.cc/4xdGxsGn/Living-Fitness-Concept.jpg",
+              "discounts": [
+                {
+                  "50%": {
+                    "title": "50% discount on the Registration Fee (€15), which includes",
+                    "products": [
+                      "Physical evaluation",
+                      "Training plan",
+                      "1 nutritional assessment",
+                      "Annual insurance",
+                      "Free parking"
+                    ]
+                  }
+                },
+                {
+                  "20%": {
+                    "title": "20% discount on the Free Transit Monthly Fee (€40)",
+                    "products": [
+                      "Free access from 7 am to 9:30 pm - Mon. to Fri.",
+                      "Free access from 8 am to 2 pm - Saturdays"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Others",
+          "companies": [
+            {
+              "businessName": "A Oficina",
+              "image": "https://i.postimg.cc/k48qPsmc/A-oficina.png",
+              "discounts": [
+                "Offer of 30% discount on materials (except materials of origin)"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   "components": {
@@ -404,6 +530,10 @@
             {
               "name": "Sponsors",
               "href": "/about/sponsors"
+            },
+            {
+              "name": "Membership program",
+              "href": "/basketball/membership"
             }
           ]
         },
@@ -576,6 +706,7 @@
       "blogTitle": "Blog - FF Sports Club",
       "faqsTitle": "FAQs - FF Sports Club",
       "contactsTitle": "Contacts - FF Sports Club",
+      "membershipTitle": "Membership Program - CDEFF",
       "notFoundTitle": "404 - FF Sports Club",
       "registrationsTitle": "Registrations - FF Sports Club",
       "description": "At the Francisco Franco Sports Club, we believe that sports are a tool for personal and social development. Through sports practice, our athletes learn to work as a team, respect others and themselves, be more responsible, and maintain a positive attitude towards life."

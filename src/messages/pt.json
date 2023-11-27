@@ -375,6 +375,136 @@
           "oficialRegistration": "Inscrição oficial - 2ª fase"
         }
       }
+    },
+    "membership": {
+      "title": "Programa de sócios",
+      "promotions": [
+        {
+          "title": "Saúde",
+          "companies": [
+            {
+              "businessName": "Farmácia da Madalena",
+              "image": "https://i.postimg.cc/SNmqHct6/farmacia-da-madalena.png",
+              "hasSubDiscounts": true,
+              "discounts": [
+                {
+                  "10%": {
+                    "title": "10%  de desconto em",
+                    "products": [
+                      "Medicamentos não sujeitos a receita médica (MNSRM)"
+                    ]
+                  }
+                },
+                {
+                  "5%": {
+                    "title": "5%  de desconto* em",
+                    "products": ["Medicamentos sujeitos a receita médica"]
+                  }
+                }
+              ],
+              "notes": [
+                "Não acumula com outras promoções ou cartões, não inclui alimentação infantil e serviços farmacêuticos.",
+                "* O desconto nestes produtos poderá vir a sofrer alteração, se ocorrem revisões políticas com impacto negativo, na margem dos mesmos."
+              ]
+            },
+            {
+              "businessName": "Singular",
+              "image": "https://i.postimg.cc/2SKDqMjG/Singular-O-ptica.png",
+              "discounts": [
+                "100% de desconto em todos os serviços clínicos: consultas de optometria; consultas de contactologia; tonometria",
+                "25% de desconto direto em todos os óculos de sol e armações",
+                "25% de desconto direto em lentes oftálmicas e lentes de contacto",
+                "Pagamento até 12x (sujeito a aprovação)"
+              ],
+              "notes": ["Pagamento até 12x (sujeito a aprovação)"]
+            }
+          ]
+        },
+        {
+          "title": "Restaurantes",
+          "companies": [
+            {
+              "businessName": "Pizzaria Antica Roma",
+              "image": "https://i.postimg.cc/jqHt8Mvq/Antica-Roma.jpg",
+              "discounts": [
+                "Na encomenda de 1 pizza: oferta de 1 sumo",
+                "Na encomenda de 3 pizzas - oferta da 4ª pizza",
+                "Oferta do aniversário (mínimo 8 pessoas)"
+              ]
+            },
+            {
+              "businessName": "Hamburgueria 351 Bistro",
+              "image": "https://i.postimg.cc/D0Ph8zm4/bistro-351.jpg",
+              "discounts": [
+                "Desconto de 5€ numa compra de valor igual ou superior a 25€"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Educação",
+          "companies": [
+            {
+              "businessName": "Academia de Línguas",
+              "image": "https://i.postimg.cc/HngHYMWC/Academia-de-Linguas-da-Madeira.png",
+              "discounts": ["5% de desconto na mensalidade"]
+            },
+            {
+              "businessName": "Escola de Condução Segurança Máxima",
+              "image": "https://i.postimg.cc/PrKhHNBB/grupo-seguranc-a-maxima.png",
+              "discounts": [
+                "10% de desconto em qualquer categoria para obtenção da carta de condução (sobre o valor de tabela; não inclui exames)",
+                "50% de desconto no livro teórico + oferta do ensino à distância"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lazer e Cultura",
+          "companies": [
+            {
+              "hasSubDiscounts": true,
+              "businessName": "Living Fitness Concept",
+              "image": "https://i.postimg.cc/4xdGxsGn/Living-Fitness-Concept.jpg",
+              "discounts": [
+                {
+                  "50%": {
+                    "title": "50% de desconto na Taxa de Inscrição (15€), que inclui",
+                    "products": [
+                      "Avaliação física",
+                      "Plano de treino",
+                      "1 avaliação nutricional",
+                      "Seguro anual",
+                      "Estacionamento gratuito"
+                    ]
+                  }
+                },
+                {
+                  "20%": {
+                    "title": "20% de desconto na Mensalidade Livre Trânsito (40€)",
+                    "products": [
+                      "Livre acesso das 7h às 21h30 - Seg. a Sexta",
+                      "Livre acesso das 8h às 14h - Sábados"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Outros",
+          "companies": [
+            {
+              "businessName": "A Oficina",
+              "image": "https://i.postimg.cc/k48qPsmc/A-oficina.png",
+              "discounts": [
+                "Oferta de 30% de desconto em materiais (com exceção de materiais de origem)"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   "components": {
@@ -396,6 +526,10 @@
             {
               "name": "Patrocinadores",
               "href": "/about/sponsors"
+            },
+            {
+              "name": "Programa de sócios",
+              "href": "/basketball/membership"
             }
           ]
         },
@@ -572,6 +706,7 @@
       "faqsTitle": "FAQs - CDEFF",
       "contactsTitle": "Contactos - CDEFF",
       "registrationsTitle": "Inscrições - CDEFF",
+      "membershipTitle": "Programa de Sócios - CDEFF",
       "notFoundTitle": "404 - CDEFF",
       "description": "No Clube Despostivo da Francisco Franco, acreditamos que o desporto é uma ferramenta de desenvolvimento pessoal e social. Através da prática desportiva, os nossos atletas aprendem a trabalhar em equipa, a respeitar os outros e a si próprios, a serem mais responsáveis e a terem uma atitude positiva perante a vida."
     },

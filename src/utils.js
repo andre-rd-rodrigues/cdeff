@@ -35,6 +35,9 @@ export const headConfig = {
   "/basketball": {
     title: "basketballTitle"
   },
+  "/basketball/membership": {
+    title: "membershipTitle"
+  },
   "/blog": {
     // Assuming [slug].jsx is for individual blog posts
     title: "blogTitle"
