@@ -17,7 +17,7 @@ function Sponsors() {
     <main>
       <PageHeader
         title={t("pages.sponsors.title")}
-        image="https://i.postimg.cc/SR775fZ8/sponsor.jpg"
+        image="https://i.postimg.cc/T1b56JNJ/Patrocinadores.png"
       />
 
       {/* Main */}

@@ -1,22 +1,15 @@
-"use client";
-import Button from "@/components/Button/Button";
 import Card from "@/components/Cards/Card";
 import Carousel from "@/components/Carousel/Carousel";
-import CarouselFeedback from "@/components/Carousel/CarouselFeedback";
 import DepartmentsSection from "@/components/DepartmentsSection";
 import HeroHeader from "@/components/Hero/HeroHeader/HeroHeader";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
 import TextWithImage from "@/components/TextWithImage/TextWithImage";
-import Timeline from "@/components/Timeline";
 import { barlow } from "@/styles/fonts";
 import { getTranslations } from "@/utils";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
 import { useRouter } from "next/router";
-
-import React from "react";
 
 function About() {
   const t = useTranslations();
@@ -33,7 +26,7 @@ function About() {
     <main>
       <PageHeader
         title={t("pages.about.title")}
-        image="https://i.postimg.cc/WbBngYcT/sobre.jpg"
+        image="https://i.postimg.cc/7YvTNjbs/Sobre-No-s.png"
       />
       <Section>
         <TextWithImage
@@ -65,7 +58,7 @@ function About() {
       <HeroHeader
         linkLabel={t("common.buttons.learnMore")}
         href="/about/sponsors"
-        imageSrc="https://i.postimg.cc/1zMDPWxk/397754064-824352832813912-1867964922690926201-n1.png"
+        imageSrc="https://i.postimg.cc/wThR4Fm6/Quer-apoiar-o-nosso-Clube-Torne-se-um-patrocinador.png"
       >
         <p className={`${barlow.className} tracking-wide`}>
           {t("pages.about.sponsors.subtitle")}

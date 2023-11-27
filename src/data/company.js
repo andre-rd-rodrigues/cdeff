@@ -35,7 +35,7 @@ export const departments = [
       {
         name: "Tiago Rosa",
         position: "Futsal Coordinator",
-        imageSrc: "https://i.postimg.cc/vBSqXFj2/Tiago-Rosa.png"
+        imageSrc: "https://i.postimg.cc/25Dzs6kB/Tiago-Rosa2.png"
       }
     ]
   },

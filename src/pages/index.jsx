@@ -39,7 +39,8 @@ export default function Home({ blogPosts }) {
         </HeroHeader>
 
         <HeroSection
-          imageSrc="https://i.postimg.cc/QCjrTGXM/Foto-Torneio.jpg"
+          imageSrc="https://i.postimg.cc/tCX9yzcR/Queres-inscrever-o-teu-clube-num-dos-maiores-Torneios-banner-background-pa-gina-inicial.jpg
+          "
           linkLabel={t("common.buttons.registration")}
           subtitle={t("pages.homepage.hero_1.subtitle")}
           title={t("pages.homepage.hero_1.title")}
@@ -129,7 +130,7 @@ export default function Home({ blogPosts }) {
 
       {/* Hero 2 */}
       <HeroSection
-        imageSrc="https://images.unsplash.com/photo-1459865264687-595d652de67e?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imageSrc="https://i.postimg.cc/Ghhn6mBH/Temos-as-modalidades-certas-para-ti.png"
         linkLabel={t("common.buttons.learnMore")}
         subtitle={t("pages.homepage.hero_2.subtitle")}
         title={t("pages.homepage.hero_2.title")}

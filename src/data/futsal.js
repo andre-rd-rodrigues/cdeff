@@ -9,7 +9,7 @@ export const futsalTechnicalTeam = [
       },
       {
         name: "Tiago Rosa",
-        image: "https://i.postimg.cc/vBSqXFj2/Tiago-Rosa.png",
+        image: "https://i.postimg.cc/25Dzs6kB/Tiago-Rosa2.png",
         position: "1º delegado"
       },
       {
@@ -24,7 +24,7 @@ export const futsalTechnicalTeam = [
     members: [
       {
         name: "Tiago Rosa",
-        image: "https://i.postimg.cc/vBSqXFj2/Tiago-Rosa.png",
+        image: "https://i.postimg.cc/25Dzs6kB/Tiago-Rosa2.png",
         position: "treinador"
       }
     ]
