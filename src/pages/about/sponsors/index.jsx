@@ -43,7 +43,7 @@ function Sponsors() {
       <HeroHeader
         linkLabel={t("common.buttons.contacts")}
         href="/contacts"
-        imageSrc="https://i.postimg.cc/T1b56JNJ/Patrocinadores.png"
+        imageSrc="https://i.postimg.cc/wThR4Fm6/Quer-apoiar-o-nosso-Clube-Torne-se-um-patrocinador.png"
       >
         <h1 className={`${barlow.className} uppercase tracking-wide`}>
           {t("pages.sponsors.hero.title")}
