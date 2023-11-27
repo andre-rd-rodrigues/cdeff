@@ -42,20 +42,20 @@ function Sponsors() {
       {/* Hero section */}
       <HeroHeader
         linkLabel={t("common.buttons.contacts")}
-        href="/contactos"
-        imageSrc="https://images.unsplash.com/photo-1459865264687-595d652de67e?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        href="/contacts"
+        imageSrc="https://i.postimg.cc/T1b56JNJ/Patrocinadores.png"
       >
         <h1 className={`${barlow.className} uppercase tracking-wide`}>
           {t("pages.sponsors.hero.title")}
         </h1>
         <p className="tracking-wide">{t("pages.sponsors.hero.description")}</p>
-        <Link href={"/assets/sponsoring.pdf"} className="mx-3">
+        <a href={"/assets/CDEFF.pdf"} download className="mx-3">
           <Button
             variant
-            label={"Download"}
+            label="Download"
             className={"text-white border-white"}
           />
-        </Link>
+        </a>
       </HeroHeader>
 
       {/* Normal */}

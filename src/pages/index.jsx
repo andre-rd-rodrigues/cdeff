@@ -99,7 +99,7 @@ export default function Home({ blogPosts }) {
         linkLabel={t("common.buttons.registration")}
         subtitle={t("pages.homepage.hero_1.subtitle")}
         title={t("pages.homepage.hero_1.title")}
-        href="#"
+        href="/registrations"
       />
 
       {/* Store section */}

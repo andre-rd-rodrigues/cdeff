@@ -8,7 +8,9 @@ const AppHead = (props) => {
   const router = useRouter();
   const t = useTranslations();
   const { pathname } = router;
-  const { title: titleTranslation } = headConfig[pathname] || {};
+  const { title: titleTranslation } = headConfig[pathname] || {
+    title: "notFoundTitle"
+  };
 
   const { openGraph } = props;
 
