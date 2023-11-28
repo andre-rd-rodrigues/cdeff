@@ -1,7 +1,6 @@
 import { headConfig } from "@/utils";
 import { useTranslations } from "next-intl";
 import { NextSeo } from "next-seo";
-import Head from "next/head";
 import { useRouter } from "next/router";
 
 const AppHead = (props) => {
