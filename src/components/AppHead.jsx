@@ -32,8 +32,8 @@ const AppHead = (props) => {
                 {
                   url:
                     locale === "pt"
-                      ? "https://i.postimg.cc/02Bpp0bk/meta-pt.png"
-                      : "https://i.postimg.cc/kX4Q6pMY/meta-en.png",
+                      ? "https://i.postimg.cc/Fs4jGHxq/meta-pt.png"
+                      : "https://i.postimg.cc/yxbC1bn3/meta-en.png",
                   alt: title
                 }
               ]
