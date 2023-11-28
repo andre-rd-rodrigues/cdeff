@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 const AppHead = (props) => {
   const router = useRouter();
   const t = useTranslations();
-  const { pathname } = router;
+  const { pathname, locale } = router;
   const { title: titleTranslation } = headConfig[pathname] || {
     title: "notFoundTitle"
   };
@@ -27,9 +27,13 @@ const AppHead = (props) => {
               url: `https://www.cdeff.com`,
               title,
               description,
+              locale,
               images: [
                 {
-                  url: "/images/metadata.png",
+                  url:
+                    locale === "pt"
+                      ? "https://i.postimg.cc/02Bpp0bk/meta-pt.png"
+                      : "https://i.postimg.cc/kX4Q6pMY/meta-en.png",
                   alt: title
                 }
               ]
