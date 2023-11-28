@@ -4,7 +4,8 @@ import { LANGUAGE, languagesCodes } from "@/utils";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 const RegistrationCard = ({
   title,
@@ -15,9 +16,12 @@ const RegistrationCard = ({
   links,
   href
 }) => {
-  const [selectedCountry, setSelectedCountry] = useState(LANGUAGE.PT);
-
   const t = useTranslations();
+  const { locale } = useRouter();
+
+  const [selectedCountry, setSelectedCountry] = useState(locale.toUpperCase());
+
+  useEffect(() => setSelectedCountry(locale.toUpperCase()), [locale]);
 
   return (
     <div className={`relative flex flex-col shadow-xl w-[320px] ${className}`}>

@@ -3,19 +3,21 @@ import SectionTitle from "./SectionTitle";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-const SponsorSection = ({ images, basket }) => {
+const SponsorSection = ({ images, basket, hideTitle }) => {
   const t = useTranslations();
 
   return (
     <div className="mb-10">
       <div>
-        <SectionTitle
-          title={
-            basket ? t("common.sports.basketball") : t("common.sports.futsal")
-          }
-          isSubSectionTitle
-          textClassName={"opacity-70"}
-        />
+        {!hideTitle && (
+          <SectionTitle
+            title={
+              basket ? t("common.sports.basketball") : t("common.sports.futsal")
+            }
+            isSubSectionTitle
+            textClassName={"opacity-70"}
+          />
+        )}
         <div
           className={`grid justify-items-center  ${
             images.length >= 3

@@ -4,10 +4,12 @@ import PageHeader from "@/components/PageHeader/PageHeader";
 import RankSection from "@/components/RankSection";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
+import SponsorSection from "@/components/SponsorSection";
 import Tabs from "@/components/Tabs/Tabs";
 import TextWithImage from "@/components/TextWithImage/TextWithImage";
 import {
   futsalAllSponsorsUrls,
+  futsalSponsors,
   futsalTeam,
   futsalTechnicalTeam
 } from "@/data/futsal";
@@ -148,21 +150,29 @@ function FutsalPage() {
 
       {/* Sponsors */}
       <Section containerClassName={"bg-white"}>
-        <SectionTitle title={t("pages.sponsors.title")} />
-
-        <div className="grid justify-items-center grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-          {futsalAllSponsorsUrls.map((image, i) => (
-            <div className="relative w-[150px] h-[130px]" key={i}>
-              <Image
-                fill
-                style={{ objectFit: "contain" }}
-                src={image}
-                alt="CDEFF Patrocinadores"
-                onError={(e) => console.error(e.target.src)}
-              />
-            </div>
-          ))}
+        {/* Main */}
+        <SectionTitle title={t("pages.sponsors.mainSponsors")} />
+        <div className="relative w-[150px] h-[130px]">
+          <Image
+            fill
+            style={{ objectFit: "contain" }}
+            src="/images/navbar/futsal/tourigalo.png"
+            alt="Tourigalo"
+            className="ml-4"
+          />
         </div>
+
+        {/* Premium */}
+        <SectionTitle title={t("pages.sponsors.premium")} />
+        <SponsorSection hideTitle images={futsalSponsors.premium} />
+
+        {/* Normal */}
+        <SectionTitle title={t("pages.sponsors.sponsors")} />
+        <SponsorSection hideTitle images={futsalSponsors.normal} />
+
+        {/* Collaborators */}
+        <SectionTitle title={t("pages.sponsors.collaborations")} />
+        <SponsorSection hideTitle images={futsalSponsors.collaborators} />
       </Section>
     </main>
   );
