@@ -696,12 +696,6 @@ export const futsalProducts = [
     name: "Fato Treino Joma",
     price: "40€"
   },
-
-  {
-    image: "https://i.postimg.cc/90RqXtLY/Saco-de-Desporto-1-Grande-Joma.png",
-    name: "Saco de Desporto Grande Joma",
-    price: "25€"
-  },
   {
     image: "https://i.postimg.cc/906wDRS5/Bermuda-1-Joma.png",
     name: "Bermuda Joma",
@@ -713,11 +707,6 @@ export const futsalProducts = [
     price: "19€"
   },
 
-  {
-    image: "https://i.postimg.cc/mrkCkH2k/Equipamento-1-Meias-Vermelhas.jpg",
-    name: "Meias Vermelhas",
-    price: "5€"
-  },
   {
     image:
       "https://i.postimg.cc/zB3ypFYY/Equipamento-1-T-Shirt-GR-Joma-Laranja.png",
@@ -732,31 +721,9 @@ export const futsalProducts = [
   },
   {
     image:
-      "https://i.postimg.cc/y6mgVPXn/Equipamento-1-Calc-a-o-Joma-Branco.png",
-    name: "Calção Joma Branco",
-    price: "10€"
-  },
-  {
-    image:
-      "https://i.postimg.cc/Qt5BKkL8/Equipamento-2-Calc-a-o-Joma-Vermelho.png",
-    name: "Calção Joma Vermelho",
-    price: "10€"
-  },
-  {
-    image:
       "https://i.postimg.cc/vH4vD54j/Equipamento-2-Conjunto-Joma-Branco.png",
     name: "Conjunto Joma Branco",
     price: "30€"
-  },
-  {
-    image: "https://i.postimg.cc/cCrfgNLY/Equipamento-2-Meias-Brancas.jpg",
-    name: "Meias Brancas",
-    price: "5€"
-  },
-  {
-    image: "https://i.postimg.cc/vH8BGdmH/Fato-Treino-1-Joma.png",
-    name: "Fato Treino Joma",
-    price: "40€"
   },
   {
     image: "https://i.postimg.cc/mZtXJPYb/Polo-Sai-da-1-Joma.png",
