@@ -580,19 +580,19 @@ export const futsalTeam = {
     },
     {
       image: "https://i.postimg.cc/5N14cfFy/Tiago-Espi-rito-Santo.png",
-      name: "Tiago Espi rito Santo"
+      name: "Tiago Espírito Santo"
     },
     {
       image: "https://i.postimg.cc/sxP3BNb3/Toma-s-2.png",
-      name: "Toma s  2"
+      name: "Tomás  2"
     },
     {
       image: "https://i.postimg.cc/prQn2kZF/Toma-s-Ferreira.png",
-      name: "Toma s Ferreira"
+      name: "Tomás Ferreira"
     },
     {
       image: "https://i.postimg.cc/zX5gdZzS/Toma-s-Gouveia.png",
-      name: "Toma s Gouveia"
+      name: "Tomás Gouveia"
     }
   ],
   infantis: [

@@ -119,11 +119,6 @@
               "image": "https://i.postimg.cc/fTJKd7Hb/Vencendores-Tac-a-da-Madeira-Juniores-13-4.png"
             },
             {
-              "title": "2º lugar no Campeonato Regional - seniores",
-              "date": "2015/2016",
-              "image": "https://i.postimg.cc/DzdZqRjD/Trofeu-Padra-o.png"
-            },
-            {
               "title": "Vencedores da Taça da Madeira - juvenis",
               "date": "2016/2017",
               "image": "https://i.postimg.cc/Hsh6vvJ5/Vencedores-Tac-a-Juvenis-16-17.png"
@@ -148,11 +143,7 @@
               "date": "2018/2019",
               "image": "https://i.postimg.cc/k4qsRkZr/Campeo-es-Regionais-Iniciados-18-19.png"
             },
-            {
-              "title": "4º lugar na Taça da Madeira - benjamins",
-              "date": "2020/2021",
-              "image": "https://i.postimg.cc/DzdZqRjD/Trofeu-Padra-o.png"
-            },
+
             {
               "title": "Campeões Regionais - infantis",
               "date": "2021/2022",
@@ -339,7 +330,7 @@
       "description": "Entra em contacto connosco para qualquer dúvida ou informação. Estamos localizados na Rua João de Deus nº9, 9054-527, Funchal.\nA tua mensagem é importante para nós, estamos sempre aqui para ajudar!",
       "contactItems": [
         {
-          "description": "Rua de João de Deus nº9 - 9054-527, Funchal",
+          "description": "Rua João de Deus nº9 - 9054-527, Funchal",
           "icon": "mdi:location"
         },
         {
