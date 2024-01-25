@@ -365,6 +365,13 @@
           "preRegistration": "Pré-inscrição - 1ª fase",
           "oficialRegistration": "Inscrição oficial - 2ª fase"
         }
+      },
+      "basket": {
+        "nationalTournament2024": {
+          "title": "TORNEIO NACIONAL DE FORMAÇÃO DE BASQUETEBOL 2024",
+          "preRegistration": "Pré-inscrição - 1ª fase",
+          "oficialRegistration": "Inscrição oficial - 2ª fase"
+        }
       }
     },
     "membership": {

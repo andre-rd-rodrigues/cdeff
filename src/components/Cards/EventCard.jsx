@@ -7,13 +7,25 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Button from "../Button/Button";
+import { useEffect, useState } from "react";
 
 function EventCard({ event, href }) {
+  const [formattedDate, setFormattedDate] = useState("");
+
   const t = useTranslations();
 
   const { locale } = useRouter();
 
   const { title, description, dateStart, dateEnd, image, location } = event;
+
+  // Avoid hydration errors caused by the difference between server and client locale
+  useEffect(() => {
+    setFormattedDate(
+      `${dayjs(dateStart).locale(locale).format(DATE_FORMAT)} ${
+        dateEnd ? `- ${dayjs(dateEnd).locale(locale).format(DATE_FORMAT)}` : ""
+      }`
+    );
+  }, [dateStart, dateEnd, locale]);
 
   return (
     <Link href={href} className="relative flex flex-col shadow-xl max-w-xs">
@@ -40,13 +52,7 @@ function EventCard({ event, href }) {
             className="text-red"
             fontSize={20}
           />
-          <p className="text-sm font-light text-gray-400">
-            {`${dayjs(dateStart).locale(locale).format(DATE_FORMAT)} ${
-              dateEnd
-                ? `- ${dayjs(dateEnd).locale(locale).format(DATE_FORMAT)}`
-                : ""
-            }`}
-          </p>
+          <p className="text-sm font-light text-gray-400">{formattedDate}</p>
         </div>
         <div className="flex gap-2 items-center">
           <Icon

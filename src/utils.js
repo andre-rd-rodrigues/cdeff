@@ -107,6 +107,12 @@ export const viiTournamentOfficial2StageLinks = {
   FR: "https://docs.google.com/forms/d/e/1FAIpQLSfLxyhtg9enLOmF5dJC8UQVxe0w31MysnvK6NI0jCn5w-2BSg/viewform?usp=sf_link"
 };
 
+export const nationalTournament2024 = {
+  PRE: "https://docs.google.com/forms/d/e/1FAIpQLScOfzRVqNOm0s0Ju3so8aGBGwwZCm_zo8Y8nkf-sUI_JlJL1w/viewform?usp=sf_link",
+  OFFICAL:
+    "https://docs.google.com/forms/d/e/1FAIpQLSeDfcya1gKefbmzhS2HaUO6jE7twABtZDIvDXKGfhwU1ZYV2A/viewform?usp=sf_link"
+};
+
 export const getNotionImagePathname = (post) =>
   post.cover?.external?.url ||
   post.cover?.file?.url ||

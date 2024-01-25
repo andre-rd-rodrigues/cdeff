@@ -368,6 +368,13 @@
           "preRegistration": "Pre-registration - 1st phase",
           "oficialRegistration": "Official Registration - 2nd phase"
         }
+      },
+      "basket": {
+        "nationalTournament2024": {
+          "title": "NATIONAL BASKETBALL TRAINING TOURNAMENT 2024",
+          "preRegistration": "Pre-registration - 1st phase",
+          "oficialRegistration": "Official Registration - 2nd phase"
+        }
       }
     },
     "membership": {
