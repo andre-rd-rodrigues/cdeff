@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import IconCard from "./Cards/IconCard/IconCard";
 import EventCard from "./Cards/EventCard";
-import { getTournaments } from "@/lib/notion";
+
 import { SPORTS } from "@/utils";
 import { useTranslations } from "next-intl";
 
