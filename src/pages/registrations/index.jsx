@@ -2,6 +2,7 @@ import IconCard from "@/components/Cards/IconCard/IconCard";
 import RegistrationCard from "@/components/Cards/RegistrationCard";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import Section from "@/components/Section";
+import useSportSelect from "@/hooks/useSportSelect";
 import {
   SPORTS,
   nationalTournament2024,
@@ -9,10 +10,9 @@ import {
   viiTournamentPre1StageLinks
 } from "@/utils";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
 
 function RegistrationPage() {
-  const [selectedSport, setSelectedSport] = useState(SPORTS.BASKETBALL);
+  const { isBasket, updateSelectedSport } = useSportSelect();
 
   const t = useTranslations();
 
@@ -30,18 +30,18 @@ function RegistrationPage() {
             <IconCard
               title={t("common.sports.basketball")}
               iconName="ph:soccer-ball"
-              isSelected={selectedSport === SPORTS.BASKETBALL}
-              onClick={() => setSelectedSport(SPORTS.BASKETBALL)}
+              isSelected={isBasket}
+              onClick={() => updateSelectedSport(SPORTS.BASKETBALL)}
             />
             <IconCard
               title={t("common.sports.futsal")}
               iconName="ph:soccer-ball"
-              isSelected={selectedSport === SPORTS.FUTSAL}
-              onClick={() => setSelectedSport(SPORTS.FUTSAL)}
+              isSelected={!isBasket}
+              onClick={() => updateSelectedSport(SPORTS.FUTSAL)}
             />
           </div>
 
-          {selectedSport === SPORTS.FUTSAL && (
+          {!isBasket && (
             <>
               <RegistrationCard
                 links={viiTournamentPre1StageLinks}
@@ -65,7 +65,7 @@ function RegistrationPage() {
             </>
           )}
 
-          {selectedSport === SPORTS.BASKETBALL && (
+          {isBasket && (
             <>
               <RegistrationCard
                 href={nationalTournament2024.PRE}
