@@ -17,10 +17,10 @@ function TournamentsPage({ tournaments }) {
 
   const t = useTranslations();
 
-  const selectedSportTournaments = tournaments?.filter((tournament) =>
-    tournament.properties?.Modalidade.select.name === isBasket
-      ? SPORTS.BASKETBALL
-      : SPORTS.FUTSAL
+  const selectedSportTournaments = tournaments?.filter(
+    (tournament) =>
+      tournament.properties?.Modalidade.select.name ===
+      (isBasket ? SPORTS.BASKETBALL : SPORTS.FUTSAL)
   );
 
   return (
