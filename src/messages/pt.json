@@ -358,7 +358,7 @@
     },
     "registrations": {
       "title": "Inscrições",
-      "activities": "Atividades",
+      "sports": "Modalidades",
       "futsal": {
         "viiTournament": {
           "title": "VII Torneio Internacional Funchal Futsal Cup",
@@ -371,6 +371,13 @@
           "title": "TORNEIO NACIONAL DE FORMAÇÃO DE BASQUETEBOL 2024",
           "preRegistration": "Pré-inscrição - 1ª fase",
           "oficialRegistration": "Inscrição oficial - 2ª fase"
+        }
+      },
+      "activities": {
+        "title": "ATL",
+        "eastern": {
+          "title": "ATL de Páscoa",
+          "description": "Inscrições: 25 de março a 5 de abril"
         }
       }
     },

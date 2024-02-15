@@ -2,6 +2,7 @@ import IconCard from "@/components/Cards/IconCard/IconCard";
 import RegistrationCard from "@/components/Cards/RegistrationCard";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import Section from "@/components/Section";
+import SectionTitle from "@/components/SectionTitle";
 import useSportSelect from "@/hooks/useSportSelect";
 import {
   SPORTS,
@@ -24,7 +25,23 @@ function RegistrationPage() {
           "https://images.unsplash.com/photo-1484807352052-23338990c6c6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
       />
+
       <Section>
+        <SectionTitle
+          title={t("pages.registrations.activities.title")}
+          className={"text-center"}
+        />
+        <RegistrationCard
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfLB677eyqL_dj2k7iQ19kTui9Odp7zORmz7JTKParwNOe8RA/viewform?usp=sf_link"
+          imageSrc="https://i.postimg.cc/sxVnvxXf/ATL-Pa-scoa-1.png"
+          title={t("pages.registrations.activities.eastern.title")}
+          subTitle={t("pages.registrations.activities.eastern.description")}
+          buttonLabel={t("common.buttons.registration")}
+        />
+        <SectionTitle
+          title={t("pages.registrations.sports")}
+          className={"text-center"}
+        />
         <div className="flex flex-wrap md:justify-start justify-center gap-10">
           <div className="flex w-full m-auto justify-center gap-10 mt-7">
             <IconCard

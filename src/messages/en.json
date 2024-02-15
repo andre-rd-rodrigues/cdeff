@@ -361,7 +361,7 @@
     },
     "registrations": {
       "title": "Registrations",
-      "activities": "Activities",
+      "sports": "Sports",
       "futsal": {
         "viiTournament": {
           "title": "VII Funchal  Futsal Cup International Tournament",
@@ -374,6 +374,13 @@
           "title": "NATIONAL BASKETBALL TRAINING TOURNAMENT 2024",
           "preRegistration": "Pre-registration - 1st phase",
           "oficialRegistration": "Official Registration - 2nd phase"
+        }
+      },
+      "activities": {
+        "title": "Activities",
+        "eastern": {
+          "title": "Eastern Activities 2024",
+          "description": "Registrations: March 25th to April 5th"
         }
       }
     },
