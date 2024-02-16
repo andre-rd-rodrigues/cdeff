@@ -13,7 +13,7 @@ import { futsalProducts } from "@/data/futsal";
 import { getPosts } from "@/lib/notion";
 import { barlow } from "@/styles/fonts";
 
-import { REVALIDATE_TIME, getNotionImagePathname } from "@/utils";
+import { REVALIDATE_TIME, getNotionImagePathname } from "@/constants";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useRouter } from "next/router";

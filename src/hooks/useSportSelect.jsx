@@ -1,4 +1,4 @@
-import { SPORTS } from "@/utils";
+import { SPORTS } from "@/constants";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 

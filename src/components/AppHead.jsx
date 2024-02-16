@@ -1,4 +1,4 @@
-import { headConfig } from "@/utils";
+import { headConfig } from "@/constants";
 import { useTranslations } from "next-intl";
 import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";

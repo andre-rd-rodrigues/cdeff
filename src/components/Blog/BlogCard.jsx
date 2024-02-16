@@ -1,6 +1,6 @@
 import Button from "@/components/Button/Button";
 import { barlow } from "@/styles/fonts";
-import { DATE_FORMAT } from "@/utils";
+import { DATE_FORMAT } from "@/constants";
 import dayjs from "dayjs";
 import { useTranslations } from "next-intl";
 import Image from "next/image";

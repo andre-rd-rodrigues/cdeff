@@ -1,4 +1,4 @@
-import { getTranslations } from "@/utils";
+import { getTranslations } from "@/helpers/locale.helpers.js";
 import { useTranslations } from "next-intl";
 import Card from "./Cards/Card";
 import SectionTitle from "./SectionTitle";

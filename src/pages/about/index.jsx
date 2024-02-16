@@ -7,7 +7,7 @@ import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
 import TextWithImage from "@/components/TextWithImage/TextWithImage";
 import { barlow } from "@/styles/fonts";
-import { getTranslations } from "@/utils";
+import { getTranslations } from "@/helpers/locale.helpers.js";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/router";
 

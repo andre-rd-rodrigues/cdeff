@@ -86,43 +86,49 @@ function BasketballPage() {
         <Tabs
           tabs={[
             {
-              name: t("pages.basketball.teamRoles.Seniores"),
+              name: "pages.basketball.teamRoles.Seniores",
               content: <RankSection team={basketTeamsImages.seniores} />
             },
             {
-              name: t("pages.basketball.teamRoles.Sub-16 Femininos"),
+              name: "pages.basketball.teamRoles.Sub-18 Masculinos",
+              content: (
+                <RankSection team={basketTeamsImages.sub_18_masculinos} />
+              )
+            },
+            {
+              name: "pages.basketball.teamRoles.Sub-16 Femininos",
               content: <RankSection team={basketTeamsImages.sub_16_femininos} />
             },
             {
-              name: t("pages.basketball.teamRoles.Sub-16 Masculinos"),
+              name: "pages.basketball.teamRoles.Sub-16 Masculinos",
               content: (
                 <RankSection team={basketTeamsImages.sub_16_masculinos} />
               )
             },
             {
-              name: t("pages.basketball.teamRoles.Sub-14 Femininos"),
+              name: "pages.basketball.teamRoles.Sub-14 Femininos",
               content: <RankSection team={basketTeamsImages.sub_14_femininos} />
             },
             {
-              name: t("pages.basketball.teamRoles.Sub-14 Masculinos"),
+              name: "pages.basketball.teamRoles.Sub-14 Masculinos",
               content: (
                 <RankSection team={basketTeamsImages.sub_14_masculinos} />
               )
             },
             {
-              name: t("pages.basketball.teamRoles.Mini 12 Femininos"),
+              name: "pages.basketball.teamRoles.Mini 12 Femininos",
               content: (
                 <RankSection team={basketTeamsImages.mini_12_femininos} />
               )
             },
             {
-              name: t("pages.basketball.teamRoles.Mini 12 Masculinos"),
+              name: "pages.basketball.teamRoles.Mini 12 Masculinos",
               content: (
                 <RankSection team={basketTeamsImages.mini_12_masculinos} />
               )
             },
             {
-              name: t("pages.basketball.teamRoles.Mini 8 e Mini 10"),
+              name: "pages.basketball.teamRoles.Mini 8 e Mini 10",
               content: <RankSection team={basketTeamsImages.mini_8_9} />
             }
           ]}

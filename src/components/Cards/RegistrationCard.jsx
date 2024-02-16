@@ -1,6 +1,6 @@
 import Button from "@/components/Button/Button";
 import { barlow } from "@/styles/fonts";
-import { LANGUAGE, languagesCodes } from "@/utils";
+import { LANGUAGE, languagesCodes } from "@/constants";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";

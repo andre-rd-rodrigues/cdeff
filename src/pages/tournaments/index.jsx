@@ -9,7 +9,7 @@ import SectionTitle from "@/components/SectionTitle";
 import { futsalFeedback } from "@/data/futsal";
 import useSportSelect from "@/hooks/useSportSelect";
 import { getTournaments } from "@/lib/notion";
-import { REVALIDATE_TIME, SPORTS } from "@/utils";
+import { REVALIDATE_TIME, SPORTS } from "@/constants";
 import { useTranslations } from "next-intl";
 
 function TournamentsPage({ tournaments }) {

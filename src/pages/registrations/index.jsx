@@ -9,7 +9,7 @@ import {
   nationalTournament2024,
   viiTournamentOfficial2StageLinks,
   viiTournamentPre1StageLinks
-} from "@/utils";
+} from "@/constants";
 import { useTranslations } from "next-intl";
 
 function RegistrationPage() {

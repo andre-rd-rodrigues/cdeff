@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { barlow } from "@/styles/fonts";
 import { useTranslations } from "next-intl";
-import { getTranslations } from "@/utils";
+import { getTranslations } from "@/helpers/locale.helpers.js";
 import { useRouter } from "next/router";
 import { Icon } from "@iconify/react";
 import { Sponsors } from "./Navbar/NavbarWidgets";

@@ -1,5 +1,5 @@
 import { barlow } from "@/styles/fonts";
-import { DATE_FORMAT, DATE_FORMAT_HOURS } from "@/utils";
+import { DATE_FORMAT, DATE_FORMAT_HOURS } from "@/constants";
 import { Icon } from "@iconify/react";
 import dayjs from "dayjs";
 import { useTranslations } from "next-intl";

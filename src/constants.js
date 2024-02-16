@@ -1,12 +1,3 @@
-import enTranslations from "./messages/en.json";
-import ptTranslations from "./messages/pt.json";
-
-export const getTranslations = (locale) => {
-  const translations = locale === "en" ? enTranslations : ptTranslations;
-
-  return translations;
-};
-
 export const DATE_FORMAT = `MMMM DD, YYYY`;
 export const DATE_FORMAT_HOURS = `MMMM DD, YYYY [at] HH:mm`;
 
@@ -112,8 +103,3 @@ export const nationalTournament2024 = {
   OFFICAL:
     "https://docs.google.com/forms/d/e/1FAIpQLSeDfcya1gKefbmzhS2HaUO6jE7twABtZDIvDXKGfhwU1ZYV2A/viewform?usp=sf_link"
 };
-
-export const getNotionImagePathname = (post) =>
-  post.cover?.external?.url ||
-  post.cover?.file?.url ||
-  "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";

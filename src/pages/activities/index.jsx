@@ -3,7 +3,7 @@ import PageHeader from "@/components/PageHeader/PageHeader";
 import Section from "@/components/Section";
 import TextWithImage from "@/components/TextWithImage/TextWithImage";
 import useTranslationArray from "@/hooks/useTranslationsArray";
-import { TEL_LINK, getTranslations } from "@/utils";
+import { TEL_LINK, getTranslations } from "@/constants";
 import { useTranslations } from "next-intl";
 import React from "react";
 

@@ -5,14 +5,6 @@ export const basketTeamsImages = {
       name: "Agustina Marin"
     },
     {
-      image: "https://i.postimg.cc/2Sjf4tCy/Aikaterini-Tsineke.png",
-      name: "Aikaterini Tsineke"
-    },
-    {
-      image: "https://i.postimg.cc/ydD10bXc/Akila-Smith.png",
-      name: "Akila Smith"
-    },
-    {
       image: "https://i.postimg.cc/D0QtGrD1/Ana-Henriques.png",
       name: "Ana Henriques"
     },
@@ -45,10 +37,6 @@ export const basketTeamsImages = {
       name: "Maria Pereira"
     },
     {
-      image: "https://i.postimg.cc/pXJH5vb3/Matilde-No-brega.png",
-      name: "Matilde No brega"
-    },
-    {
       image: "https://i.postimg.cc/J4N13JJ6/Rita-Rodrigues.png",
       name: "Rita Rodrigues"
     },
@@ -59,8 +47,13 @@ export const basketTeamsImages = {
     {
       image: "https://i.postimg.cc/BvYZL0DJ/Sofia-Carvalho.png",
       name: "Sofia Carvalho"
+    },
+    {
+      image: "https://i.postimg.cc/2SjT9WKf/Deijah-Blanks.png",
+      name: "Deijah Blanks"
     }
   ],
+
   mini_12_femininos: [
     {
       image: "https://i.postimg.cc/6pPq9Cd0/Ana-Maria-Teixeira.png",
@@ -127,6 +120,10 @@ export const basketTeamsImages = {
     {
       image: "https://i.postimg.cc/t43CW8Ps/Tome-Freitas.png",
       name: "Tomé Freitas"
+    },
+    {
+      image: "https://i.postimg.cc/KvKmk9b1/Gustavo-Matias.png",
+      name: "Gustavo Matias"
     }
   ],
   mini_8_9: [
@@ -333,6 +330,36 @@ export const basketTeamsImages = {
     {
       image: "https://i.postimg.cc/Xvch6kwr/Nuno-Agostinho.png",
       name: "Nuno Agostinho"
+    },
+    {
+      image: "https://i.postimg.cc/TPx95HzG/Gustavo-Gonc-alves.png",
+      name: "Gustavo Gonçalves"
+    },
+    {
+      image: "https://i.postimg.cc/LssVVZ80/Guilherme-Fernandes.png",
+      name: "Guilherme Fernandes"
+    }
+  ],
+  sub_18_masculinos: [
+    {
+      image: "https://i.postimg.cc/YC74kKc6/Guilherme-Marques.png",
+      name: "Guilherme Marques"
+    },
+    {
+      image: "https://i.postimg.cc/8kqJKftn/Leonardo-Silva.png",
+      name: "Leonardo Silva"
+    },
+    {
+      image: "https://i.postimg.cc/B6b4sNQc/Lui-s-Sousa.png",
+      name: "Luís Sousa"
+    },
+    {
+      image: "https://i.postimg.cc/3JmyPrqr/Toma-s-Oliveira.png",
+      name: "Tomás Oliveira"
+    },
+    {
+      image: "https://i.postimg.cc/4yCf5Vs6/Joa-o-Lec-a.png",
+      name: "João Leça"
     }
   ]
 };

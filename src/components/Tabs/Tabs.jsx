@@ -1,8 +1,11 @@
 import { barlow } from "@/styles/fonts";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 
 export default function Tabs({ tabs }) {
   const [activeTab, setActiveTab] = useState(tabs[0].name);
+
+  const t = useTranslations();
 
   return (
     <>
@@ -17,7 +20,7 @@ export default function Tabs({ tabs }) {
             }`}
             onClick={() => setActiveTab(tab.name)}
           >
-            {tab.name}
+            {t(tab.name)}
           </button>
         ))}
       </div>

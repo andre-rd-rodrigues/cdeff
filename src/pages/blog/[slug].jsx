@@ -1,7 +1,7 @@
 import AppHead from "@/components/AppHead";
 import BlogPageHeader from "@/components/PageHeader/BlogPageHeader";
 import { getPost, getPosts } from "@/lib/notion";
-import { DATE_FORMAT } from "@/utils";
+import { DATE_FORMAT } from "@/constants";
 import dayjs from "dayjs";
 
 import { useRouter } from "next/router";

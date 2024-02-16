@@ -2,7 +2,7 @@ import IconContact from "@/components/IconContact";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
-import { getTranslations } from "@/utils";
+import { getTranslations } from "@/helpers/locale.helpers.js";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/router";
 import React from "react";
