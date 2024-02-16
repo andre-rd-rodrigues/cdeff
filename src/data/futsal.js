@@ -3,14 +3,14 @@ export const futsalTechnicalTeam = [
     role: "Seniores",
     members: [
       {
-        name: "Bruno Salgado",
-        image: "https://i.postimg.cc/HWbKn4Xx/BRUNO-SALGADO.png",
+        name: "Tiago Rosa",
+        image: "https://i.postimg.cc/pry0jHz7/Tiago-Rosa.png",
         position: "treinador"
       },
       {
-        name: "Tiago Rosa",
-        image: "https://i.postimg.cc/25Dzs6kB/Tiago-Rosa2.png",
-        position: "1º delegado"
+        name: "Eduardo Abreu",
+        image: "https://i.postimg.cc/9Xv78ZnG/Eduardo-Abreu.png",
+        position: "treinador adjunto"
       },
       {
         name: "Albino Leça",
@@ -24,8 +24,18 @@ export const futsalTechnicalTeam = [
     members: [
       {
         name: "Tiago Rosa",
-        image: "https://i.postimg.cc/25Dzs6kB/Tiago-Rosa2.png",
+        image: "https://i.postimg.cc/pry0jHz7/Tiago-Rosa.png",
         position: "treinador"
+      },
+      {
+        name: "Eduardo Abreu",
+        image: "https://i.postimg.cc/9Xv78ZnG/Eduardo-Abreu.png",
+        position: "treinador adjunto"
+      },
+      {
+        name: "João Anazário",
+        image: "https://i.postimg.cc/9FPhFPX7/Joa-o-Anaza-rio.png",
+        position: "1º delegado"
       }
     ]
   },
@@ -53,8 +63,8 @@ export const futsalTechnicalTeam = [
         position: "treinador"
       },
       {
-        name: "Kevin Mendez",
-        image: "https://i.postimg.cc/G3sBy9m9/Kevin-Mendez-co-pia.png",
+        name: "Duarte Rosário",
+        image: "https://i.postimg.cc/85nhvr1d/Duarte-Rosa-rio.png",
         position: "treinador adjunto"
       }
     ]
