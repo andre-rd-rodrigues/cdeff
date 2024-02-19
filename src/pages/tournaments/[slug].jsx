@@ -11,7 +11,7 @@ require("dayjs/locale/en");
 const TournamentDetailsPage = ({ tournament, metadata }) => {
   /*   const { dateStart, dateEnd, description, id, slug, title, image } = metadata; */
   const { locale } = useRouter();
-  console.log(metadata);
+
   return (
     <>
       <AppHead

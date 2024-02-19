@@ -10,10 +10,10 @@ import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
 import TextWithImage from "@/components/TextWithImage/TextWithImage";
 import { futsalProducts } from "@/data/futsal";
-import { getPosts } from "@/lib/notion";
+import { getNotionImagePathname, getPosts } from "@/lib/notion";
 import { barlow } from "@/styles/fonts";
 
-import { REVALIDATE_TIME, getNotionImagePathname } from "@/constants";
+import { REVALIDATE_TIME } from "@/constants";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useRouter } from "next/router";

@@ -2,8 +2,8 @@ import BlogCard from "@/components/Blog/BlogCard";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
-import { getPosts } from "@/lib/notion";
-import { REVALIDATE_TIME, getNotionImagePathname } from "@/constants";
+import { getNotionImagePathname, getPosts } from "@/lib/notion";
+import { REVALIDATE_TIME } from "@/constants";
 import { useTranslations } from "next-intl";
 
 function BlogPage({ posts }) {
