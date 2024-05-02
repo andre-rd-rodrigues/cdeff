@@ -31,11 +31,21 @@ function RegistrationPage() {
           title={t("pages.registrations.activities.title")}
           className={"text-center"}
         />
-        <RegistrationCard
+        {/* Eastern */}
+        {/*   <RegistrationCard
           href="https://docs.google.com/forms/d/e/1FAIpQLSfLB677eyqL_dj2k7iQ19kTui9Odp7zORmz7JTKParwNOe8RA/viewform?usp=sf_link"
           imageSrc="https://i.postimg.cc/sxVnvxXf/ATL-Pa-scoa-1.png"
           title={t("pages.registrations.activities.eastern.title")}
           subTitle={t("pages.registrations.activities.eastern.description")}
+          buttonLabel={t("common.buttons.registration")}
+        /> */}
+
+        {/* Summer */}
+        <RegistrationCard
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfLB677eyqL_dj2k7iQ19kTui9Odp7zORmz7JTKParwNOe8RA/viewform?usp=sf_link"
+          imageSrc="https://i.postimg.cc/rsMdZY3B/atl-verao.jpg"
+          title={t("pages.registrations.activities.summer.title")}
+          subTitle={t("pages.registrations.activities.summer.description")}
           buttonLabel={t("common.buttons.registration")}
         />
         <SectionTitle

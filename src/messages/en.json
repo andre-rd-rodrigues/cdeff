@@ -379,8 +379,12 @@
       "activities": {
         "title": "Activities",
         "eastern": {
-          "title": "Eastern Activities 2024",
+          "title": "Eastern Activities",
           "description": "Registrations: March 25th to April 5th"
+        },
+        "summer": {
+          "title": "Summer Activities",
+          "description": "Registrations: July 2th to September 6th"
         }
       }
     },

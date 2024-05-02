@@ -378,6 +378,10 @@
         "eastern": {
           "title": "ATL de Páscoa",
           "description": "Inscrições: 25 de março a 5 de abril"
+        },
+        "summer": {
+          "title": "ATL de Verão",
+          "description": "Inscrições: 2 de julho a 6 de setembro"
         }
       }
     },
