@@ -42,7 +42,7 @@ function RegistrationPage() {
 
         {/* Summer */}
         <RegistrationCard
-          href="https://docs.google.com/forms/d/e/1FAIpQLSfLB677eyqL_dj2k7iQ19kTui9Odp7zORmz7JTKParwNOe8RA/viewform?usp=sf_link"
+          href="https://forms.gle/u8ZgfHAVZTn4fAyq9"
           imageSrc="https://i.postimg.cc/rsMdZY3B/atl-verao.jpg"
           title={t("pages.registrations.activities.summer.title")}
           subTitle={t("pages.registrations.activities.summer.description")}
