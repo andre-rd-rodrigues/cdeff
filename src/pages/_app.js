@@ -11,7 +11,11 @@ export default function App({ Component, pageProps }) {
           --font-barlow: ${barlow.style.fontFamily};
         }
       `}</style>
-      <NextIntlClientProvider messages={pageProps.messages}>
+      <NextIntlClientProvider
+        locale={pageProps.locale ?? "en"}
+        timeZone={pageProps.timeZone ?? "UTC"}
+        messages={pageProps.messages}
+      >
         <Layout>
           <Component {...pageProps} />
         </Layout>
