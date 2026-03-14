@@ -27,4 +27,12 @@ describe("Button", () => {
 
     expect(onClick).toHaveBeenCalled();
   });
+
+  it("renders with variant when variant is true", () => {
+    render(<Button label="Variant Button" variant />);
+
+    const buttonElement = screen.getByText("Variant Button");
+    expect(buttonElement).toBeInTheDocument();
+    expect(buttonElement.tagName).toBe("BUTTON");
+  });
 });
