@@ -78,11 +78,14 @@ const Footer = () => {
         {sport}
       </p>
       <Link href={hrefs.insta} target="_blank">
-        <Icon className="opacity-50 hover:opacity-100" icon="bi:instagram" />
+        <Icon
+          className="opacity-50 hover:opacity-100 transition-all duration-300 hover:scale-125"
+          icon="bi:instagram"
+        />
       </Link>
       <Link href={hrefs.facebook} target="_blank">
         <Icon
-          className="opacity-50 hover:opacity-100"
+          className="opacity-50 hover:opacity-100 transition-all duration-300 hover:scale-125"
           icon="ic:baseline-facebook"
         />
       </Link>

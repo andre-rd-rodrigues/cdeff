@@ -356,8 +356,8 @@
     "blog": { "title": "Blog", "recentArticles": "Recent articles" },
     "notFound": {
       "title": "404",
-      "subtitle": "Page not found",
-      "description": "The page you are looking for does not exist. Please check the URL or press the button to go back."
+      "subtitle": "Out of bounds!",
+      "description": "Looks like this page went offside. Head back and get back in the game."
     },
     "registrations": {
       "title": "Registrations",

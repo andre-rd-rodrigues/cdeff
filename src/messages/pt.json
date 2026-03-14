@@ -353,8 +353,8 @@
     "blog": { "title": "Blog", "recentArticles": "Artigos" },
     "notFound": {
       "title": "404",
-      "subtitle": "Página não encontrada",
-      "description": "A página que procuras não existe. Prime o botão abaixo para voltares à página anterior."
+      "subtitle": "Fora de jogo!",
+      "description": "Parece que esta página saiu dos limites do campo. Volta atrás e regressa ao jogo."
     },
     "registrations": {
       "title": "Inscrições",

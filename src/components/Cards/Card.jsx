@@ -17,7 +17,7 @@ const Card = ({
 
   return (
     <div
-      className={`relative flex flex-col shadow-xl max-w-[320px] ${className}`}
+      className={`relative flex flex-col shadow-xl max-w-[320px] card-lift overflow-hidden ${className}`}
     >
       <div className="relative h-[350px]">
         <Image

@@ -26,7 +26,7 @@ const Navbar = () => {
   const translations = locale === "en" ? enTranslations : ptTranslations;
   const links = translations.components.navbar.links;
 
-  const linksClasses = `text-l leading-6 text-dark font-normal uppercase ${barlow.className}`;
+  const linksClasses = `text-l leading-6 text-dark font-normal uppercase ${barlow.className} nav-link`;
 
   return (
     <header className="fixed z-50 w-full">
