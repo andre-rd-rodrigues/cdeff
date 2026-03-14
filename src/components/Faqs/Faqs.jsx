@@ -66,7 +66,7 @@ function FaqItem({ question, answer, index, t }) {
               gridTemplateRows: open ? "1fr" : "0fr"
             }}
           >
-            <div className="overflow-hidden">
+            <div className="overflow-hidden" aria-hidden={!open}>
               <Disclosure.Panel
                 static
                 className="pb-6 pr-12"

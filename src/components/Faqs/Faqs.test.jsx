@@ -20,12 +20,13 @@ describe("Faqs", () => {
       "Quais os horários de treinos de basquetebol e futsal?"
     );
 
-    expect(screen.queryByText(/Para verificar os horários de treinos de basquetebol/)).not.toBeInTheDocument();
+    const answer = screen.getByText(/Para verificar os horários de treinos de basquetebol/);
+    expect(answer.closest("[aria-hidden]")).toHaveAttribute("aria-hidden", "true");
 
     fireEvent.click(firstQuestion);
 
     await waitFor(() => {
-      expect(screen.getByText(/Para verificar os horários de treinos de basquetebol/)).toBeInTheDocument();
+      expect(answer.closest("[aria-hidden]")).toHaveAttribute("aria-hidden", "false");
     });
   });
 });
