@@ -79,13 +79,13 @@ const Footer = () => {
       </p>
       <Link href={hrefs.insta} target="_blank">
         <Icon
-          className="opacity-50 hover:opacity-100 transition-all duration-300 hover:scale-125"
+          className="opacity-50 hover:opacity-100 hover:text-cyan transition-all duration-300 hover:scale-110"
           icon="bi:instagram"
         />
       </Link>
       <Link href={hrefs.facebook} target="_blank">
         <Icon
-          className="opacity-50 hover:opacity-100 transition-all duration-300 hover:scale-125"
+          className="opacity-50 hover:opacity-100 hover:text-cyan transition-all duration-300 hover:scale-110"
           icon="ic:baseline-facebook"
         />
       </Link>
@@ -99,7 +99,9 @@ const Footer = () => {
           <Sponsors />
         </div>
       )}
-      <footer className="bg-blue">
+      <div className="bg-blue" style={{ clipPath: "polygon(0 100%, 100% 0, 100% 100%)", height: "50px", marginBottom: "-1px" }} />
+      <footer className="bg-blue relative overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(255,255,255,1) 10px, rgba(255,255,255,1) 20px)" }} />
         <Container className="py-7">
           <div className="flex gap-20 justify-center">
             <FooterSocial

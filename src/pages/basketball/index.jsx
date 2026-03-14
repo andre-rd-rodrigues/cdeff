@@ -43,7 +43,7 @@ function BasketballPage() {
       </Section>
 
       {/* Technical team */}
-      <Section>
+      <Section variant="pattern-dots">
         <SectionTitle
           className="text-center -mb-4"
           title={t("common.pages.techTeam")}

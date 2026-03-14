@@ -22,20 +22,20 @@ function Dropdown({ subLinks, link }) {
       <Transition
         as={Fragment}
         enter="transition ease-out duration-200"
-        enterFrom="opacity-0 translate-y-1"
-        enterTo="opacity-100 translate-y-0"
+        enterFrom="opacity-0 translate-y-1 scale-95"
+        enterTo="opacity-100 translate-y-0 scale-100"
         leave="transition ease-in duration-150"
-        leaveFrom="opacity-100 translate-y-0"
-        leaveTo="opacity-0 translate-y-1"
+        leaveFrom="opacity-100 translate-y-0 scale-100"
+        leaveTo="opacity-0 translate-y-1 scale-95"
       >
-        <Popover.Panel className="absolute top-full z-10 mt-3 overflow-hidden bg-white shadow-lg ">
+        <Popover.Panel className="absolute top-full z-10 mt-3 overflow-hidden bg-white shadow-lg rounded-lg border border-gray-100">
           <div>
             {subLinks.map(({ name, href }) => (
               <Popover.Button
                 as={Link}
                 href={href}
                 key={name}
-                className={`group relative whitespace-nowrap flex items-center px-9 py-4 text-m  hover:bg-gray-50 uppercase ${barlow.className} tracking-wide`}
+                className={`group relative whitespace-nowrap flex items-center px-9 py-4 text-m hover:bg-gray-50 hover:border-l-2 hover:border-red hover:pl-[34px] uppercase ${barlow.className} tracking-wide transition-all duration-150`}
               >
                 {name}
               </Popover.Button>

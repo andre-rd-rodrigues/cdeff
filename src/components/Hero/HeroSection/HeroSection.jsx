@@ -12,7 +12,8 @@ const HeroSection = ({
   title,
   href,
   className,
-  linkProps
+  linkProps,
+  contactHero
 }) => {
   const containerStyle = {
     background: `url(${imageSrc}) no-repeat center center`,
@@ -20,7 +21,7 @@ const HeroSection = ({
   };
 
   return (
-    <div className={`${styles.container} ${className}`} style={containerStyle}>
+    <div className={`${styles.container} ${contactHero ? styles.contactHero : ""} ${className || ""}`} style={containerStyle}>
       <Container className={styles.content}>
         {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
         {title && (

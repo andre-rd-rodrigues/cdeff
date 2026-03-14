@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 13;
+  gap: 13px;
   display: inline-flex;
   color: var(--blue);
   cursor: pointer;
@@ -15,6 +15,21 @@
     box-shadow var(--duration-normal) var(--ease-smooth),
     background-color 0.3s ease,
     color 0.3s ease;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--red);
+    transform: scaleX(0);
+    transition: transform 0.35s var(--ease-smooth);
+  }
 
   &:hover {
     color: white;
@@ -26,6 +41,10 @@
       color: var(--white);
       transform: scale(1.15);
     }
+
+    &::after {
+      transform: scaleX(1);
+    }
   }
 
   &:active {
@@ -36,6 +55,17 @@
 .containerSelected {
   background: var(--blue);
   color: white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--red);
+    transform: scaleX(1);
+  }
 }
 
 .icon {

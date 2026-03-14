@@ -24,7 +24,8 @@ const RegistrationCard = ({
   useEffect(() => setSelectedCountry(locale.toUpperCase()), [locale]);
 
   return (
-    <div className={`relative flex flex-col shadow-xl w-[320px] card-lift overflow-hidden ${className}`}>
+    <div className={`relative flex flex-col w-[320px] card-lift ${className}`}>
+      <div className="h-[3px] bg-gradient-to-r from-blue to-red w-full" />
       <div className="relative h-[350px]">
         <Image
           src={imageSrc}

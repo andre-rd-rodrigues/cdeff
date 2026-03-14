@@ -28,7 +28,8 @@ function EventCard({ event, href }) {
   }, [dateStart, dateEnd, locale]);
 
   return (
-    <Link href={href} className="relative flex flex-col shadow-xl max-w-xs card-lift overflow-hidden">
+    <Link href={href} className="relative flex flex-col max-w-xs card-lift">
+      <div className="h-[3px] bg-red w-full" />
       <div className="relative h-[450px]">
         <Image
           src={image || "/images/metadata.png"}

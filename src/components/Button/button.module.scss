@@ -1,19 +1,23 @@
 .button {
-  background-color: var(--red);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #bd3a4e 0%, #c94e60 100%);
   padding: 10px 35px;
+  border-radius: var(--radius-sm);
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: 200;
+  font-weight: 400;
   font-size: var(--fs-s);
   color: white;
   transition: transform var(--duration-fast) var(--ease-smooth),
     box-shadow var(--duration-fast) var(--ease-smooth),
-    background-color var(--duration-fast) ease;
+    background var(--duration-fast) ease;
 
   &:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-button-hover);
-    background-color: var(--red-hover);
+    background: var(--red-hover);
   }
 
   &:active {
@@ -22,21 +26,37 @@
   }
 }
 
+.arrow {
+  transition: transform var(--duration-fast) var(--ease-smooth);
+}
+
+.button:hover .arrow,
+.button2:hover .arrow {
+  transform: translateX(3px);
+}
+
 .button2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 10px 35px;
+  border-radius: var(--radius-sm);
   text-transform: uppercase;
   border: 1px solid var(--red);
   color: var(--red);
   letter-spacing: 2px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: var(--fs-s);
+  background: linear-gradient(to right, var(--red) 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right;
   transition: transform var(--duration-fast) var(--ease-smooth),
     box-shadow var(--duration-fast) var(--ease-smooth),
-    background-color var(--duration-fast) ease,
+    background-position var(--duration-fast) var(--ease-smooth),
     color var(--duration-fast) ease;
 
   &:hover {
-    background-color: var(--red);
+    background-position: left;
     color: white;
     transform: translateY(-2px);
     box-shadow: var(--shadow-button-hover);

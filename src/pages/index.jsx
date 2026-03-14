@@ -89,7 +89,7 @@ export default function Home({ blogPosts }) {
       </Section>
 
       {/* Departments section */}
-      <Section containerClassName="text-center">
+      <Section containerClassName="text-center" variant="pattern-dots">
         <DepartmentsSection locale={locale} knowMore />
       </Section>
 
@@ -138,7 +138,7 @@ export default function Home({ blogPosts }) {
       />
 
       {/* Blog section */}
-      <Section>
+      <Section variant="pattern-stripes">
         <SectionTitle
           className="text-center"
           title={t("pages.homepage.blog.title")}

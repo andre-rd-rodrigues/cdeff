@@ -16,7 +16,11 @@ function SectionTitle({
         </p>
       )}
       {title && (
-        <h2 className={`${barlow.className} section-header ${textClassName}`}>
+        <h2
+          className={`${barlow.className} section-header ${textClassName} ${
+            className?.includes("text-center") ? "section-header-center" : ""
+          }`}
+        >
           {title}
         </h2>
       )}

@@ -48,7 +48,7 @@ function About() {
       </Section>
 
       {/* Departments Section */}
-      <Section>
+      <Section variant="pattern-dots">
         <div id="departments">
           <DepartmentsSection locale={locale} />
         </div>

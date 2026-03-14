@@ -19,7 +19,7 @@ function BlogCard({ article }) {
   return (
     <Link
       href={`/blog/${slug}`}
-      className="relative flex flex-col shadow-xl w-full md:max-w-sm card-lift overflow-hidden"
+      className="relative flex flex-col w-full md:max-w-sm card-lift"
     >
       <div className="relative h-[250px]">
         <Image
@@ -30,8 +30,9 @@ function BlogCard({ article }) {
             objectFit: "cover"
           }}
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
       </div>
-      <p className="text-sm font-light text-gray-400 px-5 pt-5">
+      <p className="text-sm font-medium text-red px-5 pt-5 tracking-wide uppercase">
         {dayjs(date).locale(locale).format(DATE_FORMAT)}
       </p>
       <div className="px-5 pt-3 pb-8">

@@ -13,11 +13,19 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))"
       },
 
+      borderRadius: {
+        sm: "var(--radius-sm)",
+        md: "var(--radius-md)",
+        lg: "var(--radius-lg)",
+        xl: "var(--radius-xl)"
+      },
+
       colors: {
         blue: "#273E79",
         red: "#bd3a4e",
         lightGrey: "#f5f5f5",
-        dark: "#2f333a"
+        dark: "#2f333a",
+        cyan: "#3a9ebd"
       }
     }
   },

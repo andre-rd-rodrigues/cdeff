@@ -6,8 +6,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 13;
+  gap: 13px;
   display: inline-flex;
+  border-radius: var(--radius-md);
+  overflow: hidden;
   color: var(--blue);
   cursor: pointer;
   transition: transform var(--duration-normal) var(--ease-smooth),

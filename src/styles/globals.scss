@@ -30,6 +30,13 @@
   --duration-fast: 0.25s;
   --duration-normal: 0.35s;
 
+  /* Border radius scale */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 9999px;
+
   /* Z-index scale */
   --z-overlay: 1;
   --z-content: 2;
@@ -82,7 +89,7 @@ h4 {
 
 p {
   font-size: var(--fs-m);
-  font-weight: 200;
+  font-weight: 300;
   line-height: 30px;
 }
 
@@ -151,6 +158,18 @@ footer {
 .subtitle {
   font-size: var(--fs-s);
   color: var(--blue);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  &::before {
+    content: "";
+    width: 28px;
+    height: 2px;
+    background: var(--red);
+    display: inline-block;
+    flex-shrink: 0;
+  }
 }
 
 .section-header {
@@ -158,6 +177,27 @@ footer {
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--blue);
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--red);
+    border-radius: 2px;
+    transition: width 0.5s var(--ease-smooth);
+  }
+}
+
+.section-header-center {
+  &::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .sub_section_title {
@@ -269,12 +309,143 @@ footer {
 
 /* Card lift effect */
 .card-lift {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid rgba(39, 62, 121, 0.06);
   transition: transform var(--duration-normal) var(--ease-smooth),
-    box-shadow var(--duration-normal) var(--ease-smooth);
+    box-shadow var(--duration-normal) var(--ease-smooth),
+    border-color var(--duration-normal) ease;
 
   &:hover {
     transform: translateY(-6px);
     box-shadow: var(--shadow-card-hover);
+    border-color: rgba(39, 62, 121, 0.12);
+  }
+}
+
+/* Background pattern utilities */
+.bg-diagonal-stripes {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 10px,
+      rgba(39, 62, 121, 0.035) 10px,
+      rgba(39, 62, 121, 0.035) 20px
+    );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.bg-dots-pattern {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(
+      rgba(39, 62, 121, 0.06) 1px,
+      transparent 1px
+    );
+    background-size: 24px 24px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* Angular section divider */
+.section-angle-top {
+  clip-path: polygon(0 40px, 100% 0, 100% 100%, 0 100%);
+  margin-top: -40px;
+  padding-top: calc(var(--padding-y) + 40px);
+}
+
+.section-angle-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), 0 100%);
+  padding-bottom: calc(var(--padding-y) + 40px);
+}
+
+/* Dark section variant */
+.section-dark {
+  background: var(--blue);
+  color: white;
+
+  .subtitle {
+    color: var(--cyan);
+
+    &::before {
+      background: var(--cyan);
+    }
+  }
+
+  .section-header {
+    color: white;
+
+    &::after {
+      background: var(--cyan);
+    }
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.85);
+  }
+}
+
+/* Stagger delays for card grids */
+.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
+.reveal-delay-6 { transition-delay: 0.6s; }
+
+/* Decorative accent shapes */
+.accent-shape {
+  position: absolute;
+  border-radius: var(--radius-lg);
+  opacity: 0.06;
+  background: var(--blue);
+  pointer-events: none;
+}
+
+.accent-shape-red {
+  background: var(--red);
+}
+
+/* Image with decorative offset background */
+.image-decorated {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 100%;
+    height: 100%;
+    background: var(--blue);
+    opacity: 0.08;
+    border-radius: var(--radius-lg);
+    z-index: -1;
+    transition: transform 0.4s var(--ease-smooth);
+  }
+
+  &:hover::before {
+    transform: translate(4px, 4px);
   }
 }
 
@@ -282,5 +453,16 @@ footer {
 @media only screen and (max-width: 576px) {
   .section-header {
     margin-bottom: 10px;
+  }
+
+  .section-angle-top {
+    clip-path: polygon(0 20px, 100% 0, 100% 100%, 0 100%);
+    margin-top: -20px;
+    padding-top: calc(var(--padding-y) + 20px);
+  }
+
+  .section-angle-bottom {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), 0 100%);
+    padding-bottom: calc(var(--padding-y) + 20px);
   }
 }

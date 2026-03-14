@@ -74,7 +74,7 @@ const Navbar = () => {
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-50 overflow-y-auto bg-white px-6 py-6 sm:max-w-sm ring-1 ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-50 overflow-y-auto bg-white px-6 py-6 sm:max-w-sm ring-1 ring-gray-900/10 rounded-l-xl shadow-2xl">
           <div className="flex items-center justify-between">
             <CompanyLogo isLargeMenu={false} />
             <CloseButton handleClose={() => setMobileMenuOpen(false)} />
