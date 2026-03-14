@@ -31,7 +31,7 @@ function TournamentsPage({ tournaments }) {
       />
       <Section containerClassName={"-mt-7"}>
         <SectionTitle
-          subTitle={t("pages.tournaments.selectSport")}
+          subtitle={t("pages.tournaments.selectSport")}
           className={"text-center"}
         />
         {/* Sport select */}

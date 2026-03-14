@@ -12,7 +12,7 @@ describe("RegistrationCard", () => {
     render(
       <RegistrationCard
         {...defaultProps}
-        subTitle="Test subtitle"
+        subtitle="Test subtitle"
       />
     );
 

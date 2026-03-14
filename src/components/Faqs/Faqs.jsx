@@ -27,11 +27,11 @@ function Faqs() {
                   <PlusIcon className="w-7" />
                 </span>
 
-                <h1
+                <h3
                   className={`${barlow.className} text-start mx-4 uppercase text-blue text-xl font-medium group-hover:text-cyan transition-colors duration-200`}
                 >
                   {question}
-                </h1>
+                </h3>
               </Disclosure.Button>
 
               <Transition

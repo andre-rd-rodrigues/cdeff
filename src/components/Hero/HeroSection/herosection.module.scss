@@ -14,8 +14,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #273e79c1;
-    z-index: 1;
+    background: var(--overlay-blue);
+    z-index: var(--z-overlay);
   }
 }
 
@@ -26,7 +26,7 @@
 
   button {
     position: relative;
-    z-index: 2;
+    z-index: var(--z-content);
   }
 }
 
@@ -34,22 +34,22 @@
   position: relative;
   font-size: var(--fs-s);
   text-transform: uppercase;
-  z-index: 2;
+  z-index: var(--z-content);
   font-weight: 400;
   opacity: 0;
   transform: translateY(16px);
-  animation: heroContentIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+  animation: heroContentIn 0.7s var(--ease-smooth) 0.2s forwards;
 }
 
 .title {
   position: relative;
   margin: 15px 0 25px 0;
-  z-index: 2;
+  z-index: var(--z-content);
   font-size: var(--fs-l);
   font-weight: 500;
   opacity: 0;
   transform: translateY(16px);
-  animation: heroContentIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.35s forwards;
+  animation: heroContentIn 0.7s var(--ease-smooth) 0.35s forwards;
 }
 
 @keyframes heroContentIn {

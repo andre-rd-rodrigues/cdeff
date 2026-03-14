@@ -19,7 +19,7 @@ function DepartmentsSection({ knowMore }) {
       />
       <div
         className="flex flex-wrap gap-12 justify-around mb-12"
-        style={{ marginTop: "75px" }}
+        style={{ marginTop: "var(--spacing-section-gap)" }}
       >
         {renderDepartments.map(({ department, members }, i) => (
           <div key={i} className="flex flex-col items-center">
@@ -34,7 +34,7 @@ function DepartmentsSection({ knowMore }) {
                   key={i}
                   imageSrc={imageSrc}
                   title={name}
-                  subTitle={t(`common.positions.${position}`)}
+                  subtitle={t(`common.positions.${position}`)}
                 />
               ))}
             </div>

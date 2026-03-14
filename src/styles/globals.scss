@@ -8,10 +8,36 @@
   --light-grey: #f5f5f5;
   --blue: #273e79;
   --red: #bd3a4e;
+  --red-hover: #a83245;
   --cyan: #3a9ebd;
   --white: white;
 
-  //Sizes
+  /* Overlays */
+  --overlay-blue: #273e79c1;
+  --overlay-blue-dark: #21366be7;
+
+  /* Shadows */
+  --shadow-card: 5px 4px 30px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover: 0 20px 40px rgba(39, 62, 121, 0.12),
+    0 8px 16px rgba(39, 62, 121, 0.08);
+  --shadow-card-hover-strong: 0 16px 32px rgba(39, 62, 121, 0.18);
+  --shadow-button-hover: 0 6px 20px rgba(189, 58, 78, 0.3);
+  --shadow-button-active: 0 2px 8px rgba(189, 58, 78, 0.2);
+  --shadow-nav: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+  /* Motion */
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 0.25s;
+  --duration-normal: 0.35s;
+
+  /* Z-index scale */
+  --z-overlay: 1;
+  --z-content: 2;
+  --z-dropdown: 10;
+  --z-navbar: 50;
+  --z-loading: 1000;
+
+  /* Font sizes */
   --fs-xxl: clamp(3.5rem, 10vw, 5rem);
   --fs-xl: clamp(2.3rem, 8vw, 3.5rem);
   --fs-xl-l: clamp(1.8rem, 5vw, 3.2rem);
@@ -19,13 +45,15 @@
   --fs-l-s: clamp(1.5rem, 5vw, 2rem);
   --fs-m: clamp(1rem, 10vw, 0.9rem);
   --fs-s: clamp(0.7rem, 10vw, 0.8rem);
+  --fs-xs: 13px;
 
+  /* Spacing */
   --padding-y: clamp(20px, 5vw, 70px);
   --padding-root-y: 0 var(--padding-y);
-
   --page-max-width: 1600px;
+  --spacing-section-gap: 75px;
 
-  //Breakpoints
+  /* Breakpoints */
   --breaking-point-xxl: 1400px;
   --breaking-point-xl: 1200px;
   --breaking-point-lg: 992px;
@@ -185,8 +213,8 @@ footer {
 .reveal {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: opacity 0.7s var(--ease-smooth),
+    transform 0.7s var(--ease-smooth);
 }
 
 .reveal-visible {
@@ -231,7 +259,7 @@ footer {
     width: 0;
     height: 2px;
     background-color: var(--red);
-    transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: width 0.3s var(--ease-smooth);
   }
 
   &:hover::after {
@@ -241,13 +269,12 @@ footer {
 
 /* Card lift effect */
 .card-lift {
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform var(--duration-normal) var(--ease-smooth),
+    box-shadow var(--duration-normal) var(--ease-smooth);
 
   &:hover {
     transform: translateY(-6px);
-    box-shadow: 0 20px 40px rgba(39, 62, 121, 0.12),
-      0 8px 16px rgba(39, 62, 121, 0.08);
+    box-shadow: var(--shadow-card-hover);
   }
 }
 

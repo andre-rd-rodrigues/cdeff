@@ -38,7 +38,7 @@ function BasketballPage() {
           title={t("pages.basketball.welcome.title")}
           subtitle={t("pages.basketball.welcome.subtitle")}
           description={t("pages.basketball.welcome.description")}
-          imgSrc="https://i.postimg.cc/65gGMZpq/modalidades-basquetebol.jpg"
+          imageSrc="https://i.postimg.cc/65gGMZpq/modalidades-basquetebol.jpg"
         />
       </Section>
 
@@ -50,7 +50,7 @@ function BasketballPage() {
         />
         <div
           className="flex flex-wrap gap-12 justify-around mb-12"
-          style={{ marginTop: "75px" }}
+          style={{ marginTop: "var(--spacing-section-gap)" }}
         >
           {basketTechnicalTeam.map(({ role, members }, i) => (
             <div key={i} className="flex flex-col items-center">
@@ -65,7 +65,7 @@ function BasketballPage() {
                     key={i}
                     imageSrc={image}
                     title={name}
-                    subTitle={
+                    subtitle={
                       position && t(`pages.basketball.teamRoles.${position}`)
                     }
                   />
@@ -81,7 +81,7 @@ function BasketballPage() {
         <SectionTitle
           className="text-center -mb-4"
           title={t("common.pages.selectRank")}
-          subTitle={t("common.pages.squad")}
+          subtitle={t("common.pages.squad")}
         />
         <Tabs
           tabs={[

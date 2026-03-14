@@ -36,7 +36,7 @@ function RegistrationPage() {
           href="https://docs.google.com/forms/d/e/1FAIpQLSfLB677eyqL_dj2k7iQ19kTui9Odp7zORmz7JTKParwNOe8RA/viewform?usp=sf_link"
           imageSrc="https://i.postimg.cc/sxVnvxXf/ATL-Pa-scoa-1.png"
           title={t("pages.registrations.activities.eastern.title")}
-          subTitle={t("pages.registrations.activities.eastern.description")}
+          subtitle={t("pages.registrations.activities.eastern.description")}
           buttonLabel={t("common.buttons.registration")}
         /> */}
 
@@ -45,7 +45,7 @@ function RegistrationPage() {
           href="https://forms.gle/u8ZgfHAVZTn4fAyq9"
           imageSrc="https://i.postimg.cc/rsMdZY3B/atl-verao.jpg"
           title={t("pages.registrations.activities.summer.title")}
-          subTitle={t("pages.registrations.activities.summer.description")}
+          subtitle={t("pages.registrations.activities.summer.description")}
           buttonLabel={t("common.buttons.registration")}
         />
         <SectionTitle
@@ -74,7 +74,7 @@ function RegistrationPage() {
                 links={viiTournamentPre1StageLinks}
                 imageSrc={"https://i.postimg.cc/KzBPZ6xQ/PT.jpg"}
                 title={t("pages.registrations.futsal.viiTournament.title")}
-                subTitle={t(
+                subtitle={t(
                   "pages.registrations.futsal.viiTournament.preRegistration"
                 )}
                 buttonLabel={t("common.buttons.registration")}
@@ -84,7 +84,7 @@ function RegistrationPage() {
                 links={viiTournamentOfficial2StageLinks}
                 imageSrc={"https://i.postimg.cc/KzBPZ6xQ/PT.jpg"}
                 title={t("pages.registrations.futsal.viiTournament.title")}
-                subTitle={t(
+                subtitle={t(
                   "pages.registrations.futsal.viiTournament.oficialRegistration"
                 )}
                 buttonLabel={t("common.buttons.registration")}
@@ -100,7 +100,7 @@ function RegistrationPage() {
                 title={t(
                   "pages.registrations.basket.nationalTournament2024.title"
                 )}
-                subTitle={t(
+                subtitle={t(
                   "pages.registrations.basket.nationalTournament2024.preRegistration"
                 )}
                 buttonLabel={t("common.buttons.registration")}
@@ -112,7 +112,7 @@ function RegistrationPage() {
                 title={t(
                   "pages.registrations.basket.nationalTournament2024.title"
                 )}
-                subTitle={t(
+                subtitle={t(
                   "pages.registrations.basket.nationalTournament2024.oficialRegistration"
                 )}
                 buttonLabel={t("common.buttons.registration")}
@@ -125,7 +125,7 @@ function RegistrationPage() {
                 }
                 title={t("common.membership")}
                 href="https://docs.google.com/forms/d/e/1FAIpQLSciyolXxZhuXbCMtGl9-31624IP1bHT3YEe-7WxjjCuNPBGGQ/viewform?usp=sf_link"
-                subTitle={t("common.sports.basketball")}
+                subtitle={t("common.sports.basketball")}
               />
             </>
           )}

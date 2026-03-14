@@ -3,16 +3,16 @@ import React from "react";
 
 function SectionTitle({
   title,
-  subTitle,
+  subtitle,
   className,
   isSubSectionTitle,
   textClassName
 }) {
   return (
     <div className={`${className} ${isSubSectionTitle && "sub_section_title"}`}>
-      {subTitle && (
+      {subtitle && (
         <p className={`uppercase font-semibold subtitle tracking-wider`}>
-          {subTitle}
+          {subtitle}
         </p>
       )}
       {title && (

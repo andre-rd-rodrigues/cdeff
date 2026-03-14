@@ -3,7 +3,7 @@
   height: 100%;
   padding: 41px 8px;
   background: white;
-  box-shadow: 5px 4px 30px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--shadow-card);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -11,8 +11,8 @@
   display: inline-flex;
   color: var(--blue);
   cursor: pointer;
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+  transition: transform var(--duration-normal) var(--ease-smooth),
+    box-shadow var(--duration-normal) var(--ease-smooth),
     background-color 0.3s ease,
     color 0.3s ease;
 
@@ -20,7 +20,7 @@
     color: white;
     background-color: var(--blue);
     transform: translateY(-6px);
-    box-shadow: 0 16px 32px rgba(39, 62, 121, 0.18);
+    box-shadow: var(--shadow-card-hover-strong);
 
     .icon {
       color: var(--white);
@@ -40,7 +40,7 @@
 
 .icon {
   color: var(--blue);
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+  transition: transform var(--duration-normal) var(--ease-smooth),
     color 0.3s ease;
 }
 
@@ -58,7 +58,7 @@
 
 .description {
   text-align: center;
-  font-size: 13px;
+  font-size: var(--fs-xs);
   font-weight: 400;
   word-wrap: break-word;
 }

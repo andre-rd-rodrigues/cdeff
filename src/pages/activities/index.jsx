@@ -32,7 +32,7 @@ function ActivitiesPage() {
         <TextWithImage
           title={t("pages.activities.section_1.title")}
           description={t("pages.activities.section_1.description")}
-          imgSrc="https://i.postimg.cc/0Nfj1KPp/ATL.jpg"
+          imageSrc="https://i.postimg.cc/0Nfj1KPp/ATL.jpg"
           labelOptions={{
             href: TEL_LINK,
             label: t("common.buttons.contact")
@@ -45,7 +45,7 @@ function ActivitiesPage() {
         <TextWithImage
           title={t("pages.activities.section_2.title")}
           description={t("pages.activities.section_2.description")}
-          imgSrc="https://i.postimg.cc/4nks9XXf/Organizac-a-o-de-Aniversa-rios.jpg"
+          imageSrc="https://i.postimg.cc/4nks9XXf/Organizac-a-o-de-Aniversa-rios.jpg"
           labelOptions={{
             href: TEL_LINK,
             label: t("common.buttons.contact")
@@ -59,7 +59,7 @@ function ActivitiesPage() {
         <TextWithImage
           title={t("pages.activities.section_3.title")}
           description={t("pages.activities.section_3.description")}
-          imgSrc="https://i.postimg.cc/024pWKh7/Orientac-a-o.jpg"
+          imageSrc="https://i.postimg.cc/024pWKh7/Orientac-a-o.jpg"
           labelOptions={{
             href: TEL_LINK,
             label: t("common.buttons.contact")
@@ -75,7 +75,7 @@ function ActivitiesPage() {
           location={t("pages.activities.section_4.location")}
           schedule={section_4_schedule_array}
           contact={t("pages.activities.section_4.contact")}
-          imgSrc="https://i.postimg.cc/zDPj1VfZ/Muay-Thai.jpg"
+          imageSrc="https://i.postimg.cc/zDPj1VfZ/Muay-Thai.jpg"
           labelOptions={{
             href: "tel:+351 966372155",
             label: t("common.buttons.contact")
@@ -92,7 +92,7 @@ function ActivitiesPage() {
           location={t("pages.activities.section_5.location")}
           schedule={section_5_schedule_array}
           contact={t("pages.activities.section_5.contact")}
-          imgSrc="https://i.postimg.cc/1tVpmKtk/Zumba.jpg"
+          imageSrc="https://i.postimg.cc/1tVpmKtk/Zumba.jpg"
           labelOptions={{
             href: "tel:+351 966410578",
             label: t("common.buttons.contact")
@@ -108,7 +108,7 @@ function ActivitiesPage() {
           location={t("pages.activities.section_6.location")}
           schedule={section_6_schedule_array}
           contact={t("pages.activities.section_6.contact")}
-          imgSrc="https://i.postimg.cc/Y01YgqQ8/Gina-stica.jpg"
+          imageSrc="https://i.postimg.cc/Y01YgqQ8/Gina-stica.jpg"
           labelOptions={{
             href: "tel:+351 966573753",
             label: t("common.buttons.contact")

@@ -33,7 +33,7 @@ function About() {
           title={t("pages.about.welcome.title")}
           subtitle={t("pages.about.welcome.subtitle")}
           description={t("pages.about.welcome.description")}
-          imgSrc="https://i.postimg.cc/PJ3NPLJ9/welcome.png"
+          imageSrc="https://i.postimg.cc/PJ3NPLJ9/welcome.png"
         />
       </Section>
 
@@ -42,7 +42,7 @@ function About() {
           title={t("pages.about.mission.title")}
           subtitle={t("pages.about.mission.subtitle")}
           description={t("pages.about.mission.description")}
-          imgSrc="https://i.postimg.cc/15mpX6CC/mission.jpg"
+          imageSrc="https://i.postimg.cc/15mpX6CC/mission.jpg"
           imageRight
         />
       </Section>
@@ -75,7 +75,7 @@ function About() {
           title={t("pages.about.activities.title")}
           subtitle={t("pages.about.activities.subtitle")}
           description={t("pages.about.activities.description")}
-          imgSrc="https://i.postimg.cc/0Nfj1KPp/ATL.jpg"
+          imageSrc="https://i.postimg.cc/0Nfj1KPp/ATL.jpg"
           labelOptions={{
             href: "/activities",
             label: t("common.buttons.seeMore")
@@ -88,7 +88,7 @@ function About() {
         <SectionTitle
           className={"text-center"}
           title={t("pages.about.achievements.title")}
-          subTitle={t("pages.about.achievements.subtitle")}
+          subtitle={t("pages.about.achievements.subtitle")}
         />
 
         {/* Basketball */}
@@ -113,7 +113,7 @@ function About() {
               className="keen-slider__slide pb-8 flex justify-center"
               key={i}
             >
-              <Card title={title} imageSrc={image} subTitle={date} />
+              <Card title={title} imageSrc={image} subtitle={date} />
             </div>
           ))}
         </Carousel>
@@ -140,7 +140,7 @@ function About() {
               className="keen-slider__slide pb-8 flex justify-center"
               key={i}
             >
-              <Card title={title} imageSrc={image} subTitle={date} />
+              <Card title={title} imageSrc={image} subtitle={date} />
             </div>
           ))}
         </Carousel>

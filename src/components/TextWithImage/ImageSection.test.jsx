@@ -3,7 +3,7 @@ import ImageSection from "./ImageSection";
 
 describe("ImageSection", () => {
   it("renders image", () => {
-    render(<ImageSection imgSrc="/test-image.jpg" title="Image alt" />);
+    render(<ImageSection imageSrc="/test-image.jpg" title="Image alt" />);
 
     expect(screen.getByRole("img", { name: "Image alt" })).toBeInTheDocument();
   });

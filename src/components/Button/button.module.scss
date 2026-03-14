@@ -6,19 +6,19 @@
   font-weight: 200;
   font-size: var(--fs-s);
   color: white;
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
-    background-color 0.2s ease;
+  transition: transform var(--duration-fast) var(--ease-smooth),
+    box-shadow var(--duration-fast) var(--ease-smooth),
+    background-color var(--duration-fast) ease;
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(189, 58, 78, 0.3);
-    background-color: #a83245;
+    box-shadow: var(--shadow-button-hover);
+    background-color: var(--red-hover);
   }
 
   &:active {
     transform: translateY(1px);
-    box-shadow: 0 2px 8px rgba(189, 58, 78, 0.2);
+    box-shadow: var(--shadow-button-active);
   }
 }
 
@@ -30,20 +30,20 @@
   letter-spacing: 2px;
   font-weight: 300;
   font-size: var(--fs-s);
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
-    background-color 0.2s ease,
-    color 0.2s ease;
+  transition: transform var(--duration-fast) var(--ease-smooth),
+    box-shadow var(--duration-fast) var(--ease-smooth),
+    background-color var(--duration-fast) ease,
+    color var(--duration-fast) ease;
 
   &:hover {
     background-color: var(--red);
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(189, 58, 78, 0.25);
+    box-shadow: var(--shadow-button-hover);
   }
 
   &:active {
     transform: translateY(1px);
-    box-shadow: 0 2px 8px rgba(189, 58, 78, 0.15);
+    box-shadow: var(--shadow-button-active);
   }
 }

@@ -34,7 +34,7 @@ function FutsalPage() {
           title={t("pages.futsal.welcome.title")}
           subtitle={t("pages.futsal.welcome.subtitle")}
           description={t("pages.futsal.welcome.description")}
-          imgSrc="https://images.unsplash.com/photo-1669046238811-8e748e79b8de?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          imageSrc="https://images.unsplash.com/photo-1669046238811-8e748e79b8de?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         />
       </Section>
 
@@ -46,7 +46,7 @@ function FutsalPage() {
         />
         <div
           className="flex flex-wrap gap-12 justify-around mb-12"
-          style={{ marginTop: "75px" }}
+          style={{ marginTop: "var(--spacing-section-gap)" }}
         >
           {futsalTechnicalTeam.map(({ role, members }, i) => (
             <div key={i} className="flex flex-col items-center">
@@ -60,7 +60,7 @@ function FutsalPage() {
                     className={"w-[220px] h-[300px]"}
                     key={i}
                     imageSrc={image}
-                    subTitle={t(`pages.futsal.sportRoles.${position}`)}
+                    subtitle={t(`pages.futsal.sportRoles.${position}`)}
                     title={name}
                   />
                 ))}
@@ -75,7 +75,7 @@ function FutsalPage() {
         <SectionTitle
           className="text-center mb-1 md:-mb-1"
           title={t("common.pages.selectRank")}
-          subTitle={t("common.pages.squad")}
+          subtitle={t("common.pages.squad")}
         />
         <Tabs
           tabs={[

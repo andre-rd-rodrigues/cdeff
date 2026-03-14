@@ -2,7 +2,7 @@
   width: 200px;
   height: 100%;
   padding: 41px 8px;
-  box-shadow: 5px 4px 30px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--shadow-card);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -10,14 +10,24 @@
   display: inline-flex;
   color: var(--blue);
   cursor: pointer;
-  transition: 0.2s ease;
+  transition: transform var(--duration-normal) var(--ease-smooth),
+    box-shadow var(--duration-normal) var(--ease-smooth),
+    background-color 0.3s ease,
+    color 0.3s ease;
 
   &:hover {
     color: white;
     background-color: var(--blue);
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-card-hover-strong);
+
     .icon {
       color: var(--white);
     }
+  }
+
+  &:active {
+    transform: translateY(-2px);
   }
 }
 
@@ -31,7 +41,7 @@
 
 .description {
   text-align: center;
-  font-size: 13px;
+  font-size: var(--fs-xs);
   font-weight: 400;
   word-wrap: break-word;
 }

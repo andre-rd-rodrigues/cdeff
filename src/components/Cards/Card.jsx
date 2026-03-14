@@ -8,7 +8,7 @@ const Card = ({
   hasButton,
   title,
   description,
-  subTitle,
+  subtitle,
   imageSrc,
   className,
   imgContain
@@ -36,9 +36,9 @@ const Card = ({
           >
             {title}
           </h4>
-          {subTitle && (
+          {subtitle && (
             <p className="text-center text-gray-500 text-sm font-medium mt-1 break-words">
-              {subTitle}
+              {subtitle}
             </p>
           )}
           {description && (

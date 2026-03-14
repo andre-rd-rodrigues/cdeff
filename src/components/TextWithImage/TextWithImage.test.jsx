@@ -7,7 +7,7 @@ describe("TextWithImage", () => {
       <TextWithImage
         title="Section Title"
         description="Section description"
-        imgSrc="/test-image.jpg"
+        imageSrc="/test-image.jpg"
       />
     );
 

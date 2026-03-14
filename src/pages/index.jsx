@@ -80,7 +80,7 @@ export default function Home({ blogPosts }) {
           subtitle={t("pages.homepage.welcome.subtitle")}
           title={t("pages.homepage.welcome.title")}
           description={t("pages.homepage.welcome.description")}
-          imgSrc={"https://i.postimg.cc/PJ3NPLJ9/welcome.png"}
+          imageSrc={"https://i.postimg.cc/PJ3NPLJ9/welcome.png"}
           labelOptions={{
             href: "about",
             label: t("common.buttons.learnMore")
@@ -106,7 +106,7 @@ export default function Home({ blogPosts }) {
       <Section>
         <SectionTitle
           title={t("pages.homepage.store.title")}
-          subTitle={t("pages.homepage.store.subtitle")}
+          subtitle={t("pages.homepage.store.subtitle")}
         />
         <div className="flex flex-wrap gap-10 justify-center md:justify-between">
           {futsalProducts
@@ -142,7 +142,7 @@ export default function Home({ blogPosts }) {
         <SectionTitle
           className="text-center"
           title={t("pages.homepage.blog.title")}
-          subTitle={t("pages.homepage.blog.subtitle")}
+          subtitle={t("pages.homepage.blog.subtitle")}
         />
         <div className="flex flex-wrap justify-center gap-10">
           {blogPosts?.map((post, i) => (

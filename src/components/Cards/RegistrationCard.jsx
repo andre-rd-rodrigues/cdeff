@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 const RegistrationCard = ({
   title,
   description,
-  subTitle,
+  subtitle,
   imageSrc,
   className,
   links,
@@ -24,7 +24,7 @@ const RegistrationCard = ({
   useEffect(() => setSelectedCountry(locale.toUpperCase()), [locale]);
 
   return (
-    <div className={`relative flex flex-col shadow-xl w-[320px] ${className}`}>
+    <div className={`relative flex flex-col shadow-xl w-[320px] card-lift overflow-hidden ${className}`}>
       <div className="relative h-[350px]">
         <Image
           src={imageSrc}
@@ -42,9 +42,9 @@ const RegistrationCard = ({
           >
             {title}
           </h4>
-          {subTitle && (
+          {subtitle && (
             <p className="text-center text-gray-500 text-sm font-medium mt-1 break-words">
-              {subTitle}
+              {subtitle}
             </p>
           )}
           <p className="text-gray-700 text-justify text-sm break-words mt-4 mb-6">

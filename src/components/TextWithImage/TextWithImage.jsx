@@ -7,7 +7,7 @@ const TextWithImage = ({
   description,
   labelOptions,
   subtitle,
-  imgSrc,
+  imageSrc,
   imageRight,
   location,
   schedule,
@@ -27,11 +27,11 @@ const TextWithImage = ({
             contact
           }}
         />
-        <ImageSection {...{ imgSrc, title }} />
+        <ImageSection {...{ imageSrc, title }} />
       </>
     ) : (
       <>
-        <ImageSection {...{ imgSrc, title }} />
+        <ImageSection {...{ imageSrc, title }} />
         <TextSection
           {...{
             subtitle,
