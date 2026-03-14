@@ -1,5 +1,5 @@
 import { render, screen } from "@/test-utils";
-import Contacts from "./index";
+import Contacts from "@/pages/contacts";
 
 describe("Contacts Page", () => {
   it("renders the page header with title", () => {

@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from "@/test-utils";
 import { useRouter } from "next/router";
-import NotFoundPage from "./404";
+import NotFoundPage from "@/pages/404";
 
 describe("404 Page", () => {
   it("renders error title and description", () => {

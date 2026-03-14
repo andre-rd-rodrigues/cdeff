@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from "@/test-utils";
 import { useRouter } from "next/router";
-import RegistrationPage from "./index";
+import RegistrationPage from "@/pages/registrations";
 
 describe("Registrations Page", () => {
   beforeEach(() => {

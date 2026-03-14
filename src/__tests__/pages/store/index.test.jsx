@@ -1,5 +1,5 @@
 import { render, screen } from "@/test-utils";
-import StorePage from "./index";
+import StorePage from "@/pages/store";
 
 describe("Store Page", () => {
   it("renders the page header with title", () => {

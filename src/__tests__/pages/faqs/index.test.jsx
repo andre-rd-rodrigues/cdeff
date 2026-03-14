@@ -1,5 +1,5 @@
 import { render, screen } from "@/test-utils";
-import FaqsPage from "./index";
+import FaqsPage from "@/pages/faqs";
 
 describe("FAQs Page", () => {
   it("renders the page header with title", () => {
