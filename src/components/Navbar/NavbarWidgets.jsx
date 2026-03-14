@@ -20,7 +20,7 @@ const CompanyLogo = ({ isLargeMenu = true }) => {
   const t = useTranslations();
   return (
     <Link href="/" className="flex items-center">
-      <Image width={70} height={70} src="/images/logo.png" alt="" />
+      <Image width={46} height={46} src="/images/logo.png" alt="" />
       <p
         className={`${barlow.className} uppercase -translate-y-2 ${
           isLargeMenu && "hidden sm:block"

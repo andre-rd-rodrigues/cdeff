@@ -158,7 +158,7 @@ footer {
 .subtitle {
   font-size: var(--fs-s);
   color: var(--blue);
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 10px;
 
@@ -179,7 +179,9 @@ footer {
   color: var(--blue);
   position: relative;
   display: inline-block;
+}
 
+.section-header-accent {
   &::after {
     content: "";
     position: absolute;
@@ -397,10 +399,10 @@ footer {
 
   .section-header {
     color: white;
+  }
 
-    &::after {
-      background: var(--cyan);
-    }
+  .section-header-accent::after {
+    background: var(--cyan);
   }
 
   p {

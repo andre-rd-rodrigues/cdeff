@@ -17,7 +17,7 @@
   &:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-button-hover);
-    background: var(--red-hover);
+    background: linear-gradient(135deg, var(--red-hover) 0%, #b8444f 100%);
   }
 
   &:active {

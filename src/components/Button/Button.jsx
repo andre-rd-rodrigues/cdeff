@@ -1,4 +1,5 @@
 import React from "react";
+import { barlow } from "@/styles/fonts";
 import styles from "./button.module.scss";
 
 const ChevronIcon = ({ fill = "currentColor" }) => (
@@ -23,7 +24,7 @@ const ChevronIcon = ({ fill = "currentColor" }) => (
 const Button = ({ label, className, onClick, variant, showArrow = false }) => {
   return variant ? (
     <button
-      className={`py-2 px-6 ${styles.button2} ${className}`}
+      className={`py-2 px-6 ${styles.button2} ${barlow.className} ${className}`}
       onClick={onClick}
     >
       {label}
@@ -31,7 +32,7 @@ const Button = ({ label, className, onClick, variant, showArrow = false }) => {
     </button>
   ) : (
     <button
-      className={`py-2 px-6 ${styles.button} ${className}`}
+      className={`py-2 px-6 ${styles.button} ${barlow.className} ${className}`}
       onClick={onClick}
     >
       {label}

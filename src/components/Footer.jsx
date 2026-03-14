@@ -8,12 +8,10 @@ import { getTranslations } from "@/helpers/locale.helpers.js";
 import { useRouter } from "next/router";
 import { Icon } from "@iconify/react";
 import { Sponsors } from "./Navbar/NavbarWidgets";
-import useIsMobile from "@/hooks/useIsMobile";
 
 const Footer = () => {
   const t = useTranslations();
   const { locale } = useRouter();
-  const isMobile = useIsMobile();
 
   const translations = getTranslations(locale);
   const isContactSections = (title) =>
@@ -79,13 +77,13 @@ const Footer = () => {
       </p>
       <Link href={hrefs.insta} target="_blank">
         <Icon
-          className="opacity-50 hover:opacity-100 hover:text-cyan transition-all duration-300 hover:scale-110"
+          className="opacity-50 hover:opacity-100 hover:text-red transition-all duration-300 hover:scale-110"
           icon="bi:instagram"
         />
       </Link>
       <Link href={hrefs.facebook} target="_blank">
         <Icon
-          className="opacity-50 hover:opacity-100 hover:text-cyan transition-all duration-300 hover:scale-110"
+          className="opacity-50 hover:opacity-100 hover:text-red transition-all duration-300 hover:scale-110"
           icon="ic:baseline-facebook"
         />
       </Link>
@@ -94,14 +92,10 @@ const Footer = () => {
 
   return (
     <>
-      {isMobile && (
-        <div className="bg-white bg-opacity-50">
-          <Sponsors />
-        </div>
-      )}
-      <div className="bg-blue" style={{ clipPath: "polygon(0 100%, 100% 0, 100% 100%)", height: "50px", marginBottom: "-1px" }} />
+      <div className="bg-white bg-opacity-50">
+        <Sponsors />
+      </div>
       <footer className="bg-blue relative overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(255,255,255,1) 10px, rgba(255,255,255,1) 20px)" }} />
         <Container className="py-7">
           <div className="flex gap-20 justify-center">
             <FooterSocial

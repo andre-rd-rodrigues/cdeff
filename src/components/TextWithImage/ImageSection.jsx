@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ImageSection = ({ imageSrc, title }) => (
   <div className="w-full md:w-1/2 p-4">
-    <div className="relative max-w-md m-auto h-full aspect-square image-decorated">
+    <div className="relative max-w-md m-auto h-full ">
       <Image
         src={imageSrc}
         alt={title}

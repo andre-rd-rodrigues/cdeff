@@ -1,60 +1,116 @@
-import { Disclosure, Transition } from "@headlessui/react";
-import { MinusIcon, PlusIcon } from "@heroicons/react/20/solid";
-import React from "react";
+import { Disclosure } from "@headlessui/react";
+import React, { useRef } from "react";
 
 import useTranslationArray from "@/hooks/useTranslationsArray";
 import { barlow } from "@/styles/fonts";
 import { useTranslations } from "next-intl";
 import { renderAnswerWithLinks } from "./faqs.utils";
 
+function ArrowIcon({ open }) {
+  return (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={`transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+        open ? "rotate-180" : "rotate-0"
+      }`}
+    >
+      <path
+        d="M5 7.5L10 12.5L15 7.5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function FaqItem({ question, answer, index, t }) {
+  const panelRef = useRef(null);
+
+  return (
+    <Disclosure>
+      {({ open }) => (
+        <div
+          className="group"
+          style={{ animationDelay: `${index * 60}ms` }}
+        >
+          <Disclosure.Button
+            className="flex w-full items-center justify-between py-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue/20 focus-visible:rounded-lg cursor-pointer"
+          >
+            <h3
+              className={`${barlow.className} text-start text-lg md:text-xl font-medium tracking-wide text-[var(--blue)] transition-colors duration-300 group-hover:text-[var(--red)] pr-4`}
+            >
+              {question}
+            </h3>
+
+            <span
+              className={`flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                open
+                  ? "bg-[var(--blue)] text-white"
+                  : "bg-[var(--blue)]/[0.06] text-[var(--blue)] group-hover:bg-[var(--blue)]/[0.12]"
+              }`}
+            >
+              <ArrowIcon open={open} />
+            </span>
+          </Disclosure.Button>
+
+          <div
+            ref={panelRef}
+            className="grid transition-[grid-template-rows] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
+            style={{
+              gridTemplateRows: open ? "1fr" : "0fr"
+            }}
+          >
+            <div className="overflow-hidden">
+              <Disclosure.Panel
+                static
+                className="pb-6 pr-12"
+              >
+                <div
+                  className={`transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                    open
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 -translate-y-2"
+                  }`}
+                >
+                  {renderAnswerWithLinks(answer, t)}
+                </div>
+              </Disclosure.Panel>
+            </div>
+          </div>
+
+          <div
+            className="h-px"
+            style={{
+              background:
+                "linear-gradient(to right, transparent, rgba(39,62,121,0.12) 20%, rgba(39,62,121,0.12) 80%, transparent)"
+            }}
+          />
+        </div>
+      )}
+    </Disclosure>
+  );
+}
+
 function Faqs() {
   const t = useTranslations();
   const faqs = useTranslationArray("pages.faqs.questions");
 
   return (
-    <section>
+    <section className="space-y-0">
       {faqs.map(({ question, answer }, i) => (
-        <Disclosure key={i}>
-          {({ open }) => (
-            <>
-              <Disclosure.Button className="flex items-center focus:outline-none group">
-                <span
-                  className={`text-blue w-7 flex-shrink-0 transition-transform duration-300 ${
-                    open ? "rotate-45" : "rotate-0"
-                  }`}
-                  style={{ transformOrigin: "center" }}
-                >
-                  <PlusIcon className="w-7" />
-                </span>
-
-                <h3
-                  className={`${barlow.className} text-start mx-4 uppercase text-blue text-xl font-medium group-hover:text-cyan transition-colors duration-200`}
-                >
-                  {question}
-                </h3>
-              </Disclosure.Button>
-
-              <Transition
-                as={React.Fragment}
-                show={open}
-                enter="transition-all ease-out duration-300 overflow-hidden"
-                enterFrom="max-h-0 opacity-0"
-                enterTo="max-h-96 opacity-100"
-                leave="transition-all ease-in duration-200 overflow-hidden"
-                leaveFrom="max-h-96 opacity-100"
-                leaveTo="max-h-0 opacity-0"
-              >
-                <Disclosure.Panel className="flex mt-8 md:mx-10">
-                  <p className="px-4 text-gray-700 ">
-                    {renderAnswerWithLinks(answer, t)}
-                  </p>
-                </Disclosure.Panel>
-              </Transition>
-
-              <hr className="my-8 border-gray-300" />
-            </>
-          )}
-        </Disclosure>
+        <FaqItem
+          key={i}
+          question={question}
+          answer={answer}
+          index={i}
+          t={t}
+        />
       ))}
     </section>
   );

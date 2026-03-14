@@ -3,7 +3,10 @@ import React from "react";
 const { default: Link } = require("next/link");
 
 const CustomLink = ({ children, href, className }) => (
-  <Link href={href} className={`text-red font-normal ${className} lowercase`}>
+  <Link
+    href={href}
+    className={`text-[var(--red)] font-medium hover:text-[var(--red-hover)] transition-colors duration-200 underline decoration-[var(--red)]/30 underline-offset-2 hover:decoration-[var(--red)] ${className} lowercase`}
+  >
     {children}
   </Link>
 );
@@ -48,7 +51,7 @@ export const renderAnswerWithLinks = (answer, t) => {
   const parts = answer.split(regex);
 
   return (
-    <p className="max-w-3xl px-4 text-gray-700">
+    <p className="max-w-3xl text-gray-600 leading-relaxed">
       {parts.map((part, index) => {
         const key = Object.keys(placeholders).find((key) =>
           new RegExp(key, "gi").test(part)

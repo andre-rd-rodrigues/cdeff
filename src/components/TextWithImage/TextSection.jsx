@@ -1,7 +1,6 @@
 import { barlow } from "@/styles/fonts";
 import Button from "../Button/Button";
 import Link from "next/link";
-import { use } from "react";
 import { useTranslations } from "next-intl";
 
 const TextSection = ({

@@ -20,7 +20,7 @@ export default function Layout({ children }) {
       <div className="relative">
         <Navbar />
         <Loading />
-        <div className={`${isMobile ? "pt-[90px]" : "pt-40"} min-h-screen`}>
+        <div className={`${isMobile ? "pt-[90px]" : "pt-20"} min-h-screen`}>
           {children}
         </div>
         <Footer />
