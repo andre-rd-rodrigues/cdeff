@@ -21,7 +21,7 @@ function BlogCard({ article }) {
   return (
     <Link
       href={`/blog/${slug}`}
-      className="relative flex flex-col w-full md:max-w-sm card-lift"
+      className="relative bg-white flex flex-col w-full md:max-w-sm card-lift"
     >
       <div className="relative h-[250px]">
         <Image
