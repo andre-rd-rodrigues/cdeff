@@ -6,15 +6,18 @@ function SectionTitle({
   subtitle,
   className,
   isSubSectionTitle,
-  textClassName
+  textClassName,
+  hideAccent
 }) {
   const sizeClass = isSubSectionTitle ? "text-fs-l-s" : "text-fs-l";
+  const showAccent = !subtitle && !hideAccent;
+  const centered = className?.includes("text-center");
 
   return (
     <div className={className}>
       {subtitle && (
         <p className={`uppercase font-semibold subtitle tracking-wider ${isSubSectionTitle ? "text-fs-l-s" : ""} ${
-          className?.includes("text-center") ? "justify-center" : ""
+          centered ? "justify-center" : ""
         }`}>
           {subtitle}
         </p>
@@ -22,10 +25,8 @@ function SectionTitle({
       {title && (
         <h2
           className={`${barlow.className} ${sizeClass} uppercase mb-5 text-blue relative inline-block section-header ${
-            !subtitle ? "section-header-accent" : ""
-          } ${textClassName} ${
-            className?.includes("text-center") ? "section-header-center" : ""
-          }`}
+            showAccent ? "section-header-accent" : ""
+          } ${textClassName} ${centered ? "section-header-center" : ""}`}
         >
           {title}
         </h2>

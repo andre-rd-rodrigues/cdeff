@@ -9,22 +9,18 @@ import { Link } from "@/i18n/routing";
 import { TEL_LINK } from "@/constants";
 
 const ProductCard = ({ title, price, sizes, image, images, className }) => {
+  const allImages = images || [image];
+  const hasMultiple = allImages.length > 1;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const t = useTranslations();
   const intervalRef = useRef(null);
 
-  const maxImageIndex = images?.length - 1;
-
   const handleHoverImage = () => {
-    // Don't run for single image
-    if (image) return;
+    if (!hasMultiple) return;
 
-    // Apply effect only to multiple images
-    setCurrentImageIndex((prev) => (prev === maxImageIndex ? 0 : prev + 1));
-
+    setCurrentImageIndex((prev) => (prev + 1) % allImages.length);
     intervalRef.current = setInterval(
-      () =>
-        setCurrentImageIndex((prev) => (prev === maxImageIndex ? 0 : prev + 1)),
+      () => setCurrentImageIndex((prev) => (prev + 1) % allImages.length),
       1500
     );
   };
@@ -33,15 +29,13 @@ const ProductCard = ({ title, price, sizes, image, images, className }) => {
     <div className={`relative flex flex-col w-[250px] card-lift ${className}`}>
       <div className="relative h-[350px]">
         <Image
-          className={`${images && "cursor-pointer"}`}
+          className={hasMultiple ? "cursor-pointer" : ""}
           onMouseOver={handleHoverImage}
           onMouseLeave={() => clearInterval(intervalRef.current)}
-          src={image || images[currentImageIndex]}
+          src={allImages[currentImageIndex]}
           alt={title}
           fill
-          style={{
-            objectFit: "cover"
-          }}
+          style={{ objectFit: "cover" }}
         />
       </div>
       <div className="flex-grow p-7 pb-9 flex flex-col justify-between">

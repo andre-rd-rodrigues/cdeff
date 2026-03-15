@@ -9,7 +9,7 @@ const BlogPageHeader = ({ title, image, date }) => {
   };
 
   return (
-    <div className={`relative w-full h-[260px] flex flex-col justify-end text-white px-padding-y pb-[30px] -mb-[30px] ${styles.containerBlogPage}`} style={containerStyle}>
+    <div className={`relative w-full h-[340px] pt-20 flex flex-col justify-end text-white px-padding-y pb-[30px] -mb-[30px] ${styles.containerBlogPage}`} style={containerStyle}>
       <h1
         className={`uppercase text-white z-10 tracking-wider ${barlow.className}`}
       >

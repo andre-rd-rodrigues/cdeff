@@ -13,7 +13,7 @@ export default function NotFoundContent() {
   return (
     <main
       style={{ minHeight: "55vh" }}
-      className="text-center flex flex-col items-center justify-center px-6"
+      className="text-center flex flex-col items-center justify-center px-6 pt-20"
     >
       <Icon
         icon="ph:soccer-ball"

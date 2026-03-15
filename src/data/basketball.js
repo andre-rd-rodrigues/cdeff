@@ -521,7 +521,8 @@ export const basketballProducts = [
       "https://i.postimg.cc/C5bzSbQ4/D8-D26-A86-4-ACC-4416-A68-D-6-B1-CD4-DA0-A149.png"
     ],
     name: "Cachecol",
-    price: "12€"
+    price: "12€",
+    category: "Acessórios"
   },
   {
     images: [
@@ -531,7 +532,8 @@ export const basketballProducts = [
       "https://i.postimg.cc/QdZrKkGZ/F164019-B-7697-461-C-859-D-F081-BE2726-CA.png"
     ],
     name: "Calça de Fato de Treino",
-    price: "10€"
+    price: "10€",
+    category: "Calças"
   },
   {
     images: [
@@ -542,7 +544,8 @@ export const basketballProducts = [
       "https://i.postimg.cc/tTVHMnkt/7.png"
     ],
     name: "Sweat com capuz e fecho",
-    price: "25€"
+    price: "25€",
+    category: "Sweats"
   },
   {
     images: [
@@ -553,7 +556,8 @@ export const basketballProducts = [
       "https://i.postimg.cc/NFS2wXvs/8.png"
     ],
     name: "Sweat Saída",
-    price: "25€"
+    price: "25€",
+    category: "Sweats"
   },
   {
     images: [
@@ -562,7 +566,8 @@ export const basketballProducts = [
       "https://i.postimg.cc/j5kLzf5H/919-E34-A4-51-E6-4233-8-A86-90-BFA245-AC71.png"
     ],
     name: "T-shirt Básica Azul",
-    price: "6€"
+    price: "6€",
+    category: "T-shirts"
   },
   {
     images: [
@@ -571,7 +576,8 @@ export const basketballProducts = [
       "https://i.postimg.cc/jdRjkKww/B95-C2-BEC-DC54-4096-9700-2-B0001-CD96-B3.png"
     ],
     name: "T-shirt Básica Preta",
-    price: "6€"
+    price: "6€",
+    category: "T-shirts"
   },
   {
     images: [
@@ -582,7 +588,8 @@ export const basketballProducts = [
       "https://i.postimg.cc/rmbwdLng/6.png"
     ],
     name: "T-shirt Sublimada Formação",
-    price: "20€"
+    price: "20€",
+    category: "T-shirts"
   },
 
   {
@@ -593,6 +600,7 @@ export const basketballProducts = [
       "https://i.postimg.cc/1RfvDQFk/4.png"
     ],
     name: "T-shirt Sublimada Mini Basket",
-    price: "20€"
+    price: "20€",
+    category: "T-shirts"
   }
 ];

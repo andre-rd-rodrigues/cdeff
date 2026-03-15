@@ -24,7 +24,7 @@ export default function SponsorsPage() {
 
       {/* Main */}
       <Section>
-        <SectionTitle title={t("pages.sponsors.mainSponsors")} />
+        <SectionTitle title={t("pages.sponsors.mainSponsors")} hideAccent />
         <div className="flex">
           <SponsorSection
             images={["/images/navbar/basket/hospital.png"]}

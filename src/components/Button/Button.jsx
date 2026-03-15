@@ -24,7 +24,7 @@ const ChevronIcon = ({ fill = "currentColor" }) => (
 const Button = ({ label, className, onClick, variant, showArrow = false }) => {
   return variant ? (
     <button
-      className={`group inline-flex items-center gap-2 py-2.5 px-9 rounded-sm uppercase tracking-[2px] font-normal text-fs-s border border-red text-red hover:text-white hover:-translate-y-0.5 hover:shadow-button-hover active:translate-y-px active:shadow-button-active ${styles.button2} ${barlow.className} ${className}`}
+      className={`group inline-flex items-center gap-2 py-3 px-8  uppercase tracking-[2px] font-medium text-fs-s border border-red text-red hover:text-white hover:-translate-y-0.5 hover:shadow-button-hover active:translate-y-px active:shadow-button-active ${styles.button2} ${barlow.className} ${className}`}
       onClick={onClick}
     >
       {label}
@@ -32,7 +32,7 @@ const Button = ({ label, className, onClick, variant, showArrow = false }) => {
     </button>
   ) : (
     <button
-      className={`group inline-flex items-center gap-2 py-2.5 px-9 rounded-sm uppercase tracking-[2px] font-normal text-fs-s text-white bg-gradient-to-br from-[#bd3a4e] to-[#c94e60] transition-all duration-fast ease-smooth hover:-translate-y-0.5 hover:shadow-button-hover hover:from-[var(--red-hover)] hover:to-[#b8444f] active:translate-y-px active:shadow-button-active ${barlow.className} ${className}`}
+      className={`group inline-flex items-center gap-2 py-3 px-8  uppercase tracking-[2px] font-medium text-fs-s text-white bg-gradient-to-br from-[#bd3a4e] to-[#c94e60] transition-all duration-fast ease-smooth hover:-translate-y-0.5 hover:shadow-button-hover hover:from-[var(--red-hover)] hover:to-[#b8444f] active:translate-y-px active:shadow-button-active ${barlow.className} ${className}`}
       onClick={onClick}
     >
       {label}

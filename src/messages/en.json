@@ -274,6 +274,7 @@
     },
     "store": {
       "title": "Store",
+      "filterAll": "All",
       "futsalProducts": {
         "T­Shirt Joma Vermelha": "Red Joma T-Shirt",
         "T­Shirt GR Joma Laranja": "Orange GR Joma T-Shirt",

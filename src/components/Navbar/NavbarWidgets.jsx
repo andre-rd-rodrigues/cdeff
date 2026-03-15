@@ -4,7 +4,7 @@ import React from "react";
 import Button from "../Button/Button";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 import { useTranslations } from "next-intl";
 import { barlow } from "@/styles/fonts";
 const CTAButton = () => {
@@ -45,59 +45,26 @@ const CloseButton = ({ handleClose }) => {
   );
 };
 
-const Sponsors = () => {
-  const companyImages = [
-    "/images/navbar/company/cmf.png",
-    "/images/navbar/company/educação.png",
-    "/images/navbar/company/escola.png",
-    "/images/navbar/company/madeira.png"
-  ];
-  const IMAGE_STYLE = "w-[80px] h-[50px] relative";
+const sponsorImages = [
+  { src: "/images/navbar/basket/hospital.png", alt: "Hospital Particular da Madeira" },
+  { src: "/images/navbar/company/cmf.png", alt: "CMF" },
+  { src: "/images/navbar/company/educação.png", alt: "Educação", wide: true },
+  { src: "/images/navbar/company/escola.png", alt: "Escola Francisco Franco" },
+  { src: "/images/navbar/company/madeira.png", alt: "Madeira" },
+  { src: "/images/navbar/futsal/tourigalo.png", alt: "Tourigalo" }
+];
 
-  return (
-    <div
-      className="w-full px-5 [&_img]:opacity-70 py-2 flex items-center justify-center gap-6"
-    >
-      {/* Basket */}
-      <div className={IMAGE_STYLE}>
-        <Image
-          fill
-          style={{ objectFit: "contain" }}
-          src="/images/navbar/basket/hospital.png"
-          alt="Hospital Particular da Madeira"
-        />
+const Sponsors = () => (
+  <div className="w-full px-5 [&_img]:opacity-70 py-3 flex items-center justify-center gap-6 bg-white/60 backdrop-blur-md border-y border-white/40 shadow-sm">
+    {sponsorImages.map(({ src, alt, wide }) => (
+      <div
+        key={src}
+        className={wide ? "w-[230px] h-[70px] relative" : "w-[80px] h-[50px] relative"}
+      >
+        <Image fill style={{ objectFit: "contain" }} src={src} alt={alt} />
       </div>
-
-      {/* Company */}
-      {companyImages?.map((image, index) => (
-        <div
-          key={index}
-          className={`${
-            image.includes("educação")
-              ? "w-[230px] h-[70px] relative"
-              : IMAGE_STYLE
-          }`}
-        >
-          <Image
-            fill
-            style={{ objectFit: "contain" }}
-            src={image}
-            alt="CDEFF - Patrocinadores"
-          />
-        </div>
-      ))}
-
-      {/* Futsal */}
-      <div className={IMAGE_STYLE}>
-        <Image
-          fill
-          style={{ objectFit: "contain" }}
-          src="/images/navbar/futsal/tourigalo.png"
-          alt="Tourigalo"
-        />
-      </div>
-    </div>
-  );
-};
+    ))}
+  </div>
+);
 
 export { CTAButton, CompanyLogo, CloseButton, Sponsors };
