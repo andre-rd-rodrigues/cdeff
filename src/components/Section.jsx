@@ -17,7 +17,7 @@ function Section({ children, containerClassName, sectionClassName, variant, angl
   const angleClasses = `${angleTop ? "section-angle-top" : ""} ${angleBottom ? "section-angle-bottom" : ""}`;
 
   return (
-    <section className={`${containerClassName || ""} ${variantClass} ${angleClasses} py-5 w-full relative overflow-hidden`}>
+    <section className={`${containerClassName || ""} ${variantClass} ${angleClasses} py-12 md:py-16 w-full relative overflow-hidden`}>
       <Container className={`${sectionClassName || ""} py-6 reveal`} ref={revealRef}>
         {children}
       </Container>

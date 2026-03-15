@@ -94,7 +94,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="bg-white bg-opacity-50">
+      <div className="py-6">
         <Sponsors />
       </div>
       <footer className="bg-blue relative overflow-hidden">
