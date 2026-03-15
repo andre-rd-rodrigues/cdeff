@@ -2,6 +2,7 @@
   "name": "cdeff",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "packageManager": "pnpm@10.32.1",
   "scripts": {
     "dev": "next dev",
@@ -24,13 +25,11 @@
     "keen-slider": "^6.8.6",
     "next": "16.1.6",
     "next-intl": "^4.8.3",
-    "next-seo": "^6.8.0",
     "next-sitemap": "^4.2.3",
     "notion-to-md": "^3.1.1",
     "react": "^18",
     "react-dom": "^18",
-    "react-markdown": "^9.0.0",
-    "styled-jsx": "^5.1.7"
+    "react-markdown": "^9.0.0"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.23.3",

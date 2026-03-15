@@ -1,11 +1,13 @@
+"use client";
+
 import { barlow } from "@/styles/fonts";
 import { DATE_FORMAT, DATE_FORMAT_HOURS } from "@/constants";
 import { Icon } from "@iconify/react";
 import dayjs from "dayjs";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import { Link } from "@/i18n/routing";
+import { useLocale } from "next-intl";
 import Button from "../Button/Button";
 import { useEffect, useState } from "react";
 
@@ -14,7 +16,7 @@ function EventCard({ event, href }) {
 
   const t = useTranslations();
 
-  const { locale } = useRouter();
+  const locale = useLocale();
 
   const { title, description, dateStart, dateEnd, image, location } = event;
 

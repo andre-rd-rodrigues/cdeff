@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useState } from "react";
 import styles from "./loading.module.scss";
 import Image from "next/image";

@@ -1,3 +1,7 @@
+import createNextIntlPlugin from "next-intl/plugin";
+
+const withNextIntl = createNextIntlPlugin("./src/i18n/request.js");
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -8,11 +12,7 @@ const nextConfig = {
         hostname: "**"
       }
     ]
-  },
-  i18n: {
-    locales: ["en", "pt"],
-    defaultLocale: "pt"
   }
 };
 
-module.exports = nextConfig;
+export default withNextIntl(nextConfig);

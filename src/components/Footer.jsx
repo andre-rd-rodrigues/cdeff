@@ -1,17 +1,19 @@
+"use client";
+
 import React from "react";
 import Container from "./Container/Container";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import { barlow } from "@/styles/fonts";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "@/helpers/locale.helpers.js";
-import { useRouter } from "next/router";
+import { useLocale } from "next-intl";
 import { Icon } from "@iconify/react";
 import { Sponsors } from "./Navbar/NavbarWidgets";
 
 const Footer = () => {
   const t = useTranslations();
-  const { locale } = useRouter();
+  const locale = useLocale();
 
   const translations = getTranslations(locale);
   const isContactSections = (title) =>

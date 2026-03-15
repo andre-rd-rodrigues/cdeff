@@ -1,9 +1,11 @@
+"use client";
+
 import { getTranslations } from "@/helpers/locale.helpers.js";
 import { useTranslations } from "next-intl";
 import Card from "./Cards/Card";
 import SectionTitle from "./SectionTitle";
 import Button from "./Button/Button";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { departments } from "@/data/company";
 
 function DepartmentsSection({ knowMore }) {

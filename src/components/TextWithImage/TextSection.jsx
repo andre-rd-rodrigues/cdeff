@@ -1,6 +1,8 @@
+"use client";
+
 import { barlow } from "@/styles/fonts";
 import Button from "../Button/Button";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 
 const TextSection = ({

@@ -3,7 +3,7 @@ import styles from "./herosection.module.scss";
 import Button from "../../Button/Button";
 import Container from "../../Container/Container";
 import { barlow } from "@/styles/fonts";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 
 const HeroSection = ({
   imageSrc,

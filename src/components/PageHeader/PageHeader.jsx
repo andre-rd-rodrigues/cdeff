@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./pageheader.module.scss";
 import { barlow } from "@/styles/fonts";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import Button from "../Button/Button";
 
 const PageHeader = ({ title, image, href, linkLabel }) => {

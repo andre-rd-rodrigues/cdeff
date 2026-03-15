@@ -1,18 +1,20 @@
+"use client";
+
 import Button from "@/components/Button/Button";
 import { barlow } from "@/styles/fonts";
 import { DATE_FORMAT } from "@/constants";
 import dayjs from "dayjs";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import { Link } from "@/i18n/routing";
+import { useLocale } from "next-intl";
 import React from "react";
-require("dayjs/locale/pt");
-require("dayjs/locale/en");
+import "dayjs/locale/pt";
+import "dayjs/locale/en";
 
 function BlogCard({ article }) {
   const t = useTranslations();
-  const { locale } = useRouter();
+  const locale = useLocale();
 
   const { title, description, date, image, slug } = article;
 

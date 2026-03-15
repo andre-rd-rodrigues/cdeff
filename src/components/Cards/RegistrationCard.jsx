@@ -1,10 +1,12 @@
+"use client";
+
 import Button from "@/components/Button/Button";
 import { barlow } from "@/styles/fonts";
 import { LANGUAGE, languagesCodes } from "@/constants";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import { Link } from "@/i18n/routing";
+import { useLocale } from "next-intl";
 import { useEffect, useState } from "react";
 
 const RegistrationCard = ({
@@ -17,7 +19,7 @@ const RegistrationCard = ({
   href
 }) => {
   const t = useTranslations();
-  const { locale } = useRouter();
+  const locale = useLocale();
 
   const [selectedCountry, setSelectedCountry] = useState(locale.toUpperCase());
 

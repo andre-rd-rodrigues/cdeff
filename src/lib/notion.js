@@ -1,5 +1,5 @@
 import { Client } from "@notionhq/client";
-const { NotionToMarkdown } = require("notion-to-md");
+import { NotionToMarkdown } from "notion-to-md";
 
 const notion = new Client({
   auth: process.env.NOTION_KEY
@@ -77,6 +77,8 @@ const getPost = async (slug, locale) => {
   });
 
   const page = response.results[0];
+
+  if (!page) return null;
 
   const metadata = getPostPageMetaData(page);
   const mdblocks = await n2m.pageToMarkdown(page.id);
@@ -162,6 +164,8 @@ const getTournament = async (slug, locale) => {
   });
 
   const page = response.results[0];
+
+  if (!page) return null;
 
   const metadata = getTournamentPageMetaData(page);
   const mdblocks = await n2m.pageToMarkdown(page.id);

@@ -1,16 +1,18 @@
+"use client";
+
 import { barlow } from "@/styles/fonts";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Bars3Icon } from "@heroicons/react/24/outline";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { useState } from "react";
 import enTranslations from "../../messages/en.json";
 import ptTranslations from "../../messages/pt.json";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
 import Dropdown from "./Dropdown";
 
-import { useRouter } from "next/router";
+import { useLocale } from "next-intl";
 import { CloseButton, CompanyLogo } from "./NavbarWidgets";
 
 function classNames(...classes) {
@@ -19,7 +21,7 @@ function classNames(...classes) {
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { locale } = useRouter();
+  const locale = useLocale();
 
   const translations = locale === "en" ? enTranslations : ptTranslations;
   const links = translations.components.navbar.links;

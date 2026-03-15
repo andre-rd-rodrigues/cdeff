@@ -1,10 +1,11 @@
+"use client";
+
 import { barlow } from "@/styles/fonts";
 import { Disclosure, Popover, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Icon } from "@iconify/react";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import { Link, useRouter, usePathname } from "@/i18n/routing";
 import { Fragment } from "react";
 
 function classNames(...classes) {
@@ -15,10 +16,10 @@ const linksClasses = `text-l leading-6 text-dark font-normal uppercase ${barlow.
 
 function LanguageSelector({ mobile, handleCloseMenu }) {
   const t = useTranslations();
-  const { route } = useRouter();
+  const pathname = usePathname();
 
   const isDisabled =
-    route.includes("blog/[slug]") || route.includes("tournaments/[slug]");
+    (pathname.includes("/blog/") && pathname !== "/blog") || (pathname.includes("/tournaments/") && pathname !== "/tournaments");
 
   if (isDisabled) return;
 
@@ -61,9 +62,9 @@ function LanguageSelector({ mobile, handleCloseMenu }) {
                     <Disclosure.Button
                       key={locale}
                       as={Link}
-                      href={route}
-                      locale={locale}
-                      className={`block py-2 pl-6 pr-3 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] ${linksClasses} ${
+                    href={pathname}
+                    locale={locale}
+                    className={`block py-2 pl-6 pr-3 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] ${linksClasses} ${
                         open
                           ? "opacity-100 translate-y-0"
                           : "opacity-0 -translate-y-1"
@@ -114,7 +115,7 @@ function LanguageSelector({ mobile, handleCloseMenu }) {
               <Popover.Button
                 key={locale}
                 as={Link}
-                href={route}
+                href={pathname}
                 locale={locale}
                 className={`group relative whitespace-nowrap flex items-center px-9 py-4 text-m hover:bg-gray-50 hover:border-l-2 hover:border-red hover:pl-[34px] uppercase ${barlow.className} tracking-wide transition-all duration-150`}
               >

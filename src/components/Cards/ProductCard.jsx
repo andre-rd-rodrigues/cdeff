@@ -1,9 +1,11 @@
+"use client";
+
 import React, { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import Button from "@/components/Button/Button";
 import Image from "next/image";
 import { barlow } from "@/styles/fonts";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { TEL_LINK } from "@/constants";
 
 const ProductCard = ({ title, price, sizes, image, images, className }) => {
