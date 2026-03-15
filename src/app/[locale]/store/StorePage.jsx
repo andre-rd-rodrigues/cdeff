@@ -15,8 +15,12 @@ export default function StorePage() {
   const [basketFilter, setBasketFilter] = useState(null);
   const [futsalFilter, setFutsalFilter] = useState(null);
 
-  const basketCategories = [...new Set(basketballProducts.map((p) => p.category))].sort();
-  const futsalCategories = [...new Set(futsalProducts.map((p) => p.category))].sort();
+  const basketCategories = [
+    ...new Set(basketballProducts.map((p) => p.category))
+  ].sort();
+  const futsalCategories = [
+    ...new Set(futsalProducts.map((p) => p.category))
+  ].sort();
 
   const filteredBasketProducts = basketFilter
     ? basketballProducts.filter((p) => p.category === basketFilter)
@@ -37,10 +41,10 @@ export default function StorePage() {
           <button
             type="button"
             onClick={() => setBasketFilter(null)}
-            className={`rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${
+            className={` px-4 py-1.5 text-sm font-medium transition-colors ${
               basketFilter === null
                 ? "bg-[#273e79] text-white"
-                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                : "bg-gray-100 text-gray-600 hover:bg-gray-200 border border-gray-300"
             }`}
           >
             {t("pages.store.filterAll")}
@@ -53,7 +57,7 @@ export default function StorePage() {
               className={`px-4 py-1.5 text-sm font-medium transition-colors ${
                 basketFilter === cat
                   ? "bg-[#273e79] text-white"
-                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  : "bg-gray-100 text-gray-600 hover:bg-gray-200 border border-gray-300"
               }`}
             >
               {cat}
@@ -79,7 +83,7 @@ export default function StorePage() {
           <button
             type="button"
             onClick={() => setFutsalFilter(null)}
-            className={`rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${
+            className={`px-4 py-1.5 text-sm font-medium transition-colors ${
               futsalFilter === null
                 ? "bg-[#273e79] text-white"
                 : "bg-gray-100 text-gray-600 hover:bg-gray-200"
@@ -92,7 +96,7 @@ export default function StorePage() {
               key={cat}
               type="button"
               onClick={() => setFutsalFilter(cat)}
-              className={`rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${
+              className={`px-4 py-1.5 text-sm font-medium transition-colors ${
                 futsalFilter === cat
                   ? "bg-[#273e79] text-white"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
