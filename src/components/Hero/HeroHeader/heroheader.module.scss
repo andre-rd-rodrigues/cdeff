@@ -22,10 +22,6 @@
 }
 
 .content {
-  z-index: var(--z-content);
-  text-align: center;
-  color: var(--white);
-
   > * {
     opacity: 0;
     transform: translateY(24px) scale(0.98);
@@ -43,10 +39,6 @@
     opacity: 1;
     transform: translateY(0) scale(1);
   }
-}
-
-.button {
-  margin-top: 35px;
 }
 
 @media (prefers-reduced-motion: reduce) {

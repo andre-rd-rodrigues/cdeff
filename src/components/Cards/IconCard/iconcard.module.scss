@@ -1,24 +1,4 @@
 .container {
-  width: 200px;
-  height: 100%;
-  padding: 41px 8px;
-  background: white;
-  box-shadow: var(--shadow-card);
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 13px;
-  display: inline-flex;
-  color: var(--blue);
-  cursor: pointer;
-  transition: transform var(--duration-normal) var(--ease-smooth),
-    box-shadow var(--duration-normal) var(--ease-smooth),
-    background-color 0.3s ease,
-    color 0.3s ease;
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  position: relative;
-
   &::after {
     content: "";
     position: absolute;
@@ -31,31 +11,12 @@
     transition: transform 0.35s var(--ease-smooth);
   }
 
-  &:hover {
-    color: white;
-    background-color: var(--blue);
-    transform: translateY(-6px);
-    box-shadow: var(--shadow-card-hover-strong);
-
-    .icon {
-      color: var(--white);
-      transform: scale(1.15);
-    }
-
-    &::after {
-      transform: scaleX(1);
-    }
-  }
-
-  &:active {
-    transform: translateY(-2px);
+  &:hover::after {
+    transform: scaleX(1);
   }
 }
 
 .containerSelected {
-  background: var(--blue);
-  color: white;
-
   &::after {
     content: "";
     position: absolute;
@@ -66,29 +27,4 @@
     background: var(--red);
     transform: scaleX(1);
   }
-}
-
-.icon {
-  color: var(--blue);
-  transition: transform var(--duration-normal) var(--ease-smooth),
-    color 0.3s ease;
-}
-
-.iconSelected {
-  color: white;
-}
-
-.title {
-  font-size: var(--fs-m);
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin: 5px 0 13px 0;
-}
-
-.description {
-  text-align: center;
-  font-size: var(--fs-xs);
-  font-weight: 400;
-  word-wrap: break-word;
 }

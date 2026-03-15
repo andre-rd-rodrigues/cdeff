@@ -27,7 +27,7 @@ function DepartmentsSection({ knowMore }) {
           <div key={i} className="flex flex-col items-center">
             <SectionTitle
               title={t(`common.departments.${department}`)}
-              className={"sub_section_title"}
+              isSubSectionTitle
             />
             <div className="flex flex-wrap gap-6 md:justify-normal justify-center">
               {members.map(({ name, position, imageSrc }, i) => (

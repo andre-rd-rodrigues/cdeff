@@ -173,12 +173,8 @@ footer {
 }
 
 .section-header {
-  font-size: var(--fs-l);
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  color: var(--blue);
-  position: relative;
-  display: inline-block;
+  /* Base styles migrated to Tailwind on SectionTitle/TextSection.
+     Class kept for .section-dark overrides and responsive rules. */
 }
 
 .section-header-accent {
@@ -199,13 +195,6 @@ footer {
   &::after {
     left: 50%;
     transform: translateX(-50%);
-  }
-}
-
-.sub_section_title {
-  p,
-  h2 {
-    font-size: var(--fs-l-s);
   }
 }
 

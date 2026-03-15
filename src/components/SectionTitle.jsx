@@ -8,10 +8,12 @@ function SectionTitle({
   isSubSectionTitle,
   textClassName
 }) {
+  const sizeClass = isSubSectionTitle ? "text-fs-l-s" : "text-fs-l";
+
   return (
-    <div className={`${className} ${isSubSectionTitle && "sub_section_title"}`}>
+    <div className={className}>
       {subtitle && (
-        <p className={`uppercase font-semibold subtitle tracking-wider ${
+        <p className={`uppercase font-semibold subtitle tracking-wider ${isSubSectionTitle ? "text-fs-l-s" : ""} ${
           className?.includes("text-center") ? "justify-center" : ""
         }`}>
           {subtitle}
@@ -19,7 +21,7 @@ function SectionTitle({
       )}
       {title && (
         <h2
-          className={`${barlow.className} section-header ${
+          className={`${barlow.className} ${sizeClass} uppercase mb-5 text-blue relative inline-block section-header ${
             !subtitle ? "section-header-accent" : ""
           } ${textClassName} ${
             className?.includes("text-center") ? "section-header-center" : ""

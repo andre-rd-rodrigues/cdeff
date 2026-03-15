@@ -1,11 +1,10 @@
 import React, { forwardRef } from "react";
-import styles from "./container.module.scss";
 
 const Container = forwardRef(({ children, className }, ref) => {
   return (
     <div
       ref={ref}
-      className={`max-w-7xl m-auto ${className} ${styles.container}`}
+      className={`max-w-7xl m-auto px-padding-y ${className}`}
     >
       {children}
     </div>

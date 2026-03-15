@@ -95,7 +95,7 @@ export default function AboutPage() {
         {/* Basketball */}
         <SectionTitle
           title={t("common.sports.basketball")}
-          className="sub_section_title"
+          isSubSectionTitle
         />
         <Carousel
           isSpaced
@@ -122,7 +122,7 @@ export default function AboutPage() {
         {/* Futsal */}
         <SectionTitle
           title={t("common.sports.futsal")}
-          className="sub_section_title"
+          isSubSectionTitle
         />
         <Carousel
           isSpaced

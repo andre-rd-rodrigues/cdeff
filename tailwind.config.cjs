@@ -26,6 +26,47 @@ module.exports = {
         lightGrey: "#f5f5f5",
         dark: "#2f333a",
         cyan: "#3a9ebd"
+      },
+
+      fontSize: {
+        "fs-xxl": "var(--fs-xxl)",
+        "fs-xl": "var(--fs-xl)",
+        "fs-xl-l": "var(--fs-xl-l)",
+        "fs-l": "var(--fs-l)",
+        "fs-l-s": "var(--fs-l-s)",
+        "fs-m": "var(--fs-m)",
+        "fs-s": "var(--fs-s)",
+        "fs-xs": "var(--fs-xs)"
+      },
+
+      boxShadow: {
+        card: "var(--shadow-card)",
+        "card-hover": "var(--shadow-card-hover)",
+        "card-hover-strong": "var(--shadow-card-hover-strong)",
+        "button-hover": "var(--shadow-button-hover)",
+        "button-active": "var(--shadow-button-active)",
+        nav: "var(--shadow-nav)"
+      },
+
+      transitionTimingFunction: {
+        smooth: "var(--ease-smooth)"
+      },
+
+      transitionDuration: {
+        fast: "var(--duration-fast)",
+        normal: "var(--duration-normal)"
+      },
+
+      zIndex: {
+        overlay: "var(--z-overlay)",
+        content: "var(--z-content)",
+        dropdown: "var(--z-dropdown)",
+        navbar: "var(--z-navbar)",
+        loading: "var(--z-loading)"
+      },
+
+      spacing: {
+        "padding-y": "var(--padding-y)"
       }
     }
   },

@@ -12,11 +12,11 @@ const HeroHeader = ({ imageSrc, linkLabel, href, children, className }) => {
 
   return (
     <div className={`${styles.container} ${className}`} style={containerStyle}>
-      <Container className={styles.content}>
+      <Container className={`z-content text-center text-white ${styles.content}`}>
         {children}
         {linkLabel && (
           <Link href={href}>
-            <Button label={linkLabel} className={styles.button} />
+            <Button label={linkLabel} className="mt-9" />
           </Link>
         )}
       </Container>

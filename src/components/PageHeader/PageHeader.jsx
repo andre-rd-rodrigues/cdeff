@@ -11,8 +11,8 @@ const PageHeader = ({ title, image, href, linkLabel }) => {
   };
 
   return (
-    <div className={styles.container} style={containerStyle}>
-      <h1 className={`${styles.content} ${barlow.className}`}>{title}</h1>
+    <div className={`relative w-full h-[220px] flex justify-center items-center text-white -mb-[30px] ${styles.container}`} style={containerStyle}>
+      <h1 className={`relative text-center uppercase tracking-wider z-content font-medium ${barlow.className}`}>{title}</h1>
       {linkLabel && (
         <Link href={href}>
           <Button label={linkLabel} />

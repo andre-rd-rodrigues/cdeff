@@ -7,8 +7,6 @@ import Image from "next/image";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useTranslations } from "next-intl";
 import { barlow } from "@/styles/fonts";
-import styles from "./navbar.module.scss";
-
 const CTAButton = () => {
   const t = useTranslations();
   return (
@@ -58,7 +56,7 @@ const Sponsors = () => {
 
   return (
     <div
-      className={`${styles.sponsors} py-2 flex items-center justify-center gap-6`}
+      className="w-full px-5 [&_img]:opacity-70 py-2 flex items-center justify-center gap-6"
     >
       {/* Basket */}
       <div className={IMAGE_STYLE}>

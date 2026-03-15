@@ -9,7 +9,7 @@ const ChevronIcon = ({ fill = "currentColor" }) => (
     viewBox="0 0 14 14"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className={styles.arrow}
+    className="transition-transform duration-fast ease-smooth group-hover:translate-x-0.5"
   >
     <path
       d="M5 3L9 7L5 11"
@@ -24,7 +24,7 @@ const ChevronIcon = ({ fill = "currentColor" }) => (
 const Button = ({ label, className, onClick, variant, showArrow = false }) => {
   return variant ? (
     <button
-      className={`py-2 px-6 ${styles.button2} ${barlow.className} ${className}`}
+      className={`group inline-flex items-center gap-2 py-2.5 px-9 rounded-sm uppercase tracking-[2px] font-normal text-fs-s border border-red text-red hover:text-white hover:-translate-y-0.5 hover:shadow-button-hover active:translate-y-px active:shadow-button-active ${styles.button2} ${barlow.className} ${className}`}
       onClick={onClick}
     >
       {label}
@@ -32,7 +32,7 @@ const Button = ({ label, className, onClick, variant, showArrow = false }) => {
     </button>
   ) : (
     <button
-      className={`py-2 px-6 ${styles.button} ${barlow.className} ${className}`}
+      className={`group inline-flex items-center gap-2 py-2.5 px-9 rounded-sm uppercase tracking-[2px] font-normal text-fs-s text-white bg-gradient-to-br from-[#bd3a4e] to-[#c94e60] transition-all duration-fast ease-smooth hover:-translate-y-0.5 hover:shadow-button-hover hover:from-[var(--red-hover)] hover:to-[#b8444f] active:translate-y-px active:shadow-button-active ${barlow.className} ${className}`}
       onClick={onClick}
     >
       {label}

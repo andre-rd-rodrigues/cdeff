@@ -57,7 +57,7 @@ export default function BasketballPage() {
             <div key={i} className="flex flex-col items-center">
               <SectionTitle
                 title={t(`pages.basketball.teamRoles.${role}`)}
-                className={"sub_section_title"}
+                isSubSectionTitle
               />
               <div className="flex flex-wrap gap-6 md:justify-normal justify-center">
                 {members.map(({ name, image, position }, i) => (

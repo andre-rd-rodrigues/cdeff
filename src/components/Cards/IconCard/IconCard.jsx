@@ -7,8 +7,8 @@ import { Icon } from "@iconify/react";
 function IconCard({ title, description, iconName, isSelected, onClick }) {
   return (
     <div
-      className={`${styles.container} ${
-        isSelected && styles.containerSelected
+      className={`group w-[200px] h-full py-10 px-2 shadow-card inline-flex flex-col justify-center items-center gap-3.5 cursor-pointer transition-all duration-normal ease-smooth rounded-md overflow-hidden relative hover:text-white hover:bg-blue hover:-translate-y-1.5 hover:shadow-card-hover-strong active:-translate-y-0.5 ${styles.container} ${
+        isSelected ? `bg-blue text-white ${styles.containerSelected}` : "bg-white text-blue"
       }`}
       onClick={onClick}
     >
@@ -16,11 +16,13 @@ function IconCard({ title, description, iconName, isSelected, onClick }) {
         <Icon
           icon={iconName}
           fontSize={50}
-          className={`${styles.icon} ${isSelected && styles.iconSelected}`}
+          className={`transition-all duration-normal ease-smooth group-hover:text-white group-hover:scale-[1.15] ${
+            isSelected ? "text-white" : "text-blue"
+          }`}
         />
       )}
-      <h4 className={`${styles.title} ${barlow.className}`}>{title}</h4>
-      {description && <p className={styles.description}>{description}</p>}
+      <h4 className={`text-fs-m font-bold uppercase tracking-[2px] my-1 mb-3 ${barlow.className}`}>{title}</h4>
+      {description && <p className="text-center text-fs-xs font-normal break-words">{description}</p>}
     </div>
   );
 }

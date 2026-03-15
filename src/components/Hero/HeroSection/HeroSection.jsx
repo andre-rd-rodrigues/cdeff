@@ -22,7 +22,7 @@ const HeroSection = ({
 
   return (
     <div className={`${styles.container} ${contactHero ? styles.contactHero : ""} ${className || ""}`} style={containerStyle}>
-      <Container className={styles.content}>
+      <Container className={`text-center uppercase tracking-wider ${styles.content}`}>
         {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
         {title && (
           <h3 className={`${styles.title} ${barlow.className}`}>{title}</h3>

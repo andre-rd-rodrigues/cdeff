@@ -23,7 +23,7 @@ const TextSection = ({
         <h3 className="subtitle uppercase font-semibold tracking-wide mt-5 sm:mt-0">
           {subtitle}
         </h3>
-        <h2 className={`${barlow.className} section-header`}>{title}</h2>
+        <h2 className={`${barlow.className} text-fs-l uppercase mb-5 text-blue relative inline-block section-header`}>{title}</h2>
         <p className="text-justify mb-3">{description}</p>
         {location && (
           <p className="mb-3">
