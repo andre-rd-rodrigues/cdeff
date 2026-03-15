@@ -2,9 +2,8 @@ import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
 import useTranslationArray from "@/hooks/useTranslationsArray";
 import Image from "next/image";
-
-const { default: PageHeader } = require("@/components/PageHeader/PageHeader");
-const { useTranslations } = require("next-intl");
+import PageHeader from "@/components/PageHeader/PageHeader";
+import { useTranslations } from "next-intl";
 
 function MembershipPage() {
   const t = useTranslations();
