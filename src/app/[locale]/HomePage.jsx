@@ -12,7 +12,6 @@ import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
 import TextWithImage from "@/components/TextWithImage/TextWithImage";
 import { futsalProducts } from "@/data/futsal";
-import { getNotionImagePathname } from "@/lib/notion";
 import { barlow } from "@/styles/fonts";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
@@ -149,12 +148,11 @@ export default function HomePage({ blogPosts }) {
             <BlogCard
               key={i}
               article={{
-                title: post.properties.Name.title[0].plain_text,
-                description:
-                  post.properties?.Description.rich_text[0]?.plain_text,
-                date: post.created_time,
-                image: getNotionImagePathname(post),
-                slug: post.properties.Slug.rich_text[0].plain_text
+                title: post.title,
+                description: post.description,
+                date: post.date,
+                image: post.image,
+                slug: post.slug
               }}
             />
           ))}

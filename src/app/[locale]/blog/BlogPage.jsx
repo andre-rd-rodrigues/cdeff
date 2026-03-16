@@ -4,7 +4,6 @@ import BlogCard from "@/components/Blog/BlogCard";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
-import { getNotionImagePathname } from "@/lib/notion";
 import { useTranslations } from "next-intl";
 
 export default function BlogPage({ posts }) {
@@ -23,12 +22,11 @@ export default function BlogPage({ posts }) {
             <BlogCard
               key={i}
               article={{
-                title: post.properties.Name.title[0].plain_text,
-                description:
-                  post.properties?.Description.rich_text[0]?.plain_text,
-                date: post.created_time,
-                image: getNotionImagePathname(post),
-                slug: post.properties.Slug.rich_text[0].plain_text
+                title: post.title,
+                description: post.description,
+                date: post.date,
+                image: post.image,
+                slug: post.slug
               }}
             />
           ))}

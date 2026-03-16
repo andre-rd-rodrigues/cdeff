@@ -1,16 +1,18 @@
-"use client";
-
 import BlogPageHeader from "@/components/PageHeader/BlogPageHeader";
 import { DATE_FORMAT } from "@/constants";
 import dayjs from "dayjs";
-import { useLocale } from "next-intl";
-import ReactMarkdown from "react-markdown";
+import { MDXRemote } from "next-mdx-remote/rsc";
 import "dayjs/locale/pt";
 import "dayjs/locale/en";
 
-export default function BlogPostPage({ post, metadata }) {
-  const locale = useLocale();
+const mdxComponents = {
+  img: (props) => (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img {...props} alt={props.alt || ""} loading="lazy" />
+  )
+};
 
+export default function BlogPostPage({ content, metadata, locale }) {
   return (
     <main>
       <BlogPageHeader
@@ -19,7 +21,9 @@ export default function BlogPostPage({ post, metadata }) {
         date={dayjs(metadata?.date).locale(locale).format(DATE_FORMAT)}
       />
       <div className="max-w-7xl m-auto py-10">
-        <ReactMarkdown className="markdown">{post.parent}</ReactMarkdown>
+        <div className="markdown">
+          <MDXRemote source={content} components={mdxComponents} />
+        </div>
       </div>
     </main>
   );

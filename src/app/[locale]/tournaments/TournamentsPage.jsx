@@ -19,8 +19,7 @@ export default function TournamentsPage({ tournaments }) {
 
   const selectedSportTournaments = tournaments?.filter(
     (tournament) =>
-      tournament.properties?.Modalidade.select.name ===
-      (isBasket ? SPORTS.BASKETBALL : SPORTS.FUTSAL)
+      tournament.sport === (isBasket ? SPORTS.BASKETBALL : SPORTS.FUTSAL)
   );
 
   return (
@@ -55,19 +54,14 @@ export default function TournamentsPage({ tournaments }) {
               selectedSportTournaments?.map((tournament, i) => (
                 <EventCard
                   key={i}
-                  href={`tournaments/${tournament.properties.Slug.rich_text[0].plain_text}`}
+                  href={`tournaments/${tournament.slug}`}
                   event={{
-                    title: tournament.properties.Titulo.title[0].plain_text,
-                    description:
-                      tournament.properties?.Descrição?.rich_text[0]
-                        ?.plain_text,
-                    dateStart: tournament.properties?.Data?.date?.start,
-                    dateEnd: tournament.properties?.Data?.date?.end,
-                    image:
-                      tournament.cover?.external?.url ||
-                      tournament.cover?.file?.url,
-                    location:
-                      tournament.properties?.Local.rich_text[0]?.plain_text
+                    title: tournament.title,
+                    description: tournament.description,
+                    dateStart: tournament.dateStart,
+                    dateEnd: tournament.dateEnd,
+                    image: tournament.image,
+                    location: tournament.location
                   }}
                 />
               ))
