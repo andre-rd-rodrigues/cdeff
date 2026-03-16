@@ -43,7 +43,7 @@ function BlogCard({ article }) {
         >
           {title}
         </h2>
-        <p className="text-gray-700 mb-7 text-sm leading-7">{description}</p>
+        <p className="text-gray-700 mb-7 leading-7">{description}</p>
         <div className="text-center mb-1">
           <Button label={t("common.buttons.readMore")} />
         </div>

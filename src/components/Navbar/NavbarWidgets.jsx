@@ -58,7 +58,7 @@ const sponsorImages = [
 ];
 
 const Sponsors = () => (
-  <div className="w-full px-5 [&_img]:opacity-70 py-3 flex items-center justify-center gap-6 bg-blue/10 backdrop-blur-md border-y border-white/10 shadow-sm rounded-t-xl">
+  <div className="w-full px-5 [&_img]:opacity-70 py-3 flex items-center justify-center gap-6 bg-blue/10 backdrop-blur-md border-y border-white/10 shadow-sm">
     {sponsorImages.map(({ src, alt, wide }) => (
       <div
         key={src}
