@@ -1,6 +1,6 @@
 "use client";
 
-import Card from "@/components/Cards/Card";
+import TeamMemberCard from "@/components/Cards/TeamMemberCard";
 import HeroSection from "@/components/Hero/HeroSection/HeroSection";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import RankSection from "@/components/RankSection";
@@ -57,12 +57,12 @@ export default function FutsalPage() {
               />
               <div className="flex flex-wrap gap-6 md:justify-normal justify-center">
                 {members.map(({ name, image, position }, i) => (
-                  <Card
+                  <TeamMemberCard
                     className={"w-[220px] h-[300px]"}
                     key={i}
                     imageSrc={image}
-                    subtitle={t(`pages.futsal.sportRoles.${position}`)}
-                    title={name}
+                    role={t(`pages.futsal.sportRoles.${position}`)}
+                    name={name}
                   />
                 ))}
               </div>

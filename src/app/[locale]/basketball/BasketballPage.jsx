@@ -1,7 +1,7 @@
 "use client";
 
 import Button from "@/components/Button/Button";
-import Card from "@/components/Cards/Card";
+import TeamMemberCard from "@/components/Cards/TeamMemberCard";
 import HeroHeader from "@/components/Hero/HeroHeader/HeroHeader";
 import HeroSection from "@/components/Hero/HeroSection/HeroSection";
 import PageHeader from "@/components/PageHeader/PageHeader";
@@ -61,12 +61,12 @@ export default function BasketballPage() {
               />
               <div className="flex flex-wrap gap-6 md:justify-normal justify-center">
                 {members.map(({ name, image, position }, i) => (
-                  <Card
+                  <TeamMemberCard
                     className={"w-[220px] h-[300px]"}
                     key={i}
                     imageSrc={image}
-                    title={name}
-                    subtitle={
+                    name={name}
+                    role={
                       position && t(`pages.basketball.teamRoles.${position}`)
                     }
                   />

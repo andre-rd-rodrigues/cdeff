@@ -2,7 +2,7 @@
 
 import { getTranslations } from "@/helpers/locale.helpers.js";
 import { useTranslations } from "next-intl";
-import Card from "./Cards/Card";
+import TeamMemberCard from "./Cards/TeamMemberCard";
 import SectionTitle from "./SectionTitle";
 import Button from "./Button/Button";
 import { Link } from "@/i18n/routing";
@@ -25,21 +25,15 @@ function DepartmentsSection({ knowMore }) {
       >
         {renderDepartments.map(({ department, members }, i) => (
           <div key={i} className="flex flex-col items-center">
-            <SectionTitle
-              title={t(`common.departments.${department}`)}
-              isSubSectionTitle
-            />
-            <div className="flex flex-wrap gap-6 md:justify-normal justify-center">
-              {members.map(({ name, position, imageSrc }, i) => (
-                <Card
-                  className={"w-[320px]"}
-                  key={i}
-                  imageSrc={imageSrc}
-                  title={name}
-                  subtitle={t(`common.positions.${position}`)}
-                />
-              ))}
-            </div>
+            {members.map(({ name, position, imageSrc }, i) => (
+              <TeamMemberCard
+                className={"w-[320px]"}
+                key={i}
+                imageSrc={imageSrc}
+                name={name}
+                role={t(`common.positions.${position}`)}
+              />
+            ))}
           </div>
         ))}
       </div>
