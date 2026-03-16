@@ -32,7 +32,7 @@ const Button = ({ label, className, onClick, variant, showArrow = false }) => {
     </button>
   ) : (
     <button
-      className={`group inline-flex items-center gap-2 py-3 px-8  uppercase tracking-[2px] font-medium text-fs-s text-white bg-gradient-to-br from-[#bd3a4e] to-[#c94e60] transition-all duration-fast ease-smooth hover:-translate-y-0.5 hover:shadow-button-hover hover:from-[var(--red-hover)] hover:to-[#b8444f] active:translate-y-px active:shadow-button-active ${barlow.className} ${className}`}
+      className={`group inline-flex items-center justify-center gap-2 py-3 px-8  uppercase tracking-[2px] font-medium text-fs-s text-white bg-gradient-to-br from-[#bd3a4e] to-[#c94e60] transition-all duration-fast ease-smooth hover:-translate-y-0.5 hover:shadow-button-hover hover:from-[var(--red-hover)] hover:to-[#b8444f] active:translate-y-px active:shadow-button-active ${barlow.className} ${className}`}
       onClick={onClick}
     >
       {label}

@@ -46,7 +46,10 @@ const CloseButton = ({ handleClose }) => {
 };
 
 const sponsorImages = [
-  { src: "/images/navbar/basket/hospital.png", alt: "Hospital Particular da Madeira" },
+  {
+    src: "/images/navbar/basket/hospital.png",
+    alt: "Hospital Particular da Madeira"
+  },
   { src: "/images/navbar/company/cmf.png", alt: "CMF" },
   { src: "/images/navbar/company/educação.png", alt: "Educação", wide: true },
   { src: "/images/navbar/company/escola.png", alt: "Escola Francisco Franco" },
@@ -55,11 +58,13 @@ const sponsorImages = [
 ];
 
 const Sponsors = () => (
-  <div className="w-full px-5 [&_img]:opacity-70 py-3 flex items-center justify-center gap-6 bg-white/60 backdrop-blur-md border-y border-white/40 shadow-sm">
+  <div className="w-full px-5 [&_img]:opacity-70 py-3 flex items-center justify-center gap-6 bg-blue/10 backdrop-blur-md border-y border-white/10 shadow-sm rounded-t-xl">
     {sponsorImages.map(({ src, alt, wide }) => (
       <div
         key={src}
-        className={wide ? "w-[230px] h-[70px] relative" : "w-[80px] h-[50px] relative"}
+        className={
+          wide ? "w-[230px] h-[70px] relative" : "w-[80px] h-[50px] relative"
+        }
       >
         <Image fill style={{ objectFit: "contain" }} src={src} alt={alt} />
       </div>

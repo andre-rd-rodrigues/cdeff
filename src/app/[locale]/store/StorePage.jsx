@@ -41,7 +41,7 @@ export default function StorePage() {
           <button
             type="button"
             onClick={() => setBasketFilter(null)}
-            className={` px-4 py-1.5 text-sm font-medium transition-colors ${
+            className={` px-4 py-1.5 font-medium transition-colors ${
               basketFilter === null
                 ? "bg-[#273e79] text-white"
                 : "bg-gray-100 text-gray-600 hover:bg-gray-200 border border-gray-300"
@@ -54,7 +54,7 @@ export default function StorePage() {
               key={cat}
               type="button"
               onClick={() => setBasketFilter(cat)}
-              className={`px-4 py-1.5 text-sm font-medium transition-colors ${
+              className={`px-4 py-1.5 font-medium transition-colors ${
                 basketFilter === cat
                   ? "bg-[#273e79] text-white"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200 border border-gray-300"
@@ -83,7 +83,7 @@ export default function StorePage() {
           <button
             type="button"
             onClick={() => setFutsalFilter(null)}
-            className={`px-4 py-1.5 text-sm font-medium transition-colors ${
+            className={`px-4 py-1.5 font-medium transition-colors ${
               futsalFilter === null
                 ? "bg-[#273e79] text-white"
                 : "bg-gray-100 text-gray-600 hover:bg-gray-200"
@@ -96,10 +96,10 @@ export default function StorePage() {
               key={cat}
               type="button"
               onClick={() => setFutsalFilter(cat)}
-              className={`px-4 py-1.5 text-sm font-medium transition-colors ${
+              className={`px-4 py-1.5 font-medium transition-colors ${
                 futsalFilter === cat
                   ? "bg-[#273e79] text-white"
-                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  : "border border-gray-300 text-gray-600 hover:bg-gray-200"
               }`}
             >
               {cat}

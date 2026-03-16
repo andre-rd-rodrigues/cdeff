@@ -94,9 +94,9 @@ const Footer = () => {
 
   return (
     <>
-      <div className="py-4">
-        <Sponsors />
-      </div>
+      {/* Sponsors section */}
+      <Sponsors />
+      {/* Footer section */}
       <footer className="bg-blue relative overflow-hidden">
         <Container className="py-7">
           <div className="flex gap-20 justify-center">

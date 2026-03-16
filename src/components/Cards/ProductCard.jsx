@@ -57,7 +57,6 @@ const ProductCard = ({ title, price, sizes, image, images, className }) => {
             </p>
           )}
         </div>
-
         <Link href={TEL_LINK} className="w-full">
           <Button label={t("common.buttons.book")} className={"w-full"} />
         </Link>
