@@ -81,7 +81,7 @@ export default function FutsalPage() {
         <Tabs
           tabs={[
             {
-              name: t("pages.futsal.teamRoles.Seniores"),
+              name: "pages.futsal.teamRoles.Seniores",
               content: (
                 <>
                   <RankSection team={futsalTeam.seniores} />
@@ -89,23 +89,23 @@ export default function FutsalPage() {
               )
             },
             {
-              name: t("pages.futsal.teamRoles.Juniores"),
+              name: "pages.futsal.teamRoles.Juniores",
               content: <RankSection team={futsalTeam.juniores} />
             },
             {
-              name: t("pages.futsal.teamRoles.Juvenis"),
+              name: "pages.futsal.teamRoles.Juvenis",
               content: <RankSection team={futsalTeam.juvenis} />
             },
             {
-              name: t("pages.futsal.teamRoles.Iniciados"),
+              name: "pages.futsal.teamRoles.Iniciados",
               content: <RankSection team={futsalTeam.iniciados} />
             },
             {
-              name: t("pages.futsal.teamRoles.Infantis"),
+              name: "pages.futsal.teamRoles.Infantis",
               content: <RankSection team={futsalTeam.infantis} />
             },
             {
-              name: t("pages.futsal.teamRoles.Benjamins"),
+              name: "pages.futsal.teamRoles.Benjamins",
               content: (
                 <div className="relative w-full h-[300px] md:h-[600px]">
                   <Image
@@ -119,7 +119,7 @@ export default function FutsalPage() {
             },
 
             {
-              name: t("pages.futsal.teamRoles.Petizes e Traquinas"),
+              name: "pages.futsal.teamRoles.Petizes e Traquinas",
               content: <RankSection team={futsalTeam.petizes} />
             }
           ]}

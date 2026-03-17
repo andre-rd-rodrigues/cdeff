@@ -2,7 +2,7 @@
 
 import React from "react";
 import Container from "./Container/Container";
-import { Link } from "@/i18n/routing";
+import { Link, parseHref } from "@/i18n/routing";
 import Image from "next/image";
 import { barlow } from "@/styles/fonts";
 import { useTranslations } from "next-intl";
@@ -44,7 +44,7 @@ const Footer = () => {
           isContactSections(title) ? (
             <li key={i}>
               <Link
-                href={href}
+                href={parseHref(href)}
                 className="hover:underline flex gap-1 items-center mb-2 mt-1"
               >
                 <Icon icon={icon} fontSize={15} />
@@ -53,7 +53,7 @@ const Footer = () => {
             </li>
           ) : (
             <li key={i}>
-              <Link href={href} className="hover:underline text-xs">
+              <Link href={parseHref(href)} className="hover:underline text-xs">
                 {name}
               </Link>
             </li>
@@ -63,7 +63,7 @@ const Footer = () => {
         {/* When no sub links are provided */}
         {!subLinks && !isContactSections(title) && (
           <li>
-            <Link href={sectionHref} className="hover:underline text-xs">
+            <Link href={parseHref(sectionHref)} className="hover:underline text-xs">
               {title}
             </Link>
           </li>

@@ -3,7 +3,7 @@ import styles from "./herosection.module.scss";
 import Button from "../../Button/Button";
 import Container from "../../Container/Container";
 import { barlow } from "@/styles/fonts";
-import { Link } from "@/i18n/routing";
+import { Link, parseHref } from "@/i18n/routing";
 
 const HeroSection = ({
   imageSrc,
@@ -28,7 +28,7 @@ const HeroSection = ({
           <h3 className={`${styles.title} ${barlow.className}`}>{title}</h3>
         )}
         {linkLabel && (
-          <Link href={href} className="text-center mt-2" {...linkProps}>
+          <Link href={parseHref(href)} className="text-center mt-2" {...linkProps}>
             <Button label={linkLabel} />
           </Link>
         )}

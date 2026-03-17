@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import TeamMemberCard from "./Cards/TeamMemberCard";
 import SectionTitle from "./SectionTitle";
 import Button from "./Button/Button";
-import { Link } from "@/i18n/routing";
+import { Link, parseHref } from "@/i18n/routing";
 import { departments } from "@/data/company";
 
 function DepartmentsSection({ knowMore }) {
@@ -38,7 +38,7 @@ function DepartmentsSection({ knowMore }) {
         ))}
       </div>
       {knowMore && (
-        <Link href="/about#departments">
+        <Link href={parseHref("/about#departments")}>
           <Button label={t("common.buttons.seeMore")} />
         </Link>
       )}

@@ -3,7 +3,7 @@
 import { barlow } from "@/styles/fonts";
 import { Popover, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import { Link } from "@/i18n/routing";
+import { Link, parseHref } from "@/i18n/routing";
 import { Fragment } from "react";
 
 function Dropdown({ subLinks, link }) {
@@ -35,7 +35,7 @@ function Dropdown({ subLinks, link }) {
             {subLinks.map(({ name, href }) => (
               <Popover.Button
                 as={Link}
-                href={href}
+                href={parseHref(href)}
                 key={name}
                 className={`group relative whitespace-nowrap flex items-center px-9 py-4 text-m hover:bg-gray-50 hover:border-l-2 hover:border-red hover:pl-[34px] uppercase ${barlow.className} tracking-wide transition-all duration-150`}
               >

@@ -1,6 +1,5 @@
 import React from "react";
-
-const { default: Link } = require("next/link");
+import { Link, parseHref } from "@/i18n/routing";
 
 const CustomLink = ({ children, href, className }) => (
   <Link
@@ -38,7 +37,7 @@ export const renderAnswerWithLinks = (answer, t) => {
       <CustomLink href="/store">{t("common.buttons.clickHere")}</CustomLink>
     ),
     "{atlLink}": (
-      <CustomLink href="/activities#atl">
+      <CustomLink href={parseHref("/activities#atl")}>
         {t("common.buttons.clickHere")}
       </CustomLink>
     )

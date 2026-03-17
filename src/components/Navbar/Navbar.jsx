@@ -5,7 +5,7 @@ import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Bars3Icon } from "@heroicons/react/24/outline";
-import { Link } from "@/i18n/routing";
+import { Link, parseHref } from "@/i18n/routing";
 import { useState } from "react";
 import enTranslations from "../../messages/en.json";
 import ptTranslations from "../../messages/pt.json";
@@ -55,7 +55,7 @@ const Navbar = () => {
             subLinks ? (
               <Dropdown link={name} subLinks={subLinks} key={i} />
             ) : (
-              <Link href={href} className={linksClasses} key={name}>
+              <Link href={parseHref(href)} className={linksClasses} key={name}>
                 {name}
               </Link>
             )
@@ -133,8 +133,8 @@ const Navbar = () => {
                                     {subLinks.map(({ name, href }, j) => (
                                       <Disclosure.Button
                                         key={name}
-                                        as="a"
-                                        href={href}
+                                        as={Link}
+                                        href={parseHref(href)}
                                         className={`block py-2 pl-6 pr-3 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] ${mobileLinksClasses} ${
                                           open
                                             ? "opacity-100 translate-y-0"
@@ -159,7 +159,7 @@ const Navbar = () => {
                       ) : (
                         <div data-headlessui-state key={i}>
                           <Link
-                            href={href}
+                            href={parseHref(href)}
                             className={`text-xl p-3 leading-6 text-dark font-normal uppercase ${barlow.className} tracking-wide`}
                             onClick={() => setMobileMenuOpen(false)}
                           >
