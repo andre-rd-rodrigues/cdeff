@@ -1,9 +1,9 @@
 import { render, screen } from "@/test-utils";
 import Navbar from "./Navbar";
 
-jest.mock("@/hooks/useIsMobile", () => ({
+vi.mock("@/hooks/useIsMobile", () => ({
   __esModule: true,
-  default: jest.fn(() => false)
+  default: vi.fn(() => false)
 }));
 
 describe("Navbar", () => {
@@ -12,7 +12,8 @@ describe("Navbar", () => {
 
     const logoLink = screen.getByRole("link", { name: /o desporto a formar para a vida/i });
     expect(logoLink).toBeInTheDocument();
-    expect(logoLink).toHaveAttribute("href", "/");
+    // next-intl localizes the home href (default locale prefix).
+    expect(logoLink.getAttribute("href")).toMatch(/^\/(pt)?$/);
   });
 
   it("renders the mobile menu button", () => {

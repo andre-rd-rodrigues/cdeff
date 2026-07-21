@@ -10,7 +10,8 @@ function Section({ children, containerClassName, sectionClassName, variant, angl
   const variantClasses = {
     dark: "section-dark",
     "pattern-stripes": "bg-diagonal-stripes",
-    "pattern-dots": "bg-dots-pattern"
+    "pattern-dots": "bg-dots-pattern",
+    glow: "bg-corner-glow"
   };
 
   const variantClass = variant ? variantClasses[variant] || "" : "";

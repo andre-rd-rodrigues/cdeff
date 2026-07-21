@@ -3,11 +3,11 @@ import Loading from "./Loading";
 
 describe("Loading", () => {
   beforeEach(() => {
-    jest.useFakeTimers();
+    vi.useFakeTimers();
   });
 
   afterEach(() => {
-    jest.useRealTimers();
+    vi.useRealTimers();
   });
 
   it("shows loading initially (visible)", () => {
@@ -15,7 +15,8 @@ describe("Loading", () => {
 
     expect(screen.getByAltText("CDEFF")).toBeInTheDocument();
     const loadingContainer = container.firstChild;
-    expect(loadingContainer.className).not.toContain("undefined undefined");
+    expect(loadingContainer.className).toContain("opacity-100");
+    expect(loadingContainer.className).not.toContain("pointer-events-none");
   });
 
   it("hides after 600ms", () => {
@@ -24,10 +25,11 @@ describe("Loading", () => {
     expect(screen.getByAltText("CDEFF")).toBeInTheDocument();
 
     act(() => {
-      jest.advanceTimersByTime(600);
+      vi.advanceTimersByTime(600);
     });
 
     const loadingContainer = container.firstChild;
-    expect(loadingContainer.className).toContain("undefined undefined");
+    expect(loadingContainer.className).toContain("opacity-0");
+    expect(loadingContainer.className).toContain("pointer-events-none");
   });
 });

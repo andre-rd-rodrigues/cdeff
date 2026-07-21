@@ -9,11 +9,11 @@ export function createMockRouter(overrides = {}) {
     route: "/",
     query: {},
     asPath: "/",
-    push: jest.fn(),
-    replace: jest.fn(),
-    back: jest.fn(),
-    prefetch: jest.fn().mockResolvedValue(undefined),
-    events: { on: jest.fn(), off: jest.fn(), emit: jest.fn() },
+    push: vi.fn(),
+    replace: vi.fn(),
+    back: vi.fn(),
+    prefetch: vi.fn().mockResolvedValue(undefined),
+    events: { on: vi.fn(), off: vi.fn(), emit: vi.fn() },
     ...overrides
   };
   useRouter.mockReturnValue(mockRouter);

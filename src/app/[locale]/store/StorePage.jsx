@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import ProductCard from "@/components/Cards/ProductCard";
+import EmptyState from "@/components/EmptyState";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
@@ -35,7 +36,7 @@ export default function StorePage() {
         title={t("pages.store.title")}
         image={"https://i.postimg.cc/MpqMCR71/Loja.png"}
       />
-      <Section>
+      <Section variant="pattern-dots">
         <SectionTitle title={t("common.sports.basketball")} />
         <div className={`flex flex-wrap gap-2 mb-8 ${barlow.className}`}>
           <button
@@ -64,17 +65,25 @@ export default function StorePage() {
             </button>
           ))}
         </div>
-        <div className="flex flex-wrap gap-10 justify-center md:justify-start">
-          {filteredBasketProducts.map((item, i) => (
-            <ProductCard
-              key={i}
-              title={item.name}
-              images={item.images}
-              price={item.price}
-              sizes={item.sizes}
-            />
-          ))}
-        </div>
+        {filteredBasketProducts.length ? (
+          <div className="flex flex-wrap gap-10 justify-center md:justify-start">
+            {filteredBasketProducts.map((item, i) => (
+              <ProductCard
+                key={i}
+                title={item.name}
+                images={item.images}
+                price={item.price}
+                sizes={item.sizes}
+              />
+            ))}
+          </div>
+        ) : (
+          <EmptyState
+            icon="ph:t-shirt"
+            title={t("pages.store.emptyTitle")}
+            description={t("pages.store.emptyText")}
+          />
+        )}
       </Section>
 
       <Section containerClassName={"bg-white"}>
@@ -106,17 +115,25 @@ export default function StorePage() {
             </button>
           ))}
         </div>
-        <div className="flex flex-wrap gap-10 justify-center md:justify-start">
-          {filteredFutsalProducts.map((item, i) => (
-            <ProductCard
-              key={i}
-              title={item.name}
-              image={item.image}
-              price={item.price}
-              sizes={item.sizes}
-            />
-          ))}
-        </div>
+        {filteredFutsalProducts.length ? (
+          <div className="flex flex-wrap gap-10 justify-center md:justify-start">
+            {filteredFutsalProducts.map((item, i) => (
+              <ProductCard
+                key={i}
+                title={item.name}
+                image={item.image}
+                price={item.price}
+                sizes={item.sizes}
+              />
+            ))}
+          </div>
+        ) : (
+          <EmptyState
+            icon="ph:t-shirt"
+            title={t("pages.store.emptyTitle")}
+            description={t("pages.store.emptyText")}
+          />
+        )}
       </Section>
     </main>
   );

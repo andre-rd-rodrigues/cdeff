@@ -17,15 +17,15 @@ describe("NavbarWidgets", () => {
 
   describe("CompanyLogo", () => {
     it("renders image", () => {
-      render(<CompanyLogo />);
+      const { container } = render(<CompanyLogo />);
 
-      expect(screen.getByRole("img")).toBeInTheDocument();
+      expect(container.querySelector("img")).toBeInTheDocument();
     });
   });
 
   describe("CloseButton", () => {
     it("calls handleClose on click", () => {
-      const handleClose = jest.fn();
+      const handleClose = vi.fn();
       render(<CloseButton handleClose={handleClose} />);
 
       fireEvent.click(screen.getByRole("button"));

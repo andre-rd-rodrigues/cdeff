@@ -2,6 +2,7 @@
 
 import Card from "@/components/Cards/Card";
 import Carousel from "@/components/Carousel/Carousel";
+import StatCounter from "@/components/StatCounter";
 import DepartmentsSection from "@/components/DepartmentsSection";
 import HeroHeader from "@/components/Hero/HeroHeader/HeroHeader";
 import PageHeader from "@/components/PageHeader/PageHeader";
@@ -23,13 +24,17 @@ export default function AboutPage() {
   const basketAchievements = translations.basketball;
   const futsalAchievements = translations.futsal;
 
+  const yearsStrong = new Date().getFullYear() - 2005;
+  const totalTitles =
+    (basketAchievements?.length || 0) + (futsalAchievements?.length || 0);
+
   return (
     <main>
       <PageHeader
         title={t("pages.about.title")}
         image="https://i.postimg.cc/7YvTNjbs/Sobre-No-s.png"
       />
-      <Section>
+      <Section variant="pattern-dots">
         <TextWithImage
           title={t("pages.about.welcome.title")}
           subtitle={t("pages.about.welcome.subtitle")}
@@ -71,7 +76,7 @@ export default function AboutPage() {
       </HeroHeader>
 
       {/* Activities */}
-      <Section>
+      <Section variant="pattern-dots">
         <TextWithImage
           title={t("pages.about.activities.title")}
           subtitle={t("pages.about.activities.subtitle")}
@@ -91,6 +96,32 @@ export default function AboutPage() {
           title={t("pages.about.achievements.title")}
           subtitle={t("pages.about.achievements.subtitle")}
         />
+
+        {/* Club scoreboard */}
+        <div
+          className="rounded-lg mb-16 mt-2"
+          style={{ background: "var(--blue)" }}
+        >
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 py-12 px-6">
+            <StatCounter
+              value={150}
+              prefix="+"
+              label={t("pages.about.achievements.stats.athletes")}
+            />
+            <StatCounter
+              value={yearsStrong}
+              label={t("pages.about.achievements.stats.years")}
+            />
+            <StatCounter
+              value={2}
+              label={t("pages.about.achievements.stats.sports")}
+            />
+            <StatCounter
+              value={totalTitles}
+              label={t("pages.about.achievements.stats.titles")}
+            />
+          </div>
+        </div>
 
         {/* Basketball */}
         <SectionTitle

@@ -325,12 +325,22 @@ footer {
     background-image: repeating-linear-gradient(
       -45deg,
       transparent,
-      transparent 10px,
-      rgba(39, 62, 121, 0.035) 10px,
-      rgba(39, 62, 121, 0.035) 20px
+      transparent 11px,
+      rgba(39, 62, 121, 0.05) 11px,
+      rgba(39, 62, 121, 0.05) 22px
     );
     pointer-events: none;
     z-index: 0;
+    -webkit-mask-image: radial-gradient(
+      ellipse 120% 90% at 50% 40%,
+      black 55%,
+      transparent 100%
+    );
+    mask-image: radial-gradient(
+      ellipse 120% 90% at 50% 40%,
+      black 55%,
+      transparent 100%
+    );
   }
 
   > * {
@@ -347,10 +357,48 @@ footer {
     position: absolute;
     inset: 0;
     background-image: radial-gradient(
-      rgba(39, 62, 121, 0.06) 1px,
-      transparent 1px
+      rgba(39, 62, 121, 0.09) 1.4px,
+      transparent 1.4px
     );
-    background-size: 24px 24px;
+    background-size: 22px 22px;
+    pointer-events: none;
+    z-index: 0;
+    -webkit-mask-image: radial-gradient(
+      ellipse 125% 95% at 62% 62%,
+      black 55%,
+      transparent 100%
+    );
+    mask-image: radial-gradient(
+      ellipse 125% 95% at 62% 62%,
+      black 55%,
+      transparent 100%
+    );
+  }
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* Soft corner glow — a large, low-opacity navy radial anchored to a corner */
+.bg-corner-glow {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(
+      ellipse 55% 70% at 100% 0%,
+      rgba(39, 62, 121, 0.07),
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 50% 65% at 0% 100%,
+      rgba(58, 158, 189, 0.05),
+      transparent 60%
+    );
     pointer-events: none;
     z-index: 0;
   }
@@ -415,6 +463,24 @@ footer {
 
 .accent-shape-red {
   background: var(--red);
+}
+
+/* Dotted grid ornament peeking from behind an image's bottom-right corner */
+.image-dots-ornament {
+  position: absolute;
+  right: -14px;
+  bottom: -14px;
+  width: 45%;
+  height: 45%;
+  max-width: 160px;
+  max-height: 160px;
+  background-image: radial-gradient(
+    rgba(39, 62, 121, 0.28) 1.5px,
+    transparent 1.5px
+  );
+  background-size: 16px 16px;
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* Image with decorative offset background */

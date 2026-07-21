@@ -21,7 +21,7 @@ export default function ContactsPage() {
         title={t("pages.contacts.title")}
         image={"https://i.postimg.cc/J0qZK4n5/contactos.jpg"}
       />
-      <Section>
+      <Section variant="pattern-dots">
         <SectionTitle
           title={t("pages.contacts.subtitle")}
           className={"text-center"}

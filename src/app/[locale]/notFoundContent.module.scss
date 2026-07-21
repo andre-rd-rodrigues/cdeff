@@ -1,0 +1,46 @@
+/* "Out of bounds" — the ball drops in, squashes on landing, then settles into a gentle bob */
+@keyframes ball-bounce-in {
+  0% {
+    transform: translateY(-140px) scale(0.9, 0.9);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0) scale(1.12, 0.88);
+    opacity: 1;
+  }
+  66% {
+    transform: translateY(-30px) scale(0.95, 1.05);
+  }
+  82% {
+    transform: translateY(0) scale(1.05, 0.95);
+  }
+  92% {
+    transform: translateY(-8px) scale(0.99, 1.01);
+  }
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+}
+
+@keyframes ball-idle-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+.ball {
+  display: inline-block;
+  transform-origin: center bottom;
+  animation: ball-bounce-in 1.15s var(--ease-smooth) both,
+    ball-idle-bob 2.8s ease-in-out 1.25s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ball {
+    animation: none;
+  }
+}

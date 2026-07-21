@@ -74,6 +74,12 @@
       "achievements": {
         "title": "as nossas conquistas",
         "subtitle": "prémios",
+        "stats": {
+          "athletes": "Atletas",
+          "years": "Anos de história",
+          "sports": "Modalidades",
+          "titles": "Títulos conquistados"
+        },
         "achievementsList": {
           "basketball": [
             {
@@ -223,6 +229,11 @@
       "title": "Torneios",
       "selectSport": "Escolhe a modalidade",
       "noTournaments": "De momento, não há torneios disponíveis para esta modalidade.",
+      "empty": {
+        "title": "Ainda nada no calendário",
+        "description": "Não há torneios agendados para esta modalidade neste momento. Novas provas são adicionadas ao longo da época, por isso volta em breve.",
+        "cta": "Ver inscrições"
+      },
       "feedback": {
         "title": "Feedbacks anteriores"
       }
@@ -271,6 +282,8 @@
     "store": {
       "title": "Loja",
       "filterAll": "Todos",
+      "emptyTitle": "Prateleira vazia",
+      "emptyText": "Ainda não há produtos nesta categoria. Experimenta outro filtro ou vê todo o equipamento.",
       "futsalProducts": {
         "T­Shirt Joma Vermelha": "T­Shirt Joma Vermelha",
         "T­Shirt GR Joma Laranja": "T­Shirt GR Joma Laranja",
@@ -351,7 +364,12 @@
         }
       ]
     },
-    "blog": { "title": "Blog", "recentArticles": "Artigos" },
+    "blog": {
+      "title": "Blog",
+      "recentArticles": "Artigos",
+      "emptyTitle": "Ainda sem histórias",
+      "emptyText": "Ainda não publicámos artigos por aqui. Notícias do clube, relatos de jogos e histórias vão chegar a esta página em breve."
+    },
     "notFound": {
       "title": "404",
       "subtitle": "Fora de jogo!",

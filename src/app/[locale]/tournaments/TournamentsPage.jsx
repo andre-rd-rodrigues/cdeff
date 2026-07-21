@@ -1,5 +1,6 @@
 "use client";
 
+import EmptyState from "@/components/EmptyState";
 import EventCard from "@/components/Cards/EventCard";
 import IconCard from "@/components/Cards/IconCard/IconCard";
 import Carousel from "@/components/Carousel/Carousel";
@@ -28,7 +29,7 @@ export default function TournamentsPage({ tournaments }) {
         title={t("pages.tournaments.title")}
         image={"https://i.postimg.cc/jSJCSSb3/torneios.jpg"}
       />
-      <Section containerClassName={"-mt-7"}>
+      <Section containerClassName={"-mt-7"} variant="glow">
         <SectionTitle
           subtitle={t("pages.tournaments.selectSport")}
           className={"text-center"}
@@ -37,13 +38,15 @@ export default function TournamentsPage({ tournaments }) {
         <div className="flex w-full m-auto justify-center gap-10 mt-7">
           <IconCard
             title={t("common.sports.basketball")}
-            iconName="ph:soccer-ball"
+            iconName="ph:basketball"
+            motion="bounce"
             isSelected={isBasket}
             onClick={() => updateSelectedSport(SPORTS.BASKETBALL)}
           />
           <IconCard
             title={t("common.sports.futsal")}
             iconName="ph:soccer-ball"
+            motion="roll"
             isSelected={!isBasket}
             onClick={() => updateSelectedSport(SPORTS.FUTSAL)}
           />
@@ -66,13 +69,21 @@ export default function TournamentsPage({ tournaments }) {
                 />
               ))
             ) : (
-              <p>{t("pages.tournaments.noTournaments")}</p>
+              <EmptyState
+                icon="ph:calendar-blank"
+                title={t("pages.tournaments.empty.title")}
+                description={t("pages.tournaments.empty.description")}
+                cta={{
+                  href: "/registrations",
+                  label: t("pages.tournaments.empty.cta")
+                }}
+              />
             )}
           </div>
         </div>
 
         {!isBasket && (
-          <Section>
+          <Section variant="pattern-dots">
             <SectionTitle title={t("pages.tournaments.feedback.title")} />
             <Carousel isSpaced autoPlay darkArrows>
               {futsalFeedback.map(({ author, image, feedback }, i) => (

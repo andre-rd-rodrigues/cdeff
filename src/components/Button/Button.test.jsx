@@ -2,7 +2,7 @@ import { render, fireEvent, screen, waitFor } from "@testing-library/react";
 import Button from "./Button";
 
 describe("Button", () => {
-  const onClick = jest.fn();
+  const onClick = vi.fn();
 
   it("should render label correctly", () => {
     // ACT

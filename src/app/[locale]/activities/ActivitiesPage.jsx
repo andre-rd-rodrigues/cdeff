@@ -29,7 +29,7 @@ export default function ActivitiesPage() {
 
       {/* ATL */}
       <span id="atl"></span>
-      <Section>
+      <Section variant="pattern-dots">
         <TextWithImage
           title={t("pages.activities.section_1.title")}
           description={t("pages.activities.section_1.description")}
@@ -42,7 +42,7 @@ export default function ActivitiesPage() {
       </Section>
 
       {/* Organização de Aniversários */}
-      <Section>
+      <Section containerClassName="bg-white">
         <TextWithImage
           title={t("pages.activities.section_2.title")}
           description={t("pages.activities.section_2.description")}
@@ -56,7 +56,7 @@ export default function ActivitiesPage() {
       </Section>
 
       {/* Orientação */}
-      <Section>
+      <Section variant="pattern-dots">
         <TextWithImage
           title={t("pages.activities.section_3.title")}
           description={t("pages.activities.section_3.description")}
@@ -69,7 +69,7 @@ export default function ActivitiesPage() {
       </Section>
 
       {/* Muay Thai */}
-      <Section>
+      <Section containerClassName="bg-white">
         <TextWithImage
           title={t("pages.activities.section_4.title")}
           description={t("pages.activities.section_4.description")}
@@ -86,7 +86,7 @@ export default function ActivitiesPage() {
       </Section>
 
       {/* Zumba */}
-      <Section>
+      <Section variant="pattern-dots">
         <TextWithImage
           title={t("pages.activities.section_5.title")}
           description={t("pages.activities.section_5.description")}
@@ -102,7 +102,7 @@ export default function ActivitiesPage() {
       </Section>
 
       {/* Ginastica */}
-      <Section>
+      <Section containerClassName="bg-white">
         <TextWithImage
           title={t("pages.activities.section_6.title")}
           description={t("pages.activities.section_6.description")}

@@ -14,7 +14,7 @@ export default function FaqsPage() {
         title={t("pages.faqs.title")}
         image={"https://i.postimg.cc/59QCLf9Q/Perguntas-Frequentes.jpg"}
       />
-      <Section containerClassName={"m-auto max-w-4xl"}>
+      <Section containerClassName={"m-auto max-w-4xl"} variant="pattern-dots">
         <Faqs />
       </Section>
     </main>

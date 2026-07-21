@@ -1,0 +1,16 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [
+      "vitest.setup.jsx"
+    ],
+    "ignoreValues": [
+      {
+        "rule": "bounce-easing",
+        "value": "ball-bounce-in",
+        "createdAt": "2026-07-21T10:32:44.385Z",
+        "reason": "User-approved literal sports-ball bounce on the 404 'out of bounds' page; domain-appropriate physical motion"
+      }
+    ]
+  }
+}

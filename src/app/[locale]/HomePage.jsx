@@ -2,6 +2,7 @@
 
 import BlogCard from "@/components/Blog/BlogCard";
 import Button from "@/components/Button/Button";
+import EmptyState from "@/components/EmptyState";
 import IconCard from "@/components/Cards/IconCard/IconCard";
 import ProductCard from "@/components/Cards/ProductCard";
 import Carousel from "@/components/Carousel/Carousel";
@@ -50,26 +51,30 @@ export default function HomePage({ blogPosts }) {
 
       {/* Sports section */}
       <span id="sports"></span>
-      <Section containerClassName={"max-w-2xl m-auto"}>
-        <SectionTitle
-          title={t("pages.homepage.sports.title")}
-          className={"text-center"}
-        />
-        <div className="gap-6 flex justify-around flex-wrap align-center">
-          <Link href="/basketball">
-            <IconCard
-              title={t("common.sports.basketball")}
-              description={t("pages.homepage.sports.basket.description")}
-              iconName="ph:basketball"
-            />
-          </Link>
-          <Link href="/futsal">
-            <IconCard
-              title={t("common.sports.futsal")}
-              description={t("pages.homepage.sports.futsal.description")}
-              iconName="ph:soccer-ball"
-            />
-          </Link>
+      <Section variant="pattern-dots">
+        <div className="max-w-2xl m-auto">
+          <SectionTitle
+            title={t("pages.homepage.sports.title")}
+            className={"text-center"}
+          />
+          <div className="gap-6 flex justify-around flex-wrap align-center">
+            <Link href="/basketball">
+              <IconCard
+                title={t("common.sports.basketball")}
+                description={t("pages.homepage.sports.basket.description")}
+                iconName="ph:basketball"
+                motion="bounce"
+              />
+            </Link>
+            <Link href="/futsal">
+              <IconCard
+                title={t("common.sports.futsal")}
+                description={t("pages.homepage.sports.futsal.description")}
+                iconName="ph:soccer-ball"
+                motion="roll"
+              />
+            </Link>
+          </div>
         </div>
       </Section>
 
@@ -102,7 +107,7 @@ export default function HomePage({ blogPosts }) {
       />
 
       {/* Store section */}
-      <Section>
+      <Section variant="glow">
         <SectionTitle
           title={t("pages.homepage.store.title")}
           subtitle={t("pages.homepage.store.subtitle")}
@@ -137,26 +142,34 @@ export default function HomePage({ blogPosts }) {
       />
 
       {/* Blog section */}
-      <Section variant="pattern-stripes">
+      <Section variant="pattern-dots">
         <SectionTitle
           className="text-center"
           title={t("pages.homepage.blog.title")}
           subtitle={t("pages.homepage.blog.subtitle")}
         />
-        <div className="flex flex-wrap justify-center gap-10">
-          {blogPosts?.map((post, i) => (
-            <BlogCard
-              key={i}
-              article={{
-                title: post.title,
-                description: post.description,
-                date: post.date,
-                image: post.image,
-                slug: post.slug
-              }}
-            />
-          ))}
-        </div>
+        {blogPosts?.length ? (
+          <div className="flex flex-wrap justify-center gap-10">
+            {blogPosts.map((post, i) => (
+              <BlogCard
+                key={i}
+                article={{
+                  title: post.title,
+                  description: post.description,
+                  date: post.date,
+                  image: post.image,
+                  slug: post.slug
+                }}
+              />
+            ))}
+          </div>
+        ) : (
+          <EmptyState
+            icon="ph:newspaper-clipping"
+            title={t("pages.blog.emptyTitle")}
+            description={t("pages.blog.emptyText")}
+          />
+        )}
       </Section>
     </main>
   );

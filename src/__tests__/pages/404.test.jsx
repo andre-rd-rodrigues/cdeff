@@ -1,33 +1,31 @@
 import { render, screen, fireEvent } from "@/test-utils";
-import { useRouter } from "next/router";
-import NotFoundPage from "@/pages/404";
+import NotFoundContent from "@/app/[locale]/NotFoundContent";
 
-describe("404 Page", () => {
-  it("renders error title and description", () => {
-    render(<NotFoundPage />);
+const { mockBack } = vi.hoisted(() => ({ mockBack: vi.fn() }));
 
-    expect(screen.getByText("404")).toBeInTheDocument();
+vi.mock("@/i18n/routing", () => ({
+  useRouter: () => ({ back: mockBack, push: vi.fn(), replace: vi.fn() })
+}));
+
+describe("NotFound (404)", () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
   });
 
-  it("calls router.back() when go back button is clicked", () => {
-    const mockBack = jest.fn();
-    useRouter.mockReturnValue({
-      locale: "pt",
-      pathname: "/404",
-      route: "/404",
-      query: {},
-      asPath: "/404",
-      push: jest.fn(),
-      replace: jest.fn(),
-      back: mockBack,
-      prefetch: jest.fn(),
-      events: { on: jest.fn(), off: jest.fn(), emit: jest.fn() }
-    });
+  it("renders the 404 title, out-of-bounds copy and the ball icon", () => {
+    render(<NotFoundContent />);
 
-    render(<NotFoundPage />);
+    expect(screen.getByText("404")).toBeInTheDocument();
+    expect(screen.getByText("Fora de jogo!")).toBeInTheDocument();
+    expect(
+      document.querySelector('[data-icon="ph:soccer-ball"]')
+    ).toBeInTheDocument();
+  });
 
-    const goBackButton = screen.getByText("voltar");
-    fireEvent.click(goBackButton);
+  it("calls router.back() when the go-back button is clicked", () => {
+    render(<NotFoundContent />);
+
+    fireEvent.click(screen.getByText("voltar"));
 
     expect(mockBack).toHaveBeenCalledTimes(1);
   });

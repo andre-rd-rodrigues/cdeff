@@ -164,7 +164,7 @@ export default function BasketballPage() {
       </HeroHeader>
 
       {/* Training schedule */}
-      <Section>
+      <Section variant="pattern-dots">
         <SectionTitle title={t("common.pages.schedule")} />
         <div className="relative w-full h-[300px] md:h-[600px]">
           <Image

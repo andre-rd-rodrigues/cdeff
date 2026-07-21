@@ -76,6 +76,12 @@
       "achievements": {
         "title": "our achievements",
         "subtitle": "achievements",
+        "stats": {
+          "athletes": "Athletes",
+          "years": "Years strong",
+          "sports": "Sports",
+          "titles": "Titles won"
+        },
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
         "achievementsList": {
           "basketball": [
@@ -227,6 +233,11 @@
       "title": "Tournaments",
       "selectSport": "Select the sport",
       "noTournaments": "For the moment, there're no available tournaments for the selected sport.",
+      "empty": {
+        "title": "Nothing on the calendar yet",
+        "description": "There are no tournaments scheduled for this sport right now. New fixtures are added as the season unfolds, so check back soon.",
+        "cta": "See registrations"
+      },
       "feedback": {
         "title": "Previous feedbacks"
       }
@@ -275,6 +286,8 @@
     "store": {
       "title": "Store",
       "filterAll": "All",
+      "emptyTitle": "Nothing on this rack",
+      "emptyText": "No products match this category yet. Try another filter or browse all the kit.",
       "futsalProducts": {
         "T­Shirt Joma Vermelha": "Red Joma T-Shirt",
         "T­Shirt GR Joma Laranja": "Orange GR Joma T-Shirt",
@@ -354,7 +367,12 @@
         }
       ]
     },
-    "blog": { "title": "Blog", "recentArticles": "Recent articles" },
+    "blog": {
+      "title": "Blog",
+      "recentArticles": "Recent articles",
+      "emptyTitle": "No stories yet",
+      "emptyText": "We haven't published any articles here yet. Club news, match reports and stories will land on this page soon."
+    },
     "notFound": {
       "title": "404",
       "subtitle": "Out of bounds!",

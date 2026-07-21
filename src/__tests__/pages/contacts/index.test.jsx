@@ -1,15 +1,15 @@
 import { render, screen } from "@/test-utils";
-import Contacts from "@/pages/contacts";
+import ContactsPage from "@/app/[locale]/contacts/ContactsPage";
 
 describe("Contacts Page", () => {
   it("renders the page header with title", () => {
-    render(<Contacts />);
+    render(<ContactsPage />);
 
     expect(screen.getByText("Contactos")).toBeInTheDocument();
   });
 
   it("renders the Google Maps iframe", () => {
-    render(<Contacts />);
+    render(<ContactsPage />);
 
     const iframe = document.querySelector("iframe");
     expect(iframe).toBeInTheDocument();
@@ -17,7 +17,7 @@ describe("Contacts Page", () => {
   });
 
   it("renders contact items", () => {
-    render(<Contacts />);
+    render(<ContactsPage />);
 
     const contactLinks = screen.getAllByRole("link");
     expect(contactLinks.length).toBeGreaterThan(0);

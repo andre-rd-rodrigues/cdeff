@@ -28,7 +28,7 @@ export default function RegistrationsPage() {
         }
       />
 
-      <Section>
+      <Section variant="pattern-dots">
         <SectionTitle
           title={t("pages.registrations.activities.title")}
           className={"text-center"}

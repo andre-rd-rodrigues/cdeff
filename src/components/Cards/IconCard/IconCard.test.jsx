@@ -25,12 +25,12 @@ describe("IconCard", () => {
     );
 
     const card = container.firstChild;
-    // With styleMock, selected state adds both container and containerSelected classes
-    expect(card.className).toContain("undefined undefined");
+    expect(card.className).toContain("bg-blue");
+    expect(card.className).toContain("text-white");
   });
 
   it("fires onClick when clicked", () => {
-    const onClick = jest.fn();
+    const onClick = vi.fn();
     render(
       <IconCard title="Title" onClick={onClick} />
     );

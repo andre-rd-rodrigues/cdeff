@@ -23,7 +23,7 @@ export default function SponsorsPage() {
       />
 
       {/* Main */}
-      <Section>
+      <Section variant="pattern-dots">
         <SectionTitle title={t("pages.sponsors.mainSponsors")} hideAccent />
         <div className="flex">
           <SponsorSection

@@ -1,44 +1,35 @@
 import { render, screen } from "@/test-utils";
 import LanguageSelector from "./LanguageSelector";
 
-const { useRouter } = require("next/router");
+const { mockUsePathname } = vi.hoisted(() => ({
+  mockUsePathname: vi.fn(() => "/")
+}));
+
+vi.mock("@/i18n/routing", () => ({
+  usePathname: () => mockUsePathname(),
+  useRouter: () => ({ push: vi.fn(), replace: vi.fn(), back: vi.fn() }),
+  Link: ({ children, href, locale, ...props }) => (
+    <a href={typeof href === "string" ? href : "#"} {...props}>
+      {children}
+    </a>
+  )
+}));
 
 describe("LanguageSelector", () => {
   beforeEach(() => {
-    useRouter.mockReturnValue({
-      locale: "pt",
-      pathname: "/",
-      route: "/",
-      push: jest.fn(),
-      back: jest.fn(),
-      query: {}
-    });
+    mockUsePathname.mockReturnValue("/");
   });
 
-  it("returns null when route includes blog/[slug]", () => {
-    useRouter.mockReturnValue({
-      locale: "pt",
-      pathname: "/blog/test-post",
-      route: "/blog/[slug]",
-      push: jest.fn(),
-      back: jest.fn(),
-      query: {}
-    });
+  it("returns null when route is a blog post", () => {
+    mockUsePathname.mockReturnValue("/blog/test-post");
 
     const { container } = render(<LanguageSelector />);
 
     expect(container.firstChild).toBeNull();
   });
 
-  it("returns null when route includes tournaments/[slug]", () => {
-    useRouter.mockReturnValue({
-      locale: "pt",
-      pathname: "/tournaments/test",
-      route: "/tournaments/[slug]",
-      push: jest.fn(),
-      back: jest.fn(),
-      query: {}
-    });
+  it("returns null when route is a tournament detail", () => {
+    mockUsePathname.mockReturnValue("/tournaments/test");
 
     const { container } = render(<LanguageSelector />);
 
@@ -49,20 +40,26 @@ describe("LanguageSelector", () => {
     render(<LanguageSelector mobile={false} />);
 
     expect(screen.getByRole("button")).toBeInTheDocument();
-    expect(document.querySelector('[data-icon="ph:globe-thin"]')).toBeInTheDocument();
+    expect(
+      document.querySelector('[data-icon="ph:globe-thin"]')
+    ).toBeInTheDocument();
   });
 
   it("renders globe icon for desktop mode when mobile is not passed", () => {
     render(<LanguageSelector />);
 
     expect(screen.getByRole("button")).toBeInTheDocument();
-    expect(document.querySelector('[data-icon="ph:globe-thin"]')).toBeInTheDocument();
+    expect(
+      document.querySelector('[data-icon="ph:globe-thin"]')
+    ).toBeInTheDocument();
   });
 
   it("renders as disclosure for mobile mode when mobile is true", () => {
-    render(<LanguageSelector mobile handleCloseMenu={jest.fn()} />);
+    render(<LanguageSelector mobile handleCloseMenu={vi.fn()} />);
 
     expect(screen.getByText("Idioma")).toBeInTheDocument();
-    expect(document.querySelector('[data-icon="ph:globe-thin"]')).toBeInTheDocument();
+    expect(
+      document.querySelector('[data-icon="ph:globe-thin"]')
+    ).toBeInTheDocument();
   });
 });

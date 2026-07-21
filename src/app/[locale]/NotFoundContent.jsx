@@ -5,6 +5,7 @@ import { barlow } from "@/styles/fonts";
 import { useTranslations } from "next-intl";
 import { useRouter } from "@/i18n/routing";
 import { Icon } from "@iconify/react";
+import styles from "./notFoundContent.module.scss";
 
 export default function NotFoundContent() {
   const t = useTranslations();
@@ -15,11 +16,12 @@ export default function NotFoundContent() {
       style={{ minHeight: "55vh" }}
       className="text-center flex flex-col items-center justify-center px-6 pt-20"
     >
-      <Icon
-        icon="ph:soccer-ball"
-        className="text-blue mb-4 animate-slow-spin"
-        style={{ fontSize: 64, opacity: 0.2 }}
-      />
+      <span className={`${styles.ball} text-blue mb-4`}>
+        <Icon
+          icon="ph:soccer-ball"
+          style={{ fontSize: 64, opacity: 0.25 }}
+        />
+      </span>
       <h1
         className={`${barlow.className} text-blue`}
         style={{ fontSize: "clamp(4rem, 12vw, 8rem)", lineHeight: 1 }}
