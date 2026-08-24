@@ -367,6 +367,15 @@
     "blog": {
       "title": "Blog",
       "recentArticles": "Artigos",
+      "searchPlaceholder": "Pesquisar artigos",
+      "noResults": "Nenhum artigo corresponde aos filtros.",
+      "categories": {
+        "all": "Todos",
+        "basketball": "Basquetebol",
+        "futsal": "Futsal",
+        "health": "Saúde e Bem-estar",
+        "club": "Clube"
+      },
       "emptyTitle": "Ainda sem histórias",
       "emptyText": "Ainda não publicámos artigos por aqui. Notícias do clube, relatos de jogos e histórias vão chegar a esta página em breve."
     },

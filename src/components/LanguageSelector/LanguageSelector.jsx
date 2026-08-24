@@ -94,10 +94,6 @@ function LanguageSelector({ mobile, handleCloseMenu }) {
           fontSize={28}
           className="text-dark group-hover:text-[var(--red)] transition-colors duration-normal ease-smooth"
         />
-        <ChevronDownIcon
-          className="h-5 w-5 flex-none text-gray-400"
-          aria-hidden="true"
-        />
       </Popover.Button>
 
       <Transition

@@ -3,12 +3,12 @@
 import { useState } from "react";
 import ProductCard from "@/components/Cards/ProductCard";
 import EmptyState from "@/components/EmptyState";
+import FilterChip from "@/components/FilterChip";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
 import StaggerGroup from "@/components/StaggerGroup";
 import Reveal from "@/components/Reveal";
-import { barlow } from "@/styles/fonts";
 import { basketballProducts } from "@/data/basketball";
 import { futsalProducts } from "@/data/futsal";
 import { useTranslations } from "next-intl";
@@ -42,31 +42,19 @@ export default function StorePage() {
       <Section variant="pattern-dots" revealContent={false}>
         <Reveal>
         <SectionTitle title={t("common.sports.basketball")} />
-        <div className={`flex flex-wrap gap-2 mb-8 ${barlow.className}`}>
-          <button
-            type="button"
+        <div className="flex flex-wrap gap-3 mb-8">
+          <FilterChip
+            label={t("pages.store.filterAll")}
+            active={basketFilter === null}
             onClick={() => setBasketFilter(null)}
-            className={` px-4 py-1.5 font-medium transition-colors ${
-              basketFilter === null
-                ? "bg-[#273e79] text-white"
-                : "bg-gray-100 text-gray-600 hover:bg-gray-200 border border-gray-300"
-            }`}
-          >
-            {t("pages.store.filterAll")}
-          </button>
+          />
           {basketCategories.map((cat) => (
-            <button
+            <FilterChip
               key={cat}
-              type="button"
+              label={cat}
+              active={basketFilter === cat}
               onClick={() => setBasketFilter(cat)}
-              className={`px-4 py-1.5 font-medium transition-colors ${
-                basketFilter === cat
-                  ? "bg-[#273e79] text-white"
-                  : "bg-gray-100 text-gray-600 hover:bg-gray-200 border border-gray-300"
-              }`}
-            >
-              {cat}
-            </button>
+            />
           ))}
         </div>
         </Reveal>
@@ -96,31 +84,19 @@ export default function StorePage() {
       <Section containerClassName={"bg-white"} revealContent={false}>
         <Reveal>
         <SectionTitle title={t("common.sports.futsal")} />
-        <div className={`flex flex-wrap gap-2 mb-8 ${barlow.className}`}>
-          <button
-            type="button"
+        <div className="flex flex-wrap gap-3 mb-8">
+          <FilterChip
+            label={t("pages.store.filterAll")}
+            active={futsalFilter === null}
             onClick={() => setFutsalFilter(null)}
-            className={`px-4 py-1.5 font-medium transition-colors ${
-              futsalFilter === null
-                ? "bg-[#273e79] text-white"
-                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-            }`}
-          >
-            {t("pages.store.filterAll")}
-          </button>
+          />
           {futsalCategories.map((cat) => (
-            <button
+            <FilterChip
               key={cat}
-              type="button"
+              label={cat}
+              active={futsalFilter === cat}
               onClick={() => setFutsalFilter(cat)}
-              className={`px-4 py-1.5 font-medium transition-colors ${
-                futsalFilter === cat
-                  ? "bg-[#273e79] text-white"
-                  : "border border-gray-300 text-gray-600 hover:bg-gray-200"
-              }`}
-            >
-              {cat}
-            </button>
+            />
           ))}
         </div>
         </Reveal>

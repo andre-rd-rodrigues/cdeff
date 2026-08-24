@@ -30,7 +30,7 @@ function EventCard({ event, href }) {
   }, [dateStart, dateEnd, locale]);
 
   return (
-    <Link href={href} className="relative flex flex-col max-w-xs card-lift">
+    <Link href={href} className="relative flex flex-col max-w-xs card-lift bg-white">
       <div className="h-[3px] bg-red w-full" />
       <div className="relative h-[450px]">
         <Image

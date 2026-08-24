@@ -5,12 +5,13 @@ import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Bars3Icon } from "@heroicons/react/24/outline";
-import { Link, parseHref } from "@/i18n/routing";
+import { Link, parseHref, usePathname } from "@/i18n/routing";
 import { useState } from "react";
 import enTranslations from "../../messages/en.json";
 import ptTranslations from "../../messages/pt.json";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
 import Dropdown from "./Dropdown";
+import { getNavLinkState } from "./navUtils";
 
 import { useLocale } from "next-intl";
 import { CloseButton, CompanyLogo } from "./NavbarWidgets";
@@ -19,9 +20,19 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
+function NavDot({ className = "" }) {
+  return (
+    <span
+      aria-hidden="true"
+      className={`absolute h-2 w-2 rounded-full bg-red ${className}`}
+    />
+  );
+}
+
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const locale = useLocale();
+  const pathname = usePathname();
 
   const translations = locale === "en" ? enTranslations : ptTranslations;
   const links = translations.components.navbar.links;
@@ -51,15 +62,35 @@ const Navbar = () => {
           </button>
         </div>
         <Popover.Group className="hidden xl:flex xl:gap-x-8">
-          {links.map(({ href, name, subLinks }, i) =>
-            subLinks ? (
-              <Dropdown link={name} subLinks={subLinks} key={i} />
+          {links.map(({ href, name, subLinks }, i) => {
+            const { isActive, hasActiveChild } = getNavLinkState(pathname, {
+              href,
+              subLinks
+            });
+
+            return subLinks ? (
+              <Dropdown
+                link={name}
+                subLinks={subLinks}
+                isActive={isActive}
+                hasActiveChild={hasActiveChild}
+                key={i}
+              />
             ) : (
-              <Link href={parseHref(href)} className={linksClasses} key={name}>
+              <Link
+                href={parseHref(href)}
+                className={classNames(
+                  linksClasses,
+                  isActive && "nav-link--active"
+                )}
+                aria-current={isActive ? "page" : undefined}
+                key={name}
+              >
                 {name}
+                {hasActiveChild && <NavDot className="-top-1 -right-2.5" />}
               </Link>
-            )
-          )}
+            );
+          })}
         </Popover.Group>
         <div className="hidden xl:flex">
           <LanguageSelector />
@@ -102,15 +133,25 @@ const Navbar = () => {
               <div className="mt-6 flow-root">
                 <div className="-my-6 divide-y divide-gray-500/10">
                   <div className="space-y-5 py-6">
-                    {links.map(({ href, name, subLinks }, i) =>
-                      subLinks ? (
+                    {links.map(({ href, name, subLinks }, i) => {
+                      const { isActive, hasActiveChild } = getNavLinkState(
+                        pathname,
+                        { href, subLinks }
+                      );
+
+                      return subLinks ? (
                         <Disclosure as="div" key={i}>
                           {({ open, close }) => (
                             <>
                               <Disclosure.Button
                                 className={`flex w-full text-xl text-l items-center justify-between px-3 ${mobileLinksClasses}`}
                               >
-                                {name}
+                                <span className="relative">
+                                  {name}
+                                  {hasActiveChild && (
+                                    <NavDot className="top-0 -right-3" />
+                                  )}
+                                </span>
                                 <ChevronDownIcon
                                   className={`h-5 w-5 flex-none transition-transform duration-slow ease-smooth ${
                                     open ? "rotate-180" : ""
@@ -160,14 +201,22 @@ const Navbar = () => {
                         <div data-headlessui-state key={i}>
                           <Link
                             href={parseHref(href)}
-                            className={`text-xl p-3 leading-6 text-dark font-normal uppercase ${barlow.className} tracking-wide`}
+                            className={classNames(
+                              "relative text-xl p-3 leading-6 font-normal uppercase tracking-wide",
+                              barlow.className,
+                              isActive ? "text-red" : "text-dark"
+                            )}
+                            aria-current={isActive ? "page" : undefined}
                             onClick={() => setMobileMenuOpen(false)}
                           >
                             {name}
+                            {hasActiveChild && (
+                              <NavDot className="top-2 -right-1" />
+                            )}
                           </Link>
                         </div>
-                      )
-                    )}
+                      );
+                    })}
                     <LanguageSelector
                       mobile
                       handleCloseMenu={() => setMobileMenuOpen(false)}

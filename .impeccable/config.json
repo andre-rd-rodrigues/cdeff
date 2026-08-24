@@ -10,6 +10,12 @@
         "value": "ball-bounce-in",
         "createdAt": "2026-07-21T10:32:44.385Z",
         "reason": "User-approved literal sports-ball bounce on the 404 'out of bounds' page; domain-appropriate physical motion"
+      },
+      {
+        "rule": "bounce-easing",
+        "value": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+        "createdAt": "2026-08-24T12:08:21.780Z",
+        "reason": "Pre-existing documented design token --ease-pop, intentionally scoped in globals.scss to momentary confirmation/active-state pops; not introduced by the dots change and blocking an unrelated whole-file write"
       }
     ]
   }

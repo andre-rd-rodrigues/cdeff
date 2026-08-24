@@ -19,13 +19,16 @@ const Card = ({
 
   return (
     <div
-      className={`relative flex flex-col max-w-[320px] card-lift ${className}`}
+      className={`group relative flex flex-col max-w-[320px] bg-white shadow-card card-lift ${
+        className || ""
+      }`}
     >
-      <div className="relative h-[350px]">
+      <div className="relative h-[350px] overflow-hidden">
         <Image
           src={imageSrc}
           alt={title}
           fill
+          className="transition-transform duration-slow ease-smooth group-hover:scale-105"
           style={{
             objectFit: imgContain ? "contain" : "cover"
           }}

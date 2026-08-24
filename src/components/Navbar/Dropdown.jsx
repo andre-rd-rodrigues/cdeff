@@ -6,15 +6,32 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Link, parseHref } from "@/i18n/routing";
 import { Fragment } from "react";
 
-function Dropdown({ subLinks, link }) {
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
+
+function Dropdown({ subLinks, link, isActive = false, hasActiveChild = false }) {
   const linksClasses = `text-l leading-6 text-dark font-normal uppercase ${barlow.className}`;
 
   return (
     <Popover className="relative">
       <Popover.Button
-        className={`flex outline-none items-center gap-x-1 ${linksClasses}`}
+        className={classNames(
+          "flex outline-none items-center gap-x-1 nav-link",
+          linksClasses,
+          isActive && "nav-link--active"
+        )}
+        aria-current={isActive ? "page" : undefined}
       >
-        {link}
+        <span className="relative">
+          {link}
+          {hasActiveChild && (
+            <span
+              aria-hidden="true"
+              className="absolute -top-1 -right-3 h-2 w-2 rounded-full bg-red"
+            />
+          )}
+        </span>
         <ChevronDownIcon
           className="h-5 w-5 flex-none text-gray-400"
           aria-hidden="true"

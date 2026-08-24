@@ -157,23 +157,31 @@ export default function HomePage({ blogPosts }) {
           />
         </Reveal>
         {blogPosts?.length ? (
-          <StaggerGroup
-            className="flex flex-wrap justify-center gap-10"
-            itemClassName="w-full md:max-w-sm"
-          >
-            {blogPosts.map((post, i) => (
-              <BlogCard
-                key={i}
+          <>
+            <StaggerGroup
+              className="flex flex-wrap justify-center gap-10"
+              itemClassName="w-full md:max-w-sm"
+            >
+              {blogPosts.slice(0, 3).map((post, i) => (
+                <BlogCard
+                  key={i}
                 article={{
                   title: post.title,
                   description: post.description,
                   date: post.date,
                   image: post.image,
-                  slug: post.slug
+                  slug: post.slug,
+                  category: post.category
                 }}
-              />
-            ))}
-          </StaggerGroup>
+                />
+              ))}
+            </StaggerGroup>
+            <Reveal className="text-center mt-12">
+              <Link href="/blog">
+                <Button variant label={t("common.buttons.seeMore")} />
+              </Link>
+            </Reveal>
+          </>
         ) : (
           <EmptyState
             icon="ph:newspaper-clipping"

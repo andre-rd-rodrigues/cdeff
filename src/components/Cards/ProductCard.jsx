@@ -26,7 +26,7 @@ const ProductCard = ({ title, price, sizes, image, images, className }) => {
   };
 
   return (
-    <div className={`relative flex flex-col w-[250px] card-lift ${className}`}>
+    <div className={`relative flex flex-col w-[250px] card-lift bg-white ${className}`}>
       <div className="relative h-[350px]">
         <Image
           className={hasMultiple ? "cursor-pointer" : ""}

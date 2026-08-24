@@ -5,7 +5,7 @@ import { barlow } from "@/styles/fonts";
 const TeamMemberCard = ({ name, role, imageSrc, className }) => {
   return (
     <div
-      className={`relative flex border border-blue flex-col max-w-[320px] rounded-lg shadow-card overflow-hidden ${className}`}
+      className={`relative flex border border-blue flex-col max-w-[320px] rounded-lg shadow-card overflow-hidden bg-white ${className}`}
     >
       <div className="relative h-[350px]">
         <Image src={imageSrc} alt={name} fill style={{ objectFit: "cover" }} />

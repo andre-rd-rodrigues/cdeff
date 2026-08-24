@@ -11,6 +11,10 @@
   --red-hover: #a83245;
   --cyan: #3a9ebd;
   --white: white;
+  /* Default body/paragraph text colour (Tailwind gray-700). Applied as an
+     inherited default on body, so intentional text-white / text-blue on any
+     ancestor still overrides it. */
+  --text-body: #374151;
 
   /* Overlays */
   --overlay-blue: #273e79c1;
@@ -106,6 +110,7 @@ html,
 body {
   overflow-x: hidden;
   background-color: var(--light-grey);
+  color: var(--text-body);
   white-space: pre-line;
 }
 
@@ -246,7 +251,7 @@ footer {
 }
 
 .darkArrows.active {
-  background: var(--blue);
+  background: var(--red);
 }
 
 /* Hero carousel (full-bleed crossfade) */
@@ -264,8 +269,8 @@ footer {
   opacity: 0;
   visibility: hidden;
   transform: scale(1.04);
-  transition: opacity 0.4s var(--ease-smooth),
-    transform 0.6s var(--ease-smooth), visibility 0s linear 0.4s;
+  transition: opacity 0.4s var(--ease-smooth), transform 0.6s var(--ease-smooth),
+    visibility 0s linear 0.4s;
 }
 
 .hero-slide.is-active {
@@ -273,8 +278,7 @@ footer {
   visibility: visible;
   transform: scale(1);
   z-index: var(--z-content);
-  transition: opacity 0.4s var(--ease-smooth),
-    transform 0.6s var(--ease-smooth);
+  transition: opacity 0.4s var(--ease-smooth), transform 0.6s var(--ease-smooth);
 }
 
 .hero-arrow {
@@ -424,8 +428,12 @@ footer {
 }
 
 @keyframes heroSegGrow {
-  from { transform: scaleX(0); }
-  to { transform: scaleX(1); }
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 
 /* Multi-item carousel (scroll-snap) */
@@ -436,7 +444,7 @@ footer {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
-  padding: 10px 0;
+  padding: 14px 2px 30px;
 }
 
 .carousel-track::-webkit-scrollbar {
@@ -460,9 +468,15 @@ footer {
   transform: translateY(0);
 }
 
-.reveal-delay-1 { transition-delay: 0.1s; }
-.reveal-delay-2 { transition-delay: 0.2s; }
-.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-1 {
+  transition-delay: 0.1s;
+}
+.reveal-delay-2 {
+  transition-delay: 0.2s;
+}
+.reveal-delay-3 {
+  transition-delay: 0.3s;
+}
 
 /* Sibling stagger: cards in a grid enter in rhythm rather than as one block.
    Each child carries --i (its index); the container adds .is-in on intersect.
@@ -478,7 +492,9 @@ footer {
 .stagger-group.is-in .stagger-item {
   opacity: 1;
   transform: translateY(0);
-  transition-delay: calc(min(var(--i, 0), var(--stagger-cap)) * var(--stagger-step));
+  transition-delay: calc(
+    min(var(--i, 0), var(--stagger-cap)) * var(--stagger-step)
+  );
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -519,8 +535,12 @@ footer {
 }
 
 @keyframes slow-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .animate-slow-spin {
@@ -548,6 +568,10 @@ footer {
   &:hover::after {
     transform: scaleX(1);
     transition: transform var(--duration-fast) var(--ease-pop);
+  }
+
+  &.nav-link--active::after {
+    transform: scaleX(1);
   }
 }
 
@@ -610,10 +634,12 @@ footer {
     position: absolute;
     inset: 0;
     background-image: radial-gradient(
-      rgba(39, 62, 121, 0.09) 1.4px,
-      transparent 1.4px
-    );
-    background-size: 22px 22px;
+        rgba(39, 62, 121, 0.09) 1.5px,
+        transparent 1.5px
+      ),
+      radial-gradient(rgba(39, 62, 121, 0.09) 1.5px, transparent 1.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
     pointer-events: none;
     z-index: 0;
     -webkit-mask-image: radial-gradient(
@@ -643,15 +669,15 @@ footer {
     position: absolute;
     inset: 0;
     background-image: radial-gradient(
-      ellipse 55% 70% at 100% 0%,
-      rgba(39, 62, 121, 0.07),
-      transparent 60%
-    ),
-    radial-gradient(
-      ellipse 50% 65% at 0% 100%,
-      rgba(58, 158, 189, 0.05),
-      transparent 60%
-    );
+        ellipse 55% 70% at 100% 0%,
+        rgba(39, 62, 121, 0.07),
+        transparent 60%
+      ),
+      radial-gradient(
+        ellipse 50% 65% at 0% 100%,
+        rgba(58, 158, 189, 0.05),
+        transparent 60%
+      );
     pointer-events: none;
     z-index: 0;
   }
@@ -701,9 +727,15 @@ footer {
 }
 
 /* Stagger delays for card grids */
-.reveal-delay-4 { transition-delay: 0.4s; }
-.reveal-delay-5 { transition-delay: 0.5s; }
-.reveal-delay-6 { transition-delay: 0.6s; }
+.reveal-delay-4 {
+  transition-delay: 0.4s;
+}
+.reveal-delay-5 {
+  transition-delay: 0.5s;
+}
+.reveal-delay-6 {
+  transition-delay: 0.6s;
+}
 
 /* Decorative accent shapes */
 .accent-shape {
@@ -718,20 +750,22 @@ footer {
   background: var(--red);
 }
 
-/* Dotted grid ornament peeking from behind an image's bottom-right corner */
-.image-dots-ornament {
+/* Diagonal line ornament peeking from behind an image's bottom-right corner */
+.image-lines-ornament {
   position: absolute;
   right: -14px;
   bottom: -14px;
-  width: 45%;
-  height: 45%;
-  max-width: 160px;
-  max-height: 160px;
-  background-image: radial-gradient(
-    rgba(39, 62, 121, 0.28) 1.5px,
-    transparent 1.5px
+  width: 55%;
+  height: 65%;
+  max-width: 200px;
+  max-height: 240px;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(39, 62, 121, 0.45),
+    rgba(39, 62, 121, 0.45) 1.5px,
+    transparent 1.5px,
+    transparent 5px
   );
-  background-size: 16px 16px;
   pointer-events: none;
   z-index: 0;
 }

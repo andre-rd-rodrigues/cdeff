@@ -370,6 +370,15 @@
     "blog": {
       "title": "Blog",
       "recentArticles": "Recent articles",
+      "searchPlaceholder": "Search articles",
+      "noResults": "No articles match your filters.",
+      "categories": {
+        "all": "All",
+        "basketball": "Basketball",
+        "futsal": "Futsal",
+        "health": "Health & Wellbeing",
+        "club": "Club"
+      },
       "emptyTitle": "No stories yet",
       "emptyText": "We haven't published any articles here yet. Club news, match reports and stories will land on this page soon."
     },
