@@ -8,6 +8,8 @@ import FeedbackCard from "@/components/FeedbackCard";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
+import StaggerGroup from "@/components/StaggerGroup";
+import Reveal from "@/components/Reveal";
 import { futsalFeedback } from "@/data/futsal";
 import useSportSelect from "@/hooks/useSportSelect";
 import { SPORTS } from "@/constants";
@@ -27,34 +29,36 @@ export default function TournamentsPage({ tournaments }) {
     <main>
       <PageHeader
         title={t("pages.tournaments.title")}
-        image={"https://i.postimg.cc/jSJCSSb3/torneios.jpg"}
+        image={"/images/headers/torneios.jpg"}
       />
-      <Section containerClassName={"-mt-7"} variant="glow">
-        <SectionTitle
-          subtitle={t("pages.tournaments.selectSport")}
-          className={"text-center"}
-        />
-        {/* Sport select */}
-        <div className="flex w-full m-auto justify-center gap-10 mt-7">
-          <IconCard
-            title={t("common.sports.basketball")}
-            iconName="ph:basketball"
-            motion="bounce"
-            isSelected={isBasket}
-            onClick={() => updateSelectedSport(SPORTS.BASKETBALL)}
+      <Section containerClassName={"-mt-7"} variant="glow" revealContent={false}>
+        <Reveal>
+          <SectionTitle
+            subtitle={t("pages.tournaments.selectSport")}
+            className={"text-center"}
           />
-          <IconCard
-            title={t("common.sports.futsal")}
-            iconName="ph:soccer-ball"
-            motion="roll"
-            isSelected={!isBasket}
-            onClick={() => updateSelectedSport(SPORTS.FUTSAL)}
-          />
-        </div>
+          {/* Sport select */}
+          <div className="flex w-full m-auto justify-center gap-10 mt-7">
+            <IconCard
+              title={t("common.sports.basketball")}
+              iconName="ph:basketball"
+              motion="bounce"
+              isSelected={isBasket}
+              onClick={() => updateSelectedSport(SPORTS.BASKETBALL)}
+            />
+            <IconCard
+              title={t("common.sports.futsal")}
+              iconName="ph:soccer-ball"
+              motion="roll"
+              isSelected={!isBasket}
+              onClick={() => updateSelectedSport(SPORTS.FUTSAL)}
+            />
+          </div>
+        </Reveal>
         <div className="my-16">
-          <div className="flex flex-wrap gap-10 justify-center">
-            {selectedSportTournaments && selectedSportTournaments.length ? (
-              selectedSportTournaments?.map((tournament, i) => (
+          {selectedSportTournaments && selectedSportTournaments.length ? (
+            <StaggerGroup className="flex flex-wrap gap-10 justify-center">
+              {selectedSportTournaments?.map((tournament, i) => (
                 <EventCard
                   key={i}
                   href={`tournaments/${tournament.slug}`}
@@ -67,8 +71,10 @@ export default function TournamentsPage({ tournaments }) {
                     location: tournament.location
                   }}
                 />
-              ))
-            ) : (
+              ))}
+            </StaggerGroup>
+          ) : (
+            <Reveal className="flex flex-wrap gap-10 justify-center">
               <EmptyState
                 icon="ph:calendar-blank"
                 title={t("pages.tournaments.empty.title")}
@@ -78,21 +84,20 @@ export default function TournamentsPage({ tournaments }) {
                   label: t("pages.tournaments.empty.cta")
                 }}
               />
-            )}
-          </div>
+            </Reveal>
+          )}
         </div>
 
         {!isBasket && (
           <Section variant="pattern-dots">
             <SectionTitle title={t("pages.tournaments.feedback.title")} />
-            <Carousel isSpaced autoPlay darkArrows>
+            <Carousel autoPlay darkArrows perView={2} spacing={20}>
               {futsalFeedback.map(({ author, image, feedback }, i) => (
                 <FeedbackCard
                   author={author}
                   feedback={feedback}
                   image={image}
                   key={i}
-                  className="keen-slider__slide"
                 />
               ))}
             </Carousel>

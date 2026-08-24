@@ -23,7 +23,7 @@ const Footer = () => {
 
   const CompanyLogo = (
     <Link href="/" className="flex flex-col items-center gap-4">
-      <Image width={100} height={100} src="/images/logo.png" alt="CDEFF" />
+      <Image width={100} height={100} src="/images/logo.webp" alt="CDEFF" />
       <p
         className={`${barlow.className} uppercase text-white mx-5 font-semibold text-l`}
       >
@@ -79,13 +79,13 @@ const Footer = () => {
       </p>
       <Link href={hrefs.insta} target="_blank">
         <Icon
-          className="opacity-50 hover:opacity-100 hover:text-red transition-all duration-300 hover:scale-110"
+          className="opacity-50 hover:opacity-100 hover:text-red transition-all duration-normal ease-smooth hover:scale-110"
           icon="bi:instagram"
         />
       </Link>
       <Link href={hrefs.facebook} target="_blank">
         <Icon
-          className="opacity-50 hover:opacity-100 hover:text-red transition-all duration-300 hover:scale-110"
+          className="opacity-50 hover:opacity-100 hover:text-red transition-all duration-normal ease-smooth hover:scale-110"
           icon="ic:baseline-facebook"
         />
       </Link>

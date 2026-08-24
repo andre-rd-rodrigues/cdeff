@@ -24,7 +24,6 @@
     "dayjs": "^1.11.10",
     "gray-matter": "^4.0.3",
     "insights-js": "^1.2.11",
-    "keen-slider": "^6.8.6",
     "next": "16.1.6",
     "next-intl": "^4.8.3",
     "next-mdx-remote": "^6.0.0",

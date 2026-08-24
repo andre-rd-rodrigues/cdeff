@@ -5,9 +5,15 @@
   transition: transform var(--duration-fast) var(--ease-smooth),
     box-shadow var(--duration-fast) var(--ease-smooth),
     background-position var(--duration-fast) var(--ease-smooth),
-    color var(--duration-fast) ease;
+    color var(--duration-fast) var(--ease-smooth);
 
   &:hover {
     background-position: left;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button2 {
+    transition: none;
   }
 }

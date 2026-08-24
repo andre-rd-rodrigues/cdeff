@@ -667,7 +667,7 @@ export const futsalTeam = {
 };
 
 export const futsalAllSponsorsUrls = [
-  "/images/navbar/futsal/tourigalo.png",
+  "/images/navbar/futsal/tourigalo.webp",
   ...futsalSponsors.collaborators,
   ...futsalSponsors.normal,
   ...futsalSponsors.premium

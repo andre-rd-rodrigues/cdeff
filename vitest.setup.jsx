@@ -67,11 +67,6 @@ vi.mock("insights-js", () => ({
   trackPages: vi.fn()
 }));
 
-// Mock keen-slider
-vi.mock("keen-slider/react", () => ({
-  useKeenSlider: vi.fn(() => [{ current: null }, { current: null }])
-}));
-
 // Polyfill window.matchMedia for JSDOM
 Object.defineProperty(window, "matchMedia", {
   writable: true,

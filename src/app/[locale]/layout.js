@@ -21,7 +21,7 @@ export default async function LocaleLayout({ children, params }) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={dm_sans.className}>
+    <html lang={locale} className={`${dm_sans.className} ${barlow.variable}`}>
       <body>
         <NextIntlClientProvider messages={messages}>
           <ClientLayout>{children}</ClientLayout>

@@ -20,7 +20,7 @@ const CompanyLogo = ({ isLargeMenu = true }) => {
   const t = useTranslations();
   return (
     <Link href="/" className="flex items-center">
-      <Image width={46} height={46} src="/images/logo.png" alt="" />
+      <Image width={46} height={46} src="/images/logo.webp" alt="" />
       <p
         className={`${barlow.className} uppercase -translate-y-2 ${
           isLargeMenu && "hidden sm:block"
@@ -47,14 +47,14 @@ const CloseButton = ({ handleClose }) => {
 
 const sponsorImages = [
   {
-    src: "/images/navbar/basket/hospital.png",
+    src: "/images/navbar/basket/hospital.webp",
     alt: "Hospital Particular da Madeira"
   },
-  { src: "/images/navbar/company/cmf.png", alt: "CMF" },
-  { src: "/images/navbar/company/educação.png", alt: "Educação", wide: true },
-  { src: "/images/navbar/company/escola.png", alt: "Escola Francisco Franco" },
-  { src: "/images/navbar/company/madeira.png", alt: "Madeira" },
-  { src: "/images/navbar/futsal/tourigalo.png", alt: "Tourigalo" }
+  { src: "/images/navbar/company/cmf.webp", alt: "CMF" },
+  { src: "/images/navbar/company/educação.webp", alt: "Educação", wide: true },
+  { src: "/images/navbar/company/escola.webp", alt: "Escola Francisco Franco" },
+  { src: "/images/navbar/company/madeira.webp", alt: "Madeira" },
+  { src: "/images/navbar/futsal/tourigalo.webp", alt: "Tourigalo" }
 ];
 
 const Sponsors = () => (

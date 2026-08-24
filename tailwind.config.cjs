@@ -49,12 +49,14 @@ module.exports = {
       },
 
       transitionTimingFunction: {
-        smooth: "var(--ease-smooth)"
+        smooth: "var(--ease-smooth)",
+        pop: "var(--ease-pop)"
       },
 
       transitionDuration: {
         fast: "var(--duration-fast)",
-        normal: "var(--duration-normal)"
+        normal: "var(--duration-normal)",
+        slow: "var(--duration-slow)"
       },
 
       zIndex: {

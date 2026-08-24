@@ -6,12 +6,15 @@ import EmptyState from "@/components/EmptyState";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
+import StaggerGroup from "@/components/StaggerGroup";
+import Reveal from "@/components/Reveal";
 import { barlow } from "@/styles/fonts";
 import { basketballProducts } from "@/data/basketball";
 import { futsalProducts } from "@/data/futsal";
 import { useTranslations } from "next-intl";
 
 export default function StorePage() {
+  // stagger-reveal: product grids cascade in on scroll
   const t = useTranslations();
   const [basketFilter, setBasketFilter] = useState(null);
   const [futsalFilter, setFutsalFilter] = useState(null);
@@ -34,9 +37,10 @@ export default function StorePage() {
     <main>
       <PageHeader
         title={t("pages.store.title")}
-        image={"https://i.postimg.cc/MpqMCR71/Loja.png"}
+        image={"/images/headers/loja.png"}
       />
-      <Section variant="pattern-dots">
+      <Section variant="pattern-dots" revealContent={false}>
+        <Reveal>
         <SectionTitle title={t("common.sports.basketball")} />
         <div className={`flex flex-wrap gap-2 mb-8 ${barlow.className}`}>
           <button
@@ -65,8 +69,9 @@ export default function StorePage() {
             </button>
           ))}
         </div>
+        </Reveal>
         {filteredBasketProducts.length ? (
-          <div className="flex flex-wrap gap-10 justify-center md:justify-start">
+          <StaggerGroup className="flex flex-wrap gap-10 justify-center md:justify-start">
             {filteredBasketProducts.map((item, i) => (
               <ProductCard
                 key={i}
@@ -76,17 +81,20 @@ export default function StorePage() {
                 sizes={item.sizes}
               />
             ))}
-          </div>
+          </StaggerGroup>
         ) : (
-          <EmptyState
-            icon="ph:t-shirt"
-            title={t("pages.store.emptyTitle")}
-            description={t("pages.store.emptyText")}
-          />
+          <Reveal>
+            <EmptyState
+              icon="ph:t-shirt"
+              title={t("pages.store.emptyTitle")}
+              description={t("pages.store.emptyText")}
+            />
+          </Reveal>
         )}
       </Section>
 
-      <Section containerClassName={"bg-white"}>
+      <Section containerClassName={"bg-white"} revealContent={false}>
+        <Reveal>
         <SectionTitle title={t("common.sports.futsal")} />
         <div className={`flex flex-wrap gap-2 mb-8 ${barlow.className}`}>
           <button
@@ -115,8 +123,9 @@ export default function StorePage() {
             </button>
           ))}
         </div>
+        </Reveal>
         {filteredFutsalProducts.length ? (
-          <div className="flex flex-wrap gap-10 justify-center md:justify-start">
+          <StaggerGroup className="flex flex-wrap gap-10 justify-center md:justify-start">
             {filteredFutsalProducts.map((item, i) => (
               <ProductCard
                 key={i}
@@ -126,13 +135,15 @@ export default function StorePage() {
                 sizes={item.sizes}
               />
             ))}
-          </div>
+          </StaggerGroup>
         ) : (
-          <EmptyState
-            icon="ph:t-shirt"
-            title={t("pages.store.emptyTitle")}
-            description={t("pages.store.emptyText")}
-          />
+          <Reveal>
+            <EmptyState
+              icon="ph:t-shirt"
+              title={t("pages.store.emptyTitle")}
+              description={t("pages.store.emptyText")}
+            />
+          </Reveal>
         )}
       </Section>
     </main>

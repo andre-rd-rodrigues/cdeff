@@ -19,7 +19,7 @@ export default function SponsorsPage() {
     <main>
       <PageHeader
         title={t("pages.sponsors.title")}
-        image="https://i.postimg.cc/T1b56JNJ/Patrocinadores.png"
+        image="/images/headers/patrocinadores.png"
       />
 
       {/* Main */}
@@ -27,10 +27,10 @@ export default function SponsorsPage() {
         <SectionTitle title={t("pages.sponsors.mainSponsors")} hideAccent />
         <div className="flex">
           <SponsorSection
-            images={["/images/navbar/basket/hospital.png"]}
+            images={["/images/navbar/basket/hospital.webp"]}
             basket
           />
-          <SponsorSection images={["/images/navbar/futsal/tourigalo.png"]} />
+          <SponsorSection images={["/images/navbar/futsal/tourigalo.webp"]} />
         </div>
       </Section>
 

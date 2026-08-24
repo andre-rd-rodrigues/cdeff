@@ -1,9 +1,13 @@
 import React from "react";
 import Card from "./Cards/Card";
+import StaggerGroup from "./StaggerGroup";
 
 function RankSection({ team }) {
   return (
-    <div className="grid justify-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <StaggerGroup
+      className="grid justify-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+      itemClassName="w-full"
+    >
       {team.map(({ name, image }, i) => (
         <Card
           imgContain
@@ -13,7 +17,7 @@ function RankSection({ team }) {
           title={name}
         />
       ))}
-    </div>
+    </StaggerGroup>
   );
 }
 

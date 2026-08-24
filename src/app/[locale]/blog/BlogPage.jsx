@@ -5,6 +5,8 @@ import EmptyState from "@/components/EmptyState";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
+import StaggerGroup from "@/components/StaggerGroup";
+import Reveal from "@/components/Reveal";
 import { useTranslations } from "next-intl";
 
 export default function BlogPage({ posts }) {
@@ -14,12 +16,17 @@ export default function BlogPage({ posts }) {
     <main>
       <PageHeader
         title={t("pages.blog.title")}
-        image={"https://i.postimg.cc/D0B4LjjC/blog.jpg"}
+        image={"/images/headers/blog.jpg"}
       />
-      <Section variant="pattern-dots">
-        <SectionTitle title={t("pages.blog.recentArticles")} />
+      <Section variant="pattern-dots" revealContent={false}>
+        <Reveal>
+          <SectionTitle title={t("pages.blog.recentArticles")} />
+        </Reveal>
         {posts?.length ? (
-          <div className="flex flex-wrap gap-10 justify-center md:justify-start">
+          <StaggerGroup
+            className="flex flex-wrap gap-10 justify-center md:justify-start"
+            itemClassName="w-full md:max-w-sm"
+          >
             {posts.map((post, i) => (
               <BlogCard
                 key={i}
@@ -32,13 +39,15 @@ export default function BlogPage({ posts }) {
                 }}
               />
             ))}
-          </div>
+          </StaggerGroup>
         ) : (
-          <EmptyState
-            icon="ph:newspaper-clipping"
-            title={t("pages.blog.emptyTitle")}
-            description={t("pages.blog.emptyText")}
-          />
+          <Reveal>
+            <EmptyState
+              icon="ph:newspaper-clipping"
+              title={t("pages.blog.emptyTitle")}
+              description={t("pages.blog.emptyText")}
+            />
+          </Reveal>
         )}
       </Section>
     </main>

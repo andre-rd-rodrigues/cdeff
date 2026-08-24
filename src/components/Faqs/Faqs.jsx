@@ -16,7 +16,7 @@ function ArrowIcon({ open }) {
       viewBox="0 0 20 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={`transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+      className={`transition-transform duration-slow ease-smooth ${
         open ? "rotate-180" : "rotate-0"
       }`}
     >
@@ -45,13 +45,15 @@ function FaqItem({ question, answer, index, t }) {
             className="flex w-full items-center justify-between py-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue/20 focus-visible:rounded-lg cursor-pointer"
           >
             <h3
-              className={`${barlow.className} text-start text-lg md:text-xl font-medium tracking-wide text-[var(--blue)] transition-colors duration-300 group-hover:text-[var(--red)] pr-4`}
+              className={`${barlow.className} text-start text-lg md:text-xl font-medium tracking-wide text-[var(--blue)] transition-colors duration-normal ease-smooth group-hover:text-[var(--red)] pr-4`}
             >
               {question}
             </h3>
 
             <span
-              className={`flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+              className={`flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center transition-all duration-slow ${
+                open ? "ease-pop" : "ease-smooth"
+              } ${
                 open
                   ? "bg-[var(--blue)] text-white"
                   : "bg-[var(--blue)]/[0.06] text-[var(--blue)] group-hover:bg-[var(--blue)]/[0.12]"
@@ -63,7 +65,7 @@ function FaqItem({ question, answer, index, t }) {
 
           <div
             ref={panelRef}
-            className="grid transition-[grid-template-rows] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
+            className="grid transition-[grid-template-rows] duration-slow ease-smooth"
             style={{
               gridTemplateRows: open ? "1fr" : "0fr"
             }}
@@ -74,7 +76,7 @@ function FaqItem({ question, answer, index, t }) {
                 className="pb-6 pr-12"
               >
                 <div
-                  className={`transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                  className={`transition-all duration-slow ease-smooth ${
                     open
                       ? "opacity-100 translate-y-0"
                       : "opacity-0 -translate-y-2"

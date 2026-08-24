@@ -37,7 +37,7 @@ function Dropdown({ subLinks, link }) {
                 as={Link}
                 href={parseHref(href)}
                 key={name}
-                className={`group relative whitespace-nowrap flex items-center px-9 py-4 text-m hover:bg-gray-50 hover:border-l-2 hover:border-red hover:pl-[34px] uppercase ${barlow.className} tracking-wide transition-all duration-150`}
+                className={`group relative whitespace-nowrap flex items-center px-9 py-4 text-m hover:bg-gray-50 hover:border-l-2 hover:border-red hover:pl-[34px] uppercase ${barlow.className} tracking-wide transition-all duration-fast ease-smooth`}
               >
                 {name}
               </Popover.Button>

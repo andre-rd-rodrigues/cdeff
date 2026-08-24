@@ -4,7 +4,15 @@ import React from "react";
 import Container from "./Container/Container";
 import useScrollReveal from "@/hooks/useScrollReveal";
 
-function Section({ children, containerClassName, sectionClassName, variant, angleTop, angleBottom }) {
+function Section({
+  children,
+  containerClassName,
+  sectionClassName,
+  variant,
+  angleTop,
+  angleBottom,
+  revealContent = true
+}) {
   const revealRef = useScrollReveal();
 
   const variantClasses = {
@@ -19,7 +27,10 @@ function Section({ children, containerClassName, sectionClassName, variant, angl
 
   return (
     <section className={`${containerClassName || ""} ${variantClass} ${angleClasses} py-12 md:py-16 w-full relative overflow-hidden`}>
-      <Container className={`${sectionClassName || ""} py-6 reveal`} ref={revealRef}>
+      <Container
+        className={`${sectionClassName || ""} py-6 ${revealContent ? "reveal" : ""}`}
+        ref={revealContent ? revealRef : undefined}
+      >
         {children}
       </Container>
     </section>

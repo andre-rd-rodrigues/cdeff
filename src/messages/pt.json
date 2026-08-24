@@ -533,6 +533,97 @@
           ]
         }
       ]
+    },
+    "privacyPolicy": {
+      "title": "Política de Privacidade",
+      "lastUpdated": "Última atualização: agosto de 2026",
+      "intro": "O Clube Desportivo da Escola Francisco Franco (CDEFF) respeita a sua privacidade e está empenhado em proteger os seus dados pessoais. Esta política explica como recolhemos, utilizamos e protegemos a informação que nos disponibiliza ao utilizar este site.",
+      "sections": [
+        {
+          "heading": "Responsável pelo tratamento de dados",
+          "body": "O responsável pelo tratamento dos seus dados pessoais é o Clube Desportivo da Escola Francisco Franco, com sede na Rua João de Deus nº9, 9054-527, Funchal. Para qualquer questão relacionada com a proteção de dados, pode contactar-nos através do email cdeff.madeira@esffranco.edu.pt."
+        },
+        {
+          "heading": "Que dados recolhemos",
+          "body": [
+            "Dados de identificação e contacto (nome, email, telefone) fornecidos voluntariamente através dos nossos formulários de inscrição e contacto.",
+            "Dados de navegação recolhidos automaticamente, como o endereço IP, tipo de dispositivo e páginas visitadas, através de cookies e tecnologias semelhantes."
+          ]
+        },
+        {
+          "heading": "Finalidade do tratamento",
+          "body": "Utilizamos os seus dados para gerir inscrições e participação em atividades, responder a pedidos de contacto, enviar comunicações relacionadas com o clube e melhorar a experiência de utilização do site. Os dados nunca são vendidos a terceiros."
+        },
+        {
+          "heading": "Conservação dos dados",
+          "body": "Conservamos os seus dados apenas durante o período necessário para as finalidades para as quais foram recolhidos ou de acordo com as obrigações legais aplicáveis."
+        },
+        {
+          "heading": "Os seus direitos",
+          "body": "Tem o direito de aceder, retificar, apagar, limitar ou opor-se ao tratamento dos seus dados pessoais, bem como o direito à portabilidade. Para exercer estes direitos, contacte-nos através do email indicado acima."
+        },
+        {
+          "heading": "Alterações a esta política",
+          "body": "Podemos atualizar esta política periodicamente. Quaisquer alterações serão publicadas nesta página com a respetiva data de atualização."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Termos e Condições",
+      "lastUpdated": "Última atualização: agosto de 2026",
+      "intro": "Ao aceder e utilizar o site do Clube Desportivo da Escola Francisco Franco (CDEFF), o utilizador aceita os presentes Termos e Condições. Recomendamos a leitura atenta deste documento.",
+      "sections": [
+        {
+          "heading": "Utilização do site",
+          "body": "Este site destina-se a fornecer informação sobre o clube, as suas modalidades, atividades e eventos. O utilizador compromete-se a utilizar o site de forma lícita e a não praticar quaisquer atos que possam prejudicar o seu funcionamento ou a experiência de outros utilizadores."
+        },
+        {
+          "heading": "Propriedade intelectual",
+          "body": "Todos os conteúdos presentes neste site, incluindo textos, imagens, logótipos e elementos gráficos, são propriedade do CDEFF ou dos respetivos titulares e estão protegidos por direitos de autor. É proibida a sua reprodução sem autorização prévia."
+        },
+        {
+          "heading": "Inscrições e atividades",
+          "body": "As inscrições em atividades e modalidades estão sujeitas às condições específicas de cada programa. O CDEFF reserva-se o direito de alterar horários, locais ou condições sempre que necessário, informando atempadamente os participantes."
+        },
+        {
+          "heading": "Limitação de responsabilidade",
+          "body": "O CDEFF esforça-se por manter a informação do site atualizada e correta, mas não garante a ausência de erros ou omissões. O clube não se responsabiliza por danos resultantes da utilização do site ou de sites de terceiros a que este remeta."
+        },
+        {
+          "heading": "Ligações externas",
+          "body": "Este site pode conter ligações para sites externos. O CDEFF não é responsável pelo conteúdo ou pelas práticas de privacidade desses sites."
+        },
+        {
+          "heading": "Lei aplicável",
+          "body": "Os presentes Termos e Condições regem-se pela lei portuguesa. Qualquer litígio será submetido aos tribunais competentes da comarca do Funchal."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Política de Cookies",
+      "lastUpdated": "Última atualização: agosto de 2026",
+      "intro": "Este site utiliza cookies para melhorar a sua experiência de navegação. Esta política explica o que são cookies, como os utilizamos e como pode geri-los.",
+      "sections": [
+        {
+          "heading": "O que são cookies",
+          "body": "Os cookies são pequenos ficheiros de texto armazenados no seu dispositivo quando visita um site. Permitem que o site memorize as suas ações e preferências durante um período de tempo."
+        },
+        {
+          "heading": "Tipos de cookies que utilizamos",
+          "body": [
+            "Cookies essenciais: necessários para o funcionamento básico do site, como a memorização do idioma selecionado.",
+            "Cookies de desempenho: recolhem informação anónima sobre a forma como os utilizadores interagem com o site, ajudando-nos a melhorá-lo."
+          ]
+        },
+        {
+          "heading": "Gestão de cookies",
+          "body": "Pode configurar o seu navegador para recusar ou eliminar cookies. Note que a desativação de determinados cookies pode afetar o funcionamento de algumas funcionalidades do site."
+        },
+        {
+          "heading": "Alterações a esta política",
+          "body": "Podemos atualizar esta Política de Cookies periodicamente. Recomendamos que a consulte regularmente para se manter informado."
+        }
+      ]
     }
   },
   "components": {
@@ -692,6 +783,24 @@
           "subLinks": null
         },
         {
+          "name": "Legal",
+          "href": null,
+          "subLinks": [
+            {
+              "name": "Política de Privacidade",
+              "href": "/privacy-policy"
+            },
+            {
+              "name": "Termos e Condições",
+              "href": "/terms-and-conditions"
+            },
+            {
+              "name": "Política de Cookies",
+              "href": "/cookie-policy"
+            }
+          ]
+        },
+        {
           "name": "Contactos",
           "subLinks": [
             {
@@ -728,6 +837,9 @@
       "storeTitle": "Loja - CDEFF",
       "blogTitle": "Blog - CDEFF",
       "faqsTitle": "FAQs - CDEFF",
+      "privacyTitle": "Política de Privacidade - CDEFF",
+      "termsTitle": "Termos e Condições - CDEFF",
+      "cookiesTitle": "Política de Cookies - CDEFF",
       "contactsTitle": "Contactos - CDEFF",
       "registrationsTitle": "Inscrições - CDEFF",
       "membershipTitle": "Programa de Sócios - CDEFF",

@@ -12,7 +12,7 @@ export default function FaqsPage() {
     <main>
       <PageHeader
         title={t("pages.faqs.title")}
-        image={"https://i.postimg.cc/59QCLf9Q/Perguntas-Frequentes.jpg"}
+        image={"/images/headers/perguntas-frequentes.jpg"}
       />
       <Section containerClassName={"m-auto max-w-4xl"} variant="pattern-dots">
         <Faqs />

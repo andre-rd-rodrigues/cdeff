@@ -505,7 +505,7 @@ export const basketSponsors = {
 };
 
 export const basketAllSponsorUrls = [
-  "/images/navbar/basket/hospital.png",
+  "/images/navbar/basket/hospital.webp",
   ...basketSponsors.premium,
   ...basketSponsors.normal,
   ...basketSponsors.collaborators

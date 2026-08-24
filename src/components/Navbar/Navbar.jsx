@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <header className="fixed z-50 w-full px-3 pt-3">
       <nav
-        className="mx-auto bg-white/75 backdrop-blur-xl border border-white/60 shadow-[0_2px_8px_rgba(0,0,0,0.06)] rounded-2xl flex items-center justify-between p-6 lg:px-8"
+        className="mx-auto bg-white/75 backdrop-blur-xl border border-white/60 shadow-[0_2px_8px_rgba(0,0,0,0.06)] rounded-2xl flex items-center justify-between px-[15px] py-[5px]"
         aria-label="CDEFF"
       >
         <div className="flex xl:flex-1">
@@ -75,10 +75,10 @@ const Navbar = () => {
         >
           <Transition.Child
             as={Fragment}
-            enter="transition-opacity duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]"
+            enter="transition-opacity duration-slow ease-smooth"
             enterFrom="opacity-0"
             enterTo="opacity-100"
-            leave="transition-opacity duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]"
+            leave="transition-opacity duration-normal ease-smooth"
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
@@ -87,10 +87,10 @@ const Navbar = () => {
 
           <Transition.Child
             as={Fragment}
-            enter="transition duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]"
+            enter="transition duration-slow ease-smooth"
             enterFrom="translate-x-full opacity-0"
             enterTo="translate-x-0 opacity-100"
-            leave="transition duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]"
+            leave="transition duration-normal ease-smooth"
             leaveFrom="translate-x-0 opacity-100"
             leaveTo="translate-x-full opacity-0"
           >
@@ -112,7 +112,7 @@ const Navbar = () => {
                               >
                                 {name}
                                 <ChevronDownIcon
-                                  className={`h-5 w-5 flex-none transition-transform duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                                  className={`h-5 w-5 flex-none transition-transform duration-slow ease-smooth ${
                                     open ? "rotate-180" : ""
                                   }`}
                                   aria-hidden="true"
@@ -120,7 +120,7 @@ const Navbar = () => {
                               </Disclosure.Button>
 
                               <div
-                                className="grid transition-[grid-template-rows] duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]"
+                                className="grid transition-[grid-template-rows] duration-slow ease-smooth"
                                 style={{
                                   gridTemplateRows: open ? "1fr" : "0fr"
                                 }}
@@ -135,7 +135,7 @@ const Navbar = () => {
                                         key={name}
                                         as={Link}
                                         href={parseHref(href)}
-                                        className={`block py-2 pl-6 pr-3 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] ${mobileLinksClasses} ${
+                                        className={`block py-2 pl-6 pr-3 transition-all duration-slow ease-smooth ${mobileLinksClasses} ${
                                           open
                                             ? "opacity-100 translate-y-0"
                                             : "opacity-0 -translate-y-1"

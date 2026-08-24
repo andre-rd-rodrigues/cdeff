@@ -8,6 +8,8 @@ import PageHeader from "@/components/PageHeader/PageHeader";
 import RankSection from "@/components/RankSection";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
+import StaggerGroup from "@/components/StaggerGroup";
+import Reveal from "@/components/Reveal";
 import SponsorSection from "@/components/SponsorSection";
 import Tabs from "@/components/Tabs/Tabs";
 import TextWithImage from "@/components/TextWithImage/TextWithImage";
@@ -44,12 +46,14 @@ export default function BasketballPage() {
       </Section>
 
       {/* Technical team */}
-      <Section variant="pattern-dots">
-        <SectionTitle
-          className="text-center -mb-4"
-          title={t("common.pages.techTeam")}
-        />
-        <div
+      <Section variant="pattern-dots" revealContent={false}>
+        <Reveal>
+          <SectionTitle
+            className="text-center -mb-4"
+            title={t("common.pages.techTeam")}
+          />
+        </Reveal>
+        <StaggerGroup
           className="flex flex-wrap gap-12 justify-around mb-12"
           style={{ marginTop: "var(--spacing-section-gap)" }}
         >
@@ -74,7 +78,7 @@ export default function BasketballPage() {
               </div>
             </div>
           ))}
-        </div>
+        </StaggerGroup>
       </Section>
 
       {/* Ranks */}
@@ -194,7 +198,7 @@ export default function BasketballPage() {
           <Image
             fill
             style={{ objectFit: "contain" }}
-            src="/images/navbar/basket/hospital.png"
+            src="/images/navbar/basket/hospital.webp"
             alt="CDEFF Patrocinadores"
             className="ml-4"
           />

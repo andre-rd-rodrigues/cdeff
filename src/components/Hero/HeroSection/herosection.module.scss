@@ -42,7 +42,8 @@
   font-weight: 400;
   opacity: 0;
   transform: translateX(-20px);
-  animation: heroSlideIn 0.7s var(--ease-smooth) 0.2s forwards;
+  animation: heroSlideIn var(--duration-slow) var(--ease-smooth)
+    calc(var(--stagger-step) * 3) forwards;
 }
 
 .title {
@@ -53,7 +54,8 @@
   font-weight: 500;
   opacity: 0;
   transform: translateY(16px);
-  animation: heroContentIn 0.7s var(--ease-smooth) 0.35s forwards;
+  animation: heroContentIn var(--duration-slow) var(--ease-smooth)
+    calc(var(--stagger-step) * 5) forwards;
 }
 
 @keyframes heroSlideIn {

@@ -24,7 +24,7 @@ export default function ActivitiesPage() {
     <main>
       <PageHeader
         title={t("pages.activities.title")}
-        image={"https://i.postimg.cc/yYjyyn3C/Atividades.jpg"}
+        image={"/images/headers/atividades.jpg"}
       />
 
       {/* ATL */}

@@ -16,12 +16,12 @@ const Loading = () => {
   }, []);
 
   return (
-    <div className={`flex flex-col items-center justify-center gap-6 w-full h-screen bg-white fixed top-0 left-0 z-loading transition-opacity duration-500 ease-smooth ${visible ? "opacity-100" : "opacity-0 pointer-events-none"}`}>
+    <div className={`flex flex-col items-center justify-center gap-6 w-full h-screen bg-white fixed top-0 left-0 z-loading transition-opacity duration-slow ease-smooth ${visible ? "opacity-100" : "opacity-0 pointer-events-none"}`}>
       <div className={styles.logoWrap}>
         <Image
           width={80}
           height={80}
-          src="/images/logo.png"
+          src="/images/logo.webp"
           alt="CDEFF"
           priority
         />

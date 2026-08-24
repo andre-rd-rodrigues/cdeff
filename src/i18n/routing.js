@@ -17,10 +17,22 @@ export const routing = defineRouting({
     "/blog": "/blog",
     "/blog/[slug]": "/blog/[slug]",
     "/contacts": { en: "/contacts", pt: "/contactos" },
+    "/cookie-policy": {
+      en: "/cookie-policy",
+      pt: "/politica-de-cookies"
+    },
     "/faqs": { en: "/faqs", pt: "/perguntas-frequentes" },
     "/futsal": "/futsal",
+    "/privacy-policy": {
+      en: "/privacy-policy",
+      pt: "/politica-de-privacidade"
+    },
     "/registrations": { en: "/registrations", pt: "/inscricoes" },
     "/store": { en: "/store", pt: "/loja" },
+    "/terms-and-conditions": {
+      en: "/terms-and-conditions",
+      pt: "/termos-e-condicoes"
+    },
     "/tournaments": { en: "/tournaments", pt: "/torneios" },
     "/tournaments/[slug]": {
       en: "/tournaments/[slug]",

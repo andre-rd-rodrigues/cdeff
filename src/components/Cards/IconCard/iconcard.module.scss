@@ -8,11 +8,12 @@
     height: 3px;
     background: var(--red);
     transform: scaleX(0);
-    transition: transform 0.35s var(--ease-smooth);
+    transition: transform var(--duration-normal) var(--ease-smooth);
   }
 
   &:hover::after {
     transform: scaleX(1);
+    transition: transform var(--duration-normal) var(--ease-pop);
   }
 }
 
@@ -54,12 +55,17 @@
   }
 }
 
+.container:hover .bounce,
+.container:hover .roll {
+  will-change: transform;
+}
+
 .container:hover .bounce {
   animation: icon-dribble 0.75s var(--ease-smooth) infinite;
 }
 
 .container:hover .roll {
-  animation: icon-roll 0.9s linear infinite;
+  animation: icon-roll 0.9s var(--ease-linear) infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

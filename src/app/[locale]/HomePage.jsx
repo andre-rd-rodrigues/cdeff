@@ -5,12 +5,14 @@ import Button from "@/components/Button/Button";
 import EmptyState from "@/components/EmptyState";
 import IconCard from "@/components/Cards/IconCard/IconCard";
 import ProductCard from "@/components/Cards/ProductCard";
-import Carousel from "@/components/Carousel/Carousel";
+import HeroCarousel from "@/components/Carousel/HeroCarousel";
 import DepartmentsSection from "@/components/DepartmentsSection";
 import HeroHeader from "@/components/Hero/HeroHeader/HeroHeader";
 import HeroSection from "@/components/Hero/HeroSection/HeroSection";
 import Section from "@/components/Section";
 import SectionTitle from "@/components/SectionTitle";
+import StaggerGroup from "@/components/StaggerGroup";
+import Reveal from "@/components/Reveal";
 import TextWithImage from "@/components/TextWithImage/TextWithImage";
 import { futsalProducts } from "@/data/futsal";
 import { barlow } from "@/styles/fonts";
@@ -24,11 +26,8 @@ export default function HomePage({ blogPosts }) {
 
   return (
     <main>
-      <Carousel autoPlay timeoutProp={4000}>
-        <HeroHeader
-          imageSrc="/images/homepage/headquarters.jpeg"
-          className="keen-slider__slide"
-        >
+      <HeroCarousel autoPlay interval={4000}>
+        <HeroHeader imageSrc="/images/homepage/headquarters.webp">
           <p className={`${barlow.className} tracking-wide`}>
             {t("pages.homepage.title.upperTitle")}
           </p>
@@ -45,19 +44,20 @@ export default function HomePage({ blogPosts }) {
           subtitle={t("pages.homepage.hero_1.subtitle")}
           title={t("pages.homepage.hero_1.title")}
           href="/registrations"
-          className="keen-slider__slide"
         />
-      </Carousel>
+      </HeroCarousel>
 
       {/* Sports section */}
       <span id="sports"></span>
-      <Section variant="pattern-dots">
+      <Section variant="pattern-dots" revealContent={false}>
         <div className="max-w-2xl m-auto">
-          <SectionTitle
-            title={t("pages.homepage.sports.title")}
-            className={"text-center"}
-          />
-          <div className="gap-6 flex justify-around flex-wrap align-center">
+          <Reveal>
+            <SectionTitle
+              title={t("pages.homepage.sports.title")}
+              className={"text-center"}
+            />
+          </Reveal>
+          <StaggerGroup className="gap-6 flex justify-around flex-wrap align-center">
             <Link href="/basketball">
               <IconCard
                 title={t("common.sports.basketball")}
@@ -74,7 +74,7 @@ export default function HomePage({ blogPosts }) {
                 motion="roll"
               />
             </Link>
-          </div>
+          </StaggerGroup>
         </div>
       </Section>
 
@@ -93,7 +93,11 @@ export default function HomePage({ blogPosts }) {
       </Section>
 
       {/* Departments section */}
-      <Section containerClassName="text-center" variant="pattern-dots">
+      <Section
+        containerClassName="text-center"
+        variant="pattern-dots"
+        revealContent={false}
+      >
         <DepartmentsSection locale={locale} knowMore />
       </Section>
 
@@ -107,12 +111,14 @@ export default function HomePage({ blogPosts }) {
       />
 
       {/* Store section */}
-      <Section variant="glow">
-        <SectionTitle
-          title={t("pages.homepage.store.title")}
-          subtitle={t("pages.homepage.store.subtitle")}
-        />
-        <div className="flex flex-wrap gap-10 justify-center md:justify-between">
+      <Section variant="glow" revealContent={false}>
+        <Reveal>
+          <SectionTitle
+            title={t("pages.homepage.store.title")}
+            subtitle={t("pages.homepage.store.subtitle")}
+          />
+        </Reveal>
+        <StaggerGroup className="flex flex-wrap gap-10 justify-center md:justify-between">
           {futsalProducts
             .slice(0, 4)
             .map(({ image, name, price, sizes }, i) => (
@@ -124,12 +130,12 @@ export default function HomePage({ blogPosts }) {
                 sizes={sizes}
               />
             ))}
-        </div>
-        <div className="text-center mt-12">
+        </StaggerGroup>
+        <Reveal className="text-center mt-12">
           <Link href="/store">
             <Button variant label={t("common.buttons.seeMore")} />
           </Link>
-        </div>
+        </Reveal>
       </Section>
 
       {/* Hero 2 */}
@@ -142,14 +148,19 @@ export default function HomePage({ blogPosts }) {
       />
 
       {/* Blog section */}
-      <Section variant="pattern-dots">
-        <SectionTitle
-          className="text-center"
-          title={t("pages.homepage.blog.title")}
-          subtitle={t("pages.homepage.blog.subtitle")}
-        />
+      <Section variant="pattern-dots" revealContent={false}>
+        <Reveal>
+          <SectionTitle
+            className="text-center"
+            title={t("pages.homepage.blog.title")}
+            subtitle={t("pages.homepage.blog.subtitle")}
+          />
+        </Reveal>
         {blogPosts?.length ? (
-          <div className="flex flex-wrap justify-center gap-10">
+          <StaggerGroup
+            className="flex flex-wrap justify-center gap-10"
+            itemClassName="w-full md:max-w-sm"
+          >
             {blogPosts.map((post, i) => (
               <BlogCard
                 key={i}
@@ -162,7 +173,7 @@ export default function HomePage({ blogPosts }) {
                 }}
               />
             ))}
-          </div>
+          </StaggerGroup>
         ) : (
           <EmptyState
             icon="ph:newspaper-clipping"

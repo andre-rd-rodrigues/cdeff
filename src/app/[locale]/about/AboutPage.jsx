@@ -32,7 +32,7 @@ export default function AboutPage() {
     <main>
       <PageHeader
         title={t("pages.about.title")}
-        image="https://i.postimg.cc/7YvTNjbs/Sobre-No-s.png"
+        image="/images/headers/sobre-nos.png"
       />
       <Section variant="pattern-dots">
         <TextWithImage
@@ -54,7 +54,7 @@ export default function AboutPage() {
       </Section>
 
       {/* Departments Section */}
-      <Section variant="pattern-dots">
+      <Section variant="pattern-dots" revealContent={false}>
         <div id="departments">
           <DepartmentsSection locale={locale} />
         </div>
@@ -128,23 +128,9 @@ export default function AboutPage() {
           title={t("common.sports.basketball")}
           isSubSectionTitle
         />
-        <Carousel
-          isSpaced
-          autoPlay
-          darkArrows
-          breakpoints={{
-            breakpoints: {
-              "(min-width: 600px)": {
-                slides: { perView: 3, spacing: 20 }
-              }
-            }
-          }}
-        >
+        <Carousel autoPlay darkArrows perView={3} spacing={20}>
           {basketAchievements.map(({ title, image, date }, i) => (
-            <div
-              className="keen-slider__slide pb-8 flex justify-center"
-              key={i}
-            >
+            <div className="pb-8 flex justify-center" key={i}>
               <Card title={title} imageSrc={image} subtitle={date} />
             </div>
           ))}
@@ -155,23 +141,9 @@ export default function AboutPage() {
           title={t("common.sports.futsal")}
           isSubSectionTitle
         />
-        <Carousel
-          isSpaced
-          autoPlay
-          darkArrows
-          breakpoints={{
-            breakpoints: {
-              "(min-width: 600px)": {
-                slides: { perView: 3, spacing: 20 }
-              }
-            }
-          }}
-        >
+        <Carousel autoPlay darkArrows perView={3} spacing={20}>
           {futsalAchievements.map(({ title, image, date }, i) => (
-            <div
-              className="keen-slider__slide pb-8 flex justify-center"
-              key={i}
-            >
+            <div className="pb-8 flex justify-center" key={i}>
               <Card title={title} imageSrc={image} subtitle={date} />
             </div>
           ))}

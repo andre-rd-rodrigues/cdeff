@@ -12,6 +12,12 @@ colors:
   mist-grey: "#F5F5F5"
   white: "#FFFFFF"
 typography:
+  hero:
+    fontFamily: "Barlow Condensed, Arial Narrow, sans-serif"
+    fontSize: "clamp(3.5rem, 10vw, 5rem)"
+    fontWeight: 500
+    lineHeight: 1.0
+    letterSpacing: "0.01em"
   display:
     fontFamily: "Barlow Condensed, Arial Narrow, sans-serif"
     fontSize: "clamp(2.3rem, 8vw, 3.5rem)"
@@ -32,13 +38,13 @@ typography:
     letterSpacing: "0.02em"
   body:
     fontFamily: "DM Sans, Helvetica, Arial, sans-serif"
-    fontSize: "clamp(0.9rem, 2.5vw, 1rem)"
+    fontSize: "clamp(1rem, 10vw, 0.9rem)"
     fontWeight: 300
     lineHeight: 1.9
     letterSpacing: "normal"
   label:
     fontFamily: "Barlow Condensed, Arial Narrow, sans-serif"
-    fontSize: "clamp(0.7rem, 2vw, 0.8rem)"
+    fontSize: "clamp(0.7rem, 10vw, 0.8rem)"
     fontWeight: 500
     lineHeight: 1.2
     letterSpacing: "0.125em"
@@ -140,11 +146,12 @@ A committed two-colour club identity — royal navy and crimson red — grounded
 **Character:** A hard contrast pairing — a tall, narrow, athletic condensed grotesque for everything loud, against a calm, humanist, low-weight sans for everything that has to be read. Barlow Condensed set in uppercase reads like signage and scoreboards; DM Sans at weight 300 keeps body copy quiet and open beneath it. The contrast axis (condensed display vs. open body) carries the whole hierarchy.
 
 ### Hierarchy
-- **Display** (Barlow Condensed 500, `clamp(2.3rem, 8vw, 3.5rem)`, line-height ~1.05, UPPERCASE): Page `h1` and hero titles. Tracked slightly open so condensed caps don't collide.
+- **Hero** (Barlow Condensed 500, `clamp(3.5rem, 10vw, 5rem)`, line-height ~1.0, UPPERCASE): The reserved oversized display step (`--fs-xxl`) for the largest statement titles. Defined in the token scale; the default `h1` currently ships at the Display step, so reach for Hero only when a viewport-dominating title is the intent.
+- **Display** (Barlow Condensed 500, `clamp(2.3rem, 8vw, 3.5rem)`, line-height ~1.05, UPPERCASE): Page `h1` and hero titles (`--fs-xl`). Tracked slightly open so condensed caps don't collide.
 - **Headline** (Barlow Condensed 500, `clamp(1.8rem, 5vw, 2.5rem)`, UPPERCASE): Section titles (`SectionTitle`), paired with the red accent underline.
 - **Title** (Barlow Condensed 600, `clamp(1.5rem, 5vw, 2rem)`, UPPERCASE): Sub-section headings and card titles.
-- **Body** (DM Sans 300, `clamp(0.9rem, 2.5vw, 1rem)`, line-height ~1.9): Paragraph copy. Generous leading offsets the light weight; cap measure at 65–75ch.
-- **Label** (Barlow Condensed 500, `clamp(0.7rem, 2vw, 0.8rem)`, letter-spacing 0.125em, UPPERCASE): Buttons, subtitles/eyebrows, nav links, chips.
+- **Body** (DM Sans 300, `clamp(1rem, 10vw, 0.9rem)`, line-height ~1.9): Paragraph copy (`--fs-m`). Generous leading offsets the light weight; cap measure at 65–75ch.
+- **Label** (Barlow Condensed 500, `clamp(0.7rem, 10vw, 0.8rem)`, letter-spacing 0.125em, UPPERCASE): Buttons, subtitles/eyebrows, nav links, chips.
 
 ### Named Rules
 **The Condensed-Caps Rule.** Every heading, button, nav link, and label is Barlow Condensed in UPPERCASE with open tracking. This is the club's voice; do not set headings in DM Sans or in sentence case.
@@ -161,7 +168,7 @@ The system is **soft-ambient, not flat and not heavy.** Depth comes from large, 
 - **Card hover strong** (`box-shadow: 0 16px 32px rgba(39,62,121,0.18)`): Deeper lift for icon tiles that also invert to navy on hover.
 - **Button hover** (`box-shadow: 0 6px 20px rgba(189,58,78,0.3)`): Red-tinted glow under a lifted primary button.
 - **Button active** (`box-shadow: 0 2px 8px rgba(189,58,78,0.2)`): Pressed button settles back down.
-- **Nav** (`box-shadow: 0 2px 8px rgba(0,0,0,0.06)`): The floating glass bar's faint drop.
+- **Nav** (`box-shadow: 0 4px 6px rgba(0,0,0,0.05)`): The floating glass bar's faint drop.
 
 ### Named Rules
 **The Lift Rule.** Interactive surfaces are flat-ish at rest and rise toward the user on hover (`translateY(-6px)` for cards, `-2px` for buttons) with a deeper, colour-tinted shadow. Shadows are a response to state, not decoration applied at rest.
@@ -209,7 +216,7 @@ The system's most distinctive move. Sections and heroes are cut with `clip-path:
 - **Do** keep Club Red on ≤10% of a screen, reserved for the interactive/emphasis layer (the Armband Rule).
 - **Do** switch accents from red to Coastal Cyan inside full-navy sections (the Cyan-On-Navy Rule).
 - **Do** lift interactive surfaces toward the user on hover with a colour-tinted shadow (`translateY(-6px)` cards, `-2px` buttons).
-- **Do** use the `ease-smooth` curve (`cubic-bezier(0.16, 1, 0.3, 1)`) for state transitions, at `0.25s`/`0.35s`.
+- **Do** use the `ease-smooth` curve (`cubic-bezier(0.16, 1, 0.3, 1)`) for state transitions, at `0.25s`/`0.35s`, and `duration-slow` (`0.5s`) for hero/entrance cascades and disclosure panels (nav menus, accordions). Reach for `ease-pop` (`cubic-bezier(0.34, 1.56, 0.64, 1)`) only for sparse, momentary confirmation accents — never for hover-loops, idle loops, or entrance cascades.
 - **Do** lean on real photography for warmth and place; keep the surrounding chrome disciplined.
 - **Do** use the angular clip-path dividers as the signature transition between sections.
 - **Do** provide the `prefers-reduced-motion` fallback for every reveal and entrance animation.

@@ -532,6 +532,97 @@
           ]
         }
       ]
+    },
+    "privacyPolicy": {
+      "title": "Privacy Policy",
+      "lastUpdated": "Last updated: August 2026",
+      "intro": "The Francisco Franco School Sports Club (CDEFF) respects your privacy and is committed to protecting your personal data. This policy explains how we collect, use, and safeguard the information you provide when using this website.",
+      "sections": [
+        {
+          "heading": "Data controller",
+          "body": "The controller of your personal data is the Francisco Franco School Sports Club, located at João de Deus Street nº9, 9054-527, Funchal. For any data protection matters, you can contact us at cdeff.madeira@esffranco.edu.pt."
+        },
+        {
+          "heading": "What data we collect",
+          "body": [
+            "Identification and contact data (name, email, phone number) voluntarily provided through our registration and contact forms.",
+            "Browsing data collected automatically, such as your IP address, device type, and pages visited, through cookies and similar technologies."
+          ]
+        },
+        {
+          "heading": "Purpose of processing",
+          "body": "We use your data to manage registrations and participation in activities, respond to contact requests, send club-related communications, and improve your experience on the website. Data is never sold to third parties."
+        },
+        {
+          "heading": "Data retention",
+          "body": "We retain your data only for as long as necessary to fulfil the purposes for which it was collected or in accordance with applicable legal obligations."
+        },
+        {
+          "heading": "Your rights",
+          "body": "You have the right to access, rectify, erase, restrict, or object to the processing of your personal data, as well as the right to data portability. To exercise these rights, contact us at the email address above."
+        },
+        {
+          "heading": "Changes to this policy",
+          "body": "We may update this policy from time to time. Any changes will be published on this page along with the corresponding update date."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms and Conditions",
+      "lastUpdated": "Last updated: August 2026",
+      "intro": "By accessing and using the Francisco Franco School Sports Club (CDEFF) website, you accept these Terms and Conditions. We recommend reading this document carefully.",
+      "sections": [
+        {
+          "heading": "Use of the website",
+          "body": "This website is intended to provide information about the club, its sports, activities, and events. You agree to use the website lawfully and to refrain from any actions that could harm its operation or the experience of other users."
+        },
+        {
+          "heading": "Intellectual property",
+          "body": "All content on this website, including text, images, logos, and graphic elements, is the property of CDEFF or its respective owners and is protected by copyright. Reproduction without prior authorisation is prohibited."
+        },
+        {
+          "heading": "Registrations and activities",
+          "body": "Registration for activities and sports is subject to the specific conditions of each programme. CDEFF reserves the right to change schedules, locations, or conditions whenever necessary, informing participants in due time."
+        },
+        {
+          "heading": "Limitation of liability",
+          "body": "CDEFF strives to keep the website information up to date and accurate but does not guarantee the absence of errors or omissions. The club is not liable for any damages resulting from the use of the website or third-party sites it may link to."
+        },
+        {
+          "heading": "External links",
+          "body": "This website may contain links to external sites. CDEFF is not responsible for the content or privacy practices of those sites."
+        },
+        {
+          "heading": "Governing law",
+          "body": "These Terms and Conditions are governed by Portuguese law. Any dispute will be submitted to the competent courts of the Funchal district."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "lastUpdated": "Last updated: August 2026",
+      "intro": "This website uses cookies to improve your browsing experience. This policy explains what cookies are, how we use them, and how you can manage them.",
+      "sections": [
+        {
+          "heading": "What are cookies",
+          "body": "Cookies are small text files stored on your device when you visit a website. They allow the site to remember your actions and preferences over a period of time."
+        },
+        {
+          "heading": "Types of cookies we use",
+          "body": [
+            "Essential cookies: required for the basic operation of the website, such as remembering your selected language.",
+            "Performance cookies: collect anonymous information about how users interact with the website, helping us improve it."
+          ]
+        },
+        {
+          "heading": "Managing cookies",
+          "body": "You can configure your browser to refuse or delete cookies. Please note that disabling certain cookies may affect the functionality of some features of the website."
+        },
+        {
+          "heading": "Changes to this policy",
+          "body": "We may update this Cookie Policy from time to time. We recommend reviewing it regularly to stay informed."
+        }
+      ]
     }
   },
   "components": {
@@ -691,6 +782,24 @@
           "subLinks": null
         },
         {
+          "name": "Legal",
+          "href": null,
+          "subLinks": [
+            {
+              "name": "Privacy Policy",
+              "href": "/privacy-policy"
+            },
+            {
+              "name": "Terms and Conditions",
+              "href": "/terms-and-conditions"
+            },
+            {
+              "name": "Cookie Policy",
+              "href": "/cookie-policy"
+            }
+          ]
+        },
+        {
           "name": "Contact",
           "subLinks": [
             {
@@ -727,6 +836,9 @@
       "storeTitle": "Store - FF Sports Club",
       "blogTitle": "Blog - FF Sports Club",
       "faqsTitle": "FAQs - FF Sports Club",
+      "privacyTitle": "Privacy Policy - FF Sports Club",
+      "termsTitle": "Terms and Conditions - FF Sports Club",
+      "cookiesTitle": "Cookie Policy - FF Sports Club",
       "contactsTitle": "Contacts - FF Sports Club",
       "membershipTitle": "Membership Program - CDEFF",
       "notFoundTitle": "404 - FF Sports Club",

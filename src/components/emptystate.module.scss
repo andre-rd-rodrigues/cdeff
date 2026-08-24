@@ -12,6 +12,7 @@
 .icon {
   display: inline-block;
   animation: empty-float 3.6s ease-in-out infinite;
+  will-change: transform;
 }
 
 @media (prefers-reduced-motion: reduce) {

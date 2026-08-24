@@ -45,7 +45,7 @@ function LanguageSelector({ mobile, handleCloseMenu }) {
                 {t("components.languageSelector.title")}
               </div>
               <ChevronDownIcon
-                className={`h-5 w-5 flex-none transition-transform duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                className={`h-5 w-5 flex-none transition-transform duration-slow ease-smooth ${
                   open ? "rotate-180" : ""
                 }`}
                 aria-hidden="true"
@@ -53,7 +53,7 @@ function LanguageSelector({ mobile, handleCloseMenu }) {
             </Disclosure.Button>
 
             <div
-              className="grid transition-[grid-template-rows] duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]"
+              className="grid transition-[grid-template-rows] duration-slow ease-smooth"
               style={{ gridTemplateRows: open ? "1fr" : "0fr" }}
             >
               <div className="overflow-hidden">
@@ -64,7 +64,7 @@ function LanguageSelector({ mobile, handleCloseMenu }) {
                       as={Link}
                     href={pathname}
                     locale={locale}
-                    className={`block py-2 pl-6 pr-3 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] ${linksClasses} ${
+                    className={`block py-2 pl-6 pr-3 transition-all duration-slow ease-smooth ${linksClasses} ${
                         open
                           ? "opacity-100 translate-y-0"
                           : "opacity-0 -translate-y-1"
@@ -92,7 +92,7 @@ function LanguageSelector({ mobile, handleCloseMenu }) {
         <Icon
           icon="ph:globe-thin"
           fontSize={28}
-          className="text-dark group-hover:text-[var(--red)] transition-colors duration-300"
+          className="text-dark group-hover:text-[var(--red)] transition-colors duration-normal ease-smooth"
         />
         <ChevronDownIcon
           className="h-5 w-5 flex-none text-gray-400"
@@ -117,7 +117,7 @@ function LanguageSelector({ mobile, handleCloseMenu }) {
                 as={Link}
                 href={pathname}
                 locale={locale}
-                className={`group relative whitespace-nowrap flex items-center px-9 py-4 text-m hover:bg-gray-50 hover:border-l-2 hover:border-red hover:pl-[34px] uppercase ${barlow.className} tracking-wide transition-all duration-150`}
+                className={`group relative whitespace-nowrap flex items-center px-9 py-4 text-m hover:bg-gray-50 hover:border-l-2 hover:border-red hover:pl-[34px] uppercase ${barlow.className} tracking-wide transition-all duration-fast ease-smooth`}
               >
                 {label}
               </Popover.Button>
