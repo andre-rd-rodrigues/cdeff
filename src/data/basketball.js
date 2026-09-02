@@ -1,364 +1,364 @@
 export const basketTeamsImages = {
   seniores: [
     {
-      image: "https://i.postimg.cc/P56nKMq4/Agustina-Marin.png",
+      image: "/images/basketball/teams/seniores/agustina-marin.webp",
       name: "Agustina Marin"
     },
     {
-      image: "https://i.postimg.cc/D0QtGrD1/Ana-Henriques.png",
+      image: "/images/basketball/teams/seniores/ana-henriques.webp",
       name: "Ana Henriques"
     },
     {
-      image: "https://i.postimg.cc/SsHydfD5/Ana-Teixeira.png",
+      image: "/images/basketball/teams/seniores/ana-teixeira.webp",
       name: "Ana Teixeira"
     },
     {
-      image: "https://i.postimg.cc/jqzVBT5C/Cristina-Freitas.png",
+      image: "/images/basketball/teams/seniores/cristina-freitas.webp",
       name: "Cristina Freitas"
     },
     {
-      image: "https://i.postimg.cc/Hn5Th8NL/Dayna-Rouse.png",
+      image: "/images/basketball/teams/seniores/dayna-rouse.webp",
       name: "Dayna Rouse"
     },
     {
-      image: "https://i.postimg.cc/Nfqsrby2/Gabriela-Nikolova.png",
+      image: "/images/basketball/teams/seniores/gabriela-nikolova.webp",
       name: "Gabriela Nikolova"
     },
     {
-      image: "https://i.postimg.cc/bvNNwJZ6/Ine-s-Freitas.png",
+      image: "/images/basketball/teams/seniores/ines-freitas.webp",
       name: "Inês Freitas"
     },
     {
-      image: "https://i.postimg.cc/xTnr2ZJ5/Margarida-Teixeira.png",
+      image: "/images/basketball/teams/seniores/margarida-teixeira.webp",
       name: "Margarida Teixeira"
     },
     {
-      image: "https://i.postimg.cc/GmbbX2xc/Maria-Pereira.png",
+      image: "/images/basketball/teams/seniores/maria-pereira.webp",
       name: "Maria Pereira"
     },
     {
-      image: "https://i.postimg.cc/J4N13JJ6/Rita-Rodrigues.png",
+      image: "/images/basketball/teams/seniores/rita-rodrigues.webp",
       name: "Rita Rodrigues"
     },
     {
-      image: "https://i.postimg.cc/hGfWY7zq/Sofia-Alves.png",
+      image: "/images/basketball/teams/seniores/sofia-alves.webp",
       name: "Sofia Alves"
     },
     {
-      image: "https://i.postimg.cc/BvYZL0DJ/Sofia-Carvalho.png",
+      image: "/images/basketball/teams/seniores/sofia-carvalho.webp",
       name: "Sofia Carvalho"
     },
     {
-      image: "https://i.postimg.cc/2SjT9WKf/Deijah-Blanks.png",
+      image: "/images/basketball/teams/seniores/deijah-blanks.webp",
       name: "Deijah Blanks"
     }
   ],
 
   mini_12_femininos: [
     {
-      image: "https://i.postimg.cc/6pPq9Cd0/Ana-Maria-Teixeira.png",
+      image: "/images/basketball/teams/mini-12-femininos/ana-maria-teixeira.webp",
       name: "Ana Maria Teixeira"
     },
     {
-      image: "https://i.postimg.cc/jjJ5CCcr/Ana-Rafaela-Oliveira.png",
+      image: "/images/basketball/teams/mini-12-femininos/ana-rafaela-oliveira.webp",
       name: "Ana Rafaela Oliveira"
     },
     {
-      image: "https://i.postimg.cc/QdCVGfWC/Andreia-Jesus.png",
+      image: "/images/basketball/teams/mini-12-femininos/andreia-jesus.webp",
       name: "Andreia Jesus"
     },
     {
-      image: "https://i.postimg.cc/Fzx1mqZd/Madalena-Lopes.png",
+      image: "/images/basketball/teams/mini-12-femininos/madalena-lopes.webp",
       name: "Madalena Lopes"
     },
     {
-      image: "https://i.postimg.cc/c4X6bpCP/Margarida-Lopes.png",
+      image: "/images/basketball/teams/mini-12-femininos/margarida-lopes.webp",
       name: "Margarida Lopes"
     },
     {
-      image: "https://i.postimg.cc/W3L4ZjYq/Maria-Abreu.png",
+      image: "/images/basketball/teams/mini-12-femininos/maria-abreu.webp",
       name: "Maria Abreu"
     },
     {
-      image: "https://i.postimg.cc/659yzWWd/Rita-Freitas.png",
+      image: "/images/basketball/teams/mini-12-femininos/rita-freitas.webp",
       name: "Rita Freitas"
     }
   ],
   mini_12_masculinos: [
     {
-      image: "https://i.postimg.cc/CK45T9L3/Andre.png",
+      image: "/images/basketball/teams/mini-12-masculinos/andre.webp",
       name: "André"
     },
     {
-      image: "https://i.postimg.cc/7h5Zz6M4/Carlos-Pais.png",
+      image: "/images/basketball/teams/mini-12-masculinos/carlos-pais.webp",
       name: "Carlos Pais"
     },
     {
-      image: "https://i.postimg.cc/zDQBrC8G/Francisco-Olim.png",
+      image: "/images/basketball/teams/mini-12-masculinos/francisco-olim.webp",
       name: "Francisco Olim"
     },
     {
-      image: "https://i.postimg.cc/bNKsQQBB/Henrique-Gonc-alves.png",
+      image: "/images/basketball/teams/mini-12-masculinos/henrique-goncalves.webp",
       name: "Henrique Gonçalves"
     },
     {
-      image: "https://i.postimg.cc/SsTKj89V/Joa-o-Guilherme.png",
+      image: "/images/basketball/teams/mini-12-masculinos/joao-guilherme.webp",
       name: "João Guilherme"
     },
     {
-      image: "https://i.postimg.cc/q7rqFp0c/Ju-lio-Curado.png",
+      image: "/images/basketball/teams/mini-12-masculinos/julio-curado.webp",
       name: "Júlio Curado"
     },
     {
-      image: "https://i.postimg.cc/x1MqgXrT/Mateus-Oliveira.png",
+      image: "/images/basketball/teams/mini-12-masculinos/mateus-oliveira.webp",
       name: "Mateus Oliveira"
     },
     {
-      image: "https://i.postimg.cc/7hjYnkm2/Matias-Sumares.png",
+      image: "/images/basketball/teams/mini-12-masculinos/matias-sumares.webp",
       name: "Matias Sumares"
     },
     {
-      image: "https://i.postimg.cc/t43CW8Ps/Tome-Freitas.png",
+      image: "/images/basketball/teams/mini-12-masculinos/tome-freitas.webp",
       name: "Tomé Freitas"
     },
     {
-      image: "https://i.postimg.cc/KvKmk9b1/Gustavo-Matias.png",
+      image: "/images/basketball/teams/mini-12-masculinos/gustavo-matias.webp",
       name: "Gustavo Matias"
     }
   ],
   mini_8_9: [
     {
-      image: "https://i.postimg.cc/DZKwV85x/Bruno-Nunes.png",
+      image: "/images/basketball/teams/mini-8-9/bruno-nunes.webp",
       name: "Bruno Nunes"
     },
     {
-      image: "https://i.postimg.cc/FFjt7TpC/Francisca-Antunes.png",
+      image: "/images/basketball/teams/mini-8-9/francisca-antunes.webp",
       name: "Francisca Antunes"
     },
     {
-      image: "https://i.postimg.cc/9Q4PxnDc/Francisca-Freitas.png",
+      image: "/images/basketball/teams/mini-8-9/francisca-freitas.webp",
       name: "Francisca Freitas"
     },
     {
-      image: "https://i.postimg.cc/50YvNYML/Francisca-Jardim.png",
+      image: "/images/basketball/teams/mini-8-9/francisca-jardim.webp",
       name: "Francisca Jardim"
     },
     {
-      image: "https://i.postimg.cc/YCm2D6k5/Gustavo-Fernandes.png",
+      image: "/images/basketball/teams/mini-8-9/gustavo-fernandes.webp",
       name: "Gustavo Fernandes"
     },
     {
-      image: "https://i.postimg.cc/Pxn92hJs/Itzel-Gonc-alves.png",
+      image: "/images/basketball/teams/mini-8-9/itzel-goncalves.webp",
       name: "Itzel Gonçalves"
     },
     {
-      image: "https://i.postimg.cc/CM4DMV3v/Joa-o-Afonso-Abreu.png",
+      image: "/images/basketball/teams/mini-8-9/joao-afonso-abreu.webp",
       name: "João Afonso Abreu"
     },
     {
-      image: "https://i.postimg.cc/vZDhJmNF/Maria-Barros.png",
+      image: "/images/basketball/teams/mini-8-9/maria-barros.webp",
       name: "Maria Barros"
     },
     {
-      image: "https://i.postimg.cc/L6r737DM/Maria-da-Grac-a.png",
+      image: "/images/basketball/teams/mini-8-9/maria-da-graca.webp",
       name: "Maria da Graça"
     },
     {
-      image: "https://i.postimg.cc/4d2KDp2p/Mariana-Gonc-alves.png",
+      image: "/images/basketball/teams/mini-8-9/mariana-goncalves.webp",
       name: "Mariana Gonçalves"
     },
     {
-      image: "https://i.postimg.cc/xj7Jgyz2/Mariana-Silva.png",
+      image: "/images/basketball/teams/mini-8-9/mariana-silva.webp",
       name: "Mariana Silva"
     },
     {
-      image: "https://i.postimg.cc/CKVb7C91/Martim-Barros.png",
+      image: "/images/basketball/teams/mini-8-9/martim-barros.webp",
       name: "Martim Barros"
     },
     {
-      image: "https://i.postimg.cc/4y4D99X2/Matilde-Castro.png",
+      image: "/images/basketball/teams/mini-8-9/matilde-castro.webp",
       name: "Matilde Castro"
     },
     {
-      image: "https://i.postimg.cc/j28GQS5x/Miguel-Co-rte.png",
+      image: "/images/basketball/teams/mini-8-9/miguel-corte.webp",
       name: "Miguel Côrte"
     }
   ],
   sub_14_femininos: [
     {
-      image: "https://i.postimg.cc/SRXz4qsZ/Ana-Carlota-Clemente.png",
+      image: "/images/basketball/teams/sub-14-femininos/ana-carlota-clemente.webp",
       name: "Ana Carlota Clemente"
     },
     {
-      image: "https://i.postimg.cc/8cqfP3fT/Catarina-Sousa.png",
+      image: "/images/basketball/teams/sub-14-femininos/catarina-sousa.webp",
       name: "Catarina Sousa"
     },
     {
-      image: "https://i.postimg.cc/ydpS2WVg/Ine-s-Co-rte.png",
+      image: "/images/basketball/teams/sub-14-femininos/ines-corte.webp",
       name: "Inês Côrte"
     },
     {
-      image: "https://i.postimg.cc/63pvHCNx/Ine-s-Pereira.png",
+      image: "/images/basketball/teams/sub-14-femininos/ines-pereira.webp",
       name: "Inês Pereira"
     }
   ],
   sub_14_masculinos: [
     {
-      image: "https://i.postimg.cc/xdWYX2TJ/Gustavo-Borges.png",
+      image: "/images/basketball/teams/sub-14-masculinos/gustavo-borges.webp",
       name: "Gustavo Borges"
     },
     {
-      image: "https://i.postimg.cc/T30J2d00/Henrique-Abreu.png",
+      image: "/images/basketball/teams/sub-14-masculinos/henrique-abreu.webp",
       name: "Henrique Abreu"
     },
     {
-      image: "https://i.postimg.cc/q7Yngz3s/Hugo-Marques.png",
+      image: "/images/basketball/teams/sub-14-masculinos/hugo-marques.webp",
       name: "Hugo Marques"
     },
     {
-      image: "https://i.postimg.cc/0jvzJm2w/Joa-o-Afonso.png",
+      image: "/images/basketball/teams/sub-14-masculinos/joao-afonso.webp",
       name: "João Afonso"
     },
     {
-      image: "https://i.postimg.cc/vZY5KRyV/Joa-o-Esmeraldo.png",
+      image: "/images/basketball/teams/sub-14-masculinos/joao-esmeraldo.webp",
       name: "João Esmeraldo"
     },
     {
-      image: "https://i.postimg.cc/137VYfMk/Joa-o-Pedro-Abreu.png",
+      image: "/images/basketball/teams/sub-14-masculinos/joao-pedro-abreu.webp",
       name: "João Pedro Abreu"
     },
     {
-      image: "https://i.postimg.cc/rp6MmTpd/Lourenc-o-Laranjeira.png",
+      image: "/images/basketball/teams/sub-14-masculinos/lourenco-laranjeira.webp",
       name: "Lourenço Laranjeira"
     },
     {
-      image: "https://i.postimg.cc/HnSTs7JH/Pedro-Figueira.png",
+      image: "/images/basketball/teams/sub-14-masculinos/pedro-figueira.webp",
       name: "Pedro Figueira"
     },
     {
-      image: "https://i.postimg.cc/1RT9TDZc/Rafael-Rodrigues.png",
+      image: "/images/basketball/teams/sub-14-masculinos/rafael-rodrigues.webp",
       name: "Rafael Rodrigues"
     }
   ],
   sub_16_femininos: [
     {
-      image: "https://i.postimg.cc/6qsGBgvt/Beatriz-Sousa.png",
+      image: "/images/basketball/teams/sub-16-femininos/beatriz-sousa.webp",
       name: "Beatriz Sousa"
     },
     {
-      image: "https://i.postimg.cc/X7ky0276/Leonor-Saldanha.png",
+      image: "/images/basketball/teams/sub-16-femininos/leonor-saldanha.webp",
       name: "Leonor Saldanha"
     },
     {
-      image: "https://i.postimg.cc/G3YyXLW2/Leonor-Sofia.png",
+      image: "/images/basketball/teams/sub-16-femininos/leonor-sofia.webp",
       name: "Leonor Sofia"
     },
     {
-      image: "https://i.postimg.cc/c4S82qWc/Matilde-Lui-s.png",
+      image: "/images/basketball/teams/sub-16-femininos/matilde-luis.webp",
       name: "Matilde Luís"
     },
     {
-      image: "https://i.postimg.cc/fyxSyCcX/Na-dia-Sa.png",
+      image: "/images/basketball/teams/sub-16-femininos/nadia-sa.webp",
       name: "Nádia Sá"
     },
     {
-      image: "https://i.postimg.cc/50QCdbjs/Nu-ria-Basi-lio.png",
+      image: "/images/basketball/teams/sub-16-femininos/nuria-basilio.webp",
       name: "Núria Basílio"
     }
   ],
   sub_16_masculinos: [
     {
-      image: "https://i.postimg.cc/prFGLfwb/Andres-Afonso.png",
+      image: "/images/basketball/teams/sub-16-masculinos/andres-afonso.webp",
       name: "Andres Afonso"
     },
     {
-      image: "https://i.postimg.cc/25k4KQTj/Andre-Quintal.png",
+      image: "/images/basketball/teams/sub-16-masculinos/andre-quintal.webp",
       name: "André Quintal"
     },
     {
-      image: "https://i.postimg.cc/qqhcK5mW/Anto-nio-Spi-nola.png",
+      image: "/images/basketball/teams/sub-16-masculinos/antonio-spinola.webp",
       name: "António Spinola"
     },
     {
-      image: "https://i.postimg.cc/3wt2cTVP/Bernardo-Barbosa.png",
+      image: "/images/basketball/teams/sub-16-masculinos/bernardo-barbosa.webp",
       name: "Bernardo Barbosa"
     },
     {
-      image: "https://i.postimg.cc/bwNrXmX5/Elo-i-Santos.png",
+      image: "/images/basketball/teams/sub-16-masculinos/eloi-santos.webp",
       name: "Eloi Santos"
     },
     {
-      image: "https://i.postimg.cc/VL04qWZ3/Esteban-Pinto.png",
+      image: "/images/basketball/teams/sub-16-masculinos/esteban-pinto.webp",
       name: "Esteban Pinto"
     },
     {
-      image: "https://i.postimg.cc/5NzqNDQC/Guilherme-Silva.png",
+      image: "/images/basketball/teams/sub-16-masculinos/guilherme-silva.webp",
       name: "Guilherme Silva"
     },
     {
-      image: "https://i.postimg.cc/GmqB9ZJr/Joa-o-Henrique.png",
+      image: "/images/basketball/teams/sub-16-masculinos/joao-henrique.webp",
       name: "João Henrique"
     },
     {
-      image: "https://i.postimg.cc/YSn6F47X/Leandro.png",
+      image: "/images/basketball/teams/sub-16-masculinos/leandro.webp",
       name: "Leandro"
     },
     {
-      image: "https://i.postimg.cc/13Xfbvwz/Leonardo-Correia.png",
+      image: "/images/basketball/teams/sub-16-masculinos/leonardo-correia.webp",
       name: "Leonardo Correia"
     },
     {
-      image: "https://i.postimg.cc/0NDvMS7v/Martim-Caldeira.png",
+      image: "/images/basketball/teams/sub-16-masculinos/martim-caldeira.webp",
       name: "Martim Caldeira"
     },
     {
-      image: "https://i.postimg.cc/761qczL9/Martim-Esteves.png",
+      image: "/images/basketball/teams/sub-16-masculinos/martim-esteves.webp",
       name: "Martim Esteves"
     },
     {
-      image: "https://i.postimg.cc/G3674f3W/Martim-Figueira.png",
+      image: "/images/basketball/teams/sub-16-masculinos/martim-figueira.webp",
       name: "Martim Figueira"
     },
     {
-      image: "https://i.postimg.cc/j5nMd6f6/Mateus-Fernandes.png",
+      image: "/images/basketball/teams/sub-16-masculinos/mateus-fernandes.webp",
       name: "Mateus Fernandes"
     },
     {
-      image: "https://i.postimg.cc/fR75VTkF/Matias-Lec-a.png",
+      image: "/images/basketball/teams/sub-16-masculinos/matias-leca.webp",
       name: "Matias Leça"
     },
     {
-      image: "https://i.postimg.cc/Xvch6kwr/Nuno-Agostinho.png",
+      image: "/images/basketball/teams/sub-16-masculinos/nuno-agostinho.webp",
       name: "Nuno Agostinho"
     },
     {
-      image: "https://i.postimg.cc/TPx95HzG/Gustavo-Gonc-alves.png",
+      image: "/images/basketball/teams/sub-16-masculinos/gustavo-goncalves.webp",
       name: "Gustavo Gonçalves"
     },
     {
-      image: "https://i.postimg.cc/LssVVZ80/Guilherme-Fernandes.png",
+      image: "/images/basketball/teams/sub-16-masculinos/guilherme-fernandes.webp",
       name: "Guilherme Fernandes"
     }
   ],
   sub_18_masculinos: [
     {
-      image: "https://i.postimg.cc/YC74kKc6/Guilherme-Marques.png",
+      image: "/images/basketball/teams/sub-18-masculinos/guilherme-marques.webp",
       name: "Guilherme Marques"
     },
     {
-      image: "https://i.postimg.cc/8kqJKftn/Leonardo-Silva.png",
+      image: "/images/basketball/teams/sub-18-masculinos/leonardo-silva.webp",
       name: "Leonardo Silva"
     },
     {
-      image: "https://i.postimg.cc/B6b4sNQc/Lui-s-Sousa.png",
+      image: "/images/basketball/teams/sub-18-masculinos/luis-sousa.webp",
       name: "Luís Sousa"
     },
     {
-      image: "https://i.postimg.cc/3JmyPrqr/Toma-s-Oliveira.png",
+      image: "/images/basketball/teams/sub-18-masculinos/tomas-oliveira.webp",
       name: "Tomás Oliveira"
     },
     {
-      image: "https://i.postimg.cc/4yCf5Vs6/Joa-o-Lec-a.png",
+      image: "/images/basketball/teams/sub-18-masculinos/joao-leca.webp",
       name: "João Leça"
     }
   ]
@@ -370,12 +370,12 @@ export const basketTechnicalTeam = [
     members: [
       {
         name: "Ana Raquel Teixeira",
-        image: "https://i.postimg.cc/rmQ2KCt3/Ana-Raquel-Teixeira.png",
+        image: "/images/basketball/technical-team/seniores/ana-raquel-teixeira.webp",
         position: "Diretora"
       },
       {
         name: "Paulo Freitas",
-        image: "https://i.postimg.cc/C5qZNtNW/Paulo-Freitas.png",
+        image: "/images/basketball/technical-team/seniores/paulo-freitas.webp",
         position: "Treinador"
       }
     ]
@@ -385,11 +385,11 @@ export const basketTechnicalTeam = [
     members: [
       {
         name: "Paulo Freitas",
-        image: "https://i.postimg.cc/C5qZNtNW/Paulo-Freitas.png"
+        image: "/images/basketball/technical-team/seniores/paulo-freitas.webp"
       },
       {
         name: "Kelly Freitas",
-        image: "https://i.postimg.cc/NLvKP4CL/Kelly-Freitas.png"
+        image: "/images/basketball/technical-team/sub-18-femininos/kelly-freitas.webp"
       }
     ]
   },
@@ -398,7 +398,7 @@ export const basketTechnicalTeam = [
     members: [
       {
         name: "João Silva",
-        image: "https://i.postimg.cc/rmzRdzty/Joa-o-Silva.png"
+        image: "/images/basketball/technical-team/sub-18-masculinos/joao-silva.webp"
       }
     ]
   },
@@ -407,7 +407,7 @@ export const basketTechnicalTeam = [
     members: [
       {
         name: "Kelly Freitas",
-        image: "https://i.postimg.cc/NLvKP4CL/Kelly-Freitas.png"
+        image: "/images/basketball/technical-team/sub-18-femininos/kelly-freitas.webp"
       }
     ]
   },
@@ -416,11 +416,11 @@ export const basketTechnicalTeam = [
     members: [
       {
         name: "João Silva",
-        image: "https://i.postimg.cc/rmzRdzty/Joa-o-Silva.png"
+        image: "/images/basketball/technical-team/sub-18-masculinos/joao-silva.webp"
       },
       {
         name: "Bruno Camacho",
-        image: "https://i.postimg.cc/vHn2KtZy/Bruno-Camacho.jpg"
+        image: "/images/basketball/technical-team/sub-16-masculinos/bruno-camacho.webp"
       }
     ]
   },
@@ -429,7 +429,7 @@ export const basketTechnicalTeam = [
     members: [
       {
         name: "Diogo Pereira",
-        image: "https://i.postimg.cc/mk22BCfv/Diogo-Pereira.png"
+        image: "/images/basketball/technical-team/sub-14-femininos/diogo-pereira.webp"
       }
     ]
   },
@@ -438,7 +438,7 @@ export const basketTechnicalTeam = [
     members: [
       {
         name: "Carlos Rodrigues",
-        image: "https://i.postimg.cc/QC97zVXY/Carlos-Rodrigues.jpg"
+        image: "/images/basketball/technical-team/sub-14-masculinos/carlos-rodrigues.webp"
       }
     ]
   },
@@ -447,7 +447,7 @@ export const basketTechnicalTeam = [
     members: [
       {
         name: "Carolina Henriques",
-        image: "https://i.postimg.cc/D0QtGrD1/Ana-Henriques.png"
+        image: "/images/basketball/teams/seniores/ana-henriques.webp"
       }
     ]
   },
@@ -456,7 +456,7 @@ export const basketTechnicalTeam = [
     members: [
       {
         name: "Joaquim Pereira",
-        image: "https://i.postimg.cc/50c6sJ7b/Joaquim-Pereira.png"
+        image: "/images/basketball/technical-team/mini-12-masculinos/joaquim-pereira.webp"
       }
     ]
   },
@@ -465,11 +465,11 @@ export const basketTechnicalTeam = [
     members: [
       {
         name: "Ana Teixeira",
-        image: "https://i.postimg.cc/SsHydfD5/Ana-Teixeira.png"
+        image: "/images/basketball/teams/seniores/ana-teixeira.webp"
       },
       {
         name: "Inês Freitas",
-        image: "https://i.postimg.cc/bvNNwJZ6/Ine-s-Freitas.png"
+        image: "/images/basketball/teams/seniores/ines-freitas.webp"
       }
     ]
   }
@@ -477,30 +477,30 @@ export const basketTechnicalTeam = [
 
 export const basketSponsors = {
   premium: [
-    "https://i.postimg.cc/yd7gPkRz/Equip-Vending-removebg-preview.png",
-    "https://i.postimg.cc/cC43sr1c/farmacia-da-madalena.png",
-    "https://i.postimg.cc/Gt7y9dHn/Ilha-Peixe.png",
-    "https://i.postimg.cc/MG2jnsKH/VMT-removebg-preview.png"
+    "/images/basketball/sponsors/premium/equip-vending-removebg-preview.webp",
+    "/images/basketball/sponsors/premium/farmacia-da-madalena.webp",
+    "/images/basketball/sponsors/premium/ilha-peixe.webp",
+    "/images/basketball/sponsors/premium/vmt-removebg-preview.webp"
   ],
   normal: [
-    "https://i.postimg.cc/hGLQT9fr/super-sao-roque.png",
-    "https://i.postimg.cc/sXhvJ76x/A-oficina.png",
-    "https://i.postimg.cc/5NMFnKMV/Academia-de-Linguas-da-Madeira.png",
-    "https://i.postimg.cc/W15Fp2qN/al-natural.jpg",
-    "https://i.postimg.cc/0N3zmcCh/Antica-Roma.jpg",
-    "https://i.postimg.cc/9Qmwj4Mg/Brisa-sem-Ac-ucar-removebg-preview.png",
-    "https://i.postimg.cc/MZBQ02N5/farmacia-santo-antonio.png",
-    "https://i.postimg.cc/Ls01DHmC/grupo-seguranc-a-maxima.png",
-    "https://i.postimg.cc/KY4KRdtn/K-Condominios.png",
-    "https://i.postimg.cc/W3BJRXF0/Madeira-Eco-Car.png",
-    "https://i.postimg.cc/VLB0T9Yb/Progresso.png",
-    "https://i.postimg.cc/90ywcZZK/Saul-e-Filhos.png"
+    "/images/basketball/sponsors/normal/super-sao-roque.webp",
+    "/images/basketball/sponsors/normal/a-oficina.webp",
+    "/images/basketball/sponsors/normal/academia-de-linguas-da-madeira.webp",
+    "/images/basketball/sponsors/normal/al-natural.webp",
+    "/images/basketball/sponsors/normal/antica-roma.webp",
+    "/images/basketball/sponsors/normal/brisa-sem-ac-ucar-removebg-preview.webp",
+    "/images/basketball/sponsors/normal/farmacia-santo-antonio.webp",
+    "/images/basketball/sponsors/normal/grupo-seguranc-a-maxima.webp",
+    "/images/basketball/sponsors/normal/k-condominios.webp",
+    "/images/basketball/sponsors/normal/madeira-eco-car.webp",
+    "/images/basketball/sponsors/normal/progresso.webp",
+    "/images/basketball/sponsors/normal/saul-e-filhos.webp"
   ],
   collaborators: [
-    "https://i.postimg.cc/Y2XsFPGd/Clinica-Denta-ria-do-Funchal.jpg",
-    "https://i.postimg.cc/8cnXVFQ2/Ilhoconta.jpg",
-    "https://i.postimg.cc/9FrNYByC/NOS-Madeira.jpg",
-    "https://i.postimg.cc/ZK2s7yL3/Plailha.jpg"
+    "/images/basketball/sponsors/collaborators/clinica-denta-ria-do-funchal.webp",
+    "/images/basketball/sponsors/collaborators/ilhoconta.webp",
+    "/images/basketball/sponsors/collaborators/nos-madeira.webp",
+    "/images/basketball/sponsors/collaborators/plailha.webp"
   ]
 };
 
@@ -514,11 +514,11 @@ export const basketAllSponsorUrls = [
 export const basketballProducts = [
   {
     images: [
-      "https://i.postimg.cc/QM67yg29/04-BF0719-DAEB-47-C9-B0-FB-EAD64-FF129-A3.png",
-      "https://i.postimg.cc/VLcJ4HJZ/0-FAC5-DF8-1-FDC-43-A6-9-CD2-3305-AEF33-F9-A.png",
-      "https://i.postimg.cc/MTNQW6Kz/397-CF70-E-2-C38-40-A8-ABC3-E1-E4-B48-FFACA.png",
-      "https://i.postimg.cc/xTrzh14R/5127-D118-98-BD-4435-A9-E5-45-E1805394-B6-E.png",
-      "https://i.postimg.cc/C5bzSbQ4/D8-D26-A86-4-ACC-4416-A68-D-6-B1-CD4-DA0-A149.png"
+      "/images/basketball/products/acessorios/cachecol-1.webp",
+      "/images/basketball/products/acessorios/cachecol-2.webp",
+      "/images/basketball/products/acessorios/cachecol-3.webp",
+      "/images/basketball/products/acessorios/cachecol-4.webp",
+      "/images/basketball/products/acessorios/cachecol-5.webp"
     ],
     name: "Cachecol",
     price: "12€",
@@ -526,10 +526,10 @@ export const basketballProducts = [
   },
   {
     images: [
-      "https://i.postimg.cc/8k3GNgZ5/2-A11656-D-0-F8-C-475-F-A104-0-B3-FCCA78-D64.png",
-      "https://i.postimg.cc/T1Zv9nKm/6-A3694-C6-A45-C-43-C6-9-CB6-2839-D97-F2-D2-A.png",
-      "https://i.postimg.cc/DyXTzpNc/E7-FB4253-4098-4128-A565-3712675-D6235.png",
-      "https://i.postimg.cc/QdZrKkGZ/F164019-B-7697-461-C-859-D-F081-BE2726-CA.png"
+      "/images/basketball/products/calcas/calca-de-fato-de-treino-1.webp",
+      "/images/basketball/products/calcas/calca-de-fato-de-treino-2.webp",
+      "/images/basketball/products/calcas/calca-de-fato-de-treino-3.webp",
+      "/images/basketball/products/calcas/calca-de-fato-de-treino-4.webp"
     ],
     name: "Calça de Fato de Treino",
     price: "10€",
@@ -537,11 +537,11 @@ export const basketballProducts = [
   },
   {
     images: [
-      "https://i.postimg.cc/yYC72jwJ/1.png",
-      "https://i.postimg.cc/cCNPk9r0/4.png",
-      "https://i.postimg.cc/PxDB4sfS/5.png",
-      "https://i.postimg.cc/GpfCKxFm/6.png",
-      "https://i.postimg.cc/tTVHMnkt/7.png"
+      "/images/basketball/products/sweats/sweat-com-capuz-e-fecho-1.webp",
+      "/images/basketball/products/sweats/sweat-com-capuz-e-fecho-2.webp",
+      "/images/basketball/products/sweats/sweat-com-capuz-e-fecho-3.webp",
+      "/images/basketball/products/sweats/sweat-com-capuz-e-fecho-4.webp",
+      "/images/basketball/products/sweats/sweat-com-capuz-e-fecho-5.webp"
     ],
     name: "Sweat com capuz e fecho",
     price: "25€",
@@ -549,11 +549,11 @@ export const basketballProducts = [
   },
   {
     images: [
-      "https://i.postimg.cc/26HB2JHB/1.png",
-      "https://i.postimg.cc/SNYzfgcJ/4.png",
-      "https://i.postimg.cc/L8dgCjVv/5.png",
-      "https://i.postimg.cc/PJPvc4cV/6.png",
-      "https://i.postimg.cc/NFS2wXvs/8.png"
+      "/images/basketball/products/sweats/sweat-saida-1.webp",
+      "/images/basketball/products/sweats/sweat-saida-2.webp",
+      "/images/basketball/products/sweats/sweat-saida-3.webp",
+      "/images/basketball/products/sweats/sweat-saida-4.webp",
+      "/images/basketball/products/sweats/sweat-saida-5.webp"
     ],
     name: "Sweat Saída",
     price: "25€",
@@ -561,9 +561,9 @@ export const basketballProducts = [
   },
   {
     images: [
-      "https://i.postimg.cc/8CNJDD96/1.png",
-      "https://i.postimg.cc/QC9VSM9R/213564-E8-E264-4-C8-F-9861-BE5-D8-EF31-D74.png",
-      "https://i.postimg.cc/j5kLzf5H/919-E34-A4-51-E6-4233-8-A86-90-BFA245-AC71.png"
+      "/images/basketball/products/t-shirts/t-shirt-basica-azul-1.webp",
+      "/images/basketball/products/t-shirts/t-shirt-basica-azul-2.webp",
+      "/images/basketball/products/t-shirts/t-shirt-basica-azul-3.webp"
     ],
     name: "T-shirt Básica Azul",
     price: "6€",
@@ -571,9 +571,9 @@ export const basketballProducts = [
   },
   {
     images: [
-      "https://i.postimg.cc/yxHNKCLG/2-F50245-A-64-D2-44-DD-B7-A4-4-A10-DA24-F08-B.png",
-      "https://i.postimg.cc/zGBG8jkq/5202-BC93-F5-DA-485-F-B0-E3-391-D9-AF78-A9-B.png",
-      "https://i.postimg.cc/jdRjkKww/B95-C2-BEC-DC54-4096-9700-2-B0001-CD96-B3.png"
+      "/images/basketball/products/t-shirts/t-shirt-basica-preta-1.webp",
+      "/images/basketball/products/t-shirts/t-shirt-basica-preta-2.webp",
+      "/images/basketball/products/t-shirts/t-shirt-basica-preta-3.webp"
     ],
     name: "T-shirt Básica Preta",
     price: "6€",
@@ -581,11 +581,11 @@ export const basketballProducts = [
   },
   {
     images: [
-      "https://i.postimg.cc/kGbXKhLC/1.png",
-      "https://i.postimg.cc/pTydXdZp/22.png",
-      "https://i.postimg.cc/k5J4zsRN/4.png",
-      "https://i.postimg.cc/CxVdHSFQ/5.png",
-      "https://i.postimg.cc/rmbwdLng/6.png"
+      "/images/basketball/products/t-shirts/t-shirt-sublimada-formacao-1.webp",
+      "/images/basketball/products/t-shirts/t-shirt-sublimada-formacao-2.webp",
+      "/images/basketball/products/t-shirts/t-shirt-sublimada-formacao-3.webp",
+      "/images/basketball/products/t-shirts/t-shirt-sublimada-formacao-4.webp",
+      "/images/basketball/products/t-shirts/t-shirt-sublimada-formacao-5.webp"
     ],
     name: "T-shirt Sublimada Formação",
     price: "20€",
@@ -594,10 +594,10 @@ export const basketballProducts = [
 
   {
     images: [
-      "https://i.postimg.cc/sDWK04wK/1.png",
-      "https://i.postimg.cc/dQp4BxmL/2.png",
-      "https://i.postimg.cc/7ZyXvJR4/3.png",
-      "https://i.postimg.cc/1RfvDQFk/4.png"
+      "/images/basketball/products/t-shirts/t-shirt-sublimada-mini-basket-1.webp",
+      "/images/basketball/products/t-shirts/t-shirt-sublimada-mini-basket-2.webp",
+      "/images/basketball/products/t-shirts/t-shirt-sublimada-mini-basket-3.webp",
+      "/images/basketball/products/t-shirts/t-shirt-sublimada-mini-basket-4.webp"
     ],
     name: "T-shirt Sublimada Mini Basket",
     price: "20€",

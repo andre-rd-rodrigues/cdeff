@@ -38,8 +38,7 @@ export default function HomePage({ blogPosts }) {
         </HeroHeader>
 
         <HeroSection
-          imageSrc="https://i.postimg.cc/tCX9yzcR/Queres-inscrever-o-teu-clube-num-dos-maiores-Torneios-banner-background-pa-gina-inicial.jpg
-          "
+          imageSrc="/images/homepage/banner-torneios-cta.webp"
           linkLabel={t("common.buttons.registration")}
           subtitle={t("pages.homepage.hero_1.subtitle")}
           title={t("pages.homepage.hero_1.title")}
@@ -84,7 +83,7 @@ export default function HomePage({ blogPosts }) {
           subtitle={t("pages.homepage.welcome.subtitle")}
           title={t("pages.homepage.welcome.title")}
           description={t("pages.homepage.welcome.description")}
-          imageSrc={"https://i.postimg.cc/PJ3NPLJ9/welcome.png"}
+          imageSrc={"/images/homepage/welcome.webp"}
           labelOptions={{
             href: "about",
             label: t("common.buttons.learnMore")
@@ -103,7 +102,7 @@ export default function HomePage({ blogPosts }) {
 
       {/* Hero 1 */}
       <HeroSection
-        imageSrc="https://i.postimg.cc/bNm1tJ4z/banner-torneio.jpg"
+        imageSrc="/images/homepage/banner-torneio.webp"
         linkLabel={t("common.buttons.registration")}
         subtitle={t("pages.homepage.hero_1.subtitle")}
         title={t("pages.homepage.hero_1.title")}
@@ -140,7 +139,7 @@ export default function HomePage({ blogPosts }) {
 
       {/* Hero 2 */}
       <HeroSection
-        imageSrc="https://i.postimg.cc/Ghhn6mBH/Temos-as-modalidades-certas-para-ti.png"
+        imageSrc="/images/homepage/modalidades-cta.webp"
         linkLabel={t("common.buttons.learnMore")}
         subtitle={t("pages.homepage.hero_2.subtitle")}
         title={t("pages.homepage.hero_2.title")}

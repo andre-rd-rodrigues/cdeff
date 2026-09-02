@@ -33,7 +33,7 @@ export default function ActivitiesPage() {
         <TextWithImage
           title={t("pages.activities.section_1.title")}
           description={t("pages.activities.section_1.description")}
-          imageSrc="https://i.postimg.cc/0Nfj1KPp/ATL.jpg"
+          imageSrc="/images/activities/atl.webp"
           labelOptions={{
             href: TEL_LINK,
             label: t("common.buttons.contact")
@@ -46,7 +46,7 @@ export default function ActivitiesPage() {
         <TextWithImage
           title={t("pages.activities.section_2.title")}
           description={t("pages.activities.section_2.description")}
-          imageSrc="https://i.postimg.cc/4nks9XXf/Organizac-a-o-de-Aniversa-rios.jpg"
+          imageSrc="/images/activities/aniversarios.webp"
           labelOptions={{
             href: TEL_LINK,
             label: t("common.buttons.contact")
@@ -60,7 +60,7 @@ export default function ActivitiesPage() {
         <TextWithImage
           title={t("pages.activities.section_3.title")}
           description={t("pages.activities.section_3.description")}
-          imageSrc="https://i.postimg.cc/024pWKh7/Orientac-a-o.jpg"
+          imageSrc="/images/activities/orientacao.webp"
           labelOptions={{
             href: TEL_LINK,
             label: t("common.buttons.contact")
@@ -76,7 +76,7 @@ export default function ActivitiesPage() {
           location={t("pages.activities.section_4.location")}
           schedule={section_4_schedule_array}
           contact={t("pages.activities.section_4.contact")}
-          imageSrc="https://i.postimg.cc/zDPj1VfZ/Muay-Thai.jpg"
+          imageSrc="/images/activities/muay-thai.webp"
           labelOptions={{
             href: "tel:+351 966372155",
             label: t("common.buttons.contact")
@@ -93,7 +93,7 @@ export default function ActivitiesPage() {
           location={t("pages.activities.section_5.location")}
           schedule={section_5_schedule_array}
           contact={t("pages.activities.section_5.contact")}
-          imageSrc="https://i.postimg.cc/1tVpmKtk/Zumba.jpg"
+          imageSrc="/images/activities/zumba.webp"
           labelOptions={{
             href: "tel:+351 966410578",
             label: t("common.buttons.contact")
@@ -109,7 +109,7 @@ export default function ActivitiesPage() {
           location={t("pages.activities.section_6.location")}
           schedule={section_6_schedule_array}
           contact={t("pages.activities.section_6.contact")}
-          imageSrc="https://i.postimg.cc/Y01YgqQ8/Gina-stica.jpg"
+          imageSrc="/images/activities/ginastica.webp"
           labelOptions={{
             href: "tel:+351 966573753",
             label: t("common.buttons.contact")

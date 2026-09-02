@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import Button from "@/components/Button/Button";
 import Image from "next/image";
 import { barlow } from "@/styles/fonts";
+import { imageBlur } from "@/data/imageBlur";
 
 const Card = ({
   hasButton,
@@ -16,6 +17,7 @@ const Card = ({
   imgContain
 }) => {
   const t = useTranslations();
+  const blur = imageBlur[imageSrc];
 
   return (
     <div
@@ -28,6 +30,9 @@ const Card = ({
           src={imageSrc}
           alt={title}
           fill
+          sizes="(max-width: 640px) 90vw, 320px"
+          placeholder={blur ? "blur" : "empty"}
+          blurDataURL={blur}
           className="transition-transform duration-slow ease-smooth group-hover:scale-105"
           style={{
             objectFit: imgContain ? "contain" : "cover"

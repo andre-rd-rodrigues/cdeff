@@ -30,10 +30,10 @@ function EventCard({ event, href }) {
           src={image || "/images/metadata.png"}
           alt={title}
           fill
+          sizes="(max-width: 640px) 90vw, 320px"
           style={{
             objectFit: "cover"
           }}
-          preload="true"
         />
       </div>
       <h2

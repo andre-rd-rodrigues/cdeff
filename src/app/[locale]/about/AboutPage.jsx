@@ -39,7 +39,7 @@ export default function AboutPage() {
           title={t("pages.about.welcome.title")}
           subtitle={t("pages.about.welcome.subtitle")}
           description={t("pages.about.welcome.description")}
-          imageSrc="https://i.postimg.cc/PJ3NPLJ9/welcome.png"
+          imageSrc="/images/homepage/welcome.webp"
         />
       </Section>
 
@@ -48,7 +48,7 @@ export default function AboutPage() {
           title={t("pages.about.mission.title")}
           subtitle={t("pages.about.mission.subtitle")}
           description={t("pages.about.mission.description")}
-          imageSrc="https://i.postimg.cc/15mpX6CC/mission.jpg"
+          imageSrc="/images/about/mission.webp"
           imageRight
         />
       </Section>
@@ -64,7 +64,7 @@ export default function AboutPage() {
       <HeroHeader
         linkLabel={t("common.buttons.learnMore")}
         href="/about/sponsors"
-        imageSrc="https://i.postimg.cc/wThR4Fm6/Quer-apoiar-o-nosso-Clube-Torne-se-um-patrocinador.png"
+        imageSrc="/images/about/sponsor-cta.webp"
       >
         <p className={`${barlow.className} tracking-wide`}>
           {t("pages.about.sponsors.subtitle")}
@@ -81,7 +81,7 @@ export default function AboutPage() {
           title={t("pages.about.activities.title")}
           subtitle={t("pages.about.activities.subtitle")}
           description={t("pages.about.activities.description")}
-          imageSrc="https://i.postimg.cc/0Nfj1KPp/ATL.jpg"
+          imageSrc="/images/activities/atl.webp"
           labelOptions={{
             href: "/activities",
             label: t("common.buttons.seeMore")

@@ -45,7 +45,7 @@ export default function SponsorsPage() {
       <HeroHeader
         linkLabel={t("common.buttons.contacts")}
         href="/contacts"
-        imageSrc="https://i.postimg.cc/wThR4Fm6/Quer-apoiar-o-nosso-Clube-Torne-se-um-patrocinador.png"
+        imageSrc="/images/about/sponsor-cta.webp"
       >
         <h1 className={`${barlow.className} uppercase tracking-wide`}>
           {t("pages.sponsors.hero.title")}

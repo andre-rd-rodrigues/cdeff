@@ -41,7 +41,7 @@ export default function BasketballPage() {
           title={t("pages.basketball.welcome.title")}
           subtitle={t("pages.basketball.welcome.subtitle")}
           description={t("pages.basketball.welcome.description")}
-          imageSrc="https://i.postimg.cc/65gGMZpq/modalidades-basquetebol.jpg"
+          imageSrc="/images/basketball/modalidades-basquetebol.webp"
         />
       </Section>
 
@@ -174,8 +174,9 @@ export default function BasketballPage() {
           <Image
             alt="Training schedule"
             fill
+            sizes="100vw"
             style={{ objectFit: "contain" }}
-            src="https://i.postimg.cc/D0k7sr2g/Hora-rios-de-Treino-Formac-a-o-Basquetebol.png"
+            src="/images/basketball/horarios-treino.webp"
           />
         </div>
       </Section>
@@ -197,6 +198,7 @@ export default function BasketballPage() {
         <div className="relative w-[150px] h-[130px]">
           <Image
             fill
+            sizes="150px"
             style={{ objectFit: "contain" }}
             src="/images/navbar/basket/hospital.webp"
             alt="CDEFF Patrocinadores"

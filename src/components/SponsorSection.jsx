@@ -29,9 +29,10 @@ const SponsorSection = ({ images, basket, hideTitle }) => {
           }`}
         >
           {images.map((image, i) => (
-            <div className="relative w-[150px] h-[130px]" key={i}>
+            <div className="cv-auto relative w-[150px] h-[130px]" key={i}>
               <Image
                 fill
+                sizes="150px"
                 style={{ objectFit: "contain" }}
                 src={image}
                 alt="CDEFF Patrocinadores"
