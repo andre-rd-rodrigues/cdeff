@@ -23,7 +23,7 @@ Discoverability specialists, used in Phase 5:
 
 ## How this project actually works (read before doing anything)
 
-- The blog is **local MDX**, not Notion. `AGENTS.md` and `README.md` are stale on this. The data layer is `src/lib/content.js` (`getPosts`, `getPost`), which reads `content/blog/<locale>/*.mdx` with `gray-matter`.
+- The blog is **local MDX**, not Notion (as documented in `AGENTS.md` and `README.md`). The data layer is `src/lib/content.js` (`getPosts`, `getPost`), which reads `content/blog/<locale>/*.mdx` with `gray-matter`.
 - A post is picked up **automatically** at build time (`generateStaticParams` in `src/app/[locale]/blog/[slug]/page.jsx` scans the filesystem). There is no registry, index or array to edit.
 - `published: true` is **mandatory** — anything else is silently dropped from both the listing and the detail route (it 404s). This is the natural draft gate: write with `published: false`, flip to `true` only after GATE 2.
 - The route is resolved by the **`slug` frontmatter field**, not the filename. Keep them identical anyway. pt and en use **different, language-specific slugs**.
