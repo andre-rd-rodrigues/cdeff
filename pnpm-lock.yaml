@@ -54,9 +54,6 @@ importers:
       '@babel/preset-react':
         specifier: ^7.23.3
         version: 7.28.5(@babel/core@7.29.0)
-      '@eslint/eslintrc':
-        specifier: ^3.3.5
-        version: 3.3.5
       '@testing-library/dom':
         specifier: ^10.4.1
         version: 10.4.1

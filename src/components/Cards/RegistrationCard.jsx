@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { useLocale } from "next-intl";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const RegistrationCard = ({
   title,
@@ -20,10 +20,16 @@ const RegistrationCard = ({
 }) => {
   const t = useTranslations();
   const locale = useLocale();
+  const defaultCountry = locale.toUpperCase();
+  const [countryOverride, setCountryOverride] = useState(null);
+  const [prevLocale, setPrevLocale] = useState(locale);
 
-  const [selectedCountry, setSelectedCountry] = useState(locale.toUpperCase());
+  if (prevLocale !== locale) {
+    setPrevLocale(locale);
+    setCountryOverride(null);
+  }
 
-  useEffect(() => setSelectedCountry(locale.toUpperCase()), [locale]);
+  const selectedCountry = countryOverride ?? defaultCountry;
 
   return (
     <div className={`relative flex flex-col w-[320px] card-lift ${className}`}>
@@ -70,7 +76,7 @@ const RegistrationCard = ({
             </Link>
             <select
               value={selectedCountry}
-              onChange={(e) => setSelectedCountry(e.target.value)}
+              onChange={(e) => setCountryOverride(e.target.value)}
               className={`form-select py-[5.7px] block w-full px-2 ${barlow.className} text-lg tracking-wide`}
             >
               {languagesCodes.map(({ language, code }) => (

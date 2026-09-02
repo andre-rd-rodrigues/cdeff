@@ -9,25 +9,18 @@ import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { useLocale } from "next-intl";
 import Button from "../Button/Button";
-import { useEffect, useState } from "react";
+
+function formatEventDate(dateStart, dateEnd, locale) {
+  return `${dayjs(dateStart).locale(locale).format(DATE_FORMAT)} ${
+    dateEnd ? `- ${dayjs(dateEnd).locale(locale).format(DATE_FORMAT)}` : ""
+  }`;
+}
 
 function EventCard({ event, href }) {
-  const [formattedDate, setFormattedDate] = useState("");
-
   const t = useTranslations();
-
   const locale = useLocale();
-
   const { title, description, dateStart, dateEnd, image, location } = event;
-
-  // Avoid hydration errors caused by the difference between server and client locale
-  useEffect(() => {
-    setFormattedDate(
-      `${dayjs(dateStart).locale(locale).format(DATE_FORMAT)} ${
-        dateEnd ? `- ${dayjs(dateEnd).locale(locale).format(DATE_FORMAT)}` : ""
-      }`
-    );
-  }, [dateStart, dateEnd, locale]);
+  const formattedDate = formatEventDate(dateStart, dateEnd, locale);
 
   return (
     <Link href={href} className="relative flex flex-col max-w-xs card-lift bg-white">
@@ -55,7 +48,9 @@ function EventCard({ event, href }) {
             className="text-red"
             fontSize={20}
           />
-          <p className="text-sm font-light text-gray-400">{formattedDate}</p>
+          <p className="text-sm font-light text-gray-400" suppressHydrationWarning>
+            {formattedDate}
+          </p>
         </div>
         <div className="flex gap-2 items-center">
           <Icon

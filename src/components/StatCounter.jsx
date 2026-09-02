@@ -13,25 +13,18 @@ function StatCounter({
 }) {
   const ref = useRef(null);
   const isStatic = staticText != null;
-  const [display, setDisplay] = useState(
-    isStatic ? staticText : `${prefix}0${suffix}`
-  );
+  const prefersReducedMotion =
+    typeof window !== "undefined" &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const [display, setDisplay] = useState(() => {
+    if (isStatic) return staticText;
+    if (prefersReducedMotion) return `${prefix}${value}${suffix}`;
+    return `${prefix}0${suffix}`;
+  });
 
   useEffect(() => {
     const element = ref.current;
-    if (!element || isStatic) {
-      if (isStatic) setDisplay(staticText);
-      return;
-    }
-
-    const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
-
-    if (prefersReducedMotion) {
-      setDisplay(`${prefix}${value}${suffix}`);
-      return;
-    }
+    if (!element || isStatic || prefersReducedMotion) return;
 
     let rafId;
     let started = false;
@@ -63,7 +56,7 @@ function StatCounter({
       observer.disconnect();
       if (rafId) cancelAnimationFrame(rafId);
     };
-  }, [value, prefix, suffix, staticText, isStatic, duration]);
+  }, [value, prefix, suffix, isStatic, prefersReducedMotion, duration]);
 
   return (
     <div ref={ref} className="flex flex-col items-center text-center px-4">

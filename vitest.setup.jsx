@@ -25,8 +25,8 @@ vi.mock("next/router", () => ({
 // Mock next/image to a plain <img>
 vi.mock("next/image", () => ({
   __esModule: true,
-  default: function MockImage({ fill, priority, preload, ...props }) {
-    return <img {...props} />;
+  default: function MockImage({ fill, priority, preload, alt = "", ...props }) {
+    return <img alt={alt} {...props} />;
   }
 }));
 

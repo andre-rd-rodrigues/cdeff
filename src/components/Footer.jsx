@@ -11,6 +11,65 @@ import { useLocale } from "next-intl";
 import { Icon } from "@iconify/react";
 import { Sponsors } from "./Navbar/NavbarWidgets";
 
+const FooterSocial = ({ sport, hrefs }) => (
+  <div className="text-white gap-3 flex items-center">
+    <p className={`${barlow.className} uppercase tracking-wider mr-2`}>
+      {sport}
+    </p>
+    <Link href={hrefs.insta} target="_blank">
+      <Icon
+        className="opacity-50 hover:opacity-100 hover:text-red transition-all duration-normal ease-smooth hover:scale-110"
+        icon="bi:instagram"
+      />
+    </Link>
+    <Link href={hrefs.facebook} target="_blank">
+      <Icon
+        className="opacity-50 hover:opacity-100 hover:text-red transition-all duration-normal ease-smooth hover:scale-110"
+        icon="ic:baseline-facebook"
+      />
+    </Link>
+  </div>
+);
+
+const FooterSection = ({ title, sectionHref, subLinks, isContactSection }) => (
+  <div>
+    <h2
+      className={`text-m font-medium mb-2 tracking-wider text-white uppercase ${barlow.className}`}
+    >
+      {title}
+    </h2>
+    <ul className="text-white opacity-95 font-thin">
+      {subLinks?.map(({ name, href, icon }, i) =>
+        isContactSection ? (
+          <li key={i}>
+            <Link
+              href={parseHref(href)}
+              className="hover:underline flex gap-1 items-center mb-2 mt-1"
+            >
+              <Icon icon={icon} fontSize={15} />
+              <p className="text-xs">{name}</p>
+            </Link>
+          </li>
+        ) : (
+          <li key={i}>
+            <Link href={parseHref(href)} className="hover:underline text-xs">
+              {name}
+            </Link>
+          </li>
+        )
+      )}
+
+      {!subLinks && !isContactSection && (
+        <li>
+          <Link href={parseHref(sectionHref)} className="hover:underline text-xs">
+            {title}
+          </Link>
+        </li>
+      )}
+    </ul>
+  </div>
+);
+
 const Footer = () => {
   const t = useTranslations();
   const locale = useLocale();
@@ -30,66 +89,6 @@ const Footer = () => {
         {t("components.navbar.title")}
       </p>
     </Link>
-  );
-
-  const FooterSection = ({ title, sectionHref, subLinks }) => (
-    <div>
-      <h2
-        className={`text-m font-medium mb-2 tracking-wider text-white uppercase ${barlow.className}`}
-      >
-        {title}
-      </h2>
-      <ul className="text-white opacity-95 font-thin">
-        {subLinks?.map(({ name, href, icon }, i) =>
-          isContactSections(title) ? (
-            <li key={i}>
-              <Link
-                href={parseHref(href)}
-                className="hover:underline flex gap-1 items-center mb-2 mt-1"
-              >
-                <Icon icon={icon} fontSize={15} />
-                <p className="text-xs">{name}</p>
-              </Link>
-            </li>
-          ) : (
-            <li key={i}>
-              <Link href={parseHref(href)} className="hover:underline text-xs">
-                {name}
-              </Link>
-            </li>
-          )
-        )}
-
-        {/* When no sub links are provided */}
-        {!subLinks && !isContactSections(title) && (
-          <li>
-            <Link href={parseHref(sectionHref)} className="hover:underline text-xs">
-              {title}
-            </Link>
-          </li>
-        )}
-      </ul>
-    </div>
-  );
-
-  const FooterSocial = ({ sport, hrefs }) => (
-    <div className="text-white gap-3 flex items-center">
-      <p className={`${barlow.className} uppercase tracking-wider mr-2`}>
-        {sport}
-      </p>
-      <Link href={hrefs.insta} target="_blank">
-        <Icon
-          className="opacity-50 hover:opacity-100 hover:text-red transition-all duration-normal ease-smooth hover:scale-110"
-          icon="bi:instagram"
-        />
-      </Link>
-      <Link href={hrefs.facebook} target="_blank">
-        <Icon
-          className="opacity-50 hover:opacity-100 hover:text-red transition-all duration-normal ease-smooth hover:scale-110"
-          icon="ic:baseline-facebook"
-        />
-      </Link>
-    </div>
   );
 
   return (
@@ -126,6 +125,7 @@ const Footer = () => {
                   title={name}
                   subLinks={subLinks}
                   sectionHref={href}
+                  isContactSection={isContactSections(name)}
                 />
               ))}
             </div>
