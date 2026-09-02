@@ -1,7 +1,8 @@
+"use client";
+
 import { barlow } from "@/styles/fonts";
 import Button from "../Button/Button";
-import Link from "next/link";
-import { use } from "react";
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 
 const TextSection = ({
@@ -19,14 +20,14 @@ const TextSection = ({
   return (
     <div className="w-full md:w-1/2 flex p-0 sm:p-4 justify-center items-center">
       <div>
-        <h3 className="subtitle uppercase font-semibold tracking-wide mt-5 sm:mt-0">
+        <h3 className={`${barlow.className} subtitle uppercase font-semibold tracking-wide mt-5 sm:mt-0`}>
           {subtitle}
         </h3>
-        <h2 className={`${barlow.className} section-header`}>{title}</h2>
+        <h2 className={`${barlow.className} text-fs-l uppercase mb-5 text-blue relative inline-block section-header`}>{title}</h2>
         <p className="text-justify mb-3">{description}</p>
         {location && (
           <p className="mb-3">
-            <span className="text-blue font-medium">
+            <span className={`${barlow.className} text-blue font-medium`}>
               {t("common.pages.location")}:{" "}
             </span>
             {location}
@@ -34,10 +35,10 @@ const TextSection = ({
         )}
         {schedule && (
           <div className="mb-3">
-            <p className="text-blue font-medium">
+            <p className={`${barlow.className} text-blue font-medium`}>
               {t("common.pages.schedule")}:
             </p>
-            <ul className="font-extralight">
+            <ul className="font-light">
               {schedule?.map((item, index) => (
                 <li key={index} className="list-inside list-disc">
                   {item}

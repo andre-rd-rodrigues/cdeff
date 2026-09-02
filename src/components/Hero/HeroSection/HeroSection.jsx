@@ -3,7 +3,7 @@ import styles from "./herosection.module.scss";
 import Button from "../../Button/Button";
 import Container from "../../Container/Container";
 import { barlow } from "@/styles/fonts";
-import Link from "next/link";
+import { Link, parseHref } from "@/i18n/routing";
 
 const HeroSection = ({
   imageSrc,
@@ -12,7 +12,8 @@ const HeroSection = ({
   title,
   href,
   className,
-  linkProps
+  linkProps,
+  contactHero
 }) => {
   const containerStyle = {
     background: `url(${imageSrc}) no-repeat center center`,
@@ -20,14 +21,14 @@ const HeroSection = ({
   };
 
   return (
-    <div className={`${styles.container} ${className}`} style={containerStyle}>
-      <Container className={styles.content}>
+    <div className={`${styles.container} ${contactHero ? styles.contactHero : ""} ${className || ""}`} style={containerStyle}>
+      <Container className={`text-center uppercase tracking-wider ${styles.content}`}>
         {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
         {title && (
           <h3 className={`${styles.title} ${barlow.className}`}>{title}</h3>
         )}
         {linkLabel && (
-          <Link href={href} className="text-center mt-2" {...linkProps}>
+          <Link href={parseHref(href)} className="text-center mt-2" {...linkProps}>
             <Button label={linkLabel} />
           </Link>
         )}

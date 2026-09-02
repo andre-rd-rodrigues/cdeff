@@ -7,44 +7,17 @@ const TextWithImage = ({
   description,
   labelOptions,
   subtitle,
-  imgSrc,
+  imageSrc,
   imageRight,
   location,
   schedule,
   contact
 }) => (
-  <Container className="flex flex-wrap">
-    {imageRight ? (
-      <>
-        <TextSection
-          {...{
-            subtitle,
-            title,
-            description,
-            labelOptions,
-            location,
-            schedule,
-            contact
-          }}
-        />
-        <ImageSection {...{ imgSrc, title }} />
-      </>
-    ) : (
-      <>
-        <ImageSection {...{ imgSrc, title }} />
-        <TextSection
-          {...{
-            subtitle,
-            title,
-            description,
-            labelOptions,
-            location,
-            schedule,
-            contact
-          }}
-        />
-      </>
-    )}
+  <Container className={`flex flex-wrap ${imageRight ? "flex-row-reverse" : ""}`}>
+    <ImageSection {...{ imageSrc, title }} />
+    <TextSection
+      {...{ subtitle, title, description, labelOptions, location, schedule, contact }}
+    />
   </Container>
 );
 

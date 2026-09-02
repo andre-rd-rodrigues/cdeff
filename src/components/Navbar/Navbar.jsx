@@ -1,37 +1,49 @@
+"use client";
+
 import { barlow } from "@/styles/fonts";
-import { Dialog, Disclosure, Popover } from "@headlessui/react";
+import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
+import { Fragment } from "react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Bars3Icon } from "@heroicons/react/24/outline";
-import Link from "next/link";
+import { Link, parseHref, usePathname } from "@/i18n/routing";
 import { useState } from "react";
 import enTranslations from "../../messages/en.json";
 import ptTranslations from "../../messages/pt.json";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
 import Dropdown from "./Dropdown";
+import { getNavLinkState } from "./navUtils";
 
-import useIsMobile from "@/hooks/useIsMobile";
-import { useRouter } from "next/router";
-import { CTAButton, CloseButton, CompanyLogo, Sponsors } from "./NavbarWidgets";
+import { useLocale } from "next-intl";
+import { CloseButton, CompanyLogo } from "./NavbarWidgets";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
+function NavDot({ className = "" }) {
+  return (
+    <span
+      aria-hidden="true"
+      className={`absolute h-2 w-2 rounded-full bg-red ${className}`}
+    />
+  );
+}
+
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const isMobile = useIsMobile();
-
-  const { locale } = useRouter();
+  const locale = useLocale();
+  const pathname = usePathname();
 
   const translations = locale === "en" ? enTranslations : ptTranslations;
   const links = translations.components.navbar.links;
 
-  const linksClasses = `text-l leading-6 text-dark font-normal uppercase ${barlow.className}`;
+  const linksClasses = `text-l leading-6 text-dark font-normal uppercase ${barlow.className} nav-link`;
+  const mobileLinksClasses = `text-l leading-6 text-dark font-normal uppercase ${barlow.className}`;
 
   return (
-    <header className="fixed z-50 w-full">
+    <header className="fixed z-50 w-full px-3 pt-3">
       <nav
-        className="mx-auto bg-white flex items-center justify-between p-6 lg:px-8"
+        className="mx-auto bg-white/75 backdrop-blur-xl border border-white/60 shadow-[0_2px_8px_rgba(0,0,0,0.06)] rounded-2xl flex items-center justify-between px-[15px] py-[5px]"
         aria-label="CDEFF"
       >
         <div className="flex xl:flex-1">
@@ -40,10 +52,9 @@ const Navbar = () => {
 
         {/* Large menu */}
         <div className="flex xl:hidden">
-          <CTAButton />
           <button
             type="button"
-            className="-m-2.5 ml-4 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -51,97 +62,172 @@ const Navbar = () => {
           </button>
         </div>
         <Popover.Group className="hidden xl:flex xl:gap-x-8">
-          {links.map(({ href, name, subLinks }, i) =>
-            subLinks ? (
-              <Dropdown link={name} subLinks={subLinks} key={i} />
+          {links.map(({ href, name, subLinks }, i) => {
+            const { isActive, hasActiveChild } = getNavLinkState(pathname, {
+              href,
+              subLinks
+            });
+
+            return subLinks ? (
+              <Dropdown
+                link={name}
+                subLinks={subLinks}
+                isActive={isActive}
+                hasActiveChild={hasActiveChild}
+                key={i}
+              />
             ) : (
-              <Link href={href} className={linksClasses} key={name}>
+              <Link
+                href={parseHref(href)}
+                className={classNames(
+                  linksClasses,
+                  isActive && "nav-link--active"
+                )}
+                aria-current={isActive ? "page" : undefined}
+                key={name}
+              >
                 {name}
+                {hasActiveChild && <NavDot className="-top-1 -right-2.5" />}
               </Link>
-            )
-          )}
+            );
+          })}
         </Popover.Group>
-        <div className="hidden xl:flex xl:flex-1 xl:justify-end">
+        <div className="hidden xl:flex">
           <LanguageSelector />
-          <CTAButton />
         </div>
       </nav>
 
       {/* Mobile menu */}
-      <Dialog
-        as="div"
-        className="xl:hidden"
-        open={mobileMenuOpen}
-        onClose={setMobileMenuOpen}
-      >
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-50 overflow-y-auto bg-white px-6 py-6 sm:max-w-sm ring-1 ring-gray-900/10">
-          <div className="flex items-center justify-between">
-            <CompanyLogo isLargeMenu={false} />
-            <CloseButton handleClose={() => setMobileMenuOpen(false)} />
-          </div>
-          <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-5 py-6">
-                {links.map(({ href, name, subLinks }, i) =>
-                  subLinks ? (
-                    <Disclosure as="div" key={i}>
-                      {({ open, close }) => (
-                        <>
-                          {/* Navbar link */}
-                          <Disclosure.Button
-                            className={`flex w-full text-xl text-l items-center justify-between px-3 ${linksClasses}`}
+      <Transition show={mobileMenuOpen} as={Fragment}>
+        <Dialog
+          as="div"
+          className="xl:hidden relative z-50"
+          onClose={setMobileMenuOpen}
+        >
+          <Transition.Child
+            as={Fragment}
+            enter="transition-opacity duration-slow ease-smooth"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="transition-opacity duration-normal ease-smooth"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-black/20 backdrop-blur-sm" />
+          </Transition.Child>
+
+          <Transition.Child
+            as={Fragment}
+            enter="transition duration-slow ease-smooth"
+            enterFrom="translate-x-full opacity-0"
+            enterTo="translate-x-0 opacity-100"
+            leave="transition duration-normal ease-smooth"
+            leaveFrom="translate-x-0 opacity-100"
+            leaveTo="translate-x-full opacity-0"
+          >
+            <Dialog.Panel className="fixed inset-y-3 right-3 z-50 w-50 overflow-y-auto bg-white/75 backdrop-blur-xl border border-white/60 px-6 py-6 sm:max-w-sm rounded-2xl shadow-2xl">
+              <div className="flex items-center justify-between">
+                <CompanyLogo isLargeMenu={false} />
+                <CloseButton handleClose={() => setMobileMenuOpen(false)} />
+              </div>
+              <div className="mt-6 flow-root">
+                <div className="-my-6 divide-y divide-gray-500/10">
+                  <div className="space-y-5 py-6">
+                    {links.map(({ href, name, subLinks }, i) => {
+                      const { isActive, hasActiveChild } = getNavLinkState(
+                        pathname,
+                        { href, subLinks }
+                      );
+
+                      return subLinks ? (
+                        <Disclosure as="div" key={i}>
+                          {({ open, close }) => (
+                            <>
+                              <Disclosure.Button
+                                className={`flex w-full text-xl text-l items-center justify-between px-3 ${mobileLinksClasses}`}
+                              >
+                                <span className="relative">
+                                  {name}
+                                  {hasActiveChild && (
+                                    <NavDot className="top-0 -right-3" />
+                                  )}
+                                </span>
+                                <ChevronDownIcon
+                                  className={`h-5 w-5 flex-none transition-transform duration-slow ease-smooth ${
+                                    open ? "rotate-180" : ""
+                                  }`}
+                                  aria-hidden="true"
+                                />
+                              </Disclosure.Button>
+
+                              <div
+                                className="grid transition-[grid-template-rows] duration-slow ease-smooth"
+                                style={{
+                                  gridTemplateRows: open ? "1fr" : "0fr"
+                                }}
+                              >
+                                <div className="overflow-hidden">
+                                  <Disclosure.Panel
+                                    static
+                                    className="mt-2 space-y-2"
+                                  >
+                                    {subLinks.map(({ name, href }, j) => (
+                                      <Disclosure.Button
+                                        key={name}
+                                        as={Link}
+                                        href={parseHref(href)}
+                                        className={`block py-2 pl-6 pr-3 transition-all duration-slow ease-smooth ${mobileLinksClasses} ${
+                                          open
+                                            ? "opacity-100 translate-y-0"
+                                            : "opacity-0 -translate-y-1"
+                                        }`}
+                                        style={{
+                                          transitionDelay: open
+                                            ? `${j * 50}ms`
+                                            : "0ms"
+                                        }}
+                                        onClick={() => setMobileMenuOpen(false)}
+                                      >
+                                        {name}
+                                      </Disclosure.Button>
+                                    ))}
+                                  </Disclosure.Panel>
+                                </div>
+                              </div>
+                            </>
+                          )}
+                        </Disclosure>
+                      ) : (
+                        <div data-headlessui-state key={i}>
+                          <Link
+                            href={parseHref(href)}
+                            className={classNames(
+                              "relative text-xl p-3 leading-6 font-normal uppercase tracking-wide",
+                              barlow.className,
+                              isActive ? "text-red" : "text-dark"
+                            )}
+                            aria-current={isActive ? "page" : undefined}
+                            onClick={() => setMobileMenuOpen(false)}
                           >
                             {name}
-                            <ChevronDownIcon
-                              className={classNames(
-                                open ? "rotate-180" : "",
-                                "h-5 w-5 flex-none"
-                              )}
-                              aria-hidden="true"
-                            />
-                          </Disclosure.Button>
-
-                          {/* Navbar sublinks */}
-                          <Disclosure.Panel className="mt-2 space-y-2">
-                            {subLinks.map(({ name, href }) => (
-                              <Disclosure.Button
-                                key={name}
-                                as="a"
-                                href={href}
-                                className={`block py-2 pl-6 pr-3 ${linksClasses}`}
-                                onClick={() => setMobileMenuOpen(false)}
-                              >
-                                {name}
-                              </Disclosure.Button>
-                            ))}
-                          </Disclosure.Panel>
-                        </>
-                      )}
-                    </Disclosure>
-                  ) : (
-                    <div data-headlessui-state key={i}>
-                      <Link
-                        href={href}
-                        className={`text-xl p-3 leading-6 text-dark font-normal uppercase ${barlow.className} tracking-wide`}
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
-                        {name}
-                      </Link>
-                    </div>
-                  )
-                )}
-                <LanguageSelector
-                  mobile
-                  handleCloseMenu={() => setMobileMenuOpen(false)}
-                />
+                            {hasActiveChild && (
+                              <NavDot className="top-2 -right-1" />
+                            )}
+                          </Link>
+                        </div>
+                      );
+                    })}
+                    <LanguageSelector
+                      mobile
+                      handleCloseMenu={() => setMobileMenuOpen(false)}
+                    />
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </Dialog.Panel>
-      </Dialog>
-
-      {/* Sponsors */}
-      {!isMobile && <Sponsors />}
+            </Dialog.Panel>
+          </Transition.Child>
+        </Dialog>
+      </Transition>
     </header>
   );
 };

@@ -1,12 +1,16 @@
-import React from "react";
-import styles from "./container.module.scss";
+import React, { forwardRef } from "react";
 
-const Container = ({ children, className }) => {
+const Container = forwardRef(({ children, className }, ref) => {
   return (
-    <div className={`max-w-7xl m-auto ${className} ${styles.container}`}>
+    <div
+      ref={ref}
+      className={`max-w-7xl m-auto px-padding-y ${className}`}
+    >
       {children}
     </div>
   );
-};
+});
+
+Container.displayName = "Container";
 
 export default Container;

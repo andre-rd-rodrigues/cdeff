@@ -1,3 +1,5 @@
+"use client";
+
 import { barlow } from "@/styles/fonts";
 import { useTranslations } from "next-intl";
 import { useState } from "react";

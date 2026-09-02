@@ -1,27 +1,27 @@
 import { SPORTS } from "@/constants";
-import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
+import { useRouter, usePathname } from "@/i18n/routing";
+import { useState, useEffect } from "react";
 
 function useSportSelect() {
-  const { push, query } = useRouter();
-  const { basketball } = query;
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const basketball = searchParams.get(SPORTS.BASKETBALL);
 
-  const [isBasket, setIsBasket] = useState(
-    basketball === "true" ? true : false
-  );
+  const [isBasket, setIsBasket] = useState(basketball === "true");
 
   const updateSelectedSport = (sportSelected) => {
     const isBasketSelected = sportSelected === SPORTS.BASKETBALL;
-
     setIsBasket(isBasketSelected);
 
-    push({ query: { [SPORTS.BASKETBALL]: isBasketSelected } }, undefined, {
-      shallow: true
-    });
+    const params = new URLSearchParams(searchParams.toString());
+    params.set(SPORTS.BASKETBALL, String(isBasketSelected));
+    router.replace(`${pathname}?${params.toString()}`, { scroll: false });
   };
 
   useEffect(() => {
-    setIsBasket(basketball === "true" ? true : false);
+    setIsBasket(basketball === "true");
   }, [basketball]);
 
   return { isBasket, updateSelectedSport };

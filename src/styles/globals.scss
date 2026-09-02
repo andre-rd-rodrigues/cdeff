@@ -8,10 +8,56 @@
   --light-grey: #f5f5f5;
   --blue: #273e79;
   --red: #bd3a4e;
+  --red-hover: #a83245;
   --cyan: #3a9ebd;
   --white: white;
+  /* Default body/paragraph text colour (Tailwind gray-700). Applied as an
+     inherited default on body, so intentional text-white / text-blue on any
+     ancestor still overrides it. */
+  --text-body: #374151;
 
-  //Sizes
+  /* Overlays */
+  --overlay-blue: #273e79c1;
+  --overlay-blue-dark: #21366be7;
+
+  /* Shadows */
+  --shadow-card: 5px 4px 30px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover: 0 20px 40px rgba(39, 62, 121, 0.12),
+    0 8px 16px rgba(39, 62, 121, 0.08);
+  --shadow-card-hover-strong: 0 16px 32px rgba(39, 62, 121, 0.18);
+  --shadow-button-hover: 0 6px 20px rgba(189, 58, 78, 0.3);
+  --shadow-button-active: 0 2px 8px rgba(189, 58, 78, 0.2);
+  --shadow-nav: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+  /* Motion */
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+  /* Momentary confirmation accents only (hover-in snaps, active-state pops) —
+     never hover-loops, idle loops, or entrance cascades; those stay on ease-smooth. */
+  --ease-pop: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-linear: linear;
+  --duration-fast: 0.25s;
+  --duration-normal: 0.35s;
+  /* Hero/entrance/disclosure surfaces (nav panels, accordions, section reveals). */
+  --duration-slow: 0.5s;
+  /* Shared "beat" for every sequential reveal — stagger grids and hero entrances alike. */
+  --stagger-step: 70ms;
+  --stagger-cap: 8;
+
+  /* Border radius scale */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 9999px;
+
+  /* Z-index scale */
+  --z-overlay: 1;
+  --z-content: 2;
+  --z-dropdown: 10;
+  --z-navbar: 50;
+  --z-loading: 1000;
+
+  /* Font sizes */
   --fs-xxl: clamp(3.5rem, 10vw, 5rem);
   --fs-xl: clamp(2.3rem, 8vw, 3.5rem);
   --fs-xl-l: clamp(1.8rem, 5vw, 3.2rem);
@@ -19,13 +65,15 @@
   --fs-l-s: clamp(1.5rem, 5vw, 2rem);
   --fs-m: clamp(1rem, 10vw, 0.9rem);
   --fs-s: clamp(0.7rem, 10vw, 0.8rem);
+  --fs-xs: 13px;
 
+  /* Spacing */
   --padding-y: clamp(20px, 5vw, 70px);
   --padding-root-y: 0 var(--padding-y);
-
   --page-max-width: 1600px;
+  --spacing-section-gap: 75px;
 
-  //Breakpoints
+  /* Breakpoints */
   --breaking-point-xxl: 1400px;
   --breaking-point-xl: 1200px;
   --breaking-point-lg: 992px;
@@ -54,7 +102,7 @@ h4 {
 
 p {
   font-size: var(--fs-m);
-  font-weight: 200;
+  font-weight: 300;
   line-height: 30px;
 }
 
@@ -62,6 +110,7 @@ html,
 body {
   overflow-x: hidden;
   background-color: var(--light-grey);
+  color: var(--text-body);
   white-space: pre-line;
 }
 
@@ -123,19 +172,42 @@ footer {
 .subtitle {
   font-size: var(--fs-s);
   color: var(--blue);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &::before {
+    content: "";
+    width: 28px;
+    height: 2px;
+    background: var(--red);
+    display: inline-block;
+    flex-shrink: 0;
+  }
 }
 
 .section-header {
-  font-size: var(--fs-l);
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  color: var(--blue);
+  /* Base styles migrated to Tailwind on SectionTitle/TextSection.
+     Class kept for .section-dark overrides and responsive rules. */
 }
 
-.sub_section_title {
-  p,
-  h2 {
-    font-size: var(--fs-l-s);
+.section-header-accent {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--red);
+    border-radius: var(--radius-pill);
+  }
+}
+
+.section-header-center {
+  &::after {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -156,17 +228,17 @@ footer {
 
 .dot {
   border: none;
-  width: 10px;
-  height: 10px;
-  background: rgba(255, 255, 255, 0.365);
-  border-radius: 50%;
-  margin: 0 5px;
-  padding: 5px;
+  width: 26px;
+  height: 8px;
+  background: color-mix(in srgb, var(--dark) 36%, transparent);
+  border-radius: var(--radius-pill);
+  margin: 0 4px;
+  padding: 0;
   cursor: pointer;
-}
-
-.dot {
-  background: rgba(98, 98, 98, 0.365);
+  transform: scaleX(0.34);
+  transform-origin: center;
+  transition: transform var(--duration-fast) var(--ease-smooth),
+    background-color var(--duration-fast) var(--ease-smooth);
 }
 
 .dot:focus {
@@ -174,16 +246,567 @@ footer {
 }
 
 .dot.active {
+  transform: scaleX(1);
   background: white;
 }
 
 .darkArrows.active {
+  background: var(--red);
+}
+
+/* Hero carousel (full-bleed crossfade) */
+.hero-carousel {
+  position: relative;
+  height: 570px;
+  margin-bottom: -50px;
+  overflow: hidden;
+  touch-action: pan-y;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.04);
+  transition: opacity 0.4s var(--ease-smooth), transform 0.6s var(--ease-smooth),
+    visibility 0s linear 0.4s;
+}
+
+.hero-slide.is-active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  z-index: var(--z-content);
+  transition: opacity 0.4s var(--ease-smooth), transform 0.6s var(--ease-smooth);
+}
+
+.hero-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: var(--z-content);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+  color: var(--white);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: opacity var(--duration-normal) var(--ease-smooth),
+    background-color var(--duration-fast) var(--ease-smooth);
+}
+
+.hero-carousel:hover .hero-arrow,
+.hero-arrow:focus-visible {
+  opacity: 1;
+}
+
+.hero-arrow:hover {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.hero-arrow--prev {
+  left: var(--padding-y);
+}
+
+.hero-arrow--next {
+  right: var(--padding-y);
+}
+
+/* Touch devices: the headline wraps across several lines on narrow
+   screens and fills the full width, so a floating arrow would sit on
+   top of the text (or the pagination) with nowhere clear to go.
+   Swiping and the enlarged number tap targets cover navigation there,
+   so keep the arrows as a desktop hover affordance only. */
+@media (hover: none) {
+  .hero-arrow {
+    display: none;
+  }
+}
+
+.hero-pagination {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: var(--z-content);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 0 var(--padding-y) 60px;
+  color: var(--white);
+  pointer-events: none;
+}
+
+.hero-count {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.hero-num {
+  position: relative;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--white);
+  font-family: var(--font-barlow);
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 0.85;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  opacity: 0.45;
+  transform: scale(0.5);
+  transform-origin: left bottom;
+  transition: transform var(--duration-normal) var(--ease-pop),
+    opacity var(--duration-fast) var(--ease-smooth);
+}
+
+/* Enlarge the tap target on touch devices without affecting the visual size */
+.hero-num::before {
+  content: "";
+  position: absolute;
+  inset: -14px -10px;
+}
+
+.hero-num.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hero-progress {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+  max-width: 340px;
+  pointer-events: auto;
+}
+
+.hero-seg {
+  position: relative;
+  flex: 1;
+  height: 1px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.25);
+  overflow: hidden;
+}
+
+.hero-seg-fill {
+  position: absolute;
+  inset: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: var(--radius-pill);
+  background: var(--white);
+}
+
+.hero-seg-fill--done {
+  transform: scaleX(1);
+  opacity: 0.4;
+}
+
+.hero-seg-fill--active {
+  transform: scaleX(1);
+}
+
+.hero-seg-fill.is-animating {
+  transform: scaleX(0);
+  animation: heroSegGrow linear forwards;
+}
+
+.hero-seg-fill.is-paused {
+  animation-play-state: paused;
+}
+
+@keyframes heroSegGrow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Multi-item carousel (scroll-snap) */
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 14px 2px 30px;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-slide {
+  scroll-snap-align: start;
+}
+
+/* Scroll-reveal animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--duration-slow) var(--ease-smooth),
+    transform var(--duration-slow) var(--ease-smooth);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 {
+  transition-delay: 0.1s;
+}
+.reveal-delay-2 {
+  transition-delay: 0.2s;
+}
+.reveal-delay-3 {
+  transition-delay: 0.3s;
+}
+
+/* Sibling stagger: cards in a grid enter in rhythm rather than as one block.
+   Each child carries --i (its index); the container adds .is-in on intersect.
+   Delay is capped so long lists don't drag (see --stagger-step / --stagger-cap,
+   shared root tokens so hero entrances can step to the same beat). */
+.stagger-item {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity var(--duration-slow) var(--ease-smooth),
+    transform var(--duration-slow) var(--ease-smooth);
+}
+
+.stagger-group.is-in .stagger-item {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: calc(
+    min(var(--i, 0), var(--stagger-cap)) * var(--stagger-step)
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .stagger-item {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .animate-slow-spin {
+    animation: none;
+  }
+
+  .hero-slide {
+    transition: none;
+  }
+
+  .hero-slide.is-active {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .hero-seg-fill.is-animating {
+    animation: none;
+    transform: scaleX(1);
+  }
+
+  .carousel-track {
+    scroll-behavior: auto;
+  }
+}
+
+@keyframes slow-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-slow-spin {
+  animation: slow-spin 12s var(--ease-linear) infinite;
+}
+
+/* Navbar link underline. Grows in with a crisp ease-pop snap on hover,
+   retracts calmly on ease-smooth so only the "arrival" gets the accent. */
+.nav-link {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--red);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--duration-fast) var(--ease-smooth);
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transition: transform var(--duration-fast) var(--ease-pop);
+  }
+
+  &.nav-link--active::after {
+    transform: scaleX(1);
+  }
+}
+
+/* Card lift effect */
+.card-lift {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid rgba(39, 62, 121, 0.06);
+  transition: transform var(--duration-normal) var(--ease-smooth),
+    box-shadow var(--duration-normal) var(--ease-smooth),
+    border-color var(--duration-normal) var(--ease-smooth);
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-card-hover);
+    border-color: rgba(39, 62, 121, 0.12);
+  }
+}
+
+/* Background pattern utilities */
+.bg-diagonal-stripes {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 11px,
+      rgba(39, 62, 121, 0.05) 11px,
+      rgba(39, 62, 121, 0.05) 22px
+    );
+    pointer-events: none;
+    z-index: 0;
+    -webkit-mask-image: radial-gradient(
+      ellipse 120% 90% at 50% 40%,
+      black 55%,
+      transparent 100%
+    );
+    mask-image: radial-gradient(
+      ellipse 120% 90% at 50% 40%,
+      black 55%,
+      transparent 100%
+    );
+  }
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.bg-dots-pattern {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(
+        rgba(39, 62, 121, 0.09) 1.5px,
+        transparent 1.5px
+      ),
+      radial-gradient(rgba(39, 62, 121, 0.09) 1.5px, transparent 1.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    pointer-events: none;
+    z-index: 0;
+    -webkit-mask-image: radial-gradient(
+      ellipse 125% 95% at 62% 62%,
+      black 55%,
+      transparent 100%
+    );
+    mask-image: radial-gradient(
+      ellipse 125% 95% at 62% 62%,
+      black 55%,
+      transparent 100%
+    );
+  }
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* Soft corner glow — a large, low-opacity navy radial anchored to a corner */
+.bg-corner-glow {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(
+        ellipse 55% 70% at 100% 0%,
+        rgba(39, 62, 121, 0.07),
+        transparent 60%
+      ),
+      radial-gradient(
+        ellipse 50% 65% at 0% 100%,
+        rgba(58, 158, 189, 0.05),
+        transparent 60%
+      );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* Angular section divider */
+.section-angle-top {
+  clip-path: polygon(0 40px, 100% 0, 100% 100%, 0 100%);
+  margin-top: -40px;
+  padding-top: calc(var(--padding-y) + 40px);
+}
+
+.section-angle-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), 0 100%);
+  padding-bottom: calc(var(--padding-y) + 40px);
+}
+
+/* Dark section variant */
+.section-dark {
   background: var(--blue);
+  color: white;
+
+  .subtitle {
+    color: var(--cyan);
+
+    &::before {
+      background: var(--cyan);
+    }
+  }
+
+  .section-header {
+    color: white;
+  }
+
+  .section-header-accent::after {
+    background: var(--cyan);
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.85);
+  }
+}
+
+/* Stagger delays for card grids */
+.reveal-delay-4 {
+  transition-delay: 0.4s;
+}
+.reveal-delay-5 {
+  transition-delay: 0.5s;
+}
+.reveal-delay-6 {
+  transition-delay: 0.6s;
+}
+
+/* Decorative accent shapes */
+.accent-shape {
+  position: absolute;
+  border-radius: var(--radius-lg);
+  opacity: 0.06;
+  background: var(--blue);
+  pointer-events: none;
+}
+
+.accent-shape-red {
+  background: var(--red);
+}
+
+/* Diagonal line ornament peeking from behind an image's bottom-right corner */
+.image-lines-ornament {
+  position: absolute;
+  right: -14px;
+  bottom: -14px;
+  width: 55%;
+  height: 65%;
+  max-width: 200px;
+  max-height: 240px;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(39, 62, 121, 0.45),
+    rgba(39, 62, 121, 0.45) 1.5px,
+    transparent 1.5px,
+    transparent 5px
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Image with decorative offset background */
+.image-decorated {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 100%;
+    height: 100%;
+    background: var(--blue);
+    opacity: 0.08;
+    border-radius: var(--radius-lg);
+    z-index: -1;
+    transition: transform var(--duration-normal) var(--ease-smooth);
+  }
+
+  &:hover::before {
+    transform: translate(4px, 4px);
+  }
 }
 
 //Responsive
 @media only screen and (max-width: 576px) {
   .section-header {
     margin-bottom: 10px;
+  }
+
+  .section-angle-top {
+    clip-path: polygon(0 20px, 100% 0, 100% 100%, 0 100%);
+    margin-top: -20px;
+    padding-top: calc(var(--padding-y) + 20px);
+  }
+
+  .section-angle-bottom {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), 0 100%);
+    padding-bottom: calc(var(--padding-y) + 20px);
   }
 }

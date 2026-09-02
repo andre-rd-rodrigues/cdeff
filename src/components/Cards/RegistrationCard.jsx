@@ -1,30 +1,39 @@
+"use client";
+
 import Button from "@/components/Button/Button";
 import { barlow } from "@/styles/fonts";
 import { LANGUAGE, languagesCodes } from "@/constants";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { Link } from "@/i18n/routing";
+import { useLocale } from "next-intl";
+import { useState } from "react";
 
 const RegistrationCard = ({
   title,
   description,
-  subTitle,
+  subtitle,
   imageSrc,
   className,
   links,
   href
 }) => {
   const t = useTranslations();
-  const { locale } = useRouter();
+  const locale = useLocale();
+  const defaultCountry = locale.toUpperCase();
+  const [countryOverride, setCountryOverride] = useState(null);
+  const [prevLocale, setPrevLocale] = useState(locale);
 
-  const [selectedCountry, setSelectedCountry] = useState(locale.toUpperCase());
+  if (prevLocale !== locale) {
+    setPrevLocale(locale);
+    setCountryOverride(null);
+  }
 
-  useEffect(() => setSelectedCountry(locale.toUpperCase()), [locale]);
+  const selectedCountry = countryOverride ?? defaultCountry;
 
   return (
-    <div className={`relative flex flex-col shadow-xl w-[320px] ${className}`}>
+    <div className={`relative flex flex-col w-[320px] card-lift ${className}`}>
+      <div className="h-[3px] bg-gradient-to-r from-blue to-red w-full" />
       <div className="relative h-[350px]">
         <Image
           src={imageSrc}
@@ -42,9 +51,9 @@ const RegistrationCard = ({
           >
             {title}
           </h4>
-          {subTitle && (
+          {subtitle && (
             <p className="text-center text-gray-500 text-sm font-medium mt-1 break-words">
-              {subTitle}
+              {subtitle}
             </p>
           )}
           <p className="text-gray-700 text-justify text-sm break-words mt-4 mb-6">
@@ -67,7 +76,7 @@ const RegistrationCard = ({
             </Link>
             <select
               value={selectedCountry}
-              onChange={(e) => setSelectedCountry(e.target.value)}
+              onChange={(e) => setCountryOverride(e.target.value)}
               className={`form-select py-[5.7px] block w-full px-2 ${barlow.className} text-lg tracking-wide`}
             >
               {languagesCodes.map(({ language, code }) => (

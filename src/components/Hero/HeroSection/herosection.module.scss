@@ -7,6 +7,8 @@
   justify-content: center;
   align-items: center;
   color: white;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 0 100%);
+  margin-bottom: -50px;
   &::after {
     content: "";
     position: absolute;
@@ -14,19 +16,21 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #273e79c1;
-    z-index: 1;
+    background: linear-gradient(135deg, rgba(39, 62, 121, 0.92) 0%, rgba(39, 62, 121, 0.75) 50%, rgba(39, 62, 121, 0.55) 100%);
+    z-index: var(--z-overlay);
   }
 }
 
-.content {
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
+.contactHero {
+  max-height: 18rem;
+  clip-path: none;
+  margin-bottom: 0;
+}
 
+.content {
   button {
     position: relative;
-    z-index: 2;
+    z-index: var(--z-content);
   }
 }
 
@@ -34,14 +38,45 @@
   position: relative;
   font-size: var(--fs-s);
   text-transform: uppercase;
-  z-index: 2;
+  z-index: var(--z-content);
   font-weight: 400;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: heroSlideIn var(--duration-slow) var(--ease-smooth)
+    calc(var(--stagger-step) * 3) forwards;
 }
 
 .title {
   position: relative;
   margin: 15px 0 25px 0;
-  z-index: 2;
+  z-index: var(--z-content);
   font-size: var(--fs-l);
   font-weight: 500;
+  opacity: 0;
+  transform: translateY(16px);
+  animation: heroContentIn var(--duration-slow) var(--ease-smooth)
+    calc(var(--stagger-step) * 5) forwards;
+}
+
+@keyframes heroSlideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes heroContentIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .subtitle,
+  .title {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
 }

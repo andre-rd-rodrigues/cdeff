@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { useTranslations } from "next-intl";
 import Button from "@/components/Button/Button";
@@ -8,7 +10,7 @@ const Card = ({
   hasButton,
   title,
   description,
-  subTitle,
+  subtitle,
   imageSrc,
   className,
   imgContain
@@ -17,13 +19,16 @@ const Card = ({
 
   return (
     <div
-      className={`relative flex flex-col shadow-xl max-w-[320px] ${className}`}
+      className={`group relative flex flex-col max-w-[320px] bg-white shadow-card card-lift ${
+        className || ""
+      }`}
     >
-      <div className="relative h-[350px]">
+      <div className="relative h-[350px] overflow-hidden">
         <Image
           src={imageSrc}
           alt={title}
           fill
+          className="transition-transform duration-slow ease-smooth group-hover:scale-105"
           style={{
             objectFit: imgContain ? "contain" : "cover"
           }}
@@ -36,9 +41,9 @@ const Card = ({
           >
             {title}
           </h4>
-          {subTitle && (
+          {subtitle && (
             <p className="text-center text-gray-500 text-sm font-medium mt-1 break-words">
-              {subTitle}
+              {subtitle}
             </p>
           )}
           {description && (

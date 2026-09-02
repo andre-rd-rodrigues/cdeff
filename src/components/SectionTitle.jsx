@@ -3,20 +3,31 @@ import React from "react";
 
 function SectionTitle({
   title,
-  subTitle,
+  subtitle,
   className,
   isSubSectionTitle,
-  textClassName
+  textClassName,
+  hideAccent
 }) {
+  const sizeClass = isSubSectionTitle ? "text-fs-l-s" : "text-fs-l";
+  const showAccent = !subtitle && !hideAccent;
+  const centered = className?.includes("text-center");
+
   return (
-    <div className={`${className} ${isSubSectionTitle && "sub_section_title"}`}>
-      {subTitle && (
-        <p className={`uppercase font-semibold subtitle tracking-wider`}>
-          {subTitle}
+    <div className={className}>
+      {subtitle && (
+        <p className={`uppercase font-semibold subtitle tracking-wider ${isSubSectionTitle ? "text-fs-l-s" : ""} ${
+          centered ? "justify-center" : ""
+        }`}>
+          {subtitle}
         </p>
       )}
       {title && (
-        <h2 className={`${barlow.className} section-header ${textClassName}`}>
+        <h2
+          className={`${barlow.className} ${sizeClass} uppercase mb-5 text-blue relative inline-block section-header ${
+            showAccent ? "section-header-accent" : ""
+          } ${textClassName} ${centered ? "section-header-center" : ""}`}
+        >
           {title}
         </h2>
       )}

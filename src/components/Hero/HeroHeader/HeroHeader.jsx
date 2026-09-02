@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./heroheader.module.scss";
 import Button from "../../Button/Button";
 import Container from "../../Container/Container";
-import Link from "next/link";
+import { Link, parseHref } from "@/i18n/routing";
 
 const HeroHeader = ({ imageSrc, linkLabel, href, children, className }) => {
   const containerStyle = {
@@ -11,12 +11,15 @@ const HeroHeader = ({ imageSrc, linkLabel, href, children, className }) => {
   };
 
   return (
-    <div className={`${styles.container} ${className}`} style={containerStyle}>
-      <Container className={styles.content}>
+    <div
+      className={`${styles.container} ${className || ""}`}
+      style={containerStyle}
+    >
+      <Container className={`z-content text-center text-white ${styles.content}`}>
         {children}
         {linkLabel && (
-          <Link href={href}>
-            <Button label={linkLabel} className={styles.button} />
+          <Link href={parseHref(href)}>
+            <Button label={linkLabel} className="mt-9" />
           </Link>
         )}
       </Container>

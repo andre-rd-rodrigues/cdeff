@@ -1,4 +1,3 @@
-import useIsMobile from "@/hooks/useIsMobile";
 import AppHead from "./AppHead";
 import Footer from "./Footer";
 import Navbar from "./Navbar/Navbar";
@@ -7,8 +6,6 @@ import { useEffect } from "react";
 import Loading from "./Loading/Loading";
 
 export default function Layout({ children }) {
-  const isMobile = useIsMobile();
-
   useEffect(() => {
     init(process.env.NEXT_PUBLIC_METRICS_ID);
     trackPages();
@@ -20,7 +17,7 @@ export default function Layout({ children }) {
       <div className="relative">
         <Navbar />
         <Loading />
-        <div className={`${isMobile ? "pt-[90px]" : "pt-40"} min-h-screen`}>
+        <div className="min-h-screen">
           {children}
         </div>
         <Footer />

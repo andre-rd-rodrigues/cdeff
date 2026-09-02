@@ -1,0 +1,22 @@
+/* Gentle idle float for the empty-state icon */
+@keyframes empty-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.icon {
+  display: inline-block;
+  animation: empty-float 3.6s ease-in-out infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .icon {
+    animation: none;
+  }
+}

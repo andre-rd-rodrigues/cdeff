@@ -1,9 +1,13 @@
+"use client";
+
 import { getTranslations } from "@/helpers/locale.helpers.js";
 import { useTranslations } from "next-intl";
-import Card from "./Cards/Card";
+import TeamMemberCard from "./Cards/TeamMemberCard";
 import SectionTitle from "./SectionTitle";
 import Button from "./Button/Button";
-import Link from "next/link";
+import StaggerGroup from "./StaggerGroup";
+import Reveal from "./Reveal";
+import { Link, parseHref } from "@/i18n/routing";
 import { departments } from "@/data/company";
 
 function DepartmentsSection({ knowMore }) {
@@ -13,38 +17,36 @@ function DepartmentsSection({ knowMore }) {
 
   return (
     <>
-      <SectionTitle
-        className="text-center mb-10"
-        title={t("pages.about.departments")}
-      />
-      <div
+      <Reveal>
+        <SectionTitle
+          className="text-center mb-10"
+          title={t("pages.about.departments")}
+        />
+      </Reveal>
+      <StaggerGroup
         className="flex flex-wrap gap-12 justify-around mb-12"
-        style={{ marginTop: "75px" }}
+        style={{ marginTop: "var(--spacing-section-gap)" }}
       >
         {renderDepartments.map(({ department, members }, i) => (
           <div key={i} className="flex flex-col items-center">
-            <SectionTitle
-              title={t(`common.departments.${department}`)}
-              className={"sub_section_title"}
-            />
-            <div className="flex flex-wrap gap-6 md:justify-normal justify-center">
-              {members.map(({ name, position, imageSrc }, i) => (
-                <Card
-                  className={"w-[320px]"}
-                  key={i}
-                  imageSrc={imageSrc}
-                  title={name}
-                  subTitle={t(`common.positions.${position}`)}
-                />
-              ))}
-            </div>
+            {members.map(({ name, position, imageSrc }, i) => (
+              <TeamMemberCard
+                className={"w-[320px]"}
+                key={i}
+                imageSrc={imageSrc}
+                name={name}
+                role={t(`common.positions.${position}`)}
+              />
+            ))}
           </div>
         ))}
-      </div>
+      </StaggerGroup>
       {knowMore && (
-        <Link href="/about#departments">
-          <Button label={t("common.buttons.seeMore")} />
-        </Link>
+        <Reveal className="text-center">
+          <Link href={parseHref("/about#departments")}>
+            <Button label={t("common.buttons.seeMore")} />
+          </Link>
+        </Reveal>
       )}
     </>
   );

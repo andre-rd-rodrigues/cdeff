@@ -6,6 +6,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 0 100%);
+  margin-bottom: -50px;
 
   &::after {
     content: "";
@@ -14,17 +16,37 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #273e79c1;
-    z-index: 1;
+    background: linear-gradient(135deg, rgba(39, 62, 121, 0.92) 0%, rgba(39, 62, 121, 0.75) 50%, rgba(39, 62, 121, 0.55) 100%);
+    z-index: var(--z-overlay);
   }
 }
 
 .content {
-  z-index: 2;
-  text-align: center;
-  color: var(--white);
+  > * {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+    animation: heroFadeIn var(--duration-slow) var(--ease-smooth) forwards;
+  }
+
+  /* Same --stagger-step beat as .stagger-item, so the hero's entrance and the
+     first scroll-reveal section below it read as one continuous cadence. */
+  > *:nth-child(1) { animation-delay: calc(var(--stagger-step) * 3); }
+  > *:nth-child(2) { animation-delay: calc(var(--stagger-step) * 6); }
+  > *:nth-child(3) { animation-delay: calc(var(--stagger-step) * 9); }
+  > *:nth-child(4) { animation-delay: calc(var(--stagger-step) * 12); }
 }
 
-.button {
-  margin-top: 35px;
+@keyframes heroFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .content > * {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
 }

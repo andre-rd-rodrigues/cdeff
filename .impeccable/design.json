@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-22T13:05:00.000Z",
+  "title": "Design System: CDEFF Sports Club",
+  "extensions": {
+    "colorMeta": {
+      "brand-navy": {
+        "role": "primary",
+        "displayName": "Club Navy",
+        "canonical": "#273E79",
+        "tonalRamp": ["#0C1224", "#141F3F", "#1D2E5C", "#273E79", "#4056A0", "#6A7EBD", "#9CA9D4", "#D3DAEC"]
+      },
+      "navy-overlay": {
+        "role": "primary",
+        "displayName": "Deep Navy",
+        "canonical": "#21366B",
+        "tonalRamp": ["#0A1122", "#111C3B", "#182857", "#21366B", "#39508F", "#6274B0", "#95A2CD", "#CFD6E9"]
+      },
+      "club-red": {
+        "role": "secondary",
+        "displayName": "Club Red",
+        "canonical": "#BD3A4E",
+        "tonalRamp": ["#340F16", "#561822", "#8C2739", "#BD3A4E", "#CC5C6C", "#DB8791", "#EAB2B8", "#F7DEE1"]
+      },
+      "red-deep": {
+        "role": "secondary",
+        "displayName": "Red Deep",
+        "canonical": "#A83245",
+        "tonalRamp": ["#2E0D13", "#4C161F", "#7A2434", "#A83245", "#C05C6B", "#D2868F", "#E5B1B6", "#F5DDE0"]
+      },
+      "red-bright": {
+        "role": "secondary",
+        "displayName": "Red Bright",
+        "canonical": "#C94E60",
+        "tonalRamp": ["#38131A", "#5C1F29", "#932F3D", "#C94E60", "#D6737F", "#E39BA3", "#EFC2C7", "#FAE6E8"]
+      },
+      "coastal-cyan": {
+        "role": "tertiary",
+        "displayName": "Coastal Cyan",
+        "canonical": "#3A9EBD",
+        "tonalRamp": ["#0E262E", "#173E4A", "#255F73", "#3A9EBD", "#63B4CD", "#8FCADD", "#BBDFEB", "#E4F3F8"]
+      },
+      "charcoal": {
+        "role": "neutral",
+        "displayName": "Charcoal",
+        "canonical": "#2F333A",
+        "tonalRamp": ["#0D0E10", "#17191C", "#23262B", "#2F333A", "#4E545E", "#7C838F", "#AEB3BC", "#DDDFE3"]
+      },
+      "mist-grey": {
+        "role": "neutral",
+        "displayName": "Mist Grey",
+        "canonical": "#F5F5F5",
+        "tonalRamp": ["#2E2E2E", "#4D4D4D", "#727272", "#9C9C9C", "#BEBEBE", "#DADADA", "#F5F5F5", "#FFFFFF"]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#FFFFFF",
+        "tonalRamp": ["#5A5A5A", "#7E7E7E", "#A3A3A3", "#C4C4C4", "#DEDEDE", "#EFEFEF", "#F8F8F8", "#FFFFFF"]
+      }
+    },
+    "typographyMeta": {
+      "hero": { "displayName": "Hero", "purpose": "Reserved oversized display step (--fs-xxl) for viewport-dominating titles. Defined in tokens; default h1 currently ships at Display." },
+      "display": { "displayName": "Display", "purpose": "Page h1 and hero titles. Barlow Condensed, uppercase, tracked." },
+      "headline": { "displayName": "Headline", "purpose": "Section titles with the red accent underline." },
+      "title": { "displayName": "Title", "purpose": "Sub-section and card titles." },
+      "body": { "displayName": "Body", "purpose": "DM Sans 300, generous leading, 65–75ch measure." },
+      "label": { "displayName": "Label", "purpose": "Buttons, subtitles, nav links, chips — uppercase condensed." }
+    },
+    "shadows": [
+      { "name": "card", "value": "5px 4px 30px rgba(0,0,0,0.06)", "purpose": "Default resting elevation for cards and icon tiles." },
+      { "name": "card-hover", "value": "0 20px 40px rgba(39,62,121,0.12), 0 8px 16px rgba(39,62,121,0.08)", "purpose": "Navy-tinted lift on card hover, paired with translateY(-6px)." },
+      { "name": "card-hover-strong", "value": "0 16px 32px rgba(39,62,121,0.18)", "purpose": "Deeper lift for icon tiles that invert to navy on hover." },
+      { "name": "button-hover", "value": "0 6px 20px rgba(189,58,78,0.3)", "purpose": "Red-tinted glow under a lifted primary button." },
+      { "name": "button-active", "value": "0 2px 8px rgba(189,58,78,0.2)", "purpose": "Pressed button settled back down." },
+      { "name": "nav", "value": "0 4px 6px rgba(0,0,0,0.05)", "purpose": "Faint drop under the floating glass navigation bar." }
+    ],
+    "motion": [
+      { "name": "ease-smooth", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Default ease-out curve for every state transition and reveal." },
+      { "name": "ease-pop", "value": "cubic-bezier(0.34, 1.56, 0.64, 1)", "purpose": "Sparse momentary confirmation accents (hover-in snaps, active-state pops) — never hover-loops, idle loops, or entrance cascades." },
+      { "name": "duration-fast", "value": "0.25s", "purpose": "Buttons, small interactive feedback." },
+      { "name": "duration-normal", "value": "0.35s", "purpose": "Cards, section reveals, larger surfaces." },
+      { "name": "duration-slow", "value": "0.5s", "purpose": "Hero/entrance cascades and disclosure panels (nav menus, accordions)." }
+    ],
+    "breakpoints": [
+      { "name": "xxs", "value": "330px" },
+      { "name": "xs", "value": "380px" },
+      { "name": "sm", "value": "576px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "992px" },
+      { "name": "xl", "value": "1200px" },
+      { "name": "xxl", "value": "1400px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Filled Club Red gradient CTA with chevron; lifts and glows on hover, square corners.",
+      "html": "<button class=\"ds-btn-primary\">JOIN THE CLUB<svg class=\"ds-btn-chevron\" width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\"><path d=\"M5 3L9 7L5 11\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 32px; border: none; border-radius: 0; background: linear-gradient(135deg, #BD3A4E, #C94E60); color: #FFFFFF; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 500; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; transition: transform 0.25s cubic-bezier(0.16,1,0.3,1), box-shadow 0.25s cubic-bezier(0.16,1,0.3,1), background 0.25s ease; } .ds-btn-primary:hover { transform: translateY(-2px); background: linear-gradient(135deg, #A83245, #B8444F); box-shadow: 0 6px 20px rgba(189,58,78,0.3); } .ds-btn-primary:active { transform: translateY(1px); box-shadow: 0 2px 8px rgba(189,58,78,0.2); } .ds-btn-chevron { transition: transform 0.25s cubic-bezier(0.16,1,0.3,1); } .ds-btn-primary:hover .ds-btn-chevron { transform: translateX(2px); }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outline button; a red panel wipes in left-to-right on hover and the label flips to white.",
+      "html": "<button class=\"ds-btn-secondary\">LEARN MORE</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; gap: 8px; padding: 12px 32px; border: 1px solid #BD3A4E; border-radius: 0; color: #BD3A4E; background: linear-gradient(to right, #BD3A4E 50%, transparent 50%); background-size: 200% 100%; background-position: right; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 500; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; transition: transform 0.25s cubic-bezier(0.16,1,0.3,1), box-shadow 0.25s cubic-bezier(0.16,1,0.3,1), background-position 0.25s cubic-bezier(0.16,1,0.3,1), color 0.25s ease; } .ds-btn-secondary:hover { background-position: left; color: #FFFFFF; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(189,58,78,0.3); }"
+    },
+    {
+      "name": "Section Title",
+      "kind": "custom",
+      "refersTo": "headline",
+      "description": "Eyebrow subtitle with a red dash, over a navy uppercase headline carrying a red accent underline.",
+      "html": "<div class=\"ds-section-title\"><p class=\"ds-eyebrow\">Our Sports</p><h2 class=\"ds-headline\">Basketball &amp; Futsal</h2></div>",
+      "css": ".ds-section-title { font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; } .ds-eyebrow { display: flex; align-items: center; gap: 10px; margin: 0 0 12px; color: #273E79; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; } .ds-eyebrow::before { content: ''; width: 28px; height: 2px; background: #BD3A4E; flex-shrink: 0; } .ds-headline { position: relative; display: inline-block; margin: 0; color: #273E79; font-size: clamp(1.8rem, 5vw, 2.5rem); font-weight: 500; text-transform: uppercase; } .ds-headline::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 40px; height: 3px; background: #BD3A4E; border-radius: 2px; transition: width 0.5s cubic-bezier(0.16,1,0.3,1); } .ds-headline:hover::after { width: 80px; }"
+    },
+    {
+      "name": "Content Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Image-topped editorial card with hairline border and a navy-tinted lift on hover.",
+      "html": "<article class=\"ds-card\"><div class=\"ds-card-media\" style=\"background:linear-gradient(135deg,#273E79,#21366B)\"></div><div class=\"ds-card-body\"><h4 class=\"ds-card-title\">Under-16 Squad</h4><p class=\"ds-card-sub\">Competitive Team</p><p class=\"ds-card-text\">Training Tuesdays and Thursdays at the club pavilion.</p></div></article>",
+      "css": ".ds-card { display: flex; flex-direction: column; max-width: 320px; background: #FFFFFF; border: 1px solid rgba(39,62,121,0.06); border-radius: 12px; overflow: hidden; box-shadow: 5px 4px 30px rgba(0,0,0,0.06); transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), box-shadow 0.35s cubic-bezier(0.16,1,0.3,1), border-color 0.35s ease; } .ds-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(39,62,121,0.12), 0 8px 16px rgba(39,62,121,0.08); border-color: rgba(39,62,121,0.12); } .ds-card-media { height: 200px; width: 100%; } .ds-card-body { padding: 28px; } .ds-card-title { margin: 0; color: #273E79; text-align: center; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; text-transform: uppercase; font-size: 1.4rem; } .ds-card-sub { margin: 4px 0 0; text-align: center; color: #6B7280; font-size: 0.85rem; font-weight: 500; } .ds-card-text { margin: 16px 0 0; color: #4B5563; font-family: 'DM Sans', Helvetica, Arial, sans-serif; font-weight: 300; font-size: 0.9rem; line-height: 1.7; text-align: justify; }"
+    },
+    {
+      "name": "Icon Tile",
+      "kind": "chip",
+      "refersTo": "icon-card",
+      "description": "Selectable tile that inverts to full navy on hover/select and reveals a red bottom bar.",
+      "html": "<button class=\"ds-tile\"><svg class=\"ds-tile-icon\" width=\"48\" height=\"48\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M3 12h18M12 3v18M5 6c3 3 3 9 0 12M19 6c-3 3-3 9 0 12\"/></svg><span class=\"ds-tile-title\">Basketball</span></button>",
+      "css": ".ds-tile { position: relative; width: 200px; padding: 40px 8px; display: inline-flex; flex-direction: column; justify-content: center; align-items: center; gap: 14px; background: #FFFFFF; color: #273E79; border: none; border-radius: 12px; overflow: hidden; cursor: pointer; box-shadow: 5px 4px 30px rgba(0,0,0,0.06); transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), box-shadow 0.35s cubic-bezier(0.16,1,0.3,1), background 0.35s ease, color 0.35s ease; } .ds-tile::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 3px; background: #BD3A4E; transform: scaleX(0); transition: transform 0.35s cubic-bezier(0.16,1,0.3,1); } .ds-tile:hover { background: #273E79; color: #FFFFFF; transform: translateY(-6px); box-shadow: 0 16px 32px rgba(39,62,121,0.18); } .ds-tile:hover::after { transform: scaleX(1); } .ds-tile-icon { transition: transform 0.35s cubic-bezier(0.16,1,0.3,1); } .ds-tile:hover .ds-tile-icon { transform: scale(1.15); } .ds-tile-title { font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 1rem; }"
+    },
+    {
+      "name": "Glass Navigation",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Floating translucent blurred nav bar with uppercase links that grow a red underline on hover.",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-nav-brand\">CDEFF</span><div class=\"ds-nav-links\"><a class=\"ds-nav-link\" href=\"#\">Home</a><a class=\"ds-nav-link\" href=\"#\">Basketball</a><a class=\"ds-nav-link\" href=\"#\">Futsal</a><a class=\"ds-nav-link\" href=\"#\">Contact</a></div></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; gap: 32px; padding: 20px 32px; background: rgba(255,255,255,0.75); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border: 1px solid rgba(255,255,255,0.6); border-radius: 16px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; } .ds-nav-brand { color: #273E79; font-weight: 700; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1px; } .ds-nav-links { display: flex; gap: 32px; } .ds-nav-link { position: relative; color: #2F333A; text-decoration: none; text-transform: uppercase; font-weight: 400; font-size: 1rem; } .ds-nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #BD3A4E; transition: width 0.3s cubic-bezier(0.16,1,0.3,1); } .ds-nav-link:hover::after { width: 100%; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Matchday Kit",
+    "overview": "The system wears the club's colours the way a team wears its strip: deep royal navy is the jersey, crimson red is the trim, and there is no apology in either. This is an athletic identity, not a corporate one. Condensed uppercase type reads like a scoreboard and a matchday programme; angular clip-path dividers cut across the layout with the diagonal energy of a body in motion; the accent red is rationed like a captain's armband so it always means something. The palette is Committed — navy carries whole dark sections end to end, red owns the interactive layer, and a single coastal cyan exists purely to keep accents legible on navy. Photography does the heavy lifting for warmth and place; the chrome around it stays disciplined. This system explicitly rejects the beige-editorial landing page, the pastel wellness-app look, and the flat startup-blue template.",
+    "keyCharacteristics": [
+      "Navy-and-red team-colours identity, committed and unhedged.",
+      "Condensed, uppercase, tracked display type (scoreboard energy).",
+      "Angular clip-path section dividers as a signature motif.",
+      "Red used sparingly as the interactive/accent voice.",
+      "Soft ambient shadows and a consistent lift-on-hover language."
+    ],
+    "rules": [
+      { "name": "The Armband Rule", "body": "Club Red is reserved for the interactive and emphasis layer — buttons, link underlines, accent bars — and should sit on roughly ≤10% of any screen. Its scarcity is what makes it read as important. Never wallpaper a section in red.", "section": "colors" },
+      { "name": "The Cyan-On-Navy Rule", "body": "Inside any full-navy (section-dark) block, accents switch from red to Coastal Cyan. Red on navy muddies; cyan cuts. This swap is automatic, not optional.", "section": "colors" },
+      { "name": "The Condensed-Caps Rule", "body": "Every heading, button, nav link, and label is Barlow Condensed in UPPERCASE with open tracking. This is the club's voice; do not set headings in DM Sans or in sentence case.", "section": "typography" },
+      { "name": "The Quiet-Body Rule", "body": "Body copy is DM Sans at weight 300 with roomy line-height. Never bold body paragraphs for emphasis and never set body copy in uppercase — emphasis is the display font's job.", "section": "typography" },
+      { "name": "The Lift Rule", "body": "Interactive surfaces are flat-ish at rest and rise toward the user on hover (translateY(-6px) for cards, -2px for buttons) with a deeper, colour-tinted shadow. Shadows are a response to state, not decoration applied at rest.", "section": "elevation" },
+      { "name": "The Navy-Tint Rule", "body": "Card shadows tint toward navy (rgba(39,62,121,...)) and button shadows toward red (rgba(189,58,78,...)). Pure-black shadows are only used at the faintest ambient level; coloured shadows are what make the depth feel on-brand.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do set every heading, button, nav link, and label in Barlow Condensed, UPPERCASE, with open tracking (the Condensed-Caps Rule).",
+      "Do keep Club Red on ≤10% of a screen, reserved for the interactive/emphasis layer (the Armband Rule).",
+      "Do switch accents from red to Coastal Cyan inside full-navy sections (the Cyan-On-Navy Rule).",
+      "Do lift interactive surfaces toward the user on hover with a colour-tinted shadow (translateY(-6px) cards, -2px buttons).",
+      "Do use the ease-smooth curve (cubic-bezier(0.16, 1, 0.3, 1)) for state transitions, at 0.25s/0.35s.",
+      "Do lean on real photography for warmth and place; keep the surrounding chrome disciplined.",
+      "Do use the angular clip-path dividers as the signature transition between sections.",
+      "Do provide the prefers-reduced-motion fallback for every reveal and entrance animation."
+    ],
+    "donts": [
+      "Don't set headings or buttons in DM Sans or in sentence case — the display voice is condensed caps only.",
+      "Don't bold body copy or set body copy in uppercase for emphasis; emphasis is the display font's job.",
+      "Don't wallpaper sections in Club Red or let it drift past its ~10% budget.",
+      "Don't put Club Red accents on navy grounds (muddy); use Coastal Cyan instead.",
+      "Don't round the buttons — they are deliberately square against the rounded card language.",
+      "Don't use pure-black heavy shadows at rest; depth is soft, ambient, and colour-tinted.",
+      "Don't spread the navbar's glassmorphism to other surfaces — the translucent blur is the navigation's alone, not a decorative default.",
+      "Don't collapse this into a generic startup-blue or beige-editorial template; it is a proud local club, not a SaaS landing page."
+    ]
+  }
+}
