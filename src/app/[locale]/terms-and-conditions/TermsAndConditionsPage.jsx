@@ -6,7 +6,7 @@ export default function TermsAndConditionsPage() {
   return (
     <LegalDocument
       translationKey="pages.terms"
-      image="/images/headers/perguntas-frequentes.jpg"
+      image="https://i.ibb.co/XvDy0MW/perguntas-frequentes.jpg"
     />
   );
 }

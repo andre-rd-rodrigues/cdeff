@@ -6,7 +6,7 @@ export default function PrivacyPolicyPage() {
   return (
     <LegalDocument
       translationKey="pages.privacyPolicy"
-      image="/images/headers/perguntas-frequentes.jpg"
+      image="https://i.ibb.co/XvDy0MW/perguntas-frequentes.jpg"
     />
   );
 }

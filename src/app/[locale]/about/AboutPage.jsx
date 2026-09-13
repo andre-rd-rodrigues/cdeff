@@ -32,14 +32,14 @@ export default function AboutPage() {
     <main>
       <PageHeader
         title={t("pages.about.title")}
-        image="/images/headers/sobre-nos.png"
+        image="https://i.ibb.co/4ZCCnLsR/sobre-nos.png"
       />
       <Section variant="pattern-dots">
         <TextWithImage
           title={t("pages.about.welcome.title")}
           subtitle={t("pages.about.welcome.subtitle")}
           description={t("pages.about.welcome.description")}
-          imageSrc="/images/homepage/welcome.webp"
+          imageSrc="https://i.ibb.co/r2snm5BQ/welcome.webp"
         />
       </Section>
 
@@ -48,7 +48,7 @@ export default function AboutPage() {
           title={t("pages.about.mission.title")}
           subtitle={t("pages.about.mission.subtitle")}
           description={t("pages.about.mission.description")}
-          imageSrc="/images/about/mission.webp"
+          imageSrc="https://i.ibb.co/zWkKh05K/mission.webp"
           imageRight
         />
       </Section>
@@ -64,7 +64,7 @@ export default function AboutPage() {
       <HeroHeader
         linkLabel={t("common.buttons.learnMore")}
         href="/about/sponsors"
-        imageSrc="/images/about/sponsor-cta.webp"
+        imageSrc="https://i.ibb.co/gb4rkss9/sponsor-cta.webp"
       >
         <p className={`${barlow.className} tracking-wide`}>
           {t("pages.about.sponsors.subtitle")}
@@ -81,7 +81,7 @@ export default function AboutPage() {
           title={t("pages.about.activities.title")}
           subtitle={t("pages.about.activities.subtitle")}
           description={t("pages.about.activities.description")}
-          imageSrc="/images/activities/atl.webp"
+          imageSrc="https://i.ibb.co/ppJrjtS/atl.webp"
           labelOptions={{
             href: "/activities",
             label: t("common.buttons.seeMore")

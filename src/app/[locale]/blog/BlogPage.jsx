@@ -43,7 +43,7 @@ export default function BlogPage({ posts, initialCategory }) {
     <main>
       <PageHeader
         title={t("pages.blog.title")}
-        image={"/images/headers/blog.jpg"}
+        image={"https://i.ibb.co/bgCbvqhX/blog.jpg"}
       />
       <Section variant="pattern-dots" revealContent={false}>
         <Reveal>

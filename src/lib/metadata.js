@@ -5,8 +5,8 @@ export const SITE_URL = "https://www.cdeff.com";
 // Locale-specific default share images (used by openGraph when a page has no
 // image of its own, e.g. the static routes).
 const OG_IMAGE = {
-  pt: "/images/meta/meta-pt.webp",
-  en: "/images/meta/meta-en.webp"
+  pt: "https://i.ibb.co/MDMWV7dy/meta-pt.webp",
+  en: "https://i.ibb.co/wNQnXv7B/meta-en.webp"
 };
 
 export function defaultOgImage(locale) {

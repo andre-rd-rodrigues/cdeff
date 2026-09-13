@@ -140,7 +140,7 @@ export default function FutsalPage() {
             fill
             sizes="100vw"
             style={{ objectFit: "contain" }}
-            src="/images/futsal/horarios-treino.webp"
+            src="https://i.ibb.co/RTbTK7T1/futsal-horarios-treino.webp"
           />
         </div>
       </Section>
@@ -164,7 +164,7 @@ export default function FutsalPage() {
             fill
             sizes="150px"
             style={{ objectFit: "contain" }}
-            src="/images/navbar/futsal/tourigalo.webp"
+            src="https://i.ibb.co/4nQ0JLdD/tourigalo.webp"
             alt="Tourigalo"
             className="ml-4"
           />

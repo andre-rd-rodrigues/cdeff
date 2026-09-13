@@ -6,7 +6,7 @@ export default function CookiePolicyPage() {
   return (
     <LegalDocument
       translationKey="pages.cookies"
-      image="/images/headers/perguntas-frequentes.jpg"
+      image="https://i.ibb.co/XvDy0MW/perguntas-frequentes.jpg"
     />
   );
 }

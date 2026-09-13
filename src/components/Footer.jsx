@@ -82,7 +82,7 @@ const Footer = () => {
 
   const CompanyLogo = (
     <Link href="/" className="flex flex-col items-center gap-4">
-      <Image width={100} height={100} src="/images/logo.webp" alt="CDEFF" />
+      <Image width={100} height={100} src="https://i.ibb.co/Nd2xSDcm/logo.webp" alt="CDEFF" />
       <p
         className={`${barlow.className} uppercase text-white mx-5 font-semibold text-l`}
       >

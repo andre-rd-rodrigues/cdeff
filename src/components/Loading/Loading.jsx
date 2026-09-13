@@ -21,7 +21,7 @@ const Loading = () => {
         <Image
           width={80}
           height={80}
-          src="/images/logo.webp"
+          src="https://i.ibb.co/Nd2xSDcm/logo.webp"
           alt="CDEFF"
           priority
         />

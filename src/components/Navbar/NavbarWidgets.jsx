@@ -20,7 +20,7 @@ const CompanyLogo = ({ isLargeMenu = true }) => {
   const t = useTranslations();
   return (
     <Link href="/" className="flex items-center">
-      <Image width={46} height={46} src="/images/logo.webp" alt="" />
+      <Image width={46} height={46} src="https://i.ibb.co/Nd2xSDcm/logo.webp" alt="" />
       <p
         className={`${barlow.className} uppercase -translate-y-2 ${
           isLargeMenu && "hidden sm:block"
@@ -47,14 +47,14 @@ const CloseButton = ({ handleClose }) => {
 
 const sponsorImages = [
   {
-    src: "/images/navbar/basket/hospital.webp",
+    src: "https://i.ibb.co/TqWPVWbP/hospital.webp",
     alt: "Hospital Particular da Madeira"
   },
-  { src: "/images/navbar/company/cmf.webp", alt: "CMF" },
-  { src: "/images/navbar/company/educação.webp", alt: "Educação", wide: true },
-  { src: "/images/navbar/company/escola.webp", alt: "Escola Francisco Franco" },
-  { src: "/images/navbar/company/madeira.webp", alt: "Madeira" },
-  { src: "/images/navbar/futsal/tourigalo.webp", alt: "Tourigalo" }
+  { src: "https://i.ibb.co/84BGm0cr/cmf.webp", alt: "CMF" },
+  { src: "https://i.ibb.co/PZppG4Sz/educac-a-o.webp", alt: "Educação", wide: true },
+  { src: "https://i.ibb.co/4Z6Z3fxw/escola.webp", alt: "Escola Francisco Franco" },
+  { src: "https://i.ibb.co/hJLcSPsW/madeira.webp", alt: "Madeira" },
+  { src: "https://i.ibb.co/4nQ0JLdD/tourigalo.webp", alt: "Tourigalo" }
 ];
 
 const Sponsors = () => (

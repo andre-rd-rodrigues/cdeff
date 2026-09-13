@@ -27,7 +27,7 @@ export default function HomePage({ blogPosts }) {
   return (
     <main>
       <HeroCarousel autoPlay interval={4000}>
-        <HeroHeader imageSrc="/images/homepage/headquarters.webp">
+        <HeroHeader imageSrc="https://i.ibb.co/fGXMkgv2/headquarters.webp">
           <p className={`${barlow.className} tracking-wide`}>
             {t("pages.homepage.title.upperTitle")}
           </p>
@@ -38,7 +38,7 @@ export default function HomePage({ blogPosts }) {
         </HeroHeader>
 
         <HeroSection
-          imageSrc="/images/homepage/banner-torneios-cta.webp"
+          imageSrc="https://i.ibb.co/wXgBt7G/banner-torneios-cta.webp"
           linkLabel={t("common.buttons.registration")}
           subtitle={t("pages.homepage.hero_1.subtitle")}
           title={t("pages.homepage.hero_1.title")}
@@ -83,7 +83,7 @@ export default function HomePage({ blogPosts }) {
           subtitle={t("pages.homepage.welcome.subtitle")}
           title={t("pages.homepage.welcome.title")}
           description={t("pages.homepage.welcome.description")}
-          imageSrc={"/images/homepage/welcome.webp"}
+          imageSrc={"https://i.ibb.co/r2snm5BQ/welcome.webp"}
           labelOptions={{
             href: "about",
             label: t("common.buttons.learnMore")
@@ -102,7 +102,7 @@ export default function HomePage({ blogPosts }) {
 
       {/* Hero 1 */}
       <HeroSection
-        imageSrc="/images/homepage/banner-torneio.webp"
+        imageSrc="https://i.ibb.co/KzNJ0t26/banner-torneio.webp"
         linkLabel={t("common.buttons.registration")}
         subtitle={t("pages.homepage.hero_1.subtitle")}
         title={t("pages.homepage.hero_1.title")}
@@ -139,7 +139,7 @@ export default function HomePage({ blogPosts }) {
 
       {/* Hero 2 */}
       <HeroSection
-        imageSrc="/images/homepage/modalidades-cta.webp"
+        imageSrc="https://i.ibb.co/N221bg7s/modalidades-cta.webp"
         linkLabel={t("common.buttons.learnMore")}
         subtitle={t("pages.homepage.hero_2.subtitle")}
         title={t("pages.homepage.hero_2.title")}

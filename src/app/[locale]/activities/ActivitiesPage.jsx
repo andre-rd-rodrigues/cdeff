@@ -24,7 +24,7 @@ export default function ActivitiesPage() {
     <main>
       <PageHeader
         title={t("pages.activities.title")}
-        image={"/images/headers/atividades.jpg"}
+        image={"https://i.ibb.co/QFtZvXqM/atividades.jpg"}
       />
 
       {/* ATL */}
@@ -33,7 +33,7 @@ export default function ActivitiesPage() {
         <TextWithImage
           title={t("pages.activities.section_1.title")}
           description={t("pages.activities.section_1.description")}
-          imageSrc="/images/activities/atl.webp"
+          imageSrc="https://i.ibb.co/ppJrjtS/atl.webp"
           labelOptions={{
             href: TEL_LINK,
             label: t("common.buttons.contact")
@@ -46,7 +46,7 @@ export default function ActivitiesPage() {
         <TextWithImage
           title={t("pages.activities.section_2.title")}
           description={t("pages.activities.section_2.description")}
-          imageSrc="/images/activities/aniversarios.webp"
+          imageSrc="https://i.ibb.co/k2dTZtjG/aniversarios.webp"
           labelOptions={{
             href: TEL_LINK,
             label: t("common.buttons.contact")
@@ -60,7 +60,7 @@ export default function ActivitiesPage() {
         <TextWithImage
           title={t("pages.activities.section_3.title")}
           description={t("pages.activities.section_3.description")}
-          imageSrc="/images/activities/orientacao.webp"
+          imageSrc="https://i.ibb.co/Fb7wLb2P/orientacao.webp"
           labelOptions={{
             href: TEL_LINK,
             label: t("common.buttons.contact")
@@ -76,7 +76,7 @@ export default function ActivitiesPage() {
           location={t("pages.activities.section_4.location")}
           schedule={section_4_schedule_array}
           contact={t("pages.activities.section_4.contact")}
-          imageSrc="/images/activities/muay-thai.webp"
+          imageSrc="https://i.ibb.co/nMNtkLc4/muay-thai.webp"
           labelOptions={{
             href: "tel:+351 966372155",
             label: t("common.buttons.contact")
@@ -93,7 +93,7 @@ export default function ActivitiesPage() {
           location={t("pages.activities.section_5.location")}
           schedule={section_5_schedule_array}
           contact={t("pages.activities.section_5.contact")}
-          imageSrc="/images/activities/zumba.webp"
+          imageSrc="https://i.ibb.co/rGD3QPGf/zumba.webp"
           labelOptions={{
             href: "tel:+351 966410578",
             label: t("common.buttons.contact")
@@ -109,7 +109,7 @@ export default function ActivitiesPage() {
           location={t("pages.activities.section_6.location")}
           schedule={section_6_schedule_array}
           contact={t("pages.activities.section_6.contact")}
-          imageSrc="/images/activities/ginastica.webp"
+          imageSrc="https://i.ibb.co/bMRxLzp7/ginastica.webp"
           labelOptions={{
             href: "tel:+351 966573753",
             label: t("common.buttons.contact")

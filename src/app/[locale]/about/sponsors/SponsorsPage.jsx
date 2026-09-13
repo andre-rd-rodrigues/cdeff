@@ -19,7 +19,7 @@ export default function SponsorsPage() {
     <main>
       <PageHeader
         title={t("pages.sponsors.title")}
-        image="/images/headers/patrocinadores.png"
+        image="https://i.ibb.co/TX1q38Q/patrocinadores.png"
       />
 
       {/* Main */}
@@ -27,10 +27,10 @@ export default function SponsorsPage() {
         <SectionTitle title={t("pages.sponsors.mainSponsors")} hideAccent />
         <div className="flex">
           <SponsorSection
-            images={["/images/navbar/basket/hospital.webp"]}
+            images={["https://i.ibb.co/TqWPVWbP/hospital.webp"]}
             basket
           />
-          <SponsorSection images={["/images/navbar/futsal/tourigalo.webp"]} />
+          <SponsorSection images={["https://i.ibb.co/4nQ0JLdD/tourigalo.webp"]} />
         </div>
       </Section>
 
@@ -45,7 +45,7 @@ export default function SponsorsPage() {
       <HeroHeader
         linkLabel={t("common.buttons.contacts")}
         href="/contacts"
-        imageSrc="/images/about/sponsor-cta.webp"
+        imageSrc="https://i.ibb.co/gb4rkss9/sponsor-cta.webp"
       >
         <h1 className={`${barlow.className} uppercase tracking-wide`}>
           {t("pages.sponsors.hero.title")}

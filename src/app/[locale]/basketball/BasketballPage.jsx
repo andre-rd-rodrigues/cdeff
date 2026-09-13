@@ -41,7 +41,7 @@ export default function BasketballPage() {
           title={t("pages.basketball.welcome.title")}
           subtitle={t("pages.basketball.welcome.subtitle")}
           description={t("pages.basketball.welcome.description")}
-          imageSrc="/images/basketball/modalidades-basquetebol.webp"
+          imageSrc="https://i.ibb.co/pr6nGB2w/modalidades-basquetebol.webp"
         />
       </Section>
 
@@ -176,7 +176,7 @@ export default function BasketballPage() {
             fill
             sizes="100vw"
             style={{ objectFit: "contain" }}
-            src="/images/basketball/horarios-treino.webp"
+            src="https://i.ibb.co/Kpr1MFjh/horarios-treino.webp"
           />
         </div>
       </Section>
@@ -200,7 +200,7 @@ export default function BasketballPage() {
             fill
             sizes="150px"
             style={{ objectFit: "contain" }}
-            src="/images/navbar/basket/hospital.webp"
+            src="https://i.ibb.co/TqWPVWbP/hospital.webp"
             alt="CDEFF Patrocinadores"
             className="ml-4"
           />

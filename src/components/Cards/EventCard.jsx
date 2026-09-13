@@ -27,7 +27,7 @@ function EventCard({ event, href }) {
       <div className="h-[3px] bg-red w-full" />
       <div className="relative h-[450px]">
         <Image
-          src={image || "/images/metadata.png"}
+          src={image || "https://i.ibb.co/MDMWV7dy/meta-pt.webp"}
           alt={title}
           fill
           sizes="(max-width: 640px) 90vw, 320px"

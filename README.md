@@ -56,6 +56,10 @@ The blog and tournaments are plain MDX files under `content/`. A post or tournam
 
 The data layer lives in `src/lib/content.js` (`getPosts`, `getPost`, `getTournaments`, `getTournament`).
 
+## Images 🖼️
+
+Images are **not stored in the repository**. They are hosted externally on [imgbb](https://ibb.co/) under the **CDEFF image** account, and referenced throughout the code by their direct `https://i.ibb.co/...` URLs. When adding or updating imagery, upload the file to the CDEFF image account and reference the direct link.
+
 ## Highlights 💡
 
 - **Local MDX content**: Blog and tournaments authored in the repo, no CMS to maintain.

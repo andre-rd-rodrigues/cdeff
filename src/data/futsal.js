@@ -4,17 +4,17 @@ export const futsalTechnicalTeam = [
     members: [
       {
         name: "Tiago Rosa",
-        image: "/images/futsal/technical-team/seniores/tiago-rosa.webp",
+        image: "https://i.ibb.co/qY3YswSp/tiago-rosa.webp",
         position: "treinador"
       },
       {
         name: "Eduardo Abreu",
-        image: "/images/futsal/technical-team/seniores/eduardo-abreu.webp",
+        image: "https://i.ibb.co/XrbV82bT/eduardo-abreu.webp",
         position: "treinador adjunto"
       },
       {
         name: "Albino Leça",
-        image: "/images/futsal/technical-team/seniores/albino-leca.webp",
+        image: "https://i.ibb.co/nNzpJQzX/albino-leca.webp",
         position: "massagista"
       }
     ]
@@ -24,17 +24,17 @@ export const futsalTechnicalTeam = [
     members: [
       {
         name: "Tiago Rosa",
-        image: "/images/futsal/technical-team/seniores/tiago-rosa.webp",
+        image: "https://i.ibb.co/qY3YswSp/tiago-rosa.webp",
         position: "treinador"
       },
       {
         name: "Eduardo Abreu",
-        image: "/images/futsal/technical-team/seniores/eduardo-abreu.webp",
+        image: "https://i.ibb.co/XrbV82bT/eduardo-abreu.webp",
         position: "treinador adjunto"
       },
       {
         name: "João Anazário",
-        image: "/images/futsal/technical-team/juniores/joao-anazario.webp",
+        image: "https://i.ibb.co/xt5C0t84/joao-anazario.webp",
         position: "1º delegado"
       }
     ]
@@ -44,12 +44,12 @@ export const futsalTechnicalTeam = [
     members: [
       {
         name: "Eduardo Abreu",
-        image: "/images/futsal/technical-team/seniores/eduardo-abreu.webp",
+        image: "https://i.ibb.co/XrbV82bT/eduardo-abreu.webp",
         position: "treinador"
       },
       {
         name: "Alexandre Mendez",
-        image: "/images/futsal/technical-team/juvenis/alexandre-mendez.webp",
+        image: "https://i.ibb.co/gMk44QjT/alexandre-mendez.webp",
         position: "treinador adjunto"
       }
     ]
@@ -59,12 +59,12 @@ export const futsalTechnicalTeam = [
     members: [
       {
         name: "João Andrade",
-        image: "/images/futsal/technical-team/iniciados/joao-andrade.webp",
+        image: "https://i.ibb.co/cKjZjdv4/joao-andrade.webp",
         position: "treinador"
       },
       {
         name: "Duarte Rosário",
-        image: "/images/futsal/technical-team/iniciados/duarte-rosario.webp",
+        image: "https://i.ibb.co/S7MGfcyk/duarte-rosario.webp",
         position: "treinador adjunto"
       }
     ]
@@ -74,12 +74,12 @@ export const futsalTechnicalTeam = [
     members: [
       {
         name: "João Ricardo",
-        image: "/images/futsal/technical-team/infantis/joao-ricardo.webp",
+        image: "https://i.ibb.co/VY3MT2YT/joao-ricardo.webp",
         position: "treinador"
       },
       {
         name: "Sérgio Santos",
-        image: "/images/futsal/technical-team/infantis/sergio-santos.webp",
+        image: "https://i.ibb.co/XkbXtpcV/sergio-santos.webp",
         position: "treinador adjunto"
       }
     ]
@@ -89,12 +89,12 @@ export const futsalTechnicalTeam = [
     members: [
       {
         name: "Carla Gil",
-        image: "/images/futsal/technical-team/benjamins/carla-gil.webp",
+        image: "https://i.ibb.co/1GJxvT8C/carla-gil.webp",
         position: "treinadora"
       },
       {
         name: "Mónica Ferraz",
-        image: "/images/futsal/technical-team/benjamins/monica-ferraz.webp",
+        image: "https://i.ibb.co/tpmrvSj6/monica-ferraz.webp",
         position: "treinadora adjunta"
       }
     ]
@@ -104,12 +104,12 @@ export const futsalTechnicalTeam = [
     members: [
       {
         name: "Fabiano Afonso",
-        image: "/images/futsal/technical-team/petizes-e-traquinas/fabiano-afonso.webp",
+        image: "https://i.ibb.co/20cfshvd/fabiano-afonso.webp",
         position: "treinador"
       },
       {
         name: "Diogo Martins",
-        image: "/images/futsal/technical-team/petizes-e-traquinas/diogo-martins.webp",
+        image: "https://i.ibb.co/8g4YXf7V/diogo-martins.webp",
         position: "treinador adjunto"
       }
     ]
@@ -121,552 +121,552 @@ export const futsalFeedback = [
     author: "TOP FIVE Futsal",
     feedback:
       "Atleti, allenatori, dirigenti, Franco e io, ringraziamo Mauro, Tiago e tutto lo staff per la splendida esperienza che abbiamo vissuto. Tutto organizzato benissimo, un torneo di altissimo livello. In Italia abbiamo parlato molto di voi e del vostro torneo. Grazie di tutto.",
-    image: "/images/futsal/feedback/top-five-futsal.webp"
+    image: "https://i.ibb.co/yFf2S9w4/top-five-futsal.webp"
   },
   {
     author: "Puskas-Hagi Ashbourne Futsal Club",
     feedback:
       "All members of our team miss Madeira very much. I've never felt better anywhere. Everything was perfect in terms of organization and Futsal. The quality of the referees was very important, which raised the tournament to the top of the world. Thank you very much.",
-    image: "/images/futsal/feedback/puskas-hagi-ashbourne-futsal-club.webp"
+    image: "https://i.ibb.co/Kc3SjhYc/puskas-hagi-ashbourne-futsal-club.webp"
   },
   {
     author: "CD Basilea",
     feedback:
       "Muchas gracias a la organización del evento, en especial a Tiago y Mauro. Estamos muy agradecidos desde el CD Basilea fútbol sala. Quiero animarles a que sigan con este proyecto, sabiendo que es costoso y se necesitan muchos recursos, pero ayudan al Futsal y los jóvenes. Enhorabuena.",
-    image: "/images/futsal/feedback/cd-basilea.webp"
+    image: "https://i.ibb.co/5Xm2KFf5/cd-basilea.webp"
   },
   {
     author: "Palma Futsal",
     feedback:
       "Muchas gracias por todo!! Gestión y organización 🔝🔝🔝💪💪💪Hemos disfrutado mucho!! Un abrazo fuerte!!",
-    image: "/images/futsal/feedback/palma-futsal.webp"
+    image: "https://i.ibb.co/jPgCGxCw/palma-futsal.webp"
   },
   {
     author: "Piratas de Creixomil",
     feedback:
       "Mais um ano de participação no torneio e desta vez com 4 escalões da formação! A nível de organização, foi sem dúvida, o ano que melhor correu! Parabéns pelo vosso dinamismo, cooperação e disponibilidade! Foram dias fantásticos de partilha e vivências entre todos, onde a sensação que fica é de querer voltar no próximo ano! Muito obrigada por tudo e muitos parabéns a todos que tornaram isto possível 💙💛🏴‍☠️",
-    image: "/images/futsal/feedback/piratas-de-creixomil.webp"
+    image: "https://i.ibb.co/s9RmHDfh/piratas-de-creixomil.webp"
   },
   {
     author: "B2M",
     feedback:
       "Au nom de tous nos athlètes et accompagnateurs, nous tenons à exprimer notre profonde gratitude pour l'accueil chaleureux et l'incroyable organisation de ce 6e tournoi international de futsal à Funchal. Ces six jours ont été une expérience exceptionnelle pour nos jeunes joueurs. Nous sommes reconnaissants pour tout ce que nos joueurs ont appris individuellement durant ce séjour, que ce soit sur le terrain, en groupe ou en dehors...",
-    image: "/images/futsal/feedback/b2m.webp"
+    image: "https://i.ibb.co/4G8tgtf/b2m.webp"
   },
   {
     author: "Reguilas Tires Futsal",
     feedback:
       "Os Reguilas Tires Futsal agradecem a todo o Staff e organização do Torneio todo o apoio prestado, em especial ao Tiago Rosa e ao Mauro porque foram as pessoas com quem estivemos mais em contacto, nunca esquecendo todas as pessoas que tornaram possível este evento. O nosso muito obrigado e um até já 👌👌👌🥂.",
-    image: "/images/futsal/feedback/reguilas-tires-futsal.webp"
+    image: "https://i.ibb.co/SDCZbNFm/reguilas-tires-futsal.webp"
   },
   {
     author: "Santaluziense",
     feedback:
       "Obrigado por tudo, adoramos estar cá! Agradeço desde já por tudo, a toda a organização e a outras equipas que se familiarizaram connosco e especialmente ao Mauro e ao Tiago obrigado por tudo, até à próxima.",
-    image: "/images/futsal/feedback/santaluziense.webp"
+    image: "https://i.ibb.co/RpwSXJ8r/santaluziense.webp"
   },
   {
     author: "Vendas de Azeitão",
     feedback:
       "Parabéns a toda a organização e todo o staff. É um evento muito grande com toda uma logística muito trabalhosa e por isso estão de parabéns. Bem haja, aguardamos o convite para o próximo.",
-    image: "/images/futsal/feedback/vendas-de-azeitao.webp"
+    image: "https://i.ibb.co/NdXKjSnY/vendas-de-azeitao.webp"
   },
   {
     author: "Rio Ave Futebol Clube",
     feedback:
       "Em nome do grupo dos U17 do Rio Ave Futebol Clube, os treinadores Sérgio Terroso e Diogo Faria, responsáveis pelo mesmo, gostaríamos de agradecer à organização do torneio pelo excelente trabalho, a forma como fomos recebidos, bem como a todas as equipas que se cruzaram connosco e permitiram mais um momento de crescimento dos nossos atletas dentro da quadra, e as com que tivemos o prazer de conviver. É impressionante ver como o torneio tem crescido ao longo dos anos e o ambiente familiar entre todos os participantes se mantém. Parabéns e viva o futsal! Obrigado a todos e vemo-nos por aí! 🤗",
-    image: "/images/futsal/feedback/rio-ave-futebol-clube.webp"
+    image: "https://i.ibb.co/m5swwz38/rio-ave-futebol-clube.webp"
   },
   {
     author: "GRC Dínamo Sanjoanense",
     feedback:
       "Considerando a nossa participação, tivemos o privilégio de estar num dos lugares mais bonitos do País, a maravilhosa ilha da Madeira e para que tudo fosse possível, não podemos esquecer do papel fabuloso de atenção e carinho do Tiago e do Mauro, duas pessoas inexcedíveis para que a nossa estadia fosse lembrada para sempre. Obrigado ao Clube Francisco Franco, gente fabulosa e de bom trato. Em nome do nosso grupo, obrigado a todos aqueles que estiveram envolvidos na organização do torneio, sem o vosso trabalho nada disto era possível.",
-    image: "/images/futsal/feedback/grc-dinamo-sanjoanense.webp"
+    image: "https://i.ibb.co/pjwq0tdc/grc-dinamo-sanjoanense.webp"
   },
   {
     author: "Burela",
     feedback:
       "Queria dar as grazas a Tiago e a Mauro pola vosa hospitalidade e por axudarnos neses momentos tan complicados que sufrimos o equipo do Burela fs, tamén dar as grazas o director da escola Francisco Franco por axudarnos en todo momento. Sobre o Torneo, moitas grazas por invitarnos, foi unha experiencia inolvidable para os rapaces, amén dos resultados obtidos, quedome co intercambio de culturas, integración dos equipos, o bo ambiente entre os rapaces dos equipos, etc.... eso é o que valoramos dende o noso equipo. Moitas grazas a todos os equipos e a organización por deixarnos vivir esta experiencia TOP.",
-    image: "/images/futsal/feedback/burela.webp"
+    image: "https://i.ibb.co/xKT9LgWs/burela.webp"
   },
   {
     author: "Neuilly Futsal",
     feedback:
       "All was very good. Thank you for the invitation, it was a very big honour to play against some professionals teams wich came from portugal and spain. The organisation was great like professional futsal event. It's very interesting for frenchs futsal players to play against all of you, it's was a rich experience. If it's possible we will be very happy to come next year and enjoy a new futsal event like this.",
-    image: "/images/futsal/feedback/neuilly-futsal.webp"
+    image: "https://i.ibb.co/PvKZWqSd/neuilly-futsal.webp"
   },
   {
     author: "CR Candoso",
     feedback:
       "Foram dias distribuídos por jogos, convívio e passeios que serviram para acentuar a união, amizade e camaradagem entre jogadores, treinadores, dirigentes, familiares e adversários. Deixo aqui uma palavra muito especial à Francisco Franco, ao Tiago Rosa e ao Mauro Silva, pela hospitalidade com que nos receberam, pelo excelente Torneio que organizaram e pela oportunidade que nos proporcionaram. Foi a nossa primeira presença no Torneio, mas esperamos que não ser a última. O nosso Obrigado.",
-    image: "/images/futsal/feedback/cr-candoso.webp"
+    image: "https://i.ibb.co/JFbq2hrN/cr-candoso.webp"
   }
 ];
 
 export const futsalSponsors = {
   collaborators: [
-    "/images/futsal/sponsors/collaborators/armazens-do-sal.webp",
-    "/images/futsal/sponsors/collaborators/banamadeira-removebg-preview.webp",
-    "/images/futsal/sponsors/collaborators/casa-santo-anto-nio-removebg-preview.webp",
-    "/images/futsal/sponsors/collaborators/cruz-vermelha-portuguesa.webp",
-    "/images/futsal/sponsors/collaborators/decathlon.webp",
-    "/images/futsal/sponsors/collaborators/desporto-escolar.webp",
-    "/images/futsal/sponsors/collaborators/diogo-freitas-pest-control.webp",
-    "/images/futsal/sponsors/collaborators/eira-do-serrado-removebg-preview.webp",
-    "/images/futsal/sponsors/collaborators/fisio-clinic.webp",
-    "/images/futsal/sponsors/collaborators/frente-mar.webp",
-    "/images/futsal/sponsors/collaborators/fx-auto-import.webp",
-    "/images/futsal/sponsors/collaborators/gelados-mil-sabores.webp",
-    "/images/futsal/sponsors/collaborators/gesba.webp",
-    "/images/futsal/sponsors/collaborators/grupo-futsal-lenda-rio.webp",
-    "/images/futsal/sponsors/collaborators/hora-rios-do-funchal.webp",
-    "/images/futsal/sponsors/collaborators/hortamadeira.webp",
-    "/images/futsal/sponsors/collaborators/linos.webp",
-    "/images/futsal/sponsors/collaborators/manuel-arnaldo-rodrigues.webp",
-    "/images/futsal/sponsors/collaborators/nd-segur.webp",
-    "/images/futsal/sponsors/collaborators/padaria-do-avo.webp",
-    "/images/futsal/sponsors/collaborators/pinup-tattoo.webp",
-    "/images/futsal/sponsors/collaborators/promerch.webp",
-    "/images/futsal/sponsors/collaborators/restaurante-do-forte.webp",
-    "/images/futsal/sponsors/collaborators/rs-auto.webp",
-    "/images/futsal/sponsors/collaborators/secretaria-regional-turismo-removebg-preview.webp",
-    "/images/futsal/sponsors/collaborators/superpedestrian.webp",
-    "/images/futsal/sponsors/collaborators/teleferico-funchal-2.webp",
-    "/images/futsal/sponsors/collaborators/yellowbus.webp",
-    "/images/futsal/sponsors/collaborators/blandys-removebg-preview.webp"
+    "https://i.ibb.co/fVqGxmj8/armazens-do-sal.webp",
+    "https://i.ibb.co/ZkpB65F/banamadeira-removebg-preview.webp",
+    "https://i.ibb.co/YFKxCqTj/casa-santo-anto-nio-removebg-preview.webp",
+    "https://i.ibb.co/27JyV46Y/cruz-vermelha-portuguesa.webp",
+    "https://i.ibb.co/YBWBDxmW/decathlon.webp",
+    "https://i.ibb.co/Rkfh2LGt/desporto-escolar.webp",
+    "https://i.ibb.co/pkzRcvP/diogo-freitas-pest-control.webp",
+    "https://i.ibb.co/ZzNvTfxX/eira-do-serrado-removebg-preview.webp",
+    "https://i.ibb.co/93TcWCfc/fisio-clinic.webp",
+    "https://i.ibb.co/603PZpPT/frente-mar.webp",
+    "https://i.ibb.co/hRcm0Zqv/fx-auto-import.webp",
+    "https://i.ibb.co/N2MPzqjX/gelados-mil-sabores.webp",
+    "https://i.ibb.co/dJmQWhys/gesba.webp",
+    "https://i.ibb.co/JjnZsktR/grupo-futsal-lenda-rio.webp",
+    "https://i.ibb.co/S4JN5nv7/hora-rios-do-funchal.webp",
+    "https://i.ibb.co/3yGGBqmB/hortamadeira.webp",
+    "https://i.ibb.co/CsWrh9kw/linos.webp",
+    "https://i.ibb.co/Qv0z4MdK/manuel-arnaldo-rodrigues.webp",
+    "https://i.ibb.co/CK9LMfVz/nd-segur.webp",
+    "https://i.ibb.co/MDrkRXfc/padaria-do-avo.webp",
+    "https://i.ibb.co/RkyxBSN6/pinup-tattoo.webp",
+    "https://i.ibb.co/tPWr4DZv/promerch.webp",
+    "https://i.ibb.co/Df0G8qYH/restaurante-do-forte.webp",
+    "https://i.ibb.co/84fPwQk0/rs-auto.webp",
+    "https://i.ibb.co/847dZ1NV/secretaria-regional-turismo-removebg-preview.webp",
+    "https://i.ibb.co/WNVYdZYm/superpedestrian.webp",
+    "https://i.ibb.co/HDB7f24F/teleferico-funchal-2.webp",
+    "https://i.ibb.co/Q76SGvG5/yellowbus.webp",
+    "https://i.ibb.co/hxtnjvhR/blandys-removebg-preview.webp"
   ],
   normal: [
-    "/images/futsal/sponsors/normal/auto-classico.webp",
-    "/images/futsal/sponsors/normal/bistro-351.webp",
-    "/images/futsal/sponsors/normal/casa-dos-frangos.webp",
-    "/images/futsal/sponsors/normal/e-bike-madeira.webp",
-    "/images/futsal/sponsors/normal/fisiomotriz.webp",
-    "/images/futsal/sponsors/normal/full-experience-removebg-preview.webp",
-    "/images/futsal/sponsors/normal/lido-tours.webp",
-    "/images/futsal/sponsors/normal/mn-group.webp",
-    "/images/futsal/sponsors/normal/mountain-expeditions1-removebg-preview.webp",
-    "/images/futsal/sponsors/normal/neptuno.webp",
-    "/images/futsal/sponsors/normal/sapataria-porto.webp",
-    "/images/futsal/sponsors/normal/variosport-removebg-preview.webp"
+    "https://i.ibb.co/zTGp0BVh/auto-classico.webp",
+    "https://i.ibb.co/9HMzBrdV/bistro-351.webp",
+    "https://i.ibb.co/pvg7T55p/casa-dos-frangos.webp",
+    "https://i.ibb.co/tTJbf4RD/e-bike-madeira.webp",
+    "https://i.ibb.co/DPmLr0vc/fisiomotriz.webp",
+    "https://i.ibb.co/r2shQYDw/full-experience-removebg-preview.webp",
+    "https://i.ibb.co/wFdWsTKS/lido-tours.webp",
+    "https://i.ibb.co/S4B2WnL9/mn-group.webp",
+    "https://i.ibb.co/pB24nHwK/mountain-expeditions1-removebg-preview.webp",
+    "https://i.ibb.co/gMsKZhpd/neptuno.webp",
+    "https://i.ibb.co/d9qG9zV/sapataria-porto.webp",
+    "https://i.ibb.co/gFXnxQGn/variosport-removebg-preview.webp"
   ],
   premium: [
-    "/images/futsal/sponsors/premium/funchal-motors.webp",
-    "/images/futsal/sponsors/premium/links-real-estate.webp",
-    "/images/futsal/sponsors/premium/megamotor.webp",
-    "/images/futsal/sponsors/premium/wurth.webp"
+    "https://i.ibb.co/MLXkdfr/funchal-motors.webp",
+    "https://i.ibb.co/Lz1L32yv/links-real-estate.webp",
+    "https://i.ibb.co/WNSwKYqN/megamotor.webp",
+    "https://i.ibb.co/zTVKRZp6/wurth.webp"
   ]
 };
 
 export const futsalTeam = {
   seniores: [
     {
-      image: "/images/futsal/teams/seniores/anselmo-carreira.webp",
+      image: "https://i.ibb.co/RTgRJV4p/anselmo-carreira.webp",
       name: "Anselmo Carreira"
     },
     {
-      image: "/images/futsal/teams/seniores/bernardo-gouveia.webp",
+      image: "https://i.ibb.co/0kd6Xc9/bernardo-gouveia.webp",
       name: "Bernardo Gouveia"
     },
     {
-      image: "/images/futsal/teams/seniores/carlos-faria.webp",
+      image: "https://i.ibb.co/xKQmwHVP/carlos-faria.webp",
       name: "Carlos Faria"
     },
     {
-      image: "/images/futsal/teams/seniores/carlos-fernandes.webp",
+      image: "https://i.ibb.co/gFz4qXy5/carlos-fernandes.webp",
       name: "Carlos Fernandes"
     },
     {
-      image: "/images/futsal/teams/seniores/carlos-pestana.webp",
+      image: "https://i.ibb.co/b5tmWZ8K/carlos-pestana.webp",
       name: "Carlos Pestana"
     },
     {
-      image: "/images/futsal/teams/seniores/diogo-cabral.webp",
+      image: "https://i.ibb.co/9HrNdqfX/diogo-cabral.webp",
       name: "Diogo Cabral"
     },
     {
-      image: "/images/futsal/teams/seniores/emanuel-rebolo.webp",
+      image: "https://i.ibb.co/jPTcKtQ5/emanuel-rebolo.webp",
       name: "Emanuel Rebolo"
     },
     {
-      image: "/images/futsal/teams/seniores/fabiano-freitas.webp",
+      image: "https://i.ibb.co/9mYN8HFy/fabiano-freitas.webp",
       name: "Fabiano Freitas"
     },
     {
-      image: "/images/futsal/teams/seniores/fabio-branco.webp",
+      image: "https://i.ibb.co/XxXQmScG/fabio-branco.webp",
       name: "Fábio Branco"
     },
     {
-      image: "/images/futsal/teams/seniores/guilherme-leca.webp",
+      image: "https://i.ibb.co/YFy2gKYx/guilherme-leca.webp",
       name: "Guilherme Leça"
     },
     {
-      image: "/images/futsal/teams/seniores/kevin-mendez.webp",
+      image: "https://i.ibb.co/NdzJjDgD/kevin-mendez.webp",
       name: "Kevin Mendez"
     },
     {
-      image: "/images/futsal/teams/seniores/luis-vieira.webp",
+      image: "https://i.ibb.co/1ftF7SMT/luis-vieira.webp",
       name: "Luís Vieira"
     },
     {
-      image: "/images/futsal/teams/seniores/rodrigo.webp",
+      image: "https://i.ibb.co/5hK36cPw/rodrigo.webp",
       name: "Rodrigo"
     },
     {
-      image: "/images/futsal/teams/seniores/ruben-correia.webp",
+      image: "https://i.ibb.co/S4x5yKj4/ruben-correia.webp",
       name: "Rúben Correia"
     },
     {
-      image: "/images/futsal/teams/seniores/vitor-aires.webp",
+      image: "https://i.ibb.co/3YfhYj8m/vitor-aires.webp",
       name: "Vítor Aires"
     }
   ],
   juniores: [
     {
-      image: "/images/futsal/teams/juniores/folgado.webp",
+      image: "https://i.ibb.co/5gkghfJS/folgado.webp",
       name: "Folgado"
     },
     {
-      image: "/images/futsal/teams/juniores/francisco-gouveia.webp",
+      image: "https://i.ibb.co/d4RVLDG8/francisco-gouveia.webp",
       name: "Francisco Gouveia"
     },
     {
-      image: "/images/futsal/teams/juniores/francisco-oliveira.webp",
+      image: "https://i.ibb.co/5hXzfCMj/francisco-oliveira.webp",
       name: "Francisco Oliveira"
     },
     {
-      image: "/images/futsal/teams/juniores/lacruz.webp",
+      image: "https://i.ibb.co/Cp3zVDXt/lacruz.webp",
       name: "Lacruz"
     },
     {
-      image: "/images/futsal/teams/juniores/luis-silva.webp",
+      image: "https://i.ibb.co/60JfhKnq/luis-silva.webp",
       name: "Luís Silva"
     },
     {
-      image: "/images/futsal/teams/juniores/mateus.webp",
+      image: "https://i.ibb.co/PvfmMrxG/mateus.webp",
       name: "Mateus"
     },
     {
-      image: "/images/futsal/teams/juniores/miguel-tomas.webp",
+      image: "https://i.ibb.co/1GHW4jGR/miguel-tomas.webp",
       name: "Miguel Tomás"
     },
     {
-      image: "/images/futsal/teams/juniores/nuno.webp",
+      image: "https://i.ibb.co/Tq2hZHGw/nuno.webp",
       name: "Nuno"
     },
     {
-      image: "/images/futsal/teams/juniores/rodrigo-pereira.webp",
+      image: "https://i.ibb.co/0RhMYnqQ/rodrigo-pereira.webp",
       name: "Rodrigo Pereira"
     },
     {
-      image: "/images/futsal/teams/juniores/santos.webp",
+      image: "https://i.ibb.co/XkFcp1Zm/santos.webp",
       name: "Santos"
     },
     {
-      image: "/images/futsal/teams/juniores/taipa.webp",
+      image: "https://i.ibb.co/9mCW8t4C/taipa.webp",
       name: "Taipa"
     },
     {
-      image: "/images/futsal/teams/juniores/tiago-silva.webp",
+      image: "https://i.ibb.co/yc3mMh9T/tiago-silva.webp",
       name: "Tiago Silva"
     },
     {
-      image: "/images/futsal/teams/juniores/guilherme-leca.webp",
+      image: "https://i.ibb.co/NdscbQsC/juniores-guilherme-leca.webp",
       name: "Guilherme Leça"
     },
     {
-      image: "/images/futsal/teams/juniores/goncalo-jardim.webp",
+      image: "https://i.ibb.co/ynSjJwMB/goncalo-jardim.webp",
       name: "Gonçalo Jardim"
     },
     {
-      image: "/images/futsal/teams/juniores/henrique-sa.webp",
+      image: "https://i.ibb.co/BxBrdyK/henrique-sa.webp",
       name: "Henrique Sá"
     }
   ],
   juvenis: [
     {
-      image: "/images/futsal/teams/juvenis/filipe.webp",
+      image: "https://i.ibb.co/3ydPz76H/filipe.webp",
       name: "Filipe"
     },
     {
-      image: "/images/futsal/teams/juvenis/gil.webp",
+      image: "https://i.ibb.co/1tTXS9W1/gil.webp",
       name: "Gil"
     },
     {
-      image: "/images/futsal/teams/juvenis/guilherme-andrade.webp",
+      image: "https://i.ibb.co/20ghTWHS/guilherme-andrade.webp",
       name: "Guilherme Andrade"
     },
     {
-      image: "/images/futsal/teams/juvenis/joao-afonso.webp",
+      image: "https://i.ibb.co/NdvYb6DX/joao-afonso.webp",
       name: "João Afonso"
     },
     {
-      image: "/images/futsal/teams/juvenis/joao-pedro-dantas.webp",
+      image: "https://i.ibb.co/LXVsyJzm/joao-pedro-dantas.webp",
       name: "João Pedro Dantas"
     },
     {
-      image: "/images/futsal/teams/juvenis/joao-rodrigo.webp",
+      image: "https://i.ibb.co/mFXD0wyy/joao-rodrigo.webp",
       name: "João Rodrigo"
     },
     {
-      image: "/images/futsal/teams/juvenis/kiko.webp",
+      image: "https://i.ibb.co/zTRLx6dY/kiko.webp",
       name: "Kiko"
     },
     {
-      image: "/images/futsal/teams/juvenis/luis-gomes.webp",
+      image: "https://i.ibb.co/rG7DP6W3/luis-gomes.webp",
       name: "Luís Gomes"
     },
     {
-      image: "/images/futsal/teams/juvenis/luis-souto.webp",
+      image: "https://i.ibb.co/Y4NpnPq8/luis-souto.webp",
       name: "Luís Souto"
     },
     {
-      image: "/images/futsal/teams/juvenis/miguel-duque.webp",
+      image: "https://i.ibb.co/WWtt0pGN/miguel-duque.webp",
       name: "Miguel Duque"
     },
     {
-      image: "/images/futsal/teams/juvenis/rafa.webp",
+      image: "https://i.ibb.co/PzwbC4sb/juvenis-rafa.webp",
       name: "Rafa"
     },
     {
-      image: "/images/futsal/teams/juvenis/rodrigo-vasconcelos.webp",
+      image: "https://i.ibb.co/RGcNVywG/rodrigo-vasconcelos.webp",
       name: "Rodrigo Vasconcelos"
     },
     {
-      image: "/images/futsal/teams/juvenis/rui-azevedo.webp",
+      image: "https://i.ibb.co/GQJSKcQd/rui-azevedo.webp",
       name: "Rui Azevedo"
     },
     {
-      image: "/images/futsal/teams/juvenis/tomas-fernandes.webp",
+      image: "https://i.ibb.co/v6kG4m0n/tomas-fernandes.webp",
       name: "Tomás Fernandes"
     }
   ],
   iniciados: [
     {
-      image: "/images/futsal/teams/iniciados/bernardo-pestana.webp",
+      image: "https://i.ibb.co/HLgdBH2M/bernardo-pestana.webp",
       name: "Bernardo Pestana"
     },
     {
-      image: "/images/futsal/teams/iniciados/berny.webp",
+      image: "https://i.ibb.co/DHn5sDdv/berny.webp",
       name: "Berny"
     },
     {
-      image: "/images/futsal/teams/iniciados/elias.webp",
+      image: "https://i.ibb.co/3yZf0Nwg/elias.webp",
       name: "Elias"
     },
     {
-      image: "/images/futsal/teams/iniciados/joaquim-meneses.webp",
+      image: "https://i.ibb.co/5VyKGhn/joaquim-meneses.webp",
       name: "Joaquim Meneses"
     },
     {
-      image: "/images/futsal/teams/iniciados/joao-maria.webp",
+      image: "https://i.ibb.co/ycQprqtV/joao-maria.webp",
       name: "João Maria"
     },
     {
-      image: "/images/futsal/teams/iniciados/lucas-meneses.webp",
+      image: "https://i.ibb.co/GfWJP7zC/lucas-meneses.webp",
       name: "Lucas Meneses"
     },
     {
-      image: "/images/futsal/teams/iniciados/lucas-nicola.webp",
+      image: "https://i.ibb.co/23DZ8jqG/lucas-nicola.webp",
       name: "Lucas Nicola"
     },
     {
-      image: "/images/futsal/teams/iniciados/luis-pedro.webp",
+      image: "https://i.ibb.co/d4sFbpdr/luis-pedro.webp",
       name: "Luís Pedro"
     },
     {
-      image: "/images/futsal/teams/iniciados/manuel-tiago.webp",
+      image: "https://i.ibb.co/k2GbHkjT/infantis-manuel-tiago.webp",
       name: "Manuel Tiago"
     },
     {
-      image: "/images/futsal/teams/iniciados/miguel-franco.webp",
+      image: "https://i.ibb.co/5hVxSnWK/miguel-franco.webp",
       name: "Miguel Franco"
     },
     {
-      image: "/images/futsal/teams/iniciados/santiago-barros.webp",
+      image: "https://i.ibb.co/9HJG2sSr/infantis-santiago-barros.webp",
       name: "Santiago Barros"
     }
   ],
   petizes: [
     {
-      image: "/images/futsal/teams/petizes/alexandr-paley.webp",
+      image: "https://i.ibb.co/C5VrHPWD/alexandr-paley.webp",
       name: "Alexandr Paley"
     },
     {
-      image: "/images/futsal/teams/petizes/alexandre.webp",
+      image: "https://i.ibb.co/PvsTM6xJ/alexandre.webp",
       name: "Alexandre"
     },
     {
-      image: "/images/futsal/teams/petizes/bernardo-freitas.webp",
+      image: "https://i.ibb.co/JjgNS5D2/bernardo-freitas.webp",
       name: "Bernardo Freitas"
     },
     {
-      image: "/images/futsal/teams/petizes/bernardo-santos.webp",
+      image: "https://i.ibb.co/tM0rk9Lw/bernardo-santos.webp",
       name: "Bernardo Santos"
     },
     {
-      image: "/images/futsal/teams/petizes/carlos-varela.webp",
+      image: "https://i.ibb.co/bRF6RyVK/carlos-varela.webp",
       name: "Carlos Varela"
     },
     {
-      image: "/images/futsal/teams/petizes/damian.webp",
+      image: "https://i.ibb.co/pB732TN4/damian.webp",
       name: "Damian"
     },
     {
-      image: "/images/futsal/teams/petizes/eduardo-camacho.webp",
+      image: "https://i.ibb.co/0Vj3x4xM/eduardo-camacho.webp",
       name: "Eduardo Camacho"
     },
     {
-      image: "/images/futsal/teams/petizes/fabio-mendes.webp",
+      image: "https://i.ibb.co/6JWkQyfw/fabio-mendes.webp",
       name: "Fábio Mendes"
     },
     {
-      image: "/images/futsal/teams/petizes/joao-guilherme.webp",
+      image: "https://i.ibb.co/tMGv7mSy/joao-guilherme.webp",
       name: "João Guilherme"
     },
     {
-      image: "/images/futsal/teams/petizes/joao-maria-aguiar.webp",
+      image: "https://i.ibb.co/DgvbvgYN/joao-maria-aguiar.webp",
       name: "João Maria Aguiar"
     },
     {
-      image: "/images/futsal/teams/petizes/joao-vieira.webp",
+      image: "https://i.ibb.co/PvdvnXrH/joao-vieira.webp",
       name: "João Vieira"
     },
     {
-      image: "/images/futsal/teams/petizes/lucas-costa.webp",
+      image: "https://i.ibb.co/k6Bqdb01/lucas-costa.webp",
       name: "Lucas Costa"
     },
     {
-      image: "/images/futsal/teams/petizes/lucas-telmo.webp",
+      image: "https://i.ibb.co/0jTR2RL9/lucas-telmo.webp",
       name: "Lucas Telmo"
     },
     {
-      image: "/images/futsal/teams/petizes/manuel-vieira.webp",
+      image: "https://i.ibb.co/rGK6n0J9/manuel-vieira.webp",
       name: "Manuel Vieira"
     },
     {
-      image: "/images/futsal/teams/petizes/martim-correia.webp",
+      image: "https://i.ibb.co/8DfBBs0J/martim-correia.webp",
       name: "Martim Correia"
     },
     {
-      image: "/images/futsal/teams/petizes/martim-freitas.webp",
+      image: "https://i.ibb.co/RkpRZLT4/martim-freitas.webp",
       name: "Martim Freitas"
     },
     {
-      image: "/images/futsal/teams/petizes/matias-aveiro.webp",
+      image: "https://i.ibb.co/nsQRXgTG/matias-aveiro.webp",
       name: "Matias Aveiro"
     },
     {
-      image: "/images/futsal/teams/petizes/matilde.webp",
+      image: "https://i.ibb.co/8nszpbhw/matilde.webp",
       name: "Matilde"
     },
     {
-      image: "/images/futsal/teams/petizes/miguel.webp",
+      image: "https://i.ibb.co/qYDJC2KW/miguel.webp",
       name: "Miguel"
     },
     {
-      image: "/images/futsal/teams/petizes/noah-macedo.webp",
+      image: "https://i.ibb.co/5xS2t8cV/noah-macedo.webp",
       name: "Noah Macedo"
     },
     {
-      image: "/images/futsal/teams/petizes/rafa.webp",
+      image: "https://i.ibb.co/vvCX1PSN/rafa.webp",
       name: "Rafa"
     },
     {
-      image: "/images/futsal/teams/petizes/rodrigo-freitas.webp",
+      image: "https://i.ibb.co/WWHx7PSW/rodrigo-freitas.webp",
       name: "Rodrigo Freitas"
     },
     {
-      image: "/images/futsal/teams/petizes/santiago-braz.webp",
+      image: "https://i.ibb.co/ytRFBcQ/santiago-braz.webp",
       name: "Santiago Braz"
     },
     {
-      image: "/images/futsal/teams/petizes/santiago-costa.webp",
+      image: "https://i.ibb.co/v69ZT0ck/santiago-costa.webp",
       name: "Santiago Costa"
     },
     {
-      image: "/images/futsal/teams/petizes/sara.webp",
+      image: "https://i.ibb.co/Nn2YwQWB/sara.webp",
       name: "Sara"
     },
     {
-      image: "/images/futsal/teams/petizes/tiago-espirito-santo.webp",
+      image: "https://i.ibb.co/3ycjgK9s/tiago-espirito-santo.webp",
       name: "Tiago Espírito Santo"
     },
     {
-      image: "/images/futsal/teams/petizes/tomas-2.webp",
+      image: "https://i.ibb.co/YFPgX9LG/tomas-2.webp",
       name: "Tomás  2"
     },
     {
-      image: "/images/futsal/teams/petizes/tomas-ferreira.webp",
+      image: "https://i.ibb.co/RwtPFxq/tomas-ferreira.webp",
       name: "Tomás Ferreira"
     },
     {
-      image: "/images/futsal/teams/petizes/tomas-gouveia.webp",
+      image: "https://i.ibb.co/HfbGhT0D/tomas-gouveia.webp",
       name: "Tomás Gouveia"
     }
   ],
   infantis: [
     {
-      image: "/images/futsal/teams/infantis/elias.webp",
+      image: "https://i.ibb.co/3yZf0Nwg/elias.webp",
       name: "Elias"
     },
     {
-      image: "/images/futsal/teams/infantis/flavio-ornelas.webp",
+      image: "https://i.ibb.co/dsD4xzp3/flavio-ornelas.webp",
       name: "Flávio Ornelas"
     },
     {
-      image: "/images/futsal/teams/infantis/goncalo-serralha.webp",
+      image: "https://i.ibb.co/QFPJfCnn/goncalo-serralha.webp",
       name: "Gonçalo Serralha"
     },
     {
-      image: "/images/futsal/teams/infantis/henrique-tavares.webp",
+      image: "https://i.ibb.co/GQT6q30j/henrique-tavares.webp",
       name: "Henrique Tavares"
     },
     {
-      image: "/images/futsal/teams/infantis/joao-francisco-vieira.webp",
+      image: "https://i.ibb.co/5hK67BLc/joao-francisco-vieira.webp",
       name: "João Francisco Vieira"
     },
     {
-      image: "/images/futsal/teams/infantis/jota-caldeira.webp",
+      image: "https://i.ibb.co/HT9FxGwD/jota-caldeira.webp",
       name: "Jota Caldeira"
     },
     {
-      image: "/images/futsal/teams/infantis/manuel-tiago.webp",
+      image: "https://i.ibb.co/k2GbHkjT/infantis-manuel-tiago.webp",
       name: "Manuel Tiago"
     },
     {
-      image: "/images/futsal/teams/infantis/martim-correia.webp",
+      image: "https://i.ibb.co/9mZqH8jQ/infantis-martim-correia.webp",
       name: "Martim Correia"
     },
     {
-      image: "/images/futsal/teams/infantis/miguel-vieira.webp",
+      image: "https://i.ibb.co/NgvGDzmx/miguel-vieira.webp",
       name: "Miguel Vieira"
     },
     {
-      image: "/images/futsal/teams/infantis/santiago-barros.webp",
+      image: "https://i.ibb.co/9HJG2sSr/infantis-santiago-barros.webp",
       name: "Santiago Barros"
     },
     {
-      image: "/images/futsal/teams/infantis/simao-basilio.webp",
+      image: "https://i.ibb.co/hxb1WYbf/simao-basilio.webp",
       name: "Simão Basílio"
     },
     {
-      image: "/images/futsal/teams/infantis/tomas-realista.webp",
+      image: "https://i.ibb.co/kg8m185N/tomas-realista.webp",
       name: "Tomás Realista"
     },
     {
-      image: "/images/futsal/teams/infantis/tome.webp",
+      image: "https://i.ibb.co/QvDFxHPF/tome.webp",
       name: "Tomé"
     },
     {
-      image: "/images/futsal/teams/infantis/ze-pedro.webp",
+      image: "https://i.ibb.co/k71Rh76/ze-pedro.webp",
       name: "Zé Pedro"
     }
   ],
-  benjamins: { image: "/images/futsal/teams/benjamins/benjamins.webp" }
+  benjamins: { image: "https://i.ibb.co/KjTh9gBF/benjamins.webp" }
 };
 
 export const futsalAllSponsorsUrls = [
-  "/images/navbar/futsal/tourigalo.webp",
+  "https://i.ibb.co/4nQ0JLdD/tourigalo.webp",
   ...futsalSponsors.collaborators,
   ...futsalSponsors.normal,
   ...futsalSponsors.premium
@@ -675,50 +675,50 @@ export const futsalAllSponsorsUrls = [
 export const futsalProducts = [
   {
     image:
-      "/images/futsal/products/calcoes/calcao-joma-branco-1.webp",
+      "https://i.ibb.co/qMwzvkVd/calcao-joma-branco-1.webp",
     name: "Calção Joma Branco",
     price: "10€",
     category: "Calções"
   },
   {
-    image: "/images/futsal/products/meias/meias-vermelhas-2.webp",
+    image: "https://i.ibb.co/d4ZJFV3B/meias-vermelhas-2.webp",
     name: "Meias Vermelhas",
     price: "5€",
     category: "Meias"
   },
   {
     image:
-      "/images/futsal/products/calcoes/calcao-joma-vermelho-3.webp",
+      "https://i.ibb.co/NdHG47nt/calcao-joma-vermelho-3.webp",
     name: "Calção Joma Vermelho",
     price: "10€",
     category: "Calções"
   },
   {
-    image: "/images/futsal/products/meias/meias-brancas-4.webp",
+    image: "https://i.ibb.co/8DPV0kN2/meias-brancas-4.webp",
     name: "Meias Brancas",
     price: "5€",
     category: "Meias"
   },
   {
-    image: "/images/futsal/products/casacos/casaco-joma-5.webp",
+    image: "https://i.ibb.co/N6s8kYX3/casaco-joma-5.webp",
     name: "Casaco Joma",
     price: "28€",
     category: "Casacos"
   },
   {
-    image: "/images/futsal/products/fatos-de-treino/fato-treino-joma-6.webp",
+    image: "https://i.ibb.co/hJggjR0F/fato-treino-joma-6.webp",
     name: "Fato Treino Joma",
     price: "40€",
     category: "Fatos de Treino"
   },
   {
-    image: "/images/futsal/products/bermudas/bermuda-joma-7.webp",
+    image: "https://i.ibb.co/YBD0pR3P/bermuda-joma-7.webp",
     name: "Bermuda Joma",
     price: "18€",
     category: "Bermudas"
   },
   {
-    image: "/images/futsal/products/bermudas/bermuda-joma-8.webp",
+    image: "https://i.ibb.co/cKScxwSc/bermuda-joma-8.webp",
     name: "Bermuda Joma",
     price: "19€",
     category: "Bermudas"
@@ -726,120 +726,120 @@ export const futsalProducts = [
 
   {
     image:
-      "/images/futsal/products/t-shirts/t-shirt-gr-joma-laranja-9.webp",
+      "https://i.ibb.co/nMjLRF2y/t-shirt-gr-joma-laranja-9.webp",
     name: "T-Shirt GR Joma Laranja",
     price: "20€",
     category: "T-shirts"
   },
   {
     image:
-      "/images/futsal/products/t-shirts/t-shirt-joma-vermelha-10.webp",
+      "https://i.ibb.co/kV9g4nS0/t-shirt-joma-vermelha-10.webp",
     name: "T-Shirt Joma Vermelha",
     price: "20€",
     category: "T-shirts"
   },
   {
     image:
-      "/images/futsal/products/conjuntos/conjunto-joma-branco-11.webp",
+      "https://i.ibb.co/cXLVJcW8/conjunto-joma-branco-11.webp",
     name: "Conjunto Joma Branco",
     price: "30€",
     category: "Conjuntos"
   },
   {
-    image: "/images/futsal/products/polos/polo-saida-joma-12.webp",
+    image: "https://i.ibb.co/ycy0RGXs/polo-saida-joma-12.webp",
     name: "Polo Saída Joma",
     price: "18€",
     category: "Polos"
   },
   {
-    image: "/images/futsal/products/polos/polo-saida-joma-13.webp",
+    image: "https://i.ibb.co/DDYNzn8D/polo-saida-joma-13.webp",
     name: "Polo Saída Joma",
     price: "18€",
     category: "Polos"
   },
   {
-    image: "/images/futsal/products/polos/polo-saida-joma-14.webp",
+    image: "https://i.ibb.co/pvFGQ265/polo-saida-joma-14.webp",
     name: "Polo Saída Joma",
     price: "20€",
     category: "Polos"
   },
   {
-    image: "/images/futsal/products/polos/polo-saida-joma-15.webp",
+    image: "https://i.ibb.co/Ng4bXxFR/polo-saida-joma-15.webp",
     name: "Polo Saída Joma",
     price: "22€",
     category: "Polos"
   },
   {
-    image: "/images/futsal/products/polos/polo-saida-joma-16.webp",
+    image: "https://i.ibb.co/TxsjSR9C/polo-saida-joma-16.webp",
     name: "Polo Saída Joma",
     price: "22€",
     category: "Polos"
   },
   {
-    image: "/images/futsal/products/sacos/saco-de-desporto-grande-joma-17.webp",
+    image: "https://i.ibb.co/rGjPPpC0/saco-de-desporto-grande-joma-17.webp",
     name: "Saco de Desporto Grande Joma",
     price: "25€",
     category: "Sacos"
   },
   {
-    image: "/images/futsal/products/sacos/saco-de-desporto-grande-joma-18.webp",
+    image: "https://i.ibb.co/8nCMghbx/saco-de-desporto-grande-joma-18.webp",
     name: "Saco de Desporto Grande Joma",
     price: "25€",
     category: "Sacos"
   },
   {
-    image: "/images/futsal/products/sacos/saco-de-desporto-grande-joma-19.webp",
+    image: "https://i.ibb.co/YFP7tFkW/saco-de-desporto-grande-joma-19.webp",
     name: "Saco de Desporto Grande Joma",
     price: "25€",
     category: "Sacos"
   },
   {
-    image: "/images/futsal/products/sacos/saco-de-desporto-joma-20.webp",
+    image: "https://i.ibb.co/DH2B8CH2/saco-de-desporto-joma-20.webp",
     name: "Saco de Desporto Joma",
     price: "25€",
     category: "Sacos"
   },
   {
-    image: "/images/futsal/products/sacos/saco-de-desporto-joma-21.webp",
+    image: "https://i.ibb.co/DPW0bnmC/saco-de-desporto-joma-21.webp",
     name: "Saco de Desporto Joma",
     price: "25€",
     category: "Sacos"
   },
   {
     image:
-      "/images/futsal/products/sacos/saco-de-desporto-extra-grande-joma-22.webp",
+      "https://i.ibb.co/m7ZcpVf/saco-de-desporto-extra-grande-joma-22.webp",
     name: "Saco de Desporto Extra Grande Joma",
     price: "30€",
     category: "Sacos"
   },
   {
     image:
-      "/images/futsal/products/sacos/saco-de-desporto-extra-grande-joma-23.webp",
+      "https://i.ibb.co/hFS2BxZw/saco-de-desporto-extra-grande-joma-23.webp",
     name: "Saco de Desporto Extra Grande Joma",
     price: "30€",
     category: "Sacos"
   },
   {
     image:
-      "/images/futsal/products/sacos/saco-de-desporto-extra-grande-joma-24.webp",
+      "https://i.ibb.co/q3L0sbPj/saco-de-desporto-extra-grande-joma-24.webp",
     name: "Saco de Desporto Extra Grande Joma",
     price: "30€",
     category: "Sacos"
   },
   {
-    image: "/images/futsal/products/sweats/sweat-joma-25.webp",
+    image: "https://i.ibb.co/CKH2RbkL/sweat-joma-25.webp",
     name: "Sweat Joma",
     price: "26€",
     category: "Sweats"
   },
   {
-    image: "/images/futsal/products/sweats/sweat-joma-26.webp",
+    image: "https://i.ibb.co/YBWhVrXT/sweat-joma-26.webp",
     name: "Sweat Joma",
     price: "27.5€",
     category: "Sweats"
   },
   {
-    image: "/images/futsal/products/sweats/sweat-joma-27.webp",
+    image: "https://i.ibb.co/jZjZs44h/sweat-joma-27.webp",
     name: "Sweat Joma",
     price: "32.5€",
     category: "Sweats"

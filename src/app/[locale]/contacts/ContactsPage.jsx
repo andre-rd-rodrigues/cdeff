@@ -19,7 +19,7 @@ export default function ContactsPage() {
     <main>
       <PageHeader
         title={t("pages.contacts.title")}
-        image={"/images/headers/contactos.jpg"}
+        image={"https://i.ibb.co/G33sWbLP/contactos.jpg"}
       />
       <Section variant="pattern-dots">
         <SectionTitle

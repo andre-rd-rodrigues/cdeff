@@ -11,7 +11,7 @@ function ContactHero() {
       className="max-h-72"
       href="/contacts"
       title={t("components.contactHero.title")}
-      imageSrc="/images/headers/perguntas-frequentes.webp"
+      imageSrc="https://i.ibb.co/60RcShjG/perguntas-frequentes.webp"
       linkLabel={t("common.buttons.contacts")}
     />
   );
