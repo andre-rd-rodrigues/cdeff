@@ -27,13 +27,13 @@ function EventCard({ event, href }) {
       <div className="h-[3px] bg-red w-full" />
       <div className="relative h-[450px]">
         <Image
-          src={image || "/images/metadata.png"}
+          src={image || "/images/meta/meta-pt.webp"}
           alt={title}
           fill
+          sizes="(max-width: 640px) 90vw, 320px"
           style={{
             objectFit: "cover"
           }}
-          preload="true"
         />
       </div>
       <h2

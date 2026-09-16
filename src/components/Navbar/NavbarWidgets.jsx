@@ -66,7 +66,13 @@ const Sponsors = () => (
           wide ? "w-[230px] h-[70px] relative" : "w-[80px] h-[50px] relative"
         }
       >
-        <Image fill style={{ objectFit: "contain" }} src={src} alt={alt} />
+        <Image
+          fill
+          sizes={wide ? "230px" : "80px"}
+          style={{ objectFit: "contain" }}
+          src={src}
+          alt={alt}
+        />
       </div>
     ))}
   </div>

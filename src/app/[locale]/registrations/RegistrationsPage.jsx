@@ -37,7 +37,7 @@ export default function RegistrationsPage() {
         {/* Summer */}
         <RegistrationCard
           href="https://forms.gle/u8ZgfHAVZTn4fAyq9"
-          imageSrc="https://i.postimg.cc/rsMdZY3B/atl-verao.jpg"
+          imageSrc="/images/registrations/atl-verao.webp"
           title={t("pages.registrations.activities.summer.title")}
           subtitle={t("pages.registrations.activities.summer.description")}
           buttonLabel={t("common.buttons.registration")}
@@ -66,7 +66,7 @@ export default function RegistrationsPage() {
             <>
               <RegistrationCard
                 links={viiTournamentPre1StageLinks}
-                imageSrc={"https://i.postimg.cc/KzBPZ6xQ/PT.jpg"}
+                imageSrc={"/images/registrations/pt.webp"}
                 title={t("pages.registrations.futsal.viiTournament.title")}
                 subtitle={t(
                   "pages.registrations.futsal.viiTournament.preRegistration"
@@ -76,7 +76,7 @@ export default function RegistrationsPage() {
 
               <RegistrationCard
                 links={viiTournamentOfficial2StageLinks}
-                imageSrc={"https://i.postimg.cc/KzBPZ6xQ/PT.jpg"}
+                imageSrc={"/images/registrations/pt.webp"}
                 title={t("pages.registrations.futsal.viiTournament.title")}
                 subtitle={t(
                   "pages.registrations.futsal.viiTournament.oficialRegistration"
@@ -90,7 +90,7 @@ export default function RegistrationsPage() {
             <>
               <RegistrationCard
                 href={nationalTournament2024.PRE}
-                imageSrc="https://i.postimg.cc/5yzHLZYj/Cartaz-Torneio-Basket.webp"
+                imageSrc="/images/registrations/cartaz-torneio-basket.webp"
                 title={t(
                   "pages.registrations.basket.nationalTournament2024.title"
                 )}
@@ -102,7 +102,7 @@ export default function RegistrationsPage() {
 
               <RegistrationCard
                 href={nationalTournament2024.OFFICAL}
-                imageSrc="https://i.postimg.cc/5yzHLZYj/Cartaz-Torneio-Basket.webp"
+                imageSrc="/images/registrations/cartaz-torneio-basket.webp"
                 title={t(
                   "pages.registrations.basket.nationalTournament2024.title"
                 )}

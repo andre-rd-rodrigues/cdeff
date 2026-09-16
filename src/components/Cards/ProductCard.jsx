@@ -35,6 +35,7 @@ const ProductCard = ({ title, price, sizes, image, images, className }) => {
           src={allImages[currentImageIndex]}
           alt={title}
           fill
+          sizes="250px"
           style={{ objectFit: "cover" }}
         />
       </div>

@@ -115,6 +115,7 @@ export default function FutsalPage() {
                   <Image
                     alt="Benjamins"
                     fill
+                    sizes="100vw"
                     style={{ objectFit: "contain" }}
                     src={futsalTeam.benjamins.image}
                   />
@@ -137,8 +138,9 @@ export default function FutsalPage() {
           <Image
             alt="Training schedule"
             fill
+            sizes="100vw"
             style={{ objectFit: "contain" }}
-            src="https://i.postimg.cc/GmNJkty2/Hora-rios-de-Treino-Futsal.png"
+            src="/images/futsal/horarios-treino.webp"
           />
         </div>
       </Section>
@@ -160,6 +162,7 @@ export default function FutsalPage() {
         <div className="relative w-[150px] h-[130px]">
           <Image
             fill
+            sizes="150px"
             style={{ objectFit: "contain" }}
             src="/images/navbar/futsal/tourigalo.webp"
             alt="Tourigalo"

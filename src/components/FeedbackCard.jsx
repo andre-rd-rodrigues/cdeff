@@ -2,8 +2,10 @@ import { Icon } from "@iconify/react";
 import Image from "next/image";
 import React from "react";
 import { barlow } from "@/styles/fonts";
+import { imageBlur } from "@/data/imageBlur";
 
 function FeedbackCard({ author, feedback, image, className }) {
+  const blur = imageBlur[image];
   return (
     <div
       className={`group relative flex h-full flex-col overflow-hidden rounded-lg border border-blue/5 bg-white p-8 shadow-card transition duration-normal ease-smooth hover:-translate-y-1.5 hover:shadow-card-hover ${
@@ -28,6 +30,9 @@ function FeedbackCard({ author, feedback, image, className }) {
             src={image}
             alt={author || "client"}
             fill
+            sizes="48px"
+            placeholder={blur ? "blur" : "empty"}
+            blurDataURL={blur}
             style={{ objectFit: "cover" }}
           />
         </div>

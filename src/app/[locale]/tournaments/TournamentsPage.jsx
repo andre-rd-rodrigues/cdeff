@@ -29,7 +29,7 @@ export default function TournamentsPage({ tournaments }) {
     <main>
       <PageHeader
         title={t("pages.tournaments.title")}
-        image={"/images/headers/torneios.jpg"}
+        image={"/images/headers/torneios.webp"}
       />
       <Section containerClassName={"-mt-7"} variant="glow" revealContent={false}>
         <Reveal>

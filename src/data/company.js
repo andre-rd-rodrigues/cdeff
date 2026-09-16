@@ -5,7 +5,7 @@ export const departments = [
       {
         name: "Fernando Alves",
         position: "Club President",
-        imageSrc: "https://i.postimg.cc/cCt2dm9Z/Fernando-Alves.png"
+        imageSrc: "/images/company/management/fernando-alves.webp"
       }
     ]
   },
@@ -15,7 +15,7 @@ export const departments = [
       {
         name: "Joaquim Pereira",
         position: "Technical Coordinator",
-        imageSrc: "https://i.postimg.cc/N0Q3RRM7/Joaquim-Pereira.png"
+        imageSrc: "/images/company/technical-coordination/joaquim-pereira.webp"
       }
     ]
   },
@@ -25,7 +25,7 @@ export const departments = [
       {
         name: "Paulo Freitas",
         position: "Basketball Coordinator",
-        imageSrc: "https://i.postimg.cc/fWSrt8CQ/Paulo-Freitas.png"
+        imageSrc: "/images/company/basketball-coordination/paulo-freitas.webp"
       }
     ]
   },
@@ -35,7 +35,7 @@ export const departments = [
       {
         name: "Tiago Rosa",
         position: "Futsal Coordinator",
-        imageSrc: "https://i.postimg.cc/25Dzs6kB/Tiago-Rosa2.png"
+        imageSrc: "/images/futsal/technical-team/seniores/tiago-rosa.webp"
       }
     ]
   },
@@ -46,12 +46,12 @@ export const departments = [
         name: "Hospital Particular da Madeira",
         position: "Doctor (Basketball)",
         imageSrc:
-          "https://i.postimg.cc/JhhT1x0g/Hospital-Particular-da-Madeira.jpg"
+          "/images/company/medical/hospital-particular-da-madeira.webp"
       },
       {
         name: "Monumental Medical Center",
         position: "Doctor (Futsal)",
-        imageSrc: "https://i.postimg.cc/J0KD4NG6/Medical-Center.jpg"
+        imageSrc: "/images/company/medical/monumental-medical-center.webp"
       }
     ]
   },
@@ -62,12 +62,12 @@ export const departments = [
         name: "Hospital Particular da Madeira",
         position: "Physiotherapist (Basketball)",
         imageSrc:
-          "https://i.postimg.cc/JhhT1x0g/Hospital-Particular-da-Madeira.jpg"
+          "/images/company/medical/hospital-particular-da-madeira.webp"
       },
       {
         name: "Fisiomotriz",
         position: "Physiotherapist (Futsal)",
-        imageSrc: "https://i.postimg.cc/Xq5HRvqY/Fisiomotriz.png"
+        imageSrc: "/images/company/physiotherapy/fisiomotriz.webp"
       }
     ]
   },
@@ -77,7 +77,7 @@ export const departments = [
       {
         name: "Mauro Silva",
         position: "Financial Officer",
-        imageSrc: "https://i.postimg.cc/yYhRSSnZ/Mauro-Silva.png"
+        imageSrc: "/images/company/finance/mauro-silva.webp"
       }
     ]
   },
@@ -87,12 +87,12 @@ export const departments = [
       {
         name: "Ema Rodrigues",
         position: "Marketing and Communication",
-        imageSrc: "https://i.postimg.cc/WzzbS7r7/Ema-Rodrigues.png"
+        imageSrc: "/images/company/marketing-and-communication/ema-rodrigues.webp"
       },
       {
         name: "Ana Teixeira",
         position: "Marketing and Communication",
-        imageSrc: "https://i.postimg.cc/sD7fc9Vt/Ana-Raquel-Teixeira.png"
+        imageSrc: "/images/company/marketing-and-communication/ana-teixeira.webp"
       }
     ]
   },
@@ -102,7 +102,7 @@ export const departments = [
       {
         name: "Lilibeth Gonçalves",
         position: "Administrative Officer",
-        imageSrc: "https://i.postimg.cc/855x0DL7/Lilibeth-Gonc-alves.png"
+        imageSrc: "/images/company/administrative/lilibeth-goncalves.webp"
       }
     ]
   }

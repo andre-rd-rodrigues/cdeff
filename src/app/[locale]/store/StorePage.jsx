@@ -37,7 +37,7 @@ export default function StorePage() {
     <main>
       <PageHeader
         title={t("pages.store.title")}
-        image={"/images/headers/loja.png"}
+        image={"/images/headers/loja.webp"}
       />
       <Section variant="pattern-dots" revealContent={false}>
         <Reveal>

@@ -30,7 +30,7 @@ describe("EventCard", () => {
 
     const img = screen.getByRole("img", { name: "Test Event" });
     expect(img).toBeInTheDocument();
-    expect(img).toHaveAttribute("src", expect.stringContaining("/images/metadata.png"));
+    expect(img).toHaveAttribute("src", expect.stringContaining("/images/meta/meta-pt.webp"));
   });
 
   it("renders custom image when provided", () => {

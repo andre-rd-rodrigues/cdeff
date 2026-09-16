@@ -12,7 +12,7 @@ export default function FaqsPage() {
     <main>
       <PageHeader
         title={t("pages.faqs.title")}
-        image={"/images/headers/perguntas-frequentes.jpg"}
+        image={"/images/headers/perguntas-frequentes.webp"}
       />
       <Section containerClassName={"m-auto max-w-4xl"} variant="pattern-dots">
         <Faqs />

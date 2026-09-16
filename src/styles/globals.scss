@@ -489,6 +489,14 @@ footer {
     transform var(--duration-slow) var(--ease-smooth);
 }
 
+/* Skip layout/paint work for offscreen items in long, shadow-free grids
+   (e.g. sponsor logo walls). Not applied to shadowed/hover-lift cards, where
+   paint containment would clip the shadow and the lift transform. */
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 150px;
+}
+
 .stagger-group.is-in .stagger-item {
   opacity: 1;
   transform: translateY(0);

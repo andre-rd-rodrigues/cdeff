@@ -39,6 +39,7 @@ const RegistrationCard = ({
           src={imageSrc}
           alt={title}
           fill
+          sizes="320px"
           style={{
             objectFit: "cover"
           }}

@@ -41,6 +41,7 @@ function BlogCard({ article }) {
           src={image}
           alt={title}
           fill
+          sizes="(max-width: 768px) 100vw, 384px"
           style={{
             objectFit: "cover"
           }}

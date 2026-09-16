@@ -85,80 +85,80 @@
             {
               "title": "4º lugar no Campeonato Nacional - Sub-14",
               "date": "2014/2015",
-              "image": "https://i.postimg.cc/DzdZqRjD/Trofeu-Padra-o.png"
+              "image": "/images/achievements/basketball/trofeu-padra-o.webp"
             },
             {
               "title": "Campeãs Nacionais - Sub-14 femininos",
               "date": "2018/2019",
-              "image": "https://i.postimg.cc/RVyTL38L/1-Lugar-Campeonato-Nacional-Sub14-18-19.png"
+              "image": "/images/achievements/basketball/1-lugar-campeonato-nacional-sub14-18-19.webp"
             },
             {
               "title": "Vice-campeãs - Sub-16 femininos",
               "date": "2018/2019",
-              "image": "https://i.postimg.cc/DzdZqRjD/Trofeu-Padra-o.png"
+              "image": "/images/achievements/basketball/trofeu-padra-o.webp"
             },
             {
               "title": "Campeãs da II divisão - seniores",
               "date": "2019/2020",
-              "image": "https://i.postimg.cc/DzdZqRjD/Trofeu-Padra-o.png"
+              "image": "/images/achievements/basketball/trofeu-padra-o.webp"
             },
             {
               "title": "Vice-campeãs Nacionais da I divisão (Acesso à Liga Betclic) - seniores",
               "date": "2020/2021",
-              "image": "https://i.postimg.cc/DzdZqRjD/Trofeu-Padra-o.png"
+              "image": "/images/achievements/basketball/trofeu-padra-o.webp"
             },
             {
               "title": "Campeões regionais - sub-18 femininos",
               "date": "2022/2023",
-              "image": "https://i.postimg.cc/q7nD3cvK/1-Lugar-Campeonato-Sub18-22-23.png"
+              "image": "/images/achievements/basketball/1-lugar-campeonato-sub18-22-23.webp"
             }
           ],
           "futsal": [
             {
               "title": "Campeões Regionais da II Divisão - seniores",
               "date": "2011/2012",
-              "image": "https://i.postimg.cc/sXmcYTdM/Campeo-es-Regionais-II-Divisa-o-Seniores-11-12.png"
+              "image": "/images/achievements/futsal/campeo-es-regionais-ii-divisa-o-seniores-11-12.webp"
             },
             {
               "title": "Vencedores da Taça da Madeira - juniores",
               "date": "2013/2014",
-              "image": "https://i.postimg.cc/fTJKd7Hb/Vencendores-Tac-a-da-Madeira-Juniores-13-4.png"
+              "image": "/images/achievements/futsal/vencendores-tac-a-da-madeira-juniores-13-4.webp"
             },
             {
               "title": "Vencedores da Taça da Madeira - juvenis",
               "date": "2016/2017",
-              "image": "https://i.postimg.cc/Hsh6vvJ5/Vencedores-Tac-a-Juvenis-16-17.png"
+              "image": "/images/achievements/futsal/vencedores-tac-a-juvenis-16-17.webp"
             },
             {
               "title": "Campeões Regionais - juniores",
               "date": "2017/2018",
-              "image": "https://i.postimg.cc/qqB1S9Xc/Campeo-es-Regionais-Juniores-17-18.png"
+              "image": "/images/achievements/futsal/campeo-es-regionais-juniores-17-18.webp"
             },
             {
               "title": "Campeões Regionais - juvenis",
               "date": "2018/2019",
-              "image": "https://i.postimg.cc/BvWM48Bn/Campeo-es-Regionais-Juvenis-18-19.png"
+              "image": "/images/achievements/futsal/campeo-es-regionais-juvenis-18-19.webp"
             },
             {
               "title": "Vencedores da Taça da Madeira - juvenis",
               "date": "2018/2019",
-              "image": "https://i.postimg.cc/FHkDMbc6/Vencedores-Juvenis-18-19.png"
+              "image": "/images/achievements/futsal/vencedores-juvenis-18-19.webp"
             },
             {
               "title": "Campeões Regionais - iniciados",
               "date": "2018/2019",
-              "image": "https://i.postimg.cc/k4qsRkZr/Campeo-es-Regionais-Iniciados-18-19.png"
+              "image": "/images/achievements/futsal/campeo-es-regionais-iniciados-18-19.webp"
             },
 
             {
               "title": "Campeões Regionais - infantis",
               "date": "2021/2022",
-              "image": "https://i.postimg.cc/XJbHcZrz/Campeo-es-Regionais-Infantis-21-22.png"
+              "image": "/images/achievements/futsal/campeo-es-regionais-infantis-21-22.webp"
             },
             {
               "title": "Vencedores da Supertaça - juvenis",
               "date": "2023/2024",
-              "image": "https://i.postimg.cc/wMBk0Dg0/Vencedor-Supertac-a-Juvenis-23-24.png"
+              "image": "/images/achievements/futsal/vencedor-supertac-a-juvenis-23-24.webp"
             }
           ]
         }
@@ -421,7 +421,7 @@
           "companies": [
             {
               "businessName": "Farmácia da Madalena",
-              "image": "https://i.postimg.cc/SNmqHct6/farmacia-da-madalena.png",
+              "image": "/images/store/health/farmacia-da-madalena.webp",
               "hasSubDiscounts": true,
               "discounts": [
                 {
@@ -446,7 +446,7 @@
             },
             {
               "businessName": "Singular",
-              "image": "https://i.postimg.cc/2SKDqMjG/Singular-O-ptica.png",
+              "image": "/images/store/health/singular.webp",
               "discounts": [
                 "100% de desconto em todos os serviços clínicos: consultas de optometria; consultas de contactologia; tonometria",
                 "25% de desconto direto em todos os óculos de sol e armações",
@@ -462,7 +462,7 @@
           "companies": [
             {
               "businessName": "Pizzaria Antica Roma",
-              "image": "https://i.postimg.cc/jqHt8Mvq/Antica-Roma.jpg",
+              "image": "/images/store/restaurants/pizzaria-antica-roma.webp",
               "discounts": [
                 "Na encomenda de 1 pizza: oferta de 1 sumo",
                 "Na encomenda de 3 pizzas - oferta da 4ª pizza",
@@ -471,7 +471,7 @@
             },
             {
               "businessName": "Hamburgueria 351 Bistro",
-              "image": "https://i.postimg.cc/D0Ph8zm4/bistro-351.jpg",
+              "image": "/images/store/restaurants/hamburgueria-351-bistro.webp",
               "discounts": [
                 "Desconto de 5€ numa compra de valor igual ou superior a 25€"
               ]
@@ -483,12 +483,12 @@
           "companies": [
             {
               "businessName": "Academia de Línguas",
-              "image": "https://i.postimg.cc/HngHYMWC/Academia-de-Linguas-da-Madeira.png",
+              "image": "/images/store/education/academia-de-linguas.webp",
               "discounts": ["5% de desconto na mensalidade"]
             },
             {
               "businessName": "Escola de Condução Segurança Máxima",
-              "image": "https://i.postimg.cc/PrKhHNBB/grupo-seguranc-a-maxima.png",
+              "image": "/images/store/education/escola-de-conducao-seguranca-maxima.webp",
               "discounts": [
                 "10% de desconto em qualquer categoria para obtenção da carta de condução (sobre o valor de tabela; não inclui exames)",
                 "50% de desconto no livro teórico + oferta do ensino à distância"
@@ -502,7 +502,7 @@
             {
               "hasSubDiscounts": true,
               "businessName": "Living Fitness Concept",
-              "image": "https://i.postimg.cc/4xdGxsGn/Living-Fitness-Concept.jpg",
+              "image": "/images/store/leisure-and-culture/living-fitness-concept.webp",
               "discounts": [
                 {
                   "50%": {
@@ -534,7 +534,7 @@
           "companies": [
             {
               "businessName": "A Oficina",
-              "image": "https://i.postimg.cc/k48qPsmc/A-oficina.png",
+              "image": "/images/store/others/a-oficina.webp",
               "discounts": [
                 "Oferta de 30% de desconto em materiais (com exceção de materiais de origem)"
               ]
@@ -815,7 +815,7 @@
             {
               "name": "Rua João de Deus nº9 - 9054-527, Funchal",
               "icon": "mdi:location",
-              "href": "https://i.postimg.cc/DzdZqRjD/Trofeu-Padra-o.png"
+              "href": "/images/achievements/basketball/trofeu-padra-o.webp"
             },
             {
               "name": "+351 291615579",

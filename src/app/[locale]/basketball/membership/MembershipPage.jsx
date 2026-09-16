@@ -62,6 +62,7 @@ export default function MembershipPage() {
                     src={company.image}
                     alt={company.title}
                     fill
+                    sizes="64px"
                     style={{ objectFit: "contain" }}
                   />
                 </div>
